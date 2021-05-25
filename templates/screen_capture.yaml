@@ -1,13 +1,13 @@
-name: Screen Capture
-description: Browser screen capture example
-icon: screen_capture_icon.png
-screenshots:
-  - screen_capture_screenshot.png
-author: Robomotion
-category: Productivity
-tags:
-  - scraping
-  - browser
-  - image
-applications:
-  - Chrome
+- name: Screen Capture
+  description: Browser screen capture example
+  icon: screen_capture_icon.png
+  screenshots:
+    - screen_capture_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - scraping
+    - browser
+    - image
+  applications:
+    - Chrome
