@@ -1,0 +1,37 @@
+[
+  {
+    "name": "API Health Check",
+    "description": "Monitors the operational status of your microservices",
+    "icon": "api_health_check_icon.png",
+    "screenshots": [
+      "api_health_check_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Monitoring",
+    "tags": [
+      "api",
+      "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Screen Capture",
+    "description": "Browser screen capture example",
+    "icon": "screen_capture_icon.png",
+    "screenshots": [
+      "screen_capture_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "scraping",
+      "browser",
+      "image"
+    ],
+    "applications": [
+      "Chrome"
+    ]
+  }
+]
