@@ -1,6 +1,6 @@
-templates.yaml:
-	cat templates/*.yaml > templates.yaml
+.PHONY: templates
+templates:
+	# go get github.com/mikefarah/yq
+	cat templates/*.yaml | yq eval-all -j > templates.json
 
-all: templates.yaml
-
-
+all: templates
