@@ -1,0 +1,12 @@
+- name: Content Checker
+  description: Checks spesific field in given website url and notifies if content has changed.
+  icon: content_checker_icon.png
+  screenshots:
+    - content_checker_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - monitoring
+  applications:
+    - Javascript
+
