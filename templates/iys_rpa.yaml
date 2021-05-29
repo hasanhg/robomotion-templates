@@ -1,5 +1,6 @@
 - name: İYS RPA v0.2
   description: İYS izinli ileti verilerini RPA ile yükleme akışı
+  slug: iys-rpa
   icon: iys_rpa_icon.png
   screenshots:
     - iys_rpa_screenshot.png

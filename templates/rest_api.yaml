@@ -1,5 +1,6 @@
 - name: REST API
   description: Basic rest service handling example.
+  slug: rest-api
   icon: rest_api_icon.png
   screenshots:
     - rest_api_screenshot.png

@@ -1,5 +1,6 @@
 - name: ReCaptcha Solver
   description: Verify Google ReCaptcha V2 automatically with solving services.
+  slug: recaptcha-solver
   icon: recaptcha_solver_icon.png
   screenshots:
     - recaptcha_solver_screenshot.png

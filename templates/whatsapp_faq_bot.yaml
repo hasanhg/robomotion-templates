@@ -1,5 +1,6 @@
 - name: WhatsApp FAQ Bot
   description: Basic Whatsapp FAQ Bot example for customer support
+  slug: whatsapp-faq-bot
   icon: whatsapp_faq_bot_icon.png
   screenshots:
     - whatsapp_faq_bot_screenshot.png

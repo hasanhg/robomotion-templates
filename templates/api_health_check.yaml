@@ -1,5 +1,6 @@
 - name: API Health Check
   description: Monitors the operational status of your microservices
+  slug: api-health-check
   icon: api_health_check_icon.png
   screenshots:
     - api_health_check_screenshot.png

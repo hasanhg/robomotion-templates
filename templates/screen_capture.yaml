@@ -1,5 +1,6 @@
 - name: Screen Capture
   description: Browser screen capture example
+  slug: screen-capture
   icon: screen_capture_icon.png
   screenshots:
     - screen_capture_screenshot.png

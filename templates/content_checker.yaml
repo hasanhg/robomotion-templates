@@ -1,5 +1,6 @@
 - name: Content Checker
   description: Checks spesific field in given website url and notifies if content has changed.
+  slug: content-checker
   icon: content_checker_icon.png
   screenshots:
     - content_checker_screenshot.png
@@ -9,4 +10,3 @@
     - monitoring
   applications:
     - Javascript
-
