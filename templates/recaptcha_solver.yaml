@@ -1,0 +1,13 @@
+- name: ReCaptcha Solver
+  description: Verify Google ReCaptcha V2 automatically with solving services.
+  icon: recaptcha_solver_icon.png
+  screenshots:
+    - recaptcha_solver_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - captcha
+  applications:
+    - Javascript
+
+

@@ -1,0 +1,14 @@
+- name: İYS RPA v0.2
+  description: İYS izinli ileti verilerini RPA ile yükleme akışı
+  icon: iys_rpa_icon.png
+  screenshots:
+    - iys_rpa_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - data
+  applications:
+    - Javascript
+    - Chrome
+
+
