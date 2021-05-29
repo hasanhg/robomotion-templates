@@ -1,0 +1,1412 @@
+{
+    "nodes": [
+        {
+            "id": "b536425f-704e-4b5b-ba64-8fd6eb4f58b6",
+            "type": "simple",
+            "selected": true,
+            "x": 106.154454764362,
+            "y": 230.2664440607552,
+            "extras": {
+                "optConditions": [
+                    "msg.isStarted === 0",
+                    "msg.isStarted === 1"
+                ]
+            },
+            "ports": [
+                {
+                    "id": "e0bce0de-b6a0-4320-8425-ee99a9b1ea67",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_e0bce0de-b6a0-4320-8425-ee99a9b1ea67",
+                    "parentNode": "b536425f-704e-4b5b-ba64-8fd6eb4f58b6",
+                    "links": [
+                        "efdfcc87-a419-4d13-b724-93608fa6becb"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "e875a7fe-3115-4604-aff5-0bd849f74d45",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "b536425f-704e-4b5b-ba64-8fd6eb4f58b6",
+                    "links": [
+                        "0f75e74a-d77f-4117-a010-52d289995e11"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                },
+                {
+                    "id": "7a8aacd5-d7dc-4378-ac90-817b2371b218",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_7a8aacd5-d7dc-4378-ac90-817b2371b218",
+                    "parentNode": "b536425f-704e-4b5b-ba64-8fd6eb4f58b6",
+                    "links": [
+                        "64f23d5a-4959-4b70-9426-f53c83206c8c"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                }
+            ],
+            "model": {
+                "id": "b536425f-704e-4b5b-ba64-8fd6eb4f58b6",
+                "name": "Is First Message ?",
+                "icon": "M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29",
+                "color": "#1DE9B6",
+                "namespace": "Core.Programming.Switch",
+                "version": "0.0.0",
+                "abc": [
+                    {
+                        "color": "#1DE9B6",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Is First Message ?",
+                        "version": "0.0.0"
+                    },
+                    {
+                        "optConditions": [
+                            "msg.isStarted === 0",
+                            "msg.isStarted === 1"
+                        ]
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "optConditions": [
+                                "msg.isStarted === 0",
+                                "msg.isStarted === 1"
+                            ]
+                        },
+                        "schema": {
+                            "properties": {
+                                "optConditions": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "title": "",
+                                    "type": "array"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "optConditions": {
+                                "items": {
+                                    "ui:placeholder": "Enter a JS expression"
+                                },
+                                "ui:description": "Output Ports",
+                                "ui:options": {
+                                    "orderable": false
+                                }
+                            }
+                        }
+                    }
+                ],
+                "outputs": 2,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "928cc515-78c9-4921-a4f7-0659ffa79722",
+            "type": "simple",
+            "selected": true,
+            "x": -156.25892242862042,
+            "y": 244.14519140989728,
+            "extras": {
+                "func": "// Conversation read from json configuration file\nmsg.conversation = JSON.parse(msg.text);\n\n// Your Twilio Sendbox Phone\nmsg.from = \"+14155238886\"\n\n// Your phone number\nmsg.to = \"\"\n\nmsg.isStarted = global.get(\"isStarted\");\n\nreturn msg;\n",
+                "optTimeout": 30,
+                "outputs": 1,
+                "variables": []
+            },
+            "ports": [
+                {
+                    "id": "8f9da190-2a5a-44b0-9b0f-5d94652952c2",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_8f9da190-2a5a-44b0-9b0f-5d94652952c2",
+                    "parentNode": "928cc515-78c9-4921-a4f7-0659ffa79722",
+                    "links": [
+                        "0f75e74a-d77f-4117-a010-52d289995e11"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "c5fe8486-1368-455f-b8d5-054b7dffc6f1",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "928cc515-78c9-4921-a4f7-0659ffa79722",
+                    "links": [
+                        "a2162d6b-06ab-487f-896b-689de91ccbf0"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "928cc515-78c9-4921-a4f7-0659ffa79722",
+                "name": "Config",
+                "icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+                "color": "#F27925",
+                "editor": "javascript",
+                "namespace": "Core.Programming.Function",
+                "version": "0.0.0",
+                "abc": [
+                    {
+                        "color": "#F27925",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Config",
+                        "version": "0.0.0"
+                    },
+                    {
+                        "func": "// Conversation read from json configuration file\nmsg.conversation = JSON.parse(msg.text);\n\n// Your Twilio Sendbox Phone\nmsg.from = \"+14155238886\"\n\n// Your phone number\nmsg.to = \"\"\n\nmsg.isStarted = global.get(\"isStarted\");\n\nreturn msg;\n",
+                        "optTimeout": 30,
+                        "outputs": 1
+                    },
+                    {
+                        "variables": []
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "func": "// Conversation read from json configuration file\nmsg.conversation = JSON.parse(msg.text);\n\n// Your Twilio Sendbox Phone\nmsg.from = \"+14155238886\"\n\n// Your phone number\nmsg.to = \"\"\n\nmsg.isStarted = global.get(\"isStarted\");\n\nreturn msg;\n",
+                            "optTimeout": 30,
+                            "outputs": 1
+                        },
+                        "schema": {
+                            "properties": {
+                                "func": {
+                                    "title": "Function",
+                                    "type": "string"
+                                },
+                                "optTimeout": {
+                                    "title": "Script Timeout",
+                                    "type": "number"
+                                },
+                                "outputs": {
+                                    "maximum": 32,
+                                    "minimum": 1,
+                                    "title": "Outputs",
+                                    "type": "number"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "func": {
+                                "ui:options": {
+                                    "rows": 6
+                                },
+                                "ui:widget": "hidden"
+                            },
+                            "outputs": {
+                                "ui:widget": "updown"
+                            }
+                        }
+                    },
+                    {
+                        "formData": {
+                            "variables": []
+                        },
+                        "schema": {
+                            "properties": {
+                                "variables": {
+                                    "items": {
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "variableType": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "title": "Local Variables",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "variables": {
+                                "ui:field": "localVariable"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "0fb05dec-ea8d-4307-9d4b-c49873dc5073",
+            "type": "simple",
+            "selected": true,
+            "x": 413.59466516026123,
+            "y": 119.83424908424908,
+            "extras": {
+                "func": "global.set(\"isStarted\", 1);\n\nmsg.message = \"Welcome to Robomotion Bot\\n\\tPress *1* for brief information\\n\\tPress *2* for technical support\\n\\tPress *3* for request a demo\"\n\nreturn msg;",
+                "optTimeout": 30,
+                "outputs": 1,
+                "variables": []
+            },
+            "ports": [
+                {
+                    "id": "d9806fb4-e6d2-4bf9-9542-5c378e5be597",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_d9806fb4-e6d2-4bf9-9542-5c378e5be597",
+                    "parentNode": "0fb05dec-ea8d-4307-9d4b-c49873dc5073",
+                    "links": [
+                        "fb72cac2-b039-4f63-a64b-6ca752e303cf"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "9a2b4528-70ef-4c46-bbd0-8ec778f6ef3d",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "0fb05dec-ea8d-4307-9d4b-c49873dc5073",
+                    "links": [
+                        "efdfcc87-a419-4d13-b724-93608fa6becb"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "0fb05dec-ea8d-4307-9d4b-c49873dc5073",
+                "name": "Welcome Message",
+                "icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+                "color": "#F27925",
+                "editor": "javascript",
+                "namespace": "Core.Programming.Function",
+                "version": "0.0.0",
+                "abc": [
+                    {
+                        "color": "#F27925",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Welcome Message",
+                        "version": "0.0.0"
+                    },
+                    {
+                        "func": "global.set(\"isStarted\", 1);\n\nmsg.message = \"Welcome to Robomotion Bot\\n\\tPress *1* for brief information\\n\\tPress *2* for technical support\\n\\tPress *3* for request a demo\"\n\nreturn msg;",
+                        "optTimeout": 30,
+                        "outputs": 1
+                    },
+                    {
+                        "variables": []
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "func": "global.set(\"isStarted\", 1);\n\nmsg.message = \"Welcome to Robomotion Bot\\n\\tPress *1* for brief information\\n\\tPress *2* for technical support\\n\\tPress *3* for request a demo\"\n\nreturn msg;",
+                            "optTimeout": 30,
+                            "outputs": 1
+                        },
+                        "schema": {
+                            "properties": {
+                                "func": {
+                                    "title": "Function",
+                                    "type": "string"
+                                },
+                                "optTimeout": {
+                                    "title": "Script Timeout",
+                                    "type": "number"
+                                },
+                                "outputs": {
+                                    "maximum": 32,
+                                    "minimum": 1,
+                                    "title": "Outputs",
+                                    "type": "number"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "func": {
+                                "ui:options": {
+                                    "rows": 6
+                                },
+                                "ui:widget": "hidden"
+                            },
+                            "outputs": {
+                                "ui:widget": "updown"
+                            }
+                        }
+                    },
+                    {
+                        "formData": {
+                            "variables": []
+                        },
+                        "schema": {
+                            "properties": {
+                                "variables": {
+                                    "items": {
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "variableType": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "title": "Local Variables",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "variables": {
+                                "ui:field": "localVariable"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "ffcccf4e-13dd-40d2-81bd-9525b1994484",
+            "type": "simple",
+            "selected": true,
+            "x": 420.23130058366144,
+            "y": 336.37491022049846,
+            "extras": {
+                "func": "var state = global.get(\"state\");\n\nmsg.message = \"Invalid Number\\n\" + msg.conversation[state];\n\nvar newState = state + \".\" + msg.body.Body;\n\nif (msg.body.Body === \"m\" || msg.body.Body === \"M\") {\n  newState = \"1\"\n}\n\nif (msg.conversation[newState] != undefined) {\n  global.set(\"state\" , newState);\n  msg.message = msg.conversation[newState];\n}\n\nreturn msg;\n",
+                "optTimeout": 30,
+                "outputs": 1,
+                "variables": []
+            },
+            "ports": [
+                {
+                    "id": "40c1726e-e5e8-4ca9-8828-021ed17322d6",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_40c1726e-e5e8-4ca9-8828-021ed17322d6",
+                    "parentNode": "ffcccf4e-13dd-40d2-81bd-9525b1994484",
+                    "links": [
+                        "4c250e3d-0560-418a-b439-86bb76c09132"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "2f326e73-751b-402c-9347-b762fefe500f",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "ffcccf4e-13dd-40d2-81bd-9525b1994484",
+                    "links": [
+                        "64f23d5a-4959-4b70-9426-f53c83206c8c"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "ffcccf4e-13dd-40d2-81bd-9525b1994484",
+                "name": "Prepare Response",
+                "icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+                "color": "#F27925",
+                "editor": "javascript",
+                "namespace": "Core.Programming.Function",
+                "version": "0.0.0",
+                "abc": [
+                    {
+                        "color": "#F27925",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Prepare Response",
+                        "version": "0.0.0"
+                    },
+                    {
+                        "func": "var state = global.get(\"state\");\n\nmsg.message = \"Invalid Number\\n\" + msg.conversation[state];\n\nvar newState = state + \".\" + msg.body.Body;\n\nif (msg.body.Body === \"m\" || msg.body.Body === \"M\") {\n  newState = \"1\"\n}\n\nif (msg.conversation[newState] != undefined) {\n  global.set(\"state\" , newState);\n  msg.message = msg.conversation[newState];\n}\n\nreturn msg;\n",
+                        "optTimeout": 30,
+                        "outputs": 1
+                    },
+                    {
+                        "variables": []
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "func": "var state = global.get(\"state\");\n\nmsg.message = \"Invalid Number\\n\" + msg.conversation[state];\n\nvar newState = state + \".\" + msg.body.Body;\n\nif (msg.body.Body === \"m\" || msg.body.Body === \"M\") {\n  newState = \"1\"\n}\n\nif (msg.conversation[newState] != undefined) {\n  global.set(\"state\" , newState);\n  msg.message = msg.conversation[newState];\n}\n\nreturn msg;\n",
+                            "optTimeout": 30,
+                            "outputs": 1
+                        },
+                        "schema": {
+                            "properties": {
+                                "func": {
+                                    "title": "Function",
+                                    "type": "string"
+                                },
+                                "optTimeout": {
+                                    "title": "Script Timeout",
+                                    "type": "number"
+                                },
+                                "outputs": {
+                                    "maximum": 32,
+                                    "minimum": 1,
+                                    "title": "Outputs",
+                                    "type": "number"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "func": {
+                                "ui:options": {
+                                    "rows": 6
+                                },
+                                "ui:widget": "hidden"
+                            },
+                            "outputs": {
+                                "ui:widget": "updown"
+                            }
+                        }
+                    },
+                    {
+                        "formData": {
+                            "variables": []
+                        },
+                        "schema": {
+                            "properties": {
+                                "variables": {
+                                    "items": {
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "variableType": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "title": "Local Variables",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "variables": {
+                                "ui:field": "localVariable"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "2edc10fb-3e9f-4c83-9bbd-3ec00839e702",
+            "type": "simple",
+            "selected": true,
+            "x": -150.82632928646817,
+            "y": 172.4258800839683,
+            "extras": {
+                "inPath": {
+                    "name": "C:\\Users\\John\\Conversation.json",
+                    "scope": "Custom"
+                },
+                "outContent": {
+                    "name": "text",
+                    "scope": "Message"
+                }
+            },
+            "ports": [
+                {
+                    "id": "b32f5cdf-b763-4331-b57c-5bc446b9d589",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_b32f5cdf-b763-4331-b57c-5bc446b9d589",
+                    "parentNode": "2edc10fb-3e9f-4c83-9bbd-3ec00839e702",
+                    "links": [
+                        "a2162d6b-06ab-487f-896b-689de91ccbf0"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "f582dab9-570d-4ccc-a35a-a3e535611b44",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "2edc10fb-3e9f-4c83-9bbd-3ec00839e702",
+                    "links": [
+                        "fa458834-188e-4fa5-82b2-f0ed63b315e3"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "2edc10fb-3e9f-4c83-9bbd-3ec00839e702",
+                "name": "Read Conversation",
+                "icon": "M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z",
+                "color": "#dbdfa0",
+                "namespace": "Core.FileSystem.ReadFile",
+                "version": "0.0.0",
+                "abc": [
+                    {
+                        "color": "#dbdfa0",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Read Conversation",
+                        "version": "0.0.0"
+                    },
+                    {
+                        "inPath": {
+                            "name": "C:\\Users\\John\\Conversation.json",
+                            "scope": "Custom"
+                        }
+                    },
+                    {
+                        "outContent": {
+                            "name": "text",
+                            "scope": "Message"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "inPath": {
+                                "name": "C:\\Users\\John\\Conversation.json",
+                                "scope": "Custom"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "inPath": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Path",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Input",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "inPath": {
+                                "ui:field": "variable"
+                            }
+                        }
+                    },
+                    {
+                        "formData": {
+                            "outContent": {
+                                "name": "text",
+                                "scope": "Message"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "outContent": {
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Content",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Output",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "outContent": {
+                                "ui:field": "variable"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "b7d8e73a-c7ce-4f1f-8f5f-c1ce9f2a9608",
+            "type": "simple",
+            "selected": true,
+            "x": -147.29061500075386,
+            "y": 100.67984833793659,
+            "extras": {
+                "inPort": {
+                    "name": "",
+                    "scope": "Custom"
+                }
+            },
+            "ports": [
+                {
+                    "id": "4f65f527-f138-4d8e-9713-5795e4273ddc",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_4f65f527-f138-4d8e-9713-5795e4273ddc",
+                    "parentNode": "b7d8e73a-c7ce-4f1f-8f5f-c1ce9f2a9608",
+                    "links": [
+                        "fa458834-188e-4fa5-82b2-f0ed63b315e3"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                }
+            ],
+            "model": {
+                "id": "b7d8e73a-c7ce-4f1f-8f5f-c1ce9f2a9608",
+                "name": "Receive Message",
+                "icon": "M16.75,13.96C17,14.09 17.16,14.16 17.21,14.26C17.27,14.37 17.25,14.87 17,15.44C16.8,16 15.76,16.54 15.3,16.56C14.84,16.58 14.83,16.92 12.34,15.83C9.85,14.74 8.35,12.08 8.23,11.91C8.11,11.74 7.27,10.53 7.31,9.3C7.36,8.08 8,7.5 8.26,7.26C8.5,7 8.77,6.97 8.94,7H9.41C9.56,7 9.77,6.94 9.96,7.45L10.65,9.32C10.71,9.45 10.75,9.6 10.66,9.76L10.39,10.17L10,10.59C9.88,10.71 9.74,10.84 9.88,11.09C10,11.35 10.5,12.18 11.2,12.87C12.11,13.75 12.91,14.04 13.15,14.17C13.39,14.31 13.54,14.29 13.69,14.13L14.5,13.19C14.69,12.94 14.85,13 15.08,13.08L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,13.72 4.54,15.31 5.46,16.61L4.5,19.5L7.39,18.54C8.69,19.46 10.28,20 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z",
+                "color": "#1fa463",
+                "namespace": "Robomotion.Twilio.ReceiveMessage",
+                "version": "0.1.8",
+                "abc": [
+                    {},
+                    {
+                        "inPort": {
+                            "name": "",
+                            "scope": "Custom"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "inPort": {
+                                "name": "",
+                                "scope": "Custom"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "inPort": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Port",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Input",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "inPort": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inPort"
+                            ]
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 0
+            }
+        },
+        {
+            "id": "cb330a59-ae29-45dd-9c2a-f75b6563f080",
+            "type": "simple",
+            "selected": true,
+            "x": 427.2808135706747,
+            "y": 176.2988959569842,
+            "extras": {
+                "inFrom": {
+                    "name": "",
+                    "scope": "Custom"
+                },
+                "inMessage": {
+                    "name": "message",
+                    "scope": "Message"
+                },
+                "inTo": {
+                    "name": "",
+                    "scope": "Custom"
+                },
+                "outResponse": {
+                    "name": "response",
+                    "scope": "Message"
+                },
+                "optAccountId": {
+                    "itemId": "d2c0142a-3738-4c3e-bf58-7ff5ef7c2761",
+                    "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                },
+                "optToken": {
+                    "itemId": "0ac627ef-bba5-49a7-97fe-77bdb46482b6",
+                    "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                }
+            },
+            "ports": [
+                {
+                    "id": "4540f936-62c7-4988-842a-19a0ef352ca7",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_4540f936-62c7-4988-842a-19a0ef352ca7",
+                    "parentNode": "cb330a59-ae29-45dd-9c2a-f75b6563f080",
+                    "links": [],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "30f97a1c-de68-4ec2-99a7-d8fc41a23f9d",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "cb330a59-ae29-45dd-9c2a-f75b6563f080",
+                    "links": [
+                        "fb72cac2-b039-4f63-a64b-6ca752e303cf"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "cb330a59-ae29-45dd-9c2a-f75b6563f080",
+                "name": "Send Message",
+                "icon": "M16.75,13.96C17,14.09 17.16,14.16 17.21,14.26C17.27,14.37 17.25,14.87 17,15.44C16.8,16 15.76,16.54 15.3,16.56C14.84,16.58 14.83,16.92 12.34,15.83C9.85,14.74 8.35,12.08 8.23,11.91C8.11,11.74 7.27,10.53 7.31,9.3C7.36,8.08 8,7.5 8.26,7.26C8.5,7 8.77,6.97 8.94,7H9.41C9.56,7 9.77,6.94 9.96,7.45L10.65,9.32C10.71,9.45 10.75,9.6 10.66,9.76L10.39,10.17L10,10.59C9.88,10.71 9.74,10.84 9.88,11.09C10,11.35 10.5,12.18 11.2,12.87C12.11,13.75 12.91,14.04 13.15,14.17C13.39,14.31 13.54,14.29 13.69,14.13L14.5,13.19C14.69,12.94 14.85,13 15.08,13.08L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,13.72 4.54,15.31 5.46,16.61L4.5,19.5L7.39,18.54C8.69,19.46 10.28,20 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z",
+                "color": "#1fa463",
+                "namespace": "Robomotion.Twilio.SendMessage",
+                "version": "0.1.8",
+                "abc": [
+                    {
+                        "color": "#1fa463",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Send Message",
+                        "version": "0.1.8"
+                    },
+                    {
+                        "inFrom": {
+                            "name": "",
+                            "scope": "Custom"
+                        },
+                        "inMessage": {
+                            "name": "message",
+                            "scope": "Message"
+                        },
+                        "inTo": {
+                            "name": "",
+                            "scope": "Custom"
+                        }
+                    },
+                    {
+                        "outResponse": {
+                            "name": "response",
+                            "scope": "Message"
+                        }
+                    },
+                    {
+                        "optAccountId": {
+                            "itemId": "d2c0142a-3738-4c3e-bf58-7ff5ef7c2761",
+                            "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                        },
+                        "optToken": {
+                            "itemId": "0ac627ef-bba5-49a7-97fe-77bdb46482b6",
+                            "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "inFrom": {
+                                "name": "",
+                                "scope": "Custom"
+                            },
+                            "inMessage": {
+                                "name": "message",
+                                "scope": "Message"
+                            },
+                            "inTo": {
+                                "name": "",
+                                "scope": "Custom"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "inFrom": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "From Number",
+                                    "type": "object",
+                                    "variableType": "String"
+                                },
+                                "inMessage": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Message",
+                                    "type": "object",
+                                    "variableType": "String"
+                                },
+                                "inTo": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "To Number",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Input",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "inFrom": {
+                                "ui:field": "variable"
+                            },
+                            "inMessage": {
+                                "ui:field": "variable"
+                            },
+                            "inTo": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inFrom",
+                                "inTo",
+                                "inMessage"
+                            ]
+                        }
+                    },
+                    {
+                        "formData": {
+                            "outResponse": {
+                                "name": "response",
+                                "scope": "Message"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "outResponse": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Response",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Output",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "outResponse": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "outResponse"
+                            ]
+                        }
+                    },
+                    {
+                        "formData": {
+                            "optAccountId": {
+                                "itemId": "d2c0142a-3738-4c3e-bf58-7ff5ef7c2761",
+                                "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                            },
+                            "optToken": {
+                                "itemId": "0ac627ef-bba5-49a7-97fe-77bdb46482b6",
+                                "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "optAccountId": {
+                                    "category": 0,
+                                    "properties": {
+                                        "itemId": {
+                                            "type": "string"
+                                        },
+                                        "vaultId": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "subtitle": "Credentials",
+                                    "title": "Account Id",
+                                    "type": "object"
+                                },
+                                "optToken": {
+                                    "category": 0,
+                                    "properties": {
+                                        "itemId": {
+                                            "type": "string"
+                                        },
+                                        "vaultId": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "subtitle": "Credentials",
+                                    "title": "Token",
+                                    "type": "object"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "optAccountId": {
+                                "ui:field": "credentials"
+                            },
+                            "optToken": {
+                                "ui:field": "credentials"
+                            },
+                            "ui:order": [
+                                "optAccountId",
+                                "optToken"
+                            ]
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "050a8fb0-e97f-4eda-9708-5999c6b631af",
+            "type": "simple",
+            "selected": true,
+            "x": 422.99509928496036,
+            "y": 398.8227054807938,
+            "extras": {
+                "inFrom": {
+                    "name": "",
+                    "scope": "Custom"
+                },
+                "inMessage": {
+                    "name": "message",
+                    "scope": "Message"
+                },
+                "inTo": {
+                    "name": "",
+                    "scope": "Custom"
+                },
+                "outResponse": {
+                    "name": "response",
+                    "scope": "Message"
+                },
+                "optAccountId": {
+                    "itemId": "d2c0142a-3738-4c3e-bf58-7ff5ef7c2761",
+                    "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                },
+                "optToken": {
+                    "itemId": "0ac627ef-bba5-49a7-97fe-77bdb46482b6",
+                    "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                }
+            },
+            "ports": [
+                {
+                    "id": "cde3a2ab-5063-4a4e-80d7-3072b990f2f7",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_cde3a2ab-5063-4a4e-80d7-3072b990f2f7",
+                    "parentNode": "050a8fb0-e97f-4eda-9708-5999c6b631af",
+                    "links": [],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "47f2976a-fab1-49a3-a5fe-be49b12b4063",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "050a8fb0-e97f-4eda-9708-5999c6b631af",
+                    "links": [
+                        "4c250e3d-0560-418a-b439-86bb76c09132"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "050a8fb0-e97f-4eda-9708-5999c6b631af",
+                "name": "Send Message",
+                "icon": "M16.75,13.96C17,14.09 17.16,14.16 17.21,14.26C17.27,14.37 17.25,14.87 17,15.44C16.8,16 15.76,16.54 15.3,16.56C14.84,16.58 14.83,16.92 12.34,15.83C9.85,14.74 8.35,12.08 8.23,11.91C8.11,11.74 7.27,10.53 7.31,9.3C7.36,8.08 8,7.5 8.26,7.26C8.5,7 8.77,6.97 8.94,7H9.41C9.56,7 9.77,6.94 9.96,7.45L10.65,9.32C10.71,9.45 10.75,9.6 10.66,9.76L10.39,10.17L10,10.59C9.88,10.71 9.74,10.84 9.88,11.09C10,11.35 10.5,12.18 11.2,12.87C12.11,13.75 12.91,14.04 13.15,14.17C13.39,14.31 13.54,14.29 13.69,14.13L14.5,13.19C14.69,12.94 14.85,13 15.08,13.08L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,13.72 4.54,15.31 5.46,16.61L4.5,19.5L7.39,18.54C8.69,19.46 10.28,20 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z",
+                "color": "#1fa463",
+                "namespace": "Robomotion.Twilio.SendMessage",
+                "version": "0.1.8",
+                "abc": [
+                    {
+                        "color": "#1fa463",
+                        "continueOnError": false,
+                        "delayAfter": 0,
+                        "delayBefore": 0,
+                        "name": "Send Message",
+                        "version": "0.1.8"
+                    },
+                    {
+                        "inFrom": {
+                            "name": "",
+                            "scope": "Custom"
+                        },
+                        "inMessage": {
+                            "name": "message",
+                            "scope": "Message"
+                        },
+                        "inTo": {
+                            "name": "",
+                            "scope": "Custom"
+                        }
+                    },
+                    {
+                        "outResponse": {
+                            "name": "response",
+                            "scope": "Message"
+                        }
+                    },
+                    {
+                        "optAccountId": {
+                            "itemId": "d2c0142a-3738-4c3e-bf58-7ff5ef7c2761",
+                            "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                        },
+                        "optToken": {
+                            "itemId": "0ac627ef-bba5-49a7-97fe-77bdb46482b6",
+                            "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "inFrom": {
+                                "name": "",
+                                "scope": "Custom"
+                            },
+                            "inMessage": {
+                                "name": "message",
+                                "scope": "Message"
+                            },
+                            "inTo": {
+                                "name": "",
+                                "scope": "Custom"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "inFrom": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "From Number",
+                                    "type": "object",
+                                    "variableType": "String"
+                                },
+                                "inMessage": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Message",
+                                    "type": "object",
+                                    "variableType": "String"
+                                },
+                                "inTo": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "To Number",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Input",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "inFrom": {
+                                "ui:field": "variable"
+                            },
+                            "inMessage": {
+                                "ui:field": "variable"
+                            },
+                            "inTo": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inFrom",
+                                "inTo",
+                                "inMessage"
+                            ]
+                        }
+                    },
+                    {
+                        "formData": {
+                            "outResponse": {
+                                "name": "response",
+                                "scope": "Message"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "outResponse": {
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "scope": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "title": "Response",
+                                    "type": "object",
+                                    "variableType": "String"
+                                }
+                            },
+                            "title": "Output",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "outResponse": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "outResponse"
+                            ]
+                        }
+                    },
+                    {
+                        "formData": {
+                            "optAccountId": {
+                                "itemId": "d2c0142a-3738-4c3e-bf58-7ff5ef7c2761",
+                                "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                            },
+                            "optToken": {
+                                "itemId": "0ac627ef-bba5-49a7-97fe-77bdb46482b6",
+                                "vaultId": "7f7529a1-1a1e-4315-a304-a273df7adb16"
+                            }
+                        },
+                        "schema": {
+                            "properties": {
+                                "optAccountId": {
+                                    "category": 0,
+                                    "properties": {
+                                        "itemId": {
+                                            "type": "string"
+                                        },
+                                        "vaultId": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "subtitle": "Credentials",
+                                    "title": "Account Id",
+                                    "type": "object"
+                                },
+                                "optToken": {
+                                    "category": 0,
+                                    "properties": {
+                                        "itemId": {
+                                            "type": "string"
+                                        },
+                                        "vaultId": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "subtitle": "Credentials",
+                                    "title": "Token",
+                                    "type": "object"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "optAccountId": {
+                                "ui:field": "credentials"
+                            },
+                            "optToken": {
+                                "ui:field": "credentials"
+                            },
+                            "ui:order": [
+                                "optAccountId",
+                                "optToken"
+                            ]
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "3e4e4cd6-326a-4dab-986c-059ffaaca46d",
+            "type": "simple",
+            "selected": true,
+            "x": -566.1477578578969,
+            "y": 37.013181671269905,
+            "extras": {
+                "optText": "##### Whatsapp FAQ Bot\n\nThis template is WIP and uses the *Twilio > Send/Receive* nodes to creaete a simple Whatsapp FAQ\nbot.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Create conversation.json\n"
+            },
+            "ports": [],
+            "model": {
+                "id": "3e4e4cd6-326a-4dab-986c-059ffaaca46d",
+                "name": "Comment",
+                "icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+                "color": "#FBE364",
+                "namespace": "Core.Flow.Comment",
+                "version": "0.0.0",
+                "abc": [
+                    {},
+                    {
+                        "optText": "##### Whatsapp FAQ Bot\n\nThis template is WIP and uses the *Twilio > Send/Receive* nodes to creaete a simple Whatsapp FAQ\nbot.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Create conversation.json\n"
+                    }
+                ],
+                "xyz": [
+                    {
+                        "formData": {
+                            "optText": "##### Whatsapp FAQ Bot\n\nThis template is WIP and uses the *Twilio > Send/Receive* nodes to creaete a simple Whatsapp FAQ\nbot.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Create conversation.json\n"
+                        },
+                        "schema": {
+                            "properties": {
+                                "comment": {
+                                    "title": "Comment",
+                                    "type": "string"
+                                },
+                                "optText": {
+                                    "title": "Text",
+                                    "type": "string"
+                                }
+                            },
+                            "title": "Options",
+                            "type": "object"
+                        },
+                        "uiSchema": {
+                            "comment": {
+                                "ui:options": {
+                                    "rows": 6
+                                },
+                                "ui:widget": "hidden"
+                            },
+                            "optText": {
+                                "ui:description": "Comment",
+                                "ui:options": {
+                                    "rows": 8
+                                },
+                                "ui:widget": "hidden"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 0,
+                "inputs": 0
+            }
+        }
+    ],
+    "subFlows": []
+}
