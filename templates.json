@@ -17,6 +17,71 @@
     ]
   },
   {
+    "name": "Content Checker",
+    "description": "Checks spesific field in given website url and notifies if content has changed.",
+    "icon": "content_checker_icon.png",
+    "screenshots": [
+      "content_checker_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "İYS RPA v0.2",
+    "description": "İYS izinli ileti verilerini RPA ile yükleme akışı",
+    "icon": "iys_rpa_icon.png",
+    "screenshots": [
+      "iys_rpa_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "data"
+    ],
+    "applications": [
+      "Javascript",
+      "Chrome"
+    ]
+  },
+  {
+    "name": "ReCaptcha Solver",
+    "description": "Verify Google ReCaptcha V2 automatically with solving services.",
+    "icon": "recaptcha_solver_icon.png",
+    "screenshots": [
+      "recaptcha_solver_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "captcha"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "REST API",
+    "description": "Basic rest service handling example.",
+    "icon": "rest_api_icon.png",
+    "screenshots": [
+      "rest_api_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
     "name": "Screen Capture",
     "description": "Browser screen capture example",
     "icon": "screen_capture_icon.png",
@@ -32,6 +97,24 @@
     ],
     "applications": [
       "Chrome"
+    ]
+  },
+  {
+    "name": "WhatsApp FAQ Bot",
+    "description": "Basic Whatsapp FAQ Bot example for customer support",
+    "icon": "whatsapp_faq_bot_icon.png",
+    "screenshots": [
+      "whatsapp_faq_bot_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "whatsapp",
+      "chatbot"
+    ],
+    "applications": [
+      "Javascript",
+      "Twilio"
     ]
   }
 ]
