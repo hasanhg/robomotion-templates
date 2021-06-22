@@ -1,6 +1,7 @@
 applications:
   - Chrome
-  - Excel
-  - Slack
   - Discord
-
+  - Excel
+  - Javascript
+  - Slack
+  - Twilio
