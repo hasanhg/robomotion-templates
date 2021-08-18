@@ -1,5 +1,5 @@
 - name: Stock Prices
-  description: Browser screen capture example
+  description: Stock price scraping flow using an Excel file
   slug: stock-prices
   icon: stock_prices_icon.png
   screenshots:
