@@ -106,6 +106,26 @@
     ]
   },
   {
+    "name": "Stock Prices",
+    "description": "Browser screen capture example",
+    "slug": "stock-prices",
+    "icon": "stock_prices_icon.png",
+    "screenshots": [
+      "stock_prices_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "scraping",
+      "browser",
+      "excel"
+    ],
+    "applications": [
+      "Chrome",
+      "Excel"
+    ]
+  },
+  {
     "name": "WhatsApp FAQ Bot",
     "description": "Basic Whatsapp FAQ Bot example for customer support",
     "slug": "whatsapp-faq-bot",

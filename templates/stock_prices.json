@@ -1,0 +1,2218 @@
+{
+    "nodes": [
+        {
+            "id": "60cae641-9d05-475c-af8e-ae57c1e76eaf",
+            "type": "simple",
+            "selected": true,
+            "x": 362.97776558674866,
+            "y": 264.7210593763349,
+            "extras": {
+                "inPayload": {
+                    "scope": "JS",
+                    "name": "Date.now()"
+                },
+                "outPayload": {
+                    "scope": "Message",
+                    "name": "payload"
+                },
+                "optRepeat": 1,
+                "optOnce": true,
+                "optOnceDelay": 0.1
+            },
+            "ports": [
+                {
+                    "id": "729b0595-8a18-4c84-93d5-54af1b5ba493",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_729b0595-8a18-4c84-93d5-54af1b5ba493",
+                    "parentNode": "60cae641-9d05-475c-af8e-ae57c1e76eaf",
+                    "links": [
+                        "e4f1cf78-87e1-462a-8d75-c412d166c3e1"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                }
+            ],
+            "model": {
+                "id": "60cae641-9d05-475c-af8e-ae57c1e76eaf",
+                "name": "Start",
+                "icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+                "color": "#FDD835",
+                "namespace": "Core.Trigger.Inject",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Start",
+                        "color": "#FDD835",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "inPayload": {
+                            "scope": "JS",
+                            "name": "Date.now()"
+                        }
+                    },
+                    {
+                        "outPayload": {
+                            "scope": "Message",
+                            "name": "payload"
+                        }
+                    },
+                    {
+                        "optRepeat": 1,
+                        "optOnce": true,
+                        "optOnceDelay": 0.1
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inPayload": {
+                                    "type": "object",
+                                    "title": "Payload",
+                                    "variableType": "String",
+                                    "customScope": true,
+                                    "jsScope": true,
+                                    "argsScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inPayload": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "inPayload": {
+                                "scope": "JS",
+                                "name": "Date.now()"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Output",
+                            "type": "object",
+                            "properties": {
+                                "outPayload": {
+                                    "type": "object",
+                                    "title": "Payload",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outPayload": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "outPayload": {
+                                "scope": "Message",
+                                "name": "payload"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optRepeat": {
+                                    "title": "Repeat Interval (sec)",
+                                    "type": "number"
+                                },
+                                "optOnce": {
+                                    "title": "Once",
+                                    "type": "boolean"
+                                },
+                                "optOnceDelay": {
+                                    "title": "Once Delay (sec)",
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "ui:order": [
+                                "optRepeat",
+                                "optOnceDelay",
+                                "optOnce"
+                            ]
+                        },
+                        "formData": {
+                            "optRepeat": 1,
+                            "optOnce": true,
+                            "optOnceDelay": 0.1
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 0
+            }
+        },
+        {
+            "id": "1f4522f4-599a-4c0f-8f8d-199056019261",
+            "type": "simple",
+            "selected": true,
+            "x": 696.7309644670052,
+            "y": 344.15228426395936,
+            "extras": {
+                "inPath": {
+                    "scope": "Message",
+                    "name": "excel_path"
+                },
+                "outFileDescriptor": {
+                    "scope": "Message",
+                    "name": "excel_fd"
+                },
+                "optCreate": false
+            },
+            "ports": [
+                {
+                    "id": "4212a443-769c-4f7d-a62e-de0527e6f0a2",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_4212a443-769c-4f7d-a62e-de0527e6f0a2",
+                    "parentNode": "1f4522f4-599a-4c0f-8f8d-199056019261",
+                    "links": [
+                        "2b1d6dbc-b36d-4b27-a6a6-73ce52384f10"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "233248ab-a644-46c7-b3b5-6c9f746d1e05",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "1f4522f4-599a-4c0f-8f8d-199056019261",
+                    "links": [
+                        "c4d11268-a33f-47f5-8ed7-30bb67335113"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "1f4522f4-599a-4c0f-8f8d-199056019261",
+                "name": "Open Stocks Escel",
+                "icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+                "color": "#4CAF50",
+                "namespace": "Core.Excel.Open",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Open Stocks Escel",
+                        "color": "#4CAF50",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "inPath": {
+                            "scope": "Message",
+                            "name": "excel_path"
+                        }
+                    },
+                    {
+                        "outFileDescriptor": {
+                            "scope": "Message",
+                            "name": "excel_fd"
+                        }
+                    },
+                    {
+                        "optCreate": false
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inPath": {
+                                    "type": "object",
+                                    "title": "Excel File Path",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inPath": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "inPath": {
+                                "scope": "Custom",
+                                "name": ""
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Output",
+                            "type": "object",
+                            "properties": {
+                                "outFileDescriptor": {
+                                    "type": "object",
+                                    "title": "Excel File Descriptor",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outFileDescriptor": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "outFileDescriptor": {
+                                "scope": "Message",
+                                "name": "excel_fd"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optCreate": {
+                                    "title": "Create If Not Exists",
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "uiSchema": {},
+                        "formData": {
+                            "optCreate": false
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "79521922-ebea-4a79-9249-84f7af5c9f0e",
+            "type": "simple",
+            "selected": true,
+            "x": 695,
+            "y": 427.18781725888323,
+            "extras": {
+                "inFileDescriptor": {
+                    "scope": "Message",
+                    "name": "excel_fd"
+                },
+                "inFromCell": {
+                    "scope": "Custom",
+                    "name": ""
+                },
+                "inToCell": {
+                    "scope": "Custom",
+                    "name": ""
+                },
+                "outRange": {
+                    "scope": "Message",
+                    "name": "table"
+                },
+                "optTarget": "all-range",
+                "optHeaders": true,
+                "optJsonify": true
+            },
+            "ports": [
+                {
+                    "id": "dc0d32ea-099c-439a-9374-a49658467347",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_dc0d32ea-099c-439a-9374-a49658467347",
+                    "parentNode": "79521922-ebea-4a79-9249-84f7af5c9f0e",
+                    "links": [
+                        "7aafe337-ea66-4410-ace5-ebc8f2ba25f4"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "8928e40e-410e-4ab0-9415-d184a1f0e277",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "79521922-ebea-4a79-9249-84f7af5c9f0e",
+                    "links": [
+                        "2b1d6dbc-b36d-4b27-a6a6-73ce52384f10"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "79521922-ebea-4a79-9249-84f7af5c9f0e",
+                "name": "Read All Symbols",
+                "icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+                "color": "#4CAF50",
+                "namespace": "Core.Excel.GetRange",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Read All Symbols",
+                        "color": "#4CAF50",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "inFileDescriptor": {
+                            "scope": "Message",
+                            "name": "excel_fd"
+                        },
+                        "inFromCell": {
+                            "scope": "Custom",
+                            "name": ""
+                        },
+                        "inToCell": {
+                            "scope": "Custom",
+                            "name": ""
+                        }
+                    },
+                    {
+                        "outRange": {
+                            "scope": "Message",
+                            "name": "table"
+                        }
+                    },
+                    {
+                        "optTarget": "all-range",
+                        "optHeaders": true,
+                        "optJsonify": true
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inFileDescriptor": {
+                                    "type": "object",
+                                    "title": "Excel File Descriptor",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inFromCell": {
+                                    "type": "object",
+                                    "title": "From Cell",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inToCell": {
+                                    "type": "object",
+                                    "title": "To Cell",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inFileDescriptor": {
+                                "ui:field": "variable"
+                            },
+                            "inFromCell": {
+                                "ui:field": "variable"
+                            },
+                            "inToCell": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inFileDescriptor",
+                                "inFromCell",
+                                "inToCell"
+                            ]
+                        },
+                        "formData": {
+                            "inFileDescriptor": {
+                                "scope": "Message",
+                                "name": "excel_fd"
+                            },
+                            "inFromCell": {
+                                "scope": "Custom",
+                                "name": ""
+                            },
+                            "inToCell": {
+                                "scope": "Custom",
+                                "name": ""
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Output",
+                            "type": "object",
+                            "properties": {
+                                "outRange": {
+                                    "type": "object",
+                                    "title": "Range",
+                                    "variableType": "Object",
+                                    "messageScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outRange": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "outRange"
+                            ]
+                        },
+                        "formData": {
+                            "outRange": {
+                                "scope": "Message",
+                                "name": "table"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optTarget": {
+                                    "type": "string",
+                                    "title": "Target",
+                                    "multiple": true,
+                                    "enum": [
+                                        "specific-range",
+                                        "all-range"
+                                    ],
+                                    "enumNames": [
+                                        "Specific Range",
+                                        "All Range"
+                                    ]
+                                },
+                                "optHeaders": {
+                                    "title": "Headers",
+                                    "type": "boolean"
+                                },
+                                "optJsonify": {
+                                    "title": "Jsonify",
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "ui:order": [
+                                "optTarget",
+                                "optHeaders",
+                                "optJsonify"
+                            ]
+                        },
+                        "formData": {
+                            "optTarget": "all-range"
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "f48a51a5-e7d5-4efa-b144-89732b30f4b8",
+            "type": "simple",
+            "selected": true,
+            "x": 698.730964467005,
+            "y": 582.1056383991396,
+            "extras": {
+                "outBrowserId": {
+                    "scope": "Message",
+                    "name": "browser_id"
+                },
+                "optBrowser": "chrome",
+                "optMaximized": true,
+                "optProxy": "no-proxy",
+                "optProxyAuth": "no-authentication",
+                "optProxyAddr": {
+                    "scope": "Custom",
+                    "name": ""
+                },
+                "optProxyCredentials": {
+                    "vaultId": "_",
+                    "itemId": "_"
+                }
+            },
+            "ports": [
+                {
+                    "id": "c02a028b-03df-4da6-8788-cb2c3c38a388",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_c02a028b-03df-4da6-8788-cb2c3c38a388",
+                    "parentNode": "f48a51a5-e7d5-4efa-b144-89732b30f4b8",
+                    "links": [
+                        "93e08ede-978b-48fb-86a7-9350c7b46a77"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "1e7d12f5-17fb-4e19-bd3a-c77a76959b93",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "f48a51a5-e7d5-4efa-b144-89732b30f4b8",
+                    "links": [
+                        "9acb0b72-9ba4-46ab-a307-775c82943f4a"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "f48a51a5-e7d5-4efa-b144-89732b30f4b8",
+                "name": "Open Browser",
+                "icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+                "color": "#c9d9ff",
+                "namespace": "Core.Browser.Open",
+                "version": "1.11.6",
+                "abc": [
+                    {},
+                    {
+                        "outBrowserId": {
+                            "scope": "Message",
+                            "name": "browser_id"
+                        }
+                    },
+                    {
+                        "optBrowser": "chrome",
+                        "optMaximized": true,
+                        "optProxy": "no-proxy",
+                        "optProxyAuth": "no-authentication",
+                        "optProxyAddr": {
+                            "scope": "Custom",
+                            "name": ""
+                        },
+                        "optProxyCredentials": {
+                            "vaultId": "_",
+                            "itemId": "_"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Output",
+                            "type": "object",
+                            "properties": {
+                                "outBrowserId": {
+                                    "type": "object",
+                                    "title": "Browser Id",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outBrowserId": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "outBrowserId": {
+                                "scope": "Message",
+                                "name": "browser_id"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optBrowser": {
+                                    "type": "string",
+                                    "title": "Browser",
+                                    "enum": [
+                                        "chrome",
+                                        "firefox",
+                                        "edge",
+                                        "safari",
+                                        "headlesschrome"
+                                    ],
+                                    "enumNames": [
+                                        "Chrome",
+                                        "Firefox",
+                                        "Edge",
+                                        "Safari",
+                                        "Headless Chrome"
+                                    ]
+                                },
+                                "optMaximized": {
+                                    "title": "Maximized",
+                                    "type": "boolean"
+                                },
+                                "optProxy": {
+                                    "title": "Proxy Settings",
+                                    "type": "string",
+                                    "enum": [
+                                        "no-proxy",
+                                        "manual-proxy"
+                                    ],
+                                    "enumNames": [
+                                        "No Proxy",
+                                        "Manual Proxy"
+                                    ]
+                                },
+                                "optProxyAddr": {
+                                    "type": "object",
+                                    "title": "Proxy Address",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "optProxyAuth": {
+                                    "title": "Proxy Authentication",
+                                    "type": "string",
+                                    "enum": [
+                                        "no-authentication",
+                                        "basic-authentication"
+                                    ],
+                                    "enumNames": [
+                                        "No Authentication",
+                                        "Basic Authentication"
+                                    ]
+                                },
+                                "optProxyCredentials": {
+                                    "type": "object",
+                                    "title": "Proxy Credentials",
+                                    "subtitle": "",
+                                    "category": 1,
+                                    "properties": {
+                                        "vaultId": {
+                                            "type": "string"
+                                        },
+                                        "itemId": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "ui:order": [
+                                "optBrowser",
+                                "optMaximized",
+                                "optProxy",
+                                "optProxyAddr",
+                                "optProxyAuth",
+                                "optProxyCredentials"
+                            ],
+                            "optProxyCredentials": {
+                                "ui:field": "credentials"
+                            },
+                            "optProxyAddr": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "optBrowser": "chrome",
+                            "optMaximized": true,
+                            "optProxy": "no-proxy",
+                            "optProxyAuth": "no-authentication",
+                            "optProxyAddr": {
+                                "scope": "Custom",
+                                "name": ""
+                            },
+                            "optProxyCredentials": {
+                                "vaultId": "_",
+                                "itemId": "_"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "cb01251f-4c4f-4bbc-85e2-2ee6bf29dab7",
+            "type": "simple",
+            "selected": true,
+            "x": 695,
+            "y": 651.1056383991396,
+            "extras": {
+                "optInput": {
+                    "scope": "Message",
+                    "name": "table.rows"
+                },
+                "optOutput": {
+                    "scope": "Message",
+                    "name": "stock"
+                }
+            },
+            "ports": [
+                {
+                    "id": "bc140fa6-42dd-4105-8f4f-5f9dc7a0be15",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_bc140fa6-42dd-4105-8f4f-5f9dc7a0be15",
+                    "parentNode": "cb01251f-4c4f-4bbc-85e2-2ee6bf29dab7",
+                    "links": [
+                        "50925257-d314-4f67-9eef-cf5ca757d1fd"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "c9f08251-cd06-4bf4-b00b-57d84a13ca6f",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_c9f08251-cd06-4bf4-b00b-57d84a13ca6f",
+                    "parentNode": "cb01251f-4c4f-4bbc-85e2-2ee6bf29dab7",
+                    "links": [
+                        "5682046e-5220-4a92-9784-5815dc6c7fe4"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "e2276052-8156-4228-95c6-e703da50da2a",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "cb01251f-4c4f-4bbc-85e2-2ee6bf29dab7",
+                    "links": [
+                        "93e08ede-978b-48fb-86a7-9350c7b46a77",
+                        "357f50fa-02e2-4ab1-be72-5d180b4b8580"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "cb01251f-4c4f-4bbc-85e2-2ee6bf29dab7",
+                "name": "For Each Symbol",
+                "icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
+                "color": "#b9aeec",
+                "namespace": "Core.Programming.ForEach",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "For Each Symbol",
+                        "color": "#b9aeec",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "optInput": {
+                            "scope": "Message",
+                            "name": "table.rows"
+                        },
+                        "optOutput": {
+                            "scope": "Message",
+                            "name": "stock"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optInput": {
+                                    "type": "object",
+                                    "title": "Loop through object",
+                                    "variableType": "Array",
+                                    "messageScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "optOutput": {
+                                    "type": "object",
+                                    "title": "Current Item",
+                                    "variableType": "string",
+                                    "messageScope": true,
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "optInput": {
+                                "ui:field": "variable"
+                            },
+                            "optOutput": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "optInput": {
+                                "scope": "Message",
+                                "name": ""
+                            },
+                            "optOutput": {
+                                "scope": "Message",
+                                "name": ""
+                            }
+                        }
+                    }
+                ],
+                "outputs": 2,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "bb4f5c16-4d14-453b-8e91-d0625940eb25",
+            "type": "simple",
+            "selected": true,
+            "x": 1251,
+            "y": 791.1056383991396,
+            "extras": {
+                "outResult": {
+                    "scope": "Message",
+                    "name": "error"
+                }
+            },
+            "ports": [
+                {
+                    "id": "f3acb85f-42ae-4eb3-a793-70686fac60ba",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "bb4f5c16-4d14-453b-8e91-d0625940eb25",
+                    "links": [
+                        "afbf2a6f-465c-42c6-945f-e1a618f655bc"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "bb4f5c16-4d14-453b-8e91-d0625940eb25",
+                "name": "Stop",
+                "icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+                "color": "#fb2727",
+                "namespace": "Core.Flow.Stop",
+                "version": "1.11.6",
+                "abc": [
+                    {},
+                    {
+                        "outResult": {
+                            "scope": "Message",
+                            "name": "error"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Output",
+                            "type": "object",
+                            "properties": {
+                                "outResult": {
+                                    "type": "object",
+                                    "title": "Error",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "ui:order": [
+                                "outResult"
+                            ],
+                            "outResult": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "outResult": {
+                                "scope": "Message",
+                                "name": "error"
+                            }
+                        }
+                    }
+                ],
+                "outputs": 0,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "c3f0515c-44c5-4b99-adc7-fb8af296a359",
+            "type": "simple",
+            "selected": true,
+            "x": 974,
+            "y": 649.1056383991396,
+            "extras": {
+                "outputs": 1,
+                "subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7347423e-74ee-45d1-ae44-6f3ce814303d/subflows/c3f0515c-44c5-4b99-adc7-fb8af296a359.flow"
+            },
+            "ports": [
+                {
+                    "id": "f2b6fa9c-f393-4927-a4a0-2223fd373827",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_f2b6fa9c-f393-4927-a4a0-2223fd373827",
+                    "parentNode": "c3f0515c-44c5-4b99-adc7-fb8af296a359",
+                    "links": [
+                        "c2465c0a-d052-4d34-837d-0cefea5faca7"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "4f260504-93a6-40d5-a3f4-2bc5544e18c5",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "c3f0515c-44c5-4b99-adc7-fb8af296a359",
+                    "links": [
+                        "50925257-d314-4f67-9eef-cf5ca757d1fd"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "c3f0515c-44c5-4b99-adc7-fb8af296a359",
+                "name": "Get Stock Price",
+                "icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+                "color": "#646bf5",
+                "namespace": "Core.Flow.SubFlow",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Get Stock Price",
+                        "color": "#646bf5",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "outputs": 1,
+                        "subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7347423e-74ee-45d1-ae44-6f3ce814303d/subflows/c3f0515c-44c5-4b99-adc7-fb8af296a359.flow"
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "outputs": {
+                                    "title": "Outputs",
+                                    "type": "number",
+                                    "minimum": 1,
+                                    "maximum": 32
+                                },
+                                "subflow": {
+                                    "type": "string",
+                                    "properties": {}
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "subflow": {
+                                "ui:widget": "hidden"
+                            },
+                            "outputs": {
+                                "ui:widget": "updown"
+                            },
+                            "ui:order": [
+                                "outputs",
+                                "*"
+                            ]
+                        },
+                        "formData": {
+                            "outputs": 1,
+                            "subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7347423e-74ee-45d1-ae44-6f3ce814303d/subflows/c3f0515c-44c5-4b99-adc7-fb8af296a359.flow"
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "d8d73e4f-a184-4795-acaf-13e0f2bda5e7",
+            "type": "simple",
+            "selected": true,
+            "x": 1506,
+            "y": 709.2513762543183,
+            "extras": {
+                "optNodes": {
+                    "all": false,
+                    "ids": [
+                        "0d030358-1a2e-425b-b012-635beace36ad"
+                    ]
+                }
+            },
+            "ports": [
+                {
+                    "id": "61bbf280-194a-46b0-8bc6-204a81209186",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "d8d73e4f-a184-4795-acaf-13e0f2bda5e7",
+                    "links": [
+                        "65dfabda-466c-4b19-a3c3-83c38425d2cb"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "d8d73e4f-a184-4795-acaf-13e0f2bda5e7",
+                "name": "Go To Next Symbol",
+                "icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+                "color": "#444",
+                "namespace": "Core.Flow.GoTo",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Go To Next Symbol",
+                        "color": "#444",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "optNodes": {
+                            "all": false,
+                            "ids": [
+                                "0d030358-1a2e-425b-b012-635beace36ad"
+                            ]
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "inputs": 1,
+                            "outputs": 1,
+                            "properties": {
+                                "optNodes": {
+                                    "type": "object",
+                                    "title": "",
+                                    "properties": {
+                                        "ids": {
+                                            "title": "",
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "all": {
+                                            "title": "All",
+                                            "type": "boolean"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "optNodes": {
+                                "ui:field": "catch"
+                            },
+                            "ui:order": [
+                                "optNodes"
+                            ]
+                        },
+                        "formData": {
+                            "optNodes": {
+                                "ids": [],
+                                "type": "goto",
+                                "all": false
+                            }
+                        }
+                    }
+                ],
+                "outputs": 0,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "0d030358-1a2e-425b-b012-635beace36ad",
+            "type": "simple",
+            "selected": true,
+            "x": 370.73604060913704,
+            "y": 654.1056383991397,
+            "extras": {},
+            "ports": [
+                {
+                    "id": "6927abf7-fc23-44b8-8726-1aa3ede31879",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_6927abf7-fc23-44b8-8726-1aa3ede31879",
+                    "parentNode": "0d030358-1a2e-425b-b012-635beace36ad",
+                    "links": [
+                        "357f50fa-02e2-4ab1-be72-5d180b4b8580"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                }
+            ],
+            "model": {
+                "id": "0d030358-1a2e-425b-b012-635beace36ad",
+                "name": "Next Symbol",
+                "icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+                "color": "#444",
+                "namespace": "Core.Flow.Label",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Next Symbol",
+                        "color": "#444",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    }
+                ],
+                "xyz": [],
+                "outputs": 1,
+                "inputs": 0
+            }
+        },
+        {
+            "id": "4611a2af-7adf-4ebb-9214-5a9ea60bd565",
+            "type": "simple",
+            "selected": true,
+            "x": 697.0290381318484,
+            "y": 267.360557319656,
+            "extras": {
+                "outputs": 1,
+                "func": "// This is for Linux\nmsg.excel_path = \"/home/jane/stocks.xlsx\";\n\n// This is for Mac\n// msg.excel_path = \"/Users/jane/stocks.xlsx\";\n\n// This is for Windows\n// msg.excel_path = \"C:\\\\Users\\jane\\\\stocks.xlsx\";\n\nreturn msg;\n",
+                "optTimeout": 30,
+                "variables": []
+            },
+            "ports": [
+                {
+                    "id": "adee525c-1d0f-4446-8a9e-737ba07f5262",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_adee525c-1d0f-4446-8a9e-737ba07f5262",
+                    "parentNode": "4611a2af-7adf-4ebb-9214-5a9ea60bd565",
+                    "links": [
+                        "c4d11268-a33f-47f5-8ed7-30bb67335113"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "f3c24f35-6b13-4b7e-8d49-43ab6f70457d",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "4611a2af-7adf-4ebb-9214-5a9ea60bd565",
+                    "links": [
+                        "e4f1cf78-87e1-462a-8d75-c412d166c3e1"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "4611a2af-7adf-4ebb-9214-5a9ea60bd565",
+                "name": "Config",
+                "icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+                "color": "#F27925",
+                "editor": "javascript",
+                "namespace": "Core.Programming.Function",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Config",
+                        "color": "#F27925",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "outputs": 1,
+                        "func": "// This is for Linux\nmsg.excel_path = \"/home/jane/stocks.xlsx\";\n\n// This is for Mac\n// msg.excel_path = \"/Users/jane/stocks.xlsx\";\n\n// This is for Windows\n// msg.excel_path = \"C:\\\\Users\\jane\\\\stocks.xlsx\";\n\nreturn msg;\n",
+                        "optTimeout": 30
+                    },
+                    {
+                        "variables": []
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "func": {
+                                    "title": "Function",
+                                    "type": "string"
+                                },
+                                "outputs": {
+                                    "title": "Outputs",
+                                    "type": "number",
+                                    "minimum": 1,
+                                    "maximum": 32
+                                },
+                                "optTimeout": {
+                                    "title": "Script Timeout",
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outputs": {
+                                "ui:widget": "updown"
+                            },
+                            "func": {
+                                "ui:widget": "hidden",
+                                "ui:options": {
+                                    "rows": 6
+                                }
+                            }
+                        },
+                        "formData": {
+                            "outputs": 1,
+                            "func": "// This is for Linux\nmsg.excel_path = \"/home/jane/stocks.xlsx\";\n\n// This is for Mac\n// msg.excel_path = \"/Users/jane/stocks.xlsx\";\n\n// This is for Windows\n// msg.excel_path = \"C:\\\\Users\\jane\\\\stocks.xlsx\";\n\nreturn msg;\n",
+                            "optTimeout": 30
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Local Variables",
+                            "type": "object",
+                            "properties": {
+                                "variables": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "variableType": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "variables": {
+                                "ui:field": "localVariable"
+                            }
+                        },
+                        "formData": {
+                            "variables": []
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "52d8009e-9942-4eee-9c73-fc64e2698aa5",
+            "type": "simple",
+            "selected": true,
+            "x": 696.0234589290693,
+            "y": 504.8691494654048,
+            "extras": {
+                "inFileDescriptor": {
+                    "scope": "Message",
+                    "name": "excel_fd"
+                },
+                "inCell": {
+                    "scope": "Custom",
+                    "name": "B2"
+                },
+                "optTarget": "specific"
+            },
+            "ports": [
+                {
+                    "id": "46f77108-4048-4033-9e6f-a09e1b0aeb92",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_46f77108-4048-4033-9e6f-a09e1b0aeb92",
+                    "parentNode": "52d8009e-9942-4eee-9c73-fc64e2698aa5",
+                    "links": [
+                        "9acb0b72-9ba4-46ab-a307-775c82943f4a"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "852fd5eb-b2e0-4955-b5c0-8ed48c86f325",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "52d8009e-9942-4eee-9c73-fc64e2698aa5",
+                    "links": [
+                        "7aafe337-ea66-4410-ace5-ebc8f2ba25f4"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "52d8009e-9942-4eee-9c73-fc64e2698aa5",
+                "name": "Set Active Cell",
+                "icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+                "color": "#4CAF50",
+                "namespace": "Core.Excel.SetActiveCell",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Set Active Cell",
+                        "version": "1.11.6",
+                        "color": "#4CAF50",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false
+                    },
+                    {
+                        "inFileDescriptor": {
+                            "scope": "Message",
+                            "name": "excel_fd"
+                        },
+                        "inCell": {
+                            "scope": "Custom",
+                            "name": "B2"
+                        }
+                    },
+                    {
+                        "optTarget": "specific"
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inFileDescriptor": {
+                                    "type": "object",
+                                    "title": "Excel File Descriptor",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inCell": {
+                                    "type": "object",
+                                    "title": "Cell",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inFileDescriptor": {
+                                "ui:field": "variable"
+                            },
+                            "inCell": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inFileDescriptor",
+                                "inCell"
+                            ]
+                        },
+                        "formData": {
+                            "inFileDescriptor": {
+                                "scope": "Message",
+                                "name": "excel_fd"
+                            },
+                            "inCell": {
+                                "scope": "Custom",
+                                "name": ""
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optTarget": {
+                                    "type": "string",
+                                    "title": "Target",
+                                    "multiple": true,
+                                    "enum": [
+                                        "specific",
+                                        "up",
+                                        "down",
+                                        "next",
+                                        "previous",
+                                        "rowEnd",
+                                        "rowBegin",
+                                        "nextRow"
+                                    ],
+                                    "enumNames": [
+                                        "Specific Cell",
+                                        "Above Cell",
+                                        "Below Cell",
+                                        "Next Cell",
+                                        "Previous Cell",
+                                        "End of the Row",
+                                        "Begin of the Row",
+                                        "Next Row"
+                                    ]
+                                }
+                            }
+                        },
+                        "uiSchema": {},
+                        "formData": {
+                            "optTarget": "next"
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "42d9ed1f-fd3c-49b8-b67a-86771ef2e2a3",
+            "type": "simple",
+            "selected": true,
+            "x": 1240.6334680722168,
+            "y": 650.9890697558878,
+            "extras": {
+                "inFileDescriptor": {
+                    "scope": "Message",
+                    "name": "excel_fd"
+                },
+                "inCell": {
+                    "scope": "Custom",
+                    "name": ""
+                },
+                "inValue": {
+                    "scope": "Message",
+                    "name": "value"
+                },
+                "optTarget": "active-cell",
+                "optFormat": "number"
+            },
+            "ports": [
+                {
+                    "id": "87055ebe-2ba8-43dc-9f07-41cda3e779ce",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_87055ebe-2ba8-43dc-9f07-41cda3e779ce",
+                    "parentNode": "42d9ed1f-fd3c-49b8-b67a-86771ef2e2a3",
+                    "links": [
+                        "bc4956eb-c21b-4046-92ed-37e161f37245"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "218f1a71-93dc-42f1-aa89-44ac56ed8938",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "42d9ed1f-fd3c-49b8-b67a-86771ef2e2a3",
+                    "links": [
+                        "c2465c0a-d052-4d34-837d-0cefea5faca7"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "42d9ed1f-fd3c-49b8-b67a-86771ef2e2a3",
+                "name": "Write Stock Price",
+                "icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+                "color": "#4CAF50",
+                "namespace": "Core.Excel.SetCellValue",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Write Stock Price",
+                        "color": "#4CAF50",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "inFileDescriptor": {
+                            "scope": "Message",
+                            "name": "excel_fd"
+                        },
+                        "inCell": {
+                            "scope": "Custom",
+                            "name": ""
+                        },
+                        "inValue": {
+                            "scope": "Message",
+                            "name": "value"
+                        }
+                    },
+                    {
+                        "optTarget": "active-cell",
+                        "optFormat": "number"
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inFileDescriptor": {
+                                    "type": "object",
+                                    "title": "Excel File Descriptor",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inCell": {
+                                    "type": "object",
+                                    "title": "Cell",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inValue": {
+                                    "type": "object",
+                                    "title": "Value",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inFileDescriptor": {
+                                "ui:field": "variable"
+                            },
+                            "inCell": {
+                                "ui:field": "variable"
+                            },
+                            "inValue": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inFileDescriptor",
+                                "inCell",
+                                "inValue"
+                            ]
+                        },
+                        "formData": {
+                            "inFileDescriptor": {
+                                "scope": "Message",
+                                "name": "excel_fd"
+                            },
+                            "inCell": {
+                                "scope": "Custom",
+                                "name": ""
+                            },
+                            "inValue": {
+                                "scope": "Custom",
+                                "name": ""
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optTarget": {
+                                    "type": "string",
+                                    "title": "Target",
+                                    "multiple": true,
+                                    "enum": [
+                                        "active-cell",
+                                        "specific-cell"
+                                    ],
+                                    "enumNames": [
+                                        "Active Cell",
+                                        "Specific Cell"
+                                    ]
+                                },
+                                "optFormat": {
+                                    "type": "string",
+                                    "title": "Format",
+                                    "enum": [
+                                        "string",
+                                        "number",
+                                        "datetime",
+                                        "bool"
+                                    ],
+                                    "enumNames": [
+                                        "String",
+                                        "Number",
+                                        "DateTime",
+                                        "Boolean"
+                                    ]
+                                }
+                            }
+                        },
+                        "uiSchema": {},
+                        "formData": {
+                            "optTarget": "specific-cell",
+                            "optFormat": "string"
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "dc17b68e-9df5-4e47-b269-89db34a63261",
+            "type": "simple",
+            "selected": true,
+            "x": 1246.487730217038,
+            "y": 706.9890697558878,
+            "extras": {
+                "inFileDescriptor": {
+                    "scope": "Message",
+                    "name": "excel_fd"
+                },
+                "inCell": {
+                    "scope": "Custom",
+                    "name": ""
+                },
+                "optTarget": "down"
+            },
+            "ports": [
+                {
+                    "id": "817fa4ca-c89f-4132-8f51-e11ee0517e23",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_817fa4ca-c89f-4132-8f51-e11ee0517e23",
+                    "parentNode": "dc17b68e-9df5-4e47-b269-89db34a63261",
+                    "links": [
+                        "65dfabda-466c-4b19-a3c3-83c38425d2cb"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "de3465ca-abd1-4dbf-9317-18628b9b3126",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "dc17b68e-9df5-4e47-b269-89db34a63261",
+                    "links": [
+                        "bc4956eb-c21b-4046-92ed-37e161f37245"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "dc17b68e-9df5-4e47-b269-89db34a63261",
+                "name": "Set Active Cell",
+                "icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+                "color": "#4CAF50",
+                "namespace": "Core.Excel.SetActiveCell",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Set Active Cell",
+                        "version": "1.11.6",
+                        "color": "#4CAF50",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": false
+                    },
+                    {
+                        "inFileDescriptor": {
+                            "scope": "Message",
+                            "name": "excel_fd"
+                        },
+                        "inCell": {
+                            "scope": "Custom",
+                            "name": ""
+                        }
+                    },
+                    {
+                        "optTarget": "down"
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inFileDescriptor": {
+                                    "type": "object",
+                                    "title": "Excel File Descriptor",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inCell": {
+                                    "type": "object",
+                                    "title": "Cell",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inFileDescriptor": {
+                                "ui:field": "variable"
+                            },
+                            "inCell": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inFileDescriptor",
+                                "inCell"
+                            ]
+                        },
+                        "formData": {
+                            "inFileDescriptor": {
+                                "scope": "Message",
+                                "name": "excel_fd"
+                            },
+                            "inCell": {
+                                "scope": "Custom",
+                                "name": ""
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optTarget": {
+                                    "type": "string",
+                                    "title": "Target",
+                                    "multiple": true,
+                                    "enum": [
+                                        "specific",
+                                        "up",
+                                        "down",
+                                        "next",
+                                        "previous",
+                                        "rowEnd",
+                                        "rowBegin",
+                                        "nextRow"
+                                    ],
+                                    "enumNames": [
+                                        "Specific Cell",
+                                        "Above Cell",
+                                        "Below Cell",
+                                        "Next Cell",
+                                        "Previous Cell",
+                                        "End of the Row",
+                                        "Begin of the Row",
+                                        "Next Row"
+                                    ]
+                                }
+                            }
+                        },
+                        "uiSchema": {},
+                        "formData": {
+                            "optTarget": "next"
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "a103eaf5-92a6-4cf3-b1e2-5160945b4dd6",
+            "type": "simple",
+            "selected": true,
+            "x": 975.6334680722167,
+            "y": 788.9890697558878,
+            "extras": {
+                "inFileDescriptor": {
+                    "scope": "Message",
+                    "name": "excel_fd"
+                },
+                "inSaveFilePath": {
+                    "scope": "Custom",
+                    "name": ""
+                }
+            },
+            "ports": [
+                {
+                    "id": "d848f9b3-aec5-4a26-8dfc-66d0d9bfe3a4",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_d848f9b3-aec5-4a26-8dfc-66d0d9bfe3a4",
+                    "parentNode": "a103eaf5-92a6-4cf3-b1e2-5160945b4dd6",
+                    "links": [
+                        "afbf2a6f-465c-42c6-945f-e1a618f655bc"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "b5b6f3b4-73b3-4282-9980-73be22748c58",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "a103eaf5-92a6-4cf3-b1e2-5160945b4dd6",
+                    "links": [
+                        "5682046e-5220-4a92-9784-5815dc6c7fe4"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "a103eaf5-92a6-4cf3-b1e2-5160945b4dd6",
+                "name": "Save Excel",
+                "icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+                "color": "#4CAF50",
+                "namespace": "Core.Excel.Save",
+                "version": "1.11.6",
+                "abc": [
+                    {},
+                    {
+                        "inFileDescriptor": {
+                            "scope": "Message",
+                            "name": "excel_fd"
+                        },
+                        "inSaveFilePath": {
+                            "scope": "Custom",
+                            "name": ""
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inFileDescriptor": {
+                                    "type": "object",
+                                    "title": "Excel File Descriptor",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inSaveFilePath": {
+                                    "type": "object",
+                                    "title": "Save File Path",
+                                    "variableType": "String",
+                                    "customScope": true,
+                                    "messageScope": true,
+                                    "jsScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inFileDescriptor": {
+                                "ui:field": "variable"
+                            },
+                            "inSaveFilePath": {
+                                "ui:field": "variable"
+                            }
+                        },
+                        "formData": {
+                            "inFileDescriptor": {
+                                "scope": "Message",
+                                "name": "excel_fd"
+                            },
+                            "inSaveFilePath": {
+                                "scope": "Custom",
+                                "name": ""
+                            }
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "bf6079b5-b619-4d19-aa0e-a496bb3d05c1",
+            "type": "simple",
+            "selected": true,
+            "x": 1093.6995242449336,
+            "y": 263.66021695118593,
+            "extras": {
+                "optText": "#### Web Automation How-To\n \n This template uses Excel and Browser nodes to update stock prices in an Excel file.\n \n 1. Download the excel file \n \n 2. Edit Config node and set the right path for the excel"
+            },
+            "ports": [],
+            "model": {
+                "id": "bf6079b5-b619-4d19-aa0e-a496bb3d05c1",
+                "name": "Comment",
+                "icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+                "color": "#FBE364",
+                "namespace": "Core.Flow.Comment",
+                "version": "1.11.6",
+                "abc": [
+                    {},
+                    {
+                        "optText": "#### Web Automation How-To\n \n This template uses Excel and Browser nodes to update stock prices in an Excel file.\n \n 1. Download the excel file \n \n 2. Edit Config node and set the right path for the excel"
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "comment": {
+                                    "title": "Comment",
+                                    "type": "string"
+                                },
+                                "optText": {
+                                    "title": "Text",
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "optText": {
+                                "ui:description": "Comment",
+                                "ui:widget": "hidden",
+                                "ui:options": {
+                                    "rows": 8
+                                }
+                            },
+                            "comment": {
+                                "ui:widget": "hidden",
+                                "ui:options": {
+                                    "rows": 6
+                                }
+                            }
+                        },
+                        "formData": {
+                            "optText": "#### Web Automation How-To\n \n This template uses Excel and Browser nodes to update stock prices in an Excel file.\n \n 1. Download the excel file \n \n 2. Edit Config node and set the right path for the excel"
+                        }
+                    }
+                ],
+                "outputs": 0,
+                "inputs": 0
+            }
+        }
+    ],
+    "subFlows": [
+        {
+            "id": "c3f0515c-44c5-4b99-adc7-fb8af296a359",
+            "flow": "{\"id\":\"c3f0515c-44c5-4b99-adc7-fb8af296a359\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"737ea4d0-0bfc-43e8-8339-b0635b6ddc14\",\"type\":\"default\",\"selected\":false,\"source\":\"0aa44574-60ad-48e8-b2b6-9e0aef8ca350\",\"sourcePort\":\"5e57ea0f-8276-4cf6-a852-6c9993189903\",\"target\":\"1442335a-6c02-4020-b69e-1b180afc8395\",\"targetPort\":\"2d4750e1-f4a0-4c04-b0c1-5df21a3e47d1\",\"points\":[{\"id\":\"7bc8ad52-9521-4451-9abb-a2529868dbf3\",\"selected\":false,\"x\":808,\"y\":204},{\"id\":\"6e3af8d8-3691-43b3-bd12-d3c7f7e4f0c7\",\"selected\":false,\"x\":875,\"y\":204}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0dcdd298-858b-454d-a3f8-636d02a67833\",\"type\":\"default\",\"selected\":false,\"source\":\"1442335a-6c02-4020-b69e-1b180afc8395\",\"sourcePort\":\"04d3d801-c5e3-42b2-8cec-89c63add31f5\",\"target\":\"3c902a8e-93fc-4900-967c-8b73ab816f27\",\"targetPort\":\"27f3f07a-96eb-4638-8b1d-8dc92da61d2e\",\"points\":[{\"id\":\"e5da4b61-61c4-4e9d-bd1a-e043c232eb7f\",\"selected\":false,\"x\":1077,\"y\":206},{\"id\":\"a140f14b-07d0-41fb-8572-15fb749d010a\",\"selected\":false,\"x\":875,\"y\":275}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"1488b68b-acab-4017-992a-dd26c6cbc2df\",\"type\":\"default\",\"selected\":false,\"source\":\"3c902a8e-93fc-4900-967c-8b73ab816f27\",\"sourcePort\":\"43dfe77b-0bc5-4b74-abf1-cbcdcdf5f038\",\"target\":\"f7c7931f-08a0-4633-9a81-6cbe3e4b867e\",\"targetPort\":\"4c064f11-419d-468d-a398-caef85452968\",\"points\":[{\"id\":\"f0b03ab6-92ad-4bcd-8ef2-5e671546e9d9\",\"selected\":false,\"x\":1077,\"y\":277},{\"id\":\"80a82499-3039-4a13-9136-b4934b0260cf\",\"selected\":false,\"x\":881,\"y\":348}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"aa7a4c20-47a8-4c24-bcb0-b384def5ba02\",\"type\":\"default\",\"selected\":false,\"source\":\"f7c7931f-08a0-4633-9a81-6cbe3e4b867e\",\"sourcePort\":\"84b9abff-b902-4bf8-b159-bf556f9a105b\",\"target\":\"4a4e1c26-97ab-43be-8487-7ea7a3138ddd\",\"targetPort\":\"a811eda8-c043-49ac-9dbd-d767ac9c9af6\",\"points\":[{\"id\":\"0818cc1c-65c6-4c08-b0df-3114982d6549\",\"selected\":false,\"x\":1083,\"y\":350},{\"id\":\"87955ace-58bc-46c9-a0a0-00e842727ea6\",\"selected\":false,\"x\":1158,\"y\":350}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"0aa44574-60ad-48e8-b2b6-9e0aef8ca350\",\"type\":\"simple\",\"selected\":false,\"x\":607,\"y\":179,\"extras\":{},\"ports\":[{\"id\":\"5e57ea0f-8276-4cf6-a852-6c9993189903\",\"type\":\"default\",\"selected\":false,\"name\":\"out_5e57ea0f-8276-4cf6-a852-6c9993189903\",\"parentNode\":\"0aa44574-60ad-48e8-b2b6-9e0aef8ca350\",\"links\":[\"737ea4d0-0bfc-43e8-8339-b0635b6ddc14\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"0aa44574-60ad-48e8-b2b6-9e0aef8ca350\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"4a4e1c26-97ab-43be-8487-7ea7a3138ddd\",\"type\":\"simple\",\"selected\":false,\"x\":1151,\"y\":327,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"a811eda8-c043-49ac-9dbd-d767ac9c9af6\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"4a4e1c26-97ab-43be-8487-7ea7a3138ddd\",\"links\":[\"aa7a4c20-47a8-4c24-bcb0-b384def5ba02\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"4a4e1c26-97ab-43be-8487-7ea7a3138ddd\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"1442335a-6c02-4020-b69e-1b180afc8395\",\"type\":\"simple\",\"selected\":false,\"x\":868,\"y\":181,\"extras\":{\"outputs\":1,\"func\":\"var q = msg.stock.symbol + \\\"+stock+price\\\";\\nmsg.link = \\\"https://www.google.com/search?q=\\\" + q;\\nreturn msg;\\n\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"04d3d801-c5e3-42b2-8cec-89c63add31f5\",\"type\":\"default\",\"selected\":false,\"name\":\"out_04d3d801-c5e3-42b2-8cec-89c63add31f5\",\"parentNode\":\"1442335a-6c02-4020-b69e-1b180afc8395\",\"links\":[\"0dcdd298-858b-454d-a3f8-636d02a67833\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"2d4750e1-f4a0-4c04-b0c1-5df21a3e47d1\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"1442335a-6c02-4020-b69e-1b180afc8395\",\"links\":[\"737ea4d0-0bfc-43e8-8339-b0635b6ddc14\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"1442335a-6c02-4020-b69e-1b180afc8395\",\"name\":\"Create Link\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create Link\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"var q = msg.stock.symbol + \\\"+stock+price\\\";\\nmsg.link = \\\"https://www.google.com/search?q=\\\" + q;\\nreturn msg;\\n\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"var q = msg.stock.symbol + \\\"+stock+price\\\";\\nmsg.link = \\\"https://www.google.com/search?q=\\\" + q;\\nreturn msg;\\n\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"3c902a8e-93fc-4900-967c-8b73ab816f27\",\"type\":\"simple\",\"selected\":false,\"x\":868,\"y\":252,\"extras\":{\"inBrowserId\":{\"scope\":\"Message\",\"name\":\"browser_id\"},\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inUrl\":{\"scope\":\"Message\",\"name\":\"link\"},\"outPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"optSameTab\":true,\"optTimeout\":30},\"ports\":[{\"id\":\"43dfe77b-0bc5-4b74-abf1-cbcdcdf5f038\",\"type\":\"default\",\"selected\":false,\"name\":\"out_43dfe77b-0bc5-4b74-abf1-cbcdcdf5f038\",\"parentNode\":\"3c902a8e-93fc-4900-967c-8b73ab816f27\",\"links\":[\"1488b68b-acab-4017-992a-dd26c6cbc2df\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"27f3f07a-96eb-4638-8b1d-8dc92da61d2e\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3c902a8e-93fc-4900-967c-8b73ab816f27\",\"links\":[\"0dcdd298-858b-454d-a3f8-636d02a67833\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3c902a8e-93fc-4900-967c-8b73ab816f27\",\"name\":\"Go to Link\",\"icon\":\"M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.OpenLink\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go to Link\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inBrowserId\":{\"scope\":\"Message\",\"name\":\"browser_id\"},\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inUrl\":{\"scope\":\"Message\",\"name\":\"link\"}},{\"outPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"}},{\"optSameTab\":true,\"optTimeout\":30}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inBrowserId\":{\"type\":\"object\",\"title\":\"Browser\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inPageId\":{\"type\":\"object\",\"title\":\"Page Id\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inUrl\":{\"type\":\"object\",\"title\":\"URL\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inBrowserId\":{\"ui:field\":\"variable\"},\"inPageId\":{\"ui:field\":\"variable\"},\"inUrl\":{\"ui:field\":\"variable\"}},\"formData\":{\"inBrowserId\":{\"scope\":\"Message\",\"name\":\"browser_id\"},\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inUrl\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPageId\":{\"type\":\"object\",\"title\":\"Page Id\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPageId\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSameTab\":{\"title\":\"Open in the Same Tab\",\"type\":\"boolean\"},\"optTimeout\":{\"title\":\"Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"ui:order\":[\"optTimeout\",\"optSameTab\"]},\"formData\":{\"optTimeout\":30}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"f7c7931f-08a0-4633-9a81-6cbe3e4b867e\",\"type\":\"simple\",\"selected\":true,\"x\":874,\"y\":325,\"extras\":{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//*[@id=\\\"knowledge-finance-wholepage__entity-summary\\\"]/div/g-card-section/div/g-card-section/div[2]/div[1]/span[1]/span/span[1]\"},\"image\":\"\",\"inAttribute\":{\"scope\":\"Custom\",\"name\":\"\"},\"outValue\":{\"scope\":\"Message\",\"name\":\"value\"}},\"ports\":[{\"id\":\"84b9abff-b902-4bf8-b159-bf556f9a105b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_84b9abff-b902-4bf8-b159-bf556f9a105b\",\"parentNode\":\"f7c7931f-08a0-4633-9a81-6cbe3e4b867e\",\"links\":[\"aa7a4c20-47a8-4c24-bcb0-b384def5ba02\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"4c064f11-419d-468d-a398-caef85452968\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"f7c7931f-08a0-4633-9a81-6cbe3e4b867e\",\"links\":[\"1488b68b-acab-4017-992a-dd26c6cbc2df\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"f7c7931f-08a0-4633-9a81-6cbe3e4b867e\",\"name\":\"Get Price\",\"icon\":\"M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.GetValue\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Get Price\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//*[@id=\\\"knowledge-finance-wholepage__entity-summary\\\"]/div/g-card-section/div/g-card-section/div[2]/div[1]/span[1]/span/span[1]\"},\"image\":\"\",\"inAttribute\":{\"scope\":\"Custom\",\"name\":\"\"}},{\"outValue\":{\"scope\":\"Message\",\"name\":\"value\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPageId\":{\"type\":\"object\",\"title\":\"Page Id\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inSelectorType\":{\"type\":\"string\",\"title\":\"Selector Type\",\"multiple\":true,\"enumNames\":[\"XPath\",\"Id\",\"Class\"],\"enum\":[\"xpath:position\",\"id\",\"css\"]},\"inSelector\":{\"type\":\"object\",\"title\":\"Selector\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"image\":{\"title\":\"Image\",\"type\":\"string\"},\"inAttribute\":{\"type\":\"object\",\"title\":\"Attribute\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPageId\":{\"ui:field\":\"variable\"},\"inSelector\":{\"ui:field\":\"variable\"},\"inAttribute\":{\"ui:field\":\"variable\"},\"image\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"inPageId\",\"inSelectorType\",\"inSelector\",\"inAttribute\",\"image\"]},\"formData\":{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"\"},\"inAttribute\":{\"scope\":\"Custom\",\"name\":\"\"},\"image\":\"\"}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outValue\":{\"type\":\"object\",\"title\":\"Value\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outValue\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outValue\"]},\"formData\":{\"outValue\":{\"scope\":\"Message\",\"name\":\"value\"}}}],\"outputs\":1,\"inputs\":1}}]}"
+        }
+    ]
+}
