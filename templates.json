@@ -106,8 +106,8 @@
     ]
   },
   {
-    "name": "SQLite quick start",
-    "description": "SQLite usage example",
+    "name": "SQLite Quick Start",
+    "description": "This flow shows how to insert and select from SQLite databases.",
     "slug": "sqlite-quick-start",
     "icon": "sqlite_quick_start_icon.png",
     "screenshots": [
