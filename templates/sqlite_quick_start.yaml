@@ -1,0 +1,16 @@
+- name: SQLite quick start
+  description: SQLite usage example 
+  slug: sqlite-quick-start
+  icon: sqlite_quick_start_icon.png
+  screenshots:
+    - sqlite_quick_start_screenshot.png
+  author: Robomotion
+  category: Business Intelligence
+  tags:
+    - database
+    - javascript
+    - sqlite
+  applications:
+    - Javascript
+    - SQLite
+
