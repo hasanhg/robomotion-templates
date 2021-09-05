@@ -1,0 +1,14 @@
+- name: Service Monitor
+  description: Check your service's url, port liveness and SSL certificate validity
+  slug: service-monitor
+  icon: service_monitor_icon.png
+  screenshots:
+    - service_monitor_screenshot.png
+  author: Robomotion
+  category: Monitoring
+  tags:
+    - monitoring
+    - ssl
+  applications:
+    - Javascript
+
