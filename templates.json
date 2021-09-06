@@ -35,24 +35,6 @@
     ]
   },
   {
-    "name": "İYS RPA v0.2",
-    "description": "İYS izinli ileti verilerini RPA ile yükleme akışı",
-    "slug": "iys-rpa",
-    "icon": "iys_rpa_icon.png",
-    "screenshots": [
-      "iys_rpa_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "data"
-    ],
-    "applications": [
-      "Javascript",
-      "Chrome"
-    ]
-  },
-  {
     "name": "ReCaptcha Solver",
     "description": "Verify Google ReCaptcha V2 automatically with solving services.",
     "slug": "recaptcha-solver",
