@@ -1,0 +1,15 @@
+- name: Excel To CSV
+  description: Converts an excel file to a csv file in your file system
+  slug: excel-to-csv
+  icon: excel-to-csv.png
+  screenshots:
+    - excel-to-csv_screenshot.png
+  author: Robomotion
+  category: Conversion
+  tags:
+    - excel
+    - csv
+    - conversion
+  applications:
+    - Excel
+    - CSV

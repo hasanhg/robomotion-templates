@@ -1,0 +1,667 @@
+{
+	"nodes": [
+		{
+			"id": "0400002f-b5da-4e7e-88c5-2e3ec6335eeb",
+			"type": "simple",
+			"selected": true,
+			"x": 717,
+			"y": 181,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "c5b24432-0a18-47e2-9c40-150ace0e3e0c",
+					"type": "default",
+					"selected": false,
+					"name": "out_c5b24432-0a18-47e2-9c40-150ace0e3e0c",
+					"parentNode": "0400002f-b5da-4e7e-88c5-2e3ec6335eeb",
+					"links": [
+						"6280ccfc-2118-4583-bb0b-ec1a26fc341b"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "0400002f-b5da-4e7e-88c5-2e3ec6335eeb",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "3c7f9065-64dd-4afc-8ab9-c49015d2783e",
+			"type": "simple",
+			"selected": true,
+			"x": 710,
+			"y": 306,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/{fid}/subflows/3c7f9065-64dd-4afc-8ab9-c49015d2783e.flow"
+			},
+			"ports": [
+				{
+					"id": "98dcae61-70a2-42e0-a020-9233dc0aeb86",
+					"type": "default",
+					"selected": false,
+					"name": "out_98dcae61-70a2-42e0-a020-9233dc0aeb86",
+					"parentNode": "3c7f9065-64dd-4afc-8ab9-c49015d2783e",
+					"links": [
+						"22bd5411-d432-4e19-806c-e58eb5f2b457"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "9d4042fd-3246-42d2-8a3b-a75fcecc4f66",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "3c7f9065-64dd-4afc-8ab9-c49015d2783e",
+					"links": [
+						"fced7914-a27b-48ac-b59b-d78e129d86b5"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "3c7f9065-64dd-4afc-8ab9-c49015d2783e",
+				"name": "Read Excel",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Read Excel",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/{fid}/subflows/3c7f9065-64dd-4afc-8ab9-c49015d2783e.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/{fid}/subflows/3c7f9065-64dd-4afc-8ab9-c49015d2783e.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "c5e0294f-ca1a-4787-80a0-597521cad2ce",
+			"type": "simple",
+			"selected": true,
+			"x": 711,
+			"y": 243,
+			"extras": {
+				"outputs": 1,
+				"func": "msg.csv_path = '/home/gursoy/Downloads/test.csv'; // [Required]\nmsg.excel_path = '/home/gursoy/Downloads/test.xls'; // [Required]\nmsg.separator = ';'; // [Required] - [, or ;]\nmsg.sheet_name = ''; // [Optional]\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "1887dcaa-d943-428e-a4d2-9c2186dd2113",
+					"type": "default",
+					"selected": false,
+					"name": "out_1887dcaa-d943-428e-a4d2-9c2186dd2113",
+					"parentNode": "c5e0294f-ca1a-4787-80a0-597521cad2ce",
+					"links": [
+						"fced7914-a27b-48ac-b59b-d78e129d86b5"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "c145b2dc-7ffa-42ad-be96-b1ccaed273cc",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "c5e0294f-ca1a-4787-80a0-597521cad2ce",
+					"links": [
+						"6280ccfc-2118-4583-bb0b-ec1a26fc341b"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "c5e0294f-ca1a-4787-80a0-597521cad2ce",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Config",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "msg.csv_path = '/home/gursoy/Downloads/test.csv'; // [Required]\nmsg.excel_path = '/home/gursoy/Downloads/test.xls'; // [Required]\nmsg.separator = ';'; // [Required] - [, or ;]\nmsg.sheet_name = ''; // [Optional]\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "msg.csv_path = '/home/gursoy/Downloads/test.csv'; // [Required]\nmsg.excel_path = '/home/gursoy/Downloads/test.xls'; // [Required]\nmsg.separator = ';'; // [Required] - [, or ;]\nmsg.sheet_name = ''; // [Optional]\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27",
+			"type": "simple",
+			"selected": true,
+			"x": 710,
+			"y": 369,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/a93ee089-bec6-4f22-b405-99ca676a4235/subflows/b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27.flow"
+			},
+			"ports": [
+				{
+					"id": "f6feab5f-f34e-4f37-9cfe-6589cb892d50",
+					"type": "default",
+					"selected": false,
+					"name": "out_f6feab5f-f34e-4f37-9cfe-6589cb892d50",
+					"parentNode": "b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27",
+					"links": [
+						"20c027dd-dc7c-4c47-aad7-87d90d333908"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "03dfdf2f-3b6d-4fed-b420-b4801d1d0d25",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27",
+					"links": [
+						"22bd5411-d432-4e19-806c-e58eb5f2b457"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27",
+				"name": "Write CSV",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Write CSV",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/a93ee089-bec6-4f22-b405-99ca676a4235/subflows/b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/a93ee089-bec6-4f22-b405-99ca676a4235/subflows/b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "6d65df9d-4dde-42ed-8348-15adcb8ccf8b",
+			"type": "simple",
+			"selected": true,
+			"x": 710,
+			"y": 427,
+			"extras": {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			},
+			"ports": [
+				{
+					"id": "a2883d8e-aa41-4e70-87d9-f278321afea7",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "6d65df9d-4dde-42ed-8348-15adcb8ccf8b",
+					"links": [
+						"20c027dd-dc7c-4c47-aad7-87d90d333908"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "6d65df9d-4dde-42ed-8348-15adcb8ccf8b",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "error"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Error",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"outResult"
+							],
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "error"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "c23dc438-a88a-4593-b850-b85a470d4514",
+			"type": "simple",
+			"selected": true,
+			"x": 249,
+			"y": -11,
+			"extras": {
+				"optText": "##### Excel To CSV How-To \n\nThis template uses *Excel* and *CSV* nodes to convert an Excel file to \na CSV (Comma Separated Value) file.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.csv_path field to the full filepath of .csv file you want to export.\n\n**3.** Set the msg.excel_path field to the full filepath of the excel file file you\nwant to convert.\n\n**4.** Set the msg.separator field to the separator value that will be used in .csv file\n(',' or ';').\n\n**5.** Set the msg.sheet_name field to the sheet name you want to switch sheet, if exists,\nin excel file. (Optional)"
+			},
+			"ports": [],
+			"model": {
+				"id": "c23dc438-a88a-4593-b850-b85a470d4514",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### Excel To CSV How-To \n\nThis template uses *Excel* and *CSV* nodes to convert an Excel file to \na CSV (Comma Separated Value) file.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.csv_path field to the full filepath of .csv file you want to export.\n\n**3.** Set the msg.excel_path field to the full filepath of the excel file file you\nwant to convert.\n\n**4.** Set the msg.separator field to the separator value that will be used in .csv file\n(',' or ';').\n\n**5.** Set the msg.sheet_name field to the sheet name you want to switch sheet, if exists,\nin excel file. (Optional)"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "##### Excel To CSV How-To \n\nThis template uses *Excel* and *CSV* nodes to convert an Excel file to \na CSV (Comma Separated Value) file.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.csv_path field to the full filepath of .csv file you want to export.\n\n**3.** Set the msg.excel_path field to the full filepath of the excel file file you\nwant to convert.\n\n**4.** Set the msg.separator field to the separator value that will be used in .csv file\n(',' or ';').\n\n**5.** Set the msg.sheet_name field to the sheet name you want to switch sheet, if exists,\nin excel file. (Optional)"
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": [
+		{
+			"id": "3c7f9065-64dd-4afc-8ab9-c49015d2783e",
+			"flow": "{\"id\":\"3c7f9065-64dd-4afc-8ab9-c49015d2783e\",\"offsetX\":-32,\"offsetY\":2,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"d1b4d9bf-9b48-4759-9758-ef25f7ecd45d\",\"type\":\"default\",\"selected\":false,\"source\":\"b026254a-ca5e-4ca8-82ef-713df2235825\",\"sourcePort\":\"ef3c40ab-bc74-4d53-a5a6-5b3633069821\",\"target\":\"0f9e13ca-7161-45a2-8baf-cb55ed1b69e6\",\"targetPort\":\"2bdd1a36-47b6-499e-9381-66f0ed1f30f7\",\"points\":[{\"id\":\"c4b5b3aa-e390-464b-baaa-668a79b9bc93\",\"selected\":false,\"x\":501,\"y\":225},{\"id\":\"ce06faed-4b69-4d1b-b954-2a616817b567\",\"selected\":false,\"x\":559,\"y\":225}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"9e6dee76-19db-4c17-ae29-75c42a62f008\",\"type\":\"default\",\"selected\":false,\"source\":\"8d0e4f84-55c9-428f-b9c1-a9d460f2d51b\",\"sourcePort\":\"50f919e5-5718-4da8-a6f1-6cdc23ed2590\",\"target\":\"3907334f-716a-4bfc-aafb-addb0554c3e6\",\"targetPort\":\"d914c06e-1834-44ee-8632-8cbabe7828c2\",\"points\":[{\"id\":\"1fe3c1bf-597b-4a82-bc2b-e254dadcd841\",\"selected\":false,\"x\":1332,\"y\":348},{\"id\":\"21074036-cc9b-4547-b251-efe009ab834a\",\"selected\":false,\"x\":1535,\"y\":288}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"cd131c67-9594-41d3-80ad-ee8345895c67\",\"type\":\"default\",\"selected\":false,\"source\":\"0f9e13ca-7161-45a2-8baf-cb55ed1b69e6\",\"sourcePort\":\"89048d74-7e12-435f-a785-595889477bbe\",\"target\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"targetPort\":\"281ab76b-5780-4d38-803d-7b6e77eb69e5\",\"points\":[{\"id\":\"92bfd613-3f70-4459-ad9f-ee6c3a1af502\",\"selected\":false,\"x\":761,\"y\":227},{\"id\":\"3b1f5e1f-547d-4baf-aee8-56da158f73fd\",\"selected\":false,\"x\":819,\"y\":227}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"fc656a9f-9275-46d4-b70d-f3ee48876706\",\"type\":\"default\",\"selected\":false,\"source\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"sourcePort\":\"73a03305-c139-47c9-87fa-342c58c44ec6\",\"target\":\"cc2feee0-0a95-487b-b414-6a053649923a\",\"targetPort\":\"947eb354-3f0e-44bd-969c-1f3662bad53b\",\"points\":[{\"id\":\"e36aa3d0-8b08-4df5-889e-ec1adb98bc22\",\"selected\":false,\"x\":1021,\"y\":238},{\"id\":\"a4d38224-32ec-4986-8266-3937db771319\",\"selected\":false,\"x\":1071,\"y\":273}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"974ddbd5-b3a6-46f9-b69e-48cbce9cdea4\",\"type\":\"default\",\"selected\":false,\"source\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"sourcePort\":\"8feffe56-51cc-4e44-99fa-412cd22cb073\",\"target\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"targetPort\":\"4adcca39-7411-4c1b-a080-faa9c96a7090\",\"points\":[{\"id\":\"64dc99ec-e7b1-45be-b316-cb05b1b5ce09\",\"selected\":false,\"x\":1337,\"y\":220},{\"id\":\"ad95db21-41bc-4c61-ba0d-22cfbf1096a9\",\"selected\":false,\"x\":1021,\"y\":220}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"eb28143c-7cd1-4d6e-9909-98ca700469e6\",\"type\":\"default\",\"selected\":false,\"source\":\"cc2feee0-0a95-487b-b414-6a053649923a\",\"sourcePort\":\"4e0469dc-b010-4ccb-a987-eb94a975ae43\",\"target\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"targetPort\":\"8feffe56-51cc-4e44-99fa-412cd22cb073\",\"points\":[{\"id\":\"7d74b768-6f30-433f-a8c7-6f2dd635c890\",\"selected\":false,\"x\":1273,\"y\":275},{\"id\":\"82990450-254a-488d-a56f-d635d341ff36\",\"selected\":false,\"x\":1337,\"y\":220}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"bfd9f65b-0885-4859-beb2-850da35230a4\",\"type\":\"default\",\"selected\":false,\"source\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"sourcePort\":\"0ea75b8e-de8a-4769-9e35-6a4e0f8c4d39\",\"target\":\"3907334f-716a-4bfc-aafb-addb0554c3e6\",\"targetPort\":\"0a501ea6-936a-41ec-9da3-a509189d2359\",\"points\":[{\"id\":\"a5f95bc5-3d9b-468a-989f-892e2cb7c004\",\"selected\":false,\"x\":1539,\"y\":222},{\"id\":\"dfcb4e0e-5a12-4eb8-9082-3656d561aff9\",\"selected\":true,\"x\":1333,\"y\":286}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"b026254a-ca5e-4ca8-82ef-713df2235825\",\"type\":\"simple\",\"selected\":false,\"x\":300,\"y\":200,\"extras\":{},\"ports\":[{\"id\":\"ef3c40ab-bc74-4d53-a5a6-5b3633069821\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ef3c40ab-bc74-4d53-a5a6-5b3633069821\",\"parentNode\":\"b026254a-ca5e-4ca8-82ef-713df2235825\",\"links\":[\"d1b4d9bf-9b48-4759-9758-ef25f7ecd45d\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"b026254a-ca5e-4ca8-82ef-713df2235825\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"8d0e4f84-55c9-428f-b9c1-a9d460f2d51b\",\"type\":\"simple\",\"selected\":false,\"x\":1325,\"y\":325,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"50f919e5-5718-4da8-a6f1-6cdc23ed2590\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"8d0e4f84-55c9-428f-b9c1-a9d460f2d51b\",\"links\":[\"9e6dee76-19db-4c17-ae29-75c42a62f008\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"8d0e4f84-55c9-428f-b9c1-a9d460f2d51b\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"0f9e13ca-7161-45a2-8baf-cb55ed1b69e6\",\"type\":\"simple\",\"selected\":false,\"x\":552,\"y\":202,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"excel_path\"},\"outFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"optCreate\":false},\"ports\":[{\"id\":\"89048d74-7e12-435f-a785-595889477bbe\",\"type\":\"default\",\"selected\":false,\"name\":\"out_89048d74-7e12-435f-a785-595889477bbe\",\"parentNode\":\"0f9e13ca-7161-45a2-8baf-cb55ed1b69e6\",\"links\":[\"cd131c67-9594-41d3-80ad-ee8345895c67\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"2bdd1a36-47b6-499e-9381-66f0ed1f30f7\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"0f9e13ca-7161-45a2-8baf-cb55ed1b69e6\",\"links\":[\"d1b4d9bf-9b48-4759-9758-ef25f7ecd45d\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"0f9e13ca-7161-45a2-8baf-cb55ed1b69e6\",\"name\":\"Open Excel\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.Open\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Open Excel\",\"version\":\"1.11.6\",\"color\":\"#4CAF50\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inPath\":{\"scope\":\"Message\",\"name\":\"excel_path\"}},{\"outFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}},{\"optCreate\":false}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Excel File Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inPath\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outFileDescriptor\":{\"ui:field\":\"variable\"}},\"formData\":{\"outFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optCreate\":{\"title\":\"Create If Not Exists\",\"type\":\"boolean\"}}},\"uiSchema\":{},\"formData\":{\"optCreate\":false}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"3907334f-716a-4bfc-aafb-addb0554c3e6\",\"type\":\"simple\",\"selected\":false,\"x\":1326,\"y\":263,\"extras\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}},\"ports\":[{\"id\":\"d914c06e-1834-44ee-8632-8cbabe7828c2\",\"type\":\"default\",\"selected\":false,\"name\":\"out_d914c06e-1834-44ee-8632-8cbabe7828c2\",\"parentNode\":\"3907334f-716a-4bfc-aafb-addb0554c3e6\",\"links\":[\"9e6dee76-19db-4c17-ae29-75c42a62f008\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"0a501ea6-936a-41ec-9da3-a509189d2359\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3907334f-716a-4bfc-aafb-addb0554c3e6\",\"links\":[\"bfd9f65b-0885-4859-beb2-850da35230a4\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3907334f-716a-4bfc-aafb-addb0554c3e6\",\"name\":\"Close Excel\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.Close\",\"version\":\"1.11.6\",\"abc\":[{},{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFileDescriptor\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"cc2feee0-0a95-487b-b414-6a053649923a\",\"type\":\"simple\",\"selected\":false,\"x\":1064,\"y\":250,\"extras\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inSheet\":{\"scope\":\"Message\",\"name\":\"sheet_name\"}},\"ports\":[{\"id\":\"4e0469dc-b010-4ccb-a987-eb94a975ae43\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4e0469dc-b010-4ccb-a987-eb94a975ae43\",\"parentNode\":\"cc2feee0-0a95-487b-b414-6a053649923a\",\"links\":[\"eb28143c-7cd1-4d6e-9909-98ca700469e6\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"947eb354-3f0e-44bd-969c-1f3662bad53b\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"cc2feee0-0a95-487b-b414-6a053649923a\",\"links\":[\"fc656a9f-9275-46d4-b70d-f3ee48876706\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"cc2feee0-0a95-487b-b414-6a053649923a\",\"name\":\"Switch To Sheet\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.SwitchSheet\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Switch To Sheet\",\"version\":\"1.11.6\",\"color\":\"#4CAF50\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inSheet\":{\"scope\":\"Message\",\"name\":\"sheet_name\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inSheet\":{\"type\":\"object\",\"title\":\"Sheet\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFileDescriptor\":{\"ui:field\":\"variable\"},\"inSheet\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inFileDescriptor\",\"inSheet\"]},\"formData\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inSheet\":{\"scope\":\"Custom\",\"name\":\"\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"type\":\"simple\",\"selected\":false,\"x\":812,\"y\":188,\"extras\":{\"optConditions\":[\"!Boolean(msg.sheet_name)\",\"Boolean(msg.sheet_name)\"]},\"ports\":[{\"id\":\"4adcca39-7411-4c1b-a080-faa9c96a7090\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4adcca39-7411-4c1b-a080-faa9c96a7090\",\"parentNode\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"links\":[\"974ddbd5-b3a6-46f9-b69e-48cbce9cdea4\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"281ab76b-5780-4d38-803d-7b6e77eb69e5\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"links\":[\"cd131c67-9594-41d3-80ad-ee8345895c67\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"73a03305-c139-47c9-87fa-342c58c44ec6\",\"type\":\"default\",\"selected\":false,\"name\":\"out_73a03305-c139-47c9-87fa-342c58c44ec6\",\"parentNode\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"links\":[\"fc656a9f-9275-46d4-b70d-f3ee48876706\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"fd90aa67-fcd9-477c-86f3-3b7096fa27ea\",\"name\":\"Switch\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Switch\",\"version\":\"1.11.6\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"optConditions\":[\"!Boolean(msg.sheet_name)\",\"Boolean(msg.sheet_name)\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"\"]}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"type\":\"simple\",\"selected\":false,\"x\":1330,\"y\":197,\"extras\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inFromCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inToCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"outRange\":{\"scope\":\"Message\",\"name\":\"table\"},\"optTarget\":\"all-range\"},\"ports\":[{\"id\":\"0ea75b8e-de8a-4769-9e35-6a4e0f8c4d39\",\"type\":\"default\",\"selected\":false,\"name\":\"out_0ea75b8e-de8a-4769-9e35-6a4e0f8c4d39\",\"parentNode\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"links\":[\"bfd9f65b-0885-4859-beb2-850da35230a4\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8feffe56-51cc-4e44-99fa-412cd22cb073\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"links\":[\"974ddbd5-b3a6-46f9-b69e-48cbce9cdea4\",\"eb28143c-7cd1-4d6e-9909-98ca700469e6\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"55a55da3-ee56-4d93-87f6-59a2beb6248e\",\"name\":\"Get Range\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.GetRange\",\"version\":\"1.11.6\",\"abc\":[{},{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inFromCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inToCell\":{\"scope\":\"Custom\",\"name\":\"\"}},{\"outRange\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optTarget\":\"all-range\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inFromCell\":{\"type\":\"object\",\"title\":\"From Cell\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inToCell\":{\"type\":\"object\",\"title\":\"To Cell\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFileDescriptor\":{\"ui:field\":\"variable\"},\"inFromCell\":{\"ui:field\":\"variable\"},\"inToCell\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inFileDescriptor\",\"inFromCell\",\"inToCell\"]},\"formData\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inFromCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inToCell\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outRange\":{\"type\":\"object\",\"title\":\"Range\",\"variableType\":\"Object\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outRange\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outRange\"]},\"formData\":{\"outRange\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optTarget\":{\"type\":\"string\",\"title\":\"Target\",\"multiple\":true,\"enum\":[\"specific-range\",\"all-range\"],\"enumNames\":[\"Specific Range\",\"All Range\"]},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"ui:order\":[\"optTarget\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optTarget\":\"all-range\"}}],\"outputs\":1,\"inputs\":1}}]}"
+		},
+		{
+			"id": "b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27",
+			"flow": "{\"id\":\"b85f72ba-d1bd-4aa4-a55a-6f38f4dd5e27\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"9a7ff73a-75c5-4446-b546-383d383c62c1\",\"type\":\"default\",\"selected\":false,\"source\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"sourcePort\":\"fc224133-e411-4035-8bae-ff998573c0f7\",\"target\":\"9f854b72-fa71-43b5-bafc-f337a15ec66e\",\"targetPort\":\"fe2ccfb0-a462-474c-9681-16ef20d3ddac\",\"points\":[{\"id\":\"7a2ab54f-525f-4603-9511-1a8f7bb31b72\",\"selected\":false,\"x\":1028,\"y\":295},{\"id\":\"3c122515-5251-4f2c-8edb-a6ac7cc0e051\",\"selected\":false,\"x\":1080,\"y\":338}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"7cafd30e-4099-42d3-af50-24d6d0526c06\",\"type\":\"default\",\"selected\":false,\"source\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"sourcePort\":\"c8bebd11-ed0e-4c42-a471-f47fdff58d2c\",\"target\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"targetPort\":\"bcd9ccee-8b0b-4119-be14-bce9242d51f8\",\"points\":[{\"id\":\"ed04fda4-8eea-49d5-b050-31a6c71820ba\",\"selected\":false,\"x\":1083,\"y\":277},{\"id\":\"af8db4ea-dedf-4686-ba41-887447cbdc57\",\"selected\":false,\"x\":1028,\"y\":277}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"82963ca6-9fd7-41e6-9af1-1a3fef0f3848\",\"type\":\"default\",\"selected\":false,\"source\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"sourcePort\":\"cae987e8-136b-4f5c-8479-3a26e8b649b7\",\"target\":\"60c3d3bc-91e8-4a80-93a9-8e460c208909\",\"targetPort\":\"66b202dd-e244-4955-9155-5258ec79f495\",\"points\":[{\"id\":\"6cd9b629-ccc2-4566-b1c8-ac385c4fe982\",\"selected\":false,\"x\":1285,\"y\":279},{\"id\":\"4cf46bc7-bbac-40b9-afa8-3b1aa55059b7\",\"selected\":false,\"x\":1354,\"y\":279}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"df8ed120-2280-4c26-8189-d72f1f16d92a\",\"type\":\"default\",\"selected\":false,\"source\":\"60c3d3bc-91e8-4a80-93a9-8e460c208909\",\"sourcePort\":\"66b202dd-e244-4955-9155-5258ec79f495\",\"target\":\"9f854b72-fa71-43b5-bafc-f337a15ec66e\",\"targetPort\":\"915ea19c-5732-4e23-9cb7-9bea5ec4e0a3\",\"points\":[{\"id\":\"f85cbbbc-966b-4b60-9930-0e406d0c24bc\",\"selected\":false,\"x\":1354,\"y\":279},{\"id\":\"112cfc6c-2084-44e1-abbc-1a480b95c409\",\"selected\":false,\"x\":1282,\"y\":340}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"f2e38faa-ad85-43a2-9dba-e49b25c611cf\",\"type\":\"default\",\"selected\":false,\"source\":\"4ebe0575-4abb-40fc-ad73-7c58d53cbe5d\",\"sourcePort\":\"b493e622-be47-42e2-9d72-008747c5873b\",\"target\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"targetPort\":\"bd4870e8-e3f1-43fe-bbcc-212e370d48f7\",\"points\":[{\"id\":\"aaa3cdb4-fb27-4d18-b9c6-cbce115b4ea2\",\"selected\":true,\"x\":726,\"y\":387},{\"id\":\"74fcffff-41ca-445f-abfb-80fb0a49f29d\",\"selected\":false,\"x\":826,\"y\":293}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c382eea2-b538-4580-87f3-53a085de9d14\",\"type\":\"default\",\"selected\":false,\"source\":\"2ae6161d-f461-467f-bfe2-df1d9e3de1bd\",\"sourcePort\":\"12b0b312-947d-413f-a5d2-1a99f1bc9aac\",\"target\":\"881168c7-8df3-4fc3-a082-8b9d799f1bb6\",\"targetPort\":\"c862e8bb-cc42-498c-b546-1b5b9e1ae2a1\",\"points\":[{\"id\":\"94fe875e-50b1-4aed-aa80-387d3ad76a1b\",\"selected\":false,\"x\":462,\"y\":222},{\"id\":\"e1e150ca-e67a-4ae9-b7ef-fd973ac11381\",\"selected\":false,\"x\":524,\"y\":222}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0ff21811-3959-47c7-a53e-282fd48fe996\",\"type\":\"default\",\"selected\":false,\"source\":\"881168c7-8df3-4fc3-a082-8b9d799f1bb6\",\"sourcePort\":\"2cbc22b5-60e2-4698-b7f1-9e4a7465cfb4\",\"target\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"targetPort\":\"ace70b63-d279-4f61-904c-1cb87bff4dd4\",\"points\":[{\"id\":\"1db62d7d-f9e9-462c-91df-9bcd2d2dd29e\",\"selected\":false,\"x\":726,\"y\":224},{\"id\":\"8d2bc0e5-fe1a-4d04-9975-89070a75e3d5\",\"selected\":false,\"x\":526,\"y\":300}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"9109feb9-eaec-46e4-827c-3d2df2cd1738\",\"type\":\"default\",\"selected\":false,\"source\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"sourcePort\":\"1a6792f2-35b6-42b0-8f1a-b8aca4ab80b0\",\"target\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"targetPort\":\"bd4870e8-e3f1-43fe-bbcc-212e370d48f7\",\"points\":[{\"id\":\"cba5a253-3f82-4811-aaf5-ec7da185c232\",\"selected\":false,\"x\":728,\"y\":293},{\"id\":\"770670a2-fd7f-4d58-8623-a56ab62f957d\",\"selected\":false,\"x\":826,\"y\":293}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"7aa57f8d-097a-43e9-827f-d3e19a61826c\",\"type\":\"default\",\"selected\":false,\"source\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"sourcePort\":\"7a0f9c34-64da-49de-8319-719b64bf2d13\",\"target\":\"4ebe0575-4abb-40fc-ad73-7c58d53cbe5d\",\"targetPort\":\"946dbb45-8fdb-48ce-9af8-35611100a58d\",\"points\":[{\"id\":\"c72c2068-e059-4983-8efc-086f16e67abd\",\"selected\":false,\"x\":728,\"y\":311},{\"id\":\"8bc034a6-10ee-4fec-b82e-6f9dc9b370c2\",\"selected\":true,\"x\":524,\"y\":385}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"b786db9b-b0f7-4170-9d66-cae1ea4cb281\",\"type\":\"default\",\"selected\":false,\"source\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"sourcePort\":\"bc78f31b-a378-4903-948a-3a16efeae561\",\"target\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"targetPort\":\"c8bebd11-ed0e-4c42-a471-f47fdff58d2c\",\"points\":[{\"id\":\"d5b4b9c8-fb4d-432a-94b1-85d964789ac1\",\"selected\":false,\"x\":1028,\"y\":313},{\"id\":\"8a71f240-3c1c-4bce-84d0-cf35c70b5287\",\"selected\":false,\"x\":1083,\"y\":277}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"2ae6161d-f461-467f-bfe2-df1d9e3de1bd\",\"type\":\"simple\",\"selected\":false,\"x\":261,\"y\":197,\"extras\":{},\"ports\":[{\"id\":\"12b0b312-947d-413f-a5d2-1a99f1bc9aac\",\"type\":\"default\",\"selected\":false,\"name\":\"out_12b0b312-947d-413f-a5d2-1a99f1bc9aac\",\"parentNode\":\"2ae6161d-f461-467f-bfe2-df1d9e3de1bd\",\"links\":[\"c382eea2-b538-4580-87f3-53a085de9d14\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"2ae6161d-f461-467f-bfe2-df1d9e3de1bd\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"60c3d3bc-91e8-4a80-93a9-8e460c208909\",\"type\":\"simple\",\"selected\":false,\"x\":1347,\"y\":256,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"66b202dd-e244-4955-9155-5258ec79f495\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"60c3d3bc-91e8-4a80-93a9-8e460c208909\",\"links\":[\"82963ca6-9fd7-41e6-9af1-1a3fef0f3848\",\"df8ed120-2280-4c26-8189-d72f1f16d92a\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"60c3d3bc-91e8-4a80-93a9-8e460c208909\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"9f854b72-fa71-43b5-bafc-f337a15ec66e\",\"type\":\"simple\",\"selected\":false,\"x\":1073,\"y\":315,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"semicolon\",\"optEncoding\":\"utf8\"},\"ports\":[{\"id\":\"915ea19c-5732-4e23-9cb7-9bea5ec4e0a3\",\"type\":\"default\",\"selected\":false,\"name\":\"out_915ea19c-5732-4e23-9cb7-9bea5ec4e0a3\",\"parentNode\":\"9f854b72-fa71-43b5-bafc-f337a15ec66e\",\"links\":[\"df8ed120-2280-4c26-8189-d72f1f16d92a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"fe2ccfb0-a462-474c-9681-16ef20d3ddac\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9f854b72-fa71-43b5-bafc-f337a15ec66e\",\"links\":[\"9a7ff73a-75c5-4446-b546-383d383c62c1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9f854b72-fa71-43b5-bafc-f337a15ec66e\",\"name\":\"Write CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.WriteCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Write CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"semicolon\",\"optEncoding\":\"utf8\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inTable\":{\"ui:field\":\"variable\"},\"inFilePath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inFilePath\",\"inTable\"]},\"formData\":{\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"inFilePath\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\"]},\"optEncoding\":{\"type\":\"string\",\"title\":\"Encoding\",\"enum\":[\"utf8\",\"windows1254\"],\"enumNames\":[\"UTF-8\",\"Windows 1254\"]},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"}}},\"uiSchema\":{\"ui:order\":[\"optSeparator\",\"optEncoding\",\"optHeaders\"]},\"formData\":{\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"type\":\"simple\",\"selected\":false,\"x\":819,\"y\":246,\"extras\":{\"optConditions\":[\"msg.separator === ','\",\"msg.separator === ';'\",\"msg.separator !== ',' && msg.separator !== ';'\"]},\"ports\":[{\"id\":\"bcd9ccee-8b0b-4119-be14-bce9242d51f8\",\"type\":\"default\",\"selected\":false,\"name\":\"out_bcd9ccee-8b0b-4119-be14-bce9242d51f8\",\"parentNode\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"links\":[\"7cafd30e-4099-42d3-af50-24d6d0526c06\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"bd4870e8-e3f1-43fe-bbcc-212e370d48f7\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"links\":[\"f2e38faa-ad85-43a2-9dba-e49b25c611cf\",\"9109feb9-eaec-46e4-827c-3d2df2cd1738\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"fc224133-e411-4035-8bae-ff998573c0f7\",\"type\":\"default\",\"selected\":false,\"name\":\"out_fc224133-e411-4035-8bae-ff998573c0f7\",\"parentNode\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"links\":[\"9a7ff73a-75c5-4446-b546-383d383c62c1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"bc78f31b-a378-4903-948a-3a16efeae561\",\"type\":\"default\",\"selected\":false,\"name\":\"out_bc78f31b-a378-4903-948a-3a16efeae561\",\"parentNode\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"links\":[\"b786db9b-b0f7-4170-9d66-cae1ea4cb281\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"347e7e75-d2a4-4dd8-bcb0-50b31deca916\",\"name\":\"Separator check\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Separator check\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.separator === ','\",\"msg.separator === ';'\",\"msg.separator !== ',' && msg.separator !== ';'\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"\"]}}],\"outputs\":3,\"inputs\":1}},{\"id\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"type\":\"simple\",\"selected\":false,\"x\":1076,\"y\":254,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"},\"ports\":[{\"id\":\"cae987e8-136b-4f5c-8479-3a26e8b649b7\",\"type\":\"default\",\"selected\":false,\"name\":\"out_cae987e8-136b-4f5c-8479-3a26e8b649b7\",\"parentNode\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"links\":[\"82963ca6-9fd7-41e6-9af1-1a3fef0f3848\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"c8bebd11-ed0e-4c42-a471-f47fdff58d2c\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"links\":[\"7cafd30e-4099-42d3-af50-24d6d0526c06\",\"b786db9b-b0f7-4170-9d66-cae1ea4cb281\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"1881cba0-56ed-4955-b8db-abed531800ac\",\"name\":\"Write CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.WriteCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Write CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inTable\":{\"ui:field\":\"variable\"},\"inFilePath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inFilePath\",\"inTable\"]},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\"]},\"optEncoding\":{\"type\":\"string\",\"title\":\"Encoding\",\"enum\":[\"utf8\",\"windows1254\"],\"enumNames\":[\"UTF-8\",\"Windows 1254\"]},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"}}},\"uiSchema\":{\"ui:order\":[\"optSeparator\",\"optEncoding\",\"optHeaders\"]},\"formData\":{\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"4ebe0575-4abb-40fc-ad73-7c58d53cbe5d\",\"type\":\"simple\",\"selected\":false,\"x\":517,\"y\":362,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"},\"optType\":\"file\"},\"ports\":[{\"id\":\"b493e622-be47-42e2-9d72-008747c5873b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b493e622-be47-42e2-9d72-008747c5873b\",\"parentNode\":\"4ebe0575-4abb-40fc-ad73-7c58d53cbe5d\",\"links\":[\"f2e38faa-ad85-43a2-9dba-e49b25c611cf\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"946dbb45-8fdb-48ce-9af8-35611100a58d\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"4ebe0575-4abb-40fc-ad73-7c58d53cbe5d\",\"links\":[\"7aa57f8d-097a-43e9-827f-d3e19a61826c\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"4ebe0575-4abb-40fc-ad73-7c58d53cbe5d\",\"name\":\"Create CSV File\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.Create\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create CSV File\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}},{\"optType\":\"file\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inPath\"]},\"formData\":{\"inPath\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"directory\",\"file\"],\"enumNames\":[\"Directory\",\"File\"]}}},\"uiSchema\":{\"ui:order\":[\"optType\"]},\"formData\":{\"optType\":\"file\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"881168c7-8df3-4fc3-a082-8b9d799f1bb6\",\"type\":\"simple\",\"selected\":false,\"x\":517,\"y\":199,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}},\"ports\":[{\"id\":\"2cbc22b5-60e2-4698-b7f1-9e4a7465cfb4\",\"type\":\"default\",\"selected\":false,\"name\":\"out_2cbc22b5-60e2-4698-b7f1-9e4a7465cfb4\",\"parentNode\":\"881168c7-8df3-4fc3-a082-8b9d799f1bb6\",\"links\":[\"0ff21811-3959-47c7-a53e-282fd48fe996\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"c862e8bb-cc42-498c-b546-1b5b9e1ae2a1\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"881168c7-8df3-4fc3-a082-8b9d799f1bb6\",\"links\":[\"c382eea2-b538-4580-87f3-53a085de9d14\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"881168c7-8df3-4fc3-a082-8b9d799f1bb6\",\"name\":\"Path Exists\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.PathExists\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Path Exists\",\"version\":\"1.11.6\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inPath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inPath\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outResult\":{\"type\":\"object\",\"title\":\"Result\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}},\"formData\":{\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"type\":\"simple\",\"selected\":false,\"x\":519,\"y\":261,\"extras\":{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]},\"ports\":[{\"id\":\"1a6792f2-35b6-42b0-8f1a-b8aca4ab80b0\",\"type\":\"default\",\"selected\":false,\"name\":\"out_1a6792f2-35b6-42b0-8f1a-b8aca4ab80b0\",\"parentNode\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"links\":[\"9109feb9-eaec-46e4-827c-3d2df2cd1738\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"ace70b63-d279-4f61-904c-1cb87bff4dd4\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"links\":[\"0ff21811-3959-47c7-a53e-282fd48fe996\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"7a0f9c34-64da-49de-8319-719b64bf2d13\",\"type\":\"default\",\"selected\":false,\"name\":\"out_7a0f9c34-64da-49de-8319-719b64bf2d13\",\"parentNode\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"links\":[\"7aa57f8d-097a-43e9-827f-d3e19a61826c\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"70ca5565-16d4-430f-bbe2-7bbd804ceaad\",\"name\":\"Check if exists\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Check if exists\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"\"]}}],\"outputs\":2,\"inputs\":1}}]}"
+		}
+	]
+}
