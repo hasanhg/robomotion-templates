@@ -35,6 +35,26 @@
     ]
   },
   {
+    "name": "Excel To CSV",
+    "description": "Converts an excel file to a csv file in your file system",
+    "slug": "excel-to-csv",
+    "icon": "excel-to-csv.png",
+    "screenshots": [
+      "excel-to-csv_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Conversion",
+    "tags": [
+      "excel",
+      "csv",
+      "conversion"
+    ],
+    "applications": [
+      "Excel",
+      "CSV"
+    ]
+  },
+  {
     "name": "İYS RPA v0.2",
     "description": "İYS izinli ileti verilerini RPA ile yükleme akışı",
     "slug": "iys-rpa",
