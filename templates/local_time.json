@@ -1066,7 +1066,7 @@
 					"name": "out_c540b5be-7a23-4fa6-b0ff-ca7a7b9f61bb",
 					"parentNode": "cf9ad9c4-6877-4059-97d2-6be4f20118c0",
 					"links": [
-						"880e7421-62d7-4721-94c4-948fa5fbf357"
+						"c39f6c6d-ab6f-4e72-bcc9-a45577c8f9ed"
 					],
 					"in": false,
 					"label": "simple",
@@ -1280,8 +1280,8 @@
 			"id": "2a62360f-5be1-4580-ae4a-2563e3c8afba",
 			"type": "simple",
 			"selected": true,
-			"x": 1024,
-			"y": 299,
+			"x": 1022.8814317673379,
+			"y": 357.16554809843404,
 			"extras": {
 				"inText": {
 					"scope": "JS",
@@ -1318,7 +1318,7 @@
 					"name": "in",
 					"parentNode": "2a62360f-5be1-4580-ae4a-2563e3c8afba",
 					"links": [
-						"880e7421-62d7-4721-94c4-948fa5fbf357"
+						"e6cbde72-3815-4ab4-9197-e803f67fc422"
 					],
 					"in": true,
 					"label": "simple",
@@ -1719,8 +1719,8 @@
 			"id": "1af40e16-87df-40d1-a751-628c2b66f274",
 			"type": "simple",
 			"selected": true,
-			"x": 1023,
-			"y": 359,
+			"x": 1020.7628635346756,
+			"y": 421.6398210290828,
 			"extras": {
 				"outResult": {
 					"scope": "Message",
@@ -2001,6 +2001,101 @@
 				],
 				"outputs": 0,
 				"inputs": 0
+			}
+		},
+		{
+			"id": "41fd17ba-787e-440e-8e4e-d40efc82243e",
+			"type": "simple",
+			"selected": true,
+			"x": 1018.7725504088161,
+			"y": 296.7992697729798,
+			"extras": {
+				"inBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				}
+			},
+			"ports": [
+				{
+					"id": "58367a14-5a77-4a78-8a23-923bcda4ce8e",
+					"type": "default",
+					"selected": false,
+					"name": "out_58367a14-5a77-4a78-8a23-923bcda4ce8e",
+					"parentNode": "41fd17ba-787e-440e-8e4e-d40efc82243e",
+					"links": [
+						"e6cbde72-3815-4ab4-9197-e803f67fc422"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "f717c164-44e0-41fc-af13-f599f2dc6072",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "41fd17ba-787e-440e-8e4e-d40efc82243e",
+					"links": [
+						"c39f6c6d-ab6f-4e72-bcc9-a45577c8f9ed"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "41fd17ba-787e-440e-8e4e-d40efc82243e",
+				"name": "Close Browser",
+				"icon": "M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.Close",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inBrowserId": {
+							"scope": "Message",
+							"name": "browser_id"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inBrowserId": {
+									"type": "object",
+									"title": "Browser Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inBrowserId": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inBrowserId": {
+								"scope": "Message",
+								"name": "browser_id"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
 			}
 		}
 	],
