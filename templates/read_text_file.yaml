@@ -11,3 +11,4 @@
     - read
     - file
   applications:
+    - Filesystem

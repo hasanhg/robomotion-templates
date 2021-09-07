@@ -69,7 +69,9 @@
       "read",
       "file"
     ],
-    "applications": null
+    "applications": [
+      "Filesystem"
+    ]
   },
   {
     "name": "ReCaptcha Solver",
