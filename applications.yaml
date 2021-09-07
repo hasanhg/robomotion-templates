@@ -3,6 +3,7 @@ applications:
   - CSV
   - Discord
   - Excel
+  - Filesystem
   - Javascript
   - Slack
   - Twilio

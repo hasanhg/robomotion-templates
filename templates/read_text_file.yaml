@@ -1,0 +1,14 @@
+- name: Read Text File
+  description: Reads the conent of a text file in your file system
+  slug: read-text-file
+  icon: read_text_file.png
+  screenshots:
+    - read_text_file_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - text
+    - read
+    - file
+  applications:
+    - Filesystem
