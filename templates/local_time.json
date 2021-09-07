@@ -1,0 +1,2008 @@
+{
+	"nodes": [
+		{
+			"id": "523cddad-3caf-4597-94bf-7a15131b024c",
+			"type": "simple",
+			"selected": true,
+			"x": 389,
+			"y": 179,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "4c89413e-e865-4c2d-b70e-d8a1b720c088",
+					"type": "default",
+					"selected": false,
+					"name": "out_4c89413e-e865-4c2d-b70e-d8a1b720c088",
+					"parentNode": "523cddad-3caf-4597-94bf-7a15131b024c",
+					"links": [
+						"d5258313-ca75-43ff-b5d9-22c9354ed51e"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "523cddad-3caf-4597-94bf-7a15131b024c",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "4013abe7-c591-4e9b-894d-d1a674cdaa56",
+			"type": "simple",
+			"selected": true,
+			"x": 695,
+			"y": 238,
+			"extras": {
+				"outBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				},
+				"optBrowser": "chrome",
+				"optMaximized": true,
+				"optProxy": "no-proxy",
+				"optProxyAuth": "no-authentication",
+				"optProxyAddr": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"optProxyCredentials": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			},
+			"ports": [
+				{
+					"id": "07758774-9367-4f90-9607-1c377c81a39c",
+					"type": "default",
+					"selected": false,
+					"name": "out_07758774-9367-4f90-9607-1c377c81a39c",
+					"parentNode": "4013abe7-c591-4e9b-894d-d1a674cdaa56",
+					"links": [
+						"a6514a63-b3df-41fd-98be-a6f35ba078e1"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "febfe796-d39f-428a-9390-30611571dbd9",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "4013abe7-c591-4e9b-894d-d1a674cdaa56",
+					"links": [
+						"48af824a-7315-43be-9fc8-bacd6811ea2c"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "4013abe7-c591-4e9b-894d-d1a674cdaa56",
+				"name": "Open Browser",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.Open",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outBrowserId": {
+							"scope": "Message",
+							"name": "browser_id"
+						}
+					},
+					{
+						"optBrowser": "chrome",
+						"optMaximized": true,
+						"optProxy": "no-proxy",
+						"optProxyAuth": "no-authentication",
+						"optProxyAddr": {
+							"scope": "Custom",
+							"name": ""
+						},
+						"optProxyCredentials": {
+							"vaultId": "_",
+							"itemId": "_"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outBrowserId": {
+									"type": "object",
+									"title": "Browser Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outBrowserId": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outBrowserId": {
+								"scope": "Message",
+								"name": "browser_id"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optBrowser": {
+									"type": "string",
+									"title": "Browser",
+									"enum": [
+										"chrome",
+										"firefox",
+										"edge",
+										"safari",
+										"headlesschrome"
+									],
+									"enumNames": [
+										"Chrome",
+										"Firefox",
+										"Edge",
+										"Safari",
+										"Headless Chrome"
+									]
+								},
+								"optMaximized": {
+									"title": "Maximized",
+									"type": "boolean"
+								},
+								"optProxy": {
+									"title": "Proxy Settings",
+									"type": "string",
+									"enum": [
+										"no-proxy",
+										"manual-proxy"
+									],
+									"enumNames": [
+										"No Proxy",
+										"Manual Proxy"
+									]
+								},
+								"optProxyAddr": {
+									"type": "object",
+									"title": "Proxy Address",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"optProxyAuth": {
+									"title": "Proxy Authentication",
+									"type": "string",
+									"enum": [
+										"no-authentication",
+										"basic-authentication"
+									],
+									"enumNames": [
+										"No Authentication",
+										"Basic Authentication"
+									]
+								},
+								"optProxyCredentials": {
+									"type": "object",
+									"title": "Proxy Credentials",
+									"subtitle": "",
+									"category": 1,
+									"properties": {
+										"vaultId": {
+											"type": "string"
+										},
+										"itemId": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optBrowser",
+								"optMaximized",
+								"optProxy",
+								"optProxyAddr",
+								"optProxyAuth",
+								"optProxyCredentials"
+							],
+							"optProxyCredentials": {
+								"ui:field": "credentials"
+							},
+							"optProxyAddr": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optBrowser": "chrome",
+							"optMaximized": true,
+							"optProxy": "no-proxy",
+							"optProxyAuth": "no-authentication",
+							"optProxyAddr": {
+								"scope": "Custom",
+								"name": ""
+							},
+							"optProxyCredentials": {
+								"vaultId": "_",
+								"itemId": "_"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "107f56f4-b373-4e5b-a3c7-2e57429f9795",
+			"type": "simple",
+			"selected": true,
+			"x": 695,
+			"y": 300,
+			"extras": {
+				"inBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				},
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inUrl": {
+					"scope": "Custom",
+					"name": "https://www.google.com/"
+				},
+				"outPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"optTimeout": 30
+			},
+			"ports": [
+				{
+					"id": "6a59b092-6cb5-4656-8f40-e544520b5047",
+					"type": "default",
+					"selected": false,
+					"name": "out_6a59b092-6cb5-4656-8f40-e544520b5047",
+					"parentNode": "107f56f4-b373-4e5b-a3c7-2e57429f9795",
+					"links": [
+						"72e85a2e-0b9f-4283-9d06-98bf1d5de5f6"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "e545276d-a91e-4c2d-b92f-4a8dda50221f",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "107f56f4-b373-4e5b-a3c7-2e57429f9795",
+					"links": [
+						"a6514a63-b3df-41fd-98be-a6f35ba078e1"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "107f56f4-b373-4e5b-a3c7-2e57429f9795",
+				"name": "Go to Google",
+				"icon": "M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.OpenLink",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go to Google",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inBrowserId": {
+							"scope": "Message",
+							"name": "browser_id"
+						},
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inUrl": {
+							"scope": "Custom",
+							"name": "https://www.google.com/"
+						}
+					},
+					{
+						"outPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						}
+					},
+					{
+						"optTimeout": 30
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inBrowserId": {
+									"type": "object",
+									"title": "Browser",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inUrl": {
+									"type": "object",
+									"title": "URL",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inBrowserId": {
+								"ui:field": "variable"
+							},
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inUrl": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inBrowserId": {
+								"scope": "Message",
+								"name": "browser_id"
+							},
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inUrl": {
+								"scope": "Custom",
+								"name": "https://www.google.com/"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPageId": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optSameTab": {
+									"title": "Open in the Same Tab",
+									"type": "boolean"
+								},
+								"optTimeout": {
+									"title": "Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optTimeout",
+								"optSameTab"
+							]
+						},
+						"formData": {
+							"optTimeout": 30
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "0d2d0c3f-caaa-45fa-8394-36ddc6e3a45d",
+			"type": "simple",
+			"selected": true,
+			"x": 694,
+			"y": 359,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"
+				},
+				"image": "",
+				"inValue": {
+					"scope": "JS",
+					"name": "\"time in \" + msg.city"
+				}
+			},
+			"ports": [
+				{
+					"id": "8df68f70-852d-4b81-94c1-0038550a3856",
+					"type": "default",
+					"selected": false,
+					"name": "out_8df68f70-852d-4b81-94c1-0038550a3856",
+					"parentNode": "0d2d0c3f-caaa-45fa-8394-36ddc6e3a45d",
+					"links": [
+						"23e852c9-e841-4124-8084-d77ad7ade431"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "a89bbc97-3e3f-453b-a563-5bbd60a8de01",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "0d2d0c3f-caaa-45fa-8394-36ddc6e3a45d",
+					"links": [
+						"72e85a2e-0b9f-4283-9d06-98bf1d5de5f6"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "0d2d0c3f-caaa-45fa-8394-36ddc6e3a45d",
+				"name": "Type City",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.SetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Type City",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"
+						},
+						"image": "",
+						"inValue": {
+							"scope": "JS",
+							"name": "\"time in \" + msg.city"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inValue": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inValue",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"
+							},
+							"image": "",
+							"inValue": {
+								"scope": "JS",
+								"name": "\"time in \" + msg.city"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "695bd01c-673c-404e-91f2-d1bf39e5336b",
+			"type": "simple",
+			"selected": true,
+			"x": 1022,
+			"y": 175,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]"
+				},
+				"image": "",
+				"optClickType": "singleClick"
+			},
+			"ports": [
+				{
+					"id": "8925edd3-09d6-4e0f-bda6-f9effed1fd54",
+					"type": "default",
+					"selected": false,
+					"name": "out_8925edd3-09d6-4e0f-bda6-f9effed1fd54",
+					"parentNode": "695bd01c-673c-404e-91f2-d1bf39e5336b",
+					"links": [
+						"ab9fa357-a3d8-47b8-b525-ba321e966a37"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "76666103-5293-4bd2-a165-85d2c9cf2b48",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "695bd01c-673c-404e-91f2-d1bf39e5336b",
+					"links": [
+						"23e852c9-e841-4124-8084-d77ad7ade431"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "695bd01c-673c-404e-91f2-d1bf39e5336b",
+				"name": "Click Search",
+				"icon": "M11,2V4.07C7.38,4.53 4.53,7.38 4.07,11H2V13H4.07C4.53,16.62 7.38,19.47 11,19.93V22H13V19.93C16.62,19.47 19.47,16.62 19.93,13H22V11H19.93C19.47,7.38 16.62,4.53 13,4.07V2M11,6.08V8H13V6.09C15.5,6.5 17.5,8.5 17.92,11H16V13H17.91C17.5,15.5 15.5,17.5 13,17.92V16H11V17.91C8.5,17.5 6.5,15.5 6.08,13H8V11H6.09C6.5,8.5 8.5,6.5 11,6.08M12,11A1,1 0 0,0 11,12A1,1 0 0,0 12,13A1,1 0 0,0 13,12A1,1 0 0,0 12,11Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.ClickElement",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Click Search",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]"
+						},
+						"image": ""
+					},
+					{
+						"optClickType": "singleClick"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]"
+							},
+							"image": ""
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optClickType": {
+									"type": "string",
+									"title": "Click Type",
+									"enum": [
+										"singleClick",
+										"doubleClick"
+									],
+									"enumNames": [
+										"Single Click",
+										"Double Click"
+									]
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optClickType"
+							]
+						},
+						"formData": {
+							"optClickType": "singleClick"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "cf9ad9c4-6877-4059-97d2-6be4f20118c0",
+			"type": "simple",
+			"selected": true,
+			"x": 1022,
+			"y": 234,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "//*[@id=\"rso\"]/div[1]/div/div/div[1]/div[1]"
+				},
+				"image": "",
+				"inAttribute": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"outValue": {
+					"scope": "Message",
+					"name": "value"
+				}
+			},
+			"ports": [
+				{
+					"id": "c540b5be-7a23-4fa6-b0ff-ca7a7b9f61bb",
+					"type": "default",
+					"selected": false,
+					"name": "out_c540b5be-7a23-4fa6-b0ff-ca7a7b9f61bb",
+					"parentNode": "cf9ad9c4-6877-4059-97d2-6be4f20118c0",
+					"links": [
+						"880e7421-62d7-4721-94c4-948fa5fbf357"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "28be8fde-4080-40f1-86ac-5f2a7f8cadfa",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "cf9ad9c4-6877-4059-97d2-6be4f20118c0",
+					"links": [
+						"ab9fa357-a3d8-47b8-b525-ba321e966a37"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "cf9ad9c4-6877-4059-97d2-6be4f20118c0",
+				"name": "Get Value",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.GetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Value",
+						"version": "1.11.6",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "//*[@id=\"rso\"]/div[1]/div/div/div[1]/div[1]"
+						},
+						"image": "",
+						"inAttribute": {
+							"scope": "Custom",
+							"name": ""
+						}
+					},
+					{
+						"outValue": {
+							"scope": "Message",
+							"name": "value"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inAttribute": {
+									"type": "object",
+									"title": "Attribute",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inAttribute": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inAttribute",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "//*[@id=\"rso\"]/div[1]/div/div/div[1]/div[1]"
+							},
+							"image": "",
+							"inAttribute": {
+								"scope": "Custom",
+								"name": ""
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outValue": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outValue"
+							]
+						},
+						"formData": {
+							"outValue": {
+								"scope": "Message",
+								"name": "value"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "2a62360f-5be1-4580-ae4a-2563e3c8afba",
+			"type": "simple",
+			"selected": true,
+			"x": 1024,
+			"y": 299,
+			"extras": {
+				"inText": {
+					"scope": "JS",
+					"name": "\"The time in \" + msg.city + \" is currently \" + msg.value"
+				},
+				"inTitle": {
+					"scope": "JS",
+					"name": "\"Local Time in \" + msg.city"
+				},
+				"outConfirmed": {
+					"scope": "Message",
+					"name": "confirmed"
+				},
+				"optType": "info"
+			},
+			"ports": [
+				{
+					"id": "b9ce7ee6-f743-4c5b-8651-b512482824bf",
+					"type": "default",
+					"selected": false,
+					"name": "out_b9ce7ee6-f743-4c5b-8651-b512482824bf",
+					"parentNode": "2a62360f-5be1-4580-ae4a-2563e3c8afba",
+					"links": [
+						"e8d7aac1-a72a-42f6-93d3-3eccb8100b55"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "20fa6ace-eb47-4ce5-9f8c-1adc6dc85de4",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "2a62360f-5be1-4580-ae4a-2563e3c8afba",
+					"links": [
+						"880e7421-62d7-4721-94c4-948fa5fbf357"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "2a62360f-5be1-4580-ae4a-2563e3c8afba",
+				"name": "Print the Time",
+				"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+				"color": "#4da5fb",
+				"namespace": "Core.Dialog.MessageBox",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Print the Time",
+						"color": "#4da5fb",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inText": {
+							"scope": "JS",
+							"name": "\"The time in \" + msg.city + \" is currently \" + msg.value"
+						},
+						"inTitle": {
+							"scope": "JS",
+							"name": "\"Local Time in \" + msg.city"
+						}
+					},
+					{
+						"outConfirmed": {
+							"scope": "Message",
+							"name": "confirmed"
+						}
+					},
+					{
+						"optType": "info"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inText": {
+									"type": "object",
+									"title": "Text",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inTitle": {
+									"type": "object",
+									"title": "Title",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"inTitle",
+								"inText"
+							],
+							"inText": {
+								"ui:field": "variable"
+							},
+							"inTitle": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inText": {
+								"scope": "JS",
+								"name": "\"The time in \" + msg.city + \" is currently \" + msg.value"
+							},
+							"inTitle": {
+								"scope": "JS",
+								"name": "\"Local Time in \" + msg.city"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outConfirmed": {
+									"type": "object",
+									"title": "Confirmed",
+									"variableType": "Boolean",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outConfirmed": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outConfirmed": {
+								"scope": "Message",
+								"name": "confirmed"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optType": {
+									"type": "string",
+									"title": "Type",
+									"enum": [
+										"yesno",
+										"info",
+										"error"
+									],
+									"enumNames": [
+										"Yes / No",
+										"Info",
+										"Error"
+									]
+								}
+							}
+						},
+						"uiSchema": {},
+						"formData": {
+							"optType": "info"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1d539471-80b4-42cc-b0d6-8e953b59135b",
+			"type": "simple",
+			"selected": true,
+			"x": 383,
+			"y": 234,
+			"extras": {
+				"inText": {
+					"scope": "Custom",
+					"name": "Type a city you want to learn the local time"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "City Name"
+				},
+				"outText": {
+					"scope": "Message",
+					"name": "city"
+				},
+				"optDefault": {
+					"scope": "Custom",
+					"name": "istanbul"
+				}
+			},
+			"ports": [
+				{
+					"id": "a3d0194b-2335-4a60-b946-bf894b27a04e",
+					"type": "default",
+					"selected": false,
+					"name": "out_a3d0194b-2335-4a60-b946-bf894b27a04e",
+					"parentNode": "1d539471-80b4-42cc-b0d6-8e953b59135b",
+					"links": [
+						"29a54ca1-32be-4721-b5ef-6e25b07b2b96"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "4cd96689-c371-46ef-bb79-330464f1f0d3",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1d539471-80b4-42cc-b0d6-8e953b59135b",
+					"links": [
+						"d5258313-ca75-43ff-b5d9-22c9354ed51e"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "1d539471-80b4-42cc-b0d6-8e953b59135b",
+				"name": "City Input",
+				"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+				"color": "#4da5fb",
+				"namespace": "Core.Dialog.InputBox",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "City Input",
+						"color": "#4da5fb",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inText": {
+							"scope": "Custom",
+							"name": "Type a city you want to learn the local time"
+						},
+						"inTitle": {
+							"scope": "Custom",
+							"name": "City Name"
+						}
+					},
+					{
+						"outText": {
+							"scope": "Message",
+							"name": "city"
+						}
+					},
+					{
+						"optDefault": {
+							"scope": "Custom",
+							"name": "istanbul"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inText": {
+									"type": "object",
+									"title": "Text",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inTitle": {
+									"type": "object",
+									"title": "Title",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"inTitle",
+								"inText"
+							],
+							"inText": {
+								"ui:field": "variable"
+							},
+							"inTitle": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inText": {
+								"scope": "Custom",
+								"name": "Type a city you want to learn the local time"
+							},
+							"inTitle": {
+								"scope": "Custom",
+								"name": "City Name"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outText": {
+									"type": "object",
+									"title": "Text",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outText": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outText": {
+								"scope": "Message",
+								"name": "city"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optDefault": {
+									"type": "object",
+									"title": "Default Value",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optDefault": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optDefault": {
+								"scope": "Custom",
+								"name": "istanbul"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1af40e16-87df-40d1-a751-628c2b66f274",
+			"type": "simple",
+			"selected": true,
+			"x": 1023,
+			"y": 359,
+			"extras": {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			},
+			"ports": [
+				{
+					"id": "154cc40d-0d46-41a0-b501-ea6b13c907be",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1af40e16-87df-40d1-a751-628c2b66f274",
+					"links": [
+						"e8d7aac1-a72a-42f6-93d3-3eccb8100b55"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "1af40e16-87df-40d1-a751-628c2b66f274",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "error"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Error",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"outResult"
+							],
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "error"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "c7dc5dc7-519f-4a3a-acfe-ca1903e2d526",
+			"type": "simple",
+			"selected": true,
+			"x": 694,
+			"y": 182,
+			"extras": {
+				"outputs": 1,
+				"func": "function capitalize(word) {\n   return word.toLowerCase().split(' ')\n    .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');\n}\n\nmsg.city = capitalize(msg.city);\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "31e129c7-f044-43c4-9251-51c134af9806",
+					"type": "default",
+					"selected": false,
+					"name": "out_31e129c7-f044-43c4-9251-51c134af9806",
+					"parentNode": "c7dc5dc7-519f-4a3a-acfe-ca1903e2d526",
+					"links": [
+						"48af824a-7315-43be-9fc8-bacd6811ea2c"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "9e3f9690-134d-4053-89a4-8ebc7e5dd3ae",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "c7dc5dc7-519f-4a3a-acfe-ca1903e2d526",
+					"links": [
+						"29a54ca1-32be-4721-b5ef-6e25b07b2b96"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "c7dc5dc7-519f-4a3a-acfe-ca1903e2d526",
+				"name": "Capitalize City",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Capitalize City",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "function capitalize(word) {\n   return word.toLowerCase().split(' ')\n    .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');\n}\n\nmsg.city = capitalize(msg.city);\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "function capitalize(word) {\n   return word.toLowerCase().split(' ')\n    .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');\n}\n\nmsg.city = capitalize(msg.city);\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "c45b1ab3-2244-4900-8249-c151c77841c6",
+			"type": "simple",
+			"selected": true,
+			"x": -16.34649908664649,
+			"y": 110.40240449609081,
+			"extras": {
+				"optText": "##### Local Time How-To \n\nThis template uses *Dialog* and *Browser* to get a city name from the user and\nprint the local time out.\n\nYou can run the flow without any modifications."
+			},
+			"ports": [],
+			"model": {
+				"id": "c45b1ab3-2244-4900-8249-c151c77841c6",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### Local Time How-To \n\nThis template uses *Dialog* and *Browser* to get a city name from the user and\nprint the local time out.\n\nYou can run the flow without any modifications."
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "##### Local Time How-To \n\nThis template uses *Dialog* and *Browser* to get a city name from the user and\nprint the local time out.\n\nYou can run the flow without any modifications."
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": []
+}
