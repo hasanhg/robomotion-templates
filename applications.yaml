@@ -1,5 +1,6 @@
 applications:
   - Chrome
+  - CSV
   - Discord
   - Excel
   - Javascript
