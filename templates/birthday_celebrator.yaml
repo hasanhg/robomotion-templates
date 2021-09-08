@@ -1,0 +1,15 @@
+- name: Birthday Celebrator
+  description: Sends birthday messages to Slack Channel
+  slug: birthday-celebrator
+  icon: birthday_celebrator_icon.png
+  screenshots:
+    - birthday_celebrator_screenshot1.png
+    - birthday_celebrator_screenshot2.png
+  author: Robomotion
+  category: Messaging
+  tags:
+    - chat
+    - messaging
+  applications:
+    - Slack
+    - Excel
