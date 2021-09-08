@@ -60,28 +60,6 @@
     ]
   },
   {
-    "name": "Backup To S3 Bucket",
-    "description": "Creates a zip file and uploads to S3 bucket",
-    "slug": "backup-to-s3-bucket",
-    "icon": "backup_to_s3_bucket_icon.png",
-    "screenshots": [
-      "backup_to_s3_bucket_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "s3 storage",
-      "compress",
-      "file",
-      "backup",
-      "cloud"
-    ],
-    "applications": [
-      "Javascript",
-      "Amazon_S3"
-    ]
-  },
-  {
     "name": "Birthday Celebrator",
     "description": "Sends birthday messages to Slack Channel",
     "slug": "birthday-celebrator",
@@ -91,7 +69,7 @@
       "birthday_celebrator_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Communication",
+    "category": "Messaging",
     "tags": [
       "chat",
       "messaging"
@@ -99,106 +77,6 @@
     "applications": [
       "Slack",
       "Excel"
-    ]
-  },
-  {
-    "name": "BMI Calculator",
-    "description": "Calculates Body Mass Index (BMI)",
-    "slug": "bmi-calculator",
-    "icon": "bmi_calculator_icon.png",
-    "screenshots": [
-      "bmi_calculator_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "body",
-      "mass",
-      "bmi",
-      "calculate"
-    ],
-    "applications": [
-      "Javascript"
-    ]
-  },
-  {
-    "name": "Calculator",
-    "description": "Performs arithmetic operations in the excel file",
-    "slug": "calculator",
-    "icon": "calculator_icon.png",
-    "screenshots": [
-      "https://www.youtube.com/watch?v=hVzBIiIxNzo",
-      "calculator_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "excel",
-      "calculate"
-    ],
-    "applications": [
-      "Javascript",
-      "Excel"
-    ]
-  },
-  {
-    "name": "Check Image Safety",
-    "description": "Checks an image's safety via Google Vision",
-    "slug": "check-image-safety",
-    "icon": "check_image_safety_icon.png",
-    "screenshots": [
-      "check_image_safety_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "image",
-      "safety",
-      "ai",
-      "google"
-    ],
-    "applications": [
-      "Google_Vision"
-    ]
-  },
-  {
-    "name": "Click Image In Screen",
-    "description": "Searches a predefined image in the screen. If finds an image with enough confidence value, clicks to it.",
-    "slug": "click-image-in-screen",
-    "icon": "click_image_in_screen_icon.png",
-    "screenshots": [
-      "click_image_in_screen_screenshot1.png",
-      "click_image_in_screen_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "image",
-      "search",
-      "click",
-      "vision"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Click To Specific Point",
-    "description": "Clicks to specified point in the screen with mouse.",
-    "slug": "click-to-specific-point",
-    "icon": "click_to_specific_point_icon.png",
-    "screenshots": [
-      "click_to_specific_point_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "mouse",
-      "click",
-      "system"
-    ],
-    "applications": [
-      "Other"
     ]
   },
   {
@@ -1266,121 +1144,6 @@
     ]
   },
   {
-    "name": "Stock Prices With Google Sheets",
-    "description": "Stock price scraping flow using a Google Sheets document",
-    "slug": "stock-prices-with-google-sheets",
-    "icon": "stock_prices_with_google_sheets_icon.png",
-    "screenshots": [
-      "stock_prices_with_google_sheets_screenshot1.png",
-      "stock_prices_with_google_sheets_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "google",
-      "sheets",
-      "scraping",
-      "browser"
-    ],
-    "applications": [
-      "Chrome",
-      "Google_Sheets"
-    ]
-  },
-  {
-    "name": "Translator",
-    "description": "Translates the text from a specified language to another one using Google Translate",
-    "slug": "translator",
-    "icon": "translator_icon.png",
-    "screenshots": [
-      "translator_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "browser",
-      "dialog",
-      "translate"
-    ],
-    "applications": [
-      "Chrome"
-    ]
-  },
-  {
-    "name": "Twitter Auto Follow",
-    "description": "Follows a specified Twitter account",
-    "slug": "twitter-auto-follow",
-    "icon": "twitter_auto_follow_icon.png",
-    "screenshots": [
-      "twitter_auto_follow_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "social media",
-      "twitter"
-    ],
-    "applications": [
-      "Twitter"
-    ]
-  },
-  {
-    "name": "Twitter Get Followers",
-    "description": "Lists the followers of a Twitter account and saves them to an excel file",
-    "slug": "twitter-get-followers",
-    "icon": "twitter_get_followers_icon.png",
-    "screenshots": [
-      "twitter_get_followers_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "social media",
-      "twitter"
-    ],
-    "applications": [
-      "Twitter"
-    ]
-  },
-  {
-    "name": "Twitter Get Followings",
-    "description": "Lists the followings of a Twitter account and saves them to an excel file",
-    "slug": "twitter-get-followings",
-    "icon": "twitter_get_followings_icon.png",
-    "screenshots": [
-      "twitter_get_followings_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "social media",
-      "twitter"
-    ],
-    "applications": [
-      "Twitter"
-    ]
-  },
-  {
-    "name": "Upload File To SSH Server",
-    "description": "Uploads file from local computer to SSH server",
-    "slug": "upload-file-to-ssh-server",
-    "icon": "upload_file_to_ssh_server_icon.png",
-    "screenshots": [
-      "upload_file_to_ssh_server_screenshot1.png",
-      "upload_file_to_ssh_server_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "ssh",
-      "remote",
-      "upload"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -1401,24 +1164,6 @@
     ]
   },
   {
-    "name": "Web Element To Pdf",
-    "description": "Converts any web elements to Pdf",
-    "slug": "web-element-to-pdf",
-    "icon": "web_element_to_pdf_icon.png",
-    "screenshots": [
-      "web_element_to_pdf_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "html",
-      "pdf"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
     "name": "WhatsApp FAQ Bot",
     "description": "Basic Whatsapp FAQ Bot example for customer support",
     "slug": "whatsapp-faq-bot",
@@ -1435,94 +1180,6 @@
     "applications": [
       "Javascript",
       "Twilio"
-    ]
-  },
-  {
-    "name": "Write To Clipboard",
-    "description": "Receives an input from user, and copies it to clipboard.",
-    "slug": "write-to-clipboard",
-    "icon": "write_to_clipboard_icon.png",
-    "screenshots": [
-      "write_to_clipboard_screenshot1.png",
-      "write_to_clipboard_screenshot2.png",
-      "write_to_clipboard_screenshot3.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "clipboard",
-      "copy",
-      "system"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Write to Word Document",
-    "description": "Reads a txt file and writes output to a new word document",
-    "slug": "write-to-word-document",
-    "icon": "write_to_word_document_icon.png",
-    "screenshots": [
-      "write_to_word_document_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "microsoft",
-      "word",
-      "document"
-    ],
-    "applications": [
-      "Word",
-      "Javascript"
-    ]
-  },
-  {
-    "name": "Youtube Channel Information",
-    "description": "Extracts channel information from a Youtube channel",
-    "slug": "youtube-channel-info",
-    "icon": "youtube_channel_info_icon.png",
-    "screenshots": [
-      "youtube_channel_info_screenshot1.png",
-      "youtube_channel_info_screenshot2.png",
-      "youtube_channel_info_screenshot3.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "youtube",
-      "channel",
-      "stats"
-    ],
-    "applications": [
-      "Chrome",
-      "Javascript",
-      "Google_Sheets"
-    ]
-  },
-  {
-    "name": "Youtube Video Stats",
-    "description": "Extracts video stats from a Youtube video",
-    "slug": "youtube-video-stats",
-    "icon": "youtube_video_stats_icon.png",
-    "screenshots": [
-      "youtube_video_stats_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "comments",
-      "dislikes",
-      "likes",
-      "stats",
-      "views",
-      "video",
-      "youtube"
-    ],
-    "applications": [
-      "Chrome",
-      "Javascript"
     ]
   },
   {
