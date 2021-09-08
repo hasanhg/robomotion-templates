@@ -1,0 +1,15 @@
+- name: Local Time
+  description: Takes a city name from the user and prints the local time out
+  slug: local-time
+  icon: local_time.png
+  screenshots:
+    - local_time_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - local
+    - time
+    - city
+  applications:
+    - Chrome
+    - Javascript
