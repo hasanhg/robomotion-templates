@@ -1,226 +1,226 @@
 [
-	{
-		"name": "API Health Check",
-		"description": "Monitors the operational status of your microservices",
-		"slug": "api-health-check",
-		"icon": "api_health_check_icon.png",
-		"screenshots": [
-			"api_health_check_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Monitoring",
-		"tags": [
-			"api",
-			"monitoring"
-		],
-		"applications": [
-			"Javascript"
-		]
-	},
-	{
-		"name": "Content Checker",
-		"description": "Checks spesific field in given website url and notifies if content has changed.",
-		"slug": "content-checker",
-		"icon": "content_checker_icon.png",
-		"screenshots": [
-			"content_checker_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Productivity",
-		"tags": [
-			"monitoring"
-		],
-		"applications": [
-			"Javascript"
-		]
-	},
-	{
-		"name": "Excel To CSV",
-		"description": "Converts an excel file to a csv file in your file system",
-		"slug": "excel-to-csv",
-		"icon": "excel_to_csv.png",
-		"screenshots": [
-			"excel_to_csv_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Conversion",
-		"tags": [
-			"excel",
-			"csv",
-			"conversion"
-		],
-		"applications": [
-			"Excel",
-			"CSV"
-		]
-	},
-	{
-		"name": "Local Time",
-		"description": "Takes a city name from the user and prints the local time out",
-		"slug": "local-time",
-		"icon": "local_time.png",
-		"screenshots": [
-			"local_time_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Other",
-		"tags": [
-			"local",
-			"time",
-			"city"
-		],
-		"applications": [
-			"Chrome",
-			"Javascript"
-		]
-	},
-	{
-		"name": "Read Text File",
-		"description": "Reads the conent of a text file in your file system",
-		"slug": "read-text-file",
-		"icon": "read_text_file.png",
-		"screenshots": [
-			"read_text_file_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Other",
-		"tags": [
-			"text",
-			"read",
-			"file"
-		],
-		"applications": [
-			"Filesystem"
-		]
-	},
-	{
-		"name": "ReCaptcha Solver",
-		"description": "Verify Google ReCaptcha V2 automatically with solving services.",
-		"slug": "recaptcha-solver",
-		"icon": "recaptcha_solver_icon.png",
-		"screenshots": [
-			"recaptcha_solver_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Productivity",
-		"tags": [
-			"captcha"
-		],
-		"applications": [
-			"Javascript"
-		]
-	},
-	{
-		"name": "REST API",
-		"description": "Basic rest service handling example.",
-		"slug": "rest-api",
-		"icon": "rest_api_icon.png",
-		"screenshots": [
-			"rest_api_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Productivity",
-		"tags": [
-			"monitoring"
-		],
-		"applications": [
-			"Javascript"
-		]
-	},
-	{
-		"name": "Screen Capture",
-		"description": "Browser screen capture example",
-		"slug": "screen-capture",
-		"icon": "screen_capture_icon.png",
-		"screenshots": [
-			"screen_capture_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Productivity",
-		"tags": [
-			"scraping",
-			"browser",
-			"image"
-		],
-		"applications": [
-			"Chrome"
-		]
-	},
-	{
-		"name": "Service Monitor",
-		"description": "Check your service's url, port liveness and SSL certificate validity",
-		"slug": "service-monitor",
-		"icon": "service_monitor_icon.png",
-		"screenshots": [
-			"service_monitor_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Monitoring",
-		"tags": [
-			"monitoring",
-			"ssl"
-		],
-		"applications": [
-			"Javascript"
-		]
-	},
-	{
-		"name": "SQLite Quick Start",
-		"description": "This flow shows how to insert and select from SQLite databases.",
-		"slug": "sqlite-quick-start",
-		"icon": "sqlite_quick_start_icon.png",
-		"screenshots": [
-			"sqlite_quick_start_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Business Intelligence",
-		"tags": [
-			"database",
-			"javascript",
-			"sqlite"
-		],
-		"applications": [
-			"Javascript",
-			"SQLite"
-		]
-	},
-	{
-		"name": "Stock Prices",
-		"description": "Stock price scraping flow using an Excel file",
-		"slug": "stock-prices",
-		"icon": "stock_prices_icon.png",
-		"screenshots": [
-			"stock_prices_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Productivity",
-		"tags": [
-			"scraping",
-			"browser",
-			"excel"
-		],
-		"applications": [
-			"Chrome",
-			"Excel"
-		]
-	},
-	{
-		"name": "WhatsApp FAQ Bot",
-		"description": "Basic Whatsapp FAQ Bot example for customer support",
-		"slug": "whatsapp-faq-bot",
-		"icon": "whatsapp_faq_bot_icon.png",
-		"screenshots": [
-			"whatsapp_faq_bot_screenshot.png"
-		],
-		"author": "Robomotion",
-		"category": "Productivity",
-		"tags": [
-			"whatsapp",
-			"chatbot"
-		],
-		"applications": [
-			"Javascript",
-			"Twilio"
-		]
-	}
+  {
+    "name": "API Health Check",
+    "description": "Monitors the operational status of your microservices",
+    "slug": "api-health-check",
+    "icon": "api_health_check_icon.png",
+    "screenshots": [
+      "api_health_check_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Monitoring",
+    "tags": [
+      "api",
+      "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Content Checker",
+    "description": "Checks spesific field in given website url and notifies if content has changed.",
+    "slug": "content-checker",
+    "icon": "content_checker_icon.png",
+    "screenshots": [
+      "content_checker_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Excel To CSV",
+    "description": "Converts an excel file to a csv file in your file system",
+    "slug": "excel-to-csv",
+    "icon": "excel_to_csv.png",
+    "screenshots": [
+      "excel_to_csv_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Conversion",
+    "tags": [
+      "excel",
+      "csv",
+      "conversion"
+    ],
+    "applications": [
+      "Excel",
+      "CSV"
+    ]
+  },
+  {
+    "name": "Local Time",
+    "description": "Takes a city name from the user and prints the local time out",
+    "slug": "local-time",
+    "icon": "local_time.png",
+    "screenshots": [
+      "local_time_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "local",
+      "time",
+      "city"
+    ],
+    "applications": [
+      "Chrome",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Read Text File",
+    "description": "Reads the conent of a text file in your file system",
+    "slug": "read-text-file",
+    "icon": "read_text_file.png",
+    "screenshots": [
+      "read_text_file_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "text",
+      "read",
+      "file"
+    ],
+    "applications": [
+      "Filesystem"
+    ]
+  },
+  {
+    "name": "ReCaptcha Solver",
+    "description": "Verify Google ReCaptcha V2 automatically with solving services.",
+    "slug": "recaptcha-solver",
+    "icon": "recaptcha_solver_icon.png",
+    "screenshots": [
+      "recaptcha_solver_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "captcha"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "REST API",
+    "description": "Basic rest service handling example.",
+    "slug": "rest-api",
+    "icon": "rest_api_icon.png",
+    "screenshots": [
+      "rest_api_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Screen Capture",
+    "description": "Browser screen capture example",
+    "slug": "screen-capture",
+    "icon": "screen_capture_icon.png",
+    "screenshots": [
+      "screen_capture_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "scraping",
+      "browser",
+      "image"
+    ],
+    "applications": [
+      "Chrome"
+    ]
+  },
+  {
+    "name": "Service Monitor",
+    "description": "Check your service's url, port liveness and SSL certificate validity",
+    "slug": "service-monitor",
+    "icon": "service_monitor_icon.png",
+    "screenshots": [
+      "service_monitor_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Monitoring",
+    "tags": [
+      "monitoring",
+      "ssl"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "SQLite Quick Start",
+    "description": "This flow shows how to insert and select from SQLite databases.",
+    "slug": "sqlite-quick-start",
+    "icon": "sqlite_quick_start_icon.png",
+    "screenshots": [
+      "sqlite_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Business Intelligence",
+    "tags": [
+      "database",
+      "javascript",
+      "sqlite"
+    ],
+    "applications": [
+      "Javascript",
+      "SQLite"
+    ]
+  },
+  {
+    "name": "Stock Prices",
+    "description": "Stock price scraping flow using an Excel file",
+    "slug": "stock-prices",
+    "icon": "stock_prices_icon.png",
+    "screenshots": [
+      "stock_prices_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "scraping",
+      "browser",
+      "excel"
+    ],
+    "applications": [
+      "Chrome",
+      "Excel"
+    ]
+  },
+  {
+    "name": "WhatsApp FAQ Bot",
+    "description": "Basic Whatsapp FAQ Bot example for customer support",
+    "slug": "whatsapp-faq-bot",
+    "icon": "whatsapp_faq_bot_icon.png",
+    "screenshots": [
+      "whatsapp_faq_bot_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "whatsapp",
+      "chatbot"
+    ],
+    "applications": [
+      "Javascript",
+      "Twilio"
+    ]
+  }
 ]
