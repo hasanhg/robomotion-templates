@@ -19,3 +19,4 @@ applications:
   - Tesseract
   - Twilio
   - Mail
+  - MongoDB

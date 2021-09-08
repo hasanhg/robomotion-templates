@@ -97,226 +97,26 @@
     ]
   },
   {
-    "name": "Countdown",
-    "description": "Counts down for a specified date starting from the current time",
-    "slug": "countdown",
-    "icon": "countdown_icon.png",
+    "name": "Daily Sport News",
+    "description": "Reads document(s) from a MongoDB collection with filter and sends this document(s) via mail.",
+    "slug": "daily-sport-news",
+    "icon": "daily_sport_news_icon.png",
     "screenshots": [
-      "countdown_screenshot.png"
+      "daily_sport_news_screenshot.png"
     ],
     "author": "Robomotion",
     "category": "Other",
     "tags": [
-      "countdown",
-      "time",
-      "date"
-    ],
-    "applications": [
-      "Javascript"
-    ]
-  },
-  {
-    "name": "CSV to Google Sheets",
-    "description": "Reads range from a CSV file and write it to Google Sheet file.",
-    "slug": "csv-to-google-sheets",
-    "icon": "csv_to_google_sheets_icon.png",
-    "screenshots": [
-      "csv_to_google_sheets_screenshot1.png",
-      "csv_to_google_sheets_screenshot2.png",
-      "csv_to_google_sheets_screenshot3.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "csv",
-      "google",
-      "sheets"
-    ],
-    "applications": [
-      "Google_Sheets"
-    ]
-  },
-  {
-    "name": "Date Difference Calculator",
-    "description": "Calculates the difference between now and a specific date",
-    "slug": "date-difference-calculator",
-    "icon": "date_difference_calculator_icon.png",
-    "screenshots": [
-      "date_difference_calculator_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "date",
-      "difference",
-      "calculate",
-      "timespan"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Dollar - Euro Parity As Service",
-    "description": "Returns dolar - euro parity for API request",
-    "slug": "dollar-euro-parity-as-service",
-    "icon": "dollar_euro_parity_as_service_icon.png",
-    "screenshots": [
-      "dollar_euro_parity_as_service_screenshot1.png",
-      "dollar_euro_parity_as_service_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "rest",
-      "api"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Download File From SSH Server",
-    "description": "Downloads file from SSH server to local computer",
-    "slug": "download-file-from-ssh-server",
-    "icon": "download_file_from_ssh_server_icon.png",
-    "screenshots": [
-      "download_file_from_ssh_server_screenshot1.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "ssh",
-      "remote",
-      "download"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Download File From web",
-    "description": "Downloads file from web to specified path",
-    "slug": "download-file-from-web",
-    "icon": "download_file_from_web_icon.png",
-    "screenshots": [
-      "download_file_from_web_screenshot1.png",
-      "download_file_from_web_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "download",
-      "file",
-      "web"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Dropbox Quick Start",
-    "description": "Shows how to make some Dropbox operations",
-    "slug": "dropbox-quick-start",
-    "icon": "dropbox_quick_start_icon.png",
-    "screenshots": [
-      "dropbox_quick_start_screenshot1.png",
-      "dropbox_quick_start_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "dropbox",
-      "storage",
-      "file",
-      "cloud"
-    ],
-    "applications": [
-      "Dropbox"
-    ]
-  },
-  {
-    "name": "Duplicate File Remover",
-    "description": "Removes duplicated files in a given directory in your file system",
-    "slug": "duplicate-file-remover",
-    "icon": "duplicate_file_remover_icon.png",
-    "screenshots": [
-      "duplicate_file_remover_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
+      "database",
       "javascript",
-      "duplicate",
-      "file",
-      "remover",
-      "directory",
-      "cryptography"
-    ],
-    "applications": [
-      "Javascript"
-    ]
-  },
-  {
-    "name": "Duplicate Rows Remover",
-    "description": "Finds and removes duplicate rows in excel file",
-    "slug": "duplicate-rows-remover",
-    "icon": "duplicate_rows_remover_icon.png",
-    "screenshots": [
-      "duplicate_rows_remover_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "excel",
-      "remover"
+      "mail"
     ],
     "applications": [
       "Javascript",
-      "Excel"
+      "MongoDB",
+      "Mail"
     ]
-  },
-  {
-    "name": "Excel Copy Paste",
-    "description": "Copies and pastes data between sheets",
-    "slug": "excel-copy-paste",
-    "icon": "excel_copy_paste_icon.png",
-    "screenshots": [
-      "excel_copy_paste_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "excel",
-      "clipboard"
-    ],
-    "applications": [
-      "Javascript",
-      "Excel"
-    ]
-  },
-  {
-    "name": "Excel Range to Word Table",
-    "description": "Reads range from excel file and writes to a newly created word document",
-    "slug": "excel-range-to-word-table",
-    "icon": "excel_range_to_word_table_icon.png",
-    "screenshots": [
-      "excel_range_to_word_table_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "microsoft",
-      "excel",
-      "word",
-      "document"
-    ],
-    "applications": [
-      "Excel",
-      "Word",
-      "Javascript"
-    ]
-  },
+  },	
   {
     "name": "Excel To CSV",
     "description": "Converts an excel file to a csv file in your file system",
