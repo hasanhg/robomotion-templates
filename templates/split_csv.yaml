@@ -1,0 +1,16 @@
+- name: Split CSV
+  description: Splits a CSV file to a group of .csv files containing at most specified amount of rows
+  slug: split-csv
+  icon: split_csv_icon.png
+  screenshots:
+    - split_csv_screenshot1.png
+    - split_csv_screenshot2.png
+  author: Robomotion
+  category: Conversion
+  tags:
+    - csv
+    - split
+  applications:
+    - CSV
+    - Filesystem
+    - Javascript

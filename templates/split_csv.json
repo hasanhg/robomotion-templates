@@ -1,0 +1,667 @@
+{
+	"nodes": [
+		{
+			"id": "b78b128f-b64f-4cc7-9d9a-1d4b468d599b",
+			"type": "simple",
+			"selected": true,
+			"x": 625,
+			"y": 190,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "596a39b9-ae44-4bca-8505-7781792cf2b1",
+					"type": "default",
+					"selected": false,
+					"name": "out_596a39b9-ae44-4bca-8505-7781792cf2b1",
+					"parentNode": "b78b128f-b64f-4cc7-9d9a-1d4b468d599b",
+					"links": [
+						"1d8c38b3-bacf-4550-b5f4-85dce5fd69d8"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "b78b128f-b64f-4cc7-9d9a-1d4b468d599b",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "ab76321b-c084-43c4-ab27-7911eb01bc32",
+			"type": "simple",
+			"selected": true,
+			"x": 894,
+			"y": 192,
+			"extras": {
+				"outputs": 1,
+				"func": "msg.csv_path = '/home/gursoy/Downloads/test.csv'; // [Required]\nmsg.out_dir = '/home/gursoy/test' // [Required] (Directory will be created if not exists)\nmsg.per_page = 10; // [Required]\nmsg.separator = ','; // [Required] - [',', ';', 'TAB', 'SPACE'] \n\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "8fe7cf05-6e0f-439a-86d7-b8f13401ee88",
+					"type": "default",
+					"selected": false,
+					"name": "out_8fe7cf05-6e0f-439a-86d7-b8f13401ee88",
+					"parentNode": "ab76321b-c084-43c4-ab27-7911eb01bc32",
+					"links": [
+						"f682cd6c-254b-4928-9ff7-fc5eee934dc5"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "bd1f830c-99c6-4d40-b3f2-d2b3dc1963b9",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "ab76321b-c084-43c4-ab27-7911eb01bc32",
+					"links": [
+						"1d8c38b3-bacf-4550-b5f4-85dce5fd69d8"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "ab76321b-c084-43c4-ab27-7911eb01bc32",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Config",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "msg.csv_path = '/home/gursoy/Downloads/test.csv'; // [Required]\nmsg.out_dir = '/home/gursoy/test' // [Required] (Directory will be created if not exists)\nmsg.per_page = 10; // [Required]\nmsg.separator = ','; // [Required] - [',', ';', 'TAB', 'SPACE'] \n\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "msg.csv_path = '/home/gursoy/Downloads/test.csv'; // [Required]\nmsg.out_dir = '/home/gursoy/test' // [Required] (Directory will be created if not exists)\nmsg.per_page = 10; // [Required]\nmsg.separator = ','; // [Required] - [',', ';', 'TAB', 'SPACE'] \n\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "7989b62e-f48b-4aba-b937-d407c8a424b4",
+			"type": "simple",
+			"selected": true,
+			"x": 893,
+			"y": 252,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/f959dc3b-92c1-4112-bdc9-19498a10e3df/subflows/7989b62e-f48b-4aba-b937-d407c8a424b4.flow"
+			},
+			"ports": [
+				{
+					"id": "d6d7c680-b9fc-4d0c-a82b-004d3271f9ea",
+					"type": "default",
+					"selected": false,
+					"name": "out_d6d7c680-b9fc-4d0c-a82b-004d3271f9ea",
+					"parentNode": "7989b62e-f48b-4aba-b937-d407c8a424b4",
+					"links": [
+						"96d12615-4dba-474c-a5b0-6d0cc34914c8"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "0a7ff6e7-3737-420b-85a1-bdd99570618d",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "7989b62e-f48b-4aba-b937-d407c8a424b4",
+					"links": [
+						"f682cd6c-254b-4928-9ff7-fc5eee934dc5"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "7989b62e-f48b-4aba-b937-d407c8a424b4",
+				"name": "Read CSV",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Read CSV",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/f959dc3b-92c1-4112-bdc9-19498a10e3df/subflows/7989b62e-f48b-4aba-b937-d407c8a424b4.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/f959dc3b-92c1-4112-bdc9-19498a10e3df/subflows/7989b62e-f48b-4aba-b937-d407c8a424b4.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "76c20a25-f9e6-446e-a5e4-a467ad29a759",
+			"type": "simple",
+			"selected": true,
+			"x": 892,
+			"y": 309,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/f959dc3b-92c1-4112-bdc9-19498a10e3df/subflows/76c20a25-f9e6-446e-a5e4-a467ad29a759.flow"
+			},
+			"ports": [
+				{
+					"id": "ba71b570-0176-4ee1-a056-52ae1d15797d",
+					"type": "default",
+					"selected": false,
+					"name": "out_ba71b570-0176-4ee1-a056-52ae1d15797d",
+					"parentNode": "76c20a25-f9e6-446e-a5e4-a467ad29a759",
+					"links": [
+						"57fdda0e-ea69-4df1-a45f-b6a8920abadb"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "8251b2c3-c282-45e7-86c7-c7db1ee953a6",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "76c20a25-f9e6-446e-a5e4-a467ad29a759",
+					"links": [
+						"96d12615-4dba-474c-a5b0-6d0cc34914c8"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "76c20a25-f9e6-446e-a5e4-a467ad29a759",
+				"name": "Split CSV",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Split CSV",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/f959dc3b-92c1-4112-bdc9-19498a10e3df/subflows/76c20a25-f9e6-446e-a5e4-a467ad29a759.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/f959dc3b-92c1-4112-bdc9-19498a10e3df/subflows/76c20a25-f9e6-446e-a5e4-a467ad29a759.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "d12df8da-41bf-4b14-bc10-830e377f2c31",
+			"type": "simple",
+			"selected": true,
+			"x": 893,
+			"y": 371,
+			"extras": {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			},
+			"ports": [
+				{
+					"id": "ff967c49-9d54-46a8-8ce8-3e0725ca6580",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "d12df8da-41bf-4b14-bc10-830e377f2c31",
+					"links": [
+						"57fdda0e-ea69-4df1-a45f-b6a8920abadb"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "d12df8da-41bf-4b14-bc10-830e377f2c31",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "error"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Error",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"outResult"
+							],
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "error"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "23cf8ca9-e507-4b35-9ea8-9a55b97d7549",
+			"type": "simple",
+			"selected": true,
+			"x": 180,
+			"y": -17,
+			"extras": {
+				"optText": "##### Split CSV How-To \n\nThis template uses *CSV* and *File System* nodes to split a CSV file to a group of .csv files\ncontaining at most specified amount of rows.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.csv_path field to the full filepath of .csv file you want to split.\n\n**3.** Set the msg.out_dir field to the full path of output directory you want to store\nthe resulting CSV files.\n\n**4.** Set the msg.per_page field to the number of rows each file should contain at most.\n\n**5.** Set the msg.separator field to the separator value that is used in CSV file\n(',', ';', 'TAB', 'SPACE')."
+			},
+			"ports": [],
+			"model": {
+				"id": "23cf8ca9-e507-4b35-9ea8-9a55b97d7549",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### Split CSV How-To \n\nThis template uses *CSV* and *File System* nodes to split a CSV file to a group of .csv files\ncontaining at most specified amount of rows.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.csv_path field to the full filepath of .csv file you want to split.\n\n**3.** Set the msg.out_dir field to the full path of output directory you want to store\nthe resulting CSV files.\n\n**4.** Set the msg.per_page field to the number of rows each file should contain at most.\n\n**5.** Set the msg.separator field to the separator value that is used in CSV file\n(',', ';', 'TAB', 'SPACE')."
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "##### Split CSV How-To \n\nThis template uses *CSV* and *File System* nodes to split a CSV file to a group of .csv files\ncontaining at most specified amount of rows.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.csv_path field to the full filepath of .csv file you want to split.\n\n**3.** Set the msg.out_dir field to the full path of output directory you want to store\nthe resulting CSV files.\n\n**4.** Set the msg.per_page field to the number of rows each file should contain at most.\n\n**5.** Set the msg.separator field to the separator value that is used in CSV file\n(',', ';', 'TAB', 'SPACE')."
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": [
+		{
+			"id": "7989b62e-f48b-4aba-b937-d407c8a424b4",
+			"flow": "{\"id\":\"7989b62e-f48b-4aba-b937-d407c8a424b4\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"f9929bb3-c3fb-4b8e-bbf0-51d6e39e00c1\",\"type\":\"default\",\"selected\":false,\"source\":\"7fa34883-48b3-4289-aeea-687839e4844e\",\"sourcePort\":\"46934b89-995e-4f6c-8e88-9e1dc3078007\",\"target\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"targetPort\":\"8db64c66-43b2-4806-8494-bf75f628f585\",\"points\":[{\"id\":\"3ea60fdd-bf6f-4b50-923e-e37532a1d7b2\",\"selected\":false,\"x\":509,\"y\":265},{\"id\":\"dd837256-a2cf-4514-a30d-f9e2ed8c7012\",\"selected\":false,\"x\":567,\"y\":265}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"71acd6a0-b0df-431b-b4bd-05904458e297\",\"type\":\"default\",\"selected\":false,\"source\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"sourcePort\":\"4a45be0a-7d44-425b-9156-681b48d9c271\",\"target\":\"0e5982c6-d1ba-4b2f-afce-ed9d40acc8e4\",\"targetPort\":\"eca8f1c8-9a53-4a58-a241-7003c8d84bed\",\"points\":[{\"id\":\"c673c7f7-9fd4-4181-82fd-35ff5e88618f\",\"selected\":false,\"x\":769,\"y\":231},{\"id\":\"8855374a-0330-4023-9554-05f6c0c2c278\",\"selected\":false,\"x\":827,\"y\":180}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"fa8dab20-dcdd-4320-bd18-c99182badadb\",\"type\":\"default\",\"selected\":false,\"source\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"sourcePort\":\"cb6edf55-3f6a-405a-9656-f5f81f533964\",\"target\":\"3b2d5a56-3a60-4e51-aebe-156233dc9b84\",\"targetPort\":\"e23a561b-9075-48da-95f4-6660127947b9\",\"points\":[{\"id\":\"5fa2b61c-6e4a-4d2e-badc-202fd9f61d03\",\"selected\":false,\"x\":769,\"y\":249},{\"id\":\"ca453c5c-aab6-4f47-86ff-8eadf6064017\",\"selected\":false,\"x\":823,\"y\":237}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"26b505ca-e540-4bd2-a209-55a44b496ea6\",\"type\":\"default\",\"selected\":false,\"source\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"sourcePort\":\"8ee25493-e6c7-44a0-a3cb-1133f0e9f137\",\"target\":\"d75c5d14-e0ed-4a65-8a0d-4b9106f045fd\",\"targetPort\":\"bc73177f-55c0-47e0-a429-7b9dfc23db12\",\"points\":[{\"id\":\"89c05d38-7ba2-4d63-a0ab-df9270d65d14\",\"selected\":false,\"x\":769,\"y\":267},{\"id\":\"4935ed89-1f42-49e0-aef0-be05b8f3a960\",\"selected\":false,\"x\":821,\"y\":294}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c6f43bec-2fce-4d98-a311-62ec2bd97673\",\"type\":\"default\",\"selected\":false,\"source\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"sourcePort\":\"4c4ddc6b-fd1e-4eee-a849-01f57e17e5b5\",\"target\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"targetPort\":\"30fa636e-50fd-4522-a347-a4f8bf3c5757\",\"points\":[{\"id\":\"a071d4e8-497f-49ad-9098-c547081adf4f\",\"selected\":false,\"x\":769,\"y\":285},{\"id\":\"097c88da-7ec4-46d4-8e77-cdc2ef189a59\",\"selected\":true,\"x\":822,\"y\":353}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"465f4167-bd7b-48d4-9dfb-66de064c9c4a\",\"type\":\"default\",\"selected\":false,\"source\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"sourcePort\":\"30fa636e-50fd-4522-a347-a4f8bf3c5757\",\"target\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"targetPort\":\"b31805a4-738b-4c8a-8407-eaf62e30363f\",\"points\":[{\"id\":\"5b29ed7f-51d5-45bd-bfad-47da91a1638d\",\"selected\":false,\"x\":822,\"y\":353},{\"id\":\"741c98c7-a11d-4fc2-a3aa-ad484b91c021\",\"selected\":false,\"x\":769,\"y\":303}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"31f04228-24a6-4c84-a10a-619fba4ff8dc\",\"type\":\"default\",\"selected\":false,\"source\":\"0e5982c6-d1ba-4b2f-afce-ed9d40acc8e4\",\"sourcePort\":\"6e6931dc-d17f-43e6-81da-e6f70f76e335\",\"target\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"targetPort\":\"8d0a4250-16ba-46e7-a08d-eb390e2126b0\",\"points\":[{\"id\":\"b8de70df-3412-4fbc-b462-17973bcff94b\",\"selected\":false,\"x\":1029,\"y\":182},{\"id\":\"9fa24395-d889-451a-804c-85d4136d3471\",\"selected\":false,\"x\":1156,\"y\":270}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a89da792-5429-4d7f-8777-212f85f0e232\",\"type\":\"default\",\"selected\":false,\"source\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"sourcePort\":\"8d0a4250-16ba-46e7-a08d-eb390e2126b0\",\"target\":\"3b2d5a56-3a60-4e51-aebe-156233dc9b84\",\"targetPort\":\"5bc5e9dc-93fa-42fb-b27a-e81c1b20519c\",\"points\":[{\"id\":\"c67d68bb-98d3-418e-9c57-9cc3914cc4e0\",\"selected\":false,\"x\":1156,\"y\":270},{\"id\":\"8ef6e1a9-9bc0-4e02-9623-2273ed75b018\",\"selected\":true,\"x\":1025,\"y\":239}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"4dc6fa2d-7683-43af-a36e-adaf375c38de\",\"type\":\"default\",\"selected\":false,\"source\":\"d75c5d14-e0ed-4a65-8a0d-4b9106f045fd\",\"sourcePort\":\"43b8aed2-0738-4407-a19f-0c33858289d8\",\"target\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"targetPort\":\"8d0a4250-16ba-46e7-a08d-eb390e2126b0\",\"points\":[{\"id\":\"f0c53273-554a-4186-bebf-8858a28595c4\",\"selected\":false,\"x\":1023,\"y\":296},{\"id\":\"ba3466ad-0011-47b6-a7d7-c7ddf11a294e\",\"selected\":false,\"x\":1156,\"y\":270}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"31c4fa47-b8ca-49f9-aa88-a65010297dde\",\"type\":\"default\",\"selected\":false,\"source\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"sourcePort\":\"8d0a4250-16ba-46e7-a08d-eb390e2126b0\",\"target\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"targetPort\":\"27c0ee0e-3dd4-4ec4-9cda-dee75bcf6edd\",\"points\":[{\"id\":\"6042f303-42f5-48c7-ac79-cc9ec6ca4c12\",\"selected\":false,\"x\":1156,\"y\":270},{\"id\":\"cd2eccb2-c06c-420d-85a2-5f7780a41d13\",\"selected\":true,\"x\":1024,\"y\":355}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300}],\"nodes\":[{\"id\":\"7fa34883-48b3-4289-aeea-687839e4844e\",\"type\":\"simple\",\"selected\":false,\"x\":308,\"y\":240,\"extras\":{},\"ports\":[{\"id\":\"46934b89-995e-4f6c-8e88-9e1dc3078007\",\"type\":\"default\",\"selected\":false,\"name\":\"out_46934b89-995e-4f6c-8e88-9e1dc3078007\",\"parentNode\":\"7fa34883-48b3-4289-aeea-687839e4844e\",\"links\":[\"f9929bb3-c3fb-4b8e-bbf0-51d6e39e00c1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"7fa34883-48b3-4289-aeea-687839e4844e\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"type\":\"simple\",\"selected\":false,\"x\":1149,\"y\":247,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"8d0a4250-16ba-46e7-a08d-eb390e2126b0\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"links\":[\"31f04228-24a6-4c84-a10a-619fba4ff8dc\",\"a89da792-5429-4d7f-8777-212f85f0e232\",\"4dc6fa2d-7683-43af-a36e-adaf375c38de\",\"31c4fa47-b8ca-49f9-aa88-a65010297dde\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"72df4205-29fc-4f91-9813-905abf1c7976\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"0e5982c6-d1ba-4b2f-afce-ed9d40acc8e4\",\"type\":\"simple\",\"selected\":false,\"x\":820,\"y\":157,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"semicolon\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}},\"ports\":[{\"id\":\"6e6931dc-d17f-43e6-81da-e6f70f76e335\",\"type\":\"default\",\"selected\":false,\"name\":\"out_6e6931dc-d17f-43e6-81da-e6f70f76e335\",\"parentNode\":\"0e5982c6-d1ba-4b2f-afce-ed9d40acc8e4\",\"links\":[\"31f04228-24a6-4c84-a10a-619fba4ff8dc\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"eca8f1c8-9a53-4a58-a241-7003c8d84bed\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"0e5982c6-d1ba-4b2f-afce-ed9d40acc8e4\",\"links\":[\"71acd6a0-b0df-431b-b4bd-05904458e297\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"0e5982c6-d1ba-4b2f-afce-ed9d40acc8e4\",\"name\":\"Read CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.ReadCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Read CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\"},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"semicolon\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outTable\":{\"ui:field\":\"variable\"}},\"formData\":{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\",\"tab\",\"space\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\",\"TAB\",\"Space\"]},\"optOffset\":{\"type\":\"object\",\"title\":\"Skip Rows\",\"variableType\":\"Integer\",\"customScope\":true,\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"optOffset\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optSeparator\",\"optOffset\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optSeparator\":\"semicolon\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"type\":\"simple\",\"selected\":false,\"x\":560,\"y\":202,\"extras\":{\"optConditions\":[\"msg.separator === ';'\",\"msg.separator === 'TAB'\",\"msg.separator === 'SPACE'\",\"msg.separator === ','\",\"msg.separator !== ';' && msg.seperator === ',' && msg.seperator !== 'TAB' && msg.seperator !== 'SPACE'\"]},\"ports\":[{\"id\":\"4a45be0a-7d44-425b-9156-681b48d9c271\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4a45be0a-7d44-425b-9156-681b48d9c271\",\"parentNode\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"links\":[\"71acd6a0-b0df-431b-b4bd-05904458e297\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8db64c66-43b2-4806-8494-bf75f628f585\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"links\":[\"f9929bb3-c3fb-4b8e-bbf0-51d6e39e00c1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"cb6edf55-3f6a-405a-9656-f5f81f533964\",\"type\":\"default\",\"selected\":false,\"name\":\"out_cb6edf55-3f6a-405a-9656-f5f81f533964\",\"parentNode\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"links\":[\"fa8dab20-dcdd-4320-bd18-c99182badadb\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8ee25493-e6c7-44a0-a3cb-1133f0e9f137\",\"type\":\"default\",\"selected\":false,\"name\":\"out_8ee25493-e6c7-44a0-a3cb-1133f0e9f137\",\"parentNode\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"links\":[\"26b505ca-e540-4bd2-a209-55a44b496ea6\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"4c4ddc6b-fd1e-4eee-a849-01f57e17e5b5\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4c4ddc6b-fd1e-4eee-a849-01f57e17e5b5\",\"parentNode\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"links\":[\"c6f43bec-2fce-4d98-a311-62ec2bd97673\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"b31805a4-738b-4c8a-8407-eaf62e30363f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b31805a4-738b-4c8a-8407-eaf62e30363f\",\"parentNode\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"links\":[\"465f4167-bd7b-48d4-9dfb-66de064c9c4a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"da4e68be-f416-4592-a4c8-7582308f2d34\",\"name\":\"Check Separator\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Check Separator\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.separator === ';'\",\"msg.separator === 'TAB'\",\"msg.separator === 'SPACE'\",\"msg.separator === ','\",\"msg.separator !== ';' && msg.seperator === ',' && msg.seperator !== 'TAB' && msg.seperator !== 'SPACE'\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"msg.separator === ';'\",\"msg.separator === 'TAB'\",\"msg.separator === 'SPACE'\",\"msg.separator === ','\",\"msg.separator !== ';' && msg.seperator === ',' && msg.seperator !== 'TAB' && msg.seperator !== 'SPACE'\"]}}],\"outputs\":5,\"inputs\":1}},{\"id\":\"3b2d5a56-3a60-4e51-aebe-156233dc9b84\",\"type\":\"simple\",\"selected\":false,\"x\":816,\"y\":214,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"tab\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}},\"ports\":[{\"id\":\"5bc5e9dc-93fa-42fb-b27a-e81c1b20519c\",\"type\":\"default\",\"selected\":false,\"name\":\"out_5bc5e9dc-93fa-42fb-b27a-e81c1b20519c\",\"parentNode\":\"3b2d5a56-3a60-4e51-aebe-156233dc9b84\",\"links\":[\"a89da792-5429-4d7f-8777-212f85f0e232\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"e23a561b-9075-48da-95f4-6660127947b9\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3b2d5a56-3a60-4e51-aebe-156233dc9b84\",\"links\":[\"fa8dab20-dcdd-4320-bd18-c99182badadb\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3b2d5a56-3a60-4e51-aebe-156233dc9b84\",\"name\":\"Read CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.ReadCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Read CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\"},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"tab\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outTable\":{\"ui:field\":\"variable\"}},\"formData\":{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\",\"tab\",\"space\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\",\"TAB\",\"Space\"]},\"optOffset\":{\"type\":\"object\",\"title\":\"Skip Rows\",\"variableType\":\"Integer\",\"customScope\":true,\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"optOffset\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optSeparator\",\"optOffset\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optSeparator\":\"tab\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"d75c5d14-e0ed-4a65-8a0d-4b9106f045fd\",\"type\":\"simple\",\"selected\":false,\"x\":814,\"y\":271,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"space\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}},\"ports\":[{\"id\":\"43b8aed2-0738-4407-a19f-0c33858289d8\",\"type\":\"default\",\"selected\":false,\"name\":\"out_43b8aed2-0738-4407-a19f-0c33858289d8\",\"parentNode\":\"d75c5d14-e0ed-4a65-8a0d-4b9106f045fd\",\"links\":[\"4dc6fa2d-7683-43af-a36e-adaf375c38de\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"bc73177f-55c0-47e0-a429-7b9dfc23db12\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"d75c5d14-e0ed-4a65-8a0d-4b9106f045fd\",\"links\":[\"26b505ca-e540-4bd2-a209-55a44b496ea6\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"d75c5d14-e0ed-4a65-8a0d-4b9106f045fd\",\"name\":\"Read CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.ReadCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Read CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\"},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"space\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outTable\":{\"ui:field\":\"variable\"}},\"formData\":{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\",\"tab\",\"space\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\",\"TAB\",\"Space\"]},\"optOffset\":{\"type\":\"object\",\"title\":\"Skip Rows\",\"variableType\":\"Integer\",\"customScope\":true,\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"optOffset\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optSeparator\",\"optOffset\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optSeparator\":\"space\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"type\":\"simple\",\"selected\":false,\"x\":815,\"y\":330,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"comma\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}},\"ports\":[{\"id\":\"27c0ee0e-3dd4-4ec4-9cda-dee75bcf6edd\",\"type\":\"default\",\"selected\":false,\"name\":\"out_27c0ee0e-3dd4-4ec4-9cda-dee75bcf6edd\",\"parentNode\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"links\":[\"31c4fa47-b8ca-49f9-aa88-a65010297dde\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"30fa636e-50fd-4522-a347-a4f8bf3c5757\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"links\":[\"c6f43bec-2fce-4d98-a311-62ec2bd97673\",\"465f4167-bd7b-48d4-9dfb-66de064c9c4a\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"1756fcdc-741b-436b-9c28-2b7f90182522\",\"name\":\"Read CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.ReadCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Read CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\"},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"comma\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outTable\":{\"ui:field\":\"variable\"}},\"formData\":{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\",\"tab\",\"space\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\",\"TAB\",\"Space\"]},\"optOffset\":{\"type\":\"object\",\"title\":\"Skip Rows\",\"variableType\":\"Integer\",\"customScope\":true,\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"optOffset\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optSeparator\",\"optOffset\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optSeparator\":\"comma\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}}],\"outputs\":1,\"inputs\":1}}]}"
+		},
+		{
+			"id": "76c20a25-f9e6-446e-a5e4-a467ad29a759",
+			"flow": "{\"id\":\"76c20a25-f9e6-446e-a5e4-a467ad29a759\",\"offsetX\":116.8257696490368,\"offsetY\":-70.9588121441283,\"zoom\":78.79999999999995,\"gridSize\":0,\"links\":[{\"id\":\"ac4b6b88-4268-4574-8f96-5445d834677d\",\"type\":\"default\",\"selected\":false,\"source\":\"63dbdc96-7435-47b1-af19-c28f8fffdc2a\",\"sourcePort\":\"0fcef8bd-5647-4695-92e4-ecadafcf0245\",\"target\":\"81a97310-e326-4d1b-893f-1596e1c99b73\",\"targetPort\":\"3d13ce26-2fa2-46ac-8d1c-708aba80adb2\",\"points\":[{\"id\":\"48e91375-09a6-482a-b18d-95aebd295e39\",\"selected\":false,\"x\":501,\"y\":225},{\"id\":\"7412a11c-e5c6-4fd0-84ad-af06d4190b5b\",\"selected\":false,\"x\":548,\"y\":225}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"e3cb4e1e-5c0c-4d2c-829e-fb8ab9c269df\",\"type\":\"default\",\"selected\":false,\"source\":\"81a97310-e326-4d1b-893f-1596e1c99b73\",\"sourcePort\":\"0e1b77cf-1aa6-476d-8c6c-48b743d8d64f\",\"target\":\"767cc733-2c7a-447e-bd92-1aac60e4d8bd\",\"targetPort\":\"d0a9d7c2-bfdd-42cf-806f-58f9f3694d99\",\"points\":[{\"id\":\"1d7f3fca-7ce3-4bd4-92da-4e340c1b6a91\",\"selected\":false,\"x\":750,\"y\":227},{\"id\":\"4e6d390c-f90b-4fd9-a33a-ec7fabe7a9f9\",\"selected\":false,\"x\":546,\"y\":282}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"ddfb0cd2-e15c-4c5c-852d-3671ddb0660f\",\"type\":\"default\",\"selected\":false,\"source\":\"767cc733-2c7a-447e-bd92-1aac60e4d8bd\",\"sourcePort\":\"4c108d81-794e-46dc-883f-355547678abe\",\"target\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"targetPort\":\"e2bc3365-ca71-44e4-a7b1-2a0322208871\",\"points\":[{\"id\":\"9fa87218-36e4-4296-8e9c-9ee08e7c5681\",\"selected\":false,\"x\":748,\"y\":284},{\"id\":\"d553dd4b-3e4b-47f6-a033-0e776b5f092e\",\"selected\":false,\"x\":544,\"y\":354}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"e197262c-c9df-4f92-8cce-fa509532ce17\",\"type\":\"default\",\"selected\":false,\"source\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"sourcePort\":\"b90f2e2e-e8ff-4022-80e5-c5bdec9afc9f\",\"target\":\"9255fb73-04b2-4ceb-be73-99daa0e5e9a4\",\"targetPort\":\"95221d8c-b479-49b4-b02d-e8ac5b923d50\",\"points\":[{\"id\":\"636481d0-c71f-4cce-aa64-443305850c45\",\"selected\":false,\"x\":746,\"y\":365},{\"id\":\"dc83fd08-1ee0-4aac-be2a-e807e9a5b781\",\"selected\":false,\"x\":543,\"y\":429}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"f77e6c59-6d83-4036-916d-8c873e6baf99\",\"type\":\"default\",\"selected\":false,\"source\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"sourcePort\":\"73b883f3-e6df-498f-8568-621132cb39fc\",\"target\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"targetPort\":\"f22c138b-e5ce-46ba-beb0-239213efabf2\",\"points\":[{\"id\":\"348bf486-660f-437d-8d4a-dd25b4d840db\",\"selected\":false,\"x\":746,\"y\":347},{\"id\":\"a5df1cca-2fec-4c61-81c9-58a8a3fac321\",\"selected\":false,\"x\":915,\"y\":347}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c0c97114-0570-4734-b16b-28257b7e606f\",\"type\":\"default\",\"selected\":false,\"source\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"sourcePort\":\"f22c138b-e5ce-46ba-beb0-239213efabf2\",\"target\":\"9255fb73-04b2-4ceb-be73-99daa0e5e9a4\",\"targetPort\":\"089367d7-3e0e-4dc5-84c8-1b41b4c86628\",\"points\":[{\"id\":\"d1edc826-0c33-4ddb-a9b2-e0f803bc3464\",\"selected\":false,\"x\":915,\"y\":347},{\"id\":\"a8a62b55-fe69-4467-89aa-c192691d7f9f\",\"selected\":false,\"x\":745,\"y\":431}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"d3a10254-ea59-446f-8e64-ed35009d478b\",\"type\":\"default\",\"selected\":false,\"source\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"sourcePort\":\"095cc8d2-ec11-44d5-9ab2-aa8817c5628e\",\"target\":\"03b48973-a723-404d-982c-43a5845c1d4b\",\"targetPort\":\"2e0d7fd7-5789-486d-ad10-e32e0295e808\",\"points\":[{\"id\":\"13dd9c1b-3778-41ee-8b6d-137e2546450e\",\"selected\":false,\"x\":1117,\"y\":358},{\"id\":\"505ea881-567b-49c6-8efc-5f4cf6b0f57e\",\"selected\":true,\"x\":915,\"y\":407}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"98c78df8-58a1-46ec-843c-4edae240ed77\",\"type\":\"default\",\"selected\":false,\"source\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"sourcePort\":\"60c40706-481c-4063-b5ca-b662ef7de080\",\"target\":\"df381119-bdf6-4c09-ac37-fe70aa984f36\",\"targetPort\":\"f6963ee2-dcd9-48a6-89b3-4f84f7719fc3\",\"points\":[{\"id\":\"168c2a5b-f7ce-47f0-ac89-8741e3f5bf5e\",\"selected\":false,\"x\":1117,\"y\":340},{\"id\":\"066bbcd4-6fa1-4d1f-98ae-a059b1e67278\",\"selected\":false,\"x\":1245,\"y\":217}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"69ff5b4c-ea61-420e-aa49-7d07a8033824\",\"type\":\"default\",\"selected\":false,\"source\":\"df381119-bdf6-4c09-ac37-fe70aa984f36\",\"sourcePort\":\"aa2a68a1-7a9d-45cf-a7a2-bd2474cd2b69\",\"target\":\"8432e5af-ac20-4a45-bdaf-9590d3a3b41d\",\"targetPort\":\"44915439-28d2-4fa9-a0fe-1a1326ef4660\",\"points\":[{\"id\":\"b9c1a788-7ff4-401c-aed8-a6e94e6faf18\",\"selected\":false,\"x\":1447,\"y\":219},{\"id\":\"6a74b6a2-e1f0-484d-a314-b9defd513c6c\",\"selected\":false,\"x\":1246,\"y\":274}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"ec74bc08-96b8-44ae-9940-946b2d8f0689\",\"type\":\"default\",\"selected\":false,\"source\":\"8432e5af-ac20-4a45-bdaf-9590d3a3b41d\",\"sourcePort\":\"f2a3bfa1-c52b-4f08-b834-983ae28d48a3\",\"target\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"targetPort\":\"83925a9d-cb28-4a96-8b56-bf7f24988367\",\"points\":[{\"id\":\"4bac09a8-5604-4171-9989-52263a6983eb\",\"selected\":false,\"x\":1448,\"y\":276},{\"id\":\"53c15ab3-4903-4cb9-8291-d4c798bbc966\",\"selected\":false,\"x\":1243,\"y\":351}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"ee050d88-865e-431d-9792-1db650d3fe32\",\"type\":\"default\",\"selected\":false,\"source\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"sourcePort\":\"36eb424a-c537-4493-ad88-36bab3f2a841\",\"target\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"targetPort\":\"7e8a1a95-f3cb-4b05-af86-91402cb97ad7\",\"points\":[{\"id\":\"ec06a8d1-c4ca-4d60-9ca4-6aeaf1706bfa\",\"selected\":false,\"x\":1445,\"y\":344},{\"id\":\"252945d5-be6a-4c5f-bb9a-59b6aebcc93a\",\"selected\":false,\"x\":1539,\"y\":344}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0535ecc6-e902-4460-a12d-19993bdd65cc\",\"type\":\"default\",\"selected\":false,\"source\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"sourcePort\":\"65f19118-94a4-4240-9c60-66284768c5f0\",\"target\":\"beeab693-faf9-4ae1-9d20-f9d3e2146579\",\"targetPort\":\"c3bf931e-017d-45da-bafe-bc1358bcd167\",\"points\":[{\"id\":\"5782a23d-3a3b-4961-a2bc-af781a0c0872\",\"selected\":false,\"x\":1445,\"y\":362},{\"id\":\"947c1bb4-4fe3-406c-977e-9a0fa39e9b21\",\"selected\":false,\"x\":1242,\"y\":426}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a4dfd574-044d-4d13-ab1b-130f34968ae5\",\"type\":\"default\",\"selected\":false,\"source\":\"beeab693-faf9-4ae1-9d20-f9d3e2146579\",\"sourcePort\":\"c4d359b3-a26a-4c69-b8e0-bc3304d4d0ed\",\"target\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"targetPort\":\"7e8a1a95-f3cb-4b05-af86-91402cb97ad7\",\"points\":[{\"id\":\"38f8e185-fb25-4046-9553-e4d8c524233d\",\"selected\":false,\"x\":1444,\"y\":428},{\"id\":\"fced660b-f1c9-48b3-9fbc-4f485f59941d\",\"selected\":false,\"x\":1539,\"y\":344}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"645c4a63-de2a-4d3c-9e15-7be0e26aa7eb\",\"type\":\"default\",\"selected\":false,\"source\":\"336fd0f4-ec73-4616-89c0-31b02b3d0e2e\",\"sourcePort\":\"04406ce7-1429-427e-9ce2-019e2f3d3fc7\",\"target\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"targetPort\":\"f22c138b-e5ce-46ba-beb0-239213efabf2\",\"points\":[{\"id\":\"372508ab-85d8-48ec-b9de-1c1402754d8e\",\"selected\":false,\"x\":1119,\"y\":287},{\"id\":\"f3c9a48d-0d02-4bab-baa7-834692006780\",\"selected\":false,\"x\":915,\"y\":347}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a9f0855d-9443-4b64-aa1e-624775d33cc3\",\"type\":\"default\",\"selected\":false,\"source\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"sourcePort\":\"798394b4-4279-4b8f-ba1c-2add7fd81b6e\",\"target\":\"24765271-75c1-4506-a413-91a516259001\",\"targetPort\":\"b7f26432-1b3c-4b7c-a728-61fce68774b0\",\"points\":[{\"id\":\"51fa3987-fbd7-437e-81e1-15e2802a31df\",\"selected\":false,\"x\":1741,\"y\":346},{\"id\":\"ea70e087-9915-48d5-93b8-6b0cca09d0e3\",\"selected\":false,\"x\":1538,\"y\":407}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"63dbdc96-7435-47b1-af19-c28f8fffdc2a\",\"type\":\"simple\",\"selected\":false,\"x\":300,\"y\":200,\"extras\":{},\"ports\":[{\"id\":\"0fcef8bd-5647-4695-92e4-ecadafcf0245\",\"type\":\"default\",\"selected\":false,\"name\":\"out_0fcef8bd-5647-4695-92e4-ecadafcf0245\",\"parentNode\":\"63dbdc96-7435-47b1-af19-c28f8fffdc2a\",\"links\":[\"ac4b6b88-4268-4574-8f96-5445d834677d\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"63dbdc96-7435-47b1-af19-c28f8fffdc2a\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"03b48973-a723-404d-982c-43a5845c1d4b\",\"type\":\"simple\",\"selected\":false,\"x\":908,\"y\":384,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"2e0d7fd7-5789-486d-ad10-e32e0295e808\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"03b48973-a723-404d-982c-43a5845c1d4b\",\"links\":[\"d3a10254-ea59-446f-8e64-ed35009d478b\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"03b48973-a723-404d-982c-43a5845c1d4b\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"81a97310-e326-4d1b-893f-1596e1c99b73\",\"type\":\"simple\",\"selected\":false,\"x\":541,\"y\":202,\"extras\":{\"outputs\":1,\"func\":\"msg.pages = parseInt(Math.ceil(msg.table.rows.length / msg.per_page));\\n\\nvar delimiter = msg.csv_path.includes('/') ? '/' : '\\\\\\\\';\\nmsg.file_name = msg.csv_path.split(delimiter).slice(-1)[0];\\n\\nmsg.page_keys = Array.from(Array(msg.pages).keys());\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"0e1b77cf-1aa6-476d-8c6c-48b743d8d64f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_0e1b77cf-1aa6-476d-8c6c-48b743d8d64f\",\"parentNode\":\"81a97310-e326-4d1b-893f-1596e1c99b73\",\"links\":[\"e3cb4e1e-5c0c-4d2c-829e-fb8ab9c269df\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"3d13ce26-2fa2-46ac-8d1c-708aba80adb2\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"81a97310-e326-4d1b-893f-1596e1c99b73\",\"links\":[\"ac4b6b88-4268-4574-8f96-5445d834677d\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"81a97310-e326-4d1b-893f-1596e1c99b73\",\"name\":\"Function\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{},{\"outputs\":1,\"func\":\"msg.pages = parseInt(Math.ceil(msg.table.rows.length / msg.per_page));\\n\\nvar delimiter = msg.csv_path.includes('/') ? '/' : '\\\\\\\\';\\nmsg.file_name = msg.csv_path.split(delimiter).slice(-1)[0];\\n\\nmsg.page_keys = Array.from(Array(msg.pages).keys());\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.pages = parseInt(Math.ceil(msg.table.rows.length / msg.per_page));\\n\\nvar delimiter = msg.csv_path.includes('/') ? '/' : '\\\\\\\\';\\nmsg.file_name = msg.csv_path.split(delimiter).slice(-1)[0];\\n\\nmsg.page_keys = Array.from(Array(msg.pages).keys());\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"767cc733-2c7a-447e-bd92-1aac60e4d8bd\",\"type\":\"simple\",\"selected\":false,\"x\":539,\"y\":259,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"},\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}},\"ports\":[{\"id\":\"4c108d81-794e-46dc-883f-355547678abe\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4c108d81-794e-46dc-883f-355547678abe\",\"parentNode\":\"767cc733-2c7a-447e-bd92-1aac60e4d8bd\",\"links\":[\"ddfb0cd2-e15c-4c5c-852d-3671ddb0660f\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"d0a9d7c2-bfdd-42cf-806f-58f9f3694d99\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"767cc733-2c7a-447e-bd92-1aac60e4d8bd\",\"links\":[\"e3cb4e1e-5c0c-4d2c-829e-fb8ab9c269df\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"767cc733-2c7a-447e-bd92-1aac60e4d8bd\",\"name\":\"Output Dir Exists\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.PathExists\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Output Dir Exists\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"}},{\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outResult\":{\"type\":\"object\",\"title\":\"Result\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}},\"formData\":{\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"type\":\"simple\",\"selected\":false,\"x\":537,\"y\":315,\"extras\":{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]},\"ports\":[{\"id\":\"73b883f3-e6df-498f-8568-621132cb39fc\",\"type\":\"default\",\"selected\":false,\"name\":\"out_73b883f3-e6df-498f-8568-621132cb39fc\",\"parentNode\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"links\":[\"f77e6c59-6d83-4036-916d-8c873e6baf99\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"e2bc3365-ca71-44e4-a7b1-2a0322208871\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"links\":[\"ddfb0cd2-e15c-4c5c-852d-3671ddb0660f\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"b90f2e2e-e8ff-4022-80e5-c5bdec9afc9f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b90f2e2e-e8ff-4022-80e5-c5bdec9afc9f\",\"parentNode\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"links\":[\"e197262c-c9df-4f92-8cce-fa509532ce17\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"69aacad1-08b9-40ed-bb57-9399ae73a903\",\"name\":\"Check Output Dir\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Check Output Dir\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"9255fb73-04b2-4ceb-be73-99daa0e5e9a4\",\"type\":\"simple\",\"selected\":false,\"x\":536,\"y\":406,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"},\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"},\"optType\":\"directory\"},\"ports\":[{\"id\":\"089367d7-3e0e-4dc5-84c8-1b41b4c86628\",\"type\":\"default\",\"selected\":false,\"name\":\"out_089367d7-3e0e-4dc5-84c8-1b41b4c86628\",\"parentNode\":\"9255fb73-04b2-4ceb-be73-99daa0e5e9a4\",\"links\":[\"c0c97114-0570-4734-b16b-28257b7e606f\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"95221d8c-b479-49b4-b02d-e8ac5b923d50\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9255fb73-04b2-4ceb-be73-99daa0e5e9a4\",\"links\":[\"e197262c-c9df-4f92-8cce-fa509532ce17\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9255fb73-04b2-4ceb-be73-99daa0e5e9a4\",\"name\":\"Create Output Dir\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.Create\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create Output Dir\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"}},{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}},{\"optType\":\"directory\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inPath\"]},\"formData\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"directory\",\"file\"],\"enumNames\":[\"Directory\",\"File\"]}}},\"uiSchema\":{\"ui:order\":[\"optType\"]},\"formData\":{\"optType\":\"directory\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"type\":\"simple\",\"selected\":false,\"x\":908,\"y\":319,\"extras\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"page_keys\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"page_key\"}},\"ports\":[{\"id\":\"60c40706-481c-4063-b5ca-b662ef7de080\",\"type\":\"default\",\"selected\":false,\"name\":\"out_60c40706-481c-4063-b5ca-b662ef7de080\",\"parentNode\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"links\":[\"98c78df8-58a1-46ec-843c-4edae240ed77\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"095cc8d2-ec11-44d5-9ab2-aa8817c5628e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_095cc8d2-ec11-44d5-9ab2-aa8817c5628e\",\"parentNode\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"links\":[\"d3a10254-ea59-446f-8e64-ed35009d478b\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f22c138b-e5ce-46ba-beb0-239213efabf2\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"links\":[\"f77e6c59-6d83-4036-916d-8c873e6baf99\",\"c0c97114-0570-4734-b16b-28257b7e606f\",\"645c4a63-de2a-4d3c-9e15-7be0e26aa7eb\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"c3f45f5d-64b9-44d5-825c-24eeaafd8b13\",\"name\":\"For Each Row Part\",\"icon\":\"M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z\",\"color\":\"#b9aeec\",\"namespace\":\"Core.Programming.ForEach\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"For Each Row Part\",\"color\":\"#b9aeec\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optInput\":{\"scope\":\"Message\",\"name\":\"page_keys\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"page_key\"}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optInput\":{\"type\":\"object\",\"title\":\"Loop through object\",\"variableType\":\"Array\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optOutput\":{\"type\":\"object\",\"title\":\"Current Item\",\"variableType\":\"string\",\"messageScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optInput\":{\"ui:field\":\"variable\"},\"optOutput\":{\"ui:field\":\"variable\"}},\"formData\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"\"}}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"df381119-bdf6-4c09-ac37-fe70aa984f36\",\"type\":\"simple\",\"selected\":false,\"x\":1238,\"y\":194,\"extras\":{\"outputs\":1,\"func\":\"var rows = msg.table.rows.slice(msg.page_key*msg.per_page, (msg.page_key+1)*msg.per_page);\\n\\nvar arr = msg.file_name.split('.');\\narr.splice(1, 0, `${msg.page_key+1}_of_${msg.pages}`);\\nvar file = `${arr[0]}_${arr[1]}.${arr[2]}`;\\nmsg.file_path = `${msg.out_dir}/${file}`;\\n\\nmsg.sub_table = {columns: msg.table.columns, rows: rows};\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"aa2a68a1-7a9d-45cf-a7a2-bd2474cd2b69\",\"type\":\"default\",\"selected\":false,\"name\":\"out_aa2a68a1-7a9d-45cf-a7a2-bd2474cd2b69\",\"parentNode\":\"df381119-bdf6-4c09-ac37-fe70aa984f36\",\"links\":[\"69ff5b4c-ea61-420e-aa49-7d07a8033824\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f6963ee2-dcd9-48a6-89b3-4f84f7719fc3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"df381119-bdf6-4c09-ac37-fe70aa984f36\",\"links\":[\"98c78df8-58a1-46ec-843c-4edae240ed77\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"df381119-bdf6-4c09-ac37-fe70aa984f36\",\"name\":\"Function\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{},{\"outputs\":1,\"func\":\"var rows = msg.table.rows.slice(msg.page_key*msg.per_page, (msg.page_key+1)*msg.per_page);\\n\\nvar arr = msg.file_name.split('.');\\narr.splice(1, 0, `${msg.page_key+1}_of_${msg.pages}`);\\nvar file = `${arr[0]}_${arr[1]}.${arr[2]}`;\\nmsg.file_path = `${msg.out_dir}/${file}`;\\n\\nmsg.sub_table = {columns: msg.table.columns, rows: rows};\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"var rows = msg.table.rows.slice(msg.page_key*msg.per_page, (msg.page_key+1)*msg.per_page);\\n\\nvar arr = msg.file_name.split('.');\\narr.splice(1, 0, `${msg.page_key+1}_of_${msg.pages}`);\\nvar file = `${arr[0]}_${arr[1]}.${arr[2]}`;\\nmsg.file_path = `${msg.out_dir}/${file}`;\\n\\nmsg.sub_table = {columns: msg.table.columns, rows: rows};\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"8432e5af-ac20-4a45-bdaf-9590d3a3b41d\",\"type\":\"simple\",\"selected\":false,\"x\":1239,\"y\":251,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"file_path\"},\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}},\"ports\":[{\"id\":\"f2a3bfa1-c52b-4f08-b834-983ae28d48a3\",\"type\":\"default\",\"selected\":false,\"name\":\"out_f2a3bfa1-c52b-4f08-b834-983ae28d48a3\",\"parentNode\":\"8432e5af-ac20-4a45-bdaf-9590d3a3b41d\",\"links\":[\"ec74bc08-96b8-44ae-9940-946b2d8f0689\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"44915439-28d2-4fa9-a0fe-1a1326ef4660\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"8432e5af-ac20-4a45-bdaf-9590d3a3b41d\",\"links\":[\"69ff5b4c-ea61-420e-aa49-7d07a8033824\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"8432e5af-ac20-4a45-bdaf-9590d3a3b41d\",\"name\":\"CSV Exists\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.PathExists\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"CSV Exists\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"file_path\"}},{\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inPath\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outResult\":{\"type\":\"object\",\"title\":\"Result\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}},\"formData\":{\"outResult\":{\"scope\":\"Message\",\"name\":\"exists\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"type\":\"simple\",\"selected\":false,\"x\":1236,\"y\":312,\"extras\":{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]},\"ports\":[{\"id\":\"36eb424a-c537-4493-ad88-36bab3f2a841\",\"type\":\"default\",\"selected\":false,\"name\":\"out_36eb424a-c537-4493-ad88-36bab3f2a841\",\"parentNode\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"links\":[\"ee050d88-865e-431d-9792-1db650d3fe32\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"65f19118-94a4-4240-9c60-66284768c5f0\",\"type\":\"default\",\"selected\":false,\"name\":\"out_65f19118-94a4-4240-9c60-66284768c5f0\",\"parentNode\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"links\":[\"0535ecc6-e902-4460-a12d-19993bdd65cc\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"83925a9d-cb28-4a96-8b56-bf7f24988367\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"links\":[\"ec74bc08-96b8-44ae-9940-946b2d8f0689\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"0be4700f-43d2-4591-9604-58ed83894a37\",\"name\":\"Check CSV File\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Check CSV File\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"msg.exists\",\"!msg.exists\"]}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"type\":\"simple\",\"selected\":false,\"x\":1532,\"y\":321,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"file_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"sub_table\"},\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"},\"ports\":[{\"id\":\"798394b4-4279-4b8f-ba1c-2add7fd81b6e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_798394b4-4279-4b8f-ba1c-2add7fd81b6e\",\"parentNode\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"links\":[\"a9f0855d-9443-4b64-aa1e-624775d33cc3\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"7e8a1a95-f3cb-4b05-af86-91402cb97ad7\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"links\":[\"ee050d88-865e-431d-9792-1db650d3fe32\",\"a4dfd574-044d-4d13-ab1b-130f34968ae5\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"7e1a69f3-0832-4b8d-bc6c-152cce528fff\",\"name\":\"Write CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.WriteCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Write CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"file_path\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"sub_table\"}},{\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inTable\":{\"ui:field\":\"variable\"},\"inFilePath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inFilePath\",\"inTable\"]},\"formData\":{\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"inFilePath\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\"]},\"optEncoding\":{\"type\":\"string\",\"title\":\"Encoding\",\"enum\":[\"utf8\",\"windows1254\"],\"enumNames\":[\"UTF-8\",\"Windows 1254\"]},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"}}},\"uiSchema\":{\"ui:order\":[\"optSeparator\",\"optEncoding\",\"optHeaders\"]},\"formData\":{\"optSeparator\":\"comma\",\"optEncoding\":\"utf8\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"beeab693-faf9-4ae1-9d20-f9d3e2146579\",\"type\":\"simple\",\"selected\":false,\"x\":1235,\"y\":403,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"file_path\"},\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"},\"optType\":\"file\"},\"ports\":[{\"id\":\"c4d359b3-a26a-4c69-b8e0-bc3304d4d0ed\",\"type\":\"default\",\"selected\":false,\"name\":\"out_c4d359b3-a26a-4c69-b8e0-bc3304d4d0ed\",\"parentNode\":\"beeab693-faf9-4ae1-9d20-f9d3e2146579\",\"links\":[\"a4dfd574-044d-4d13-ab1b-130f34968ae5\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"c3bf931e-017d-45da-bafe-bc1358bcd167\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"beeab693-faf9-4ae1-9d20-f9d3e2146579\",\"links\":[\"0535ecc6-e902-4460-a12d-19993bdd65cc\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"beeab693-faf9-4ae1-9d20-f9d3e2146579\",\"name\":\"Create CSV File\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.Create\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create CSV File\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"file_path\"}},{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}},{\"optType\":\"file\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inPath\"]},\"formData\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"out_dir\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"directory\",\"file\"],\"enumNames\":[\"Directory\",\"File\"]}}},\"uiSchema\":{\"ui:order\":[\"optType\"]},\"formData\":{\"optType\":\"directory\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"336fd0f4-ec73-4616-89c0-31b02b3d0e2e\",\"type\":\"simple\",\"selected\":false,\"x\":918,\"y\":262,\"extras\":{},\"ports\":[{\"id\":\"04406ce7-1429-427e-9ce2-019e2f3d3fc7\",\"type\":\"default\",\"selected\":false,\"name\":\"out_04406ce7-1429-427e-9ce2-019e2f3d3fc7\",\"parentNode\":\"336fd0f4-ec73-4616-89c0-31b02b3d0e2e\",\"links\":[\"645c4a63-de2a-4d3c-9e15-7be0e26aa7eb\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"336fd0f4-ec73-4616-89c0-31b02b3d0e2e\",\"name\":\"Next Page\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.Label\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Next Page\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"}],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"24765271-75c1-4506-a413-91a516259001\",\"type\":\"simple\",\"selected\":false,\"x\":1531,\"y\":384,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"336fd0f4-ec73-4616-89c0-31b02b3d0e2e\"]}},\"ports\":[{\"id\":\"b7f26432-1b3c-4b7c-a728-61fce68774b0\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"24765271-75c1-4506-a413-91a516259001\",\"links\":[\"a9f0855d-9443-4b64-aa1e-624775d33cc3\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"24765271-75c1-4506-a413-91a516259001\",\"name\":\"Go To Next Page\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.GoTo\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go To Next Page\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optNodes\":{\"all\":false,\"ids\":[\"336fd0f4-ec73-4616-89c0-31b02b3d0e2e\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"ids\":[],\"type\":\"goto\",\"all\":false}}}],\"outputs\":0,\"inputs\":1}}]}"
+		}
+	]
+}
