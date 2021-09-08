@@ -18,4 +18,3 @@ msg.excel_path = 'C:\\birthdays.xlsx';
 
 5. Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.
 
-Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)
