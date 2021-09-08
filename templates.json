@@ -243,5 +243,45 @@
       "Javascript",
       "Twilio"
     ]
+  },
+  {
+    "name": "Website UI Tracker",
+    "description": "Takes screenshot of a web site and upload it to specified slack channel",
+    "slug": "website-ui-tracker",
+    "icon": "website_ui_tracker_icon.png",
+    "screenshots": [
+      "website_ui_tracker_screenshot1.png",
+      "website_ui_tracker_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "monitoring",
+      "messageing"
+    ],
+    "applications": [
+      "Slack",
+      "Chrome"
+    ]
+  },
+  {
+    "name": "Birthday Celebrator",
+    "description": "Sends birthday messages to Slack Channel",
+    "slug": "birthday-celebrator",
+    "icon": "birthday_celebrator_icon.png",
+    "screenshots": [
+      "birthday_celebrator_screenshot1.png",
+      "birthday_celebrator_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Messaging",
+    "tags": [
+      "chat",
+      "messaging"
+    ],
+    "applications": [
+      "Slack",
+      "Excel"
+    ]
   }
 ]
