@@ -1,0 +1,15 @@
+- name: Translator
+  description: Translates the text from a specified language to another one using Google Translate
+  slug: translator
+  icon: translator_icon.png
+  screenshots:
+    - translator_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - browser
+    - dialog
+    - translate
+  applications:
+    - Chrome
+    - Filesystem

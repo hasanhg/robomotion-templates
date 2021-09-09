@@ -1,6 +1,6 @@
 
 # Website UI tracker
-Takes screenshot of a website and sends it to a slack channel
+Takes screenshot of a web site and uploads it to specified slack channel
 
 ## How it Works?
 1. Edit Config (Function) node

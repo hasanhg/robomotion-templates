@@ -1,0 +1,793 @@
+{
+	"nodes": [
+		{
+			"id": "860ce1c9-9c34-4f09-91ef-20f5e5e95d67",
+			"type": "simple",
+			"selected": true,
+			"x": 500,
+			"y": 155,
+			"extras": {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				},
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				},
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			},
+			"ports": [
+				{
+					"id": "523f80ae-8495-4db2-98e6-9014df90b928",
+					"type": "default",
+					"selected": false,
+					"name": "out_523f80ae-8495-4db2-98e6-9014df90b928",
+					"parentNode": "860ce1c9-9c34-4f09-91ef-20f5e5e95d67",
+					"links": [
+						"bcede51b-3242-4598-baaa-b17ade7dc778"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "860ce1c9-9c34-4f09-91ef-20f5e5e95d67",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"name": "Date.now()",
+							"scope": "JS"
+						}
+					},
+					{
+						"outPayload": {
+							"name": "payload",
+							"scope": "Message"
+						}
+					},
+					{
+						"optOnce": true,
+						"optOnceDelay": 0.1,
+						"optRepeat": 1
+					}
+				],
+				"xyz": [
+					{
+						"formData": {
+							"inPayload": {
+								"name": "Date.now()",
+								"scope": "JS"
+							}
+						},
+						"schema": {
+							"properties": {
+								"inPayload": {
+									"argsScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"scope": {
+											"type": "string"
+										}
+									},
+									"title": "Payload",
+									"type": "object",
+									"variableType": "String"
+								}
+							},
+							"title": "Input",
+							"type": "object"
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						}
+					},
+					{
+						"formData": {
+							"outPayload": {
+								"name": "payload",
+								"scope": "Message"
+							}
+						},
+						"schema": {
+							"properties": {
+								"outPayload": {
+									"messageOnly": true,
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"scope": {
+											"type": "string"
+										}
+									},
+									"title": "Payload",
+									"type": "object",
+									"variableType": "String"
+								}
+							},
+							"title": "Output",
+							"type": "object"
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						}
+					},
+					{
+						"formData": {
+							"optOnce": true,
+							"optOnceDelay": 0.1,
+							"optRepeat": 1
+						},
+						"schema": {
+							"properties": {
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								},
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								}
+							},
+							"title": "Options",
+							"type": "object"
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "2fa95909-da2a-4b39-ae2c-52c7f4ac46da",
+			"type": "simple",
+			"selected": true,
+			"x": 769,
+			"y": 141,
+			"extras": {
+				"func": "// [Required]\nmsg.json = {\n  \"id\": \"613a15d8a0ff94364fde98b2\",\n  \"index\": 0,\n  \"guid\": \"cb44ba37-bfd0-4ca8-8783-a847812bd714\",\n  \"isActive\": true,\n  \"balance\": \"$3,518.87\",\n  \"picture\": \"http://placehold.it/32x32\",\n  \"age\": 21,\n  \"tags\": [\n    \"ullamco\",\n    \"excepteur\",\n    \"duis\",\n    \"deserunt\",\n    \"in\",\n    \"anim\",\n    \"eiusmod\"\n  ],\n  \"friends\": [\n    {\n      \"id\": 0,\n      \"name\": \"Regina Payne\"\n    },\n    {\n      \"id\": 1,\n      \"name\": \"Mcbride Hammond\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Lydia Horton\"\n    }\n  ]\n};\n\n// DO NOT edit below!\ntry {\n  msg.json = JSON.stringify(msg.json);\n}\ncatch (e) {\n  return [null, msg];\n}\nreturn [msg, null];",
+				"optTimeout": 30,
+				"outputs": 2,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "2d01594c-d46b-4b1c-9a5c-902a87de54ea",
+					"type": "default",
+					"selected": false,
+					"name": "out_2d01594c-d46b-4b1c-9a5c-902a87de54ea",
+					"parentNode": "2fa95909-da2a-4b39-ae2c-52c7f4ac46da",
+					"links": [
+						"5e39848a-65c7-4818-8a24-31a101bb266c"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "0a1f2e61-1e24-4fd8-874b-5e77ded9f291",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "2fa95909-da2a-4b39-ae2c-52c7f4ac46da",
+					"links": [
+						"bcede51b-3242-4598-baaa-b17ade7dc778"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				},
+				{
+					"id": "9f2423ba-d5a8-48d3-a1ef-6e31ed7dd4ab",
+					"type": "default",
+					"selected": false,
+					"name": "out_9f2423ba-d5a8-48d3-a1ef-6e31ed7dd4ab",
+					"parentNode": "2fa95909-da2a-4b39-ae2c-52c7f4ac46da",
+					"links": [
+						"06bdc610-4953-4dab-a609-f39104b50107"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "2fa95909-da2a-4b39-ae2c-52c7f4ac46da",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"color": "#F27925",
+						"continueOnError": false,
+						"delayAfter": 0,
+						"delayBefore": 0,
+						"name": "Config",
+						"version": "1.11.6"
+					},
+					{
+						"func": "// [Required]\nmsg.json = {\n  \"id\": \"613a15d8a0ff94364fde98b2\",\n  \"index\": 0,\n  \"guid\": \"cb44ba37-bfd0-4ca8-8783-a847812bd714\",\n  \"isActive\": true,\n  \"balance\": \"$3,518.87\",\n  \"picture\": \"http://placehold.it/32x32\",\n  \"age\": 21,\n  \"tags\": [\n    \"ullamco\",\n    \"excepteur\",\n    \"duis\",\n    \"deserunt\",\n    \"in\",\n    \"anim\",\n    \"eiusmod\"\n  ],\n  \"friends\": [\n    {\n      \"id\": 0,\n      \"name\": \"Regina Payne\"\n    },\n    {\n      \"id\": 1,\n      \"name\": \"Mcbride Hammond\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Lydia Horton\"\n    }\n  ]\n};\n\n// DO NOT edit below!\ntry {\n  msg.json = JSON.stringify(msg.json);\n}\ncatch (e) {\n  return [null, msg];\n}\nreturn [msg, null];",
+						"optTimeout": 30,
+						"outputs": 2
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"formData": {
+							"func": "// [Required]\nmsg.json = {\n  \"id\": \"613a15d8a0ff94364fde98b2\",\n  \"index\": 0,\n  \"guid\": \"cb44ba37-bfd0-4ca8-8783-a847812bd714\",\n  \"isActive\": true,\n  \"balance\": \"$3,518.87\",\n  \"picture\": \"http://placehold.it/32x32\",\n  \"age\": 21,\n  \"tags\": [\n    \"ullamco\",\n    \"excepteur\",\n    \"duis\",\n    \"deserunt\",\n    \"in\",\n    \"anim\",\n    \"eiusmod\"\n  ],\n  \"friends\": [\n    {\n      \"id\": 0,\n      \"name\": \"Regina Payne\"\n    },\n    {\n      \"id\": 1,\n      \"name\": \"Mcbride Hammond\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Lydia Horton\"\n    }\n  ]\n};\n\n// DO NOT edit below!\ntry {\n  msg.json = JSON.stringify(msg.json);\n}\ncatch (e) {\n  return [null, msg];\n}\nreturn [msg, null];",
+							"optTimeout": 30,
+							"outputs": 2
+						},
+						"schema": {
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								},
+								"outputs": {
+									"maximum": 32,
+									"minimum": 1,
+									"title": "Outputs",
+									"type": "number"
+								}
+							},
+							"title": "Options",
+							"type": "object"
+						},
+						"uiSchema": {
+							"func": {
+								"ui:options": {
+									"rows": 6
+								},
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							}
+						}
+					},
+					{
+						"formData": {
+							"variables": []
+						},
+						"schema": {
+							"properties": {
+								"variables": {
+									"items": {
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										},
+										"type": "object"
+									},
+									"type": "array"
+								}
+							},
+							"title": "Local Variables",
+							"type": "object"
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						}
+					}
+				],
+				"outputs": 2,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "b0b3765f-a0c8-401c-9a0c-05a8c8c567e9",
+			"type": "simple",
+			"selected": true,
+			"x": 764,
+			"y": 233,
+			"extras": {
+				"inText": {
+					"name": "Invalid JSON",
+					"scope": "Custom"
+				},
+				"inTitle": {
+					"name": "JSON Beautifier",
+					"scope": "Custom"
+				},
+				"outConfirmed": {
+					"name": "confirmed",
+					"scope": "Message"
+				},
+				"optType": "error"
+			},
+			"ports": [
+				{
+					"id": "01d62ff6-5002-4ffd-8893-ddb51c9e0234",
+					"type": "default",
+					"selected": false,
+					"name": "out_01d62ff6-5002-4ffd-8893-ddb51c9e0234",
+					"parentNode": "b0b3765f-a0c8-401c-9a0c-05a8c8c567e9",
+					"links": [
+						"19747683-ec39-446e-90a9-b83b850d51ef"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "ecf10a67-cfcf-46c3-929d-95e2eb5120d2",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "b0b3765f-a0c8-401c-9a0c-05a8c8c567e9",
+					"links": [
+						"06bdc610-4953-4dab-a609-f39104b50107"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "b0b3765f-a0c8-401c-9a0c-05a8c8c567e9",
+				"name": "Invalid Warning",
+				"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+				"color": "#4da5fb",
+				"namespace": "Core.Dialog.MessageBox",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"color": "#4da5fb",
+						"continueOnError": false,
+						"delayAfter": 0,
+						"delayBefore": 0,
+						"name": "Invalid Warning",
+						"version": "1.11.6"
+					},
+					{
+						"inText": {
+							"name": "Invalid JSON",
+							"scope": "Custom"
+						},
+						"inTitle": {
+							"name": "JSON Beautifier",
+							"scope": "Custom"
+						}
+					},
+					{
+						"outConfirmed": {
+							"name": "confirmed",
+							"scope": "Message"
+						}
+					},
+					{
+						"optType": "error"
+					}
+				],
+				"xyz": [
+					{
+						"formData": {
+							"inText": {
+								"name": "Invalid JSON",
+								"scope": "Custom"
+							},
+							"inTitle": {
+								"name": "JSON Beautifier",
+								"scope": "Custom"
+							}
+						},
+						"schema": {
+							"properties": {
+								"inText": {
+									"customScope": true,
+									"jsScope": true,
+									"messageOnly": true,
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"scope": {
+											"type": "string"
+										}
+									},
+									"title": "Text",
+									"type": "object",
+									"variableType": "String"
+								},
+								"inTitle": {
+									"customScope": true,
+									"jsScope": true,
+									"messageOnly": true,
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"scope": {
+											"type": "string"
+										}
+									},
+									"title": "Title",
+									"type": "object",
+									"variableType": "String"
+								}
+							},
+							"title": "Input",
+							"type": "object"
+						},
+						"uiSchema": {
+							"inText": {
+								"ui:field": "variable"
+							},
+							"inTitle": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"inTitle",
+								"inText"
+							]
+						}
+					},
+					{
+						"formData": {
+							"outConfirmed": {
+								"name": "confirmed",
+								"scope": "Message"
+							}
+						},
+						"schema": {
+							"properties": {
+								"outConfirmed": {
+									"messageOnly": true,
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"scope": {
+											"type": "string"
+										}
+									},
+									"title": "Confirmed",
+									"type": "object",
+									"variableType": "Boolean"
+								}
+							},
+							"title": "Output",
+							"type": "object"
+						},
+						"uiSchema": {
+							"outConfirmed": {
+								"ui:field": "variable"
+							}
+						}
+					},
+					{
+						"formData": {
+							"optType": "error"
+						},
+						"schema": {
+							"properties": {
+								"optType": {
+									"enum": [
+										"yesno",
+										"info",
+										"error"
+									],
+									"enumNames": [
+										"Yes / No",
+										"Info",
+										"Error"
+									],
+									"title": "Type",
+									"type": "string"
+								}
+							},
+							"title": "Options",
+							"type": "object"
+						},
+						"uiSchema": {}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1f4a46c6-cc8e-4c2f-841c-204eea564123",
+			"type": "simple",
+			"selected": true,
+			"x": 1076,
+			"y": 235,
+			"extras": {
+				"outResult": {
+					"name": "error",
+					"scope": "Message"
+				}
+			},
+			"ports": [
+				{
+					"id": "dff0d2cd-6e80-446e-9d7b-08f2f028df98",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1f4a46c6-cc8e-4c2f-841c-204eea564123",
+					"links": [
+						"19747683-ec39-446e-90a9-b83b850d51ef"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "1f4a46c6-cc8e-4c2f-841c-204eea564123",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outResult": {
+							"name": "error",
+							"scope": "Message"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"formData": {
+							"outResult": {
+								"name": "error",
+								"scope": "Message"
+							}
+						},
+						"schema": {
+							"properties": {
+								"outResult": {
+									"messageOnly": true,
+									"properties": {
+										"name": {
+											"type": "string"
+										},
+										"scope": {
+											"type": "string"
+										}
+									},
+									"title": "Error",
+									"type": "object",
+									"variableType": "String"
+								}
+							},
+							"title": "Output",
+							"type": "object"
+						},
+						"uiSchema": {
+							"outResult": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outResult"
+							]
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "4cf87d0f-be92-423a-8f2b-a2e18234f659",
+			"type": "simple",
+			"selected": true,
+			"x": 93,
+			"y": -6,
+			"extras": {
+				"optText": "##### JSON Minifier How-To \n\nThis template uses *Programming* and *Dialog* nodes to minimize a given JSON object.\nThe result will be printed in Output Panel.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.json field to the JSON object you want to minimize.\n\n**3.** You can select System Console option of Debug node to print the result\nas robot log if the output is too long to debug in Output Panel. (Optional)"
+			},
+			"ports": [],
+			"model": {
+				"id": "4cf87d0f-be92-423a-8f2b-a2e18234f659",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### JSON Minifier How-To \n\nThis template uses *Programming* and *Dialog* nodes to minimize a given JSON object.\nThe result will be printed in Output Panel.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.json field to the JSON object you want to minimize.\n\n**3.** You can select System Console option of Debug node to print the result\nas robot log if the output is too long to debug in Output Panel. (Optional)"
+					}
+				],
+				"xyz": [
+					{
+						"formData": {
+							"optText": "##### JSON Minifier How-To \n\nThis template uses *Programming* and *Dialog* nodes to minimize a given JSON object.\nThe result will be printed in Output Panel.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.json field to the JSON object you want to minimize.\n\n**3.** You can select System Console option of Debug node to print the result\nas robot log if the output is too long to debug in Output Panel. (Optional)"
+						},
+						"schema": {
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							},
+							"title": "Options",
+							"type": "object"
+						},
+						"uiSchema": {
+							"comment": {
+								"ui:options": {
+									"rows": 6
+								},
+								"ui:widget": "hidden"
+							},
+							"optText": {
+								"ui:description": "Comment",
+								"ui:options": {
+									"rows": 8
+								},
+								"ui:widget": "hidden"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "6182a791-6dee-463e-a83e-7d8067f10b05",
+			"type": "simple",
+			"selected": true,
+			"x": 1075,
+			"y": 150,
+			"extras": {
+				"optActive": true,
+				"optSysConsole": false,
+				"optDebugData": {
+					"scope": "Message",
+					"name": ""
+				}
+			},
+			"ports": [
+				{
+					"id": "27455082-1eb8-4d6e-870c-48602fb11413",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "6182a791-6dee-463e-a83e-7d8067f10b05",
+					"links": [
+						"5e39848a-65c7-4818-8a24-31a101bb266c"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "6182a791-6dee-463e-a83e-7d8067f10b05",
+				"name": "Debug",
+				"icon": "M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z",
+				"color": "#E6EE9C",
+				"namespace": "Core.Programming.Debug",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Debug",
+						"version": "1.11.6",
+						"color": "#E6EE9C",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"optActive": true,
+						"optSysConsole": false,
+						"optDebugData": {
+							"scope": "Message",
+							"name": ""
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optActive": {
+									"title": "Active",
+									"type": "boolean"
+								},
+								"optSysConsole": {
+									"title": "System Console",
+									"type": "boolean"
+								},
+								"optDebugData": {
+									"type": "object",
+									"title": "Debug Data",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optDebugData": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"optDebugData",
+								"optActive",
+								"optSysConsole"
+							]
+						},
+						"formData": {
+							"optDebugData": {
+								"name": "",
+								"scope": "Message"
+							},
+							"optActive": true,
+							"optSysConsole": false
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		}
+	],
+	"subFlows": []
+}

@@ -1,5 +1,5 @@
 - name: Website UI Tracker
-  description: Takes screenshot of a web site and upload it to specified slack channel
+  description: Takes screenshot of a web site and uploads it to specified slack channel
   slug: website-ui-tracker
   icon: website_ui_tracker_icon.png
   screenshots:

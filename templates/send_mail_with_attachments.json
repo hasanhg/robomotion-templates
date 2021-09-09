@@ -1,0 +1,780 @@
+{
+	"nodes": [{
+		"id": "4e705f77-f776-4725-8b6a-8e70930b72e7",
+		"type": "simple",
+		"selected": true,
+		"x": 1001.25,
+		"y": 238.02777777777777,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "1ee05d68-4dee-4cd3-9f3c-b97d930d6c75",
+			"type": "default",
+			"selected": false,
+			"name": "out_1ee05d68-4dee-4cd3-9f3c-b97d930d6c75",
+			"parentNode": "4e705f77-f776-4725-8b6a-8e70930b72e7",
+			"links": ["e5e534a9-22a7-4c9d-af27-361121e13585"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "4e705f77-f776-4725-8b6a-8e70930b72e7",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "2dc87d11-ea69-4c37-8cee-870199186631",
+		"type": "simple",
+		"selected": true,
+		"x": 995,
+		"y": 292.77777777777777,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.from = \"support@robomotion.io\"; // [Required] The excel that includes birthdays of the employees\nmsg.to = \"to1@gmail.com, to2@hotmail.com\" //[Required] You can split e-mail addresses with comma\nmsg.cc = \"cc1@gmail.com, cc2@gmail.com\" //[Optional] You can split e-mail addresses with comma\nmsg.bcc = 'bcc1@gmail.com,bcc2@gmail.com'; // [Optional] You can split e-mail addresses with comma\nmsg.subject = \"Template From Robomotion\"; //[Required] Subject of the mail\nmsg.body = \"You received your template mail succesfully\"; // [Required] Body of the mail\nmsg.attachments = [\"C:\\\\file1.txt\", \"C:\\\\file2.pdf\"] //[Optional] the paths of attachment files\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "33acde03-c751-4de2-be53-46dea14c9362",
+			"type": "default",
+			"selected": false,
+			"name": "out_33acde03-c751-4de2-be53-46dea14c9362",
+			"parentNode": "2dc87d11-ea69-4c37-8cee-870199186631",
+			"links": ["a325714c-e1bc-4863-ae2e-48b73464f9e1"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "ac94537b-7e27-49c9-80bd-a8bd13a10def",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "2dc87d11-ea69-4c37-8cee-870199186631",
+			"links": ["e5e534a9-22a7-4c9d-af27-361121e13585"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "2dc87d11-ea69-4c37-8cee-870199186631",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.from = \"support@robomotion.io\"; // [Required] The excel that includes birthdays of the employees\nmsg.to = \"to1@gmail.com, to2@hotmail.com\" //[Required] You can split e-mail addresses with comma\nmsg.cc = \"cc1@gmail.com, cc2@gmail.com\" //[Optional] You can split e-mail addresses with comma\nmsg.bcc = 'bcc1@gmail.com,bcc2@gmail.com'; // [Optional] You can split e-mail addresses with comma\nmsg.subject = \"Template From Robomotion\"; //[Required] Subject of the mail\nmsg.body = \"You received your template mail succesfully\"; // [Required] Body of the mail\nmsg.attachments = [\"C:\\\\file1.txt\", \"C:\\\\file2.pdf\"] //[Optional] the paths of attachment files\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.from = \"support@robomotion.io\"; // [Required] The excel that includes birthdays of the employees\nmsg.to = \"to1@gmail.com, to2@hotmail.com\" //[Required] You can split e-mail addresses with comma\nmsg.cc = \"cc1@gmail.com, cc2@gmail.com\" //[Optional] You can split e-mail addresses with comma\nmsg.bcc = 'bcc1@gmail.com,bcc2@gmail.com'; // [Optional] You can split e-mail addresses with comma\nmsg.subject = \"Template From Robomotion\"; //[Required] Subject of the mail\nmsg.body = \"You received your template mail succesfully\"; // [Required] Body of the mail\nmsg.attachments = [\"C:\\\\file1.txt\", \"C:\\\\file2.pdf\"] //[Optional] the paths of attachment files\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "972c721d-4a88-49f9-8e84-b003e5af9923",
+		"type": "simple",
+		"selected": true,
+		"x": 996.5131578947369,
+		"y": 346.3304093567251,
+		"extras": {
+			"inFrom": {
+				"scope": "Message",
+				"name": "from"
+			},
+			"inTo": {
+				"scope": "Message",
+				"name": "to"
+			},
+			"inCc": {
+				"scope": "Message",
+				"name": "cc"
+			},
+			"inBcc": {
+				"scope": "Message",
+				"name": "bcc"
+			},
+			"inReplyTo": {
+				"scope": "Message",
+				"name": "replyTo"
+			},
+			"inSubject": {
+				"scope": "Message",
+				"name": "subject"
+			},
+			"inBody": {
+				"scope": "Message",
+				"name": "body"
+			},
+			"optCredentials": {
+				"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+				"itemId": "db4ed81a-e4b2-496e-8d65-de875e50f3ef"
+			},
+			"optHtmlBody": false,
+			"optAttachments": {
+				"scope": "Message",
+				"name": "attachments"
+			}
+		},
+		"ports": [{
+			"id": "3f95cd4c-cccd-4eba-b5f4-7aa2dfc56cfd",
+			"type": "default",
+			"selected": false,
+			"name": "out_3f95cd4c-cccd-4eba-b5f4-7aa2dfc56cfd",
+			"parentNode": "972c721d-4a88-49f9-8e84-b003e5af9923",
+			"links": ["72125677-c4bf-4c1d-a83a-fe21d162ea04"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "936e2a26-2758-48ed-8b9c-4d2e342e80c0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "972c721d-4a88-49f9-8e84-b003e5af9923",
+			"links": ["a325714c-e1bc-4863-ae2e-48b73464f9e1"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "972c721d-4a88-49f9-8e84-b003e5af9923",
+			"name": "Send Mail",
+			"icon": "M2,21L23,12L2,3V10L17,12L2,14V21Z",
+			"color": "#bfbfbf",
+			"namespace": "Core.Mail.Send",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Send Mail",
+				"version": "1.11.6",
+				"color": "#bfbfbf",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inFrom": {
+					"scope": "Message",
+					"name": "from"
+				},
+				"inTo": {
+					"scope": "Message",
+					"name": "to"
+				},
+				"inCc": {
+					"scope": "Message",
+					"name": "cc"
+				},
+				"inBcc": {
+					"scope": "Message",
+					"name": "bcc"
+				},
+				"inReplyTo": {
+					"scope": "Message",
+					"name": "replyTo"
+				},
+				"inSubject": {
+					"scope": "Message",
+					"name": "subject"
+				},
+				"inBody": {
+					"scope": "Message",
+					"name": "body"
+				}
+			}, {
+				"optCredentials": {
+					"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+					"itemId": "db4ed81a-e4b2-496e-8d65-de875e50f3ef"
+				},
+				"optHtmlBody": false,
+				"optAttachments": {
+					"scope": "Message",
+					"name": "attachments"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inFrom": {
+							"type": "object",
+							"title": "From",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTo": {
+							"type": "object",
+							"title": "To",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inCc": {
+							"type": "object",
+							"title": "Cc",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inBcc": {
+							"type": "object",
+							"title": "Bcc",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inReplyTo": {
+							"type": "object",
+							"title": "Reply To",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inSubject": {
+							"type": "object",
+							"title": "Subject",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inBody": {
+							"type": "object",
+							"title": "Body",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inFrom": {
+						"ui:field": "variable"
+					},
+					"inReplyTo": {
+						"ui:field": "variable"
+					},
+					"inTo": {
+						"ui:field": "variable"
+					},
+					"inCc": {
+						"ui:field": "variable"
+					},
+					"inBcc": {
+						"ui:field": "variable"
+					},
+					"inSubject": {
+						"ui:field": "variable"
+					},
+					"inBody": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inFrom": {
+						"scope": "Message",
+						"name": "from"
+					},
+					"inTo": {
+						"scope": "Message",
+						"name": "to"
+					},
+					"inCc": {
+						"scope": "Message",
+						"name": "cc"
+					},
+					"inBcc": {
+						"scope": "Message",
+						"name": "bcc"
+					},
+					"inReplyTo": {
+						"scope": "Message",
+						"name": "replyTo"
+					},
+					"inSubject": {
+						"scope": "Message",
+						"name": "subject"
+					},
+					"inBody": {
+						"scope": "Message",
+						"name": "body"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 2,
+							"properties": {
+								"vaultId": {
+									"type": "string"
+								},
+								"itemId": {
+									"type": "string"
+								}
+							}
+						},
+						"optHtmlBody": {
+							"title": "Is Body HTML",
+							"type": "boolean"
+						},
+						"optAttachments": {
+							"type": "object",
+							"title": "Attachments",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"optCustomAttachments": {
+							"title": "",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"optAttachments": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optCredentials", "optAttachments", "optCustomAttachments", "optHtmlBody"],
+					"optCustomAttachments": {
+						"items": {
+							"ui:placeholder": "Attachment path"
+						},
+						"ui:description": "Custom Attachments",
+						"ui:options": {
+							"orderable": false
+						}
+					}
+				},
+				"formData": {
+					"optCredentials": {
+						"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+						"itemId": "db4ed81a-e4b2-496e-8d65-de875e50f3ef"
+					},
+					"optHtmlBody": false,
+					"optAttachments": {
+						"scope": "Message",
+						"name": "attachments"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "2e966268-d5e5-4cc1-a8d0-7f64dff9a526",
+		"type": "simple",
+		"selected": true,
+		"x": 1005,
+		"y": 397.02777777777777,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "41db6907-92a2-4af1-8f86-7f0bea4c410f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "2e966268-d5e5-4cc1-a8d0-7f64dff9a526",
+			"links": ["72125677-c4bf-4c1d-a83a-fe21d162ea04"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "2e966268-d5e5-4cc1-a8d0-7f64dff9a526",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "5334b37c-3b6e-4f7a-92e1-ee8bfdae1f3f",
+		"type": "simple",
+		"selected": true,
+		"x": 450.719298245614,
+		"y": 21.7236842105263,
+		"extras": {
+			"optText": "##### Send Mail With Attachments How-To \n\nThis template uses *Mail* nodes to send e-mail with attachments.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.from, msg.to, msg.cc, msg.bcc fields with the emails you want to test.\n\n**3.** Update msg.subject with the subject of the mail you want to send.\n\n**4.** Update msg.body field with the body of the mail you want to send.\n\n**5** Update msg.attachments field with the full paths of the files you want to attach to the email you want to send.\n\n**6.** Apply the mail configuration by using this [instructions](https://docs.robomotion.io/getting-started/tutorials/mail)\n\n**7.** Select your vault and item in the credentials field of the **Send Mail** node"
+		},
+		"ports": [],
+		"model": {
+			"id": "5334b37c-3b6e-4f7a-92e1-ee8bfdae1f3f",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Send Mail With Attachments How-To \n\nThis template uses *Mail* nodes to send e-mail with attachments.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.from, msg.to, msg.cc, msg.bcc fields with the emails you want to test.\n\n**3.** Update msg.subject with the subject of the mail you want to send.\n\n**4.** Update msg.body field with the body of the mail you want to send.\n\n**5** Update msg.attachments field with the full paths of the files you want to attach to the email you want to send.\n\n**6.** Apply the mail configuration by using this [instructions](https://docs.robomotion.io/getting-started/tutorials/mail)\n\n**7.** Select your vault and item in the credentials field of the **Send Mail** node"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Send Mail With Attachments How-To \n\nThis template uses *Mail* nodes to send e-mail with attachments.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.from, msg.to, msg.cc, msg.bcc fields with the emails you want to test.\n\n**3.** Update msg.subject with the subject of the mail you want to send.\n\n**4.** Update msg.body field with the body of the mail you want to send.\n\n**5** Update msg.attachments field with the full paths of the files you want to attach to the email you want to send.\n\n**6.** Apply the mail configuration by using this [instructions](https://docs.robomotion.io/getting-started/tutorials/mail)\n\n**7.** Select your vault and item in the credentials field of the **Send Mail** node"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": []
+}

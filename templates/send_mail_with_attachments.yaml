@@ -1,0 +1,12 @@
+- name: Send Mail With Attachments
+  description: Sends e-mails with multiple attachment files
+  slug: send-mail-with-attachments
+  icon: send_mail_with_attachments_icon.png
+  screenshots:
+    - send_mail_with_attachments_screenshot.png
+  author: Robomotion
+  category: Mail
+  tags:
+    - mail
+  applications:
+    - Mail

@@ -1,0 +1,1030 @@
+{
+	"nodes": [{
+		"id": "5e244b06-3c44-4d3b-8cb8-e31213a99f9a",
+		"type": "simple",
+		"selected": true,
+		"x": 920,
+		"y": 142,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "120a35ab-0ba3-4ea8-8ea2-30af1bfb2cab",
+			"type": "default",
+			"selected": false,
+			"name": "out_120a35ab-0ba3-4ea8-8ea2-30af1bfb2cab",
+			"parentNode": "5e244b06-3c44-4d3b-8cb8-e31213a99f9a",
+			"links": ["ed74b631-f1b7-45be-8113-eb9f1e8f6ea3"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "5e244b06-3c44-4d3b-8cb8-e31213a99f9a",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "622316a1-ef22-4feb-9b7f-4f36c550bd66",
+		"type": "simple",
+		"selected": true,
+		"x": 910.75,
+		"y": 203.75,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.from = \"support@robomotion.io\"; // [Required] The excel that includes birthdays of the employees\nmsg.to = \"to1@gmail.com, to2@hotmail.com\" //[Required] You can split e-mail addresses with comma\nmsg.cc = \"cc1@gmail.com, cc2@gmail.com\" //[Optional] You can split e-mail addresses with comma\nmsg.bcc = 'bcc1@gmail.com,bcc2@gmail.com'; // [Optional] You can split e-mail addresses with comma\nmsg.subject = \"Template From Robomotion\"; //[Required] Subject of the mail\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "d512d524-08f3-4e39-8b00-2f56a292d0b9",
+			"type": "default",
+			"selected": false,
+			"name": "out_d512d524-08f3-4e39-8b00-2f56a292d0b9",
+			"parentNode": "622316a1-ef22-4feb-9b7f-4f36c550bd66",
+			"links": ["fc676491-5b2e-44ca-bb73-7245a8727bae"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "0ee50733-b951-407d-b72f-3d5977868920",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "622316a1-ef22-4feb-9b7f-4f36c550bd66",
+			"links": ["ed74b631-f1b7-45be-8113-eb9f1e8f6ea3"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "622316a1-ef22-4feb-9b7f-4f36c550bd66",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.from = \"support@robomotion.io\"; // [Required] The excel that includes birthdays of the employees\nmsg.to = \"to1@gmail.com, to2@hotmail.com\" //[Required] You can split e-mail addresses with comma\nmsg.cc = \"cc1@gmail.com, cc2@gmail.com\" //[Optional] You can split e-mail addresses with comma\nmsg.bcc = 'bcc1@gmail.com,bcc2@gmail.com'; // [Optional] You can split e-mail addresses with comma\nmsg.subject = \"Template From Robomotion\"; //[Required] Subject of the mail\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.from = \"support@robomotion.io\"; // [Required] The excel that includes birthdays of the employees\nmsg.to = \"to1@gmail.com, to2@hotmail.com\" //[Required] You can split e-mail addresses with comma\nmsg.cc = \"cc1@gmail.com, cc2@gmail.com\" //[Optional] You can split e-mail addresses with comma\nmsg.bcc = 'bcc1@gmail.com,bcc2@gmail.com'; // [Optional] You can split e-mail addresses with comma\nmsg.subject = \"Template From Robomotion\"; //[Required] Subject of the mail\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "1fc9bf65-e0e2-4246-bd66-27510db61f88",
+		"type": "simple",
+		"selected": true,
+		"x": 906.2631578947369,
+		"y": 375.30263157894734,
+		"extras": {
+			"inFrom": {
+				"scope": "Custom",
+				"name": "latif@robomotion.io"
+			},
+			"inTo": {
+				"scope": "Custom",
+				"name": "latif@robomotion.io"
+			},
+			"inCc": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"inBcc": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"inReplyTo": {
+				"scope": "Message",
+				"name": "replyTo"
+			},
+			"inSubject": {
+				"scope": "Custom",
+				"name": "test"
+			},
+			"inBody": {
+				"scope": "Message",
+				"name": "htmlData"
+			},
+			"optCredentials": {
+				"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+				"itemId": "db4ed81a-e4b2-496e-8d65-de875e50f3ef"
+			},
+			"optHtmlBody": true,
+			"optAttachments": {
+				"scope": "Message",
+				"name": "attachments"
+			}
+		},
+		"ports": [{
+			"id": "7b8faed6-a529-49d9-a9e1-caca9cb0b1a8",
+			"type": "default",
+			"selected": false,
+			"name": "out_7b8faed6-a529-49d9-a9e1-caca9cb0b1a8",
+			"parentNode": "1fc9bf65-e0e2-4246-bd66-27510db61f88",
+			"links": ["90297087-b676-4452-9fd0-08266518be14"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "515a6943-9f5f-4302-9192-bb65ab5f68d1",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "1fc9bf65-e0e2-4246-bd66-27510db61f88",
+			"links": ["6e20430c-bca2-49a6-805a-96753a3c9abb"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "1fc9bf65-e0e2-4246-bd66-27510db61f88",
+			"name": "Send Mail",
+			"icon": "M2,21L23,12L2,3V10L17,12L2,14V21Z",
+			"color": "#bfbfbf",
+			"namespace": "Core.Mail.Send",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Send Mail",
+				"version": "1.11.6",
+				"color": "#bfbfbf",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inFrom": {
+					"scope": "Custom",
+					"name": "latif@robomotion.io"
+				},
+				"inTo": {
+					"scope": "Custom",
+					"name": "latif@robomotion.io"
+				},
+				"inCc": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"inBcc": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"inReplyTo": {
+					"scope": "Message",
+					"name": "replyTo"
+				},
+				"inSubject": {
+					"scope": "Custom",
+					"name": "test"
+				},
+				"inBody": {
+					"scope": "Message",
+					"name": "htmlData"
+				}
+			}, {
+				"optCredentials": {
+					"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+					"itemId": "db4ed81a-e4b2-496e-8d65-de875e50f3ef"
+				},
+				"optHtmlBody": true,
+				"optAttachments": {
+					"scope": "Message",
+					"name": "attachments"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inFrom": {
+							"type": "object",
+							"title": "From",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTo": {
+							"type": "object",
+							"title": "To",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inCc": {
+							"type": "object",
+							"title": "Cc",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inBcc": {
+							"type": "object",
+							"title": "Bcc",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inReplyTo": {
+							"type": "object",
+							"title": "Reply To",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inSubject": {
+							"type": "object",
+							"title": "Subject",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inBody": {
+							"type": "object",
+							"title": "Body",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inFrom": {
+						"ui:field": "variable"
+					},
+					"inReplyTo": {
+						"ui:field": "variable"
+					},
+					"inTo": {
+						"ui:field": "variable"
+					},
+					"inCc": {
+						"ui:field": "variable"
+					},
+					"inBcc": {
+						"ui:field": "variable"
+					},
+					"inSubject": {
+						"ui:field": "variable"
+					},
+					"inBody": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inFrom": {
+						"scope": "Message",
+						"name": "from"
+					},
+					"inTo": {
+						"scope": "Message",
+						"name": "to"
+					},
+					"inCc": {
+						"scope": "Message",
+						"name": "cc"
+					},
+					"inBcc": {
+						"scope": "Message",
+						"name": "bcc"
+					},
+					"inReplyTo": {
+						"scope": "Message",
+						"name": "replyTo"
+					},
+					"inSubject": {
+						"scope": "Message",
+						"name": "subject"
+					},
+					"inBody": {
+						"scope": "Message",
+						"name": "body"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 2,
+							"properties": {
+								"vaultId": {
+									"type": "string"
+								},
+								"itemId": {
+									"type": "string"
+								}
+							}
+						},
+						"optHtmlBody": {
+							"title": "Is Body HTML",
+							"type": "boolean"
+						},
+						"optAttachments": {
+							"type": "object",
+							"title": "Attachments",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"optCustomAttachments": {
+							"title": "",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"optAttachments": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optCredentials", "optAttachments", "optCustomAttachments", "optHtmlBody"],
+					"optCustomAttachments": {
+						"items": {
+							"ui:placeholder": "Attachment path"
+						},
+						"ui:description": "Custom Attachments",
+						"ui:options": {
+							"orderable": false
+						}
+					}
+				},
+				"formData": {
+					"optCredentials": {
+						"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+						"itemId": "db4ed81a-e4b2-496e-8d65-de875e50f3ef"
+					},
+					"optHtmlBody": false,
+					"optAttachments": {
+						"scope": "Message",
+						"name": "attachments"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "1cdd3d49-a03a-490b-bfaf-2d0419c974f6",
+		"type": "simple",
+		"selected": true,
+		"x": 905.75,
+		"y": 433,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "e936e420-bc1e-45ce-8662-fd02752aeae7",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "1cdd3d49-a03a-490b-bfaf-2d0419c974f6",
+			"links": ["90297087-b676-4452-9fd0-08266518be14"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "1cdd3d49-a03a-490b-bfaf-2d0419c974f6",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "65d284f8-92e0-4a93-9664-59e703606b78",
+		"type": "simple",
+		"selected": true,
+		"x": 427.469298245614,
+		"y": 30.69590643274853,
+		"extras": {
+			"optText": "##### Send Mail With Attachments How-To \n\nThis template uses *Mail* nodes to send e-mail as html.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.from, msg.to, msg.cc, msg.bcc fields with the emails you want to test.\n\n**3.** Update msg.subject with the subject of the mail you want to send.\n\n**4.** Apply the mail configuration by using this [instructions](https://docs.robomotion.io/getting-started/tutorials/mail)\n\n**5.** Select your vault and item in the credentials field of the **Send Mail** node"
+		},
+		"ports": [],
+		"model": {
+			"id": "65d284f8-92e0-4a93-9664-59e703606b78",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Send Mail With Attachments How-To \n\nThis template uses *Mail* nodes to send e-mail as html.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.from, msg.to, msg.cc, msg.bcc fields with the emails you want to test.\n\n**3.** Update msg.subject with the subject of the mail you want to send.\n\n**4.** Apply the mail configuration by using this [instructions](https://docs.robomotion.io/getting-started/tutorials/mail)\n\n**5.** Select your vault and item in the credentials field of the **Send Mail** node"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Send Mail With Attachments How-To \n\nThis template uses *Mail* nodes to send e-mail as html.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.from, msg.to, msg.cc, msg.bcc fields with the emails you want to test.\n\n**3.** Update msg.subject with the subject of the mail you want to send.\n\n**4.** Apply the mail configuration by using this [instructions](https://docs.robomotion.io/getting-started/tutorials/mail)\n\n**5.** Select your vault and item in the credentials field of the **Send Mail** node"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "6ea6a381-4787-4e1f-bdd5-23db252830b1",
+		"type": "simple",
+		"selected": true,
+		"x": 909,
+		"y": 256,
+		"extras": {
+			"outputs": 1,
+			"func": "//Sample data for sending as html. It can be scraped data with browser nodes or read excel content etc...\nmsg.list = [\n    {name:\"Michael\" , surname:\"William\"},\n    {name:\"Richard\" , surname:\"Simith\"},\n    {name:\"Cristopher\" , surname:\"Jones\"},\n    {name:\"Mark\" , surname:\"Davies\"},\n    {name:\"Harry\" , surname:\"Ackley\"}\n  ]\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "3970ba9e-ca3e-4d23-81b9-c69ab4c17992",
+			"type": "default",
+			"selected": false,
+			"name": "out_3970ba9e-ca3e-4d23-81b9-c69ab4c17992",
+			"parentNode": "6ea6a381-4787-4e1f-bdd5-23db252830b1",
+			"links": ["27cf0fae-d712-4092-aec2-abef6d806fc0"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "21c787f0-d22d-4650-9100-bd78a7118e22",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "6ea6a381-4787-4e1f-bdd5-23db252830b1",
+			"links": ["fc676491-5b2e-44ca-bb73-7245a8727bae"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "6ea6a381-4787-4e1f-bdd5-23db252830b1",
+			"name": "Prepare Sample Data",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Prepare Sample Data",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "//Sample data for sending as html. It can be scraped data with browser nodes or read excel content etc...\nmsg.list = [\n    {name:\"Michael\" , surname:\"William\"},\n    {name:\"Richard\" , surname:\"Simith\"},\n    {name:\"Cristopher\" , surname:\"Jones\"},\n    {name:\"Mark\" , surname:\"Davies\"},\n    {name:\"Harry\" , surname:\"Ackley\"}\n  ]\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "//Sample data for sending as html. It can be scraped data with browser nodes or read excel content etc...\nmsg.list = [\n    {name:\"Michael\" , surname:\"William\"},\n    {name:\"Richard\" , surname:\"Simith\"},\n    {name:\"Cristopher\" , surname:\"Jones\"},\n    {name:\"Mark\" , surname:\"Davies\"},\n    {name:\"Harry\" , surname:\"Ackley\"}\n  ]\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "962cd507-4340-4af1-b2de-cc2f2a9eb361",
+		"type": "simple",
+		"selected": true,
+		"x": 908,
+		"y": 313,
+		"extras": {
+			"outputs": 1,
+			"func": "var htmlData = `<html> \n                  <head>\n                    <style> \n                      table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } tr:nth-child(even) { background-color: #dddddd; } \n                    </style>\n                  </head>\n                  <body> <h2>User List</h2> <br>\n                    <table>\n                      <tr> \n                        <th>Number</th> <th>Name</th> <th>Surname</th>\n                      </tr>\n                      `\n\n \nfor(var i = 0; i < msg.list.length;i++){\n  htmlData += \"<tr> <td>\" + (i + 1)+\"</td> <td>\"+msg.list[i][\"name\"]+\"</td> <td>\"+msg.list[i][\"surname\"]+\"</td> </tr>\" \n  \n}\nhtmlData +=\"</table> </body> </html>\"\nmsg.htmlData = htmlData\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "5e082bcb-d7b8-488b-b16e-1a49cbcc1552",
+			"type": "default",
+			"selected": false,
+			"name": "out_5e082bcb-d7b8-488b-b16e-1a49cbcc1552",
+			"parentNode": "962cd507-4340-4af1-b2de-cc2f2a9eb361",
+			"links": ["6e20430c-bca2-49a6-805a-96753a3c9abb"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "6d679bda-eb66-4822-add3-efb5f238f888",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "962cd507-4340-4af1-b2de-cc2f2a9eb361",
+			"links": ["27cf0fae-d712-4092-aec2-abef6d806fc0"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "962cd507-4340-4af1-b2de-cc2f2a9eb361",
+			"name": "Prepare HTML Content",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Prepare HTML Content",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "var htmlData = `<html> \n                  <head>\n                    <style> \n                      table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } tr:nth-child(even) { background-color: #dddddd; } \n                    </style>\n                  </head>\n                  <body> <h2>User List</h2> <br>\n                    <table>\n                      <tr> \n                        <th>Number</th> <th>Name</th> <th>Surname</th>\n                      </tr>\n                      `\n\n \nfor(var i = 0; i < msg.list.length;i++){\n  htmlData += \"<tr> <td>\" + (i + 1)+\"</td> <td>\"+msg.list[i][\"name\"]+\"</td> <td>\"+msg.list[i][\"surname\"]+\"</td> </tr>\" \n  \n}\nhtmlData +=\"</table> </body> </html>\"\nmsg.htmlData = htmlData\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "var htmlData = `<html> \n                  <head>\n                    <style> \n                      table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } tr:nth-child(even) { background-color: #dddddd; } \n                    </style>\n                  </head>\n                  <body> <h2>User List</h2> <br>\n                    <table>\n                      <tr> \n                        <th>Number</th> <th>Name</th> <th>Surname</th>\n                      </tr>\n                      `\n\n \nfor(var i = 0; i < msg.list.length;i++){\n  htmlData += \"<tr> <td>\" + (i + 1)+\"</td> <td>\"+msg.list[i][\"name\"]+\"</td> <td>\"+msg.list[i][\"surname\"]+\"</td> </tr>\" \n  \n}\nhtmlData +=\"</table> </body> </html>\"\nmsg.htmlData = htmlData\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

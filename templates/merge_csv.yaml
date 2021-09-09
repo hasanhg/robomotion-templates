@@ -1,0 +1,16 @@
+- name: Merge CSV
+  description: Merges a group of .csv files into a CSV file
+  slug: merge-csv
+  icon: merge_csv_icon.png
+  screenshots:
+    - merge_csv_screenshot1.png
+    - merge_csv_screenshot2.png
+  author: Robomotion
+  category: Conversion
+  tags:
+    - csv
+    - merge
+  applications:
+    - CSV
+    - Filesystem
+    - Javascript
