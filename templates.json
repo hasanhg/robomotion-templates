@@ -777,8 +777,8 @@
   {
     "name": "Send Mail With Attachments",
     "description": "Sends e-mails with multiple attachment files",
-    "slug": "send-email-with-attachments",
-    "icon": "send_email_with_attachments_icon.png",
+    "slug": "send-mail-with-attachments",
+    "icon": "send_mail_with_attachments_icon.png",
     "screenshots": [
       "send_mail_with_attachments_screenshot.png"
     ],
