@@ -18,6 +18,4 @@ applications:
   - SQLite
   - Tesseract
   - Twilio
-  - Twitter
-  - Instagram
-  - Word
+  - Mail

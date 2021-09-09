@@ -5,8 +5,8 @@
   screenshots:
     - send_mail_with_attachments_screenshot.png
   author: Robomotion
-  category: Communication
+  category: Mail
   tags:
     - mail
   applications:
-    - Other
+    - Mail
