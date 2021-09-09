@@ -18,6 +18,26 @@
     ]
   },
   {
+    "name": "Birthday Celebrator",
+    "description": "Sends birthday messages to Slack Channel",
+    "slug": "birthday-celebrator",
+    "icon": "birthday_celebrator_icon.png",
+    "screenshots": [
+      "birthday_celebrator_screenshot1.png",
+      "birthday_celebrator_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Messaging",
+    "tags": [
+      "chat",
+      "messaging"
+    ],
+    "applications": [
+      "Slack",
+      "Excel"
+    ]
+  },
+  {
     "name": "Content Checker",
     "description": "Checks spesific field in given website url and notifies if content has changed.",
     "slug": "content-checker",
@@ -32,6 +52,27 @@
     ],
     "applications": [
       "Javascript"
+    ]
+  },
+  {
+    "name": "Daily Sport News",
+    "description": "Reads document(s) from a MongoDB collection with filter and sends this document(s) via mail.",
+    "slug": "daily-sport-news",
+    "icon": "daily_sport_news_icon.png",
+    "screenshots": [
+      "daily_sport_news_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "database",
+      "javascript",
+      "mail"
+    ],
+    "applications": [
+      "Javascript",
+      "MongoDB",
+      "Mail"
     ]
   },
   {
@@ -55,6 +96,46 @@
     ]
   },
   {
+    "name": "JSON Beautifier",
+    "description": "Beautifies a given JSON string",
+    "slug": "json-beautifier",
+    "icon": "json_beautifier_icon.png",
+    "screenshots": [
+      "json_beautifier_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "javascript",
+      "json",
+      "beautify"
+    ],
+    "applications": [
+      "Filesystem",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "JSON Minifier",
+    "description": "Minimizes a given JSON object",
+    "slug": "json-minifier",
+    "icon": "json_minifier_icon.png",
+    "screenshots": [
+      "json_minifier_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "javascript",
+      "json",
+      "minify"
+    ],
+    "applications": [
+      "Filesystem",
+      "Javascript"
+    ]
+  },
+  {
     "name": "Local Time",
     "description": "Takes a city name from the user and prints the local time out",
     "slug": "local-time",
@@ -71,6 +152,46 @@
     ],
     "applications": [
       "Chrome",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Merge CSV",
+    "description": "Merges a group of .csv files into a CSV file",
+    "slug": "merge-csv",
+    "icon": "merge_csv_icon.png",
+    "screenshots": [
+      "merge_csv_screenshot1.png",
+      "merge_csv_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Conversion",
+    "tags": [
+      "csv",
+      "merge"
+    ],
+    "applications": [
+      "CSV",
+      "Filesystem",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Password Generator",
+    "description": "Generates a strong password with specified length",
+    "slug": "password-generator",
+    "icon": "password_generator_icon.png",
+    "screenshots": [
+      "password_generator_screenshot1.png",
+      "password_generator_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Security",
+    "tags": [
+      "password",
+      "security"
+    ],
+    "applications": [
       "Javascript"
     ]
   },
@@ -144,6 +265,44 @@
     ],
     "applications": [
       "Chrome"
+    ]
+  },
+  {
+    "name": "Send Mail As HTML",
+    "description": "Sends mail with HTML format",
+    "slug": "send-mail-as-html",
+    "icon": "send_mail_as_html_icon.png",
+    "screenshots": [
+      "send_mail_as_html_screenshot1.png",
+      "send_mail_as_html_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "scraping",
+      "browser",
+      "excel"
+    ],
+    "applications": [
+      "Chrome",
+      "Excel"
+    ]
+  },
+  {
+    "name": "Send Mail With Attachments",
+    "description": "Sends e-mails with multiple attachment files",
+    "slug": "send-mail-with-attachments",
+    "icon": "send_mail_with_attachments_icon.png",
+    "screenshots": [
+      "send_mail_with_attachments_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Mail",
+    "tags": [
+      "mail"
+    ],
+    "applications": [
+      "Mail"
     ]
   },
   {
@@ -226,6 +385,46 @@
     ]
   },
   {
+    "name": "Translator",
+    "description": "Translates the text from a specified language to another one using Google Translate",
+    "slug": "translator",
+    "icon": "translator_icon.png",
+    "screenshots": [
+      "translator_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "browser",
+      "dialog",
+      "translate"
+    ],
+    "applications": [
+      "Chrome",
+      "Filesystem"
+    ]
+  },
+  {
+    "name": "Website UI Tracker",
+    "description": "Takes screenshot of a web site and uploads it to specified slack channel",
+    "slug": "website-ui-tracker",
+    "icon": "website_ui_tracker_icon.png",
+    "screenshots": [
+      "website_ui_tracker_screenshot1.png",
+      "website_ui_tracker_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "monitoring",
+      "messaging"
+    ],
+    "applications": [
+      "Slack",
+      "Chrome"
+    ]
+  },
+  {
     "name": "WhatsApp FAQ Bot",
     "description": "Basic Whatsapp FAQ Bot example for customer support",
     "slug": "whatsapp-faq-bot",
@@ -242,46 +441,6 @@
     "applications": [
       "Javascript",
       "Twilio"
-    ]
-  },
-  {
-    "name": "Website UI Tracker",
-    "description": "Takes screenshot of a web site and upload it to specified slack channel",
-    "slug": "website-ui-tracker",
-    "icon": "website_ui_tracker_icon.png",
-    "screenshots": [
-      "website_ui_tracker_screenshot1.png",
-      "website_ui_tracker_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "monitoring",
-      "messageing"
-    ],
-    "applications": [
-      "Slack",
-      "Chrome"
-    ]
-  },
-  {
-    "name": "Birthday Celebrator",
-    "description": "Sends birthday messages to Slack Channel",
-    "slug": "birthday-celebrator",
-    "icon": "birthday_celebrator_icon.png",
-    "screenshots": [
-      "birthday_celebrator_screenshot1.png",
-      "birthday_celebrator_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Messaging",
-    "tags": [
-      "chat",
-      "messaging"
-    ],
-    "applications": [
-      "Slack",
-      "Excel"
     ]
   }
 ]

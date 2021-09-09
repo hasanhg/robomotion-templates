@@ -1,0 +1,16 @@
+- name: JSON Minifier
+  description: Minimizes a given JSON object
+  slug: json-minifier
+  icon: json_minifier_icon.png
+  screenshots:
+    - json_minifier_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - javascript
+    - json
+    - minify
+  applications:
+    - Filesystem
+    - Javascript
+    

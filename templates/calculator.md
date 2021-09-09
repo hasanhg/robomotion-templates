@@ -10,3 +10,5 @@ your PATH envrionment variable.
 
 3. Set the msg.excel_path field to the full filepath of the excel file including
 calculation operations.
+
+Icons made by [Tristan Edwards](http://dribbble.com/tristanedwards) from [Icon Archive](https://iconarchive.com/)

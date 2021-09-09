@@ -14,3 +14,5 @@ the resulting CSV files.
 
 5. Set the msg.separator field to the separator value that is used in CSV file
 (',', ';', 'TAB', 'SPACE').
+
+Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)

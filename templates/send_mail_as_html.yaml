@@ -1,0 +1,16 @@
+- name: Send Mail As HTML
+  description: Sends mail with HTML format
+  slug: send-mail-as-html
+  icon: send_mail_as_html_icon.png
+  screenshots:
+    - send_mail_as_html_screenshot1.png
+    - send_mail_as_html_screenshot2.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - scraping
+    - browser
+    - excel
+  applications:
+    - Chrome
+    - Excel

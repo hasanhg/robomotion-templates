@@ -1,0 +1,16 @@
+- name: JSON Beautifier
+  description: Beautifies a given JSON string
+  slug: json-beautifier
+  icon: json_beautifier_icon.png
+  screenshots:
+    - json_beautifier_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - javascript
+    - json
+    - beautify
+  applications:
+    - Filesystem
+    - Javascript
+    
