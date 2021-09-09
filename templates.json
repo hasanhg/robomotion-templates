@@ -403,6 +403,25 @@
     ]
   },
   {
+    "name": "Password Generator",
+    "description": "Generates a strong password with specified length",
+    "slug": "password-generator",
+    "icon": "password_generator_icon.png",
+    "screenshots": [
+      "password_generator_screenshot1.png",
+      "password_generator_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Security",
+    "tags": [
+      "password",
+      "security"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
     "name": "Read Text File",
     "description": "Reads the conent of a text file in your file system",
     "slug": "read-text-file",
@@ -556,6 +575,27 @@
     ]
   },
   {
+    "name": "Send Mail As HTML",
+    "description": "Sends mail with HTML format",
+    "slug": "send-mail-as-html",
+    "icon": "send_mail_as_html_icon.png",
+    "screenshots": [
+      "send_mail_as_html_screenshot1.png",
+      "send_mail_as_html_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "scraping",
+      "browser",
+      "excel"
+    ],
+    "applications": [
+      "Chrome",
+      "Excel"
+    ]
+  },
+  {
     "name": "Send Mail With Attachments",
     "description": "Sends e-mails with multiple attachment files",
     "slug": "send-mail-with-attachments",
@@ -694,6 +734,26 @@
     ]
   },
   {
+    "name": "Translator",
+    "description": "Translates the text from a specified language to another one using Google Translate",
+    "slug": "translator",
+    "icon": "translator_icon.png",
+    "screenshots": [
+      "translator_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "browser",
+      "dialog",
+      "translate"
+    ],
+    "applications": [
+      "Chrome",
+      "Filesystem"
+    ]
+  },
+  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -730,60 +790,6 @@
     "applications": [
       "Javascript",
       "Twilio"
-    ]
-  },
-  {
-    "name": "Send Mail With Attachments",
-    "description": "Sends e-mails with multiple attachment files",
-    "slug": "send-mail-with-attachments",
-    "icon": "send_mail_with_attachments_icon.png",
-    "screenshots": [
-      "send_mail_with_attachments_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Mail",
-    "tags": [
-      "mail"
-    ],
-    "applications": [
-      "Mail"
-    ]
-  },
-  {
-    "name": "Send Mail As HTML",
-    "description": "Sends mail with HTML format",
-    "slug": "send-mail-as-html",
-    "icon": "send_mail_as_html_icon.png",
-    "screenshots": [
-      "send_mail_as_html_screenshot1.png",
-      "send_mail_as_html_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Mail",
-    "tags": [
-      "mail"
-    ],
-    "applications": [
-      "Mail"
-    ]
-  },
-  {
-    "name": "Password Generator",
-    "description": "Generates a strong password with specified length",
-    "slug": "password-generator",
-    "icon": "password_generator_icon.png",
-    "screenshots": [
-      "password_generator_screenshot1.png",
-      "password_generator_screenshot1.png"
-    ],
-    "author": "Robomotion",
-    "category": "Security",
-    "tags": [
-      "password",
-      "security"
-    ],
-    "applications": [
-      "Javascript"
     ]
   }
 ]
