@@ -16,7 +16,6 @@ applications:
   - Pabbly
   - Slack
   - SQLite
-  - Tesseract
   - Twilio
   - Mail
   - MongoDB
