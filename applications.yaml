@@ -10,12 +10,8 @@ applications:
   - Google_Storage
   - Google_Vision
   - Javascript
+  - Mail
   - MongoDB
-  - MySQL
-  - Other
-  - Pabbly
   - Slack
   - SQLite
   - Twilio
-  - Mail
-  - MongoDB
