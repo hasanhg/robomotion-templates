@@ -10,7 +10,7 @@
     - javascript
     - json
     - minify
-    - file
   applications:
+    - Filesystem
     - Javascript
     
