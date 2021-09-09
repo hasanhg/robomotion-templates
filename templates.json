@@ -766,5 +766,24 @@
     "applications": [
       "Mail"
     ]
+  },
+  {
+    "name": "Password Generator",
+    "description": "Generates a strong password with specified length",
+    "slug": "password-generator",
+    "icon": "password_generator_icon.png",
+    "screenshots": [
+      "password_generator_screenshot1.png",
+      "password_generator_screenshot1.png"
+    ],
+    "author": "Robomotion",
+    "category": "Security",
+    "tags": [
+      "password",
+      "security"
+    ],
+    "applications": [
+      "Javascript"
+    ]
   }
 ]
