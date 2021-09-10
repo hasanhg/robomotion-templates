@@ -584,5 +584,24 @@
       "Chrome",
       "Javascript"
     ]
+  },
+  {
+    "name": "Get Instagram Stories",
+    "description": "Lists Instagram stories of multiple accounts and saves them to specified folder",
+    "slug": "get-instagram-stories",
+    "icon": "get_instagram_stories_icon.png",
+    "screenshots": [
+      "get_instagram_stories_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "instagram",
+      "social media",
+      "story"
+    ],
+    "applications": [
+      "Instagram"
+    ]
   }
 ]
