@@ -1,0 +1,2043 @@
+{
+	"nodes": [
+		{
+			"id": "f135e5f8-1738-4de6-9827-b97a5f0e02bf",
+			"type": "simple",
+			"selected": true,
+			"x": 534.0648464163822,
+			"y": 114,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "05ad665e-1d84-4fb0-ab25-ed30e87afaea",
+					"type": "default",
+					"selected": false,
+					"name": "out_05ad665e-1d84-4fb0-ab25-ed30e87afaea",
+					"parentNode": "f135e5f8-1738-4de6-9827-b97a5f0e02bf",
+					"links": [
+						"0d626c98-42f6-4ff3-aeb3-b3b6fa046253"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "f135e5f8-1738-4de6-9827-b97a5f0e02bf",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "42460b82-06d1-44d4-b593-801e61ce5198",
+			"type": "simple",
+			"selected": true,
+			"x": 800.0648464163822,
+			"y": 116,
+			"extras": {
+				"outputs": 1,
+				"func": "msg.coin = 0;\nmsg.items = {};\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "c33575ba-6fb0-4650-89c8-f535f74c4fbd",
+					"type": "default",
+					"selected": false,
+					"name": "out_c33575ba-6fb0-4650-89c8-f535f74c4fbd",
+					"parentNode": "42460b82-06d1-44d4-b593-801e61ce5198",
+					"links": [
+						"5f8543d2-7d98-48b3-bf2b-5f1ec84fb2dd"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "f7d02db1-dc24-4755-8e0c-4edfa88f0475",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "42460b82-06d1-44d4-b593-801e61ce5198",
+					"links": [
+						"0d626c98-42f6-4ff3-aeb3-b3b6fa046253"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "42460b82-06d1-44d4-b593-801e61ce5198",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Config",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "msg.coin = 0;\nmsg.items = {};\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "msg.coin = 0;\nmsg.items = {};\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "61c3d59f-df2d-4e28-a36f-84104aaf44dc",
+			"type": "simple",
+			"selected": true,
+			"x": 802.0648464163822,
+			"y": 192,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/61c3d59f-df2d-4e28-a36f-84104aaf44dc.flow"
+			},
+			"ports": [
+				{
+					"id": "f771e0ec-261a-417b-a311-ca0f7c9faf0d",
+					"type": "default",
+					"selected": false,
+					"name": "out_f771e0ec-261a-417b-a311-ca0f7c9faf0d",
+					"parentNode": "61c3d59f-df2d-4e28-a36f-84104aaf44dc",
+					"links": [
+						"d2e98be1-bd9e-4f9a-90c4-1dc45dee90c4"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "d3a4318f-54b7-4b7f-91da-329f9062a383",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "61c3d59f-df2d-4e28-a36f-84104aaf44dc",
+					"links": [
+						"5f8543d2-7d98-48b3-bf2b-5f1ec84fb2dd"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "61c3d59f-df2d-4e28-a36f-84104aaf44dc",
+				"name": "Initial State",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Initial State",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/61c3d59f-df2d-4e28-a36f-84104aaf44dc.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/61c3d59f-df2d-4e28-a36f-84104aaf44dc.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+			"type": "simple",
+			"selected": true,
+			"x": 1075,
+			"y": 169,
+			"extras": {
+				"outputs": 3,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/cc93d54f-7ccf-4f0b-9997-c35332d6f590.flow"
+			},
+			"ports": [
+				{
+					"id": "b54fe617-fc8e-42cb-a4ff-85e7de117e82",
+					"type": "default",
+					"selected": false,
+					"name": "out_b54fe617-fc8e-42cb-a4ff-85e7de117e82",
+					"parentNode": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+					"links": [
+						"1b9fdf4c-d560-4d19-94e7-348e74761e70"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "1884c97f-fde5-468a-8ba9-3d0379b9e1f0",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+					"links": [
+						"d2e98be1-bd9e-4f9a-90c4-1dc45dee90c4",
+						"19de8b32-a3af-4e16-b244-85fea3c8b144"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				},
+				{
+					"id": "2dbae0a6-71ef-4313-a753-9d834127d23f",
+					"type": "default",
+					"selected": false,
+					"name": "out_2dbae0a6-71ef-4313-a753-9d834127d23f",
+					"parentNode": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+					"links": [
+						"e6276751-5c86-4c9d-b0a0-da60a5251402"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "9011a58f-08d9-4870-9408-d3273ad9a3a3",
+					"type": "default",
+					"selected": false,
+					"name": "out_9011a58f-08d9-4870-9408-d3273ad9a3a3",
+					"parentNode": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+					"links": [
+						"b74d0fa8-e8f9-4d10-bd26-88c13905e2ef"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+				"name": "State 1",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 1",
+						"version": "1.11.6",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"outputs": 3,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/cc93d54f-7ccf-4f0b-9997-c35332d6f590.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 2,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/cc93d54f-7ccf-4f0b-9997-c35332d6f590.flow"
+						}
+					}
+				],
+				"outputs": 3,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1bd93164-dd6e-4a62-8ba4-4f82845bcbb7",
+			"type": "simple",
+			"selected": true,
+			"x": 1330,
+			"y": 195,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"aa3bae40-741b-422f-9e7d-7967a58107be"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "751ae891-b58d-4eb6-8c54-593367ca9ced",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1bd93164-dd6e-4a62-8ba4-4f82845bcbb7",
+					"links": [
+						"e6276751-5c86-4c9d-b0a0-da60a5251402"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "1bd93164-dd6e-4a62-8ba4-4f82845bcbb7",
+				"name": "Go To State 1",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 1",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"aa3bae40-741b-422f-9e7d-7967a58107be"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"all": false,
+								"ids": [
+									"aa3bae40-741b-422f-9e7d-7967a58107be"
+								]
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "aa3bae40-741b-422f-9e7d-7967a58107be",
+			"type": "simple",
+			"selected": true,
+			"x": 807.0648464163822,
+			"y": 251,
+			"extras": {},
+			"ports": [
+				{
+					"id": "f5064e9f-b62d-4772-9226-d0328c6097f5",
+					"type": "default",
+					"selected": false,
+					"name": "out_f5064e9f-b62d-4772-9226-d0328c6097f5",
+					"parentNode": "aa3bae40-741b-422f-9e7d-7967a58107be",
+					"links": [
+						"19de8b32-a3af-4e16-b244-85fea3c8b144"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "aa3bae40-741b-422f-9e7d-7967a58107be",
+				"name": "State 1 Label",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.Label",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 1 Label",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					}
+				],
+				"xyz": [],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+			"type": "simple",
+			"selected": true,
+			"x": 1082.563138536984,
+			"y": 505.07601144258274,
+			"extras": {
+				"outputs": 3,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/1a0dd47b-a2e0-4590-abdf-954a78c80105.flow"
+			},
+			"ports": [
+				{
+					"id": "72be2108-6760-4d52-89cd-227fde8797bf",
+					"type": "default",
+					"selected": false,
+					"name": "out_72be2108-6760-4d52-89cd-227fde8797bf",
+					"parentNode": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+					"links": [
+						"a9fd8de9-8606-46dc-a0aa-cf10e58fa26d"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "69629462-d9c3-495d-8e8b-ea9411590d1d",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+					"links": [
+						"cfc93fb9-9283-451b-99bc-74b2f0dc7807"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				},
+				{
+					"id": "dc424e02-0cb9-497a-a1a8-568fb076b7cd",
+					"type": "default",
+					"selected": false,
+					"name": "out_dc424e02-0cb9-497a-a1a8-568fb076b7cd",
+					"parentNode": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+					"links": [
+						"7d48b6c1-92ba-49a1-b00d-2059ad9dcfe2"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "b8c52fd2-9dee-4122-9533-c7e67b83dc60",
+					"type": "default",
+					"selected": false,
+					"name": "out_b8c52fd2-9dee-4122-9533-c7e67b83dc60",
+					"parentNode": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+					"links": [
+						"ce75b896-a5d9-4345-b6a7-e9ad6a37463b"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+				"name": "State 3",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 3",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 3,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/1a0dd47b-a2e0-4590-abdf-954a78c80105.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 2,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/1a0dd47b-a2e0-4590-abdf-954a78c80105.flow"
+						}
+					}
+				],
+				"outputs": 3,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1c0ae27a-3c53-4111-b9d2-5bf5517482ce",
+			"type": "simple",
+			"selected": true,
+			"x": 1078,
+			"y": 368,
+			"extras": {
+				"outputs": 2,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/1c0ae27a-3c53-4111-b9d2-5bf5517482ce.flow"
+			},
+			"ports": [
+				{
+					"id": "6baae5a2-c11a-42cd-bdd7-49bf733d8872",
+					"type": "default",
+					"selected": false,
+					"name": "out_6baae5a2-c11a-42cd-bdd7-49bf733d8872",
+					"parentNode": "1c0ae27a-3c53-4111-b9d2-5bf5517482ce",
+					"links": [
+						"d8ef320b-9671-4651-baa6-3e4ecdb03975"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "ec51e78d-3872-4179-9ea2-f7dcedf67139",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1c0ae27a-3c53-4111-b9d2-5bf5517482ce",
+					"links": [
+						"c515ebe6-8391-4be1-8d1f-9fd57aa33048"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				},
+				{
+					"id": "b57ab9ba-c823-4e0d-ac74-fd6e43cb4802",
+					"type": "default",
+					"selected": false,
+					"name": "out_b57ab9ba-c823-4e0d-ac74-fd6e43cb4802",
+					"parentNode": "1c0ae27a-3c53-4111-b9d2-5bf5517482ce",
+					"links": [
+						"bca14ae5-3f88-4de0-93c3-762e1bbaebf2"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "1c0ae27a-3c53-4111-b9d2-5bf5517482ce",
+				"name": "State 2",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 2",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 2,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/1c0ae27a-3c53-4111-b9d2-5bf5517482ce.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/1c0ae27a-3c53-4111-b9d2-5bf5517482ce.flow"
+						}
+					}
+				],
+				"outputs": 2,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "e3a3a210-ec63-443d-8f49-d58fcd6782da",
+			"type": "simple",
+			"selected": true,
+			"x": 1339.389865140989,
+			"y": 476.11932979158155,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"aa3bae40-741b-422f-9e7d-7967a58107be"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "b6a44317-f716-493b-80ac-e2c7992676b3",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "e3a3a210-ec63-443d-8f49-d58fcd6782da",
+					"links": [
+						"a9fd8de9-8606-46dc-a0aa-cf10e58fa26d"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "e3a3a210-ec63-443d-8f49-d58fcd6782da",
+				"name": "Go To State 1",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 1",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"aa3bae40-741b-422f-9e7d-7967a58107be"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "d70ae55e-c15b-4c9a-965f-86de105284e4",
+			"type": "simple",
+			"selected": true,
+			"x": 808.5631385369841,
+			"y": 528.0976706170821,
+			"extras": {},
+			"ports": [
+				{
+					"id": "ed350a9b-c842-4ff4-889c-57c5c5cf62a1",
+					"type": "default",
+					"selected": false,
+					"name": "out_ed350a9b-c842-4ff4-889c-57c5c5cf62a1",
+					"parentNode": "d70ae55e-c15b-4c9a-965f-86de105284e4",
+					"links": [
+						"cfc93fb9-9283-451b-99bc-74b2f0dc7807"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "d70ae55e-c15b-4c9a-965f-86de105284e4",
+				"name": "State 3 Label",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.Label",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 3 Label",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					}
+				],
+				"xyz": [],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "e09b0054-196a-40da-84d0-b94c365eb5fe",
+			"type": "simple",
+			"selected": true,
+			"x": 1335.3465467919902,
+			"y": 531.0760114425827,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"eb5893ad-cf7c-4dec-b017-0bde3048423d"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "9f60f9ab-5800-44c7-ba44-0ce13ca554ef",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "e09b0054-196a-40da-84d0-b94c365eb5fe",
+					"links": [
+						"7d48b6c1-92ba-49a1-b00d-2059ad9dcfe2"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "e09b0054-196a-40da-84d0-b94c365eb5fe",
+				"name": "Go To State 2",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 2",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"eb5893ad-cf7c-4dec-b017-0bde3048423d"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1c787998-c636-402f-b4f3-605f298380d2",
+			"type": "simple",
+			"selected": true,
+			"x": 1330,
+			"y": 257,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"eb5893ad-cf7c-4dec-b017-0bde3048423d"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "0b85a3ec-120b-4b4c-a398-45cdad191cca",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1c787998-c636-402f-b4f3-605f298380d2",
+					"links": [
+						"b74d0fa8-e8f9-4d10-bd26-88c13905e2ef"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "1c787998-c636-402f-b4f3-605f298380d2",
+				"name": "Go To State 2",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 2",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"eb5893ad-cf7c-4dec-b017-0bde3048423d"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "ac85ed1c-37cf-42b1-ae65-46b76e0f2547",
+			"type": "simple",
+			"selected": true,
+			"x": 1336.4115243154884,
+			"y": 588.9460563955865,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"eb5893ad-cf7c-4dec-b017-0bde3048423d"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "4b7c743f-3d4e-4d61-aea1-29ce8470fe70",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "ac85ed1c-37cf-42b1-ae65-46b76e0f2547",
+					"links": [
+						"ce75b896-a5d9-4345-b6a7-e9ad6a37463b"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "ac85ed1c-37cf-42b1-ae65-46b76e0f2547",
+				"name": "Go To State 2",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 2",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"eb5893ad-cf7c-4dec-b017-0bde3048423d"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "eb5893ad-cf7c-4dec-b017-0bde3048423d",
+			"type": "simple",
+			"selected": true,
+			"x": 804,
+			"y": 382,
+			"extras": {},
+			"ports": [
+				{
+					"id": "16f36b51-2e5d-4aae-bcbd-d4a88de10228",
+					"type": "default",
+					"selected": false,
+					"name": "out_16f36b51-2e5d-4aae-bcbd-d4a88de10228",
+					"parentNode": "eb5893ad-cf7c-4dec-b017-0bde3048423d",
+					"links": [
+						"c515ebe6-8391-4be1-8d1f-9fd57aa33048"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "eb5893ad-cf7c-4dec-b017-0bde3048423d",
+				"name": "State 2 Label",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.Label",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 2 Label",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					}
+				],
+				"xyz": [],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "f42f5a36-e374-4845-bf9d-85f26e684212",
+			"type": "simple",
+			"selected": true,
+			"x": 1337.173273395995,
+			"y": 345,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"d70ae55e-c15b-4c9a-965f-86de105284e4"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "3e8ca9e5-fc5d-4e4e-96fe-67c99249ad65",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "f42f5a36-e374-4845-bf9d-85f26e684212",
+					"links": [
+						"d8ef320b-9671-4651-baa6-3e4ecdb03975"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "f42f5a36-e374-4845-bf9d-85f26e684212",
+				"name": "Go To State 3",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 3",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"d70ae55e-c15b-4c9a-965f-86de105284e4"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "93dd733a-5fb9-4630-9d56-0901adda1569",
+			"type": "simple",
+			"selected": true,
+			"x": 1083.6673477727832,
+			"y": 700.479771148345,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/93dd733a-5fb9-4630-9d56-0901adda1569.flow"
+			},
+			"ports": [
+				{
+					"id": "4a99ebf6-337f-4f7b-8847-fc4c9bbc90ac",
+					"type": "default",
+					"selected": false,
+					"name": "out_4a99ebf6-337f-4f7b-8847-fc4c9bbc90ac",
+					"parentNode": "93dd733a-5fb9-4630-9d56-0901adda1569",
+					"links": [
+						"af607537-b3c8-4306-ae22-b3d3f7df5a07"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "2ee782ad-395e-41fd-8323-4451c4a7c6aa",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "93dd733a-5fb9-4630-9d56-0901adda1569",
+					"links": [
+						"0700ed84-b447-47e7-82a4-6f25ec7e40cb"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "93dd733a-5fb9-4630-9d56-0901adda1569",
+				"name": "State 4",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 4",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/93dd733a-5fb9-4630-9d56-0901adda1569.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://hasan.robomotion.online/api/v1/flows.files.get?type=subflow&path=flows/97b25284-e8ee-4efe-be7a-64223711d699/subflows/93dd733a-5fb9-4630-9d56-0901adda1569.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "e4868740-d3d3-432e-91ee-26f7480a3712",
+			"type": "simple",
+			"selected": true,
+			"x": 1336.0171638741317,
+			"y": 413.3935431140171,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"ab76abea-7441-4068-bcf2-2ba8e7ad1cb9"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "3c732511-c730-411a-92ee-e85276bf5dd8",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "e4868740-d3d3-432e-91ee-26f7480a3712",
+					"links": [
+						"bca14ae5-3f88-4de0-93c3-762e1bbaebf2"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "e4868740-d3d3-432e-91ee-26f7480a3712",
+				"name": "Go To State 4",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 4",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"ab76abea-7441-4068-bcf2-2ba8e7ad1cb9"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "ab76abea-7441-4068-bcf2-2ba8e7ad1cb9",
+			"type": "simple",
+			"selected": true,
+			"x": 806.7977114834491,
+			"y": 698.4364527993461,
+			"extras": {},
+			"ports": [
+				{
+					"id": "5becc01e-1a7b-496c-a252-b3faf4f05ddf",
+					"type": "default",
+					"selected": false,
+					"name": "out_5becc01e-1a7b-496c-a252-b3faf4f05ddf",
+					"parentNode": "ab76abea-7441-4068-bcf2-2ba8e7ad1cb9",
+					"links": [
+						"0700ed84-b447-47e7-82a4-6f25ec7e40cb"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "ab76abea-7441-4068-bcf2-2ba8e7ad1cb9",
+				"name": "State 4 Label",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.Label",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "State 4 Label",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					}
+				],
+				"xyz": [],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "06403ef7-7adf-4485-ae71-4c3b129d5b22",
+			"type": "simple",
+			"selected": true,
+			"x": 1341.1254597466286,
+			"y": 702.5230894973437,
+			"extras": {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				},
+				"delayBefore": 2
+			},
+			"ports": [
+				{
+					"id": "266cea02-c6a4-4a25-b5f4-1d60a1001a42",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "06403ef7-7adf-4485-ae71-4c3b129d5b22",
+					"links": [
+						"af607537-b3c8-4306-ae22-b3d3f7df5a07"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "06403ef7-7adf-4485-ae71-4c3b129d5b22",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Stop",
+						"color": "#fb2727",
+						"delayBefore": 2,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "error"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Error",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"outResult"
+							],
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "error"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "8f432f67-cf29-4d5e-b2c2-f03b30bf229c",
+			"type": "simple",
+			"selected": true,
+			"x": 1329.8872088271353,
+			"y": 128.35063342868818,
+			"extras": {
+				"optNodes": {
+					"all": false,
+					"ids": [
+						"ab76abea-7441-4068-bcf2-2ba8e7ad1cb9"
+					]
+				}
+			},
+			"ports": [
+				{
+					"id": "c365e578-77d4-4a24-b4c1-9775b87cdd9e",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "8f432f67-cf29-4d5e-b2c2-f03b30bf229c",
+					"links": [
+						"1b9fdf4c-d560-4d19-94e7-348e74761e70"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "8f432f67-cf29-4d5e-b2c2-f03b30bf229c",
+				"name": "Go To State 4",
+				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+				"color": "#444",
+				"namespace": "Core.Flow.GoTo",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Go To State 4",
+						"color": "#444",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"optNodes": {
+							"all": false,
+							"ids": [
+								"ab76abea-7441-4068-bcf2-2ba8e7ad1cb9"
+							]
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"inputs": 1,
+							"outputs": 1,
+							"properties": {
+								"optNodes": {
+									"type": "object",
+									"title": "",
+									"properties": {
+										"ids": {
+											"title": "",
+											"type": "array",
+											"items": {
+												"type": "string"
+											}
+										},
+										"all": {
+											"title": "All",
+											"type": "boolean"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optNodes": {
+								"ui:field": "catch"
+							},
+							"ui:order": [
+								"optNodes"
+							]
+						},
+						"formData": {
+							"optNodes": {
+								"ids": [],
+								"type": "goto",
+								"all": false
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "e6e875dc-afeb-4fc6-bca5-8919f8e3b0b6",
+			"type": "simple",
+			"selected": true,
+			"x": 138.65353270913184,
+			"y": 116.67826453231692,
+			"extras": {
+				"optText": "##### State Machine Example How-To \n\nThis template uses *Dialog* and *Function* nodes to simulate a basic Finite State\nMachine example. It is inspired by a vending machine, where you can put some\ncoins in and get some items out.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.coin field to the amount of extra coins you want to get at \nthe beginning. (Optional)"
+			},
+			"ports": [],
+			"model": {
+				"id": "e6e875dc-afeb-4fc6-bca5-8919f8e3b0b6",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### State Machine Example How-To \n\nThis template uses *Dialog* and *Function* nodes to simulate a basic Finite State\nMachine example. It is inspired by a vending machine, where you can put some\ncoins in and get some items out.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.coin field to the amount of extra coins you want to get at \nthe beginning. (Optional)"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "##### State Machine Example How-To \n\nThis template uses *Dialog* and *Function* nodes to simulate a basic Finite State\nMachine example. It is inspired by a vending machine, where you can put some\ncoins in and get some items out.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.coin field to the amount of extra coins you want to get at \nthe beginning. (Optional)"
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": [
+		{
+			"id": "61c3d59f-df2d-4e28-a36f-84104aaf44dc",
+			"flow": "{\"id\":\"61c3d59f-df2d-4e28-a36f-84104aaf44dc\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"3f0021dc-c11d-48c3-8438-4cd73fc0d3af\",\"type\":\"default\",\"selected\":false,\"source\":\"c237d038-63d9-4e20-b230-28b38329d4e0\",\"sourcePort\":\"d8efd1fc-b0ed-4a07-b6d4-a8aa2c56b061\",\"target\":\"87f10df6-9c30-40a9-bf37-9619d73e9d4a\",\"targetPort\":\"80581b25-8233-4e89-a913-4ff014c51915\",\"points\":[{\"id\":\"276bf055-4450-4229-879c-2a638741640a\",\"selected\":false,\"x\":692,\"y\":227},{\"id\":\"55e3efe4-15de-46de-b042-90e0725bab7d\",\"selected\":false,\"x\":777,\"y\":227}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a9691a21-1e04-4ad1-8ea4-0f10fdfe3453\",\"type\":\"default\",\"selected\":false,\"source\":\"87f10df6-9c30-40a9-bf37-9619d73e9d4a\",\"sourcePort\":\"148e1a63-3bc0-4446-9f62-142844182316\",\"target\":\"725de448-49a5-4098-989b-28b6818024de\",\"targetPort\":\"67846e80-090f-4b70-902b-90378d7ec436\",\"points\":[{\"id\":\"932e814b-269b-472a-be6c-7633082eb0a5\",\"selected\":false,\"x\":979,\"y\":229},{\"id\":\"7df735d9-eea3-4b22-8a1d-8146e100ba2f\",\"selected\":false,\"x\":1049,\"y\":229}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"c237d038-63d9-4e20-b230-28b38329d4e0\",\"type\":\"simple\",\"selected\":false,\"x\":491,\"y\":202,\"extras\":{},\"ports\":[{\"id\":\"d8efd1fc-b0ed-4a07-b6d4-a8aa2c56b061\",\"type\":\"default\",\"selected\":false,\"name\":\"out_d8efd1fc-b0ed-4a07-b6d4-a8aa2c56b061\",\"parentNode\":\"c237d038-63d9-4e20-b230-28b38329d4e0\",\"links\":[\"3f0021dc-c11d-48c3-8438-4cd73fc0d3af\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"c237d038-63d9-4e20-b230-28b38329d4e0\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"725de448-49a5-4098-989b-28b6818024de\",\"type\":\"simple\",\"selected\":false,\"x\":1042,\"y\":206,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"67846e80-090f-4b70-902b-90378d7ec436\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"725de448-49a5-4098-989b-28b6818024de\",\"links\":[\"a9691a21-1e04-4ad1-8ea4-0f10fdfe3453\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"725de448-49a5-4098-989b-28b6818024de\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"87f10df6-9c30-40a9-bf37-9619d73e9d4a\",\"type\":\"simple\",\"selected\":false,\"x\":770,\"y\":204,\"extras\":{\"inText\":{\"scope\":\"Custom\",\"name\":\"Welcome to State Machine.\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"},\"optType\":\"info\"},\"ports\":[{\"id\":\"148e1a63-3bc0-4446-9f62-142844182316\",\"type\":\"default\",\"selected\":false,\"name\":\"out_148e1a63-3bc0-4446-9f62-142844182316\",\"parentNode\":\"87f10df6-9c30-40a9-bf37-9619d73e9d4a\",\"links\":[\"a9691a21-1e04-4ad1-8ea4-0f10fdfe3453\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"80581b25-8233-4e89-a913-4ff014c51915\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"87f10df6-9c30-40a9-bf37-9619d73e9d4a\",\"links\":[\"3f0021dc-c11d-48c3-8438-4cd73fc0d3af\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"87f10df6-9c30-40a9-bf37-9619d73e9d4a\",\"name\":\"Welcome Message\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Welcome Message\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inText\":{\"scope\":\"Custom\",\"name\":\"Welcome to State Machine.\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}},{\"optType\":\"info\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inText\":{\"scope\":\"Custom\",\"name\":\"Welcome to State Machine.\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"info\"}}],\"outputs\":1,\"inputs\":1}}]}"
+		},
+		{
+			"id": "cc93d54f-7ccf-4f0b-9997-c35332d6f590",
+			"flow": "{\"id\":\"cc93d54f-7ccf-4f0b-9997-c35332d6f590\",\"offsetX\":36,\"offsetY\":-33,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"e002fe3f-48a4-4bb3-a33e-c73c88633bd2\",\"type\":\"default\",\"selected\":false,\"source\":\"691e45be-54e4-45c1-9911-5964a3e33a49\",\"sourcePort\":\"622b3118-6390-415b-b98c-eb8c20c4fb50\",\"target\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"targetPort\":\"7765f748-a1dd-4ea1-8816-b16d89549f12\",\"points\":[{\"id\":\"4065e905-a129-4a41-9cb3-350343acad73\",\"selected\":false,\"x\":770,\"y\":227},{\"id\":\"04cf42cc-aa69-4ba5-904f-32b3f3c9c4db\",\"selected\":false,\"x\":847,\"y\":227}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"be088834-a585-4134-9f51-bb79cddf4c95\",\"type\":\"default\",\"selected\":false,\"source\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"sourcePort\":\"ac0f7c1d-f210-4bfe-974a-1918b30b0c3c\",\"target\":\"3c898ea0-ef3c-4185-9ee9-d146788203bb\",\"targetPort\":\"6933537a-2a7c-4cad-92d6-312f41b5fb92\",\"points\":[{\"id\":\"768ff63c-1dd1-4350-9f9b-705a92d1f81c\",\"selected\":false,\"x\":1049,\"y\":220},{\"id\":\"42995749-6281-4c36-a8a0-c7a65c5918de\",\"selected\":false,\"x\":1129,\"y\":220}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"9f0eba2e-f5a4-45d7-afb0-a04c486d630c\",\"type\":\"default\",\"selected\":false,\"source\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"sourcePort\":\"c4f72b2c-6ca1-4162-92c0-c7706fb5bf22\",\"target\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"targetPort\":\"fa7f7b23-2719-4bf8-83f7-db3c19e32d55\",\"points\":[{\"id\":\"512c4a81-d709-41a3-98fe-d17617d196b6\",\"selected\":false,\"x\":1049,\"y\":238},{\"id\":\"1adeeeb3-0c94-4574-a21a-e9dd02ddb205\",\"selected\":false,\"x\":848,\"y\":382}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"9f600271-0104-42f6-88b4-10ddb5951be7\",\"type\":\"default\",\"selected\":false,\"source\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"sourcePort\":\"f17912e7-4ce1-400e-b05b-fde39a1dbab1\",\"target\":\"1f70c4b4-cf29-47c4-b24e-cd838d4ae94f\",\"targetPort\":\"173d18f8-b954-4a26-a323-af1da83bf7d3\",\"points\":[{\"id\":\"7f4ec91b-456c-46c8-a588-3418597c2128\",\"selected\":false,\"x\":1050,\"y\":393},{\"id\":\"53b23fe1-6015-4b75-bba9-d23493409e88\",\"selected\":false,\"x\":1123,\"y\":443}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"714e95b4-ad94-4d3a-b943-8e0d84d7158f\",\"type\":\"default\",\"selected\":false,\"source\":\"3c898ea0-ef3c-4185-9ee9-d146788203bb\",\"sourcePort\":\"34376d58-2b7a-40d3-a807-d759f3e05496\",\"target\":\"315c59ac-8007-4139-898c-928df7efd25d\",\"targetPort\":\"9988a596-07dd-4661-adf4-44ddc95fd763\",\"points\":[{\"id\":\"ed551725-b710-4c2a-8ec3-36a96114bc9c\",\"selected\":false,\"x\":1331,\"y\":222},{\"id\":\"28bbe7d0-9974-40e0-8afc-439d692b4b31\",\"selected\":false,\"x\":1127,\"y\":278}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0ba8ad92-2ec1-460b-b07e-021786efae2e\",\"type\":\"default\",\"selected\":false,\"source\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"sourcePort\":\"f3ea6afb-2ad9-46a2-96e8-80e6b19688b1\",\"target\":\"36d62309-bc3e-4cee-bdec-5b9c65f55cbb\",\"targetPort\":\"4d4914c6-a9bb-4d20-b513-edc6a47533c4\",\"points\":[{\"id\":\"11ffb7d0-37ca-4766-8154-fd08c917d7c6\",\"selected\":false,\"x\":1050,\"y\":375},{\"id\":\"0ae76ab3-6b7f-4efb-9625-e897ebbceb40\",\"selected\":false,\"x\":1121,\"y\":375}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"20bbe61d-ca89-4159-93e5-08440ae42995\",\"type\":\"default\",\"selected\":false,\"source\":\"d68ff189-a55e-487c-afa4-9e0421a60ba6\",\"sourcePort\":\"6227cb8e-7504-438a-ae09-618c944282bf\",\"target\":\"da2b1333-998a-4845-89fa-84f5db4a66da\",\"targetPort\":\"60631fed-2d58-4cac-8c2f-5f1f59297a36\",\"points\":[{\"id\":\"9f5c1333-dac0-40e0-b3ce-de21f985ea46\",\"selected\":false,\"x\":496,\"y\":144},{\"id\":\"fb9e6cd8-335b-4d60-afef-d4c3cda2d77d\",\"selected\":false,\"x\":568,\"y\":144}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"df38e571-da44-4b4b-b13a-8705fb8db1f0\",\"type\":\"default\",\"selected\":false,\"source\":\"da2b1333-998a-4845-89fa-84f5db4a66da\",\"sourcePort\":\"e371b5cb-8ae1-45bf-9ec4-e93a08b7f95e\",\"target\":\"691e45be-54e4-45c1-9911-5964a3e33a49\",\"targetPort\":\"097cc434-221c-45bc-9492-a3278847f2e4\",\"points\":[{\"id\":\"fc1af57a-beee-478d-bdba-1ede42c6f977\",\"selected\":false,\"x\":770,\"y\":146},{\"id\":\"1f02a426-9ed1-4837-b260-ba6ac596cb18\",\"selected\":false,\"x\":568,\"y\":225}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"d68ff189-a55e-487c-afa4-9e0421a60ba6\",\"type\":\"simple\",\"selected\":false,\"x\":295,\"y\":119,\"extras\":{},\"ports\":[{\"id\":\"6227cb8e-7504-438a-ae09-618c944282bf\",\"type\":\"default\",\"selected\":false,\"name\":\"out_6227cb8e-7504-438a-ae09-618c944282bf\",\"parentNode\":\"d68ff189-a55e-487c-afa4-9e0421a60ba6\",\"links\":[\"20bbe61d-ca89-4159-93e5-08440ae42995\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"d68ff189-a55e-487c-afa4-9e0421a60ba6\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"36d62309-bc3e-4cee-bdec-5b9c65f55cbb\",\"type\":\"simple\",\"selected\":false,\"x\":1114,\"y\":352,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"4d4914c6-a9bb-4d20-b513-edc6a47533c4\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"36d62309-bc3e-4cee-bdec-5b9c65f55cbb\",\"links\":[\"0ba8ad92-2ec1-460b-b07e-021786efae2e\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"36d62309-bc3e-4cee-bdec-5b9c65f55cbb\",\"name\":\"(1) Exit\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(1) Exit\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"691e45be-54e4-45c1-9911-5964a3e33a49\",\"type\":\"simple\",\"selected\":false,\"x\":561,\"y\":202,\"extras\":{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"add_coin\"},\"optType\":\"yesno\"},\"ports\":[{\"id\":\"622b3118-6390-415b-b98c-eb8c20c4fb50\",\"type\":\"default\",\"selected\":false,\"name\":\"out_622b3118-6390-415b-b98c-eb8c20c4fb50\",\"parentNode\":\"691e45be-54e4-45c1-9911-5964a3e33a49\",\"links\":[\"e002fe3f-48a4-4bb3-a33e-c73c88633bd2\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"097cc434-221c-45bc-9492-a3278847f2e4\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"691e45be-54e4-45c1-9911-5964a3e33a49\",\"links\":[\"df38e571-da44-4b4b-b13a-8705fb8db1f0\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"691e45be-54e4-45c1-9911-5964a3e33a49\",\"name\":\"Add Coins?\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Add Coins?\",\"version\":\"1.11.6\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"add_coin\"}},{\"optType\":\"yesno\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inText\":{\"scope\":\"Custom\",\"name\":\"Do you want to add some coins?\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"add_coin\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"yesno\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"type\":\"simple\",\"selected\":false,\"x\":840,\"y\":188,\"extras\":{\"optConditions\":[\"msg.add_coin\",\"!msg.add_coin\"]},\"ports\":[{\"id\":\"ac0f7c1d-f210-4bfe-974a-1918b30b0c3c\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ac0f7c1d-f210-4bfe-974a-1918b30b0c3c\",\"parentNode\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"links\":[\"be088834-a585-4134-9f51-bb79cddf4c95\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"7765f748-a1dd-4ea1-8816-b16d89549f12\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"links\":[\"e002fe3f-48a4-4bb3-a33e-c73c88633bd2\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"c4f72b2c-6ca1-4162-92c0-c7706fb5bf22\",\"type\":\"default\",\"selected\":false,\"name\":\"out_c4f72b2c-6ca1-4162-92c0-c7706fb5bf22\",\"parentNode\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"links\":[\"9f0eba2e-f5a4-45d7-afb0-a04c486d630c\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"033ebe70-a8e8-473e-b845-1272d3807940\",\"name\":\"Switch\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Switch\",\"version\":\"1.11.6\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"optConditions\":[\"msg.add_coin\",\"!msg.add_coin\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"msg.add_coin\",\"!msg.add_coin\"]}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"315c59ac-8007-4139-898c-928df7efd25d\",\"type\":\"simple\",\"selected\":false,\"x\":1120,\"y\":255,\"extras\":{\"sfPort\":1},\"ports\":[{\"id\":\"9988a596-07dd-4661-adf4-44ddc95fd763\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"315c59ac-8007-4139-898c-928df7efd25d\",\"links\":[\"714e95b4-ad94-4d3a-b943-8e0d84d7158f\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"315c59ac-8007-4139-898c-928df7efd25d\",\"name\":\"(2) Ask Again\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(2) Ask Again\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":1}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":1}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"3c898ea0-ef3c-4185-9ee9-d146788203bb\",\"type\":\"simple\",\"selected\":false,\"x\":1122,\"y\":197,\"extras\":{\"outputs\":1,\"func\":\"msg.coin++;\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"34376d58-2b7a-40d3-a807-d759f3e05496\",\"type\":\"default\",\"selected\":false,\"name\":\"out_34376d58-2b7a-40d3-a807-d759f3e05496\",\"parentNode\":\"3c898ea0-ef3c-4185-9ee9-d146788203bb\",\"links\":[\"714e95b4-ad94-4d3a-b943-8e0d84d7158f\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"6933537a-2a7c-4cad-92d6-312f41b5fb92\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3c898ea0-ef3c-4185-9ee9-d146788203bb\",\"links\":[\"be088834-a585-4134-9f51-bb79cddf4c95\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3c898ea0-ef3c-4185-9ee9-d146788203bb\",\"name\":\"Increase Coin\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Increase Coin\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.coin++;\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.coin++;\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"1f70c4b4-cf29-47c4-b24e-cd838d4ae94f\",\"type\":\"simple\",\"selected\":false,\"x\":1116,\"y\":420,\"extras\":{\"sfPort\":2},\"ports\":[{\"id\":\"173d18f8-b954-4a26-a323-af1da83bf7d3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"1f70c4b4-cf29-47c4-b24e-cd838d4ae94f\",\"links\":[\"9f600271-0104-42f6-88b4-10ddb5951be7\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"1f70c4b4-cf29-47c4-b24e-cd838d4ae94f\",\"name\":\"(3) Next State\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(3) Next State\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":2}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":2}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"type\":\"simple\",\"selected\":false,\"x\":841,\"y\":343,\"extras\":{\"optConditions\":[\"msg.coin === 0\",\"msg.coin > 0\"]},\"ports\":[{\"id\":\"f3ea6afb-2ad9-46a2-96e8-80e6b19688b1\",\"type\":\"default\",\"selected\":false,\"name\":\"out_f3ea6afb-2ad9-46a2-96e8-80e6b19688b1\",\"parentNode\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"links\":[\"0ba8ad92-2ec1-460b-b07e-021786efae2e\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"fa7f7b23-2719-4bf8-83f7-db3c19e32d55\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"links\":[\"9f0eba2e-f5a4-45d7-afb0-a04c486d630c\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"f17912e7-4ce1-400e-b05b-fde39a1dbab1\",\"type\":\"default\",\"selected\":false,\"name\":\"out_f17912e7-4ce1-400e-b05b-fde39a1dbab1\",\"parentNode\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"links\":[\"9f600271-0104-42f6-88b4-10ddb5951be7\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"890f0d75-5e0c-409e-abb9-4ff166c6c012\",\"name\":\"Check Coin\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Check Coin\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.coin === 0\",\"msg.coin > 0\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"\"]}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"da2b1333-998a-4845-89fa-84f5db4a66da\",\"type\":\"simple\",\"selected\":false,\"x\":561,\"y\":121,\"extras\":{\"outputs\":1,\"func\":\"msg.message = `You have ${msg.coin} coin(s). Do you want to add some more?`;\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"e371b5cb-8ae1-45bf-9ec4-e93a08b7f95e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_e371b5cb-8ae1-45bf-9ec4-e93a08b7f95e\",\"parentNode\":\"da2b1333-998a-4845-89fa-84f5db4a66da\",\"links\":[\"df38e571-da44-4b4b-b13a-8705fb8db1f0\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"60631fed-2d58-4cac-8c2f-5f1f59297a36\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"da2b1333-998a-4845-89fa-84f5db4a66da\",\"links\":[\"20bbe61d-ca89-4159-93e5-08440ae42995\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"da2b1333-998a-4845-89fa-84f5db4a66da\",\"name\":\"Get Message\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Get Message\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.message = `You have ${msg.coin} coin(s). Do you want to add some more?`;\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.message = `You have ${msg.coin} coin(s). Do you want to add some more?`;\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}}]}"
+		},
+		{
+			"id": "1a0dd47b-a2e0-4590-abdf-954a78c80105",
+			"flow": "{\"id\":\"1a0dd47b-a2e0-4590-abdf-954a78c80105\",\"offsetX\":-22,\"offsetY\":-71,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"09a303df-1d61-4a40-b191-23dd6268402d\",\"type\":\"default\",\"selected\":false,\"source\":\"02e30442-ad06-4fe3-b422-ebdd27b0f7ea\",\"sourcePort\":\"54e241ab-f2c2-4269-88db-3c7706b246e8\",\"target\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"targetPort\":\"248d11e9-b881-4340-a5bc-2a58defcc03b\",\"points\":[{\"id\":\"e4f7d6ac-4f30-4169-b101-6264aee86134\",\"selected\":false,\"x\":772,\"y\":227},{\"id\":\"5b38c5ee-1bea-4c48-9b58-dae8bcad9aa6\",\"selected\":false,\"x\":821,\"y\":227}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0ba26391-7f1d-43ca-b796-e8e1879e47d1\",\"type\":\"default\",\"selected\":false,\"source\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"sourcePort\":\"f0c6d11e-52d4-4ed5-a8ae-ba38048703b2\",\"target\":\"e1450e57-e756-482b-b7b2-fcaf5e3d5f5d\",\"targetPort\":\"cd74a20f-f917-403f-8078-4ff747b4551d\",\"points\":[{\"id\":\"88c9afe1-6a4f-4fdf-adcc-2947d6433620\",\"selected\":false,\"x\":1023,\"y\":247},{\"id\":\"86f8dc47-5c78-4e4c-a8c4-08c6fb4a96aa\",\"selected\":false,\"x\":817,\"y\":314}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c0fa848c-3a9b-4ad2-b60f-d922c4b9a5ff\",\"type\":\"default\",\"selected\":false,\"source\":\"9b1601f3-d5fa-4dbf-b67f-79176442697f\",\"sourcePort\":\"28cabe02-20ee-498b-a514-3613cd8a549b\",\"target\":\"e1450e57-e756-482b-b7b2-fcaf5e3d5f5d\",\"targetPort\":\"8672c8b7-0371-4840-a6e0-e63a0c8b0040\",\"points\":[{\"id\":\"49510179-d400-439f-8d4e-e82f56e6eb36\",\"selected\":false,\"x\":819,\"y\":375},{\"id\":\"a0428718-28f8-4d0c-9085-ed2eb8f9cf86\",\"selected\":false,\"x\":1019,\"y\":316}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"728219ce-5311-4df5-80d2-fb4c23dfbbd7\",\"type\":\"default\",\"selected\":false,\"source\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"sourcePort\":\"ef2ad20a-9032-4e50-83aa-100aa49f2e65\",\"target\":\"bb99592f-82e0-4652-b619-5281cebcc3aa\",\"targetPort\":\"8cf5d1db-01c1-4d02-986c-84d0495cc930\",\"points\":[{\"id\":\"76cdbcb8-88b4-43c8-9ce0-107c9dd388f7\",\"selected\":false,\"x\":1023,\"y\":229},{\"id\":\"01fb6669-f1e4-49b8-b25b-275a00e438f0\",\"selected\":false,\"x\":1105,\"y\":230}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0422c90f-1c96-4661-b543-b423a3281373\",\"type\":\"default\",\"selected\":false,\"source\":\"bb99592f-82e0-4652-b619-5281cebcc3aa\",\"sourcePort\":\"55bb9107-0755-4c75-a7d4-21606978882e\",\"target\":\"686ac052-9696-433f-b907-120d7a5f2dd5\",\"targetPort\":\"5871a6a2-0467-49f0-80e0-08387b96bfa0\",\"points\":[{\"id\":\"a26465da-c0be-4b87-873e-339ebba46616\",\"selected\":false,\"x\":1307,\"y\":232},{\"id\":\"56522deb-00e5-44d8-9f90-b06e9924da1b\",\"selected\":false,\"x\":1104,\"y\":288}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"11be27a5-0bd8-4adf-ae3d-2129dd5f3eaa\",\"type\":\"default\",\"selected\":false,\"source\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"sourcePort\":\"d30111f7-a4fd-45f2-a8fa-6974aa81568d\",\"target\":\"ae3eea02-cff4-4511-9e56-db9e2b75e9fd\",\"targetPort\":\"cb19005c-7ec5-4374-a2f5-c51c9014eb4c\",\"points\":[{\"id\":\"7f28d458-1982-4c83-908c-82e67550439f\",\"selected\":false,\"x\":1023,\"y\":211},{\"id\":\"e44055f7-9b51-4eef-8c13-aac2fd2f9ee6\",\"selected\":false,\"x\":1105,\"y\":168}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"beb2436d-b124-41c9-961b-a289b95cbb43\",\"type\":\"default\",\"selected\":false,\"source\":\"ae3eea02-cff4-4511-9e56-db9e2b75e9fd\",\"sourcePort\":\"ac45f740-0a89-40eb-b4b8-384969979352\",\"target\":\"a313dd59-7eec-4367-a749-3165c934abf0\",\"targetPort\":\"fcbf582a-0e76-4dfe-8f3c-40a8a80826b6\",\"points\":[{\"id\":\"60dfb6e6-0ace-495e-9d71-fdc728b083ed\",\"selected\":false,\"x\":1307,\"y\":170},{\"id\":\"e1b3fa67-599e-4dd8-8aa2-8c6ef19b2a1e\",\"selected\":false,\"x\":1362,\"y\":170}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"fae648ff-45e9-40bc-a798-b92bc28dfe52\",\"type\":\"default\",\"selected\":false,\"source\":\"11ebaa8a-cf7d-4808-ae88-2cbd0c388fb8\",\"sourcePort\":\"865f8390-bc05-464a-94a6-5811bc812608\",\"target\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"targetPort\":\"b73d91bd-12a0-4c01-bbf1-3f9a883e7401\",\"points\":[{\"id\":\"8e693512-03b6-4684-8955-639e703cca0d\",\"selected\":false,\"x\":475,\"y\":364},{\"id\":\"8f3609f9-25b6-4830-88da-7d8b5114648d\",\"selected\":false,\"x\":533,\"y\":364}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"639e495a-1465-49fe-9c6d-2bbd1962770f\",\"type\":\"default\",\"selected\":false,\"source\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"sourcePort\":\"9a6d2a6d-1c89-4bb2-a95d-71d3abff10fc\",\"target\":\"9b1601f3-d5fa-4dbf-b67f-79176442697f\",\"targetPort\":\"28cabe02-20ee-498b-a514-3613cd8a549b\",\"points\":[{\"id\":\"d583c8c4-2b9e-4284-9189-1ae678178ada\",\"selected\":false,\"x\":735,\"y\":375},{\"id\":\"37059a4d-0f61-4629-9510-eaa657baa0e4\",\"selected\":true,\"x\":819,\"y\":375}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"b3411876-1919-434c-a15d-c493a1c9deca\",\"type\":\"default\",\"selected\":false,\"source\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"sourcePort\":\"5f23ac02-6cb1-45d5-b260-8bf86f830e13\",\"target\":\"02e30442-ad06-4fe3-b422-ebdd27b0f7ea\",\"targetPort\":\"10b93ee5-0fd0-4e39-b5bb-4b83b6938e32\",\"points\":[{\"id\":\"0c6e4c59-548a-4653-9484-cf6269696b95\",\"selected\":false,\"x\":735,\"y\":357},{\"id\":\"5519bd9f-d81c-46e2-86f9-745df051c535\",\"selected\":false,\"x\":570,\"y\":225}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"11ebaa8a-cf7d-4808-ae88-2cbd0c388fb8\",\"type\":\"simple\",\"selected\":false,\"x\":274,\"y\":339,\"extras\":{},\"ports\":[{\"id\":\"865f8390-bc05-464a-94a6-5811bc812608\",\"type\":\"default\",\"selected\":false,\"name\":\"out_865f8390-bc05-464a-94a6-5811bc812608\",\"parentNode\":\"11ebaa8a-cf7d-4808-ae88-2cbd0c388fb8\",\"links\":[\"fae648ff-45e9-40bc-a798-b92bc28dfe52\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"11ebaa8a-cf7d-4808-ae88-2cbd0c388fb8\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"9b1601f3-d5fa-4dbf-b67f-79176442697f\",\"type\":\"simple\",\"selected\":false,\"x\":812,\"y\":352,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"28cabe02-20ee-498b-a514-3613cd8a549b\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9b1601f3-d5fa-4dbf-b67f-79176442697f\",\"links\":[\"c0fa848c-3a9b-4ad2-b60f-d922c4b9a5ff\",\"639e495a-1465-49fe-9c6d-2bbd1962770f\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9b1601f3-d5fa-4dbf-b67f-79176442697f\",\"name\":\"(1) Need More Coin\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(1) Need More Coin\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"686ac052-9696-433f-b907-120d7a5f2dd5\",\"type\":\"simple\",\"selected\":false,\"x\":1097,\"y\":265,\"extras\":{\"sfPort\":1},\"ports\":[{\"id\":\"5871a6a2-0467-49f0-80e0-08387b96bfa0\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"686ac052-9696-433f-b907-120d7a5f2dd5\",\"links\":[\"0422c90f-1c96-4661-b543-b423a3281373\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"686ac052-9696-433f-b907-120d7a5f2dd5\",\"name\":\"(2) Ask Again\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(2) Ask Again\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":1}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":1}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"02e30442-ad06-4fe3-b422-ebdd27b0f7ea\",\"type\":\"simple\",\"selected\":false,\"x\":563,\"y\":202,\"extras\":{\"inText\":{\"scope\":\"Custom\",\"name\":\"Which item do you want? (1/2/3)\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outText\":{\"scope\":\"Message\",\"name\":\"item\"},\"optDefault\":{\"scope\":\"Custom\",\"name\":\"1\"}},\"ports\":[{\"id\":\"54e241ab-f2c2-4269-88db-3c7706b246e8\",\"type\":\"default\",\"selected\":false,\"name\":\"out_54e241ab-f2c2-4269-88db-3c7706b246e8\",\"parentNode\":\"02e30442-ad06-4fe3-b422-ebdd27b0f7ea\",\"links\":[\"09a303df-1d61-4a40-b191-23dd6268402d\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"10b93ee5-0fd0-4e39-b5bb-4b83b6938e32\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"02e30442-ad06-4fe3-b422-ebdd27b0f7ea\",\"links\":[\"b3411876-1919-434c-a15d-c493a1c9deca\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"02e30442-ad06-4fe3-b422-ebdd27b0f7ea\",\"name\":\"Get Item ID\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.InputBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Get Item ID\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inText\":{\"scope\":\"Custom\",\"name\":\"Which item do you want? (1/2/3)\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outText\":{\"scope\":\"Message\",\"name\":\"item\"}},{\"optDefault\":{\"scope\":\"Custom\",\"name\":\"1\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inTitle\":{\"scope\":\"Custom\",\"name\":\"\"},\"inText\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outText\":{\"ui:field\":\"variable\"}},\"formData\":{\"outText\":{\"scope\":\"Message\",\"name\":\"text\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optDefault\":{\"type\":\"object\",\"title\":\"Default Value\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optDefault\":{\"ui:field\":\"variable\"}},\"formData\":{\"optDefault\":{\"scope\":\"Custom\",\"name\":\"\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"type\":\"simple\",\"selected\":false,\"x\":814,\"y\":180,\"extras\":{\"func\":\"const item_id = parseInt(msg.item);\\n\\nif (item_id < 1 || item_id > 3 || isNaN(item_id)) {\\n  return [null, msg, null];\\n}\\n\\nif (msg.coin < item_id) {\\n  msg.message = `You do not have enough coins to buy this item. This item costs ${item_id} coin(s).`\\n  return [null, null, msg];\\n}\\n\\nmsg.coin -= item_id;\\nmsg.message = `You bought some items, and you have ${msg.coin} coin(s) left.`\\n\\nif (item_id in msg.items) msg.items[item_id]++;\\nelse msg.items[item_id] = 1;\\n\\nreturn msg;\",\"outputs\":3,\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"d30111f7-a4fd-45f2-a8fa-6974aa81568d\",\"type\":\"default\",\"selected\":false,\"name\":\"out_d30111f7-a4fd-45f2-a8fa-6974aa81568d\",\"parentNode\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"links\":[\"11be27a5-0bd8-4adf-ae3d-2129dd5f3eaa\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"248d11e9-b881-4340-a5bc-2a58defcc03b\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"links\":[\"09a303df-1d61-4a40-b191-23dd6268402d\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"ef2ad20a-9032-4e50-83aa-100aa49f2e65\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ef2ad20a-9032-4e50-83aa-100aa49f2e65\",\"parentNode\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"links\":[\"728219ce-5311-4df5-80d2-fb4c23dfbbd7\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f0c6d11e-52d4-4ed5-a8ae-ba38048703b2\",\"type\":\"default\",\"selected\":false,\"name\":\"out_f0c6d11e-52d4-4ed5-a8ae-ba38048703b2\",\"parentNode\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"links\":[\"0ba26391-7f1d-43ca-b796-e8e1879e47d1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"1e14bc59-b1e3-4f79-adf5-766e978e4df5\",\"name\":\"Function\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Function\",\"version\":\"1.11.6\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"func\":\"const item_id = parseInt(msg.item);\\n\\nif (item_id < 1 || item_id > 3 || isNaN(item_id)) {\\n  return [null, msg, null];\\n}\\n\\nif (msg.coin < item_id) {\\n  msg.message = `You do not have enough coins to buy this item. This item costs ${item_id} coin(s).`\\n  return [null, null, msg];\\n}\\n\\nmsg.coin -= item_id;\\nmsg.message = `You bought some items, and you have ${msg.coin} coin(s) left.`\\n\\nif (item_id in msg.items) msg.items[item_id]++;\\nelse msg.items[item_id] = 1;\\n\\nreturn msg;\",\"outputs\":3,\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"const item_id = parseInt(msg.item);\\n\\nif (item_id < 1 || item_id > 3 || isNaN(item_id)) {\\n  return [null, msg, null];\\n}\\n\\nif (msg.coin < item_id) {\\n  return [null, null, msg];\\n}\\n\\nmsg.coin -= item_id;\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":3,\"inputs\":1}},{\"id\":\"e1450e57-e756-482b-b7b2-fcaf5e3d5f5d\",\"type\":\"simple\",\"selected\":false,\"x\":810,\"y\":291,\"extras\":{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"},\"optType\":\"info\"},\"ports\":[{\"id\":\"8672c8b7-0371-4840-a6e0-e63a0c8b0040\",\"type\":\"default\",\"selected\":false,\"name\":\"out_8672c8b7-0371-4840-a6e0-e63a0c8b0040\",\"parentNode\":\"e1450e57-e756-482b-b7b2-fcaf5e3d5f5d\",\"links\":[\"c0fa848c-3a9b-4ad2-b60f-d922c4b9a5ff\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"cd74a20f-f917-403f-8078-4ff747b4551d\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"e1450e57-e756-482b-b7b2-fcaf5e3d5f5d\",\"links\":[\"0ba26391-7f1d-43ca-b796-e8e1879e47d1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"e1450e57-e756-482b-b7b2-fcaf5e3d5f5d\",\"name\":\"Not Enough Coins\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Not Enough Coins\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}},{\"optType\":\"info\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inTitle\":{\"scope\":\"Custom\",\"name\":\"\"},\"inText\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"info\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"a313dd59-7eec-4367-a749-3165c934abf0\",\"type\":\"simple\",\"selected\":false,\"x\":1355,\"y\":147,\"extras\":{\"sfPort\":2},\"ports\":[{\"id\":\"fcbf582a-0e76-4dfe-8f3c-40a8a80826b6\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"a313dd59-7eec-4367-a749-3165c934abf0\",\"links\":[\"beb2436d-b124-41c9-961b-a289b95cbb43\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"a313dd59-7eec-4367-a749-3165c934abf0\",\"name\":\"(3) More?\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(3) More?\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":2}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":2}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"bb99592f-82e0-4652-b619-5281cebcc3aa\",\"type\":\"simple\",\"selected\":false,\"x\":1098,\"y\":207,\"extras\":{\"inText\":{\"scope\":\"Custom\",\"name\":\"Invalid item id.\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"},\"optType\":\"error\"},\"ports\":[{\"id\":\"55bb9107-0755-4c75-a7d4-21606978882e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_55bb9107-0755-4c75-a7d4-21606978882e\",\"parentNode\":\"bb99592f-82e0-4652-b619-5281cebcc3aa\",\"links\":[\"0422c90f-1c96-4661-b543-b423a3281373\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8cf5d1db-01c1-4d02-986c-84d0495cc930\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"bb99592f-82e0-4652-b619-5281cebcc3aa\",\"links\":[\"728219ce-5311-4df5-80d2-fb4c23dfbbd7\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"bb99592f-82e0-4652-b619-5281cebcc3aa\",\"name\":\"Invalid Item\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Invalid Item\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inText\":{\"scope\":\"Custom\",\"name\":\"Invalid item id.\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}},{\"optType\":\"error\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inTitle\":{\"scope\":\"Custom\",\"name\":\"\"},\"inText\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"info\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"ae3eea02-cff4-4511-9e56-db9e2b75e9fd\",\"type\":\"simple\",\"selected\":false,\"x\":1098,\"y\":145,\"extras\":{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"},\"optType\":\"info\"},\"ports\":[{\"id\":\"ac45f740-0a89-40eb-b4b8-384969979352\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ac45f740-0a89-40eb-b4b8-384969979352\",\"parentNode\":\"ae3eea02-cff4-4511-9e56-db9e2b75e9fd\",\"links\":[\"beb2436d-b124-41c9-961b-a289b95cbb43\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"cb19005c-7ec5-4374-a2f5-c51c9014eb4c\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"ae3eea02-cff4-4511-9e56-db9e2b75e9fd\",\"links\":[\"11be27a5-0bd8-4adf-ae3d-2129dd5f3eaa\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"ae3eea02-cff4-4511-9e56-db9e2b75e9fd\",\"name\":\"Purchase Info\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Purchase Info\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}},{\"optType\":\"info\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inTitle\":{\"scope\":\"Custom\",\"name\":\"\"},\"inText\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"info\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"type\":\"simple\",\"selected\":false,\"x\":526,\"y\":325,\"extras\":{\"optConditions\":[\"msg.coin > 0\",\"msg.coin === 0\"]},\"ports\":[{\"id\":\"5f23ac02-6cb1-45d5-b260-8bf86f830e13\",\"type\":\"default\",\"selected\":false,\"name\":\"out_5f23ac02-6cb1-45d5-b260-8bf86f830e13\",\"parentNode\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"links\":[\"b3411876-1919-434c-a15d-c493a1c9deca\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"b73d91bd-12a0-4c01-bbf1-3f9a883e7401\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"links\":[\"fae648ff-45e9-40bc-a798-b92bc28dfe52\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"9a6d2a6d-1c89-4bb2-a95d-71d3abff10fc\",\"type\":\"default\",\"selected\":false,\"name\":\"out_9a6d2a6d-1c89-4bb2-a95d-71d3abff10fc\",\"parentNode\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"links\":[\"639e495a-1465-49fe-9c6d-2bbd1962770f\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"e90128ad-bb7b-48c2-aa3b-4b5bbade360c\",\"name\":\"Coin Check\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Coin Check\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.coin > 0\",\"msg.coin === 0\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"\"]}}],\"outputs\":2,\"inputs\":1}}]}"
+		},
+		{
+			"id": "1c0ae27a-3c53-4111-b9d2-5bf5517482ce",
+			"flow": "{\"id\":\"1c0ae27a-3c53-4111-b9d2-5bf5517482ce\",\"offsetX\":28,\"offsetY\":-73,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"1742667f-657d-425c-beae-679caa1b7d9b\",\"type\":\"default\",\"selected\":false,\"source\":\"4d0bed97-cda7-41cf-8804-4fdc4846129e\",\"sourcePort\":\"51e5dbac-f8ff-4b5e-9a7c-7cf6c01c5224\",\"target\":\"83b23f2a-b30c-4ca2-9a21-1b930c4002d5\",\"targetPort\":\"82ee62a9-f717-46c1-9362-b142009a7ae9\",\"points\":[{\"id\":\"c2d5d79c-fc67-423d-be1c-e49bb1a6f832\",\"selected\":false,\"x\":492,\"y\":225},{\"id\":\"2479f533-a0cb-4b4c-8726-506b1523e18d\",\"selected\":false,\"x\":556,\"y\":225}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"19f2b2c6-eedf-4a17-ada7-5fab4e92e320\",\"type\":\"default\",\"selected\":false,\"source\":\"83b23f2a-b30c-4ca2-9a21-1b930c4002d5\",\"sourcePort\":\"9acefbfc-3306-44ae-b684-d6688d8128b8\",\"target\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"targetPort\":\"88963e0f-1bff-450b-bf08-ba2b989ea6c6\",\"points\":[{\"id\":\"c9b02164-e02d-4e78-8363-fddce9fbbadf\",\"selected\":false,\"x\":758,\"y\":227},{\"id\":\"32ce7db5-4b34-4a06-a79b-56c71837dae8\",\"selected\":false,\"x\":829,\"y\":227}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"71dd34fd-e663-435a-b339-e76faf74722a\",\"type\":\"default\",\"selected\":false,\"source\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"sourcePort\":\"485ec296-835b-47f2-be91-6e98249d4b06\",\"target\":\"bac8d216-4284-4e7e-85e4-3667013da189\",\"targetPort\":\"1c357a1c-e9ad-455c-b9dc-b5f392cf27e1\",\"points\":[{\"id\":\"7f2fa77b-957b-48ff-8a3c-ca8de216b558\",\"selected\":false,\"x\":1031,\"y\":220},{\"id\":\"17578f1c-851b-4f13-9f80-88db9417c493\",\"selected\":false,\"x\":1103,\"y\":186}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"bb3c094f-457b-4077-aec1-2bf7a30d68de\",\"type\":\"default\",\"selected\":false,\"source\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"sourcePort\":\"fa3f737f-1ddd-4b4d-8bd7-ea3699300411\",\"target\":\"9810f49b-6014-4b25-b3d0-3732e051f3f4\",\"targetPort\":\"2f62686a-7cac-4013-9c34-35b2a6c4e580\",\"points\":[{\"id\":\"1d566273-0d52-423f-a447-111c930281ef\",\"selected\":false,\"x\":1031,\"y\":238},{\"id\":\"10bbe7ca-aa2f-4959-af64-3d867fcd933f\",\"selected\":false,\"x\":1097,\"y\":266}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"4d0bed97-cda7-41cf-8804-4fdc4846129e\",\"type\":\"simple\",\"selected\":false,\"x\":291,\"y\":200,\"extras\":{},\"ports\":[{\"id\":\"51e5dbac-f8ff-4b5e-9a7c-7cf6c01c5224\",\"type\":\"default\",\"selected\":false,\"name\":\"out_51e5dbac-f8ff-4b5e-9a7c-7cf6c01c5224\",\"parentNode\":\"4d0bed97-cda7-41cf-8804-4fdc4846129e\",\"links\":[\"1742667f-657d-425c-beae-679caa1b7d9b\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"4d0bed97-cda7-41cf-8804-4fdc4846129e\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"bac8d216-4284-4e7e-85e4-3667013da189\",\"type\":\"simple\",\"selected\":false,\"x\":1096,\"y\":163,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"1c357a1c-e9ad-455c-b9dc-b5f392cf27e1\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"bac8d216-4284-4e7e-85e4-3667013da189\",\"links\":[\"71dd34fd-e663-435a-b339-e76faf74722a\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"bac8d216-4284-4e7e-85e4-3667013da189\",\"name\":\"(1) Yes\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(1) Yes\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"9810f49b-6014-4b25-b3d0-3732e051f3f4\",\"type\":\"simple\",\"selected\":false,\"x\":1090,\"y\":243,\"extras\":{\"sfPort\":1},\"ports\":[{\"id\":\"2f62686a-7cac-4013-9c34-35b2a6c4e580\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9810f49b-6014-4b25-b3d0-3732e051f3f4\",\"links\":[\"bb3c094f-457b-4077-aec1-2bf7a30d68de\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9810f49b-6014-4b25-b3d0-3732e051f3f4\",\"name\":\"(2) No\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{\"name\":\"(2) No\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"0.0\"},{\"sfPort\":1}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":1}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"83b23f2a-b30c-4ca2-9a21-1b930c4002d5\",\"type\":\"simple\",\"selected\":false,\"x\":549,\"y\":202,\"extras\":{\"inText\":{\"scope\":\"Custom\",\"name\":\"Do you want to buy some items?\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"buy_more\"},\"optType\":\"yesno\"},\"ports\":[{\"id\":\"9acefbfc-3306-44ae-b684-d6688d8128b8\",\"type\":\"default\",\"selected\":false,\"name\":\"out_9acefbfc-3306-44ae-b684-d6688d8128b8\",\"parentNode\":\"83b23f2a-b30c-4ca2-9a21-1b930c4002d5\",\"links\":[\"19f2b2c6-eedf-4a17-ada7-5fab4e92e320\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"82ee62a9-f717-46c1-9362-b142009a7ae9\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"83b23f2a-b30c-4ca2-9a21-1b930c4002d5\",\"links\":[\"1742667f-657d-425c-beae-679caa1b7d9b\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"83b23f2a-b30c-4ca2-9a21-1b930c4002d5\",\"name\":\"Buy More?\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Buy More?\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inText\":{\"scope\":\"Custom\",\"name\":\"Do you want to buy some items?\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"buy_more\"}},{\"optType\":\"yesno\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inTitle\":{\"scope\":\"Custom\",\"name\":\"\"},\"inText\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"info\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"type\":\"simple\",\"selected\":false,\"x\":822,\"y\":188,\"extras\":{\"optConditions\":[\"msg.buy_more\",\"!msg.buy_more\"]},\"ports\":[{\"id\":\"485ec296-835b-47f2-be91-6e98249d4b06\",\"type\":\"default\",\"selected\":false,\"name\":\"out_485ec296-835b-47f2-be91-6e98249d4b06\",\"parentNode\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"links\":[\"71dd34fd-e663-435a-b339-e76faf74722a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"88963e0f-1bff-450b-bf08-ba2b989ea6c6\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"links\":[\"19f2b2c6-eedf-4a17-ada7-5fab4e92e320\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"},{\"id\":\"fa3f737f-1ddd-4b4d-8bd7-ea3699300411\",\"type\":\"default\",\"selected\":false,\"name\":\"out_fa3f737f-1ddd-4b4d-8bd7-ea3699300411\",\"parentNode\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"links\":[\"bb3c094f-457b-4077-aec1-2bf7a30d68de\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"0caf0ff2-6f9c-4906-a87b-5d25b5eca413\",\"name\":\"Check More\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Check More\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.buy_more\",\"!msg.buy_more\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"\"]}}],\"outputs\":2,\"inputs\":1}}]}"
+		},
+		{
+			"id": "93dd733a-5fb9-4630-9d56-0901adda1569",
+			"flow": "{\"id\":\"93dd733a-5fb9-4630-9d56-0901adda1569\",\"offsetX\":22,\"offsetY\":-107,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"d1762b29-b316-4916-b132-473f64205403\",\"type\":\"default\",\"selected\":false,\"source\":\"fea6af32-710b-4319-8e09-2a55680c5435\",\"sourcePort\":\"3c41eda4-495c-4eb6-85ca-c2df73d9aeb0\",\"target\":\"fda45b6a-6deb-4632-a8c7-1b413ac7bf70\",\"targetPort\":\"1f4aed96-1090-49e1-85ec-cf2f27060b1f\",\"points\":[{\"id\":\"5b89ae1f-5758-4402-9a43-6d9d2f3c267f\",\"selected\":false,\"x\":501,\"y\":225},{\"id\":\"51c8a67c-c56f-4c54-9cdf-d84315c39cb6\",\"selected\":false,\"x\":583,\"y\":225}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c67a8367-7f3d-4130-88e5-b41be7277669\",\"type\":\"default\",\"selected\":false,\"source\":\"fda45b6a-6deb-4632-a8c7-1b413ac7bf70\",\"sourcePort\":\"11bc2db0-2872-41ca-84a8-196d30956632\",\"target\":\"8cd006cf-a530-4475-9237-65b8a0b2075b\",\"targetPort\":\"59bfe28f-2d06-4b53-9ed9-6b9b26e7dfae\",\"points\":[{\"id\":\"805ba0d0-87d3-44e9-8a04-b88874f9c5e4\",\"selected\":false,\"x\":785,\"y\":227},{\"id\":\"e0e1ddb6-0f0b-46b9-8c77-9092ea18b28c\",\"selected\":false,\"x\":861,\"y\":227}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"f79ca9e0-6566-4d3a-8645-cddad41d8dda\",\"type\":\"default\",\"selected\":false,\"source\":\"8cd006cf-a530-4475-9237-65b8a0b2075b\",\"sourcePort\":\"d0424223-9a99-4791-8efa-dad1771f630a\",\"target\":\"069b9519-988b-4b0a-a39b-7cc987cb110c\",\"targetPort\":\"5ac09dd8-20c3-4115-870c-28a5aa9c666e\",\"points\":[{\"id\":\"34c77879-d77f-40e3-a433-d72eabeded7b\",\"selected\":false,\"x\":1063,\"y\":229},{\"id\":\"b286f0f5-c347-43d8-965f-afd822a417d9\",\"selected\":false,\"x\":1148,\"y\":229}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"fea6af32-710b-4319-8e09-2a55680c5435\",\"type\":\"simple\",\"selected\":false,\"x\":300,\"y\":200,\"extras\":{},\"ports\":[{\"id\":\"3c41eda4-495c-4eb6-85ca-c2df73d9aeb0\",\"type\":\"default\",\"selected\":false,\"name\":\"out_3c41eda4-495c-4eb6-85ca-c2df73d9aeb0\",\"parentNode\":\"fea6af32-710b-4319-8e09-2a55680c5435\",\"links\":[\"d1762b29-b316-4916-b132-473f64205403\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"fea6af32-710b-4319-8e09-2a55680c5435\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"069b9519-988b-4b0a-a39b-7cc987cb110c\",\"type\":\"simple\",\"selected\":false,\"x\":1141,\"y\":206,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"5ac09dd8-20c3-4115-870c-28a5aa9c666e\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"069b9519-988b-4b0a-a39b-7cc987cb110c\",\"links\":[\"f79ca9e0-6566-4d3a-8645-cddad41d8dda\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"069b9519-988b-4b0a-a39b-7cc987cb110c\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"fda45b6a-6deb-4632-a8c7-1b413ac7bf70\",\"type\":\"simple\",\"selected\":false,\"x\":576,\"y\":202,\"extras\":{\"outputs\":1,\"func\":\"msg.message = '';\\nconst items = Object.keys(msg.items);\\nif (items.length > 0) {\\n  msg.message += `You bought the following items:\\\\n`\\n  for (var i = 0; i < items.length; i++) {\\n    const item = items[i];\\n    msg.message += `Item ${item}: ${msg.items[item]} pcs\\\\n`\\n  }\\n  msg.message += '\\\\n';\\n}\\n\\nmsg.message += `You have ${msg.coin} coin(s) left.`\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"11bc2db0-2872-41ca-84a8-196d30956632\",\"type\":\"default\",\"selected\":false,\"name\":\"out_11bc2db0-2872-41ca-84a8-196d30956632\",\"parentNode\":\"fda45b6a-6deb-4632-a8c7-1b413ac7bf70\",\"links\":[\"c67a8367-7f3d-4130-88e5-b41be7277669\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"1f4aed96-1090-49e1-85ec-cf2f27060b1f\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"fda45b6a-6deb-4632-a8c7-1b413ac7bf70\",\"links\":[\"d1762b29-b316-4916-b132-473f64205403\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"fda45b6a-6deb-4632-a8c7-1b413ac7bf70\",\"name\":\"Print All\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Print All\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.message = '';\\nconst items = Object.keys(msg.items);\\nif (items.length > 0) {\\n  msg.message += `You bought the following items:\\\\n`\\n  for (var i = 0; i < items.length; i++) {\\n    const item = items[i];\\n    msg.message += `Item ${item}: ${msg.items[item]} pcs\\\\n`\\n  }\\n  msg.message += '\\\\n';\\n}\\n\\nmsg.message += `You have ${msg.coin} coin(s) left.`\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.message = '';\\nconst items = Object.keys(msg.items);\\nif (items.length > 0) {\\n  msg.message += `You bought the following items:\\\\n`\\n  for (var i = 0; i < items.length; i++) {\\n    const item = items[i];\\n    msg.message += `Item ${item}: ${msg.items[item]} pcs\\\\n`\\n  }\\n  msg.message += '\\\\n';\\n}\\n\\nmsg.message += `You have ${msg.coin} coin(s) left.`\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"8cd006cf-a530-4475-9237-65b8a0b2075b\",\"type\":\"simple\",\"selected\":false,\"x\":854,\"y\":204,\"extras\":{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"},\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"},\"optType\":\"info\"},\"ports\":[{\"id\":\"d0424223-9a99-4791-8efa-dad1771f630a\",\"type\":\"default\",\"selected\":false,\"name\":\"out_d0424223-9a99-4791-8efa-dad1771f630a\",\"parentNode\":\"8cd006cf-a530-4475-9237-65b8a0b2075b\",\"links\":[\"f79ca9e0-6566-4d3a-8645-cddad41d8dda\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"59bfe28f-2d06-4b53-9ed9-6b9b26e7dfae\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"8cd006cf-a530-4475-9237-65b8a0b2075b\",\"links\":[\"c67a8367-7f3d-4130-88e5-b41be7277669\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"8cd006cf-a530-4475-9237-65b8a0b2075b\",\"name\":\"Message Box\",\"icon\":\"M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z\",\"color\":\"#4da5fb\",\"namespace\":\"Core.Dialog.MessageBox\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Message Box\",\"version\":\"1.11.6\",\"color\":\"#4da5fb\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inText\":{\"scope\":\"Message\",\"name\":\"message\"},\"inTitle\":{\"scope\":\"Custom\",\"name\":\"State Machine\"}},{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}},{\"optType\":\"info\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inText\":{\"type\":\"object\",\"title\":\"Text\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTitle\":{\"type\":\"object\",\"title\":\"Title\",\"variableType\":\"String\",\"messageOnly\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"ui:order\":[\"inTitle\",\"inText\"],\"inText\":{\"ui:field\":\"variable\"},\"inTitle\":{\"ui:field\":\"variable\"}},\"formData\":{\"inTitle\":{\"scope\":\"Custom\",\"name\":\"\"},\"inText\":{\"scope\":\"Custom\",\"name\":\"\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConfirmed\":{\"type\":\"object\",\"title\":\"Confirmed\",\"variableType\":\"Boolean\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outConfirmed\":{\"ui:field\":\"variable\"}},\"formData\":{\"outConfirmed\":{\"scope\":\"Message\",\"name\":\"confirmed\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"yesno\",\"info\",\"error\"],\"enumNames\":[\"Yes / No\",\"Info\",\"Error\"]}}},\"uiSchema\":{},\"formData\":{\"optType\":\"info\"}}],\"outputs\":1,\"inputs\":1}}]}"
+		}
+	]
+}

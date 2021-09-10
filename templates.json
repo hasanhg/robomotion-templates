@@ -406,6 +406,29 @@
     ]
   },
   {
+    "name": "State Machine Example",
+    "description": "Simulates a basic Finite State Machine example.",
+    "slug": "state-machine-example",
+    "icon": "state_machine_example_icon.png",
+    "screenshots": [
+      "state_machine_example_screenshot1.png",
+      "state_machine_example_screenshot2.png",
+      "state_machine_example_screenshot3.png",
+      "state_machine_example_screenshot4.png",
+      "state_machine_example_screenshot5.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "state",
+      "machine",
+      "transition"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
     "name": "Stock Prices",
     "description": "Stock price scraping flow using an Excel file",
     "slug": "stock-prices",
