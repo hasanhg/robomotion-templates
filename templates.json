@@ -55,6 +55,29 @@
     ]
   },
   {
+    "name": "Duplicate File Remover",
+    "description": "Removes duplicated files in a given directory in your file system",
+    "slug": "duplicate-file-remover",
+    "icon": "duplicate_file_remover_icon.png",
+    "screenshots": [
+      "duplicate_file_remover_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "javascript",
+      "duplicate",
+      "file",
+      "remover",
+      "directory"
+    ],
+    "applications": [
+      "Cryptography",
+      "Filesystem",
+      "Javascript"
+    ]
+  },
+  {
     "name": "Excel To CSV",
     "description": "Converts an excel file to a csv file in your file system",
     "slug": "excel-to-csv",

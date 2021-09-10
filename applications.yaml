@@ -1,5 +1,6 @@
 applications:
   - Chrome
+  - Cryptography
   - CSV
   - Discord
   - Excel
