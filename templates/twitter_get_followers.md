@@ -1,6 +1,6 @@
 
 # Twitter Get Followers
-List followers of a Twitter account and save them to an excel
+List followers of a Twitter account and saves them to an excel
 
 ## How it Works?
 1. Edit Config (Function) node

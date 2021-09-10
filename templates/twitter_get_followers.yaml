@@ -1,5 +1,5 @@
 - name: Twitter Get Followers
-  description: Lists the followers of an Twitter account and saves them to an excel
+  description: Lists the followers of a Twitter account and saves them to an excel
   slug: twitter-get-followers
   icon: twitter_get_followers_icon.png
   screenshots:
