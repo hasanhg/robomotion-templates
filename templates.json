@@ -75,6 +75,25 @@
     ]
   },
   {
+    "name": "Dollar - Euro Parity As Service",
+    "description": "Returns dolar - euro parity for API request",
+    "slug": "dollar-euro-parity-as-service",
+    "icon": "dollar_euro_parity_as_service_icon.png",
+    "screenshots": [
+      "dollar_euro_parity_as_service_screenshot1.png",
+      "dollar_euro_parity_as_service_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Monitoring",
+    "tags": [
+      "rest",
+      "api"
+    ],
+    "applications": [
+      "REST"
+    ]
+  },
+  {
     "name": "Duplicate File Remover",
     "description": "Removes duplicated files in a given directory in your file system",
     "slug": "duplicate-file-remover",
@@ -427,6 +446,60 @@
     ]
   },
   {
+    "name": "Twitter Auto Follow",
+    "description": "Follows a specified Twitter account",
+    "slug": "twitter-auto-follow",
+    "icon": "twitter_auto_follow_icon.png",
+    "screenshots": [
+      "twitter_auto_follow_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Twitter Get Followers",
+    "description": "Lists the followers of a Twitter account and saves them to an excel file",
+    "slug": "twitter-get-followers",
+    "icon": "twitter_get_followers_icon.png",
+    "screenshots": [
+      "twitter_get_followers_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Twitter Get Followings",
+    "description": "Lists the followings of a Twitter account and saves them to an excel file",
+    "slug": "twitter-get-followings",
+    "icon": "twitter_get_followings_icon.png",
+    "screenshots": [
+      "twitter_get_followings_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -466,76 +539,27 @@
     ]
   },
   {
-    "name": "Twitter Get Followers",
-    "description": "Lists the followers of a Twitter account and saves them to an excel",
-    "slug": "twitter-get-followers",
-    "icon": "twitter_get_followers_icon.png",
+    "name": "Youtube Video Stats",
+    "description": "Extracts video stats from a Youtube video",
+    "slug": "youtube-video-stats",
+    "icon": "youtube_video_stats_icon.png",
     "screenshots": [
-      "twitter_get_followers_screenshot.png"
+      "youtube_video_stats_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Social Media",
+    "category": "Other",
     "tags": [
-      "social media",
-      "twitter"
+      "comments",
+      "dislikes",
+      "likes",
+      "stats",
+      "views",
+      "video",
+      "youtube"
     ],
     "applications": [
-      "Twitter"
-    ]
-  },
-  {
-    "name": "Twitter Get Followings",
-    "description": "Lists the followings of a Twitter account and saves them to an excel",
-    "slug": "twitter-get-followings",
-    "icon": "twitter_get_followings_icon.png",
-    "screenshots": [
-      "twitter_get_followings_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "social media",
-      "twitter"
-    ],
-    "applications": [
-      "Twitter"
-    ]
-  },
-  {
-    "name": "Twitter Auto Follow",
-    "description": "Follows a specified Twitter account",
-    "slug": "twitter-auto-follow",
-    "icon": "twitter_auto_follow_icon.png",
-    "screenshots": [
-      "twitter_auto_follow_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "social media",
-      "twitter"
-    ],
-    "applications": [
-      "Twitter"
-    ]
-  },
-  {
-    "name": "Dollar - Euro Parity As Service",
-    "description": "Returns dolar - euro parity for API request",
-    "slug": "dollar-euro-parity-as-service",
-    "icon": "dollar_euro_parity_as_service_icon.png",
-    "screenshots": [
-      "dollar_euro_parity_as_service_screenshot1.png",
-      "dollar_euro_parity_as_service_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Monitoring",
-    "tags": [
-      "rest",
-      "api"
-    ],
-    "applications": [
-      "REST"
+      "Chrome",
+      "Javascript"
     ]
   }
 ]
