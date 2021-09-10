@@ -480,5 +480,23 @@
     "applications": [
       "Twitter"
     ]
+  },
+  {
+    "name": "Twitter Auto Follow",
+    "description": "Follows a specified Twitter account",
+    "slug": "twitter-auto-follow",
+    "icon": "twitter_auto_follow_icon.png",
+    "screenshots": [
+      "twitter_auto_follow_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
   }
 ]
