@@ -466,27 +466,76 @@
     ]
   },
   {
-    "name": "Youtube Video Stats",
-    "description": "Extracts video stats from a Youtube video",
-    "slug": "youtube-video-stats",
-    "icon": "youtube_video_stats_icon.png",
+    "name": "Twitter Get Followers",
+    "description": "Lists the followers of a Twitter account and saves them to an excel",
+    "slug": "twitter-get-followers",
+    "icon": "twitter_get_followers_icon.png",
     "screenshots": [
-      "youtube_video_stats_screenshot.png"
+      "twitter_get_followers_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Social Media",
     "tags": [
-      "comments",
-      "dislikes",
-      "likes",
-      "stats",
-      "views",
-      "video",
-      "youtube"
+      "social media",
+      "twitter"
     ],
     "applications": [
-      "Chrome",
-      "Javascript"
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Twitter Get Followings",
+    "description": "Lists the followings of a Twitter account and saves them to an excel",
+    "slug": "twitter-get-followings",
+    "icon": "twitter_get_followings_icon.png",
+    "screenshots": [
+      "twitter_get_followings_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Twitter Auto Follow",
+    "description": "Follows a specified Twitter account",
+    "slug": "twitter-auto-follow",
+    "icon": "twitter_auto_follow_icon.png",
+    "screenshots": [
+      "twitter_auto_follow_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Dollar - Euro Parity As Service",
+    "description": "Returns dolar - euro parity for API request",
+    "slug": "dollar-euro-parity-as-service",
+    "icon": "dollar_euro_parity_as_service_icon.png",
+    "screenshots": [
+      "dollar_euro_parity_as_service_screenshot1.png",
+      "dollar_euro_parity_as_service_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Monitoring",
+    "tags": [
+      "rest",
+      "api"
+    ],
+    "applications": [
+      "REST"
     ]
   }
 ]

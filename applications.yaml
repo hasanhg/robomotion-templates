@@ -11,3 +11,5 @@ applications:
   - Slack
   - SQLite
   - Twilio
+  - Twitter
+  - REST

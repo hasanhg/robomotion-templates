@@ -1,0 +1,13 @@
+- name: Twitter Get Followings
+  description: Lists the followings of a Twitter account and saves them to an excel file
+  slug: twitter-get-followings
+  icon: twitter_get_followings_icon.png
+  screenshots:
+    - twitter_get_followings_screenshot.png
+  author: Robomotion
+  category: Social Media
+  tags:
+    - social media
+    - twitter
+  applications:
+    - Twitter
