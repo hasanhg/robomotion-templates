@@ -12,3 +12,4 @@ applications:
   - SQLite
   - Twilio
   - Twitter
+  - REST

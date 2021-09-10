@@ -498,5 +498,23 @@
     "applications": [
       "Twitter"
     ]
+  },
+  {
+    "name": "Dollar - Euro Parity As Service",
+    "description": "Returns dolar - euro parity for API request",
+    "slug": "dollar-euro-parity-as-service",
+    "icon": "dollar_euro_parity_as_service_icon.png",
+    "screenshots": [
+      "dollar_euro_parity_as_service_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Monitoring",
+    "tags": [
+      "rest",
+      "api"
+    ],
+    "applications": [
+      "REST"
+    ]
   }
 ]
