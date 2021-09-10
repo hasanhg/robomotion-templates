@@ -1,6 +1,6 @@
 
 # Twitter Get Followings
-List followings of a Twitter account and saves them to an excel
+List followings of a Twitter account and saves them to an excel file
 
 ## How it Works?
 1. Edit Config (Function) node
