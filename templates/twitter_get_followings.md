@@ -1,21 +1,21 @@
 
-# Twitter Get Followers
-List followers of a Twitter account and saves them to an excel
+# Twitter Get Followings
+List followings of a Twitter account and saves them to an excel
 
 ## How it Works?
 1. Edit Config (Function) node
 
-2. Update msg.excel_path field with the path of excel that the fetched followers will be saved
+2. Update msg.excel_path field with the path of excel that the fetched followings will be saved
 ```js
-msg.excel_path = "twitter_followers.xlsx";
+msg.excel_path = "twitter_followings.xlsx";
 ```
 
-3. Update msg.limit field with a number which is the limit of fetched followers.
+3. Update msg.limit field with a number which is the limit of fetched followings.
 ```js
 msg.limit = 100;
 ```
 
-4. Update msg.twitter_account field with the account name whose followers will be fetched
+4. Update msg.twitter_account field with the account name whose followings will be fetched
 ```js
 msg.twitter_account = "robomotionio";
 ```
