@@ -1,0 +1,3480 @@
+{
+	"nodes": [
+		{
+			"id": "933f77dd-d0d8-46f6-8bee-d86d98a88520",
+			"type": "simple",
+			"selected": true,
+			"x": 501,
+			"y": 127,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "1f304dde-e9dd-4e92-8211-75d9fbad1b0f",
+					"type": "default",
+					"selected": false,
+					"name": "out_1f304dde-e9dd-4e92-8211-75d9fbad1b0f",
+					"parentNode": "933f77dd-d0d8-46f6-8bee-d86d98a88520",
+					"links": [
+						"742a7230-1ad2-4da4-8216-612ce85f486f"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "933f77dd-d0d8-46f6-8bee-d86d98a88520",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "7efd568f-89b5-40a0-90db-2ab34293327a",
+			"type": "simple",
+			"selected": true,
+			"x": 763,
+			"y": 129,
+			"extras": {
+				"outputs": 1,
+				"func": "msg.url = 'https://youtu.be/uzkD5SeuwzM'; // [Required]\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "292ae7a4-866d-4d93-a4bd-4b741ef7e54a",
+					"type": "default",
+					"selected": false,
+					"name": "out_292ae7a4-866d-4d93-a4bd-4b741ef7e54a",
+					"parentNode": "7efd568f-89b5-40a0-90db-2ab34293327a",
+					"links": [
+						"0fa6cef9-56a3-45e0-83cf-c3288906c04e"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "ca6dda4d-8ae4-47ca-ac0e-bae402b50cdf",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "7efd568f-89b5-40a0-90db-2ab34293327a",
+					"links": [
+						"742a7230-1ad2-4da4-8216-612ce85f486f"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "7efd568f-89b5-40a0-90db-2ab34293327a",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Config",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "msg.url = 'https://youtu.be/uzkD5SeuwzM'; // [Required]\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "msg.url = 'https://youtu.be/uzkD5SeuwzM'; // [Required]\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "ba1b5d37-96f7-474b-a79e-86d0d58d6101",
+			"type": "simple",
+			"selected": true,
+			"x": 759,
+			"y": 194,
+			"extras": {
+				"outBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				},
+				"optBrowser": "chrome",
+				"optMaximized": true,
+				"optProxy": "no-proxy",
+				"optProxyAddr": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"optProxyAuth": "no-authentication",
+				"optProxyCredentials": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			},
+			"ports": [
+				{
+					"id": "3e8e8526-f17a-4a5f-bf9a-20af7b04f18d",
+					"type": "default",
+					"selected": false,
+					"name": "out_3e8e8526-f17a-4a5f-bf9a-20af7b04f18d",
+					"parentNode": "ba1b5d37-96f7-474b-a79e-86d0d58d6101",
+					"links": [
+						"8fd95df4-9308-40fb-84a6-edc0f3445721"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "55fdc9fa-bfd6-451d-96ed-8b14d907d14a",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "ba1b5d37-96f7-474b-a79e-86d0d58d6101",
+					"links": [
+						"0fa6cef9-56a3-45e0-83cf-c3288906c04e"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "ba1b5d37-96f7-474b-a79e-86d0d58d6101",
+				"name": "Open Browser",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.Open",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Open Browser",
+						"version": "1.11.6",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"outBrowserId": {
+							"scope": "Message",
+							"name": "browser_id"
+						}
+					},
+					{
+						"optBrowser": "chrome",
+						"optMaximized": true,
+						"optProxy": "no-proxy",
+						"optProxyAddr": {
+							"scope": "Custom",
+							"name": ""
+						},
+						"optProxyAuth": "no-authentication",
+						"optProxyCredentials": {
+							"vaultId": "_",
+							"itemId": "_"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outBrowserId": {
+									"type": "object",
+									"title": "Browser Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outBrowserId": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outBrowserId": {
+								"scope": "Message",
+								"name": "browser_id"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optBrowser": {
+									"type": "string",
+									"title": "Browser",
+									"enum": [
+										"chrome",
+										"firefox",
+										"edge",
+										"safari",
+										"headlesschrome"
+									],
+									"enumNames": [
+										"Chrome",
+										"Firefox",
+										"Edge",
+										"Safari",
+										"Headless Chrome"
+									]
+								},
+								"optMaximized": {
+									"title": "Maximized",
+									"type": "boolean"
+								},
+								"optProxy": {
+									"title": "Proxy Settings",
+									"type": "string",
+									"enum": [
+										"no-proxy",
+										"manual-proxy"
+									],
+									"enumNames": [
+										"No Proxy",
+										"Manual Proxy"
+									]
+								},
+								"optProxyAddr": {
+									"type": "object",
+									"title": "Proxy Address",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"optProxyAuth": {
+									"title": "Proxy Authentication",
+									"type": "string",
+									"enum": [
+										"no-authentication",
+										"basic-authentication"
+									],
+									"enumNames": [
+										"No Authentication",
+										"Basic Authentication"
+									]
+								},
+								"optProxyCredentials": {
+									"type": "object",
+									"title": "Proxy Credentials",
+									"subtitle": "",
+									"category": 1,
+									"properties": {
+										"vaultId": {
+											"type": "string"
+										},
+										"itemId": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optBrowser",
+								"optMaximized",
+								"optProxy",
+								"optProxyAddr",
+								"optProxyAuth",
+								"optProxyCredentials"
+							],
+							"optProxyCredentials": {
+								"ui:field": "credentials"
+							},
+							"optProxyAddr": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optBrowser": "chrome",
+							"optMaximized": false,
+							"optProxy": "no-proxy",
+							"optProxyAddr": {
+								"scope": "Custom",
+								"name": ""
+							},
+							"optProxyAuth": "no-authentication",
+							"optProxyCredentials": {
+								"vaultId": "_",
+								"itemId": "_"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "1449a98b-60ec-45fc-9167-8395278d6324",
+			"type": "simple",
+			"selected": true,
+			"x": 760,
+			"y": 257,
+			"extras": {
+				"inBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				},
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inUrl": {
+					"scope": "Message",
+					"name": "url"
+				},
+				"outPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"optTimeout": 30
+			},
+			"ports": [
+				{
+					"id": "8b8531e9-5bbe-4ad5-adda-86c1ef69c2a6",
+					"type": "default",
+					"selected": false,
+					"name": "out_8b8531e9-5bbe-4ad5-adda-86c1ef69c2a6",
+					"parentNode": "1449a98b-60ec-45fc-9167-8395278d6324",
+					"links": [
+						"6f02f8bb-0a49-4258-8a2a-51e0457a56ca"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "081b62d2-ca23-4a85-bc0d-b1fc093a26db",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "1449a98b-60ec-45fc-9167-8395278d6324",
+					"links": [
+						"8fd95df4-9308-40fb-84a6-edc0f3445721"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "1449a98b-60ec-45fc-9167-8395278d6324",
+				"name": "Open Youtube Link",
+				"icon": "M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.OpenLink",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Open Youtube Link",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inBrowserId": {
+							"scope": "Message",
+							"name": "browser_id"
+						},
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inUrl": {
+							"scope": "Message",
+							"name": "url"
+						}
+					},
+					{
+						"outPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						}
+					},
+					{
+						"optTimeout": 30
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inBrowserId": {
+									"type": "object",
+									"title": "Browser",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inUrl": {
+									"type": "object",
+									"title": "URL",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inBrowserId": {
+								"ui:field": "variable"
+							},
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inUrl": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inBrowserId": {
+								"scope": "Message",
+								"name": "browser_id"
+							},
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inUrl": {
+								"scope": "Message",
+								"name": "url"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPageId": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optSameTab": {
+									"title": "Open in the Same Tab",
+									"type": "boolean"
+								},
+								"optTimeout": {
+									"title": "Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optTimeout",
+								"optSameTab"
+							]
+						},
+						"formData": {
+							"optTimeout": 30
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "9d10512d-41db-4849-8291-756c95f91828",
+			"type": "simple",
+			"selected": true,
+			"x": 758,
+			"y": 316,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "//*[@id=\"movie_player\"]/div[31]/div[2]/div[1]/div[1]/span[4]"
+				},
+				"image": "",
+				"optCondition": "to-appear",
+				"optTimeout": {
+					"scope": "Custom",
+					"name": "30"
+				}
+			},
+			"ports": [
+				{
+					"id": "a0cdb25e-b7bd-4a9b-ba34-9684c226590c",
+					"type": "default",
+					"selected": false,
+					"name": "out_a0cdb25e-b7bd-4a9b-ba34-9684c226590c",
+					"parentNode": "9d10512d-41db-4849-8291-756c95f91828",
+					"links": [
+						"64a0acac-9f1e-4986-b419-963760f3b853"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "9529fdf6-8926-424b-ba05-f585fffb5c71",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "9d10512d-41db-4849-8291-756c95f91828",
+					"links": [
+						"6f02f8bb-0a49-4258-8a2a-51e0457a56ca"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "9d10512d-41db-4849-8291-756c95f91828",
+				"name": "Wait Movie Player",
+				"icon": "M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.WaitElement",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Wait Movie Player",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "//*[@id=\"movie_player\"]/div[31]/div[2]/div[1]/div[1]/span[4]"
+						},
+						"image": ""
+					},
+					{
+						"optCondition": "to-appear",
+						"optTimeout": {
+							"scope": "Custom",
+							"name": "30"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "//*[@id=\"movie_player\"]/div[31]/div[2]/div[1]/div[1]/span[4]"
+							},
+							"image": ""
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optCondition": {
+									"title": "Condition",
+									"type": "string",
+									"enum": [
+										"to-appear",
+										"to-disappear",
+										"appear-and-disappear"
+									],
+									"enumNames": [
+										"To Appear",
+										"To Disappear",
+										"Appear & Disappear"
+									]
+								},
+								"optTimeout": {
+									"type": "object",
+									"title": "Timeout (sec)",
+									"variableType": "Integer",
+									"customScope": true,
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optTimeout": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optCondition": "to-appear",
+							"optTimeout": {
+								"scope": "Custom",
+								"name": "30"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "a9e7c654-15c3-45d9-aac1-cd6099f621bc",
+			"type": "simple",
+			"selected": true,
+			"x": 757,
+			"y": 378,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "//*[@id=\"movie_player\"]/div[31]/div[2]/div[1]/div[1]/span[4]"
+				},
+				"image": "",
+				"inAttribute": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"outValue": {
+					"scope": "Message",
+					"name": "duration"
+				}
+			},
+			"ports": [
+				{
+					"id": "4684c0a5-d1fb-4f62-887e-15ca9a185adc",
+					"type": "default",
+					"selected": false,
+					"name": "out_4684c0a5-d1fb-4f62-887e-15ca9a185adc",
+					"parentNode": "a9e7c654-15c3-45d9-aac1-cd6099f621bc",
+					"links": [
+						"f1ab612f-151d-4ec5-b4a8-4008457dcca8"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "e071eeb0-ccd6-44ac-a0b1-be01600b55cb",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "a9e7c654-15c3-45d9-aac1-cd6099f621bc",
+					"links": [
+						"64a0acac-9f1e-4986-b419-963760f3b853"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "a9e7c654-15c3-45d9-aac1-cd6099f621bc",
+				"name": "Get Video Duration",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.GetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Video Duration",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "//*[@id=\"movie_player\"]/div[31]/div[2]/div[1]/div[1]/span[4]"
+						},
+						"image": "",
+						"inAttribute": {
+							"scope": "Custom",
+							"name": ""
+						}
+					},
+					{
+						"outValue": {
+							"scope": "Message",
+							"name": "duration"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inAttribute": {
+									"type": "object",
+									"title": "Attribute",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inAttribute": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inAttribute",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "//*[@id=\"movie_player\"]/div[31]/div[2]/div[1]/div[1]/span[4]"
+							},
+							"image": "",
+							"inAttribute": {
+								"scope": "Custom",
+								"name": ""
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outValue": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outValue"
+							]
+						},
+						"formData": {
+							"outValue": {
+								"scope": "Message",
+								"name": "duration"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "44a2ee55-8136-47b8-9071-21048a3d4cc5",
+			"type": "simple",
+			"selected": true,
+			"x": 1084,
+			"y": 196,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "//*[@id=\"count\"]/ytd-video-view-count-renderer/span[1]"
+				},
+				"image": "",
+				"inAttribute": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"outValue": {
+					"scope": "Message",
+					"name": "views"
+				}
+			},
+			"ports": [
+				{
+					"id": "f72bf3d9-75d8-4c94-80e8-b23243aa0f80",
+					"type": "default",
+					"selected": false,
+					"name": "out_f72bf3d9-75d8-4c94-80e8-b23243aa0f80",
+					"parentNode": "44a2ee55-8136-47b8-9071-21048a3d4cc5",
+					"links": [
+						"2ab2af58-e064-4811-9a1b-7a2cca7872ca"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "fef92e2f-e270-4cc4-abe1-f16febb6649d",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "44a2ee55-8136-47b8-9071-21048a3d4cc5",
+					"links": [
+						"d6863752-d8a7-4212-951e-9daf1e6d8fba"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "44a2ee55-8136-47b8-9071-21048a3d4cc5",
+				"name": "Get Views",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.GetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Views",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "//*[@id=\"count\"]/ytd-video-view-count-renderer/span[1]"
+						},
+						"image": "",
+						"inAttribute": {
+							"scope": "Custom",
+							"name": ""
+						}
+					},
+					{
+						"outValue": {
+							"scope": "Message",
+							"name": "views"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inAttribute": {
+									"type": "object",
+									"title": "Attribute",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inAttribute": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inAttribute",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "//*[@id=\"count\"]/ytd-video-view-count-renderer/span[1]"
+							},
+							"image": "",
+							"inAttribute": {
+								"scope": "Custom",
+								"name": ""
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outValue": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outValue"
+							]
+						},
+						"formData": {
+							"outValue": {
+								"scope": "Message",
+								"name": "views"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "07fe3b4c-a75b-48e0-9327-bc99244e93dd",
+			"type": "simple",
+			"selected": true,
+			"x": 1082,
+			"y": 386,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a[1]/yt-formatted-string[1]"
+				},
+				"image": "",
+				"inAttribute": {
+					"scope": "Custom",
+					"name": "aria-label"
+				},
+				"outValue": {
+					"scope": "Message",
+					"name": "likes"
+				}
+			},
+			"ports": [
+				{
+					"id": "69a73669-b59a-49d3-841b-3d91844d10da",
+					"type": "default",
+					"selected": false,
+					"name": "out_69a73669-b59a-49d3-841b-3d91844d10da",
+					"parentNode": "07fe3b4c-a75b-48e0-9327-bc99244e93dd",
+					"links": [
+						"a8146f66-d5b6-44ee-981a-6c1b894493bd"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "32c27755-cbf2-48dc-a570-4599f3af62e8",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "07fe3b4c-a75b-48e0-9327-bc99244e93dd",
+					"links": [
+						"9ed9948e-acbc-4532-bd89-4ae880c1f8f0"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "07fe3b4c-a75b-48e0-9327-bc99244e93dd",
+				"name": "Get Likes",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.GetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Likes",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a[1]/yt-formatted-string[1]"
+						},
+						"image": "",
+						"inAttribute": {
+							"scope": "Custom",
+							"name": "aria-label"
+						}
+					},
+					{
+						"outValue": {
+							"scope": "Message",
+							"name": "likes"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inAttribute": {
+									"type": "object",
+									"title": "Attribute",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inAttribute": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inAttribute",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a[1]/yt-formatted-string[1]"
+							},
+							"image": "",
+							"inAttribute": {
+								"scope": "Custom",
+								"name": "aria-label"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outValue": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outValue"
+							]
+						},
+						"formData": {
+							"outValue": {
+								"scope": "Message",
+								"name": "likes"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "0ba553e1-2cd2-4994-bcbf-e886e56ce768",
+			"type": "simple",
+			"selected": true,
+			"x": 1083,
+			"y": 128,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "//*[@id=\"count\"]/ytd-video-view-count-renderer/span[1]"
+				},
+				"image": "",
+				"optCondition": "to-appear",
+				"optTimeout": {
+					"scope": "Custom",
+					"name": "30"
+				}
+			},
+			"ports": [
+				{
+					"id": "45c1cd1a-9e67-46ab-99b1-f0cd8123c523",
+					"type": "default",
+					"selected": false,
+					"name": "out_45c1cd1a-9e67-46ab-99b1-f0cd8123c523",
+					"parentNode": "0ba553e1-2cd2-4994-bcbf-e886e56ce768",
+					"links": [
+						"d6863752-d8a7-4212-951e-9daf1e6d8fba"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "e22e2dda-0246-431d-bfe8-bb7e44860ff6",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "0ba553e1-2cd2-4994-bcbf-e886e56ce768",
+					"links": [
+						"f1ab612f-151d-4ec5-b4a8-4008457dcca8"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "0ba553e1-2cd2-4994-bcbf-e886e56ce768",
+				"name": "Wait Views",
+				"icon": "M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.WaitElement",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Wait Views",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "//*[@id=\"count\"]/ytd-video-view-count-renderer/span[1]"
+						},
+						"image": ""
+					},
+					{
+						"optCondition": "to-appear",
+						"optTimeout": {
+							"scope": "Custom",
+							"name": "30"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "//*[@id=\"count\"]/ytd-video-view-count-renderer/span[1]"
+							},
+							"image": ""
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optCondition": {
+									"title": "Condition",
+									"type": "string",
+									"enum": [
+										"to-appear",
+										"to-disappear",
+										"appear-and-disappear"
+									],
+									"enumNames": [
+										"To Appear",
+										"To Disappear",
+										"Appear & Disappear"
+									]
+								},
+								"optTimeout": {
+									"type": "object",
+									"title": "Timeout (sec)",
+									"variableType": "Integer",
+									"customScope": true,
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optTimeout": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optCondition": "to-appear",
+							"optTimeout": {
+								"scope": "Custom",
+								"name": "30"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "19fb2509-9a80-45d9-9212-a308f9bb30bd",
+			"type": "simple",
+			"selected": true,
+			"x": 1088,
+			"y": 323,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div"
+				},
+				"image": "",
+				"optCondition": "to-appear",
+				"optTimeout": {
+					"scope": "Custom",
+					"name": "30"
+				}
+			},
+			"ports": [
+				{
+					"id": "4cea2fd4-bdb9-489f-9a27-55b67268c74d",
+					"type": "default",
+					"selected": false,
+					"name": "out_4cea2fd4-bdb9-489f-9a27-55b67268c74d",
+					"parentNode": "19fb2509-9a80-45d9-9212-a308f9bb30bd",
+					"links": [
+						"9ed9948e-acbc-4532-bd89-4ae880c1f8f0"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "7abc4ddf-df49-4590-b08c-4f423a3690e2",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "19fb2509-9a80-45d9-9212-a308f9bb30bd",
+					"links": [
+						"c7cd8080-85dc-4d7c-8041-76ac9fcc45d5"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "19fb2509-9a80-45d9-9212-a308f9bb30bd",
+				"name": "Wait Buttons",
+				"icon": "M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.WaitElement",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Wait Buttons",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div"
+						},
+						"image": ""
+					},
+					{
+						"optCondition": "to-appear",
+						"optTimeout": {
+							"scope": "Custom",
+							"name": "30"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div"
+							},
+							"image": ""
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optCondition": {
+									"title": "Condition",
+									"type": "string",
+									"enum": [
+										"to-appear",
+										"to-disappear",
+										"appear-and-disappear"
+									],
+									"enumNames": [
+										"To Appear",
+										"To Disappear",
+										"Appear & Disappear"
+									]
+								},
+								"optTimeout": {
+									"type": "object",
+									"title": "Timeout (sec)",
+									"variableType": "Integer",
+									"customScope": true,
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optTimeout": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optCondition": "to-appear",
+							"optTimeout": {
+								"scope": "Custom",
+								"name": "30"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "acf8a636-876d-43c6-8bca-9e7d7c231191",
+			"type": "simple",
+			"selected": true,
+			"x": 1403,
+			"y": 131,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[2]/a[1]/yt-formatted-string[1]"
+				},
+				"image": "",
+				"inAttribute": {
+					"scope": "Custom",
+					"name": "aria-label"
+				},
+				"outValue": {
+					"scope": "Message",
+					"name": "dislikes"
+				}
+			},
+			"ports": [
+				{
+					"id": "4cd06952-1b5a-4b89-a490-ca7044cd42e1",
+					"type": "default",
+					"selected": false,
+					"name": "out_4cd06952-1b5a-4b89-a490-ca7044cd42e1",
+					"parentNode": "acf8a636-876d-43c6-8bca-9e7d7c231191",
+					"links": [
+						"4dd811cd-10be-4b75-bd9e-bb9a116821b3"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "6b501ed9-7bd1-4b63-bca7-1f7ce6044a66",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "acf8a636-876d-43c6-8bca-9e7d7c231191",
+					"links": [
+						"a8146f66-d5b6-44ee-981a-6c1b894493bd"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "acf8a636-876d-43c6-8bca-9e7d7c231191",
+				"name": "Get Dislikes",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.GetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Dislikes",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[2]/a[1]/yt-formatted-string[1]"
+						},
+						"image": "",
+						"inAttribute": {
+							"scope": "Custom",
+							"name": "aria-label"
+						}
+					},
+					{
+						"outValue": {
+							"scope": "Message",
+							"name": "dislikes"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inAttribute": {
+									"type": "object",
+									"title": "Attribute",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inAttribute": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inAttribute",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[2]/a[1]/yt-formatted-string[1]"
+							},
+							"image": "",
+							"inAttribute": {
+								"scope": "Custom",
+								"name": "aria-label"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outValue": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outValue"
+							]
+						},
+						"formData": {
+							"outValue": {
+								"scope": "Message",
+								"name": "dislikes"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "2e1e1f05-c7ee-4db0-9037-bc97ca4fed7a",
+			"type": "simple",
+			"selected": true,
+			"x": 1398,
+			"y": 266,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/ytd-comments/ytd-item-section-renderer/div[1]/ytd-comments-header-renderer/div[1]/h2/yt-formatted-string/span[1]"
+				},
+				"image": "",
+				"inAttribute": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"outValue": {
+					"scope": "Message",
+					"name": "comments"
+				}
+			},
+			"ports": [
+				{
+					"id": "20157f3d-f7bb-4405-b697-753ef312a4bc",
+					"type": "default",
+					"selected": false,
+					"name": "out_20157f3d-f7bb-4405-b697-753ef312a4bc",
+					"parentNode": "2e1e1f05-c7ee-4db0-9037-bc97ca4fed7a",
+					"links": [
+						"15700ad9-9f57-41bd-b339-1a870f87cf17"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "304092d0-915b-43be-a84d-c4014f248266",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "2e1e1f05-c7ee-4db0-9037-bc97ca4fed7a",
+					"links": [
+						"66dd7d82-9801-4cfb-ac78-38f7b1740281"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "2e1e1f05-c7ee-4db0-9037-bc97ca4fed7a",
+				"name": "Get Comments",
+				"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.GetValue",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Comments",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/ytd-comments/ytd-item-section-renderer/div[1]/ytd-comments-header-renderer/div[1]/h2/yt-formatted-string/span[1]"
+						},
+						"image": "",
+						"inAttribute": {
+							"scope": "Custom",
+							"name": ""
+						}
+					},
+					{
+						"outValue": {
+							"scope": "Message",
+							"name": "comments"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								},
+								"inAttribute": {
+									"type": "object",
+									"title": "Attribute",
+									"variableType": "String",
+									"messageOnly": true,
+									"customScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"inAttribute": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"inAttribute",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/ytd-comments/ytd-item-section-renderer/div[1]/ytd-comments-header-renderer/div[1]/h2/yt-formatted-string/span[1]"
+							},
+							"image": "",
+							"inAttribute": {
+								"scope": "Custom",
+								"name": ""
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outValue": {
+									"type": "object",
+									"title": "Value",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outValue": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"outValue"
+							]
+						},
+						"formData": {
+							"outValue": {
+								"scope": "Message",
+								"name": "comments"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "2039c7b8-0942-460a-b31c-a6115ef0e234",
+			"type": "simple",
+			"selected": true,
+			"x": 1398,
+			"y": 196,
+			"extras": {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Custom",
+					"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/ytd-comments/ytd-item-section-renderer/div[1]/ytd-comments-header-renderer/div[1]/h2/yt-formatted-string/span[1]"
+				},
+				"image": "",
+				"optCondition": "to-appear",
+				"optTimeout": {
+					"scope": "Custom",
+					"name": "30"
+				}
+			},
+			"ports": [
+				{
+					"id": "1a4c0b46-6cba-416e-b4a2-bc29db261579",
+					"type": "default",
+					"selected": false,
+					"name": "out_1a4c0b46-6cba-416e-b4a2-bc29db261579",
+					"parentNode": "2039c7b8-0942-460a-b31c-a6115ef0e234",
+					"links": [
+						"66dd7d82-9801-4cfb-ac78-38f7b1740281"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "a84d7b6b-83fc-423b-bc27-c756b639f695",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "2039c7b8-0942-460a-b31c-a6115ef0e234",
+					"links": [
+						"4dd811cd-10be-4b75-bd9e-bb9a116821b3"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "2039c7b8-0942-460a-b31c-a6115ef0e234",
+				"name": "Wait Element",
+				"icon": "M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.WaitElement",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Wait Element",
+						"version": "1.11.6",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						},
+						"inSelectorType": "xpath:position",
+						"inSelector": {
+							"scope": "Custom",
+							"name": "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/ytd-comments/ytd-item-section-renderer/div[1]/ytd-comments-header-renderer/div[1]/h2/yt-formatted-string/span[1]"
+						},
+						"image": ""
+					},
+					{
+						"optCondition": "to-appear",
+						"optTimeout": {
+							"scope": "Custom",
+							"name": "30"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inSelectorType": {
+									"type": "string",
+									"title": "Selector Type",
+									"multiple": true,
+									"enumNames": [
+										"XPath",
+										"Id",
+										"Class"
+									],
+									"enum": [
+										"xpath:position",
+										"id",
+										"css"
+									]
+								},
+								"inSelector": {
+									"type": "object",
+									"title": "Selector",
+									"variableType": "String",
+									"messageScope": true,
+									"customScope": true,
+									"jsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"image": {
+									"title": "Image",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"inSelector": {
+								"ui:field": "variable"
+							},
+							"image": {
+								"ui:widget": "hidden"
+							},
+							"ui:order": [
+								"inPageId",
+								"inSelectorType",
+								"inSelector",
+								"image"
+							]
+						},
+						"formData": {
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							},
+							"inSelectorType": "xpath:position",
+							"inSelector": {
+								"scope": "Custom",
+								"name": ""
+							},
+							"image": ""
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optCondition": {
+									"title": "Condition",
+									"type": "string",
+									"enum": [
+										"to-appear",
+										"to-disappear",
+										"appear-and-disappear"
+									],
+									"enumNames": [
+										"To Appear",
+										"To Disappear",
+										"Appear & Disappear"
+									]
+								},
+								"optTimeout": {
+									"type": "object",
+									"title": "Timeout (sec)",
+									"variableType": "Integer",
+									"customScope": true,
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optTimeout": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"optCondition": "to-appear",
+							"optTimeout": {
+								"scope": "Custom",
+								"name": "30"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "2aa6f505-af26-452d-bddb-574ad0e05eb9",
+			"type": "simple",
+			"selected": true,
+			"x": 1084,
+			"y": 259,
+			"extras": {
+				"func": "window.scrollTo(0, 250);",
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"outResult": {
+					"scope": "Message",
+					"name": "result"
+				}
+			},
+			"ports": [
+				{
+					"id": "6a151ed4-007e-4f35-bf8a-8a93f543fb49",
+					"type": "default",
+					"selected": false,
+					"name": "out_6a151ed4-007e-4f35-bf8a-8a93f543fb49",
+					"parentNode": "2aa6f505-af26-452d-bddb-574ad0e05eb9",
+					"links": [
+						"c7cd8080-85dc-4d7c-8041-76ac9fcc45d5"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "058eb54b-c771-42d5-8434-d2c2258f9283",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "2aa6f505-af26-452d-bddb-574ad0e05eb9",
+					"links": [
+						"2ab2af58-e064-4811-9a1b-7a2cca7872ca"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "2aa6f505-af26-452d-bddb-574ad0e05eb9",
+				"name": "Scroll Down",
+				"icon": "M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z",
+				"color": "#c9d9ff",
+				"editor": "javascript",
+				"namespace": "Core.Browser.RunScript",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Scroll Down",
+						"color": "#c9d9ff",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"func": "window.scrollTo(0, 250);",
+						"inPageId": {
+							"scope": "Message",
+							"name": "page_id"
+						}
+					},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "result"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Script",
+									"type": "string"
+								},
+								"inPageId": {
+									"type": "object",
+									"title": "Page Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPageId": {
+								"ui:field": "variable"
+							},
+							"func": {
+								"ui:widget": "hidden"
+							}
+						},
+						"formData": {
+							"func": "window.scrollTo(0, 250);",
+							"inPageId": {
+								"scope": "Message",
+								"name": "page_id"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Result",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "result"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "7f62eb9d-e1c6-46e1-a8bf-f00fdf8b53f8",
+			"type": "simple",
+			"selected": true,
+			"x": 1397,
+			"y": 329,
+			"extras": {
+				"outputs": 1,
+				"func": "function calculateDuration(text) {\n  const parts = text.split(':');\n  parts.reverse();\n  var seconds = 0;\n  for (var i = 0; i < parts.length; i++) {\n    seconds += parseInt(parts[i]) * Math.pow(60, i);\n  }\n  return seconds;\n}\n\nmsg.stats = {\n  comments: parseInt(msg.comments.replaceAll(',', '')),\n  dislikes: parseInt(msg.dislikes.split(' ')[0].replaceAll(',', '')),\n  duration: calculateDuration(msg.duration),\n  likes: parseInt(msg.likes.split(' ')[0].replaceAll(',', '')),\n  views: parseInt(msg.views.split(' ')[0].replaceAll(',', '')),\n};\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "35d21784-b321-4bdf-acf0-94a015aa69e5",
+					"type": "default",
+					"selected": false,
+					"name": "out_35d21784-b321-4bdf-acf0-94a015aa69e5",
+					"parentNode": "7f62eb9d-e1c6-46e1-a8bf-f00fdf8b53f8",
+					"links": [
+						"c928809e-e690-4f95-b644-902fd4016008"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "7e463251-a3e6-4f4f-821b-fd16b408059c",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "7f62eb9d-e1c6-46e1-a8bf-f00fdf8b53f8",
+					"links": [
+						"15700ad9-9f57-41bd-b339-1a870f87cf17"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "7f62eb9d-e1c6-46e1-a8bf-f00fdf8b53f8",
+				"name": "Get Stats",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Get Stats",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "function calculateDuration(text) {\n  const parts = text.split(':');\n  parts.reverse();\n  var seconds = 0;\n  for (var i = 0; i < parts.length; i++) {\n    seconds += parseInt(parts[i]) * Math.pow(60, i);\n  }\n  return seconds;\n}\n\nmsg.stats = {\n  comments: parseInt(msg.comments.replaceAll(',', '')),\n  dislikes: parseInt(msg.dislikes.split(' ')[0].replaceAll(',', '')),\n  duration: calculateDuration(msg.duration),\n  likes: parseInt(msg.likes.split(' ')[0].replaceAll(',', '')),\n  views: parseInt(msg.views.split(' ')[0].replaceAll(',', '')),\n};\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "function calculateDuration(text) {\n  const parts = text.split(':');\n  parts.reverse();\n  var seconds = 0;\n  for (var i = 0; i < parts.length; i++) {\n    seconds += parseInt(parts[i]) * Math.pow(60, i);\n  }\n  return seconds;\n}\n\nmsg.stats = {\n  comments: parseInt(msg.comments.replaceAll(',', '')),\n  dislikes: parseInt(msg.dislikes.split(' ')[0].replaceAll(',', '')),\n  duration: calculateDuration(msg.duration),\n  likes: parseInt(msg.likes.split(' ')[0].replaceAll(',', '')),\n  views: parseInt(msg.views.split(' ')[0].replaceAll(',', '')),\n};\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "147ad9c1-12f3-4b6d-bb75-15b3d067da64",
+			"type": "simple",
+			"selected": true,
+			"x": 1400,
+			"y": 453,
+			"extras": {
+				"optActive": true,
+				"optSysConsole": false,
+				"optDebugData": {
+					"scope": "Message",
+					"name": "stats"
+				}
+			},
+			"ports": [
+				{
+					"id": "d38b4af7-8ee3-4db4-a41b-6a0346f46645",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "147ad9c1-12f3-4b6d-bb75-15b3d067da64",
+					"links": [
+						"44783ec8-6376-4150-a94c-f632854e37f8"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "147ad9c1-12f3-4b6d-bb75-15b3d067da64",
+				"name": "Debug",
+				"icon": "M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z",
+				"color": "#E6EE9C",
+				"namespace": "Core.Programming.Debug",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Debug",
+						"version": "1.11.6",
+						"color": "#E6EE9C",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"optActive": true,
+						"optSysConsole": false,
+						"optDebugData": {
+							"scope": "Message",
+							"name": "stats"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optActive": {
+									"title": "Active",
+									"type": "boolean"
+								},
+								"optSysConsole": {
+									"title": "System Console",
+									"type": "boolean"
+								},
+								"optDebugData": {
+									"type": "object",
+									"title": "Debug Data",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"optDebugData": {
+								"ui:field": "variable"
+							},
+							"ui:order": [
+								"optDebugData",
+								"optActive",
+								"optSysConsole"
+							]
+						},
+						"formData": {
+							"optDebugData": {
+								"name": "",
+								"scope": "Message"
+							},
+							"optActive": true,
+							"optSysConsole": false
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "702d62e5-7c2e-4284-8bde-89d086c7e874",
+			"type": "simple",
+			"selected": true,
+			"x": 1398,
+			"y": 390,
+			"extras": {
+				"inBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				}
+			},
+			"ports": [
+				{
+					"id": "73a82578-fc5c-4ec2-801d-16a5d9375e66",
+					"type": "default",
+					"selected": false,
+					"name": "out_73a82578-fc5c-4ec2-801d-16a5d9375e66",
+					"parentNode": "702d62e5-7c2e-4284-8bde-89d086c7e874",
+					"links": [
+						"44783ec8-6376-4150-a94c-f632854e37f8"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "b5de37c8-2ee1-4db8-ac21-46239080a360",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "702d62e5-7c2e-4284-8bde-89d086c7e874",
+					"links": [
+						"c928809e-e690-4f95-b644-902fd4016008"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "702d62e5-7c2e-4284-8bde-89d086c7e874",
+				"name": "Close Browser",
+				"icon": "M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z",
+				"color": "#c9d9ff",
+				"namespace": "Core.Browser.Close",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inBrowserId": {
+							"scope": "Message",
+							"name": "browser_id"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inBrowserId": {
+									"type": "object",
+									"title": "Browser Id",
+									"variableType": "String",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inBrowserId": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inBrowserId": {
+								"scope": "Message",
+								"name": "browser_id"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "87681f57-43a4-4488-8c4c-adffc179123d",
+			"type": "simple",
+			"selected": true,
+			"x": 93,
+			"y": 85,
+			"extras": {
+				"optText": "##### Youtube Video Stats How-To \n\nThis template uses *Browser* and *Function* nodes to extract video stats from\na Youtube video.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.url field to the URL of the Youtube video you want to extract\nstats."
+			},
+			"ports": [],
+			"model": {
+				"id": "87681f57-43a4-4488-8c4c-adffc179123d",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### Youtube Video Stats How-To \n\nThis template uses *Browser* and *Function* nodes to extract video stats from\na Youtube video.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.url field to the URL of the Youtube video you want to extract\nstats."
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "##### Youtube Video Stats How-To \n\nThis template uses *Browser* and *Function* nodes to extract video stats from\na Youtube video.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.url field to the URL of the Youtube video you want to extract\nstats."
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": []
+}
