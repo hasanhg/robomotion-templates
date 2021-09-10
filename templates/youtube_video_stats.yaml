@@ -1,0 +1,19 @@
+- name: Youtube Video Stats
+  description: Extracts video stats from a Youtube video
+  slug: youtube-video-stats
+  icon: youtube_video_stats_icon.png
+  screenshots:
+    - youtube_video_stats_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - comments
+    - dislikes
+    - likes
+    - stats
+    - views
+    - video
+    - youtube
+  applications:
+    - Chrome
+    - Javascript
