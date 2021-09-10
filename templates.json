@@ -55,27 +55,6 @@
     ]
   },
   {
-    "name": "Daily Sport News",
-    "description": "Reads document(s) from a MongoDB collection with filter and sends this document(s) via mail.",
-    "slug": "daily-sport-news",
-    "icon": "daily_sport_news_icon.png",
-    "screenshots": [
-      "daily_sport_news_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "database",
-      "javascript",
-      "mail"
-    ],
-    "applications": [
-      "Javascript",
-      "MongoDB",
-      "Mail"
-    ]
-  },
-  {
     "name": "Excel To CSV",
     "description": "Converts an excel file to a csv file in your file system",
     "slug": "excel-to-csv",
