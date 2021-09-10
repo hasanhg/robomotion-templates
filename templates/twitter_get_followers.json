@@ -1,0 +1,590 @@
+{
+	"nodes": [{
+		"id": "ac7ceaa6-3180-4a48-a6db-07d3c04bdd49",
+		"type": "simple",
+		"selected": true,
+		"x": 750.7794117647059,
+		"y": 324.8382352941176,
+		"extras": {
+			"inPayload": {
+				"name": "Date.now()",
+				"scope": "JS"
+			},
+			"outPayload": {
+				"name": "payload",
+				"scope": "Message"
+			},
+			"optOnce": true,
+			"optOnceDelay": 0.1,
+			"optRepeat": 1
+		},
+		"ports": [{
+			"id": "6a45059d-e883-47e9-8cac-0bc7f7a333bb",
+			"type": "default",
+			"selected": false,
+			"name": "out_6a45059d-e883-47e9-8cac-0bc7f7a333bb",
+			"parentNode": "ac7ceaa6-3180-4a48-a6db-07d3c04bdd49",
+			"links": ["1bce8608-09f6-4ad4-a0cf-f1c9cef10a8c"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "ac7ceaa6-3180-4a48-a6db-07d3c04bdd49",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#FDD835",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Start",
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				}
+			}, {
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				}
+			}, {
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			}],
+			"xyz": [{
+				"formData": {
+					"inPayload": {
+						"name": "Date.now()",
+						"scope": "JS"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPayload": {
+							"argsScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"outPayload": {
+						"name": "payload",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outPayload": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optOnce": true,
+					"optOnceDelay": 0.1,
+					"optRepeat": 1
+				},
+				"schema": {
+					"properties": {
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						},
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "3af615fe-fdb2-427d-9018-89f9075cdb98",
+		"type": "simple",
+		"selected": true,
+		"x": 750.7794117647059,
+		"y": 427.6029411764706,
+		"extras": {
+			"outputs": 1,
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/3af615fe-fdb2-427d-9018-89f9075cdb98.flow"
+		},
+		"ports": [{
+			"id": "ef487338-5367-4121-b46e-9069bc4bef61",
+			"type": "default",
+			"selected": false,
+			"name": "out_ef487338-5367-4121-b46e-9069bc4bef61",
+			"parentNode": "3af615fe-fdb2-427d-9018-89f9075cdb98",
+			"links": ["bc0b99f6-1cd3-4b30-ac88-796954633696"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "422f6678-f06f-4ef5-8cc5-396ca5554e63",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "3af615fe-fdb2-427d-9018-89f9075cdb98",
+			"links": ["be33bd58-64f9-4c45-8dad-2bafc03e8400"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "3af615fe-fdb2-427d-9018-89f9075cdb98",
+			"name": "Open Twitter",
+			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+			"color": "#646bf5",
+			"namespace": "Core.Flow.SubFlow",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#646bf5",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Open Twitter",
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/3af615fe-fdb2-427d-9018-89f9075cdb98.flow"
+			}],
+			"xyz": [{
+				"formData": {
+					"outputs": 1,
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/3af615fe-fdb2-427d-9018-89f9075cdb98.flow"
+				},
+				"schema": {
+					"properties": {
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						},
+						"subflow": {
+							"properties": {},
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"subflow": {
+						"ui:widget": "hidden"
+					},
+					"ui:order": ["outputs", "*"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "f26514ec-86ca-428c-a741-a9db9b879aa1",
+		"type": "simple",
+		"selected": true,
+		"x": 757.3676470588234,
+		"y": 482.7794117647059,
+		"extras": {
+			"outputs": 1,
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/f26514ec-86ca-428c-a741-a9db9b879aa1.flow"
+		},
+		"ports": [{
+			"id": "13f323a1-6eb0-4d1f-b707-94034552326d",
+			"type": "default",
+			"selected": false,
+			"name": "out_13f323a1-6eb0-4d1f-b707-94034552326d",
+			"parentNode": "f26514ec-86ca-428c-a741-a9db9b879aa1",
+			"links": ["27ef3245-d569-459f-83c7-144c0948454c"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "689bed78-0832-4629-b6e0-45b244d35872",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "f26514ec-86ca-428c-a741-a9db9b879aa1",
+			"links": ["bc0b99f6-1cd3-4b30-ac88-796954633696"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "f26514ec-86ca-428c-a741-a9db9b879aa1",
+			"name": "Get Followers",
+			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+			"color": "#646bf5",
+			"namespace": "Core.Flow.SubFlow",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Get Followers",
+				"version": "1.11.6",
+				"color": "#646bf5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/f26514ec-86ca-428c-a741-a9db9b879aa1.flow"
+			}],
+			"xyz": [{
+				"formData": {
+					"outputs": 1,
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/f26514ec-86ca-428c-a741-a9db9b879aa1.flow"
+				},
+				"schema": {
+					"properties": {
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						},
+						"subflow": {
+							"properties": {},
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"subflow": {
+						"ui:widget": "hidden"
+					},
+					"ui:order": ["outputs", "*"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "8a08aaa3-a530-4db8-a78c-ac88290cf560",
+		"type": "simple",
+		"selected": true,
+		"x": 751.1911764705882,
+		"y": 376.25,
+		"extras": {
+			"func": "msg.excel_path = \"C:\\\\twitter_followers.xlsx\"; //[Required] The path of excel file that the followers will be saved\nmsg.limit = 100; //[Required] The limit of followers number that will be saved\nmsg.twitter_account = \"robomotionio\" //[Required] The twitter account whose followers will be saved\nmsg.auth_token = \"\"; // [Required] The auth_token cookie of your twitter session\nmsg.auth_token = \"b1c443e1d80c875d4fe46c695022b3103f9de4a7\"; //\nreturn msg;\n",
+			"optTimeout": 30,
+			"outputs": 1,
+			"variables": []
+		},
+		"ports": [{
+			"id": "2a1afa86-d84f-4f23-9cd9-bb8a8045a2cd",
+			"type": "default",
+			"selected": false,
+			"name": "out_2a1afa86-d84f-4f23-9cd9-bb8a8045a2cd",
+			"parentNode": "8a08aaa3-a530-4db8-a78c-ac88290cf560",
+			"links": ["be33bd58-64f9-4c45-8dad-2bafc03e8400"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "4356cfac-3a53-4f4a-8ddc-1a95e19c7319",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "8a08aaa3-a530-4db8-a78c-ac88290cf560",
+			"links": ["1bce8608-09f6-4ad4-a0cf-f1c9cef10a8c"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "8a08aaa3-a530-4db8-a78c-ac88290cf560",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#F27925",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Config",
+				"version": "1.11.6"
+			}, {
+				"func": "msg.excel_path = \"C:\\\\twitter_followers.xlsx\"; //[Required] The path of excel file that the followers will be saved\nmsg.limit = 100; //[Required] The limit of followers number that will be saved\nmsg.twitter_account = \"robomotionio\" //[Required] The twitter account whose followers will be saved\nmsg.auth_token = \"\"; // [Required] The auth_token cookie of your twitter session\nmsg.auth_token = \"b1c443e1d80c875d4fe46c695022b3103f9de4a7\"; //\nreturn msg;\n",
+				"optTimeout": 30,
+				"outputs": 1
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"formData": {
+					"func": "msg.excel_path = \"C:\\\\twitter_followers.xlsx\"; //[Required] The path of excel file that the followers will be saved\nmsg.limit = 100; //[Required] The limit of followers number that will be saved\nmsg.twitter_account = \"robomotionio\" //[Required] The twitter account whose followers will be saved\nmsg.auth_token = \"\"; // [Required] The auth_token cookie of your twitter session\nmsg.auth_token = \"b1c443e1d80c875d4fe46c695022b3103f9de4a7\"; //\nreturn msg;\n",
+					"optTimeout": 30,
+					"outputs": 1
+				},
+				"schema": {
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						},
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"func": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					}
+				}
+			}, {
+				"formData": {
+					"variables": []
+				},
+				"schema": {
+					"properties": {
+						"variables": {
+							"items": {
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							},
+							"type": "array"
+						}
+					},
+					"title": "Local Variables",
+					"type": "object"
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "ef59623c-fca5-4516-81b9-65a6a489a068",
+		"type": "simple",
+		"selected": true,
+		"x": 758.0147058823529,
+		"y": 534.6029411764706,
+		"extras": {
+			"outResult": {
+				"name": "error",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "2b799004-0a81-4761-bcc1-22dae1849bbf",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ef59623c-fca5-4516-81b9-65a6a489a068",
+			"links": ["27ef3245-d569-459f-83c7-144c0948454c"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ef59623c-fca5-4516-81b9-65a6a489a068",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"name": "error",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"outResult": {
+						"name": "error",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outResult": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Error",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "6110ec84-76d3-43bd-83a0-5b7f082f259e",
+		"type": "simple",
+		"selected": true,
+		"x": 304.47058823529414,
+		"y": 84.94117647058826,
+		"extras": {
+			"optText": "##### Twitter Get Followers How-To \n\nThis template lists the followers of an account and saves them to excel\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.excel_path field with the path of excel that the fetched followers will be saved\n\n**3.** Update msg.limit field with a number which is the limit of fetched followers\n\n**4.** Update msg.twitter_account field with the account name whose followers will be fetched\n\n**5.** Update msg.auth_token field with the auth_token cookie of your Twitter session. To obtain it follow the following steps:\n   \n       1. Login to your twitter account.\n       2. Open developer options by \n          pressing F12\n       3. Open Application tab\n       4. Select cookies\n       5. Copy auth_token cookie\n          and paste it to msg.auth_token\n          field in config node"
+		},
+		"ports": [],
+		"model": {
+			"id": "6110ec84-76d3-43bd-83a0-5b7f082f259e",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Twitter Get Followers How-To \n\nThis template lists the followers of an account and saves them to excel\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.excel_path field with the path of excel that the fetched followers will be saved\n\n**3.** Update msg.limit field with a number which is the limit of fetched followers\n\n**4.** Update msg.twitter_account field with the account name whose followers will be fetched\n\n**5.** Update msg.auth_token field with the auth_token cookie of your Twitter session. To obtain it follow the following steps:\n   \n       1. Login to your twitter account.\n       2. Open developer options by \n          pressing F12\n       3. Open Application tab\n       4. Select cookies\n       5. Copy auth_token cookie\n          and paste it to msg.auth_token\n          field in config node"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Twitter Get Followers How-To \n\nThis template lists the followers of an account and saves them to excel\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.excel_path field with the path of excel that the fetched followers will be saved\n\n**3.** Update msg.limit field with a number which is the limit of fetched followers\n\n**4.** Update msg.twitter_account field with the account name whose followers will be fetched\n\n**5.** Update msg.auth_token field with the auth_token cookie of your Twitter session. To obtain it follow the following steps:\n   \n       1. Login to your twitter account.\n       2. Open developer options by \n          pressing F12\n       3. Open Application tab\n       4. Select cookies\n       5. Copy auth_token cookie\n          and paste it to msg.auth_token\n          field in config node"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": [{
+		"id": "3af615fe-fdb2-427d-9018-89f9075cdb98",
+		"flow": "{\"id\":\"3af615fe-fdb2-427d-9018-89f9075cdb98\",\"offsetX\":158.03775883316055,\"offsetY\":51.7590836968958,\"zoom\":78.17750719070432,\"gridSize\":0,\"links\":[{\"id\":\"0d0fa73b-d7cc-464a-95d3-40de26df318c\",\"type\":\"default\",\"selected\":false,\"source\":\"775380a5-28d1-43d7-842a-50ff64102f2c\",\"sourcePort\":\"1fa64a6b-8ddb-4f0e-9368-06ecf403ce2b\",\"target\":\"fdec94a4-01da-4e68-a311-e6079275b5c9\",\"targetPort\":\"e0f0b4dc-9062-416c-a34e-595d70887360\",\"points\":[{\"id\":\"2d1fe265-19d3-4d20-8f24-e0017b854291\",\"selected\":false,\"x\":501.00004581949804,\"y\":225.00000133338588},{\"id\":\"1930298d-034c-4f48-8820-8c627030fdd1\",\"selected\":false,\"x\":796.1718975422234,\"y\":258.6562484250851}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"7123cb18-fcb4-4c1c-8785-f50b63eb0f6f\",\"type\":\"default\",\"selected\":false,\"source\":\"fdec94a4-01da-4e68-a311-e6079275b5c9\",\"sourcePort\":\"b55f8e7c-34a6-436e-a0ed-e04a4bcfd95f\",\"target\":\"3ca13a41-1d7e-4cd7-9d70-8adca6f93251\",\"targetPort\":\"eccf0a25-14a4-4791-ab99-701dc41311eb\",\"points\":[{\"id\":\"ba1368c2-2c1b-4cc3-8913-cae894acecad\",\"selected\":false,\"x\":998.1719161874071,\"y\":260.656251894921},{\"id\":\"ffcb74d9-3f6e-4f29-940f-00e19ddfed6c\",\"selected\":false,\"x\":801.2968905751958,\"y\":311.10937400310775}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"4b55a020-1dac-409f-967b-5bf6ef20aa9e\",\"type\":\"default\",\"selected\":false,\"source\":\"3ca13a41-1d7e-4cd7-9d70-8adca6f93251\",\"sourcePort\":\"fe886c78-09d2-411b-99ee-650cb9122c4a\",\"target\":\"070f447b-ce22-4a68-ae57-f87e67b1bf14\",\"targetPort\":\"f195c3fd-b365-4b20-b298-accee9cb3e1c\",\"points\":[{\"id\":\"f0301ac1-b357-4bd6-93b7-5fd8d2134b36\",\"selected\":false,\"x\":1003.2969092203793,\"y\":313.1093579548116},{\"id\":\"6b1b30c6-eb95-4222-aac2-dc672a1abdde\",\"selected\":false,\"x\":793.6094010257373,\"y\":367.3906103321125}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"f57a6596-394b-44d9-8d81-35c849e12506\",\"type\":\"default\",\"selected\":false,\"source\":\"63f6ff55-3465-42cb-bf2a-e7518269dae0\",\"sourcePort\":\"39fa4794-9fac-4318-9b0a-01046b778be8\",\"target\":\"070f447b-ce22-4a68-ae57-f87e67b1bf14\",\"targetPort\":\"3e920021-88c4-4008-8bad-f4174ab81eec\",\"points\":[{\"id\":\"930d78b5-c856-4639-9a84-b432d10887f5\",\"selected\":false,\"x\":1154.6562755449395,\"y\":382.8906225847419},{\"id\":\"712f8874-e4ef-4ecc-b7ef-36afc75de4f3\",\"selected\":false,\"x\":1011.3906101334134,\"y\":369.39063332008044}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300}],\"nodes\":[{\"id\":\"775380a5-28d1-43d7-842a-50ff64102f2c\",\"type\":\"simple\",\"selected\":false,\"x\":300,\"y\":200,\"extras\":{},\"ports\":[{\"id\":\"1fa64a6b-8ddb-4f0e-9368-06ecf403ce2b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_1fa64a6b-8ddb-4f0e-9368-06ecf403ce2b\",\"parentNode\":\"775380a5-28d1-43d7-842a-50ff64102f2c\",\"links\":[\"0d0fa73b-d7cc-464a-95d3-40de26df318c\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"775380a5-28d1-43d7-842a-50ff64102f2c\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"63f6ff55-3465-42cb-bf2a-e7518269dae0\",\"type\":\"simple\",\"selected\":false,\"x\":1147.6687760011969,\"y\":359.89253749812974,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"39fa4794-9fac-4318-9b0a-01046b778be8\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"63f6ff55-3465-42cb-bf2a-e7518269dae0\",\"links\":[\"f57a6596-394b-44d9-8d81-35c849e12506\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"63f6ff55-3465-42cb-bf2a-e7518269dae0\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"formData\":{\"sfPort\":0},\"schema\":{\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}},\"title\":\"Options\",\"type\":\"object\"},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"fdec94a4-01da-4e68-a311-e6079275b5c9\",\"type\":\"simple\",\"selected\":false,\"x\":789.1812662455925,\"y\":235.669980949471,\"extras\":{\"outBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"optBrowser\":\"chrome\",\"optMaximized\":true,\"optProxy\":\"no-proxy\",\"optProxyAddr\":{\"name\":\"\",\"scope\":\"Custom\"},\"optProxyAuth\":\"no-authentication\",\"optProxyCredentials\":{\"itemId\":\"_\",\"vaultId\":\"_\"}},\"ports\":[{\"id\":\"b55f8e7c-34a6-436e-a0ed-e04a4bcfd95f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b55f8e7c-34a6-436e-a0ed-e04a4bcfd95f\",\"parentNode\":\"fdec94a4-01da-4e68-a311-e6079275b5c9\",\"links\":[\"7123cb18-fcb4-4c1c-8785-f50b63eb0f6f\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"e0f0b4dc-9062-416c-a34e-595d70887360\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"fdec94a4-01da-4e68-a311-e6079275b5c9\",\"links\":[\"0d0fa73b-d7cc-464a-95d3-40de26df318c\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"fdec94a4-01da-4e68-a311-e6079275b5c9\",\"name\":\"Open Browser\",\"icon\":\"M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.Open\",\"version\":\"1.11.6\",\"abc\":[{},{\"outBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"}},{\"optBrowser\":\"chrome\",\"optMaximized\":true,\"optProxy\":\"no-proxy\",\"optProxyAddr\":{\"name\":\"\",\"scope\":\"Custom\"},\"optProxyAuth\":\"no-authentication\",\"optProxyCredentials\":{\"itemId\":\"_\",\"vaultId\":\"_\"}}],\"xyz\":[{\"formData\":{\"outBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outBrowserId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Browser Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outBrowserId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"optBrowser\":\"chrome\",\"optMaximized\":true,\"optProxy\":\"no-proxy\",\"optProxyAddr\":{\"name\":\"\",\"scope\":\"Custom\"},\"optProxyAuth\":\"no-authentication\",\"optProxyCredentials\":{\"itemId\":\"_\",\"vaultId\":\"_\"}},\"schema\":{\"properties\":{\"optBrowser\":{\"enum\":[\"chrome\",\"firefox\",\"edge\",\"safari\",\"headlesschrome\"],\"enumNames\":[\"Chrome\",\"Firefox\",\"Edge\",\"Safari\",\"Headless Chrome\"],\"title\":\"Browser\",\"type\":\"string\"},\"optMaximized\":{\"title\":\"Maximized\",\"type\":\"boolean\"},\"optProxy\":{\"enum\":[\"no-proxy\",\"manual-proxy\"],\"enumNames\":[\"No Proxy\",\"Manual Proxy\"],\"title\":\"Proxy Settings\",\"type\":\"string\"},\"optProxyAddr\":{\"customScope\":true,\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Proxy Address\",\"type\":\"object\",\"variableType\":\"String\"},\"optProxyAuth\":{\"enum\":[\"no-authentication\",\"basic-authentication\"],\"enumNames\":[\"No Authentication\",\"Basic Authentication\"],\"title\":\"Proxy Authentication\",\"type\":\"string\"},\"optProxyCredentials\":{\"category\":1,\"properties\":{\"itemId\":{\"type\":\"string\"},\"vaultId\":{\"type\":\"string\"}},\"subtitle\":\"\",\"title\":\"Proxy Credentials\",\"type\":\"object\"}},\"title\":\"Options\",\"type\":\"object\"},\"uiSchema\":{\"optProxyAddr\":{\"ui:field\":\"variable\"},\"optProxyCredentials\":{\"ui:field\":\"credentials\"},\"ui:order\":[\"optBrowser\",\"optMaximized\",\"optProxy\",\"optProxyAddr\",\"optProxyAuth\",\"optProxyCredentials\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"3ca13a41-1d7e-4cd7-9d70-8adca6f93251\",\"type\":\"simple\",\"selected\":false,\"x\":794.2978274455327,\"y\":288.11473324885753,\"extras\":{\"inBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"inUrl\":{\"name\":\"https://www.twitter.com\",\"scope\":\"Custom\"},\"outPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"optTimeout\":30},\"ports\":[{\"id\":\"fe886c78-09d2-411b-99ee-650cb9122c4a\",\"type\":\"default\",\"selected\":false,\"name\":\"out_fe886c78-09d2-411b-99ee-650cb9122c4a\",\"parentNode\":\"3ca13a41-1d7e-4cd7-9d70-8adca6f93251\",\"links\":[\"4b55a020-1dac-409f-967b-5bf6ef20aa9e\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"eccf0a25-14a4-4791-ab99-701dc41311eb\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3ca13a41-1d7e-4cd7-9d70-8adca6f93251\",\"links\":[\"7123cb18-fcb4-4c1c-8785-f50b63eb0f6f\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3ca13a41-1d7e-4cd7-9d70-8adca6f93251\",\"name\":\"Open Link\",\"icon\":\"M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.OpenLink\",\"version\":\"1.11.6\",\"abc\":[{\"color\":\"#c9d9ff\",\"continueOnError\":false,\"delayAfter\":0,\"delayBefore\":0,\"name\":\"Open Link\",\"version\":\"1.11.6\"},{\"inBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"inUrl\":{\"name\":\"https://www.twitter.com\",\"scope\":\"Custom\"}},{\"outPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},{\"optTimeout\":30}],\"xyz\":[{\"formData\":{\"inBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"inUrl\":{\"name\":\"https://www.twitter.com\",\"scope\":\"Custom\"}},\"schema\":{\"properties\":{\"inBrowserId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Browser\",\"type\":\"object\",\"variableType\":\"String\"},\"inPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"},\"inUrl\":{\"customScope\":true,\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"URL\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Input\",\"type\":\"object\"},\"uiSchema\":{\"inBrowserId\":{\"ui:field\":\"variable\"},\"inPageId\":{\"ui:field\":\"variable\"},\"inUrl\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"outPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outPageId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"optTimeout\":30},\"schema\":{\"properties\":{\"optSameTab\":{\"title\":\"Open in the Same Tab\",\"type\":\"boolean\"},\"optTimeout\":{\"title\":\"Timeout\",\"type\":\"number\"}},\"title\":\"Options\",\"type\":\"object\"},\"uiSchema\":{\"ui:order\":[\"optTimeout\",\"optSameTab\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"070f447b-ce22-4a68-ae57-f87e67b1bf14\",\"type\":\"simple\",\"selected\":true,\"x\":786.6229856456224,\"y\":344.3969064481993,\"extras\":{\"func\":\"document.cookie=\\\"auth_token=\\\" + msg.auth_token + \\\";secure\\\";\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"3e920021-88c4-4008-8bad-f4174ab81eec\",\"type\":\"default\",\"selected\":false,\"name\":\"out_3e920021-88c4-4008-8bad-f4174ab81eec\",\"parentNode\":\"070f447b-ce22-4a68-ae57-f87e67b1bf14\",\"links\":[\"f57a6596-394b-44d9-8d81-35c849e12506\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f195c3fd-b365-4b20-b298-accee9cb3e1c\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"070f447b-ce22-4a68-ae57-f87e67b1bf14\",\"links\":[\"4b55a020-1dac-409f-967b-5bf6ef20aa9e\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"070f447b-ce22-4a68-ae57-f87e67b1bf14\",\"name\":\"Set Session Cookie\",\"icon\":\"M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z\",\"color\":\"#c9d9ff\",\"editor\":\"javascript\",\"namespace\":\"Core.Browser.RunScript\",\"version\":\"1.11.6\",\"abc\":[{\"color\":\"#c9d9ff\",\"continueOnError\":false,\"delayAfter\":0,\"delayBefore\":0,\"name\":\"Set Session Cookie\",\"version\":\"1.11.6\"},{\"func\":\"document.cookie=\\\"auth_token=\\\" + msg.auth_token + \\\";secure\\\";\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}}],\"xyz\":[{\"formData\":{\"func\":\"document.cookie=\\\"auth_token=\\\" + msg.auth_token + \\\";secure\\\";\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"func\":{\"title\":\"Script\",\"type\":\"string\"},\"inPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Input\",\"type\":\"object\"},\"uiSchema\":{\"func\":{\"ui:widget\":\"hidden\"},\"inPageId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outResult\":{\"messageOnly\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Result\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}}}],\"outputs\":1,\"inputs\":1}}]}"
+	}, {
+		"id": "f26514ec-86ca-428c-a741-a9db9b879aa1",
+		"flow": "{\"id\":\"f26514ec-86ca-428c-a741-a9db9b879aa1\",\"offsetX\":256.6216311387373,\"offsetY\":294.7847155681259,\"zoom\":77,\"gridSize\":0,\"links\":[{\"id\":\"517e9f29-edaf-4000-a083-ca850a3bd926\",\"type\":\"default\",\"selected\":false,\"source\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"sourcePort\":\"aa2037b7-bc8d-4367-b100-6bc262d8360e\",\"target\":\"9daccfce-2f78-4437-b364-999959ac5042\",\"targetPort\":\"7f15f07e-3084-402b-8afb-0383e03437d0\",\"points\":[{\"id\":\"66a6b904-ce94-4c93-b705-45b80e569d44\",\"selected\":false,\"x\":988.8906468317941,\"y\":224.92188135176428},{\"id\":\"d399498e-862c-411e-85a2-29c54c511376\",\"selected\":false,\"x\":785.8906500024516,\"y\":270.92189879038034}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"f9c9e7d3-d042-4451-accd-66ec283aac2a\",\"type\":\"default\",\"selected\":false,\"source\":\"b17baefd-f5f4-455e-849b-52fc2132da39\",\"sourcePort\":\"28e3fe9b-781c-4fdf-a7d7-6c9ee770bd81\",\"target\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"targetPort\":\"82f054e6-e580-4ba5-927a-e393466ae29e\",\"points\":[{\"id\":\"ad7fccc0-cea3-420f-b223-b8f98b8eb5c8\",\"selected\":false,\"x\":637.8906214665343,\"y\":270.92189879038034},{\"id\":\"8dc19b59-1a9a-417b-bb4d-e5d8f365afe3\",\"selected\":false,\"x\":786.8906753677113,\"y\":222.9219098876815}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a034c3ef-762d-4ab7-a2b2-67971329cd98\",\"type\":\"default\",\"selected\":false,\"source\":\"9daccfce-2f78-4437-b364-999959ac5042\",\"sourcePort\":\"09f100cd-949e-4445-83cd-369041a102e6\",\"target\":\"a60ec48a-acd6-4a03-a590-9b887c03cfe0\",\"targetPort\":\"c0ed1a0b-eb21-452e-8158-2f118b9a8f3f\",\"points\":[{\"id\":\"c3005e05-3634-4752-8514-aa82f7a3ea87\",\"selected\":false,\"x\":987.8906214665344,\"y\":272.92190988768147},{\"id\":\"c559081f-d437-45f5-8d5f-dc35d5e0008f\",\"selected\":false,\"x\":782.8906531731091,\"y\":320.92189879038034}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c3d9e520-0c52-482f-80bc-0e5e35e1424c\",\"type\":\"default\",\"selected\":false,\"source\":\"2c249bc7-7a20-4c72-93c3-19eb7583ccac\",\"sourcePort\":\"b6e3ee10-ba28-4c1f-acec-f3bbcb263090\",\"target\":\"76620c90-afec-4a01-8e22-ea320acd3537\",\"targetPort\":\"61b46242-8e97-4d2a-b136-41548dd66ec3\",\"points\":[{\"id\":\"0de25ab5-62c2-4caf-8284-f7977ca3f12a\",\"selected\":false,\"x\":989.4375059785068,\"y\":78.18750001044936},{\"id\":\"904ea533-1055-4896-b6e7-fbee72045b42\",\"selected\":false,\"x\":786.8906753677113,\"y\":124.92188135176428}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a14dd5ac-5cb5-4eac-9d52-ae9700444610\",\"type\":\"default\",\"selected\":false,\"source\":\"cdc2350d-a203-4040-8017-c87f1a802486\",\"sourcePort\":\"3732d1a8-4ca4-4c36-ac41-029400818ff0\",\"target\":\"76620c90-afec-4a01-8e22-ea320acd3537\",\"targetPort\":\"624d27cc-f849-49bc-a258-fabcbcea49b0\",\"points\":[{\"id\":\"a6700f11-f202-4770-a79d-5717dc6e83e4\",\"selected\":false,\"x\":784.8906246371919,\"y\":172.9219098876815},{\"id\":\"cd49601f-5589-482b-a641-7d907db9ab7e\",\"selected\":false,\"x\":988.8906468317941,\"y\":126.92189244906542}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"8eb4ebde-b4db-4817-96e7-6d56c48b4079\",\"type\":\"default\",\"selected\":false,\"source\":\"a60ec48a-acd6-4a03-a590-9b887c03cfe0\",\"sourcePort\":\"c956c593-2fa5-4c02-b577-39e07e1a2df9\",\"target\":\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"targetPort\":\"241608ac-5c39-4007-9249-7db88807deef\",\"points\":[{\"id\":\"d6ca4dff-7363-4980-979d-4cc48cb33ae4\",\"selected\":false,\"x\":988.5000218317941,\"y\":322.92187025446316},{\"id\":\"1c49375c-1038-4e3d-a3d1-fb556eed013a\",\"selected\":false,\"x\":778.7187813437665,\"y\":373.46413194784793}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"d41aba0c-7634-45db-b33b-8b6de90f80a1\",\"type\":\"default\",\"selected\":false,\"source\":\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"sourcePort\":\"73411b68-b36e-40f1-bb37-67aabaf5371a\",\"target\":\"a89b946b-1f27-4c00-bf10-3f9e722a3306\",\"targetPort\":\"eeae5200-2f2d-4d70-8e86-72e4b6b647c3\",\"points\":[{\"id\":\"21ebe28d-f4c7-4aa7-8105-62d7376ec608\",\"selected\":false,\"x\":988.9844190263964,\"y\":375.4641034119307},{\"id\":\"98bcf492-46e3-4332-b917-2ba10e2fbcb1\",\"selected\":false,\"x\":1209.8906246371919,\"y\":395.92189879038034}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0d5001f8-e0d1-4542-b613-7d8f40a9fd31\",\"type\":\"default\",\"selected\":false,\"source\":\"207dc76a-5fea-45f2-a4fd-63c7d34cbb13\",\"sourcePort\":\"a3930177-60f6-484b-bbc5-383673be3184\",\"target\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"targetPort\":\"b09f7077-1247-447e-81e4-6ca731d4d3e3\",\"points\":[{\"id\":\"0d58b5e2-e734-4035-838a-90083708942b\",\"selected\":false,\"x\":725.2343873198217,\"y\":589.4843544011758},{\"id\":\"f44a521d-22d1-485d-90d2-d996968181c5\",\"selected\":false,\"x\":523.8437369545619,\"y\":637.093757937093}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"ef3bc733-1f6e-4e80-8042-cc2f402f9fe1\",\"type\":\"default\",\"selected\":false,\"source\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"sourcePort\":\"517fc1fd-e2d2-4efa-984c-0dacf29c5ae1\",\"target\":\"ebe37620-d28f-478f-8926-e6303bb619b6\",\"targetPort\":\"bee9106f-bb11-4968-a5b8-07e2083b58a5\",\"points\":[{\"id\":\"575c92e3-9a08-482a-9c9c-00d9bc440026\",\"selected\":false,\"x\":725.8437876850815,\"y\":639.0937294011758},{\"id\":\"4d747efb-1c4d-4523-a0cf-c339dae6f8c8\",\"selected\":false,\"x\":521.6249901252194,\"y\":687.6875428143252}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"944c0806-dc3f-468e-ae4c-f551c9df18fe\",\"type\":\"default\",\"selected\":false,\"source\":\"90822ff6-dc28-467a-829c-936a24e09683\",\"sourcePort\":\"8947b38e-d45a-4370-808b-6b6829c57acb\",\"target\":\"6d67e769-e392-46a4-9fb6-c7b5ad0d2a63\",\"targetPort\":\"e4affebc-af44-4ac2-8329-1c269eeca6be\",\"points\":[{\"id\":\"e301b578-b564-42b7-b732-f0792a18598f\",\"selected\":false,\"x\":513.1406278078492,\"y\":534.0156044011758},{\"id\":\"7b177881-3af6-4128-a06a-1e95241edbb5\",\"selected\":false,\"x\":724.0156658557389,\"y\":490.1875269610378}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"aebb13c8-59f4-42ce-a1d1-6f849cf8f5dd\",\"type\":\"default\",\"selected\":false,\"source\":\"114ce14b-5ba6-429d-8238-8a9b3adb8da3\",\"sourcePort\":\"d66355f7-e09e-494c-919e-44696e3208a2\",\"target\":\"6d67e769-e392-46a4-9fb6-c7b5ad0d2a63\",\"targetPort\":\"f9932520-1d63-4fb9-8f82-bc2a6f34c3b2\",\"points\":[{\"id\":\"b573029f-5395-40ee-9f4c-bc860ab97ff3\",\"selected\":false,\"x\":427.92191585573886,\"y\":489.75005549695504},{\"id\":\"068204b2-bf11-4c18-8177-b40332ce7e6a\",\"selected\":false,\"x\":518.4062971970538,\"y\":488.18755549695504}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"bcdb954d-2c50-4fe7-9c0f-717e674595c1\",\"type\":\"default\",\"selected\":false,\"source\":\"207dc76a-5fea-45f2-a4fd-63c7d34cbb13\",\"sourcePort\":\"b3f3e7e4-c992-46a3-a19f-edada9021040\",\"target\":\"90822ff6-dc28-467a-829c-936a24e09683\",\"targetPort\":\"5ea4982b-f7f7-4269-ba35-2dd307d5c25e\",\"points\":[{\"id\":\"d8021938-c250-4058-8a6f-8dae4404ceaa\",\"selected\":false,\"x\":523.2344158557389,\"y\":587.484382937093},{\"id\":\"c19421ed-838d-45d6-a368-44b6c8502d1a\",\"selected\":false,\"x\":723.4062654904792,\"y\":536.0156551316953}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"25e6113b-d247-42f3-9706-0306e2764cc3\",\"type\":\"default\",\"selected\":false,\"source\":\"cdc2350d-a203-4040-8017-c87f1a802486\",\"sourcePort\":\"1bd27c8f-5e1a-4b3e-9f38-a621c26ff6cb\",\"target\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"targetPort\":\"82f054e6-e580-4ba5-927a-e393466ae29e\",\"points\":[{\"id\":\"5bc54c69-4426-4807-b0bf-776887a3d8fb\",\"selected\":false,\"x\":1022.9375630503412,\"y\":174.92188135176428},{\"id\":\"af4a831d-eed2-47b4-a5d2-412161db8552\",\"selected\":false,\"x\":786.8906753677113,\"y\":222.9219098876815}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"0cbe9262-c272-4bbe-a6e8-671226fa0b67\",\"type\":\"default\",\"selected\":false,\"source\":\"53e5afb8-1c41-4acf-a2e8-42811362bc66\",\"sourcePort\":\"a6341e1d-9ebe-4019-9a8e-c82376ae74a7\",\"target\":\"51fcf985-1569-41ac-af83-7348215fd826\",\"targetPort\":\"8462cfba-03d3-44ae-8361-90aede081d1a\",\"points\":[{\"id\":\"3d6a8f84-5392-4ee5-abe0-a01d9692b5d9\",\"selected\":false,\"x\":633.9999869545619,\"y\":30.000006351764284},{\"id\":\"183f4dbe-cd35-4659-bf6a-d36cb773fa9f\",\"selected\":false,\"x\":790.0661680878818,\"y\":22.42189720505162}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"9176aa02-c67e-4fc9-8ba8-9f88c647bc80\",\"type\":\"default\",\"selected\":false,\"source\":\"2c249bc7-7a20-4c72-93c3-19eb7583ccac\",\"sourcePort\":\"0c1085dd-a835-4336-8024-0b357bf4e7f2\",\"target\":\"51fcf985-1569-41ac-af83-7348215fd826\",\"targetPort\":\"dab21d4b-9cfa-4817-bee9-5ae08b198d14\",\"points\":[{\"id\":\"b47414a6-1d79-4ee9-a351-124a5a2726c9\",\"selected\":false,\"x\":787.437534514424,\"y\":76.18752854636655},{\"id\":\"ed9fe501-fbd5-4ab2-821a-9d765a464558\",\"selected\":false,\"x\":992.0661395519646,\"y\":24.421908302352758}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300}],\"nodes\":[{\"id\":\"53e5afb8-1c41-4acf-a2e8-42811362bc66\",\"type\":\"simple\",\"selected\":false,\"x\":433,\"y\":5,\"extras\":{},\"ports\":[{\"id\":\"a6341e1d-9ebe-4019-9a8e-c82376ae74a7\",\"type\":\"default\",\"selected\":false,\"name\":\"out_a6341e1d-9ebe-4019-9a8e-c82376ae74a7\",\"parentNode\":\"53e5afb8-1c41-4acf-a2e8-42811362bc66\",\"links\":[\"0cbe9262-c272-4bbe-a6e8-671226fa0b67\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"53e5afb8-1c41-4acf-a2e8-42811362bc66\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"ebe37620-d28f-478f-8926-e6303bb619b6\",\"type\":\"simple\",\"selected\":false,\"x\":514.6290231507624,\"y\":664.6900056465275,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"bee9106f-bb11-4968-a5b8-07e2083b58a5\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"ebe37620-d28f-478f-8926-e6303bb619b6\",\"links\":[\"ef3bc733-1f6e-4e80-8042-cc2f402f9fe1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"ebe37620-d28f-478f-8926-e6303bb619b6\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"formData\":{\"sfPort\":0},\"schema\":{\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}},\"title\":\"Options\",\"type\":\"object\"},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"2c249bc7-7a20-4c72-93c3-19eb7583ccac\",\"type\":\"simple\",\"selected\":false,\"x\":780.4501518527143,\"y\":53.19496456769997,\"extras\":{\"inBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"inUrl\":{\"scope\":\"Message\",\"name\":\"account_url\"},\"outPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"optSameTab\":true,\"optTimeout\":30},\"ports\":[{\"id\":\"b6e3ee10-ba28-4c1f-acec-f3bbcb263090\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b6e3ee10-ba28-4c1f-acec-f3bbcb263090\",\"parentNode\":\"2c249bc7-7a20-4c72-93c3-19eb7583ccac\",\"links\":[\"c3d9e520-0c52-482f-80bc-0e5e35e1424c\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"0c1085dd-a835-4336-8024-0b357bf4e7f2\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"2c249bc7-7a20-4c72-93c3-19eb7583ccac\",\"links\":[\"9176aa02-c67e-4fc9-8ba8-9f88c647bc80\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"2c249bc7-7a20-4c72-93c3-19eb7583ccac\",\"name\":\"Open Link\",\"icon\":\"M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.OpenLink\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Open Link\",\"version\":\"1.11.6\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"inUrl\":{\"scope\":\"Message\",\"name\":\"account_url\"}},{\"outPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},{\"optSameTab\":true,\"optTimeout\":30}],\"xyz\":[{\"formData\":{\"inBrowserId\":{\"name\":\"browser_id\",\"scope\":\"Message\"},\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"inUrl\":{\"scope\":\"Message\",\"name\":\"account_url\"}},\"schema\":{\"properties\":{\"inBrowserId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Browser\",\"type\":\"object\",\"variableType\":\"String\"},\"inPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"},\"inUrl\":{\"customScope\":true,\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"URL\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Input\",\"type\":\"object\"},\"uiSchema\":{\"inBrowserId\":{\"ui:field\":\"variable\"},\"inPageId\":{\"ui:field\":\"variable\"},\"inUrl\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"outPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outPageId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"optSameTab\":true,\"optTimeout\":30},\"schema\":{\"properties\":{\"optSameTab\":{\"title\":\"Open in the Same Tab\",\"type\":\"boolean\"},\"optTimeout\":{\"title\":\"Timeout\",\"type\":\"number\"}},\"title\":\"Options\",\"type\":\"object\"},\"uiSchema\":{\"ui:order\":[\"optTimeout\",\"optSameTab\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"a60ec48a-acd6-4a03-a590-9b887c03cfe0\",\"type\":\"simple\",\"selected\":false,\"x\":775.8938509811283,\"y\":297.93433690981396,\"extras\":{\"func\":\"var followers = document.querySelectorAll(`div[aria-label=\\\"Timeline: Followers\\\"] > div > div`);\\nconst results = [];\\n\\nfor (const follower of followers) {\\n  \\tconst profile = {}\\n  \\tif (follower.querySelector(\\\"a > div > div > div > span\\\")) {profile.name = follower.querySelector(\\\"a > div > div > div > span\\\").textContent.trim()}\\n  \\tif (follower.querySelector(\\\"a\\\")) {profile.url = follower.querySelector(\\\"a\\\").href.trim()}\\n  \\tvar bio = follower.querySelectorAll(\\\"div[dir=auto]\\\")[4] || follower.querySelectorAll(\\\"div[dir=auto]\\\")[3];\\n  \\tif (bio) {profile.bio = bio.textContent.trim()}\\n  \\tresults.push(profile);\\n}\\n\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"c956c593-2fa5-4c02-b577-39e07e1a2df9\",\"type\":\"default\",\"selected\":false,\"name\":\"out_c956c593-2fa5-4c02-b577-39e07e1a2df9\",\"parentNode\":\"a60ec48a-acd6-4a03-a590-9b887c03cfe0\",\"links\":[\"8eb4ebde-b4db-4817-96e7-6d56c48b4079\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"c0ed1a0b-eb21-452e-8158-2f118b9a8f3f\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"a60ec48a-acd6-4a03-a590-9b887c03cfe0\",\"links\":[\"a034c3ef-762d-4ab7-a2b2-67971329cd98\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"a60ec48a-acd6-4a03-a590-9b887c03cfe0\",\"name\":\"Scrape Followers\",\"icon\":\"M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z\",\"color\":\"#c9d9ff\",\"editor\":\"javascript\",\"namespace\":\"Core.Browser.RunScript\",\"version\":\"1.11.6\",\"abc\":[{\"color\":\"#c9d9ff\",\"continueOnError\":false,\"delayAfter\":0,\"delayBefore\":0,\"name\":\"Scrape Followers\",\"version\":\"1.11.6\"},{\"func\":\"var followers = document.querySelectorAll(`div[aria-label=\\\"Timeline: Followers\\\"] > div > div`);\\nconst results = [];\\n\\nfor (const follower of followers) {\\n  \\tconst profile = {}\\n  \\tif (follower.querySelector(\\\"a > div > div > div > span\\\")) {profile.name = follower.querySelector(\\\"a > div > div > div > span\\\").textContent.trim()}\\n  \\tif (follower.querySelector(\\\"a\\\")) {profile.url = follower.querySelector(\\\"a\\\").href.trim()}\\n  \\tvar bio = follower.querySelectorAll(\\\"div[dir=auto]\\\")[4] || follower.querySelectorAll(\\\"div[dir=auto]\\\")[3];\\n  \\tif (bio) {profile.bio = bio.textContent.trim()}\\n  \\tresults.push(profile);\\n}\\n\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}}],\"xyz\":[{\"formData\":{\"func\":\"var followers = document.querySelectorAll(`div[aria-label=\\\"Timeline: Followers\\\"] > div > div`);\\nconst results = [];\\n\\nfor (const follower of followers) {\\n  \\tconst profile = {}\\n  \\tif (follower.querySelector(\\\"a > div > div > div > span\\\")) {profile.name = follower.querySelector(\\\"a > div > div > div > span\\\").textContent.trim()}\\n  \\tif (follower.querySelector(\\\"a\\\")) {profile.url = follower.querySelector(\\\"a\\\").href.trim()}\\n  \\tvar bio = follower.querySelectorAll(\\\"div[dir=auto]\\\")[4] || follower.querySelectorAll(\\\"div[dir=auto]\\\")[3];\\n  \\tif (bio) {profile.bio = bio.textContent.trim()}\\n  \\tresults.push(profile);\\n}\\n\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"func\":{\"title\":\"Script\",\"type\":\"string\"},\"inPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Input\",\"type\":\"object\"},\"uiSchema\":{\"func\":{\"ui:widget\":\"hidden\"},\"inPageId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outResult\":{\"messageOnly\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Result\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"cdc2350d-a203-4040-8017-c87f1a802486\",\"type\":\"simple\",\"selected\":false,\"x\":777.8938509811283,\"y\":149.93433690981402,\"extras\":{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//div[@aria-label='Loading Followers']\"},\"image\":\"\",\"optCondition\":\"appear-and-disappear\",\"optTimeout\":{\"scope\":\"Custom\",\"name\":\"30\"}},\"ports\":[{\"id\":\"1bd27c8f-5e1a-4b3e-9f38-a621c26ff6cb\",\"type\":\"default\",\"selected\":false,\"name\":\"out_1bd27c8f-5e1a-4b3e-9f38-a621c26ff6cb\",\"parentNode\":\"cdc2350d-a203-4040-8017-c87f1a802486\",\"links\":[\"25e6113b-d247-42f3-9706-0306e2764cc3\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"3732d1a8-4ca4-4c36-ac41-029400818ff0\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"cdc2350d-a203-4040-8017-c87f1a802486\",\"links\":[\"a14dd5ac-5cb5-4eac-9d52-ae9700444610\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"cdc2350d-a203-4040-8017-c87f1a802486\",\"name\":\"Wait Loading Followers\",\"icon\":\"M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.WaitElement\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Wait Loading Followers\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//div[@aria-label='Loading Followers']\"},\"image\":\"\"},{\"optCondition\":\"appear-and-disappear\",\"optTimeout\":{\"scope\":\"Custom\",\"name\":\"30\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPageId\":{\"type\":\"object\",\"title\":\"Page Id\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inSelectorType\":{\"type\":\"string\",\"title\":\"Selector Type\",\"multiple\":true,\"enumNames\":[\"XPath\",\"Id\",\"Class\"],\"enum\":[\"xpath:position\",\"id\",\"css\"]},\"inSelector\":{\"type\":\"object\",\"title\":\"Selector\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"image\":{\"title\":\"Image\",\"type\":\"string\"}}},\"uiSchema\":{\"inPageId\":{\"ui:field\":\"variable\"},\"inSelector\":{\"ui:field\":\"variable\"},\"image\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"inPageId\",\"inSelectorType\",\"inSelector\",\"image\"]},\"formData\":{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//div[@aria-label='Loading Followers']\"},\"image\":\"\"}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optCondition\":{\"title\":\"Condition\",\"type\":\"string\",\"enum\":[\"to-appear\",\"to-disappear\",\"appear-and-disappear\"],\"enumNames\":[\"To Appear\",\"To Disappear\",\"Appear & Disappear\"]},\"optTimeout\":{\"type\":\"object\",\"title\":\"Timeout (sec)\",\"variableType\":\"Integer\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optTimeout\":{\"ui:field\":\"variable\"}},\"formData\":{\"optCondition\":\"appear-and-disappear\",\"optTimeout\":{\"scope\":\"Custom\",\"name\":\"30\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"76620c90-afec-4a01-8e22-ea320acd3537\",\"type\":\"simple\",\"selected\":false,\"x\":779.8938509811283,\"y\":101.93433690981402,\"extras\":{\"outputs\":1,\"func\":\"msg.followers = [];\\n\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"624d27cc-f849-49bc-a258-fabcbcea49b0\",\"type\":\"default\",\"selected\":false,\"name\":\"out_624d27cc-f849-49bc-a258-fabcbcea49b0\",\"parentNode\":\"76620c90-afec-4a01-8e22-ea320acd3537\",\"links\":[\"a14dd5ac-5cb5-4eac-9d52-ae9700444610\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"61b46242-8e97-4d2a-b136-41548dd66ec3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"76620c90-afec-4a01-8e22-ea320acd3537\",\"links\":[\"c3d9e520-0c52-482f-80bc-0e5e35e1424c\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"76620c90-afec-4a01-8e22-ea320acd3537\",\"name\":\"Init\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Init\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.followers = [];\\n\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.followers = [];\\n\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"type\":\"simple\",\"selected\":false,\"x\":771.71993793765,\"y\":350.4656751368044,\"extras\":{\"outputs\":1,\"func\":\"msg.index += msg.result.length;\\nfor(var i = 0; i < msg.result.length;i++){\\n  msg.followers.push(msg.result[i])\\n}\\nif (msg.followers.length > msg.limit){\\n  msg.followers = msg.followers.slice(0,msg.limit+1)\\n  throw \\\"Limit Reached\\\"\\n}\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"73411b68-b36e-40f1-bb37-67aabaf5371a\",\"type\":\"default\",\"selected\":false,\"name\":\"out_73411b68-b36e-40f1-bb37-67aabaf5371a\",\"parentNode\":\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"links\":[\"d41aba0c-7634-45db-b33b-8b6de90f80a1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"241608ac-5c39-4007-9249-7db88807deef\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"links\":[\"8eb4ebde-b4db-4817-96e7-6d56c48b4079\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"name\":\"Append Followers\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Append Followers\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.index += msg.result.length;\\nfor(var i = 0; i < msg.result.length;i++){\\n  msg.followers.push(msg.result[i])\\n}\\nif (msg.followers.length > msg.limit){\\n  msg.followers = msg.followers.slice(0,msg.limit+1)\\n  throw \\\"Limit Reached\\\"\\n}\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.index += msg.result.length;\\nfor(var i = 0; i < msg.result.length;i++){\\n  msg.followers.push(msg.result[i])\\n}\\nif (msg.followers.length > msg.limit){\\n  msg.followers = msg.followers.slice(0,msg.limit+1)\\n  throw \\\"Limit Reached\\\"\\n}\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"a89b946b-1f27-4c00-bf10-3f9e722a3306\",\"type\":\"simple\",\"selected\":false,\"x\":1202.8938509811283,\"y\":372.934336909814,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"b17baefd-f5f4-455e-849b-52fc2132da39\"]}},\"ports\":[{\"id\":\"eeae5200-2f2d-4d70-8e86-72e4b6b647c3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"a89b946b-1f27-4c00-bf10-3f9e722a3306\",\"links\":[\"d41aba0c-7634-45db-b33b-8b6de90f80a1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"a89b946b-1f27-4c00-bf10-3f9e722a3306\",\"name\":\"Go To End Of Page\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.GoTo\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go To End Of Page\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optNodes\":{\"all\":false,\"ids\":[\"b17baefd-f5f4-455e-849b-52fc2132da39\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"all\":false,\"ids\":[\"b17baefd-f5f4-455e-849b-52fc2132da39\"]}}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"b17baefd-f5f4-455e-849b-52fc2132da39\",\"type\":\"simple\",\"selected\":false,\"x\":436.89385098112825,\"y\":245.93433690981402,\"extras\":{},\"ports\":[{\"id\":\"28e3fe9b-781c-4fdf-a7d7-6c9ee770bd81\",\"type\":\"default\",\"selected\":false,\"name\":\"out_28e3fe9b-781c-4fdf-a7d7-6c9ee770bd81\",\"parentNode\":\"b17baefd-f5f4-455e-849b-52fc2132da39\",\"links\":[\"f9c9e7d3-d042-4451-accd-66ec283aac2a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"b17baefd-f5f4-455e-849b-52fc2132da39\",\"name\":\"End Of Page\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.Label\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"End Of Page\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"}],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"9daccfce-2f78-4437-b364-999959ac5042\",\"type\":\"simple\",\"selected\":false,\"x\":778.8938509811283,\"y\":247.93433690981402,\"extras\":{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//div[@role='progressbar']\"},\"image\":\"\",\"optCondition\":\"appear-and-disappear\",\"optTimeout\":{\"scope\":\"Custom\",\"name\":\"5\"}},\"ports\":[{\"id\":\"09f100cd-949e-4445-83cd-369041a102e6\",\"type\":\"default\",\"selected\":false,\"name\":\"out_09f100cd-949e-4445-83cd-369041a102e6\",\"parentNode\":\"9daccfce-2f78-4437-b364-999959ac5042\",\"links\":[\"a034c3ef-762d-4ab7-a2b2-67971329cd98\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"7f15f07e-3084-402b-8afb-0383e03437d0\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9daccfce-2f78-4437-b364-999959ac5042\",\"links\":[\"517e9f29-edaf-4000-a083-ca850a3bd926\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9daccfce-2f78-4437-b364-999959ac5042\",\"name\":\"Wait Loading\",\"icon\":\"M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Browser.WaitElement\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Wait Loading\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//div[@role='progressbar']\"},\"image\":\"\"},{\"optCondition\":\"appear-and-disappear\",\"optTimeout\":{\"scope\":\"Custom\",\"name\":\"5\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPageId\":{\"type\":\"object\",\"title\":\"Page Id\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inSelectorType\":{\"type\":\"string\",\"title\":\"Selector Type\",\"multiple\":true,\"enumNames\":[\"XPath\",\"Id\",\"Class\"],\"enum\":[\"xpath:position\",\"id\",\"css\"]},\"inSelector\":{\"type\":\"object\",\"title\":\"Selector\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"image\":{\"title\":\"Image\",\"type\":\"string\"}}},\"uiSchema\":{\"inPageId\":{\"ui:field\":\"variable\"},\"inSelector\":{\"ui:field\":\"variable\"},\"image\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"inPageId\",\"inSelectorType\",\"inSelector\",\"image\"]},\"formData\":{\"inPageId\":{\"scope\":\"Message\",\"name\":\"page_id\"},\"inSelectorType\":\"xpath:position\",\"inSelector\":{\"scope\":\"Custom\",\"name\":\"//div[@role='progressbar']\"},\"image\":\"\"}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optCondition\":{\"title\":\"Condition\",\"type\":\"string\",\"enum\":[\"to-appear\",\"to-disappear\",\"appear-and-disappear\"],\"enumNames\":[\"To Appear\",\"To Disappear\",\"Appear & Disappear\"]},\"optTimeout\":{\"type\":\"object\",\"title\":\"Timeout (sec)\",\"variableType\":\"Integer\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optTimeout\":{\"ui:field\":\"variable\"}},\"formData\":{\"optCondition\":\"appear-and-disappear\",\"optTimeout\":{\"scope\":\"Custom\",\"name\":\"5\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"114ce14b-5ba6-429d-8238-8a9b3adb8da3\",\"type\":\"simple\",\"selected\":false,\"x\":226.93732924199782,\"y\":464.7604238663357,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"9daccfce-2f78-4437-b364-999959ac5042\"]}},\"ports\":[{\"id\":\"d66355f7-e09e-494c-919e-44696e3208a2\",\"type\":\"default\",\"selected\":false,\"name\":\"out_d66355f7-e09e-494c-919e-44696e3208a2\",\"parentNode\":\"114ce14b-5ba6-429d-8238-8a9b3adb8da3\",\"links\":[\"aebb13c8-59f4-42ce-a1d1-6f849cf8f5dd\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"114ce14b-5ba6-429d-8238-8a9b3adb8da3\",\"name\":\"Catch\",\"icon\":\"M11,15H13V17H11V15M11,7H13V13H11V7M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z\",\"color\":\"#E64A19\",\"namespace\":\"Core.Trigger.Catch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Catch\",\"version\":\"1.11.6\",\"color\":\"#E64A19\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"optNodes\":{\"all\":false,\"ids\":[\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"9daccfce-2f78-4437-b364-999959ac5042\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"all\":false,\"ids\":[\"28ae485b-52a5-455d-8b1c-4e558dfacc99\",\"9daccfce-2f78-4437-b364-999959ac5042\"]}}}],\"outputs\":1,\"inputs\":0}},{\"id\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"type\":\"simple\",\"selected\":false,\"x\":779.8938509811283,\"y\":199.93433690981402,\"extras\":{\"func\":\"window.scrollBy(0,50000)\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"aa2037b7-bc8d-4367-b100-6bc262d8360e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_aa2037b7-bc8d-4367-b100-6bc262d8360e\",\"parentNode\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"links\":[\"517e9f29-edaf-4000-a083-ca850a3bd926\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"82f054e6-e580-4ba5-927a-e393466ae29e\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"links\":[\"f9c9e7d3-d042-4451-accd-66ec283aac2a\",\"25e6113b-d247-42f3-9706-0306e2764cc3\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"4b344ce2-0d00-4307-ac65-f80af3c4e1ff\",\"name\":\"Scroll Down\",\"icon\":\"M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z\",\"color\":\"#c9d9ff\",\"editor\":\"javascript\",\"namespace\":\"Core.Browser.RunScript\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Scroll Down\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"func\":\"window.scrollBy(0,50000)\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}}],\"xyz\":[{\"formData\":{\"func\":\"window.scrollBy(0,50000)\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"func\":{\"title\":\"Script\",\"type\":\"string\"},\"inPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Input\",\"type\":\"object\"},\"uiSchema\":{\"func\":{\"ui:widget\":\"hidden\"},\"inPageId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outResult\":{\"messageOnly\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Result\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"207dc76a-5fea-45f2-a4fd-63c7d34cbb13\",\"type\":\"simple\",\"selected\":false,\"x\":516.2416770680848,\"y\":564.4995543011183,\"extras\":{\"outputs\":1,\"func\":\"msg.table = {columns:[\\\"bio\\\",\\\"name\\\",\\\"url\\\"],rows:[]}\\nfor(var i = 0; i < msg.followers.length-1;i++){\\n  var bio = msg.followers[i][\\\"bio\\\"] || \\\"\\\"\\n  var name = msg.followers[i][\\\"name\\\"] ||  \\\"\\\"\\n  var url = msg.followers[i][\\\"url\\\"] || \\\"\\\"\\n \\n  var temp = {\\n              \\\"bio\\\":bio,\\n              \\\"name\\\":name,\\n              \\\"url\\\":url\\n              }\\n  msg.table.rows.push(temp)\\n}\\nmsg.a = msg.followers.length;\\n\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"a3930177-60f6-484b-bbc5-383673be3184\",\"type\":\"default\",\"selected\":false,\"name\":\"out_a3930177-60f6-484b-bbc5-383673be3184\",\"parentNode\":\"207dc76a-5fea-45f2-a4fd-63c7d34cbb13\",\"links\":[\"0d5001f8-e0d1-4542-b613-7d8f40a9fd31\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"b3f3e7e4-c992-46a3-a19f-edada9021040\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"207dc76a-5fea-45f2-a4fd-63c7d34cbb13\",\"links\":[\"bcdb954d-2c50-4fe7-9c0f-717e674595c1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"207dc76a-5fea-45f2-a4fd-63c7d34cbb13\",\"name\":\"Create Table\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create Table\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.table = {columns:[\\\"bio\\\",\\\"name\\\",\\\"url\\\"],rows:[]}\\nfor(var i = 0; i < msg.followers.length-1;i++){\\n  var bio = msg.followers[i][\\\"bio\\\"] || \\\"\\\"\\n  var name = msg.followers[i][\\\"name\\\"] ||  \\\"\\\"\\n  var url = msg.followers[i][\\\"url\\\"] || \\\"\\\"\\n \\n  var temp = {\\n              \\\"bio\\\":bio,\\n              \\\"name\\\":name,\\n              \\\"url\\\":url\\n              }\\n  msg.table.rows.push(temp)\\n}\\nmsg.a = msg.followers.length;\\n\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.table = {columns:[\\\"bio\\\",\\\"name\\\",\\\"url\\\"],rows:[]}\\nfor(var i = 0; i < msg.followers.length-1;i++){\\n  var bio = msg.followers[i][\\\"bio\\\"] || \\\"\\\"\\n  var name = msg.followers[i][\\\"name\\\"] ||  \\\"\\\"\\n  var url = msg.followers[i][\\\"url\\\"] || \\\"\\\"\\n \\n  var temp = {\\n              \\\"bio\\\":bio,\\n              \\\"name\\\":name,\\n              \\\"url\\\":url\\n              }\\n  msg.table.rows.push(temp)\\n}\\nmsg.a = msg.followers.length;\\n\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"type\":\"simple\",\"selected\":false,\"x\":516.8485611260556,\"y\":614.1046267648865,\"extras\":{\"outputs\":1,\"subflow\":\"https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/d518a1cc-a437-4f96-aeb0-64be0aa84d81.flow\"},\"ports\":[{\"id\":\"517fc1fd-e2d2-4efa-984c-0dacf29c5ae1\",\"type\":\"default\",\"selected\":false,\"name\":\"out_517fc1fd-e2d2-4efa-984c-0dacf29c5ae1\",\"parentNode\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"links\":[\"ef3bc733-1f6e-4e80-8042-cc2f402f9fe1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"b09f7077-1247-447e-81e4-6ca731d4d3e3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"links\":[\"0d5001f8-e0d1-4542-b613-7d8f40a9fd31\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"name\":\"Write To Excel\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.SubFlow\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Write To Excel\",\"version\":\"1.11.6\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"outputs\":1,\"subflow\":\"https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/d518a1cc-a437-4f96-aeb0-64be0aa84d81.flow\"}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"subflow\":{\"type\":\"string\",\"properties\":{}}}},\"uiSchema\":{\"subflow\":{\"ui:widget\":\"hidden\"},\"outputs\":{\"ui:widget\":\"updown\"},\"ui:order\":[\"outputs\",\"*\"]},\"formData\":{\"outputs\":1,\"subflow\":\"https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/368c1f92-54ee-4c40-9e92-3f57c9144cda/subflows/d518a1cc-a437-4f96-aeb0-64be0aa84d81.flow\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"6d67e769-e392-46a4-9fb6-c7b5ad0d2a63\",\"type\":\"simple\",\"selected\":false,\"x\":511.41377851736013,\"y\":465.19158328662564,\"extras\":{\"func\":\"var followers = document.querySelectorAll(`div[aria-label=\\\"Timeline: Followers\\\"] > div > div`);\\nconst results = [];\\n\\nfor (const follower of followers) {\\n  \\tconst profile = {}\\n  \\tif (follower.querySelector(\\\"a > div > div > div > span\\\")) {profile.name = follower.querySelector(\\\"a > div > div > div > span\\\").textContent.trim()}\\n  \\tif (follower.querySelector(\\\"a\\\")) {profile.url = follower.querySelector(\\\"a\\\").href.trim()}\\n  \\tvar bio = follower.querySelectorAll(\\\"div[dir=auto]\\\")[4] || follower.querySelectorAll(\\\"div[dir=auto]\\\")[3];\\n  \\tif (bio) {profile.bio = bio.textContent.trim()}\\n  \\tresults.push(profile);\\n}\\n\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"},\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"e4affebc-af44-4ac2-8329-1c269eeca6be\",\"type\":\"default\",\"selected\":false,\"name\":\"out_e4affebc-af44-4ac2-8329-1c269eeca6be\",\"parentNode\":\"6d67e769-e392-46a4-9fb6-c7b5ad0d2a63\",\"links\":[\"944c0806-dc3f-468e-ae4c-f551c9df18fe\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f9932520-1d63-4fb9-8f82-bc2a6f34c3b2\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"6d67e769-e392-46a4-9fb6-c7b5ad0d2a63\",\"links\":[\"aebb13c8-59f4-42ce-a1d1-6f849cf8f5dd\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"6d67e769-e392-46a4-9fb6-c7b5ad0d2a63\",\"name\":\"Scrape Followers\",\"icon\":\"M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z\",\"color\":\"#c9d9ff\",\"editor\":\"javascript\",\"namespace\":\"Core.Browser.RunScript\",\"version\":\"1.11.6\",\"abc\":[{\"color\":\"#c9d9ff\",\"continueOnError\":false,\"delayAfter\":0,\"delayBefore\":0,\"name\":\"Scrape Followers\",\"version\":\"1.11.6\"},{\"func\":\"var followers = document.querySelectorAll(`div[aria-label=\\\"Timeline: Followers\\\"] > div > div`);\\nconst results = [];\\n\\nfor (const follower of followers) {\\n  \\tconst profile = {}\\n  \\tif (follower.querySelector(\\\"a > div > div > div > span\\\")) {profile.name = follower.querySelector(\\\"a > div > div > div > span\\\").textContent.trim()}\\n  \\tif (follower.querySelector(\\\"a\\\")) {profile.url = follower.querySelector(\\\"a\\\").href.trim()}\\n  \\tvar bio = follower.querySelectorAll(\\\"div[dir=auto]\\\")[4] || follower.querySelectorAll(\\\"div[dir=auto]\\\")[3];\\n  \\tif (bio) {profile.bio = bio.textContent.trim()}\\n  \\tresults.push(profile);\\n}\\n\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}}],\"xyz\":[{\"formData\":{\"func\":\"var followers = document.querySelectorAll(`div[aria-label=\\\"Timeline: Followers\\\"] > div > div`);\\nconst results = [];\\n\\nfor (const follower of followers) {\\n  \\tconst profile = {}\\n  \\tif (follower.querySelector(\\\"a > div > div > div > span\\\")) {profile.name = follower.querySelector(\\\"a > div > div > div > span\\\").textContent.trim()}\\n  \\tif (follower.querySelector(\\\"a\\\")) {profile.url = follower.querySelector(\\\"a\\\").href.trim()}\\n  \\tvar bio = follower.querySelectorAll(\\\"div[dir=auto]\\\")[4] || follower.querySelectorAll(\\\"div[dir=auto]\\\")[3];\\n  \\tif (bio) {profile.bio = bio.textContent.trim()}\\n  \\tresults.push(profile);\\n}\\n\\nreturn results;\\n\",\"inPageId\":{\"name\":\"page_id\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"func\":{\"title\":\"Script\",\"type\":\"string\"},\"inPageId\":{\"messageScope\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Page Id\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Input\",\"type\":\"object\"},\"uiSchema\":{\"func\":{\"ui:widget\":\"hidden\"},\"inPageId\":{\"ui:field\":\"variable\"}}},{\"formData\":{\"outResult\":{\"name\":\"result\",\"scope\":\"Message\"}},\"schema\":{\"properties\":{\"outResult\":{\"messageOnly\":true,\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"title\":\"Result\",\"type\":\"object\",\"variableType\":\"String\"}},\"title\":\"Output\",\"type\":\"object\"},\"uiSchema\":{\"outResult\":{\"ui:field\":\"variable\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"90822ff6-dc28-467a-829c-936a24e09683\",\"type\":\"simple\",\"selected\":false,\"x\":506.15290895214275,\"y\":511.01767024314745,\"extras\":{\"outputs\":1,\"func\":\"msg.index += msg.result.length;\\nfor(var i = 0; i < msg.result.length;i++){\\n  msg.followers.push(msg.result[i])\\n}\\nif (msg.followers.length > msg.limit){\\n  msg.followers = msg.followers.slice(0,msg.limit+1)\\n}\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"5ea4982b-f7f7-4269-ba35-2dd307d5c25e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_5ea4982b-f7f7-4269-ba35-2dd307d5c25e\",\"parentNode\":\"90822ff6-dc28-467a-829c-936a24e09683\",\"links\":[\"bcdb954d-2c50-4fe7-9c0f-717e674595c1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8947b38e-d45a-4370-808b-6b6829c57acb\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"90822ff6-dc28-467a-829c-936a24e09683\",\"links\":[\"944c0806-dc3f-468e-ae4c-f551c9df18fe\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"90822ff6-dc28-467a-829c-936a24e09683\",\"name\":\"Append Followers\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Append Followers\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.index += msg.result.length;\\nfor(var i = 0; i < msg.result.length;i++){\\n  msg.followers.push(msg.result[i])\\n}\\nif (msg.followers.length > msg.limit){\\n  msg.followers = msg.followers.slice(0,msg.limit+1)\\n}\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.index += msg.result.length;\\nfor(var i = 0; i < msg.result.length;i++){\\n  msg.followers.push(msg.result[i])\\n}\\nif (msg.followers.length > msg.limit){\\n  msg.followers = msg.followers.slice(0,msg.limit+1)\\n}\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"51fcf985-1569-41ac-af83-7348215fd826\",\"type\":\"simple\",\"selected\":false,\"x\":783.0682110413577,\"y\":-0.5904607562879818,\"extras\":{\"outputs\":1,\"func\":\"msg.account_url = \\\"https://twitter.com/\\\" + msg.twitter_account +  \\\"/followers\\\";\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"dab21d4b-9cfa-4817-bee9-5ae08b198d14\",\"type\":\"default\",\"selected\":false,\"name\":\"out_dab21d4b-9cfa-4817-bee9-5ae08b198d14\",\"parentNode\":\"51fcf985-1569-41ac-af83-7348215fd826\",\"links\":[\"9176aa02-c67e-4fc9-8ba8-9f88c647bc80\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8462cfba-03d3-44ae-8361-90aede081d1a\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"51fcf985-1569-41ac-af83-7348215fd826\",\"links\":[\"0cbe9262-c272-4bbe-a6e8-671226fa0b67\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"51fcf985-1569-41ac-af83-7348215fd826\",\"name\":\"Prepare URL\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Prepare URL\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.account_url = \\\"https://twitter.com/\\\" + msg.twitter_account +  \\\"/followers\\\";\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.account_url = \\\"https://twitter.com/\\\" + msg.twitter_account +  \\\"/followers\\\";\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}}]}"
+	}, {
+		"id": "d518a1cc-a437-4f96-aeb0-64be0aa84d81",
+		"flow": "{\"id\":\"d518a1cc-a437-4f96-aeb0-64be0aa84d81\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"d309e8e3-13a1-4156-b317-8a4eeefd8b71\",\"type\":\"default\",\"selected\":false,\"source\":\"2e803a73-5fbf-4977-8274-8dfa3eeedede\",\"sourcePort\":\"3152ab02-ee26-4462-8369-51e925a031d9\",\"target\":\"3e2ea275-c9ba-46bd-8add-640102c1a49b\",\"targetPort\":\"cef123b6-5783-4f54-84e2-518d9acdef20\",\"points\":[{\"id\":\"2621fcec-0205-4c45-876b-8d2a5f232506\",\"selected\":false,\"x\":699,\"y\":364.1625061035156},{\"id\":\"8e085c30-c0c7-4e47-98c5-714abfa5ec2c\",\"selected\":false,\"x\":885,\"y\":307}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"ac9a7d5a-2fb0-4dcf-b63c-27186b3778cb\",\"type\":\"default\",\"selected\":false,\"source\":\"8226a038-9f9a-4278-b2f7-4e1c0a5e2b77\",\"sourcePort\":\"9545141c-9884-4143-b767-a601730a5bfb\",\"target\":\"75354738-893b-42b7-823c-791ccc7117ca\",\"targetPort\":\"f432eda9-44fd-4c9a-817f-a5edd3df8db3\",\"points\":[{\"id\":\"a8f2da7b-d68c-46de-94d5-8a6cf3e04b4c\",\"selected\":false,\"x\":501,\"y\":225},{\"id\":\"4e0b6274-0bbd-4a58-8fb5-612e9fec0c50\",\"selected\":false,\"x\":681.1625366210938,\"y\":254.5124969482422}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c9b1dfa4-6d36-4e3e-9fb5-5364dabaf7d5\",\"type\":\"default\",\"selected\":false,\"source\":\"2e803a73-5fbf-4977-8274-8dfa3eeedede\",\"sourcePort\":\"49318fc8-8177-4dcd-94bd-88594e02ca9f\",\"target\":\"5a9f96e7-ed9f-4924-8ae0-0aa6e14999ca\",\"targetPort\":\"b0d08625-aadf-4891-a484-27a4cbf0bd96\",\"points\":[{\"id\":\"bfb0db8c-007b-4e33-a1c9-5b006b2cc38e\",\"selected\":false,\"x\":901,\"y\":366.1625061035156},{\"id\":\"1fa9aa01-7f3d-40c2-9dcc-1c04b6fbb641\",\"selected\":true,\"x\":1257,\"y\":223}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"49d4d3ca-5335-4e18-9064-c00f8a70e522\",\"type\":\"default\",\"selected\":false,\"source\":\"75354738-893b-42b7-823c-791ccc7117ca\",\"sourcePort\":\"0b9b0bf6-2470-4d01-ba79-909756639c26\",\"target\":\"3e2ea275-c9ba-46bd-8add-640102c1a49b\",\"targetPort\":\"7f1ed627-b9e1-404f-b84c-51c4402bf00f\",\"points\":[{\"id\":\"7d656282-f0a3-4bcd-a4da-b4b49e59694e\",\"selected\":false,\"x\":883.1625366210938,\"y\":256.5124969482422},{\"id\":\"4c9d72f3-7d74-4e72-ab74-b0fad8038783\",\"selected\":true,\"x\":683,\"y\":305}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"8226a038-9f9a-4278-b2f7-4e1c0a5e2b77\",\"type\":\"simple\",\"selected\":false,\"x\":300,\"y\":200,\"extras\":{},\"ports\":[{\"id\":\"9545141c-9884-4143-b767-a601730a5bfb\",\"type\":\"default\",\"selected\":false,\"name\":\"out_9545141c-9884-4143-b767-a601730a5bfb\",\"parentNode\":\"8226a038-9f9a-4278-b2f7-4e1c0a5e2b77\",\"links\":[\"ac9a7d5a-2fb0-4dcf-b63c-27186b3778cb\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"8226a038-9f9a-4278-b2f7-4e1c0a5e2b77\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"5a9f96e7-ed9f-4924-8ae0-0aa6e14999ca\",\"type\":\"simple\",\"selected\":false,\"x\":1250,\"y\":200,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"b0d08625-aadf-4891-a484-27a4cbf0bd96\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"5a9f96e7-ed9f-4924-8ae0-0aa6e14999ca\",\"links\":[\"c9b1dfa4-6d36-4e3e-9fb5-5364dabaf7d5\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"5a9f96e7-ed9f-4924-8ae0-0aa6e14999ca\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"2e803a73-5fbf-4977-8274-8dfa3eeedede\",\"type\":\"simple\",\"selected\":false,\"x\":692,\"y\":341.17391304347825,\"extras\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inSaveFilePath\":{\"scope\":\"Message\",\"name\":\"excel_path\"}},\"ports\":[{\"id\":\"49318fc8-8177-4dcd-94bd-88594e02ca9f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_49318fc8-8177-4dcd-94bd-88594e02ca9f\",\"parentNode\":\"2e803a73-5fbf-4977-8274-8dfa3eeedede\",\"links\":[\"c9b1dfa4-6d36-4e3e-9fb5-5364dabaf7d5\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"3152ab02-ee26-4462-8369-51e925a031d9\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"2e803a73-5fbf-4977-8274-8dfa3eeedede\",\"links\":[\"d309e8e3-13a1-4156-b317-8a4eeefd8b71\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"2e803a73-5fbf-4977-8274-8dfa3eeedede\",\"name\":\"Save Excel\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.Save\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Save Excel\",\"version\":\"1.11.6\",\"color\":\"#4CAF50\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inSaveFilePath\":{\"scope\":\"Message\",\"name\":\"excel_path\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inSaveFilePath\":{\"type\":\"object\",\"title\":\"Save File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageScope\":true,\"jsScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFileDescriptor\":{\"ui:field\":\"variable\"},\"inSaveFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inSaveFilePath\":{\"scope\":\"Message\",\"name\":\"excel_path\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"75354738-893b-42b7-823c-791ccc7117ca\",\"type\":\"simple\",\"selected\":false,\"x\":674.1721014492753,\"y\":231.518115942029,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"excel_path\"},\"outFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"optCreate\":true},\"ports\":[{\"id\":\"0b9b0bf6-2470-4d01-ba79-909756639c26\",\"type\":\"default\",\"selected\":false,\"name\":\"out_0b9b0bf6-2470-4d01-ba79-909756639c26\",\"parentNode\":\"75354738-893b-42b7-823c-791ccc7117ca\",\"links\":[\"49d4d3ca-5335-4e18-9064-c00f8a70e522\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f432eda9-44fd-4c9a-817f-a5edd3df8db3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"75354738-893b-42b7-823c-791ccc7117ca\",\"links\":[\"ac9a7d5a-2fb0-4dcf-b63c-27186b3778cb\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"75354738-893b-42b7-823c-791ccc7117ca\",\"name\":\"Open Excel\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.Open\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Open Excel\",\"version\":\"1.11.6\",\"color\":\"#4CAF50\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inPath\":{\"scope\":\"Message\",\"name\":\"excel_path\"}},{\"outFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}},{\"optCreate\":true}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Excel File Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"excel_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outFileDescriptor\":{\"ui:field\":\"variable\"}},\"formData\":{\"outFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optCreate\":{\"title\":\"Create If Not Exists\",\"type\":\"boolean\"}}},\"uiSchema\":{},\"formData\":{\"optCreate\":true}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"3e2ea275-c9ba-46bd-8add-640102c1a49b\",\"type\":\"simple\",\"selected\":false,\"x\":676,\"y\":282,\"extras\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inStartCell\":{\"scope\":\"Custom\",\"name\":\"A1\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optTarget\":\"specific-cell\",\"optHeader\":true},\"ports\":[{\"id\":\"cef123b6-5783-4f54-84e2-518d9acdef20\",\"type\":\"default\",\"selected\":false,\"name\":\"out_cef123b6-5783-4f54-84e2-518d9acdef20\",\"parentNode\":\"3e2ea275-c9ba-46bd-8add-640102c1a49b\",\"links\":[\"d309e8e3-13a1-4156-b317-8a4eeefd8b71\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"7f1ed627-b9e1-404f-b84c-51c4402bf00f\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3e2ea275-c9ba-46bd-8add-640102c1a49b\",\"links\":[\"49d4d3ca-5335-4e18-9064-c00f8a70e522\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3e2ea275-c9ba-46bd-8add-640102c1a49b\",\"name\":\"Set Range\",\"icon\":\"M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z\",\"color\":\"#4CAF50\",\"namespace\":\"Core.Excel.SetRange\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Set Range\",\"version\":\"1.11.6\",\"color\":\"#4CAF50\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inStartCell\":{\"scope\":\"Custom\",\"name\":\"A1\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optTarget\":\"specific-cell\",\"optHeader\":true}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFileDescriptor\":{\"type\":\"object\",\"title\":\"Excel File Descriptor\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inStartCell\":{\"type\":\"object\",\"title\":\"Start Cell\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFileDescriptor\":{\"ui:field\":\"variable\"},\"inStartCell\":{\"ui:field\":\"variable\"},\"inTable\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inFileDescriptor\",\"inStartCell\",\"inTable\"]},\"formData\":{\"inFileDescriptor\":{\"scope\":\"Message\",\"name\":\"excel_fd\"},\"inStartCell\":{\"scope\":\"Custom\",\"name\":\"A1\"},\"inTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optTarget\":{\"type\":\"string\",\"title\":\"Target\",\"multiple\":true,\"enum\":[\"active-cell\",\"specific-cell\"],\"enumNames\":[\"Active Cell\",\"Specific Cell\"]},\"optHeader\":{\"title\":\"Headers\",\"type\":\"boolean\"}}},\"uiSchema\":{\"ui:order\":[\"optTarget\",\"optHeader\"]},\"formData\":{\"optTarget\":\"specific-cell\",\"optHeader\":true}}],\"outputs\":1,\"inputs\":1}}]}"
+	}]
+}
