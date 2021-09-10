@@ -1,5 +1,5 @@
 - name: Calculator
-  description: Performs arithmetic operations in the excel file, can do addition, subtraction, multiplication and division
+  description: Performs arithmetic operations in the excel file
   slug: calculator
   icon: calculator_icon.png
   screenshots:
