@@ -19,7 +19,7 @@
 				"name": "cookies"
 			},
 			"optMethod": "GET",
-			"optEndpoint": "/dolar_euro_parity"
+			"optEndpoint": "/dollar_euro_parity"
 		},
 		"ports": [{
 			"id": "adf7a900-bc33-4dab-8aad-b87237d7a1ac",
@@ -61,7 +61,7 @@
 				}
 			}, {
 				"optMethod": "GET",
-				"optEndpoint": "/dolar_euro_parity"
+				"optEndpoint": "/dollar_euro_parity"
 			}],
 			"xyz": [{
 				"schema": {
@@ -1028,7 +1028,7 @@
 		"x": -463.09789308165267,
 		"y": -49.6408700463179,
 		"extras": {
-			"optText": "##### Dollar - Euro Parity As Service\n\nThis template is triggered with REST request. It returns dolar/euro value as response\n\nFollow these steps to test this template;\n\n**1.** If you do not have curl, you should download from [here](https://curl.se/download.html)\n\n**2.** Open Command Prompt (CMD) and run the following command:\n       curl http://localhost:9090/dolar_euro_parity\n\n "
+			"optText": "##### Dollar - Euro Parity As Service\n\nThis template is triggered with REST request. It returns dolar/euro value as response\n\nFollow these steps to test this template;\n\n**1.** If you do not have curl, you should download from [here](https://curl.se/download.html)\n\n**2.** Open Command Prompt (CMD) and run the following command:\n       curl http://localhost:9090/dollar_euro_parity\n\n "
 		},
 		"ports": [],
 		"model": {
@@ -1039,7 +1039,7 @@
 			"namespace": "Core.Flow.Comment",
 			"version": "1.11.6",
 			"abc": [{}, {
-				"optText": "##### Dollar - Euro Parity As Service\n\nThis template is triggered with REST request. It returns dolar/euro value as response\n\nFollow these steps to test this template;\n\n**1.** If you do not have curl, you should download from [here](https://curl.se/download.html)\n\n**2.** Open Command Prompt (CMD) and run the following command:\n       curl http://localhost:9090/dolar_euro_parity\n\n "
+				"optText": "##### Dollar - Euro Parity As Service\n\nThis template is triggered with REST request. It returns dolar/euro value as response\n\nFollow these steps to test this template;\n\n**1.** If you do not have curl, you should download from [here](https://curl.se/download.html)\n\n**2.** Open Command Prompt (CMD) and run the following command:\n       curl http://localhost:9090/dollar_euro_parity\n\n "
 			}],
 			"xyz": [{
 				"schema": {
@@ -1072,7 +1072,7 @@
 					}
 				},
 				"formData": {
-					"optText": "##### Dollar - Euro Parity As Service\n\nThis template is triggered with REST request. It returns dolar/euro value as response\n\nFollow these steps to test this template;\n\n**1.** If you do not have curl, you should download from [here](https://curl.se/download.html)\n\n**2.** Open Command Prompt (CMD) and run the following command:\n       curl http://localhost:9090/dolar_euro_parity\n\n "
+					"optText": "##### Dollar - Euro Parity As Service\n\nThis template is triggered with REST request. It returns dolar/euro value as response\n\nFollow these steps to test this template;\n\n**1.** If you do not have curl, you should download from [here](https://curl.se/download.html)\n\n**2.** Open Command Prompt (CMD) and run the following command:\n       curl http://localhost:9090/dollar_euro_parity\n\n "
 				}
 			}],
 			"outputs": 0,
