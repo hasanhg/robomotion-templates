@@ -543,6 +543,25 @@
     ]
   },
   {
+    "name": "Get Tweet Count",
+    "description": "Returns the tweet count that specified accounts tweeted",
+    "slug": "get-tweet-count",
+    "icon": "get_tweet_count_icon.png",
+    "screenshots": [
+      "get_tweet_count_screenshot1.png",
+      "get_tweet_count_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -602,6 +621,66 @@
     ],
     "applications": [
       "Chrome",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Get Instagram Stories",
+    "description": "Lists Instagram stories of multiple accounts and saves them to specified folder",
+    "slug": "get-instagram-stories",
+    "icon": "get_instagram_stories_icon.png",
+    "screenshots": [
+      "get_instagram_stories_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "instagram",
+      "social media",
+      "story"
+    ],
+    "applications": [
+      "Instagram"
+    ]
+  },
+  {
+    "name": "Get Instagram Highlights",
+    "description": "Lists Instagram highlights of multiple accounts and saves them to specified folder",
+    "slug": "get-instagram-highlights",
+    "icon": "get_instagram_highlights_icon.png",
+    "screenshots": [
+      "get_instagram_highlights_screenshot1.png",
+      "get_instagram_highlights_screenshot2.png",
+      "get_instagram_highlights_screenshot3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "instagram",
+      "social media",
+      "highlight"
+    ],
+    "applications": [
+      "Instagram"
+    ]
+  },
+  {
+    "name": "Process Tasks Parallely",
+    "description": "Shows how to process list of task parallely",
+    "slug": "process-tasks-parallely",
+    "icon": "process_tasks_parallely_icon.png",
+    "screenshots": [
+      "process_tasks_parallely_screenshot1.png",
+      "process_tasks_parallely_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "branching",
+      "parallel_processing"
+    ],
+    "applications": [
+      "Slack",
       "Javascript"
     ]
   }

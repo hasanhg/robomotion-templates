@@ -1,0 +1,15 @@
+- name: Process Tasks Parallely
+  description: Shows how to process list of task parallely.
+  slug: process-tasks-parallely
+  icon: process_tasks_parallely_icon.png
+  screenshots:
+    - process_tasks_parallely_screenshot1.png
+    - process_tasks_parallely_screenshot2.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - branching
+    - parallel_processing
+  applications:
+    - Slack
+    - Javascript

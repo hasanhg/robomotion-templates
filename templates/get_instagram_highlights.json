@@ -1,0 +1,1196 @@
+{
+	"nodes": [{
+		"id": "6d775403-d179-4b89-9f65-1e9a708e419a",
+		"type": "simple",
+		"selected": true,
+		"x": 475,
+		"y": 202,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "ef1556c5-e08d-43b7-be90-38df18c1751d",
+			"type": "default",
+			"selected": false,
+			"name": "out_ef1556c5-e08d-43b7-be90-38df18c1751d",
+			"parentNode": "6d775403-d179-4b89-9f65-1e9a708e419a",
+			"links": ["b1c77928-af5f-4256-b917-52bca39df826"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "6d775403-d179-4b89-9f65-1e9a708e419a",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "634939c0-dc56-4478-9a72-3748658ecf3c",
+		"type": "simple",
+		"selected": true,
+		"x": 704.590909090909,
+		"y": 280.9545454545455,
+		"extras": {
+			"outMessage": {
+				"scope": "Message",
+				"name": "instagram_id"
+			},
+			"optCredentials": {
+				"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+				"itemId": "dc950670-7021-4868-8f69-39a72a30d55a"
+			}
+		},
+		"ports": [{
+			"id": "4794ff77-a968-4db3-8b5a-d6246231a13b",
+			"type": "default",
+			"selected": false,
+			"name": "out_4794ff77-a968-4db3-8b5a-d6246231a13b",
+			"parentNode": "634939c0-dc56-4478-9a72-3748658ecf3c",
+			"links": ["8e6301e1-af23-4c66-9b29-b3581faa8089"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "2d803dd4-b8b4-4f8b-b8c7-8cad1d0ca398",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "634939c0-dc56-4478-9a72-3748658ecf3c",
+			"links": ["53d1de73-fb6a-449c-a247-20a3d9d79317"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "634939c0-dc56-4478-9a72-3748658ecf3c",
+			"name": "Login",
+			"icon": "M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z",
+			"color": "#F56040",
+			"namespace": "Robomotion.Instagram.Login",
+			"version": "1.0.3",
+			"abc": [{
+				"name": "Login",
+				"version": "1.0.3",
+				"color": "#F56040",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outMessage": {
+					"scope": "Message",
+					"name": "instagram_id"
+				}
+			}, {
+				"optCredentials": {
+					"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+					"itemId": "dc950670-7021-4868-8f69-39a72a30d55a"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outMessage": {
+							"type": "object",
+							"title": "Message",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						}
+					}
+				},
+				"uiSchema": {
+					"outMessage": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outMessage"]
+				},
+				"formData": {
+					"outMessage": {
+						"scope": "Message",
+						"name": "instagram_id"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 1,
+							"properties": {
+								"vaultId": {
+									"type": "string"
+								},
+								"itemId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optCredentials"]
+				},
+				"formData": {
+					"optCredentials": {
+						"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+						"itemId": "dc950670-7021-4868-8f69-39a72a30d55a"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "6f47438d-7333-4a16-b586-1cef2813a42b",
+		"type": "simple",
+		"selected": true,
+		"x": 702.7766798418971,
+		"y": 232.3596837944664,
+		"extras": {
+			"outputs": 1,
+			"func": "// Set download path for the stories\nmsg.root_path = \"C:\\\\\"; //[Required] The path of the folder that the stories will be saved\nmsg.profiles = [ \"neymarjr\" ] //[Required] The name of the instagram accounts. You can add new accounts as many as you want\nmsg.os_splitter = \"\\\\\"; //[Required] //The path splitter of your operating system. If you use windows, it is \"\\\\\", in MacOS or Linux it is \"/\"\nreturn msg;\n",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "589c29f8-5150-4f85-978f-0edae252881f",
+			"type": "default",
+			"selected": false,
+			"name": "out_589c29f8-5150-4f85-978f-0edae252881f",
+			"parentNode": "6f47438d-7333-4a16-b586-1cef2813a42b",
+			"links": ["53d1de73-fb6a-449c-a247-20a3d9d79317"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f88c35e6-9ecd-410f-8a4d-cf538077d960",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "6f47438d-7333-4a16-b586-1cef2813a42b",
+			"links": ["b1c77928-af5f-4256-b917-52bca39df826"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "6f47438d-7333-4a16-b586-1cef2813a42b",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "// Set download path for the stories\nmsg.root_path = \"C:\\\\\"; //[Required] The path of the folder that the stories will be saved\nmsg.profiles = [ \"neymarjr\" ] //[Required] The name of the instagram accounts. You can add new accounts as many as you want\nmsg.os_splitter = \"\\\\\"; //[Required] //The path splitter of your operating system. If you use windows, it is \"\\\\\", in MacOS or Linux it is \"/\"\nreturn msg;\n",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "// Set download path for the stories\nmsg.root_path = \"C:\\\\\"; //[Required] The path of the folder that the stories will be saved\nmsg.profiles = [ \"neymarjr\" ] //[Required] The name of the instagram accounts. You can add new accounts as many as you want\nmsg.os_splitter = \"\\\\\"; //[Required] //The path splitter of your operating system. If you use windows, it is \"\\\\\", in MacOS or Linux it is \"/\"\nreturn msg;\n",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "4b8852f3-3f97-464b-abc3-12bf851ec411",
+		"type": "simple",
+		"selected": true,
+		"x": 957.2272727272727,
+		"y": 305.1324110671937,
+		"extras": {
+			"optInput": {
+				"scope": "Message",
+				"name": "profiles"
+			},
+			"optOutput": {
+				"scope": "Message",
+				"name": "profile"
+			}
+		},
+		"ports": [{
+			"id": "137de7d0-9805-4a07-a58e-eb46329361bf",
+			"type": "default",
+			"selected": false,
+			"name": "out_137de7d0-9805-4a07-a58e-eb46329361bf",
+			"parentNode": "4b8852f3-3f97-464b-abc3-12bf851ec411",
+			"links": ["336ba0a6-a5c2-46d7-851b-2ce5a1f9e2a1"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "0df304a9-6edf-4313-b840-d480cce3881b",
+			"type": "default",
+			"selected": false,
+			"name": "out_0df304a9-6edf-4313-b840-d480cce3881b",
+			"parentNode": "4b8852f3-3f97-464b-abc3-12bf851ec411",
+			"links": ["d945d241-7c15-473a-a1de-db8e7746553e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c98bdbb0-fec9-4a67-898b-934f87c129bb",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "4b8852f3-3f97-464b-abc3-12bf851ec411",
+			"links": ["8e6301e1-af23-4c66-9b29-b3581faa8089", "ae9c784b-7f49-4ea6-ac32-2e42bc5ead28"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "4b8852f3-3f97-464b-abc3-12bf851ec411",
+			"name": "For Each Profile",
+			"icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
+			"color": "#b9aeec",
+			"namespace": "Core.Programming.ForEach",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "For Each Profile",
+				"color": "#b9aeec",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"optInput": {
+					"scope": "Message",
+					"name": "profiles"
+				},
+				"optOutput": {
+					"scope": "Message",
+					"name": "profile"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optInput": {
+							"type": "object",
+							"title": "Loop through object",
+							"variableType": "Array",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"optOutput": {
+							"type": "object",
+							"title": "Current Item",
+							"variableType": "string",
+							"messageScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optInput": {
+						"ui:field": "variable"
+					},
+					"optOutput": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optInput": {
+						"scope": "Message",
+						"name": "profiles"
+					},
+					"optOutput": {
+						"scope": "Message",
+						"name": "profile"
+					}
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "e1976024-756a-47ce-949e-bb46474dc2e2",
+		"type": "simple",
+		"selected": true,
+		"x": 1207.3416149068323,
+		"y": 278.1818181818182,
+		"extras": {
+			"outputs": 1,
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/dc25766c-373d-42a7-8ce0-5f2098e9417c/subflows/e1976024-756a-47ce-949e-bb46474dc2e2.flow"
+		},
+		"ports": [{
+			"id": "c7427e91-ef06-4605-961d-7835d31f2be9",
+			"type": "default",
+			"selected": false,
+			"name": "out_c7427e91-ef06-4605-961d-7835d31f2be9",
+			"parentNode": "e1976024-756a-47ce-949e-bb46474dc2e2",
+			"links": ["6bba2ff1-0cc0-410c-9e7e-db65e44b560a"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "5afdca51-c679-48fc-93ea-309195f80cb3",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e1976024-756a-47ce-949e-bb46474dc2e2",
+			"links": ["336ba0a6-a5c2-46d7-851b-2ce5a1f9e2a1"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e1976024-756a-47ce-949e-bb46474dc2e2",
+			"name": "Get Highlights",
+			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+			"color": "#646bf5",
+			"namespace": "Core.Flow.SubFlow",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Get Highlights",
+				"color": "#646bf5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/dc25766c-373d-42a7-8ce0-5f2098e9417c/subflows/e1976024-756a-47ce-949e-bb46474dc2e2.flow"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"subflow": {
+							"type": "string",
+							"properties": {}
+						}
+					}
+				},
+				"uiSchema": {
+					"subflow": {
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"ui:order": ["outputs", "*"]
+				},
+				"formData": {
+					"outputs": 1,
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/dc25766c-373d-42a7-8ce0-5f2098e9417c/subflows/e1976024-756a-47ce-949e-bb46474dc2e2.flow"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "9d8699e7-16bc-4675-afea-8e55c7c02fa1",
+		"type": "simple",
+		"selected": true,
+		"x": 1451.1818181818182,
+		"y": 280.1818181818182,
+		"extras": {
+			"optNodes": {
+				"all": false,
+				"ids": ["d5c07850-b274-4557-97c8-8d46db106174"]
+			}
+		},
+		"ports": [{
+			"id": "85d7293f-d0df-475b-80c4-3cb091ba4f4f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "9d8699e7-16bc-4675-afea-8e55c7c02fa1",
+			"links": ["6bba2ff1-0cc0-410c-9e7e-db65e44b560a"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "9d8699e7-16bc-4675-afea-8e55c7c02fa1",
+			"name": "Go To Next Profile",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.GoTo",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Go To Next Profile",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"optNodes": {
+					"all": false,
+					"ids": ["d5c07850-b274-4557-97c8-8d46db106174"]
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"inputs": 1,
+					"outputs": 1,
+					"properties": {
+						"optNodes": {
+							"type": "object",
+							"title": "",
+							"properties": {
+								"ids": {
+									"title": "",
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"all": {
+									"title": "All",
+									"type": "boolean"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optNodes": {
+						"ui:field": "catch"
+					},
+					"ui:order": ["optNodes"]
+				},
+				"formData": {
+					"optNodes": {
+						"all": false,
+						"ids": ["d5c07850-b274-4557-97c8-8d46db106174"]
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "d5c07850-b274-4557-97c8-8d46db106174",
+		"type": "simple",
+		"selected": true,
+		"x": 712.3181818181818,
+		"y": 334.3181818181818,
+		"extras": {},
+		"ports": [{
+			"id": "c11331dd-abed-4ea4-aaaf-f1754893f840",
+			"type": "default",
+			"selected": false,
+			"name": "out_c11331dd-abed-4ea4-aaaf-f1754893f840",
+			"parentNode": "d5c07850-b274-4557-97c8-8d46db106174",
+			"links": ["ae9c784b-7f49-4ea6-ac32-2e42bc5ead28"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "d5c07850-b274-4557-97c8-8d46db106174",
+			"name": "Next Profile",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.Label",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Next Profile",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}],
+			"xyz": [],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "ff88597d-5996-487e-b4c6-b72a2dbc5da4",
+		"type": "simple",
+		"selected": true,
+		"x": 1176.0909090909092,
+		"y": 517.5,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "6a2f3f12-28a0-476f-aa9e-e9befd9b654b",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ff88597d-5996-487e-b4c6-b72a2dbc5da4",
+			"links": ["7e5bb1f6-c6b0-49d6-96e5-3eec9df2284c"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ff88597d-5996-487e-b4c6-b72a2dbc5da4",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "3ee47961-21bc-4d68-822e-2eeef9a7f08d",
+		"type": "simple",
+		"selected": true,
+		"x": 102.6818181818182,
+		"y": 202.6818181818182,
+		"extras": {
+			"optText": "##### Instagram Get Highlights How-To \n\nThis template lists the instagram highlights of multiple accounts, and downloads them to specified folder\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Install Instagram package. You can examine a sample package installation from [here](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer)\n\n**3.** Update msg.root_path field with the path of the folder that the highlights will be saved.\n\n**4.** Update msg.os_splitter field  with the path splitter of your operating system. If your OS is Windows it is \"\\\\\", in Linux or MacOS it is \"/\"\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "3ee47961-21bc-4d68-822e-2eeef9a7f08d",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Instagram Get Highlights How-To \n\nThis template lists the instagram highlights of multiple accounts, and downloads them to specified folder\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Install Instagram package. You can examine a sample package installation from [here](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer)\n\n**3.** Update msg.root_path field with the path of the folder that the highlights will be saved.\n\n**4.** Update msg.os_splitter field  with the path splitter of your operating system. If your OS is Windows it is \"\\\\\", in Linux or MacOS it is \"/\"\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Instagram Get Highlights How-To \n\nThis template lists the instagram highlights of multiple accounts, and downloads them to specified folder\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Install Instagram package. You can examine a sample package installation from [here](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer)\n\n**3.** Update msg.root_path field with the path of the folder that the highlights will be saved.\n\n**4.** Update msg.os_splitter field  with the path splitter of your operating system. If your OS is Windows it is \"\\\\\", in Linux or MacOS it is \"/\"\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "ca9530df-1b44-4f4d-acdf-01f3faeeccb1",
+		"type": "simple",
+		"selected": true,
+		"x": 1182.1284584980235,
+		"y": 466.26877470355737,
+		"extras": {
+			"inText": {
+				"scope": "Message",
+				"name": "message"
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "Flow Finished"
+			},
+			"outConfirmed": {
+				"scope": "Message",
+				"name": "confirmed"
+			},
+			"optType": "info"
+		},
+		"ports": [{
+			"id": "136d00b4-9de1-4eee-bb65-b666272f1381",
+			"type": "default",
+			"selected": false,
+			"name": "out_136d00b4-9de1-4eee-bb65-b666272f1381",
+			"parentNode": "ca9530df-1b44-4f4d-acdf-01f3faeeccb1",
+			"links": ["7e5bb1f6-c6b0-49d6-96e5-3eec9df2284c"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f434001a-3768-47ee-92ce-b28deae2349f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ca9530df-1b44-4f4d-acdf-01f3faeeccb1",
+			"links": ["4b7242bc-c624-49db-b8c0-24daa481d55e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ca9530df-1b44-4f4d-acdf-01f3faeeccb1",
+			"name": "Show Info ",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.MessageBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Show Info ",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inText": {
+					"scope": "Message",
+					"name": "message"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "Flow Finished"
+				}
+			}, {
+				"outConfirmed": {
+					"scope": "Message",
+					"name": "confirmed"
+				}
+			}, {
+				"optType": "info"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTitle": {
+							"type": "object",
+							"title": "Title",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["inTitle", "inText"],
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inText": {
+						"scope": "Message",
+						"name": "message"
+					},
+					"inTitle": {
+						"scope": "Custom",
+						"name": "Flow Finished"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outConfirmed": {
+							"type": "object",
+							"title": "Confirmed",
+							"variableType": "Boolean",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outConfirmed": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outConfirmed": {
+						"scope": "Message",
+						"name": "confirmed"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optType": {
+							"type": "string",
+							"title": "Type",
+							"enum": ["yesno", "info", "error"],
+							"enumNames": ["Yes / No", "Info", "Error"]
+						}
+					}
+				},
+				"uiSchema": {},
+				"formData": {
+					"optType": "info"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "db9c3c43-e4db-427b-bfaa-8ee06f78ab52",
+		"type": "simple",
+		"selected": true,
+		"x": 1185.6363636363635,
+		"y": 403.8181818181818,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.message = \"Your stories downloaded to \" + msg.profile_root;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "820c4afc-b104-4970-a193-8500ede0dde4",
+			"type": "default",
+			"selected": false,
+			"name": "out_820c4afc-b104-4970-a193-8500ede0dde4",
+			"parentNode": "db9c3c43-e4db-427b-bfaa-8ee06f78ab52",
+			"links": ["4b7242bc-c624-49db-b8c0-24daa481d55e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "ca5c551b-b9b1-4342-b71f-88325a9ffa23",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "db9c3c43-e4db-427b-bfaa-8ee06f78ab52",
+			"links": ["d945d241-7c15-473a-a1de-db8e7746553e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "db9c3c43-e4db-427b-bfaa-8ee06f78ab52",
+			"name": "Prepare Message",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Prepare Message",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.message = \"Your stories downloaded to \" + msg.profile_root;\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.message = \"Your stories downloaded to \" + msg.profile_root;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": [{
+		"id": "e1976024-756a-47ce-949e-bb46474dc2e2",
+		"flow": "{\"id\":\"e1976024-756a-47ce-949e-bb46474dc2e2\",\"offsetX\":-374,\"offsetY\":32,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"3b68d31d-a285-418a-8940-40c166616305\",\"type\":\"default\",\"selected\":false,\"source\":\"bcd493f2-b090-4bdd-8c98-94a53bfa5c2e\",\"sourcePort\":\"8cc46b7a-03ae-4608-b54a-8514f05d6c4b\",\"target\":\"3cb13ce4-3cba-4fbf-b44b-c4f7e103d724\",\"targetPort\":\"9ca05e91-e4d3-420d-a16e-220f75e23f5b\",\"points\":[{\"id\":\"7c073e6e-6f84-4a7b-880e-0cb305d0361c\",\"selected\":false,\"x\":605,\"y\":153},{\"id\":\"cf2619eb-319d-4956-a4c0-370df82b3cc7\",\"selected\":false,\"x\":680,\"y\":153}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"60ae0fab-a689-47f5-b880-2b420480e181\",\"type\":\"default\",\"selected\":false,\"source\":\"3cb13ce4-3cba-4fbf-b44b-c4f7e103d724\",\"sourcePort\":\"1d39e961-4140-40ce-ab81-1a9148a1180c\",\"target\":\"a9f71e22-c1ee-44c4-b318-a23d313754a1\",\"targetPort\":\"6b9b00b7-506b-4e1b-a900-e426e485851f\",\"points\":[{\"id\":\"30418ddc-6027-4867-9df1-0429f12181d9\",\"selected\":false,\"x\":882,\"y\":155},{\"id\":\"a0ed940d-88b5-4738-b47e-29c0af1b290a\",\"selected\":false,\"x\":684,\"y\":216}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c4003aa9-9894-43bb-a46d-b1dd2268b5c6\",\"type\":\"default\",\"selected\":false,\"source\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"sourcePort\":\"84614ab0-6c19-4bba-b154-a1c3466c226e\",\"target\":\"5e27b02c-3266-4507-890c-8389afb50454\",\"targetPort\":\"f118b99d-bc77-462d-a680-d13d1df0fca3\",\"points\":[{\"id\":\"c81d893f-3e7a-4316-9389-3e79763683b9\",\"selected\":false,\"x\":685,\"y\":356},{\"id\":\"bc222f14-1d64-41c2-8b41-8a63ef25ceca\",\"selected\":false,\"x\":602,\"y\":358}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"3487eabd-2309-418d-8ab8-026e0a82a12a\",\"type\":\"default\",\"selected\":false,\"source\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"sourcePort\":\"ac7bb919-a825-42ad-bd42-41bc7f7176c4\",\"target\":\"19c652d7-3e49-442b-bf35-868711d0519d\",\"targetPort\":\"f602d1cd-5086-4175-801a-724dc7224a5d\",\"points\":[{\"id\":\"10f16980-f7e5-497c-a249-2a57b9e2a6cd\",\"selected\":false,\"x\":887,\"y\":367},{\"id\":\"35563078-800c-4d4d-8e1d-62763072a4af\",\"selected\":false,\"x\":938,\"y\":526}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c4c8d476-8539-45e8-a5da-093a4119cc19\",\"type\":\"default\",\"selected\":false,\"source\":\"1d3fd894-9366-47f1-8f52-8f99833bf89d\",\"sourcePort\":\"0917f700-0b4e-4a21-a13c-1732049b2847\",\"target\":\"a9f71e22-c1ee-44c4-b318-a23d313754a1\",\"targetPort\":\"ac49b706-d241-4693-a12b-f8d805d1ab39\",\"points\":[{\"id\":\"52d5b348-5ef0-4e90-9034-f0eb622e655f\",\"selected\":false,\"x\":692,\"y\":286},{\"id\":\"0e3af1d9-e0bb-469c-8f7d-8a52492dc2bf\",\"selected\":false,\"x\":886,\"y\":218}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"447b93e0-0bf1-4b9b-bca9-7fe589eead8a\",\"type\":\"default\",\"selected\":false,\"source\":\"1d3fd894-9366-47f1-8f52-8f99833bf89d\",\"sourcePort\":\"6e4440e9-1e69-4c99-9041-d938cb6167f9\",\"target\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"targetPort\":\"84614ab0-6c19-4bba-b154-a1c3466c226e\",\"points\":[{\"id\":\"d029e1fa-7135-459d-afe7-7f30bf1cd3ca\",\"selected\":false,\"x\":894,\"y\":288},{\"id\":\"f1de9e7d-44cf-4233-a08e-9717e0748ae7\",\"selected\":false,\"x\":685,\"y\":356}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"8dc2ef24-02c5-4d2f-953b-643bdfb397c4\",\"type\":\"default\",\"selected\":false,\"source\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"sourcePort\":\"253a30e3-8bd2-423d-8119-b8f635fcbb90\",\"target\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"targetPort\":\"1ad766f0-ee49-46bf-96d9-e7d8e9e11b73\",\"points\":[{\"id\":\"b04005f4-c38e-4a32-b244-0948fff6c37b\",\"selected\":false,\"x\":887,\"y\":349},{\"id\":\"c1509971-ab5f-4e4c-88fb-65094766366e\",\"selected\":false,\"x\":1100,\"y\":310}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"8b265bde-4984-43f4-932b-f9f71d6b1d88\",\"type\":\"default\",\"selected\":false,\"source\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"sourcePort\":\"f77f3edb-f894-4136-9135-7ef43cae07bb\",\"target\":\"5b2421bb-f34b-4707-b456-c3c8e6e41162\",\"targetPort\":\"fabe99b7-5094-4ac1-83f7-92531e1b47cd\",\"points\":[{\"id\":\"9b33ba80-9b4b-4fdc-9e9e-c92f91da687a\",\"selected\":false,\"x\":1330.5250244140625,\"y\":312},{\"id\":\"b23bfb0d-a81d-421d-abaa-6247706fb8fe\",\"selected\":true,\"x\":1482,\"y\":369}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"bcd493f2-b090-4bdd-8c98-94a53bfa5c2e\",\"type\":\"simple\",\"selected\":false,\"x\":404,\"y\":128,\"extras\":{},\"ports\":[{\"id\":\"8cc46b7a-03ae-4608-b54a-8514f05d6c4b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_8cc46b7a-03ae-4608-b54a-8514f05d6c4b\",\"parentNode\":\"bcd493f2-b090-4bdd-8c98-94a53bfa5c2e\",\"links\":[\"3b68d31d-a285-418a-8940-40c166616305\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"bcd493f2-b090-4bdd-8c98-94a53bfa5c2e\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"19c652d7-3e49-442b-bf35-868711d0519d\",\"type\":\"simple\",\"selected\":false,\"x\":931,\"y\":503,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"f602d1cd-5086-4175-801a-724dc7224a5d\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"19c652d7-3e49-442b-bf35-868711d0519d\",\"links\":[\"3487eabd-2309-418d-8ab8-026e0a82a12a\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"19c652d7-3e49-442b-bf35-868711d0519d\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"type\":\"simple\",\"selected\":false,\"x\":678,\"y\":328,\"extras\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"highlights\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"highlight\"}},\"ports\":[{\"id\":\"253a30e3-8bd2-423d-8119-b8f635fcbb90\",\"type\":\"default\",\"selected\":false,\"name\":\"out_253a30e3-8bd2-423d-8119-b8f635fcbb90\",\"parentNode\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"links\":[\"8dc2ef24-02c5-4d2f-953b-643bdfb397c4\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"ac7bb919-a825-42ad-bd42-41bc7f7176c4\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ac7bb919-a825-42ad-bd42-41bc7f7176c4\",\"parentNode\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"links\":[\"3487eabd-2309-418d-8ab8-026e0a82a12a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"84614ab0-6c19-4bba-b154-a1c3466c226e\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"links\":[\"c4003aa9-9894-43bb-a46d-b1dd2268b5c6\",\"447b93e0-0bf1-4b9b-bca9-7fe589eead8a\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"e9365e7f-8d63-4061-8f28-c7020d743aa6\",\"name\":\"For Each Highlight\",\"icon\":\"M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z\",\"color\":\"#b9aeec\",\"namespace\":\"Core.Programming.ForEach\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"For Each Highlight\",\"color\":\"#b9aeec\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optInput\":{\"scope\":\"Message\",\"name\":\"highlights\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"highlight\"}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optInput\":{\"type\":\"object\",\"title\":\"Loop through object\",\"variableType\":\"Array\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optOutput\":{\"type\":\"object\",\"title\":\"Current Item\",\"variableType\":\"string\",\"messageScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optInput\":{\"ui:field\":\"variable\"},\"optOutput\":{\"ui:field\":\"variable\"}},\"formData\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"highlights\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"highlight\"}}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"3cb13ce4-3cba-4fbf-b44b-c4f7e103d724\",\"type\":\"simple\",\"selected\":false,\"x\":673,\"y\":130,\"extras\":{\"outputs\":1,\"func\":\"msg.profile_root = msg.root_path + msg.profile;\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"1d39e961-4140-40ce-ab81-1a9148a1180c\",\"type\":\"default\",\"selected\":false,\"name\":\"out_1d39e961-4140-40ce-ab81-1a9148a1180c\",\"parentNode\":\"3cb13ce4-3cba-4fbf-b44b-c4f7e103d724\",\"links\":[\"60ae0fab-a689-47f5-b880-2b420480e181\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"9ca05e91-e4d3-420d-a16e-220f75e23f5b\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3cb13ce4-3cba-4fbf-b44b-c4f7e103d724\",\"links\":[\"3b68d31d-a285-418a-8940-40c166616305\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3cb13ce4-3cba-4fbf-b44b-c4f7e103d724\",\"name\":\"Setup\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Setup\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.profile_root = msg.root_path + msg.profile;\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.profile_root = msg.root_path + msg.profile;\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"a9f71e22-c1ee-44c4-b318-a23d313754a1\",\"type\":\"simple\",\"selected\":false,\"x\":677,\"y\":193,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"profile_root\"},\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"},\"optType\":\"directory\",\"continueOnError\":true},\"ports\":[{\"id\":\"ac49b706-d241-4693-a12b-f8d805d1ab39\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ac49b706-d241-4693-a12b-f8d805d1ab39\",\"parentNode\":\"a9f71e22-c1ee-44c4-b318-a23d313754a1\",\"links\":[\"c4c8d476-8539-45e8-a5da-093a4119cc19\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"6b9b00b7-506b-4e1b-a900-e426e485851f\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"a9f71e22-c1ee-44c4-b318-a23d313754a1\",\"links\":[\"60ae0fab-a689-47f5-b880-2b420480e181\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"a9f71e22-c1ee-44c4-b318-a23d313754a1\",\"name\":\"Create Profile Dir\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.Create\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create Profile Dir\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":true,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"profile_root\"}},{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}},{\"optType\":\"directory\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inPath\"]},\"formData\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"profile_root\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"directory\",\"file\"],\"enumNames\":[\"Directory\",\"File\"]}}},\"uiSchema\":{\"ui:order\":[\"optType\"]},\"formData\":{\"optType\":\"directory\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"5b2421bb-f34b-4707-b456-c3c8e6e41162\",\"type\":\"simple\",\"selected\":false,\"x\":1475,\"y\":346,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"5e27b02c-3266-4507-890c-8389afb50454\"]}},\"ports\":[{\"id\":\"fabe99b7-5094-4ac1-83f7-92531e1b47cd\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"5b2421bb-f34b-4707-b456-c3c8e6e41162\",\"links\":[\"8b265bde-4984-43f4-932b-f9f71d6b1d88\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"5b2421bb-f34b-4707-b456-c3c8e6e41162\",\"name\":\"Go To Next Story\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.GoTo\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go To Next Story\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optNodes\":{\"all\":false,\"ids\":[\"5e27b02c-3266-4507-890c-8389afb50454\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"all\":false,\"ids\":[\"5e27b02c-3266-4507-890c-8389afb50454\"]}}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"5e27b02c-3266-4507-890c-8389afb50454\",\"type\":\"simple\",\"selected\":false,\"x\":401,\"y\":333,\"extras\":{},\"ports\":[{\"id\":\"f118b99d-bc77-462d-a680-d13d1df0fca3\",\"type\":\"default\",\"selected\":false,\"name\":\"out_f118b99d-bc77-462d-a680-d13d1df0fca3\",\"parentNode\":\"5e27b02c-3266-4507-890c-8389afb50454\",\"links\":[\"c4003aa9-9894-43bb-a46d-b1dd2268b5c6\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"5e27b02c-3266-4507-890c-8389afb50454\",\"name\":\"Next Story\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.Label\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Next Story\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"}],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"1d3fd894-9366-47f1-8f52-8f99833bf89d\",\"type\":\"simple\",\"selected\":false,\"x\":685,\"y\":263,\"extras\":{\"inClientId\":{\"scope\":\"Message\",\"name\":\"instagram_id\"},\"inUserName\":{\"scope\":\"Message\",\"name\":\"profile\"},\"outMessage\":{\"scope\":\"Message\",\"name\":\"highlights\"}},\"ports\":[{\"id\":\"6e4440e9-1e69-4c99-9041-d938cb6167f9\",\"type\":\"default\",\"selected\":false,\"name\":\"out_6e4440e9-1e69-4c99-9041-d938cb6167f9\",\"parentNode\":\"1d3fd894-9366-47f1-8f52-8f99833bf89d\",\"links\":[\"447b93e0-0bf1-4b9b-bca9-7fe589eead8a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"0917f700-0b4e-4a21-a13c-1732049b2847\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"1d3fd894-9366-47f1-8f52-8f99833bf89d\",\"links\":[\"c4c8d476-8539-45e8-a5da-093a4119cc19\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"1d3fd894-9366-47f1-8f52-8f99833bf89d\",\"name\":\"Get Highlights\",\"icon\":\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z\",\"color\":\"#F56040\",\"namespace\":\"Robomotion.Instagram.GetHighlights\",\"version\":\"1.0.3\",\"abc\":[{\"name\":\"Get Highlights\",\"version\":\"1.0.3\",\"color\":\"#F56040\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inClientId\":{\"scope\":\"Message\",\"name\":\"instagram_id\"},\"inUserName\":{\"scope\":\"Message\",\"name\":\"profile\"}},{\"outMessage\":{\"scope\":\"Message\",\"name\":\"highlights\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inClientId\":{\"type\":\"object\",\"title\":\"Instagram ID\",\"variableType\":\"string\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true},\"inUserName\":{\"type\":\"object\",\"title\":\"Username\",\"variableType\":\"string\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true}}},\"uiSchema\":{\"inClientId\":{\"ui:field\":\"variable\"},\"inUserName\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inClientId\",\"inUserName\"]},\"formData\":{\"inClientId\":{\"scope\":\"Message\",\"name\":\"instagram_id\"},\"inUserName\":{\"scope\":\"Message\",\"name\":\"profile\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outMessage\":{\"type\":\"object\",\"title\":\"Highlights\",\"variableType\":\"string\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"messageOnly\":true}}},\"uiSchema\":{\"outMessage\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outMessage\"]},\"formData\":{\"outMessage\":{\"scope\":\"Message\",\"name\":\"highlights\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"type\":\"simple\",\"selected\":true,\"x\":1093,\"y\":287,\"extras\":{\"outputs\":1,\"subflow\":\"https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/dc25766c-373d-42a7-8ce0-5f2098e9417c/subflows/8383ca92-76dc-4bf3-bfa8-534e29e45de4.flow\"},\"ports\":[{\"id\":\"f77f3edb-f894-4136-9135-7ef43cae07bb\",\"type\":\"default\",\"selected\":false,\"name\":\"out_f77f3edb-f894-4136-9135-7ef43cae07bb\",\"parentNode\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"links\":[\"8b265bde-4984-43f4-932b-f9f71d6b1d88\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"1ad766f0-ee49-46bf-96d9-e7d8e9e11b73\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"links\":[\"8dc2ef24-02c5-4d2f-953b-643bdfb397c4\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"name\":\"Download Highlight Stories\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.SubFlow\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Download Highlight Stories\",\"color\":\"#646bf5\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"subflow\":\"https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/dc25766c-373d-42a7-8ce0-5f2098e9417c/subflows/8383ca92-76dc-4bf3-bfa8-534e29e45de4.flow\"}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"subflow\":{\"type\":\"string\",\"properties\":{}}}},\"uiSchema\":{\"subflow\":{\"ui:widget\":\"hidden\"},\"outputs\":{\"ui:widget\":\"updown\"},\"ui:order\":[\"outputs\",\"*\"]},\"formData\":{\"outputs\":1,\"subflow\":\"https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/dc25766c-373d-42a7-8ce0-5f2098e9417c/subflows/8383ca92-76dc-4bf3-bfa8-534e29e45de4.flow\"}}],\"outputs\":1,\"inputs\":1}}]}"
+	}, {
+		"id": "8383ca92-76dc-4bf3-bfa8-534e29e45de4",
+		"flow": "{\"id\":\"8383ca92-76dc-4bf3-bfa8-534e29e45de4\",\"offsetX\":52.5,\"offsetY\":69.75,\"zoom\":75,\"gridSize\":0,\"links\":[{\"id\":\"e9b0290b-0c00-4e7e-8dff-4f5ea5cf3ec9\",\"type\":\"default\",\"selected\":false,\"source\":\"843121ed-04d6-4c89-bc5c-dbe0e99acb84\",\"sourcePort\":\"92e8dec8-9351-4798-90a7-d5436f90d9d4\",\"target\":\"fea20102-9756-4b17-96a7-6cb1f850290f\",\"targetPort\":\"80eb18bc-7e22-4c8d-906d-aa25e09ce8cd\",\"points\":[{\"id\":\"b26820a6-ae14-4062-bd05-0b86543650a5\",\"selected\":false,\"x\":951,\"y\":147.6624959309896},{\"id\":\"eafe2520-9efa-48ba-b3b2-a1d1b3792d39\",\"selected\":false,\"x\":1147.3250325520833,\"y\":103}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"b06f23a9-d46f-4034-ab25-f76546ced6d8\",\"type\":\"default\",\"selected\":false,\"source\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"sourcePort\":\"61bb2463-04fd-45c5-aab6-be878d31eda4\",\"target\":\"fea20102-9756-4b17-96a7-6cb1f850290f\",\"targetPort\":\"e24e6898-6b5f-4b10-9685-6ccd1f4b961b\",\"points\":[{\"id\":\"7f9b3edd-59b4-423c-b502-306d7c99164a\",\"selected\":false,\"x\":808,\"y\":210.32499186197916},{\"id\":\"9fc5d846-1fd0-4c55-9d8e-8b74d6b93a2f\",\"selected\":false,\"x\":945.3250325520834,\"y\":101}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"e5e1b3ac-bf83-4e13-af48-ac4aa21679c3\",\"type\":\"default\",\"selected\":false,\"source\":\"843121ed-04d6-4c89-bc5c-dbe0e99acb84\",\"sourcePort\":\"7cda50be-4000-43cd-b94a-56ab2444cdf7\",\"target\":\"a4029654-5c8a-4116-9ad8-4949cd3c6d36\",\"targetPort\":\"26aaac42-55a5-4720-ae36-04909ceca7cc\",\"points\":[{\"id\":\"efffd94e-8095-47d8-a3dd-38c489ce85cf\",\"selected\":false,\"x\":1153,\"y\":149.6624959309896},{\"id\":\"203c845a-c0a2-4ca4-9d01-52b37198dabd\",\"selected\":false,\"x\":949,\"y\":202}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"65d45652-6009-470c-96d4-52888b8ee704\",\"type\":\"default\",\"selected\":false,\"source\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"sourcePort\":\"a91a0c49-c36b-454a-819e-b3632f8284ca\",\"target\":\"b1fab0ff-e542-4681-a5bc-d0dd67b7a57d\",\"targetPort\":\"d56d54a3-a691-4048-b2e5-3af7f67ce73d\",\"points\":[{\"id\":\"ffe3207b-2c97-469e-b01c-3edf4b4ed180\",\"selected\":false,\"x\":808,\"y\":228.32499186197916},{\"id\":\"4900c5ba-a8d8-4c43-8bda-0132a973028f\",\"selected\":false,\"x\":954,\"y\":336}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"73aa8f52-dedf-4775-bda8-a4807c729893\",\"type\":\"default\",\"selected\":false,\"source\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"sourcePort\":\"4ef2874c-043e-42ea-89bf-860bdfa1cba3\",\"target\":\"03e04582-238b-480d-bb88-314acac8d996\",\"targetPort\":\"3cd43dee-594f-4e73-b3c9-a6eb0cc2c62b\",\"points\":[{\"id\":\"adbfc458-dc51-4edd-8fb2-6c82051e5a68\",\"selected\":false,\"x\":606,\"y\":217.32499186197916},{\"id\":\"f6a70e8d-f01e-4eeb-a147-3a45ccbe93aa\",\"selected\":false,\"x\":552.6625162760416,\"y\":290.3249918619792}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"bb3ab910-6974-41c6-9885-2c00a325dc28\",\"type\":\"default\",\"selected\":false,\"source\":\"9a7abd80-a783-4b82-9eec-599ce11742a9\",\"sourcePort\":\"acb3afbe-697e-40a4-b876-0a5606bd204f\",\"target\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"targetPort\":\"4ef2874c-043e-42ea-89bf-860bdfa1cba3\",\"points\":[{\"id\":\"2fe46bfd-9576-4b83-b3d5-4a5eae9e52fd\",\"selected\":false,\"x\":546,\"y\":135.32501220703125},{\"id\":\"479f5bbe-a604-41ee-8689-61cf201cc161\",\"selected\":false,\"x\":606,\"y\":217.32499186197916}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"97ee5bfe-2227-4bdf-88ea-7d06d60586a7\",\"type\":\"default\",\"selected\":false,\"source\":\"6be64189-ab10-4275-8b43-f61e408d8a94\",\"sourcePort\":\"ac116a41-8d71-4a71-a5f2-a19903c61498\",\"target\":\"5be008cd-ce46-4710-81bc-c9aa74ba0301\",\"targetPort\":\"8a052e46-a84a-4856-ba4e-0957d32f1419\",\"points\":[{\"id\":\"f7922708-43f2-4316-aa8b-734b5b431b14\",\"selected\":false,\"x\":548.6625162760416,\"y\":34.32501220703125},{\"id\":\"9c2405ca-6361-4e75-930e-08f2e0241325\",\"selected\":false,\"x\":349,\"y\":81.32501220703125}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"77a10c2b-758a-4dfe-b4c1-e1e7cdfe49cf\",\"type\":\"default\",\"selected\":false,\"source\":\"9a7abd80-a783-4b82-9eec-599ce11742a9\",\"sourcePort\":\"5e7087d4-69a7-4f33-8c48-d76791f23cfc\",\"target\":\"5be008cd-ce46-4710-81bc-c9aa74ba0301\",\"targetPort\":\"a513524f-47b9-4992-988c-a3f3a0f8ab80\",\"points\":[{\"id\":\"6a5516d6-0d0b-44ab-9299-524fd04fa1c3\",\"selected\":false,\"x\":344,\"y\":133.32501220703125},{\"id\":\"3e8b4f70-707b-4e4a-9d70-3c56a97d3d61\",\"selected\":false,\"x\":551,\"y\":83.32501220703125}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300}],\"nodes\":[{\"id\":\"6be64189-ab10-4275-8b43-f61e408d8a94\",\"type\":\"simple\",\"selected\":false,\"x\":347.66666666666674,\"y\":9.333333333333332,\"extras\":{},\"ports\":[{\"id\":\"ac116a41-8d71-4a71-a5f2-a19903c61498\",\"type\":\"default\",\"selected\":false,\"name\":\"out_ac116a41-8d71-4a71-a5f2-a19903c61498\",\"parentNode\":\"6be64189-ab10-4275-8b43-f61e408d8a94\",\"links\":[\"97ee5bfe-2227-4bdf-88ea-7d06d60586a7\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"6be64189-ab10-4275-8b43-f61e408d8a94\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"b1fab0ff-e542-4681-a5bc-d0dd67b7a57d\",\"type\":\"simple\",\"selected\":false,\"x\":947,\"y\":313,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"d56d54a3-a691-4048-b2e5-3af7f67ce73d\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"b1fab0ff-e542-4681-a5bc-d0dd67b7a57d\",\"links\":[\"65d45652-6009-470c-96d4-52888b8ee704\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"b1fab0ff-e542-4681-a5bc-d0dd67b7a57d\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"type\":\"simple\",\"selected\":false,\"x\":599,\"y\":189.33333333333334,\"extras\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"highlight.highlight_stories\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"highlight_story\"}},\"ports\":[{\"id\":\"61bb2463-04fd-45c5-aab6-be878d31eda4\",\"type\":\"default\",\"selected\":false,\"name\":\"out_61bb2463-04fd-45c5-aab6-be878d31eda4\",\"parentNode\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"links\":[\"b06f23a9-d46f-4034-ab25-f76546ced6d8\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"a91a0c49-c36b-454a-819e-b3632f8284ca\",\"type\":\"default\",\"selected\":false,\"name\":\"out_a91a0c49-c36b-454a-819e-b3632f8284ca\",\"parentNode\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"links\":[\"65d45652-6009-470c-96d4-52888b8ee704\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"4ef2874c-043e-42ea-89bf-860bdfa1cba3\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"links\":[\"73aa8f52-dedf-4775-bda8-a4807c729893\",\"bb3ab910-6974-41c6-9885-2c00a325dc28\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"ae5c4727-eac0-4ca2-835f-aaaa2a3618b3\",\"name\":\"For Each\",\"icon\":\"M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z\",\"color\":\"#b9aeec\",\"namespace\":\"Core.Programming.ForEach\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"For Each\",\"version\":\"1.11.6\",\"color\":\"#b9aeec\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"optInput\":{\"scope\":\"Message\",\"name\":\"highlight.highlight_stories\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"highlight_story\"}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optInput\":{\"type\":\"object\",\"title\":\"Loop through object\",\"variableType\":\"Array\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optOutput\":{\"type\":\"object\",\"title\":\"Current Item\",\"variableType\":\"string\",\"messageScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optInput\":{\"ui:field\":\"variable\"},\"optOutput\":{\"ui:field\":\"variable\"}},\"formData\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"highlight.highlight_stories\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"highlight_story\"}}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"843121ed-04d6-4c89-bc5c-dbe0e99acb84\",\"type\":\"simple\",\"selected\":false,\"x\":944,\"y\":124.66666666666667,\"extras\":{\"inUrl\":{\"scope\":\"Message\",\"name\":\"highlight_story.url\"},\"inPath\":{\"scope\":\"Message\",\"name\":\"download_path\"},\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"},\"optPattern\":{\"scope\":\"Custom\",\"name\":\"\"},\"optTimeout\":60},\"ports\":[{\"id\":\"7cda50be-4000-43cd-b94a-56ab2444cdf7\",\"type\":\"default\",\"selected\":false,\"name\":\"out_7cda50be-4000-43cd-b94a-56ab2444cdf7\",\"parentNode\":\"843121ed-04d6-4c89-bc5c-dbe0e99acb84\",\"links\":[\"e5e1b3ac-bf83-4e13-af48-ac4aa21679c3\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"92e8dec8-9351-4798-90a7-d5436f90d9d4\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"843121ed-04d6-4c89-bc5c-dbe0e99acb84\",\"links\":[\"e9b0290b-0c00-4e7e-8dff-4f5ea5cf3ec9\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"843121ed-04d6-4c89-bc5c-dbe0e99acb84\",\"name\":\"Download File\",\"icon\":\"M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z\",\"color\":\"#c9d9ff\",\"namespace\":\"Core.Net.Download\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Download File\",\"version\":\"1.11.6\",\"color\":\"#c9d9ff\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inUrl\":{\"scope\":\"Message\",\"name\":\"highlight_story.url\"},\"inPath\":{\"scope\":\"Message\",\"name\":\"download_path\"}},{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}},{\"optPattern\":{\"scope\":\"Custom\",\"name\":\"\"},\"optTimeout\":60}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inUrl\":{\"type\":\"object\",\"title\":\"URL\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"inPath\":{\"type\":\"object\",\"title\":\"Download Path\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inUrl\":{\"ui:field\":\"variable\"},\"inPath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inUrl\",\"inPath\"]},\"formData\":{\"inUrl\":{\"scope\":\"Message\",\"name\":\"highlight_story.url\"},\"inPath\":{\"scope\":\"Message\",\"name\":\"download_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPath\":{\"scope\":\"Message\",\"name\":\"path\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optTimeout\":{\"title\":\"Timeout\",\"type\":\"number\"},\"optPattern\":{\"type\":\"object\",\"title\":\"TempFile Pattern\",\"variableType\":\"String\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optPattern\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optPattern\",\"optTimeout\"]},\"formData\":{\"optPattern\":{\"scope\":\"Custom\",\"name\":\"\"},\"optTimeout\":60}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"fea20102-9756-4b17-96a7-6cb1f850290f\",\"type\":\"simple\",\"selected\":false,\"x\":938.3333333333334,\"y\":78,\"extras\":{\"outputs\":1,\"func\":\"msg.counter++;\\nvar extension = msg.highlight_story.url.split(\\\"?\\\")[0].split(\\\".\\\").pop();\\nmsg.download_path = msg.highlight_path + msg.os_splitter + msg.counter + \\\".\\\" +  extension;\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"80eb18bc-7e22-4c8d-906d-aa25e09ce8cd\",\"type\":\"default\",\"selected\":false,\"name\":\"out_80eb18bc-7e22-4c8d-906d-aa25e09ce8cd\",\"parentNode\":\"fea20102-9756-4b17-96a7-6cb1f850290f\",\"links\":[\"e9b0290b-0c00-4e7e-8dff-4f5ea5cf3ec9\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"e24e6898-6b5f-4b10-9685-6ccd1f4b961b\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"fea20102-9756-4b17-96a7-6cb1f850290f\",\"links\":[\"b06f23a9-d46f-4034-ab25-f76546ced6d8\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"fea20102-9756-4b17-96a7-6cb1f850290f\",\"name\":\"Set Filename\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Set Filename\",\"color\":\"#F27925\",\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.counter++;\\nvar extension = msg.highlight_story.url.split(\\\"?\\\")[0].split(\\\".\\\").pop();\\nmsg.download_path = msg.highlight_path + msg.os_splitter + msg.counter + \\\".\\\" +  extension;\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.counter++;\\nvar extension = msg.highlight_story.url.split(\\\"?\\\")[0].split(\\\".\\\").pop();\\nmsg.download_path = msg.highlight_path + msg.os_splitter + msg.counter + \\\".\\\" +  extension;\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"a4029654-5c8a-4116-9ad8-4949cd3c6d36\",\"type\":\"simple\",\"selected\":false,\"x\":942,\"y\":179,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"03e04582-238b-480d-bb88-314acac8d996\"]}},\"ports\":[{\"id\":\"26aaac42-55a5-4720-ae36-04909ceca7cc\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"a4029654-5c8a-4116-9ad8-4949cd3c6d36\",\"links\":[\"e5e1b3ac-bf83-4e13-af48-ac4aa21679c3\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"a4029654-5c8a-4116-9ad8-4949cd3c6d36\",\"name\":\"Go To Next Highlight Story\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.GoTo\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go To Next Highlight Story\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optNodes\":{\"all\":false,\"ids\":[\"03e04582-238b-480d-bb88-314acac8d996\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"all\":false,\"ids\":[\"03e04582-238b-480d-bb88-314acac8d996\"]}}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"03e04582-238b-480d-bb88-314acac8d996\",\"type\":\"simple\",\"selected\":false,\"x\":351.6666666666667,\"y\":265.3333333333333,\"extras\":{},\"ports\":[{\"id\":\"3cd43dee-594f-4e73-b3c9-a6eb0cc2c62b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_3cd43dee-594f-4e73-b3c9-a6eb0cc2c62b\",\"parentNode\":\"03e04582-238b-480d-bb88-314acac8d996\",\"links\":[\"73aa8f52-dedf-4775-bda8-a4807c729893\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"03e04582-238b-480d-bb88-314acac8d996\",\"name\":\"Next Highlight Story\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.Label\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Next Highlight Story\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"}],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"9a7abd80-a783-4b82-9eec-599ce11742a9\",\"type\":\"simple\",\"selected\":false,\"x\":337,\"y\":110.33333333333333,\"extras\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"highlight_path\"},\"outPath\":{\"scope\":\"Message\",\"name\":\"highlight_path\"},\"optType\":\"directory\",\"continueOnError\":true},\"ports\":[{\"id\":\"acb3afbe-697e-40a4-b876-0a5606bd204f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_acb3afbe-697e-40a4-b876-0a5606bd204f\",\"parentNode\":\"9a7abd80-a783-4b82-9eec-599ce11742a9\",\"links\":[\"bb3ab910-6974-41c6-9885-2c00a325dc28\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"5e7087d4-69a7-4f33-8c48-d76791f23cfc\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9a7abd80-a783-4b82-9eec-599ce11742a9\",\"links\":[\"77a10c2b-758a-4dfe-b4c1-e1e7cdfe49cf\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9a7abd80-a783-4b82-9eec-599ce11742a9\",\"name\":\"Create Highlight Dir\",\"icon\":\"M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z\",\"color\":\"#dbdfa0\",\"namespace\":\"Core.FileSystem.Create\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Create Highlight Dir\",\"color\":\"#dbdfa0\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":true,\"version\":\"1.11.6\"},{\"inPath\":{\"scope\":\"Message\",\"name\":\"highlight_path\"}},{\"outPath\":{\"scope\":\"Message\",\"name\":\"highlight_path\"}},{\"optType\":\"directory\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageScope\":true,\"customScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inPath\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inPath\"]},\"formData\":{\"inPath\":{\"scope\":\"Message\",\"name\":\"highlight_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outPath\":{\"type\":\"object\",\"title\":\"Path\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outPath\":{\"ui:field\":\"variable\"}},\"formData\":{\"outPath\":{\"scope\":\"Message\",\"name\":\"highlight_path\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optType\":{\"type\":\"string\",\"title\":\"Type\",\"enum\":[\"directory\",\"file\"],\"enumNames\":[\"Directory\",\"File\"]}}},\"uiSchema\":{\"ui:order\":[\"optType\"]},\"formData\":{\"optType\":\"directory\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"5be008cd-ce46-4710-81bc-c9aa74ba0301\",\"type\":\"simple\",\"selected\":false,\"x\":342,\"y\":58.33333333333333,\"extras\":{\"outputs\":1,\"func\":\"var title = msg.highlight.title;\\nmsg.highlight_path = msg.profile_root + msg.os_splitter +  title;\\nmsg.counter = 0;\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"a513524f-47b9-4992-988c-a3f3a0f8ab80\",\"type\":\"default\",\"selected\":false,\"name\":\"out_a513524f-47b9-4992-988c-a3f3a0f8ab80\",\"parentNode\":\"5be008cd-ce46-4710-81bc-c9aa74ba0301\",\"links\":[\"77a10c2b-758a-4dfe-b4c1-e1e7cdfe49cf\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"8a052e46-a84a-4856-ba4e-0957d32f1419\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"5be008cd-ce46-4710-81bc-c9aa74ba0301\",\"links\":[\"97ee5bfe-2227-4bdf-88ea-7d06d60586a7\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"5be008cd-ce46-4710-81bc-c9aa74ba0301\",\"name\":\"Settings\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Settings\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"var title = msg.highlight.title;\\nmsg.highlight_path = msg.profile_root + msg.os_splitter +  title;\\nmsg.counter = 0;\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"var title = msg.highlight.title;\\nmsg.highlight_path = msg.profile_root + msg.os_splitter +  title;\\nmsg.counter = 0;\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}}]}"
+	}]
+}
