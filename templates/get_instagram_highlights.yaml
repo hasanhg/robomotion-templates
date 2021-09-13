@@ -1,0 +1,16 @@
+- name: Get Instagram Highlights
+  description: Lists Instagram highlights of multiple accounts and saves them to specified folder
+  slug: get-instagram-highlights
+  icon: get_instagram_highlights_icon.png
+  screenshots:
+    - get_instagram_highlights_screenshot1.png
+    - get_instagram_highlights_screenshot2.png
+    - get_instagram_highlights_screenshot3.png
+  author: Robomotion
+  category: Social Media
+  tags:
+    - instagram
+    - social media
+    - highlight
+  applications:
+    - Instagram
