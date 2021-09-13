@@ -17,4 +17,4 @@ Returns tweet count that specified accounts twetted
        4. Select cookies
        5. Copy auth_token cookie and paste it to msg.auth_token field in config node
        
-Icons  from [UXWing](https://uxwing.com/)
+Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)
