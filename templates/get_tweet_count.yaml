@@ -1,0 +1,14 @@
+- name: Get Tweet Count
+  description: Returns the tweet count that specified accounts tweeted
+  slug: get-tweet-count
+  icon: get_tweet_count_icon.png
+  screenshots:
+    - get_tweet_count_screenshot1.png
+    - get_tweet_count_screenshot2.png
+  author: Robomotion
+  category: Social Media
+  tags:
+    - social media
+    - twitter
+  applications:
+    - Twitter
