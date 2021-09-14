@@ -1,0 +1,14 @@
+- name: Excel Copy Paste
+  description: Finds and removes duplicate rows in excel file
+  slug: excel-copy-paste
+  icon: excel_copy_paste_icon.png
+  screenshots:
+    - excel_copy_paste_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - excel
+    - clipboard
+  applications:
+    - Javascript
+    - Excel
