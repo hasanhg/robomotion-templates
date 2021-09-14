@@ -705,7 +705,7 @@
     ]
   },
   {
-    "name": "Download File From web",
+    "name": "Download File From Web",
     "description": "Downloads file from web to specified path",
     "slug": "download-file-from-web",
     "icon": "download_file_from_web_icon.png",
