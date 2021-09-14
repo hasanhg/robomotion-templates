@@ -137,6 +137,25 @@
     ]
   },
   {
+    "name": "Duplicate Rows Remover",
+    "description": "Finds and removes duplicate rows in excel file",
+    "slug": "duplicate-rows-remover",
+    "icon": "duplicate_rows_remover_icon.png",
+    "screenshots": [
+      "duplicate_rows_remover_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "excel",
+      "remover"
+    ],
+    "applications": [
+      "Excel",
+      "Javascript"
+    ]
+  },
+  {
     "name": "Excel To CSV",
     "description": "Converts an excel file to a csv file in your file system",
     "slug": "excel-to-csv",
