@@ -1,0 +1,13 @@
+- name: Click To Specific Point
+  description: Clicks to specified point in the screen with mouse.
+  slug: click-to-specific-point
+  icon: click_to_specific_point_icon.png
+  screenshots:
+    - click_to_specific_point_screenshot.png
+  author: Robomotion
+  category: Hardware
+  tags:
+    - mouse
+    - click
+  applications:
+    - Mouse

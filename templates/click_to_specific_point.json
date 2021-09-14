@@ -1,0 +1,578 @@
+{
+	"nodes": [{
+		"id": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+		"type": "simple",
+		"selected": true,
+		"x": 796.578947368421,
+		"y": 75.52631578947368,
+		"extras": {
+			"inPayload": {
+				"name": "Date.now()",
+				"scope": "JS"
+			},
+			"outPayload": {
+				"name": "payload",
+				"scope": "Message"
+			},
+			"optOnce": true,
+			"optOnceDelay": 0.1,
+			"optRepeat": 1
+		},
+		"ports": [{
+			"id": "fff52afd-4874-4a0d-b620-40e3243bac15",
+			"type": "default",
+			"selected": false,
+			"name": "out_fff52afd-4874-4a0d-b620-40e3243bac15",
+			"parentNode": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+			"links": ["b26df2e3-1713-43c9-aaf8-d013be229893"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#FDD835",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Start",
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				}
+			}, {
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				}
+			}, {
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			}],
+			"xyz": [{
+				"formData": {
+					"inPayload": {
+						"name": "Date.now()",
+						"scope": "JS"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPayload": {
+							"argsScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"outPayload": {
+						"name": "payload",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outPayload": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optOnce": true,
+					"optOnceDelay": 0.1,
+					"optRepeat": 1
+				},
+				"schema": {
+					"properties": {
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						},
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+		"type": "simple",
+		"selected": true,
+		"x": 794.7218045112782,
+		"y": 246.18045112781954,
+		"extras": {
+			"outResult": {
+				"name": "error",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "1d4a0b63-0e97-4f1a-bee7-400b422f1d46",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+			"links": ["a1617d4f-4459-466f-bba9-3f433dfda9bf"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"name": "error",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"outResult": {
+						"name": "error",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outResult": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Error",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "5e27e0e3-c1c8-44e4-bf18-31d89ef366d2",
+		"type": "simple",
+		"selected": true,
+		"x": 316,
+		"y": -45.2857142857143,
+		"extras": {
+			"optText": "##### Click To Specific Point\n\nThis template reads clipboard content and shows it in message box\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.x_coordinate field with the X coordinate value of the point in the screen you want to click.\n\n**3.** Update msg.y_coordinate field with the Y coordinate value of the point in the screen you want to click.\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "5e27e0e3-c1c8-44e4-bf18-31d89ef366d2",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Click To Specific Point\n\nThis template reads clipboard content and shows it in message box\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.x_coordinate field with the X coordinate value of the point in the screen you want to click.\n\n**3.** Update msg.y_coordinate field with the Y coordinate value of the point in the screen you want to click.\n"
+			}],
+			"xyz": [{
+				"formData": {
+					"optText": "##### Click To Specific Point\n\nThis template reads clipboard content and shows it in message box\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.x_coordinate field with the X coordinate value of the point in the screen you want to click.\n\n**3.** Update msg.y_coordinate field with the Y coordinate value of the point in the screen you want to click.\n"
+				},
+				"schema": {
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"comment": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"optText": {
+						"ui:description": "Comment",
+						"ui:options": {
+							"rows": 8
+						},
+						"ui:widget": "hidden"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "cba4f7f8-6670-4135-83f0-f83129614572",
+		"type": "simple",
+		"selected": true,
+		"x": 794.8943559880091,
+		"y": 126.43255196815568,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.x_coordinate = 250; //[Required] The x coordinate value of the point you want to click\nmsg.y_coordinate = 250; //[Required] The y coordinate value of the point you want to click\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "c265a0a6-4e78-4726-b066-e1ff40bb110e",
+			"type": "default",
+			"selected": false,
+			"name": "out_c265a0a6-4e78-4726-b066-e1ff40bb110e",
+			"parentNode": "cba4f7f8-6670-4135-83f0-f83129614572",
+			"links": ["1ec15c15-5424-4771-8166-b5bc587715d1"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "aa37978b-2ce7-4757-b1c0-ea79b8d0918a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "cba4f7f8-6670-4135-83f0-f83129614572",
+			"links": ["b26df2e3-1713-43c9-aaf8-d013be229893"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "cba4f7f8-6670-4135-83f0-f83129614572",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.x_coordinate = 250; //[Required] The x coordinate value of the point you want to click\nmsg.y_coordinate = 250; //[Required] The y coordinate value of the point you want to click\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.x_coordinate = 250; //[Required] The x coordinate value of the point you want to click\nmsg.y_coordinate = 250; //[Required] The y coordinate value of the point you want to click\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "ca1b1b52-d0c3-4898-9d37-3a38b460a3e9",
+		"type": "simple",
+		"selected": true,
+		"x": 800.6838296722198,
+		"y": 186.01149933657675,
+		"extras": {
+			"inX": {
+				"scope": "Message",
+				"name": "x_coordinate"
+			},
+			"inY": {
+				"scope": "Message",
+				"name": "y_coordinate"
+			},
+			"optButtonType": "left",
+			"optClickType": "single-click",
+			"optKeyModifier": "none"
+		},
+		"ports": [{
+			"id": "5e47ecdd-c440-4a59-bf14-9173aa878be8",
+			"type": "default",
+			"selected": false,
+			"name": "out_5e47ecdd-c440-4a59-bf14-9173aa878be8",
+			"parentNode": "ca1b1b52-d0c3-4898-9d37-3a38b460a3e9",
+			"links": ["a1617d4f-4459-466f-bba9-3f433dfda9bf"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f29d8b37-511e-4ef8-8e1d-c18bc2944ec5",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ca1b1b52-d0c3-4898-9d37-3a38b460a3e9",
+			"links": ["1ec15c15-5424-4771-8166-b5bc587715d1"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ca1b1b52-d0c3-4898-9d37-3a38b460a3e9",
+			"name": "Click To Point",
+			"icon": "M11,1.07C7.05,1.56 4,4.92 4,9H11M4,15A8,8 0 0,0 12,23A8,8 0 0,0 20,15V11H4M13,1.07V9H20C20,4.92 16.94,1.56 13,1.07Z",
+			"color": "#0078DE",
+			"namespace": "Core.Mouse.Click",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Click To Point",
+				"color": "#0078DE",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inX": {
+					"scope": "Message",
+					"name": "x_coordinate"
+				},
+				"inY": {
+					"scope": "Message",
+					"name": "y_coordinate"
+				}
+			}, {
+				"optButtonType": "left",
+				"optClickType": "single-click",
+				"optKeyModifier": "none"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inX": {
+							"type": "object",
+							"title": "X Coordinate",
+							"variableType": "Integer",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inY": {
+							"type": "object",
+							"title": "Y Coordinate",
+							"variableType": "Integer",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inX": {
+						"ui:field": "variable"
+					},
+					"inY": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inX": {
+						"scope": "Message",
+						"name": "x_coordinate"
+					},
+					"inY": {
+						"scope": "Message",
+						"name": "y_coordinate"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optButtonType": {
+							"type": "string",
+							"title": "Mouse Button",
+							"multiple": true,
+							"enum": ["left", "center", "right"],
+							"enumNames": ["Left Button", "Center Button", "Right Button"]
+						},
+						"optClickType": {
+							"type": "string",
+							"title": "Click Type",
+							"multiple": true,
+							"enum": ["single-click", "double-click", "button-press", "button-release"],
+							"enumNames": ["Single Click", "Double Click", "Button Press", "Button Release"]
+						},
+						"optKeyModifier": {
+							"type": "string",
+							"title": "Key Modifier",
+							"multiple": true,
+							"enum": ["none", "alt", "ctrl", "shift", "win"],
+							"enumNames": ["None", "Alt", "Ctrl", "Shift", "Win"]
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optButtonType", "optClickType", "optKeyModifier"]
+				},
+				"formData": {
+					"optButtonType": "left",
+					"optClickType": "single-click",
+					"optKeyModifier": "none"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}
