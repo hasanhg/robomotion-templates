@@ -804,7 +804,7 @@
     "name": "Run Process",
     "description": "Runs an executable file, and shows the standart output of the process in message box.",
     "slug": "run-process",
-    "icon": "run_process_icon_icon.png",
+    "icon": "run_process_icon.png",
     "screenshots": [
       "run_process_screenshot1.png",
       "run_process_screenshot2.png"
