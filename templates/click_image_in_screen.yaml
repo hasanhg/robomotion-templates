@@ -1,5 +1,5 @@
 - name: Click Image In Screen
-  description: Searches a predefined image in the screen. If finds an image with a confidence level which is larger than specified confidence value, clicks to it.
+  description: Searches a predefined image in the screen. If finds an image with enough confidence value, clicks to it.
   slug: click-image-in-screen
   icon: click_image_in_screen_icon.png
   screenshots:
