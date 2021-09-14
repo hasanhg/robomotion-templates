@@ -799,5 +799,25 @@
     "applications": [
       "Vision"
     ]
+  },
+  {
+    "name": "Run Process",
+    "description": "Runs an executable file, and shows the standart output of the process in message box.",
+    "slug": "run-process",
+    "icon": "run_process_icon_icon.png",
+    "screenshots": [
+      "run_process_screenshot1.png",
+      "run_process_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "process",
+      "executable_file",
+      "exe"
+    ],
+    "applications": [
+      "Process"
+    ]
   }
 ]
