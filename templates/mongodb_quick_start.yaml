@@ -1,0 +1,16 @@
+- name: MongoDB Quick Start
+  description: This flow shows create database, collection and some document operations in MongoDB
+  slug: mongodb-quick-start
+  icon: mongodb_quick_start_icon.png
+  screenshots:
+    - mongodb_quick_start_screenshot.png
+  author: Robomotion
+  category: Business Intelligence
+  tags:
+    - database
+    - javascript
+    - mongodb
+  applications:
+    - Javascript
+    - MongoDB
+    
