@@ -683,5 +683,25 @@
       "Slack",
       "Javascript"
     ]
+  },
+  {
+    "name": "Send Get Request",
+    "description": "Sends Get request to sample server and shows it's response in message box",
+    "slug": "send-get-request",
+    "icon": "send_get_request_icon.png",
+    "screenshots": [
+      "send_get_request_screenshot1.png",
+      "send_get_request_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "API",
+    "tags": [
+      "api",
+      "request",
+      "rest"
+    ],
+    "applications": [
+      "REST"
+    ]
   }
 ]
