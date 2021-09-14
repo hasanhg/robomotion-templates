@@ -1,6 +1,6 @@
 #### Excel Copy Paste
 
-This template shows copy and paste between sheets in excel file 
+This template shows how to copy and paste data between sheets in excel file 
 
 ###### How it Works?
 
@@ -9,3 +9,5 @@ This template shows copy and paste between sheets in excel file
 **2.** Set the msg.path field to the excel file.
 
 **3.** If not required don't edit other sheet fields in Config node.
+
+Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)
