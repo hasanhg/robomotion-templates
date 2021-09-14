@@ -78,6 +78,44 @@
     ]
   },
   {
+    "name": "Click Image In Screen",
+    "description": "Searches a predefined image in the screen. If finds an image with enough confidence value, clicks to it.",
+    "slug": "click-image-in-screen",
+    "icon": "click_image_in_screen_icon.png",
+    "screenshots": [
+      "click_image_in_screen_screenshot1.png",
+      "click_image_in_screen_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Vision",
+    "tags": [
+      "image",
+      "search",
+      "click"
+    ],
+    "applications": [
+      "Vision"
+    ]
+  },
+  {
+    "name": "Click To Specific Point",
+    "description": "Clicks to specified point in the screen with mouse.",
+    "slug": "click-to-specific-point",
+    "icon": "click_to_specific_point_icon.png",
+    "screenshots": [
+      "click_to_specific_point_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Hardware",
+    "tags": [
+      "mouse",
+      "click"
+    ],
+    "applications": [
+      "Mouse"
+    ]
+  },
+  {
     "name": "Content Checker",
     "description": "Checks spesific field in given website url and notifies if content has changed.",
     "slug": "content-checker",
@@ -111,6 +149,25 @@
     ],
     "applications": [
       "REST"
+    ]
+  },
+  {
+    "name": "Download File From web",
+    "description": "Downloads file from web to specified path",
+    "slug": "download-file-from-web",
+    "icon": "download_file_from_web_icon.png",
+    "screenshots": [
+      "download_file_from_web_screenshot1.png",
+      "download_file_from_web_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "download",
+      "file"
+    ],
+    "applications": [
+      "Web"
     ]
   },
   {
@@ -151,8 +208,27 @@
       "remover"
     ],
     "applications": [
-      "Excel",
-      "Javascript"
+      "Javascript",
+      "Excel"
+    ]
+  },
+  {
+    "name": "Excel Copy Paste",
+    "description": "Copies and pastes data between sheets",
+    "slug": "excel-copy-paste",
+    "icon": "excel_copy_paste_icon.png",
+    "screenshots": [
+      "excel_copy_paste_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "excel",
+      "clipboard"
+    ],
+    "applications": [
+      "Javascript",
+      "Excel"
     ]
   },
   {
@@ -176,22 +252,62 @@
     ]
   },
   {
-    "name": "Excel Copy Paste",
-    "description": "Copies and pastes data between sheets",
-    "slug": "excel-copy-paste",
-    "icon": "excel_copy_paste_icon.png",
+    "name": "Get Instagram Highlights",
+    "description": "Lists Instagram highlights of multiple accounts and saves them to specified folder",
+    "slug": "get-instagram-highlights",
+    "icon": "get_instagram_highlights_icon.png",
     "screenshots": [
-      "excel_copy_paste_screenshot.png"
+      "get_instagram_highlights_screenshot1.png",
+      "get_instagram_highlights_screenshot2.png",
+      "get_instagram_highlights_screenshot3.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Social Media",
     "tags": [
-      "excel",
-      "clipboard"
+      "instagram",
+      "social media",
+      "highlight"
     ],
     "applications": [
-      "Excel",
-      "Javascript"
+      "Instagram"
+    ]
+  },
+  {
+    "name": "Get Instagram Stories",
+    "description": "Lists Instagram stories of multiple accounts and saves them to specified folder",
+    "slug": "get-instagram-stories",
+    "icon": "get_instagram_stories_icon.png",
+    "screenshots": [
+      "get_instagram_stories_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "instagram",
+      "social media",
+      "story"
+    ],
+    "applications": [
+      "Instagram"
+    ]
+  },
+  {
+    "name": "Get Tweet Count",
+    "description": "Returns the tweet count that specified accounts tweeted",
+    "slug": "get-tweet-count",
+    "icon": "get_tweet_count_icon.png",
+    "screenshots": [
+      "get_tweet_count_screenshot1.png",
+      "get_tweet_count_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
     ]
   },
   {
@@ -291,8 +407,8 @@
       "mongodb"
     ],
     "applications": [
-      "MongoDB",
-      "Javascript"
+      "Javascript",
+      "MongoDB"
     ]
   },
   {
@@ -312,6 +428,45 @@
     ],
     "applications": [
       "Javascript"
+    ]
+  },
+  {
+    "name": "Process Tasks Parallely",
+    "description": "Shows how to process list of task parallely.",
+    "slug": "process-tasks-parallely",
+    "icon": "process_tasks_parallely_icon.png",
+    "screenshots": [
+      "process_tasks_parallely_screenshot1.png",
+      "process_tasks_parallely_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "branching",
+      "parallel_processing"
+    ],
+    "applications": [
+      "Slack",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Read From Clipboard",
+    "description": "Reads the clipboard content, and shows it in message box.",
+    "slug": "read-from-clipboard",
+    "icon": "read_from_clipboard_icon.png",
+    "screenshots": [
+      "read_from_clipboard_screenshot1.png",
+      "read_from_clipboard_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "clipboard",
+      "paste"
+    ],
+    "applications": [
+      "Clipboard"
     ]
   },
   {
@@ -368,6 +523,26 @@
     ]
   },
   {
+    "name": "Run Process",
+    "description": "Runs an executable file, and shows the standart output of the process in message box.",
+    "slug": "run-process",
+    "icon": "run_process_icon.png",
+    "screenshots": [
+      "run_process_screenshot1.png",
+      "run_process_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "process",
+      "executable_file",
+      "exe"
+    ],
+    "applications": [
+      "Process"
+    ]
+  },
+  {
     "name": "Screen Capture",
     "description": "Browser screen capture example",
     "slug": "screen-capture",
@@ -384,6 +559,26 @@
     ],
     "applications": [
       "Chrome"
+    ]
+  },
+  {
+    "name": "Send Get Request",
+    "description": "Sends Get request to sample server and shows it's response in message box",
+    "slug": "send-get-request",
+    "icon": "send_get_request_icon.png",
+    "screenshots": [
+      "send_get_request_screenshot1.png",
+      "send_get_request_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "API",
+    "tags": [
+      "api",
+      "request",
+      "rest"
+    ],
+    "applications": [
+      "REST"
     ]
   },
   {
@@ -601,25 +796,6 @@
     ]
   },
   {
-    "name": "Get Tweet Count",
-    "description": "Returns the tweet count that specified accounts tweeted",
-    "slug": "get-tweet-count",
-    "icon": "get_tweet_count_icon.png",
-    "screenshots": [
-      "get_tweet_count_screenshot1.png",
-      "get_tweet_count_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "social media",
-      "twitter"
-    ],
-    "applications": [
-      "Twitter"
-    ]
-  },
-  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -659,6 +835,26 @@
     ]
   },
   {
+    "name": "Write To Clipboard",
+    "description": "Receives an input from user, and copies it to clipboard.",
+    "slug": "write-to-clipboard",
+    "icon": "write_to_clipboard_icon.png",
+    "screenshots": [
+      "write_to_clipboard_screenshot1.png",
+      "write_to_clipboard_screenshot2.png",
+      "write_to_clipboard_screenshot3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "clipboard",
+      "copy"
+    ],
+    "applications": [
+      "Clipboard"
+    ]
+  },
+  {
     "name": "Youtube Video Stats",
     "description": "Extracts video stats from a Youtube video",
     "slug": "youtube-video-stats",
@@ -680,202 +876,6 @@
     "applications": [
       "Chrome",
       "Javascript"
-    ]
-  },
-  {
-    "name": "Get Instagram Stories",
-    "description": "Lists Instagram stories of multiple accounts and saves them to specified folder",
-    "slug": "get-instagram-stories",
-    "icon": "get_instagram_stories_icon.png",
-    "screenshots": [
-      "get_instagram_stories_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "instagram",
-      "social media",
-      "story"
-    ],
-    "applications": [
-      "Instagram"
-    ]
-  },
-  {
-    "name": "Get Instagram Highlights",
-    "description": "Lists Instagram highlights of multiple accounts and saves them to specified folder",
-    "slug": "get-instagram-highlights",
-    "icon": "get_instagram_highlights_icon.png",
-    "screenshots": [
-      "get_instagram_highlights_screenshot1.png",
-      "get_instagram_highlights_screenshot2.png",
-      "get_instagram_highlights_screenshot3.png"
-    ],
-    "author": "Robomotion",
-    "category": "Social Media",
-    "tags": [
-      "instagram",
-      "social media",
-      "highlight"
-    ],
-    "applications": [
-      "Instagram"
-    ]
-  },
-  {
-    "name": "Process Tasks Parallely",
-    "description": "Shows how to process list of task parallely",
-    "slug": "process-tasks-parallely",
-    "icon": "process_tasks_parallely_icon.png",
-    "screenshots": [
-      "process_tasks_parallely_screenshot1.png",
-      "process_tasks_parallely_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "branching",
-      "parallel_processing"
-    ],
-    "applications": [
-      "Slack",
-      "Javascript"
-    ]
-  },
-  {
-    "name": "Send Get Request",
-    "description": "Sends Get request to sample server and shows it's response in message box",
-    "slug": "send-get-request",
-    "icon": "send_get_request_icon.png",
-    "screenshots": [
-      "send_get_request_screenshot1.png",
-      "send_get_request_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "API",
-    "tags": [
-      "api",
-      "request",
-      "rest"
-    ],
-    "applications": [
-      "REST"
-    ]
-  },
-  {
-    "name": "Download File From Web",
-    "description": "Downloads file from web to specified path",
-    "slug": "download-file-from-web",
-    "icon": "download_file_from_web_icon.png",
-    "screenshots": [
-      "download_file_from_web_screenshot1.png",
-      "download_file_from_web_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "download",
-      "file"
-    ],
-    "applications": [
-      "Web"
-    ]
-  },
-  {
-    "name": "Write To Clipboard",
-    "description": "Receives an input from user, and copies it to clipboard.",
-    "slug": "write-to-clipboard",
-    "icon": "write_to_clipboard_icon.png",
-    "screenshots": [
-      "write_to_clipboard_screenshot1.png",
-      "write_to_clipboard_screenshot2.png",
-      "write_to_clipboard_screenshot3.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "clipboard",
-      "copy"
-    ],
-    "applications": [
-      "Clipboard"
-    ]
-  },
-  {
-    "name": "Read From Clipboard",
-    "description": "Reads the clipboard content, and shows it in message box.",
-    "slug": "read-from-clipboard",
-    "icon": "read_from_clipboard_icon.png",
-    "screenshots": [
-      "read_from_clipboard_screenshot1.png",
-      "read_from_clipboard_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "clipboard",
-      "paste"
-    ],
-    "applications": [
-      "Clipboard"
-    ]
-  },
-  {
-    "name": "Click To Specific Point",
-    "description": "Clicks to specified point in the screen with mouse.",
-    "slug": "click-to-specific-point",
-    "icon": "click_to_specific_point_icon.png",
-    "screenshots": [
-      "click_to_specific_point_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Hardware",
-    "tags": [
-      "mouse",
-      "click"
-    ],
-    "applications": [
-      "Mouse"
-    ]
-  },
-  {
-    "name": "Click Image In Screen",
-    "description": "Searches a predefined image in the screen. If finds an image with enough confidence value, clicks to it.",
-    "slug": "click-image-in-screen",
-    "icon": "click_image_in_screen_icon.png",
-    "screenshots": [
-      "click_image_in_screen_screenshot1.png",
-      "click_image_in_screen_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Vision",
-    "tags": [
-      "image",
-      "search",
-      "click"
-    ],
-    "applications": [
-      "Vision"
-    ]
-  },
-  {
-    "name": "Run Process",
-    "description": "Runs an executable file, and shows the standart output of the process in message box.",
-    "slug": "run-process",
-    "icon": "run_process_icon.png",
-    "screenshots": [
-      "run_process_screenshot1.png",
-      "run_process_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "process",
-      "executable_file",
-      "exe"
-    ],
-    "applications": [
-      "Process"
     ]
   }
 ]
