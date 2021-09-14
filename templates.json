@@ -736,7 +736,27 @@
     "author": "Robomotion",
     "category": "Other",
     "tags": [
-      "clipboard"
+      "clipboard",
+      "copy"
+    ],
+    "applications": [
+      "Clipboard"
+    ]
+  },
+  {
+    "name": "Read From Clipboard",
+    "description": "Reads the clipboard content, and shows it in message box.",
+    "slug": "read-from-clipboard",
+    "icon": "read_from_clipboard_icon.png",
+    "screenshots": [
+      "read_from_clipboard_screenshot1.png",
+      "read_from_clipboard_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "clipboard",
+      "paste"
     ],
     "applications": [
       "Clipboard"
