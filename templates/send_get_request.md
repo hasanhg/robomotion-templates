@@ -9,4 +9,4 @@ Sends get request to sample server and shows it's response in message box
 msg.service_address = "Your Service Address";
 ```
 
-Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)
+Icons made by [DinosoftLabs](https://www.flaticon.com/authors/dinosoftlabs) from [Flaticon](https://www.flaticon.com/)
