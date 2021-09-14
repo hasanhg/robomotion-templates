@@ -16,4 +16,4 @@ msg.y_coordinate = 250;
 ```
 
 Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/) and
-[srip] from [Flaticon](https://www.flaticon.com/)
+**srip** from [Flaticon](https://www.flaticon.com/)
