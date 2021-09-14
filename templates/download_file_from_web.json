@@ -1,0 +1,962 @@
+{
+	"nodes": [{
+		"id": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+		"type": "simple",
+		"selected": true,
+		"x": 441,
+		"y": 2,
+		"extras": {
+			"inPayload": {
+				"name": "Date.now()",
+				"scope": "JS"
+			},
+			"outPayload": {
+				"name": "payload",
+				"scope": "Message"
+			},
+			"optOnce": true,
+			"optOnceDelay": 0.1,
+			"optRepeat": 1
+		},
+		"ports": [{
+			"id": "fff52afd-4874-4a0d-b620-40e3243bac15",
+			"type": "default",
+			"selected": false,
+			"name": "out_fff52afd-4874-4a0d-b620-40e3243bac15",
+			"parentNode": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+			"links": ["486bea81-d875-4781-aa78-4ae819341f01"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#FDD835",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Start",
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				}
+			}, {
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				}
+			}, {
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			}],
+			"xyz": [{
+				"formData": {
+					"inPayload": {
+						"name": "Date.now()",
+						"scope": "JS"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPayload": {
+							"argsScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"outPayload": {
+						"name": "payload",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outPayload": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optOnce": true,
+					"optOnceDelay": 0.1,
+					"optRepeat": 1
+				},
+				"schema": {
+					"properties": {
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						},
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "9d6fa443-fb10-485b-8e65-d7f856f8ad91",
+		"type": "simple",
+		"selected": true,
+		"x": 424.1428571428571,
+		"y": 53.28571428571429,
+		"extras": {
+			"func": "msg.file_url = \"http://www.africau.edu/images/default/sample.pdf\"; //[Required] The url of the file you want to download\nmsg.download_path = \"C:\\\\download_file_from_web.pdf\" //[Required] The path of the downloaded file for saving\nreturn msg;",
+			"optTimeout": 30,
+			"outputs": 1,
+			"variables": []
+		},
+		"ports": [{
+			"id": "145e24f5-fd17-4b49-9038-56cf3c170d85",
+			"type": "default",
+			"selected": false,
+			"name": "out_145e24f5-fd17-4b49-9038-56cf3c170d85",
+			"parentNode": "9d6fa443-fb10-485b-8e65-d7f856f8ad91",
+			"links": ["ecb60332-7bfc-4402-ace2-c20435a026fd"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "27316b78-9f38-4967-b6b8-cd01d365d5f9",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "9d6fa443-fb10-485b-8e65-d7f856f8ad91",
+			"links": ["486bea81-d875-4781-aa78-4ae819341f01"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "9d6fa443-fb10-485b-8e65-d7f856f8ad91",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#F27925",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Config",
+				"version": "1.11.6"
+			}, {
+				"func": "msg.file_url = \"http://www.africau.edu/images/default/sample.pdf\"; //[Required] The url of the file you want to download\nmsg.download_path = \"C:\\\\download_file_from_web.pdf\" //[Required] The path of the downloaded file for saving\nreturn msg;",
+				"optTimeout": 30,
+				"outputs": 1
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"formData": {
+					"func": "msg.file_url = \"http://www.africau.edu/images/default/sample.pdf\"; //[Required] The url of the file you want to download\nmsg.download_path = \"C:\\\\download_file_from_web.pdf\" //[Required] The path of the downloaded file for saving\nreturn msg;",
+					"optTimeout": 30,
+					"outputs": 1
+				},
+				"schema": {
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						},
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"func": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					}
+				}
+			}, {
+				"formData": {
+					"variables": []
+				},
+				"schema": {
+					"properties": {
+						"variables": {
+							"items": {
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							},
+							"type": "array"
+						}
+					},
+					"title": "Local Variables",
+					"type": "object"
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+		"type": "simple",
+		"selected": true,
+		"x": 418.1428571428571,
+		"y": 282.2857142857143,
+		"extras": {
+			"outResult": {
+				"name": "error",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "1d4a0b63-0e97-4f1a-bee7-400b422f1d46",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+			"links": ["df63b0ca-0b0f-4be6-aaa3-5fd9cf319d23"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"name": "error",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"outResult": {
+						"name": "error",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outResult": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Error",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "5e27e0e3-c1c8-44e4-bf18-31d89ef366d2",
+		"type": "simple",
+		"selected": true,
+		"x": -23.000000000000004,
+		"y": 1.7142857142857006,
+		"extras": {
+			"optText": "##### Download File From Web\n\nThis template downloads file from web to your computer\n\nFollow these steps to test this template;\n\n**1.** Update msg.file_url with the url of the file you want to download\n\n**2.** Update msg.download_path with the path you want to save the downloaded file\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "5e27e0e3-c1c8-44e4-bf18-31d89ef366d2",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Download File From Web\n\nThis template downloads file from web to your computer\n\nFollow these steps to test this template;\n\n**1.** Update msg.file_url with the url of the file you want to download\n\n**2.** Update msg.download_path with the path you want to save the downloaded file\n"
+			}],
+			"xyz": [{
+				"formData": {
+					"optText": "##### Download File From Web\n\nThis template downloads file from web to your computer\n\nFollow these steps to test this template;\n\n**1.** Update msg.file_url with the url of the file you want to download\n\n**2.** Update msg.download_path with the path you want to save the downloaded file\n"
+				},
+				"schema": {
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"comment": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"optText": {
+						"ui:description": "Comment",
+						"ui:options": {
+							"rows": 8
+						},
+						"ui:widget": "hidden"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "99206b65-bf2e-4892-80e6-f682f052eb03",
+		"type": "simple",
+		"selected": true,
+		"x": 423.82142857142844,
+		"y": 105.71428571428572,
+		"extras": {
+			"inUrl": {
+				"scope": "Message",
+				"name": "file_url"
+			},
+			"inPath": {
+				"scope": "Message",
+				"name": "download_path"
+			},
+			"outPath": {
+				"scope": "Message",
+				"name": "path"
+			},
+			"optPattern": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"optCredentials": {
+				"vaultId": "_",
+				"itemId": "_"
+			},
+			"optTimeout": 60
+		},
+		"ports": [{
+			"id": "aa38f829-f47b-432e-b4ff-b1ee24a53244",
+			"type": "default",
+			"selected": false,
+			"name": "out_aa38f829-f47b-432e-b4ff-b1ee24a53244",
+			"parentNode": "99206b65-bf2e-4892-80e6-f682f052eb03",
+			"links": ["5e91f522-59c9-40d0-a95e-49c0666f36a6"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "2815d50b-bd91-4348-afc5-399104643575",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "99206b65-bf2e-4892-80e6-f682f052eb03",
+			"links": ["ecb60332-7bfc-4402-ace2-c20435a026fd"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "99206b65-bf2e-4892-80e6-f682f052eb03",
+			"name": "Download File",
+			"icon": "M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z",
+			"color": "#c9d9ff",
+			"namespace": "Core.Net.Download",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Download File",
+				"version": "1.11.6",
+				"color": "#c9d9ff",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inUrl": {
+					"scope": "Message",
+					"name": "file_url"
+				},
+				"inPath": {
+					"scope": "Message",
+					"name": "download_path"
+				}
+			}, {
+				"outPath": {
+					"scope": "Message",
+					"name": "path"
+				}
+			}, {
+				"optPattern": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"optCredentials": {
+					"vaultId": "_",
+					"itemId": "_"
+				},
+				"optTimeout": 60
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inUrl": {
+							"type": "object",
+							"title": "URL",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inPath": {
+							"type": "object",
+							"title": "Download Path",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inUrl": {
+						"ui:field": "variable"
+					},
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inUrl", "inPath"]
+				},
+				"formData": {
+					"inUrl": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inPath": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPath": {
+							"type": "object",
+							"title": "Path",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPath": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPath": {
+						"scope": "Message",
+						"name": "path"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Basic Authentication",
+							"subtitle": "",
+							"category": 1,
+							"properties": {
+								"vaultId": {
+									"type": "string"
+								},
+								"itemId": {
+									"type": "string"
+								}
+							}
+						},
+						"optTimeout": {
+							"title": "Timeout",
+							"type": "number"
+						},
+						"optPattern": {
+							"type": "object",
+							"title": "TempFile Pattern",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optPattern": {
+						"ui:field": "variable"
+					},
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optCredentials", "optPattern", "optTimeout"]
+				},
+				"formData": {
+					"optPattern": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"optCredentials": {
+						"vaultId": "_",
+						"itemId": "_"
+					},
+					"optTimeout": 60
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "72910e2b-5fde-4b35-b523-af61938fb6ef",
+		"type": "simple",
+		"selected": true,
+		"x": 424.82142857142844,
+		"y": 160.71428571428572,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.message = \"Download Path: \" + msg.download_path;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "c3a85bf2-68e3-40b4-b5cb-fa26e4cc8e34",
+			"type": "default",
+			"selected": false,
+			"name": "out_c3a85bf2-68e3-40b4-b5cb-fa26e4cc8e34",
+			"parentNode": "72910e2b-5fde-4b35-b523-af61938fb6ef",
+			"links": ["7f0eff13-1e07-450d-a22d-378ef567c6ff"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d1a8b7b1-42ce-4bf2-b57c-e263674f5df8",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "72910e2b-5fde-4b35-b523-af61938fb6ef",
+			"links": ["5e91f522-59c9-40d0-a95e-49c0666f36a6"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "72910e2b-5fde-4b35-b523-af61938fb6ef",
+			"name": "Prepare Message",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Prepare Message",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.message = \"Download Path: \" + msg.download_path;\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.message = \"Download Path: \" + msg.download_path;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+		"type": "simple",
+		"selected": true,
+		"x": 426.82142857142844,
+		"y": 218.71428571428572,
+		"extras": {
+			"inText": {
+				"scope": "Message",
+				"name": "message"
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "Download Finished"
+			},
+			"outConfirmed": {
+				"scope": "Message",
+				"name": "confirmed"
+			},
+			"optType": "info"
+		},
+		"ports": [{
+			"id": "bef6fdf4-7acd-4909-9bdb-ae3ae53aa9ac",
+			"type": "default",
+			"selected": false,
+			"name": "out_bef6fdf4-7acd-4909-9bdb-ae3ae53aa9ac",
+			"parentNode": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+			"links": ["df63b0ca-0b0f-4be6-aaa3-5fd9cf319d23"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "2bd521fc-3bef-483b-bdc3-60a75752b3b0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+			"links": ["7f0eff13-1e07-450d-a22d-378ef567c6ff"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+			"name": "Show Message",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.MessageBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Show Message",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inText": {
+					"scope": "Message",
+					"name": "message"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "Download Finished"
+				}
+			}, {
+				"outConfirmed": {
+					"scope": "Message",
+					"name": "confirmed"
+				}
+			}, {
+				"optType": "info"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTitle": {
+							"type": "object",
+							"title": "Title",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["inTitle", "inText"],
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inTitle": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inText": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outConfirmed": {
+							"type": "object",
+							"title": "Confirmed",
+							"variableType": "Boolean",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outConfirmed": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outConfirmed": {
+						"scope": "Message",
+						"name": "confirmed"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optType": {
+							"type": "string",
+							"title": "Type",
+							"enum": ["yesno", "info", "error"],
+							"enumNames": ["Yes / No", "Info", "Error"]
+						}
+					}
+				},
+				"uiSchema": {},
+				"formData": {
+					"optType": "info"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

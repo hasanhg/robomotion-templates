@@ -1,0 +1,897 @@
+{
+	"nodes": [{
+		"id": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+		"type": "simple",
+		"selected": true,
+		"x": 431,
+		"y": 1,
+		"extras": {
+			"inPayload": {
+				"name": "Date.now()",
+				"scope": "JS"
+			},
+			"outPayload": {
+				"name": "payload",
+				"scope": "Message"
+			},
+			"optOnce": true,
+			"optOnceDelay": 0.1,
+			"optRepeat": 1
+		},
+		"ports": [{
+			"id": "fff52afd-4874-4a0d-b620-40e3243bac15",
+			"type": "default",
+			"selected": false,
+			"name": "out_fff52afd-4874-4a0d-b620-40e3243bac15",
+			"parentNode": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+			"links": ["c12441a8-6c41-4fd4-89ab-7ff66c09f71c"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "cb464e74-23f6-45ee-af4d-bc6560bde01c",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#FDD835",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Start",
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				}
+			}, {
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				}
+			}, {
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			}],
+			"xyz": [{
+				"formData": {
+					"inPayload": {
+						"name": "Date.now()",
+						"scope": "JS"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPayload": {
+							"argsScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"outPayload": {
+						"name": "payload",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outPayload": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optOnce": true,
+					"optOnceDelay": 0.1,
+					"optRepeat": 1
+				},
+				"schema": {
+					"properties": {
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						},
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+		"type": "simple",
+		"selected": true,
+		"x": 419.1428571428571,
+		"y": 275.2857142857143,
+		"extras": {
+			"outResult": {
+				"name": "error",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "1d4a0b63-0e97-4f1a-bee7-400b422f1d46",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+			"links": ["df63b0ca-0b0f-4be6-aaa3-5fd9cf319d23"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c19065f5-a1db-4bb3-90c5-0414d0b49a01",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"name": "error",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"outResult": {
+						"name": "error",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outResult": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Error",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "5e27e0e3-c1c8-44e4-bf18-31d89ef366d2",
+		"type": "simple",
+		"selected": true,
+		"x": 19,
+		"y": 27.7142857142857,
+		"extras": {
+			"optText": "##### Write To Clipboard\n\nThis template receives a message from user, and copies it to clipboard\n\nFollow these steps to test this template;\n\n**1.** Just run the flow\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "5e27e0e3-c1c8-44e4-bf18-31d89ef366d2",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Write To Clipboard\n\nThis template receives a message from user, and copies it to clipboard\n\nFollow these steps to test this template;\n\n**1.** Just run the flow\n"
+			}],
+			"xyz": [{
+				"formData": {
+					"optText": "##### Write To Clipboard\n\nThis template receives a message from user, and copies it to clipboard\n\nFollow these steps to test this template;\n\n**1.** Just run the flow\n"
+				},
+				"schema": {
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"comment": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"optText": {
+						"ui:description": "Comment",
+						"ui:options": {
+							"rows": 8
+						},
+						"ui:widget": "hidden"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+		"type": "simple",
+		"selected": true,
+		"x": 422.82142857142844,
+		"y": 218.71428571428572,
+		"extras": {
+			"inText": {
+				"name": "message",
+				"scope": "Message"
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "Your Message Copied To Clipboard"
+			},
+			"outConfirmed": {
+				"name": "confirmed",
+				"scope": "Message"
+			},
+			"optType": "info"
+		},
+		"ports": [{
+			"id": "bef6fdf4-7acd-4909-9bdb-ae3ae53aa9ac",
+			"type": "default",
+			"selected": false,
+			"name": "out_bef6fdf4-7acd-4909-9bdb-ae3ae53aa9ac",
+			"parentNode": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+			"links": ["df63b0ca-0b0f-4be6-aaa3-5fd9cf319d23"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "2bd521fc-3bef-483b-bdc3-60a75752b3b0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+			"links": ["23c2796d-18b8-43e3-a546-c4b529eb5f88"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "96cd45fa-f0d9-499d-80f1-e170c4b1f293",
+			"name": "Show Message",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.MessageBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Show Message",
+				"version": "1.11.6",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inText": {
+					"name": "message",
+					"scope": "Message"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "Your Message Copied To Clipboard"
+				}
+			}, {
+				"outConfirmed": {
+					"name": "confirmed",
+					"scope": "Message"
+				}
+			}, {
+				"optType": "info"
+			}],
+			"xyz": [{
+				"formData": {
+					"inText": {
+						"name": "message",
+						"scope": "Message"
+					},
+					"inTitle": {
+						"name": "Download Finished",
+						"scope": "Custom"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inText": {
+							"customScope": true,
+							"jsScope": true,
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Text",
+							"type": "object",
+							"variableType": "String"
+						},
+						"inTitle": {
+							"customScope": true,
+							"jsScope": true,
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Title",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inTitle", "inText"]
+				}
+			}, {
+				"formData": {
+					"outConfirmed": {
+						"name": "confirmed",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outConfirmed": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Confirmed",
+							"type": "object",
+							"variableType": "Boolean"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outConfirmed": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optType": "info"
+				},
+				"schema": {
+					"properties": {
+						"optType": {
+							"enum": ["yesno", "info", "error"],
+							"enumNames": ["Yes / No", "Info", "Error"],
+							"title": "Type",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "de88c60f-0b5e-4ec0-80c2-4ce9d9dae019",
+		"type": "simple",
+		"selected": true,
+		"x": 430.82142857142844,
+		"y": 53.71428571428572,
+		"extras": {
+			"inText": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "Type Something For Copying To Clipboard"
+			},
+			"outText": {
+				"scope": "Message",
+				"name": "text"
+			},
+			"optDefault": {
+				"scope": "Custom",
+				"name": ""
+			}
+		},
+		"ports": [{
+			"id": "f4c0be42-0bfe-4eb6-9679-fc96799bf6ab",
+			"type": "default",
+			"selected": false,
+			"name": "out_f4c0be42-0bfe-4eb6-9679-fc96799bf6ab",
+			"parentNode": "de88c60f-0b5e-4ec0-80c2-4ce9d9dae019",
+			"links": ["d5b456f1-2052-41a1-91bd-01f883cd11b7"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d5e8479c-cc81-4f50-af3c-e5a97bd9a3d3",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "de88c60f-0b5e-4ec0-80c2-4ce9d9dae019",
+			"links": ["c12441a8-6c41-4fd4-89ab-7ff66c09f71c"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "de88c60f-0b5e-4ec0-80c2-4ce9d9dae019",
+			"name": "Get Clipboard Data",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.InputBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Get Clipboard Data",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inText": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "Type Something For Copying To Clipboard"
+				}
+			}, {
+				"outText": {
+					"scope": "Message",
+					"name": "text"
+				}
+			}, {
+				"optDefault": {
+					"scope": "Custom",
+					"name": ""
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTitle": {
+							"type": "object",
+							"title": "Title",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["inTitle", "inText"],
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inTitle": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inText": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outText": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outText": {
+						"scope": "Message",
+						"name": "text"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optDefault": {
+							"type": "object",
+							"title": "Default Value",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optDefault": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optDefault": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "aae85847-915e-4048-a2be-01e82967b179",
+		"type": "simple",
+		"selected": true,
+		"x": 428.82142857142844,
+		"y": 109.71428571428572,
+		"extras": {
+			"inText": {
+				"scope": "Message",
+				"name": "text"
+			}
+		},
+		"ports": [{
+			"id": "965d7bdc-359e-4b26-b058-6cc96548b2a7",
+			"type": "default",
+			"selected": false,
+			"name": "out_965d7bdc-359e-4b26-b058-6cc96548b2a7",
+			"parentNode": "aae85847-915e-4048-a2be-01e82967b179",
+			"links": ["87b4a972-5ae7-4924-bbe1-e1a4a5040ccb"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "44bc5ed2-5699-4437-b2ba-2c4a4bef0220",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "aae85847-915e-4048-a2be-01e82967b179",
+			"links": ["d5b456f1-2052-41a1-91bd-01f883cd11b7"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "aae85847-915e-4048-a2be-01e82967b179",
+			"name": "Copy To Clipboard",
+			"icon": "M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3",
+			"color": "#00E5FF",
+			"namespace": "Core.Clipboard.Set",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Copy To Clipboard",
+				"color": "#00E5FF",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inText": {
+					"scope": "Message",
+					"name": "text"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inText": {
+							"type": "object",
+							"title": "Clipboard Data",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inText": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inText": {
+						"scope": "Message",
+						"name": "text"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "f0d0abc9-24f2-45bc-b690-3cb8701d9093",
+		"type": "simple",
+		"selected": true,
+		"x": 422.82142857142844,
+		"y": 165.71428571428572,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.message = \"Just send ctlr + v short cut to anywhere to see clipboard content\";\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "3341cb87-bde0-43f0-aea9-8978ac5e9f16",
+			"type": "default",
+			"selected": false,
+			"name": "out_3341cb87-bde0-43f0-aea9-8978ac5e9f16",
+			"parentNode": "f0d0abc9-24f2-45bc-b690-3cb8701d9093",
+			"links": ["23c2796d-18b8-43e3-a546-c4b529eb5f88"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "40ba11a8-1eca-4230-8c5d-69d8da0cac9a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "f0d0abc9-24f2-45bc-b690-3cb8701d9093",
+			"links": ["87b4a972-5ae7-4924-bbe1-e1a4a5040ccb"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "f0d0abc9-24f2-45bc-b690-3cb8701d9093",
+			"name": "Prepare Message",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Prepare Message",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.message = \"Just send ctlr + v short cut to anywhere to see clipboard content\";\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.message = \"Just send ctlr + v short cut to anywhere to see clipboard content\";\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

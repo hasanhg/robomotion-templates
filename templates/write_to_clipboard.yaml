@@ -1,0 +1,15 @@
+- name: Write To Clipboard
+  description: Receives an input from user, and copies it to clipboard.
+  slug: write-to-clipboard
+  icon: write_to_clipboard_icon.png
+  screenshots:
+    - write_to_clipboard_screenshot1.png
+    - write_to_clipboard_screenshot2.png
+    - write_to_clipboard_screenshot3.png
+  author: Robomotion
+  category: Other
+  tags:
+    - clipboard
+    - copy
+  applications:
+    - Clipboard
