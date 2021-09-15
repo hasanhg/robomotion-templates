@@ -112,7 +112,7 @@
       "click"
     ],
     "applications": [
-      "Mouse"
+      "System"
     ]
   },
   {
@@ -466,7 +466,7 @@
       "paste"
     ],
     "applications": [
-      "Clipboard"
+      "System"
     ]
   },
   {
@@ -539,7 +539,7 @@
       "exe"
     ],
     "applications": [
-      "Process"
+      "System"
     ]
   },
   {
@@ -852,7 +852,7 @@
       "copy"
     ],
     "applications": [
-      "Clipboard"
+      "System"
     ]
   },
   {
