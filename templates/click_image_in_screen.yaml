@@ -6,7 +6,7 @@
     - click_image_in_screen_screenshot1.png
     - click_image_in_screen_screenshot2.png
   author: Robomotion
-  category: Vision
+  category: Other
   tags:
     - image
     - search

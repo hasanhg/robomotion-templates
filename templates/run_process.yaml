@@ -12,4 +12,4 @@
     - executable_file
     - exe
   applications:
-    - Process
+    - System

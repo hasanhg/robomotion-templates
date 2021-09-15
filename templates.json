@@ -27,7 +27,7 @@
       "birthday_celebrator_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Messaging",
+    "category": "Communication",
     "tags": [
       "chat",
       "messaging"
@@ -87,7 +87,7 @@
       "click_image_in_screen_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Vision",
+    "category": "Other",
     "tags": [
       "image",
       "search",
@@ -106,13 +106,13 @@
       "click_to_specific_point_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Hardware",
+    "category": "Other",
     "tags": [
       "mouse",
       "click"
     ],
     "applications": [
-      "Mouse"
+      "System"
     ]
   },
   {
@@ -124,7 +124,7 @@
       "content_checker_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Productivity",
+    "category": "Monitoring",
     "tags": [
       "monitoring"
     ],
@@ -142,7 +142,7 @@
       "dollar_euro_parity_as_service_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Monitoring",
+    "category": "Productivity",
     "tags": [
       "rest",
       "api"
@@ -161,7 +161,7 @@
       "download_file_from_web_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Files",
     "tags": [
       "download",
       "file"
@@ -179,7 +179,7 @@
       "duplicate_file_remover_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Files",
     "tags": [
       "javascript",
       "duplicate",
@@ -202,7 +202,7 @@
       "duplicate_rows_remover_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Productivity",
     "tags": [
       "excel",
       "remover"
@@ -221,7 +221,7 @@
       "excel_copy_paste_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Productivity",
     "tags": [
       "excel",
       "clipboard"
@@ -240,7 +240,7 @@
       "excel_to_csv_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Conversion",
+    "category": "Productivity",
     "tags": [
       "excel",
       "csv",
@@ -380,7 +380,7 @@
       "merge_csv_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Conversion",
+    "category": "Files",
     "tags": [
       "csv",
       "merge"
@@ -400,7 +400,7 @@
       "mongodb_quick_start_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Business Intelligence",
+    "category": "IT Operations",
     "tags": [
       "database",
       "javascript",
@@ -421,7 +421,7 @@
       "password_generator_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Security",
+    "category": "IT Operations",
     "tags": [
       "password",
       "security"
@@ -466,7 +466,7 @@
       "paste"
     ],
     "applications": [
-      "Clipboard"
+      "System"
     ]
   },
   {
@@ -478,7 +478,7 @@
       "read_text_file_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Files",
     "tags": [
       "text",
       "read",
@@ -539,7 +539,7 @@
       "exe"
     ],
     "applications": [
-      "Process"
+      "System"
     ]
   },
   {
@@ -571,9 +571,10 @@
       "send_get_request_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "API",
+    "category": "IT Operations",
     "tags": [
       "api",
+      "developer tools",
       "request",
       "rest"
     ],
@@ -591,7 +592,7 @@
       "send_mail_as_html_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Productivity",
+    "category": "Communication",
     "tags": [
       "scraping",
       "browser",
@@ -611,7 +612,7 @@
       "send_mail_with_attachments_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Mail",
+    "category": "Communication",
     "tags": [
       "mail"
     ],
@@ -647,7 +648,7 @@
       "split_csv_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Conversion",
+    "category": "Files",
     "tags": [
       "csv",
       "split"
@@ -667,7 +668,7 @@
       "sqlite_quick_start_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Business Intelligence",
+    "category": "IT Operations",
     "tags": [
       "database",
       "javascript",
@@ -851,7 +852,7 @@
       "copy"
     ],
     "applications": [
-      "Clipboard"
+      "System"
     ]
   },
   {
@@ -863,7 +864,7 @@
       "youtube_video_stats_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Other",
+    "category": "Social Media",
     "tags": [
       "comments",
       "dislikes",
