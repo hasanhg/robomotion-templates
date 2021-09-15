@@ -6,9 +6,10 @@
     - send_get_request_screenshot1.png
     - send_get_request_screenshot2.png
   author: Robomotion
-  category: API
+  category: IT Operations
   tags:
     - api
+    - developer tools
     - request
     - rest
   applications:
