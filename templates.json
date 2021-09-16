@@ -881,7 +881,7 @@
   },
   {
     "name": "Run Command In SSH Server",
-    "description": "Connects and executes commands in ssh server",
+    "description": "Executes commands in ssh server",
     "slug": "run-command-in-ssh-server",
     "icon": "run_command_in_ssh_server_icon.png",
     "screenshots": [

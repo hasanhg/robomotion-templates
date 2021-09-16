@@ -1,6 +1,6 @@
 
 # Run Command In SSH Server
-Connects and executes commands in ssh server
+Executes commands in ssh server
 
 ## How it Works? 
 
