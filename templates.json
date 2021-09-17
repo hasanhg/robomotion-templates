@@ -152,25 +152,6 @@
     ]
   },
   {
-    "name": "Download File From web",
-    "description": "Downloads file from web to specified path",
-    "slug": "download-file-from-web",
-    "icon": "download_file_from_web_icon.png",
-    "screenshots": [
-      "download_file_from_web_screenshot1.png",
-      "download_file_from_web_screenshot2.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "download",
-      "file"
-    ],
-    "applications": [
-      "Web"
-    ]
-  },
-  {
     "name": "Download File From SSH Server",
     "description": "Downloads file from SSH server to local computer",
     "slug": "download-file-from-ssh-server",
@@ -188,6 +169,25 @@
     ],
     "applications": [
       "SSH"
+    ]
+  },
+  {
+    "name": "Download File From web",
+    "description": "Downloads file from web to specified path",
+    "slug": "download-file-from-web",
+    "icon": "download_file_from_web_icon.png",
+    "screenshots": [
+      "download_file_from_web_screenshot1.png",
+      "download_file_from_web_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "download",
+      "file"
+    ],
+    "applications": [
+      "Web"
     ]
   },
   {
