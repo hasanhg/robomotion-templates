@@ -1,0 +1,1227 @@
+{
+	"nodes": [{
+		"id": "d4054de9-1dfa-40fd-9541-7fce4431953b",
+		"type": "simple",
+		"selected": true,
+		"x": 229.1960640147308,
+		"y": 19.583163917714245,
+		"extras": {
+			"inPayload": {
+				"name": "Date.now()",
+				"scope": "JS"
+			},
+			"outPayload": {
+				"name": "payload",
+				"scope": "Message"
+			},
+			"optOnce": true,
+			"optOnceDelay": 0.1,
+			"optRepeat": 1
+		},
+		"ports": [{
+			"id": "0b2b6255-70c2-4e2b-9494-6a3a63dc9365",
+			"type": "default",
+			"selected": false,
+			"name": "out_0b2b6255-70c2-4e2b-9494-6a3a63dc9365",
+			"parentNode": "d4054de9-1dfa-40fd-9541-7fce4431953b",
+			"links": ["7fe387e3-3f0a-48e9-9c15-2b0fe7a0a781"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "d4054de9-1dfa-40fd-9541-7fce4431953b",
+			"name": "Inject",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				}
+			}, {
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				}
+			}, {
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			}],
+			"xyz": [{
+				"formData": {
+					"inPayload": {
+						"name": "Date.now()",
+						"scope": "JS"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPayload": {
+							"argsScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"outPayload": {
+						"name": "payload",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outPayload": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optOnce": true,
+					"optOnceDelay": 0.1,
+					"optRepeat": 1
+				},
+				"schema": {
+					"properties": {
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						},
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "675c54cf-f003-4066-9068-a21c003dcd2f",
+		"type": "simple",
+		"selected": true,
+		"x": 499.2162660349328,
+		"y": -7.747644163093838,
+		"extras": {
+			"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.command = \"ls\" //[Requeired] The command that you want to execute in server\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+			"optTimeout": 30,
+			"outputs": 1,
+			"variables": []
+		},
+		"ports": [{
+			"id": "c03d5344-3831-4071-b36f-d25b8182c92a",
+			"type": "default",
+			"selected": false,
+			"name": "out_c03d5344-3831-4071-b36f-d25b8182c92a",
+			"parentNode": "675c54cf-f003-4066-9068-a21c003dcd2f",
+			"links": ["7bb01ecb-0224-4bee-9b7c-968fcb306f1e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c97cb23d-d3e0-4c87-9131-e635ff585f09",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "675c54cf-f003-4066-9068-a21c003dcd2f",
+			"links": ["7fe387e3-3f0a-48e9-9c15-2b0fe7a0a781"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "675c54cf-f003-4066-9068-a21c003dcd2f",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#F27925",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Config",
+				"version": "1.11.6"
+			}, {
+				"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.command = \"ls\" //[Requeired] The command that you want to execute in server\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+				"optTimeout": 30,
+				"outputs": 1
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"formData": {
+					"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.command = \"ls\" //[Requeired] The command that you want to execute in server\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+					"optTimeout": 30,
+					"outputs": 1
+				},
+				"schema": {
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						},
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"func": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					}
+				}
+			}, {
+				"formData": {
+					"variables": []
+				},
+				"schema": {
+					"properties": {
+						"variables": {
+							"items": {
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							},
+							"type": "array"
+						}
+					},
+					"title": "Local Variables",
+					"type": "object"
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "eb1cf5eb-2fdb-40c8-88c3-e4f0eba41b1d",
+		"type": "simple",
+		"selected": true,
+		"x": 491.94606401473084,
+		"y": 268.8331639177143,
+		"extras": {
+			"inText": {
+				"name": "message",
+				"scope": "Message"
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "Command Executed"
+			},
+			"outConfirmed": {
+				"name": "confirmed",
+				"scope": "Message"
+			},
+			"optType": "info"
+		},
+		"ports": [{
+			"id": "26644197-40b4-4328-bb24-46d486b8e5b5",
+			"type": "default",
+			"selected": false,
+			"name": "out_26644197-40b4-4328-bb24-46d486b8e5b5",
+			"parentNode": "eb1cf5eb-2fdb-40c8-88c3-e4f0eba41b1d",
+			"links": ["5173e4d5-ece5-4d6c-8d94-98f9fffc19a5"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "dd846215-fb8a-406b-bc87-7a868ebc9233",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "eb1cf5eb-2fdb-40c8-88c3-e4f0eba41b1d",
+			"links": ["0a8b3bdd-9970-4da5-9d04-8e7b53adf991"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "eb1cf5eb-2fdb-40c8-88c3-e4f0eba41b1d",
+			"name": "Show Message",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.MessageBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Show Message",
+				"version": "1.11.6",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inText": {
+					"name": "message",
+					"scope": "Message"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "Command Executed"
+				}
+			}, {
+				"outConfirmed": {
+					"name": "confirmed",
+					"scope": "Message"
+				}
+			}, {
+				"optType": "info"
+			}],
+			"xyz": [{
+				"formData": {
+					"inText": {
+						"name": "message",
+						"scope": "Message"
+					},
+					"inTitle": {
+						"scope": "Custom",
+						"name": "Command Executed"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inText": {
+							"customScope": true,
+							"jsScope": true,
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Text",
+							"type": "object",
+							"variableType": "String"
+						},
+						"inTitle": {
+							"customScope": true,
+							"jsScope": true,
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Title",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inTitle", "inText"]
+				}
+			}, {
+				"formData": {
+					"outConfirmed": {
+						"name": "confirmed",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outConfirmed": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Confirmed",
+							"type": "object",
+							"variableType": "Boolean"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outConfirmed": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optType": "info"
+				},
+				"schema": {
+					"properties": {
+						"optType": {
+							"enum": ["yesno", "info", "error"],
+							"enumNames": ["Yes / No", "Info", "Error"],
+							"title": "Type",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "40d28775-b923-4906-abf6-6df17321b593",
+		"type": "simple",
+		"selected": true,
+		"x": -115.97060265193585,
+		"y": -183.16683608228576,
+		"extras": {
+			"optText": "##### Run Command In SSH Server\n\nThis template is connected to ssh server, and executes specified commands\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.command field with the command you want to execute.\n\n**5.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**6.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
+		},
+		"ports": [],
+		"model": {
+			"id": "40d28775-b923-4906-abf6-6df17321b593",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Run Command In SSH Server\n\nThis template is connected to ssh server, and executes specified commands\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.command field with the command you want to execute.\n\n**5.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**6.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
+			}],
+			"xyz": [{
+				"formData": {
+					"optText": "##### Run Command In SSH Server\n\nThis template is connected to ssh server, and executes specified commands\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.command field with the command you want to execute.\n\n**5.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**6.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
+				},
+				"schema": {
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"comment": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"optText": {
+						"ui:description": "Comment",
+						"ui:options": {
+							"rows": 8
+						},
+						"ui:widget": "hidden"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "b77b5501-f0ac-4930-b2c2-f31aa13761be",
+		"type": "simple",
+		"selected": true,
+		"x": 495.59492059293507,
+		"y": 46.46178710612,
+		"extras": {
+			"inHost": {
+				"name": "host",
+				"scope": "Message"
+			},
+			"inPKPath": {
+				"scope": "Message",
+				"name": "private_key_path"
+			},
+			"inPort": {
+				"name": "22",
+				"scope": "Custom"
+			},
+			"outClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"optCredentials": {
+				"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+				"itemId": "5da33320-e62e-43bc-9fe0-8c59f7409785"
+			},
+			"optTimeout": {
+				"name": "30",
+				"scope": "Custom"
+			}
+		},
+		"ports": [{
+			"id": "b1483981-5f60-4d2c-aa33-243c93d53c8f",
+			"type": "default",
+			"selected": false,
+			"name": "out_b1483981-5f60-4d2c-aa33-243c93d53c8f",
+			"parentNode": "b77b5501-f0ac-4930-b2c2-f31aa13761be",
+			"links": ["5ab98db7-8cec-4802-9077-ffc442d8dd91"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "5ebd0d2c-752b-426e-9690-a54af70c0671",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b77b5501-f0ac-4930-b2c2-f31aa13761be",
+			"links": ["7bb01ecb-0224-4bee-9b7c-968fcb306f1e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b77b5501-f0ac-4930-b2c2-f31aa13761be",
+			"name": "Connect",
+			"icon": "M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M3,13V18L3,20H10V18H5V13H3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M14,15H20V19H14V15Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.Connect",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Connect",
+				"version": "0.0.3",
+				"color": "#093280",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inHost": {
+					"name": "host",
+					"scope": "Message"
+				},
+				"inPKPath": {
+					"scope": "Message",
+					"name": "private_key_path"
+				},
+				"inPort": {
+					"name": "22",
+					"scope": "Custom"
+				}
+			}, {
+				"outClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}, {
+				"optCredentials": {
+					"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+					"itemId": "5da33320-e62e-43bc-9fe0-8c59f7409785"
+				},
+				"optTimeout": {
+					"name": "30",
+					"scope": "Custom"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inHost": {
+							"type": "object",
+							"title": "Host",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inPKPath": {
+							"type": "object",
+							"title": "Private Key Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inPort": {
+							"type": "object",
+							"title": "Port",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inHost": {
+						"name": "host",
+						"scope": "Message"
+					},
+					"inPKPath": {
+						"scope": "Message",
+						"name": "private_key_path"
+					},
+					"inPort": {
+						"name": "22",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inHost": {
+						"ui:field": "variable"
+					},
+					"inPKPath": {
+						"ui:field": "variable"
+					},
+					"inPort": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inHost", "inPort", "inPKPath"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outClientID": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outClientID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientID"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 0,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						},
+						"optTimeout": {
+							"type": "object",
+							"title": "Timeout",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "Integer"
+						}
+					}
+				},
+				"formData": {
+					"optCredentials": {
+						"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
+						"itemId": "5da33320-e62e-43bc-9fe0-8c59f7409785"
+					},
+					"optTimeout": {
+						"name": "30",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"optTimeout": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optTimeout", "optCredentials"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "c08904b2-057d-43a9-adcc-82fe6bdc6267",
+		"type": "simple",
+		"selected": true,
+		"x": 491.84492059293507,
+		"y": 102.71178710612,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inCommand": {
+				"scope": "Message",
+				"name": "command"
+			},
+			"outResult": {
+				"name": "result",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "2f6fc91c-ddcd-4634-b878-1b4ed558035f",
+			"type": "default",
+			"selected": false,
+			"name": "out_2f6fc91c-ddcd-4634-b878-1b4ed558035f",
+			"parentNode": "c08904b2-057d-43a9-adcc-82fe6bdc6267",
+			"links": ["171ff672-eee7-48b6-86fb-69b4023a4e45"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "0fd87984-f358-4a96-8299-21a4c5c8610a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c08904b2-057d-43a9-adcc-82fe6bdc6267",
+			"links": ["5ab98db7-8cec-4802-9077-ffc442d8dd91"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c08904b2-057d-43a9-adcc-82fe6bdc6267",
+			"name": "Run Command",
+			"icon": "M4.5,9C3.9,9 3.5,9.5 3.5,10V11.75C3.5,12.25 3.9,12.75 4.5,12.75H7V13.5H3.5V15H7.5C8.1,15 8.5,14.5 8.5,14V12.25C8.5,11.75 8.1,11.25 7.5,11.25H5V10.5H8.5V9H4.5M10.5,9C9.9,9 9.5,9.5 9.5,10V11.75C9.5,12.25 9.9,12.75 10.5,12.75H13V13.5H9.5V15H13.5C14.1,15 14.5,14.5 14.5,14V12.25C14.5,11.75 14.1,11.25 13.5,11.25H11V10.5H14.5V9H10.5M15.5,9V15H17V12.5H19V15H20.5V9H19V11H17V9H15.5Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.RunCommand",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Run Command",
+				"version": "0.0.3",
+				"color": "#093280",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inCommand": {
+					"scope": "Message",
+					"name": "command"
+				}
+			}, {
+				"outResult": {
+					"name": "result",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inCommand": {
+							"type": "object",
+							"title": "Command",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inCommand": {
+						"scope": "Message",
+						"name": "command"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inCommand": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inCommand"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Result",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outResult": {
+						"name": "result",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "a3f8a279-3821-4a5d-b9c7-d6e4480a920b",
+		"type": "simple",
+		"selected": true,
+		"x": 489.34492059293507,
+		"y": 153.96178710612,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "bbd26a16-27fa-47ab-bcea-4c3d7f037ed8",
+			"type": "default",
+			"selected": false,
+			"name": "out_bbd26a16-27fa-47ab-bcea-4c3d7f037ed8",
+			"parentNode": "a3f8a279-3821-4a5d-b9c7-d6e4480a920b",
+			"links": ["8b428017-4db2-4b45-9457-5900c0cf77cb"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "6cbdaa08-9b3b-443e-9b08-594296bd0e87",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "a3f8a279-3821-4a5d-b9c7-d6e4480a920b",
+			"links": ["171ff672-eee7-48b6-86fb-69b4023a4e45"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "a3f8a279-3821-4a5d-b9c7-d6e4480a920b",
+			"name": "Disconnect",
+			"icon": "M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M3.88,13.46L2.46,14.88L4.59,17L2.46,19.12L3.88,20.54L6,18.41L8.12,20.54L9.54,19.12L7.41,17L9.54,14.88L8.12,13.46L6,15.59L3.88,13.46M14,15H20V19H14V15Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.Disconnect",
+			"version": "0.0.3",
+			"abc": [{}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "144e9121-a50e-496f-9137-b6fcf8841d2b",
+		"type": "simple",
+		"selected": true,
+		"x": 491.84492059293507,
+		"y": 318.96178710612,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "5bcdb466-79d3-45f1-ae46-95a655c7bb7f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "144e9121-a50e-496f-9137-b6fcf8841d2b",
+			"links": ["5173e4d5-ece5-4d6c-8d94-98f9fffc19a5"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "144e9121-a50e-496f-9137-b6fcf8841d2b",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "7d2b49ee-8e6c-489a-94fb-65b22db900fb",
+		"type": "simple",
+		"selected": true,
+		"x": 489.34492059293507,
+		"y": 207.71178710612,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.message = \"Command: \" + msg.command + \"\\nResult: \" + msg.result;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "a4119c1a-6bc8-48d5-865a-d00fde066f88",
+			"type": "default",
+			"selected": false,
+			"name": "out_a4119c1a-6bc8-48d5-865a-d00fde066f88",
+			"parentNode": "7d2b49ee-8e6c-489a-94fb-65b22db900fb",
+			"links": ["0a8b3bdd-9970-4da5-9d04-8e7b53adf991"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "a6c6449c-505e-461e-abb0-869d6242f24a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "7d2b49ee-8e6c-489a-94fb-65b22db900fb",
+			"links": ["8b428017-4db2-4b45-9457-5900c0cf77cb"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "7d2b49ee-8e6c-489a-94fb-65b22db900fb",
+			"name": "Prepare Message",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Prepare Message",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.message = \"Command: \" + msg.command + \"\\nResult: \" + msg.result;\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.message = \"Command: \" + msg.command + \"\\nResult: \" + msg.result;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

@@ -1,0 +1,1377 @@
+{
+	"nodes": [{
+		"id": "cbdb33df-bd22-4ab9-9aff-f217f0e98ea8",
+		"type": "simple",
+		"selected": true,
+		"x": 619.7640124062085,
+		"y": 435.7621173172559,
+		"extras": {
+			"inPayload": {
+				"name": "Date.now()",
+				"scope": "JS"
+			},
+			"outPayload": {
+				"name": "payload",
+				"scope": "Message"
+			},
+			"optOnce": true,
+			"optOnceDelay": 0.1,
+			"optRepeat": 1
+		},
+		"ports": [{
+			"id": "be59d02e-a31a-494c-afaa-e7a5be90fe8e",
+			"type": "default",
+			"selected": false,
+			"name": "out_be59d02e-a31a-494c-afaa-e7a5be90fe8e",
+			"parentNode": "cbdb33df-bd22-4ab9-9aff-f217f0e98ea8",
+			"links": ["a7b8af7d-279c-4e90-83a6-9ebe86bb2b41"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "cbdb33df-bd22-4ab9-9aff-f217f0e98ea8",
+			"name": "Inject",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"inPayload": {
+					"name": "Date.now()",
+					"scope": "JS"
+				}
+			}, {
+				"outPayload": {
+					"name": "payload",
+					"scope": "Message"
+				}
+			}, {
+				"optOnce": true,
+				"optOnceDelay": 0.1,
+				"optRepeat": 1
+			}],
+			"xyz": [{
+				"formData": {
+					"inPayload": {
+						"name": "Date.now()",
+						"scope": "JS"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPayload": {
+							"argsScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"outPayload": {
+						"name": "payload",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outPayload": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Payload",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optOnce": true,
+					"optOnceDelay": 0.1,
+					"optRepeat": 1
+				},
+				"schema": {
+					"properties": {
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						},
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "1bd273cf-ea91-4585-bb27-133740ce8910",
+		"type": "simple",
+		"selected": true,
+		"x": 889.7842144264105,
+		"y": 408.4313092364478,
+		"extras": {
+			"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.local_file_path = \"\" //[Required] The path of the file you want to upload\nmsg.remote_file_path = \"\" //[Required] The destination path that you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+			"optTimeout": 30,
+			"outputs": 1,
+			"variables": []
+		},
+		"ports": [{
+			"id": "50501101-10ab-4799-aecd-e855b4ed7864",
+			"type": "default",
+			"selected": false,
+			"name": "out_50501101-10ab-4799-aecd-e855b4ed7864",
+			"parentNode": "1bd273cf-ea91-4585-bb27-133740ce8910",
+			"links": ["755d3b5b-6fc5-45c3-8f4f-725e1c360e00"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "1f220cb0-9728-4fe8-9681-f65ab4436869",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "1bd273cf-ea91-4585-bb27-133740ce8910",
+			"links": ["a7b8af7d-279c-4e90-83a6-9ebe86bb2b41"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "1bd273cf-ea91-4585-bb27-133740ce8910",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#F27925",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Config",
+				"version": "1.11.6"
+			}, {
+				"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.local_file_path = \"\" //[Required] The path of the file you want to upload\nmsg.remote_file_path = \"\" //[Required] The destination path that you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+				"optTimeout": 30,
+				"outputs": 1
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"formData": {
+					"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.local_file_path = \"\" //[Required] The path of the file you want to upload\nmsg.remote_file_path = \"\" //[Required] The destination path that you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+					"optTimeout": 30,
+					"outputs": 1
+				},
+				"schema": {
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						},
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"func": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					}
+				}
+			}, {
+				"formData": {
+					"variables": []
+				},
+				"schema": {
+					"properties": {
+						"variables": {
+							"items": {
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							},
+							"type": "array"
+						}
+					},
+					"title": "Local Variables",
+					"type": "object"
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "cd163266-1c22-4ef5-b99f-9b05bcba82a8",
+		"type": "simple",
+		"selected": true,
+		"x": 885.0140124062085,
+		"y": 743.7621173172558,
+		"extras": {
+			"inText": {
+				"name": "message",
+				"scope": "Message"
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "File Uploaded"
+			},
+			"outConfirmed": {
+				"name": "confirmed",
+				"scope": "Message"
+			},
+			"optType": "info"
+		},
+		"ports": [{
+			"id": "c5fa3a45-7c57-44ed-932c-88a75f3ec7b9",
+			"type": "default",
+			"selected": false,
+			"name": "out_c5fa3a45-7c57-44ed-932c-88a75f3ec7b9",
+			"parentNode": "cd163266-1c22-4ef5-b99f-9b05bcba82a8",
+			"links": ["6759b1a4-fa4e-4472-a94c-b8f9ecd9af88"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "04086f7f-d9f0-44c3-a3b8-826d93c385a7",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "cd163266-1c22-4ef5-b99f-9b05bcba82a8",
+			"links": ["17acd850-0910-4df9-a11e-ed2d81ea6a7b"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "cd163266-1c22-4ef5-b99f-9b05bcba82a8",
+			"name": "Show Message",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.MessageBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Show Message",
+				"version": "1.11.6",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inText": {
+					"name": "message",
+					"scope": "Message"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "File Uploaded"
+				}
+			}, {
+				"outConfirmed": {
+					"name": "confirmed",
+					"scope": "Message"
+				}
+			}, {
+				"optType": "info"
+			}],
+			"xyz": [{
+				"formData": {
+					"inText": {
+						"name": "message",
+						"scope": "Message"
+					},
+					"inTitle": {
+						"scope": "Custom",
+						"name": "File Uploaded"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inText": {
+							"customScope": true,
+							"jsScope": true,
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Text",
+							"type": "object",
+							"variableType": "String"
+						},
+						"inTitle": {
+							"customScope": true,
+							"jsScope": true,
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Title",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inTitle", "inText"]
+				}
+			}, {
+				"formData": {
+					"outConfirmed": {
+						"name": "confirmed",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outConfirmed": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Confirmed",
+							"type": "object",
+							"variableType": "Boolean"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outConfirmed": {
+						"ui:field": "variable"
+					}
+				}
+			}, {
+				"formData": {
+					"optType": "info"
+				},
+				"schema": {
+					"properties": {
+						"optType": {
+							"enum": ["yesno", "info", "error"],
+							"enumNames": ["Yes / No", "Info", "Error"],
+							"title": "Type",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b16d582b-191d-495f-9f7e-36d33dd4dec1",
+		"type": "simple",
+		"selected": true,
+		"x": 283.9306790728752,
+		"y": 173.0121173172559,
+		"extras": {
+			"optText": "##### Upload File To SSH Server\n\nThis template uploads file to ssh server\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.local_file_path field with the path of the file you want to upload.\n\n**5.** Update msg.remote_file_path field with the ssh path you want to upload\n\n**6.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**7.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
+		},
+		"ports": [],
+		"model": {
+			"id": "b16d582b-191d-495f-9f7e-36d33dd4dec1",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Upload File To SSH Server\n\nThis template uploads file to ssh server\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.local_file_path field with the path of the file you want to upload.\n\n**5.** Update msg.remote_file_path field with the ssh path you want to upload\n\n**6.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**7.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
+			}],
+			"xyz": [{
+				"formData": {
+					"optText": "##### Upload File To SSH Server\n\nThis template uploads file to ssh server\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.local_file_path field with the path of the file you want to upload.\n\n**5.** Update msg.remote_file_path field with the ssh path you want to upload\n\n**6.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**7.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
+				},
+				"schema": {
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"comment": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"optText": {
+						"ui:description": "Comment",
+						"ui:options": {
+							"rows": 8
+						},
+						"ui:widget": "hidden"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "ad968ad4-6b51-4bb8-bf40-c1139354f66a",
+		"type": "simple",
+		"selected": true,
+		"x": 886.1628689844127,
+		"y": 462.64074050566165,
+		"extras": {
+			"inHost": {
+				"name": "host",
+				"scope": "Message"
+			},
+			"inPKPath": {
+				"name": "private_key_path",
+				"scope": "Message"
+			},
+			"inPort": {
+				"name": "22",
+				"scope": "Custom"
+			},
+			"outClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"optCredentials": {
+				"itemId": "5da33320-e62e-43bc-9fe0-8c59f7409785",
+				"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f"
+			},
+			"optTimeout": {
+				"name": "30",
+				"scope": "Custom"
+			}
+		},
+		"ports": [{
+			"id": "4510cd2a-ea54-493c-93da-f801610295aa",
+			"type": "default",
+			"selected": false,
+			"name": "out_4510cd2a-ea54-493c-93da-f801610295aa",
+			"parentNode": "ad968ad4-6b51-4bb8-bf40-c1139354f66a",
+			"links": ["87174fc5-5b37-4ef6-badc-2a40845432e2"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d9bcd9ab-5af8-4738-94db-a1f2027cec16",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ad968ad4-6b51-4bb8-bf40-c1139354f66a",
+			"links": ["755d3b5b-6fc5-45c3-8f4f-725e1c360e00"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ad968ad4-6b51-4bb8-bf40-c1139354f66a",
+			"name": "Connect",
+			"icon": "M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M3,13V18L3,20H10V18H5V13H3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M14,15H20V19H14V15Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.Connect",
+			"version": "0.0.3",
+			"abc": [{
+				"color": "#093280",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Connect",
+				"version": "0.0.3"
+			}, {
+				"inHost": {
+					"name": "host",
+					"scope": "Message"
+				},
+				"inPKPath": {
+					"name": "private_key_path",
+					"scope": "Message"
+				},
+				"inPort": {
+					"name": "22",
+					"scope": "Custom"
+				}
+			}, {
+				"outClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}, {
+				"optCredentials": {
+					"itemId": "5da33320-e62e-43bc-9fe0-8c59f7409785",
+					"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f"
+				},
+				"optTimeout": {
+					"name": "30",
+					"scope": "Custom"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"inHost": {
+						"name": "host",
+						"scope": "Message"
+					},
+					"inPKPath": {
+						"name": "private_key_path",
+						"scope": "Message"
+					},
+					"inPort": {
+						"name": "22",
+						"scope": "Custom"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inHost": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Host",
+							"type": "object",
+							"variableType": "String"
+						},
+						"inPKPath": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Private Key Path",
+							"type": "object",
+							"variableType": "String"
+						},
+						"inPort": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Port",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inHost": {
+						"ui:field": "variable"
+					},
+					"inPKPath": {
+						"ui:field": "variable"
+					},
+					"inPort": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inHost", "inPort", "inPKPath"]
+				}
+			}, {
+				"formData": {
+					"outClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outClientID": {
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Client Id",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outClientID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientID"]
+				}
+			}, {
+				"formData": {
+					"optCredentials": {
+						"itemId": "5da33320-e62e-43bc-9fe0-8c59f7409785",
+						"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f"
+					},
+					"optTimeout": {
+						"name": "30",
+						"scope": "Custom"
+					}
+				},
+				"schema": {
+					"properties": {
+						"optCredentials": {
+							"category": 0,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							},
+							"subtitle": "Credentials",
+							"title": "Credentials",
+							"type": "object"
+						},
+						"optTimeout": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Timeout",
+							"type": "object",
+							"variableType": "Integer"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"optTimeout": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optTimeout", "optCredentials"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "27ca6b10-8373-4780-9b52-69b8b01414f7",
+		"type": "simple",
+		"selected": true,
+		"x": 879.9128689844127,
+		"y": 625.1407405056616,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "ce9ec338-3834-4b65-88b3-45d59abcaeef",
+			"type": "default",
+			"selected": false,
+			"name": "out_ce9ec338-3834-4b65-88b3-45d59abcaeef",
+			"parentNode": "27ca6b10-8373-4780-9b52-69b8b01414f7",
+			"links": ["01768659-db18-409e-8fc6-1256d1ab1b01"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d3210885-1a1f-45d5-91bd-7b374968f993",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "27ca6b10-8373-4780-9b52-69b8b01414f7",
+			"links": ["eedaf2f1-b90c-4420-9b27-ba9ab7a0e84a"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "27ca6b10-8373-4780-9b52-69b8b01414f7",
+			"name": "Disconnect",
+			"icon": "M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M3.88,13.46L2.46,14.88L4.59,17L2.46,19.12L3.88,20.54L6,18.41L8.12,20.54L9.54,19.12L7.41,17L9.54,14.88L8.12,13.46L6,15.59L3.88,13.46M14,15H20V19H14V15Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.Disconnect",
+			"version": "0.0.3",
+			"abc": [{}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inClientID": {
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Client Id",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "d014f2b2-fc7b-4275-b669-af09b054fa8f",
+		"type": "simple",
+		"selected": true,
+		"x": 884.9128689844127,
+		"y": 793.8907405056616,
+		"extras": {
+			"outResult": {
+				"name": "error",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "bad44bf8-308f-4111-a2c9-c146f7699651",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "d014f2b2-fc7b-4275-b669-af09b054fa8f",
+			"links": ["6759b1a4-fa4e-4472-a94c-b8f9ecd9af88"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "d014f2b2-fc7b-4275-b669-af09b054fa8f",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"name": "error",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"formData": {
+					"outResult": {
+						"name": "error",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"outResult": {
+							"messageOnly": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Error",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Output",
+					"type": "object"
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "09411cbd-1424-4651-8ba7-fc0bcfcf9780",
+		"type": "simple",
+		"selected": true,
+		"x": 884.9128689844127,
+		"y": 682.6407405056616,
+		"extras": {
+			"func": "msg.message = \"List of files in ssh: \\n\" + msg.result;\nreturn msg;",
+			"optTimeout": 30,
+			"outputs": 1,
+			"variables": []
+		},
+		"ports": [{
+			"id": "e29b4a20-3bed-448e-b3b3-80d77aac8c79",
+			"type": "default",
+			"selected": false,
+			"name": "out_e29b4a20-3bed-448e-b3b3-80d77aac8c79",
+			"parentNode": "09411cbd-1424-4651-8ba7-fc0bcfcf9780",
+			"links": ["17acd850-0910-4df9-a11e-ed2d81ea6a7b"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "9d62f072-397b-4b29-82f1-127eba7a1e12",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "09411cbd-1424-4651-8ba7-fc0bcfcf9780",
+			"links": ["01768659-db18-409e-8fc6-1256d1ab1b01"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "09411cbd-1424-4651-8ba7-fc0bcfcf9780",
+			"name": "Prepare Message",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"color": "#F27925",
+				"continueOnError": false,
+				"delayAfter": 0,
+				"delayBefore": 0,
+				"name": "Prepare Message",
+				"version": "1.11.6"
+			}, {
+				"func": "msg.message = \"List of files in ssh: \\n\" + msg.result;\nreturn msg;",
+				"optTimeout": 30,
+				"outputs": 1
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"formData": {
+					"func": "msg.message = \"List of files in ssh: \\n\" + msg.result;\nreturn msg;",
+					"optTimeout": 30,
+					"outputs": 1
+				},
+				"schema": {
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						},
+						"outputs": {
+							"maximum": 32,
+							"minimum": 1,
+							"title": "Outputs",
+							"type": "number"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"func": {
+						"ui:options": {
+							"rows": 6
+						},
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					}
+				}
+			}, {
+				"formData": {
+					"variables": []
+				},
+				"schema": {
+					"properties": {
+						"variables": {
+							"items": {
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								},
+								"type": "object"
+							},
+							"type": "array"
+						}
+					},
+					"title": "Local Variables",
+					"type": "object"
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "8bb12e99-ffe7-48a8-bb45-8555c4d67720",
+		"type": "simple",
+		"selected": true,
+		"x": 879.5756438600362,
+		"y": 514.4961199951014,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inLocalPath": {
+				"scope": "Message",
+				"name": "local_file_path"
+			},
+			"inRemotePath": {
+				"scope": "Message",
+				"name": "remote_file_path"
+			}
+		},
+		"ports": [{
+			"id": "86985e06-7b91-4718-8bd6-64a9a07e1fd4",
+			"type": "default",
+			"selected": false,
+			"name": "out_86985e06-7b91-4718-8bd6-64a9a07e1fd4",
+			"parentNode": "8bb12e99-ffe7-48a8-bb45-8555c4d67720",
+			"links": ["d88bd75e-04b4-46bd-afcd-a060a5c731f0"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "42ec635f-912f-4ddf-b754-db4f13913c96",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "8bb12e99-ffe7-48a8-bb45-8555c4d67720",
+			"links": ["87174fc5-5b37-4ef6-badc-2a40845432e2"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "8bb12e99-ffe7-48a8-bb45-8555c4d67720",
+			"name": "Upload File",
+			"icon": "M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.UploadFile",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Upload File",
+				"version": "0.0.3",
+				"color": "#093280",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inLocalPath": {
+					"scope": "Message",
+					"name": "local_file_path"
+				},
+				"inRemotePath": {
+					"scope": "Message",
+					"name": "remote_file_path"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inLocalPath": {
+							"type": "object",
+							"title": "Local Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inRemotePath": {
+							"type": "object",
+							"title": "Remote Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inLocalPath": {
+						"scope": "Message",
+						"name": "local_file_path"
+					},
+					"inRemotePath": {
+						"scope": "Message",
+						"name": "remote_file_path"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inLocalPath": {
+						"ui:field": "variable"
+					},
+					"inRemotePath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inLocalPath", "inRemotePath"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "aef7a378-589e-422f-8aee-1c6b18b5bb5b",
+		"type": "simple",
+		"selected": true,
+		"x": 878.075643860036,
+		"y": 568.8813774916546,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inCommand": {
+				"scope": "Custom",
+				"name": "ls"
+			},
+			"outResult": {
+				"name": "result",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "158affd0-e7c2-4abc-aad6-f95935ebd0ad",
+			"type": "default",
+			"selected": false,
+			"name": "out_158affd0-e7c2-4abc-aad6-f95935ebd0ad",
+			"parentNode": "aef7a378-589e-422f-8aee-1c6b18b5bb5b",
+			"links": ["eedaf2f1-b90c-4420-9b27-ba9ab7a0e84a"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d68c1d71-c63a-442a-8512-4f081b93b8ce",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "aef7a378-589e-422f-8aee-1c6b18b5bb5b",
+			"links": ["d88bd75e-04b4-46bd-afcd-a060a5c731f0"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "aef7a378-589e-422f-8aee-1c6b18b5bb5b",
+			"name": "Run Command",
+			"icon": "M4.5,9C3.9,9 3.5,9.5 3.5,10V11.75C3.5,12.25 3.9,12.75 4.5,12.75H7V13.5H3.5V15H7.5C8.1,15 8.5,14.5 8.5,14V12.25C8.5,11.75 8.1,11.25 7.5,11.25H5V10.5H8.5V9H4.5M10.5,9C9.9,9 9.5,9.5 9.5,10V11.75C9.5,12.25 9.9,12.75 10.5,12.75H13V13.5H9.5V15H13.5C14.1,15 14.5,14.5 14.5,14V12.25C14.5,11.75 14.1,11.25 13.5,11.25H11V10.5H14.5V9H10.5M15.5,9V15H17V12.5H19V15H20.5V9H19V11H17V9H15.5Z",
+			"color": "#093280",
+			"namespace": "Robomotion.SSH.RunCommand",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Run Command",
+				"version": "0.0.3",
+				"color": "#093280",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inCommand": {
+					"scope": "Custom",
+					"name": "ls"
+				}
+			}, {
+				"outResult": {
+					"name": "result",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inCommand": {
+							"type": "object",
+							"title": "Command",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inCommand": {
+						"scope": "Custom",
+						"name": "ls"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inCommand": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inCommand"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Result",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outResult": {
+						"name": "result",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

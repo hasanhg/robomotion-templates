@@ -1,0 +1,15 @@
+- name: Run Command In SSH Server
+  description: Executes commands in ssh server
+  slug: run-command-in-ssh-server
+  icon: run_command_in_ssh_server_icon.png
+  screenshots:
+    - run_command_in_ssh_server_screenshot1.png
+    - run_command_in_ssh_server_screenshot1.png
+  author: Robomotion
+  category: Other
+  tags:
+    - ssh
+    - remote
+    - run_command
+  applications:
+    - SSH
