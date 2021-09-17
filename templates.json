@@ -898,5 +898,25 @@
     "applications": [
       "SSH"
     ]
+  },
+  {
+    "name": "Upload File To SSH Server",
+    "description": "Uploads file from local computer to SSH server",
+    "slug": "upload-file-to-ssh-server",
+    "icon": "upload_file_to_ssh_server_icon.png",
+    "screenshots": [
+      "upload_file_to_ssh_server_screenshot1.png",
+      "upload_file_to_ssh_server_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "ssh",
+      "remote",
+      "upload"
+    ],
+    "applications": [
+      "SSH"
+    ]
   }
 ]
