@@ -133,6 +133,26 @@
     ]
   },
   {
+    "name": "Date Difference Calculator",
+    "description": "Calculates the difference between now and a specific date",
+    "slug": "date-difference-calculator",
+    "icon": "date_difference_calculator_icon.png",
+    "screenshots": [
+      "date_difference_calculator_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "date",
+      "difference",
+      "calculate",
+      "timespan"
+    ],
+    "applications": [
+      "Datetime"
+    ]
+  },
+  {
     "name": "Dollar - Euro Parity As Service",
     "description": "Returns dolar - euro parity for API request",
     "slug": "dollar-euro-parity-as-service",
