@@ -2,6 +2,7 @@ applications:
   - Chrome
   - Cryptography
   - CSV
+  - Datetime
   - Discord
   - Excel
   - Filesystem
