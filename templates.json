@@ -918,5 +918,25 @@
     "applications": [
       "SSH"
     ]
+  },
+  {
+    "name": "Download File From SSH Server",
+    "description": "Downloads file from SSH server to local computer",
+    "slug": "download-file-from-ssh-server",
+    "icon": "download_file_from_ssh_server_icon.png",
+    "screenshots": [
+      "download_file_from_ssh_server_screenshot1.png",
+      "download_file_from_ssh_server_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "ssh",
+      "remote",
+      "download"
+    ],
+    "applications": [
+      "SSH"
+    ]
   }
 ]
