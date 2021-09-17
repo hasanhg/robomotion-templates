@@ -1,0 +1,18 @@
+- name: Handle Errors
+  description: Shows how to throw errors and handle them.
+  slug: handle-errors
+  icon: handle_errors_icon.png
+  screenshots:
+    - handle_errors_screenshot1.png
+    - handle_errors_screenshot2.png
+    - handle_errors_screenshot3.png
+    - handle_errors_screenshot4.png
+    - handle_errors_screenshot5.png
+  author: Robomotion
+  category: Other
+  tags:
+    - throw
+    - catch
+    - handle_erros
+  applications:
+    - Javascript
