@@ -12,7 +12,10 @@ Executes commands in ssh server
 
 4. Update msg.command field with the command you want to execute.
 
-5.  Set connection credentials. 
+
+5. Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.
+
+6. Set connection credentials. 
 
 If you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document
 
