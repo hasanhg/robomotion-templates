@@ -1,10 +1,10 @@
 {
 	"nodes": [{
-		"id": "4b5e7403-d6cb-4589-b101-9e160107dd66",
+		"id": "3db05039-58af-4c3e-a661-81c84095cf0e",
 		"type": "simple",
 		"selected": true,
-		"x": 485,
-		"y": 88,
+		"x": 433.0973457395419,
+		"y": -10.904549349410807,
 		"extras": {
 			"inPayload": {
 				"name": "Date.now()",
@@ -19,18 +19,18 @@
 			"optRepeat": 1
 		},
 		"ports": [{
-			"id": "6f208dca-ca8a-4890-b94c-83ea11f91bac",
+			"id": "14e192f6-0037-4a41-bf6c-4df686e5b6bc",
 			"type": "default",
 			"selected": false,
-			"name": "out_6f208dca-ca8a-4890-b94c-83ea11f91bac",
-			"parentNode": "4b5e7403-d6cb-4589-b101-9e160107dd66",
-			"links": ["1e50581e-b667-4751-8cb2-274024ff9351"],
+			"name": "out_14e192f6-0037-4a41-bf6c-4df686e5b6bc",
+			"parentNode": "3db05039-58af-4c3e-a661-81c84095cf0e",
+			"links": ["6c5139a8-f8c2-41a6-8ebf-10b5317e939b"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "4b5e7403-d6cb-4589-b101-9e160107dd66",
+			"id": "3db05039-58af-4c3e-a661-81c84095cf0e",
 			"name": "Inject",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -149,40 +149,40 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "56eca874-2127-4d11-bfd4-1df8d382d852",
+		"id": "97c0d723-5e44-4a12-8d98-05e9e99c89e2",
 		"type": "simple",
 		"selected": true,
-		"x": 755.020202020202,
-		"y": 60.66919191919192,
+		"x": 703.1175477597438,
+		"y": -38.23535743021889,
 		"extras": {
-			"func": "msg.host = \"latif.robomotion.online\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.remote_file_path = \"text.txt\" //[Required] The destination path that you want to upload\nmsg.local_file_path = \"C:\\\\sonucssh.txt\" //[Required] The path of the file you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+			"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.remote_file_path = \"\" //[Required] The destination path that you want to upload\nmsg.local_file_path = \"\" //[Required] The path of the file you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
 			"optTimeout": 30,
 			"outputs": 1,
 			"variables": []
 		},
 		"ports": [{
-			"id": "cd018de6-4314-4a01-b612-909ac728223f",
+			"id": "ae8bfdcd-5c63-4bc4-9315-511f7eae3140",
 			"type": "default",
 			"selected": false,
-			"name": "out_cd018de6-4314-4a01-b612-909ac728223f",
-			"parentNode": "56eca874-2127-4d11-bfd4-1df8d382d852",
-			"links": ["357ed74d-cf55-4e17-bde6-8c88c6556b13"],
+			"name": "out_ae8bfdcd-5c63-4bc4-9315-511f7eae3140",
+			"parentNode": "97c0d723-5e44-4a12-8d98-05e9e99c89e2",
+			"links": ["e7ad8d7c-da8f-43b7-9c53-a7e26fe54385"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "7df04333-1475-4400-85e2-70fd04953b12",
+			"id": "08877a3a-d98c-42f2-ac12-799e57ecca41",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "56eca874-2127-4d11-bfd4-1df8d382d852",
-			"links": ["1e50581e-b667-4751-8cb2-274024ff9351"],
+			"parentNode": "97c0d723-5e44-4a12-8d98-05e9e99c89e2",
+			"links": ["6c5139a8-f8c2-41a6-8ebf-10b5317e939b"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "56eca874-2127-4d11-bfd4-1df8d382d852",
+			"id": "97c0d723-5e44-4a12-8d98-05e9e99c89e2",
 			"name": "Config",
 			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
 			"color": "#F27925",
@@ -197,7 +197,7 @@
 				"name": "Config",
 				"version": "1.11.6"
 			}, {
-				"func": "msg.host = \"latif.robomotion.online\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.remote_file_path = \"text.txt\" //[Required] The destination path that you want to upload\nmsg.local_file_path = \"C:\\\\sonucssh.txt\" //[Required] The path of the file you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+				"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.remote_file_path = \"\" //[Required] The destination path that you want to upload\nmsg.local_file_path = \"\" //[Required] The path of the file you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
 				"optTimeout": 30,
 				"outputs": 1
 			}, {
@@ -205,7 +205,7 @@
 			}],
 			"xyz": [{
 				"formData": {
-					"func": "msg.host = \"latif.robomotion.online\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.remote_file_path = \"text.txt\" //[Required] The destination path that you want to upload\nmsg.local_file_path = \"C:\\\\sonucssh.txt\" //[Required] The path of the file you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
+					"func": "msg.host = \"\"; //[Required] The host address of the server\nmsg.port = 22 //[Required] The port of the server. SSH default port is 22\nmsg.remote_file_path = \"\" //[Required] The destination path that you want to upload\nmsg.local_file_path = \"\" //[Required] The path of the file you want to upload\n\nmsg.private_key_path = \"\" //[Optional] If you want to connect to the ssh server with your private key, you should provide\n//it. Othwerwise you should provide your credentials\nreturn msg;",
 					"optTimeout": 30,
 					"outputs": 1
 				},
@@ -274,17 +274,17 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "52ff71d2-125d-49d7-aabb-94cead4ee130",
+		"id": "1fcb906c-4ca5-4c25-a92a-6b29cebdf16b",
 		"type": "simple",
 		"selected": true,
-		"x": 149.16666666666669,
-		"y": -174.75,
+		"x": 97.26401240620856,
+		"y": -273.6545493494108,
 		"extras": {
 			"optText": "##### Download File From SSH Server\n\nThis template downloads file from ssh server to local computer\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.host field with the host address of your ssh server.\n\n**3.** Update msg.port field with the port of your ssh server. (Default 22)\n\n**4.** Update msg.remote_file_path field with the ssh path you want to download\n\n**5.** Update msg.local_file_path field with the local path of the file you want to download.\n\n**6.** Install SSH package to designer. You can examine [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration#adding-slack-package-to-designer) document for installing SSH package.\n\n**7.** Set connection credentials. \n\nIf you want to connect with your username and password set your credentials in Connect node. You can do it by following [this](https://docs.robomotion.io/flow-designer/vaults) document\n\nIf  you want to connect with your private key, update msg.private_key_path with the full path of your ssh private key. You also need to add your username as credentials in Connect node. You can examine [this](https://docs.robomotion.io/flow-designer/vaults)  document. You should create a Login Item and just provide the username, no need to password\n        \n"
 		},
 		"ports": [],
 		"model": {
-			"id": "52ff71d2-125d-49d7-aabb-94cead4ee130",
+			"id": "1fcb906c-4ca5-4c25-a92a-6b29cebdf16b",
 			"name": "Comment",
 			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
 			"color": "#FBE364",
@@ -331,11 +331,11 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "67af19a3-a67a-4066-8bad-70d038c8d972",
+		"id": "2080a84e-eaa5-44ef-b4e4-0a4ef2571fb0",
 		"type": "simple",
 		"selected": true,
-		"x": 751.3988565782042,
-		"y": 114.87862318840575,
+		"x": 699.4962023177461,
+		"y": 15.974073838994947,
 		"extras": {
 			"inHost": {
 				"name": "host",
@@ -363,28 +363,28 @@
 			}
 		},
 		"ports": [{
-			"id": "2ddd4d09-9ba2-42f5-84fc-699aecc81c2f",
+			"id": "5257b115-1c4e-4676-8cbf-ee5f3aa3929e",
 			"type": "default",
 			"selected": false,
-			"name": "out_2ddd4d09-9ba2-42f5-84fc-699aecc81c2f",
-			"parentNode": "67af19a3-a67a-4066-8bad-70d038c8d972",
-			"links": ["9ded5230-d8c2-4a54-a1be-aa1fb4e4ab73"],
+			"name": "out_5257b115-1c4e-4676-8cbf-ee5f3aa3929e",
+			"parentNode": "2080a84e-eaa5-44ef-b4e4-0a4ef2571fb0",
+			"links": ["2e46974b-4ed3-410f-9506-20c42d4ce9c9"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "1e810046-a530-4bd1-8f36-abcd3e683d02",
+			"id": "10a12230-5581-4d28-adb8-9516d9ead9e2",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "67af19a3-a67a-4066-8bad-70d038c8d972",
-			"links": ["357ed74d-cf55-4e17-bde6-8c88c6556b13"],
+			"parentNode": "2080a84e-eaa5-44ef-b4e4-0a4ef2571fb0",
+			"links": ["e7ad8d7c-da8f-43b7-9c53-a7e26fe54385"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "67af19a3-a67a-4066-8bad-70d038c8d972",
+			"id": "2080a84e-eaa5-44ef-b4e4-0a4ef2571fb0",
 			"name": "Connect",
 			"icon": "M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M3,13V18L3,20H10V18H5V13H3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M14,15H20V19H14V15Z",
 			"color": "#093280",
@@ -596,11 +596,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "5f623072-bce9-4916-ab9f-9839b473d70a",
+		"id": "4d2e6005-f6fd-497a-b9f8-061e992201c9",
 		"type": "simple",
 		"selected": true,
-		"x": 745.1488565782042,
-		"y": 277.37862318840575,
+		"x": 701.2462023177461,
+		"y": 126.47407383899493,
 		"extras": {
 			"inClientID": {
 				"name": "client_id",
@@ -608,28 +608,28 @@
 			}
 		},
 		"ports": [{
-			"id": "ff91619a-d918-42a7-9587-24a35ff4e39e",
+			"id": "7e03ead1-b35e-4b4b-ba57-a42b20aa848c",
 			"type": "default",
 			"selected": false,
-			"name": "out_ff91619a-d918-42a7-9587-24a35ff4e39e",
-			"parentNode": "5f623072-bce9-4916-ab9f-9839b473d70a",
-			"links": ["bb153a3f-52f4-4a6e-88c2-a3bca5899cbf"],
+			"name": "out_7e03ead1-b35e-4b4b-ba57-a42b20aa848c",
+			"parentNode": "4d2e6005-f6fd-497a-b9f8-061e992201c9",
+			"links": ["853be223-4209-4d2c-afb5-f4c0ee01091d"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "74333061-31fd-49a4-83f8-e3eec0c3d1f7",
+			"id": "816021dd-4b2c-4b1d-a402-65d3d5075fea",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "5f623072-bce9-4916-ab9f-9839b473d70a",
-			"links": ["39970575-4645-4729-ad38-bf813cc9abc8"],
+			"parentNode": "4d2e6005-f6fd-497a-b9f8-061e992201c9",
+			"links": ["5ff744af-d853-484e-98ec-9d90c25129d2"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "5f623072-bce9-4916-ab9f-9839b473d70a",
+			"id": "4d2e6005-f6fd-497a-b9f8-061e992201c9",
 			"name": "Disconnect",
 			"icon": "M4,1C2.89,1 2,1.89 2,3V7C2,8.11 2.89,9 4,9H1V11H13V9H10C11.11,9 12,8.11 12,7V3C12,1.89 11.11,1 10,1H4M4,3H10V7H4V3M14,13C12.89,13 12,13.89 12,15V19C12,20.11 12.89,21 14,21H11V23H23V21H20C21.11,21 22,20.11 22,19V15C22,13.89 21.11,13 20,13H14M3.88,13.46L2.46,14.88L4.59,17L2.46,19.12L3.88,20.54L6,18.41L8.12,20.54L9.54,19.12L7.41,17L9.54,14.88L8.12,13.46L6,15.59L3.88,13.46M14,15H20V19H14V15Z",
 			"color": "#093280",
@@ -679,11 +679,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "75b66708-66ee-490d-b8b4-bad44d9bac83",
+		"id": "e9e56661-babe-4265-b38d-1ca7717f0c55",
 		"type": "simple",
 		"selected": true,
-		"x": 739.4821899115376,
-		"y": 332.79528985507244,
+		"x": 695.5795356510795,
+		"y": 181.8907405056616,
 		"extras": {
 			"outResult": {
 				"name": "error",
@@ -691,18 +691,18 @@
 			}
 		},
 		"ports": [{
-			"id": "f66fe98e-a984-4421-91a3-c949f9860483",
+			"id": "8d558bfd-de5b-41d1-9cbe-bb4b223616d2",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "75b66708-66ee-490d-b8b4-bad44d9bac83",
-			"links": ["bb153a3f-52f4-4a6e-88c2-a3bca5899cbf"],
+			"parentNode": "e9e56661-babe-4265-b38d-1ca7717f0c55",
+			"links": ["853be223-4209-4d2c-afb5-f4c0ee01091d"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "75b66708-66ee-490d-b8b4-bad44d9bac83",
+			"id": "e9e56661-babe-4265-b38d-1ca7717f0c55",
 			"name": "Stop",
 			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
 			"color": "#fb2727",
@@ -752,173 +752,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "715e3de9-3113-43f5-9227-fb002932d3f6",
+		"id": "784758c5-189d-48e9-8787-b575a32fba34",
 		"type": "simple",
 		"selected": true,
-		"x": 743.3116314538275,
-		"y": 221.11926017439873,
-		"extras": {
-			"inClientID": {
-				"name": "client_id",
-				"scope": "Message"
-			},
-			"inCommand": {
-				"name": "ls",
-				"scope": "Custom"
-			},
-			"outResult": {
-				"name": "result",
-				"scope": "Message"
-			}
-		},
-		"ports": [{
-			"id": "b12cb238-8490-45c0-868e-7e4208a58555",
-			"type": "default",
-			"selected": false,
-			"name": "out_b12cb238-8490-45c0-868e-7e4208a58555",
-			"parentNode": "715e3de9-3113-43f5-9227-fb002932d3f6",
-			"links": ["39970575-4645-4729-ad38-bf813cc9abc8"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "40a50515-4a1a-48d2-917c-f2f07e8ec224",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "715e3de9-3113-43f5-9227-fb002932d3f6",
-			"links": ["af60a953-c01b-49c3-a5b1-43ea81c03f4f"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "715e3de9-3113-43f5-9227-fb002932d3f6",
-			"name": "Run Command",
-			"icon": "M4.5,9C3.9,9 3.5,9.5 3.5,10V11.75C3.5,12.25 3.9,12.75 4.5,12.75H7V13.5H3.5V15H7.5C8.1,15 8.5,14.5 8.5,14V12.25C8.5,11.75 8.1,11.25 7.5,11.25H5V10.5H8.5V9H4.5M10.5,9C9.9,9 9.5,9.5 9.5,10V11.75C9.5,12.25 9.9,12.75 10.5,12.75H13V13.5H9.5V15H13.5C14.1,15 14.5,14.5 14.5,14V12.25C14.5,11.75 14.1,11.25 13.5,11.25H11V10.5H14.5V9H10.5M15.5,9V15H17V12.5H19V15H20.5V9H19V11H17V9H15.5Z",
-			"color": "#093280",
-			"namespace": "Robomotion.SSH.RunCommand",
-			"version": "0.0.3",
-			"abc": [{
-				"color": "#093280",
-				"continueOnError": false,
-				"delayAfter": 0,
-				"delayBefore": 0,
-				"name": "Run Command",
-				"version": "0.0.3"
-			}, {
-				"inClientID": {
-					"name": "client_id",
-					"scope": "Message"
-				},
-				"inCommand": {
-					"name": "ls",
-					"scope": "Custom"
-				}
-			}, {
-				"outResult": {
-					"name": "result",
-					"scope": "Message"
-				}
-			}],
-			"xyz": [{
-				"formData": {
-					"inClientID": {
-						"name": "client_id",
-						"scope": "Message"
-					},
-					"inCommand": {
-						"name": "ls",
-						"scope": "Custom"
-					}
-				},
-				"schema": {
-					"properties": {
-						"inClientID": {
-							"messageScope": true,
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"scope": {
-									"type": "string"
-								}
-							},
-							"title": "Client Id",
-							"type": "object",
-							"variableType": "String"
-						},
-						"inCommand": {
-							"customScope": true,
-							"messageScope": true,
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"scope": {
-									"type": "string"
-								}
-							},
-							"title": "Command",
-							"type": "object",
-							"variableType": "String"
-						}
-					},
-					"title": "Input",
-					"type": "object"
-				},
-				"uiSchema": {
-					"inClientID": {
-						"ui:field": "variable"
-					},
-					"inCommand": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["inClientID", "inCommand"]
-				}
-			}, {
-				"formData": {
-					"outResult": {
-						"name": "result",
-						"scope": "Message"
-					}
-				},
-				"schema": {
-					"properties": {
-						"outResult": {
-							"messageScope": true,
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"scope": {
-									"type": "string"
-								}
-							},
-							"title": "Result",
-							"type": "object",
-							"variableType": "String"
-						}
-					},
-					"title": "Output",
-					"type": "object"
-				},
-				"uiSchema": {
-					"outResult": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["outResult"]
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "df9486eb-97ad-4c5d-8d32-03dd2055c922",
-		"type": "simple",
-		"selected": true,
-		"x": 751.7640124062085,
-		"y": 170.42878398392256,
+		"x": 699.8613581457504,
+		"y": 71.52423463451174,
 		"extras": {
 			"inClientID": {
 				"name": "client_id",
@@ -934,28 +772,28 @@
 			}
 		},
 		"ports": [{
-			"id": "99fa693f-0796-4c93-8ffc-870d7b90017f",
+			"id": "4dda9da1-3135-4834-8d69-93c4fb7b3bf0",
 			"type": "default",
 			"selected": false,
-			"name": "out_99fa693f-0796-4c93-8ffc-870d7b90017f",
-			"parentNode": "df9486eb-97ad-4c5d-8d32-03dd2055c922",
-			"links": ["af60a953-c01b-49c3-a5b1-43ea81c03f4f"],
+			"name": "out_4dda9da1-3135-4834-8d69-93c4fb7b3bf0",
+			"parentNode": "784758c5-189d-48e9-8787-b575a32fba34",
+			"links": ["5ff744af-d853-484e-98ec-9d90c25129d2"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "6accb99a-738a-4b50-94db-297c77b975ad",
+			"id": "eceaa3a4-43bb-4135-b8e1-785c4528ecef",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "df9486eb-97ad-4c5d-8d32-03dd2055c922",
-			"links": ["9ded5230-d8c2-4a54-a1be-aa1fb4e4ab73"],
+			"parentNode": "784758c5-189d-48e9-8787-b575a32fba34",
+			"links": ["2e46974b-4ed3-410f-9506-20c42d4ce9c9"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "df9486eb-97ad-4c5d-8d32-03dd2055c922",
+			"id": "784758c5-189d-48e9-8787-b575a32fba34",
 			"name": "Download File",
 			"icon": "M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z",
 			"color": "#093280",
@@ -1039,12 +877,12 @@
 						"scope": "Message"
 					},
 					"inLocalPath": {
-						"name": "",
-						"scope": "Custom"
+						"name": "local_file_path",
+						"scope": "Message"
 					},
 					"inRemotePath": {
-						"name": "",
-						"scope": "Custom"
+						"scope": "Message",
+						"name": "remote_file_path"
 					}
 				},
 				"uiSchema": {
