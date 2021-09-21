@@ -1,5 +1,6 @@
 applications:
   - Chrome
+  - Compress
   - Cryptography
   - CSV
   - Datetime
@@ -9,6 +10,7 @@ applications:
   - Javascript
   - Mail
   - MongoDB
+  - S3Storage
   - Slack
   - SQLite
   - Twilio
