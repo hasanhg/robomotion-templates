@@ -163,7 +163,7 @@
 		"y": 282.2380952380952,
 		"extras": {
 			"outputs": 1,
-			"func": "msg.targetpath = 'C:/Users/user/Desktop/backupfolder/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/backup.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 's3-bucket'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
+			"func": "msg.targetpath = 'C:/Users/user/Desktop/bucket-test/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
 			"optTimeout": 30,
 			"variables": []
 		},
@@ -205,7 +205,7 @@
 				"version": "1.11.6"
 			}, {
 				"outputs": 1,
-				"func": "msg.targetpath = 'C:/Users/user/Desktop/backupfolder/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/backup.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 's3-bucket'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
+				"func": "msg.targetpath = 'C:/Users/user/Desktop/bucket-test/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
 				"optTimeout": 30
 			}, {
 				"variables": []
@@ -244,7 +244,7 @@
 				},
 				"formData": {
 					"outputs": 1,
-					"func": "msg.targetpath = 'C:/Users/user/Desktop/backupfolder/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/backup.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 's3-bucket'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
+					"func": "msg.targetpath = 'C:/Users/user/Desktop/bucket-test/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
 					"optTimeout": 30
 				}
 			}, {
@@ -284,10 +284,10 @@
 		"id": "1ce7b6a0-8676-422d-aa17-1d55b2a3eea2",
 		"type": "simple",
 		"selected": true,
-		"x": -212.21203632968343,
-		"y": 27.737713267125066,
+		"x": -137.92632204396912,
+		"y": -46.45276292335114,
 		"extras": {
-			"optText": "## Backup To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory which you want to backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+			"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 		},
 		"ports": [],
 		"model": {
@@ -298,7 +298,7 @@
 			"namespace": "Core.Flow.Comment",
 			"version": "1.11.6",
 			"abc": [{}, {
-				"optText": "## Backup To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory which you want to backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+				"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 			}],
 			"xyz": [{
 				"schema": {
@@ -331,7 +331,7 @@
 					}
 				},
 				"formData": {
-					"optText": "## Backup To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory which you want to backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+					"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 				}
 			}],
 			"outputs": 0,
@@ -519,12 +519,12 @@
 				},
 				"formData": {
 					"inPath": {
-						"name": "",
-						"scope": "Custom"
+						"name": "targetpath",
+						"scope": "Message"
 					},
 					"inPathOut": {
-						"name": "",
-						"scope": "Custom"
+						"scope": "Message",
+						"name": "zippath"
 					}
 				},
 				"uiSchema": {
@@ -676,8 +676,8 @@
 				},
 				"formData": {
 					"inEndPoint": {
-						"name": "",
-						"scope": "Custom"
+						"scope": "Message",
+						"name": "endpoint"
 					}
 				},
 				"uiSchema": {
@@ -754,7 +754,16 @@
 						}
 					}
 				},
-				"formData": {},
+				"formData": {
+					"optAccessKeyID": {
+						"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+						"itemId": "0de37a47-5de2-479d-93d0-e2397c672f5f"
+					},
+					"optSecretKeyAccess": {
+						"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+						"itemId": "5f0ae90a-a8b2-4e03-97d8-65e4c83ab999"
+					}
+				},
 				"uiSchema": {
 					"optAccessKeyID": {
 						"ui:field": "credentials"
@@ -773,7 +782,7 @@
 		"type": "simple",
 		"selected": true,
 		"x": 538.0766896502191,
-		"y": 299.33159427912193,
+		"y": 297.66492761245524,
 		"extras": {
 			"inBucketName": {
 				"name": "bucketname",
@@ -922,20 +931,20 @@
 				},
 				"formData": {
 					"inBucketName": {
-						"name": "",
-						"scope": "Custom"
+						"name": "bucketname",
+						"scope": "Message"
 					},
 					"inClientID": {
 						"name": "client_id",
 						"scope": "Message"
 					},
 					"inFilePath": {
-						"name": "",
-						"scope": "Custom"
+						"scope": "Message",
+						"name": "zippath"
 					},
 					"inObjectName": {
-						"name": "",
-						"scope": "Custom"
+						"name": "objname",
+						"scope": "Message"
 					}
 				},
 				"uiSchema": {
