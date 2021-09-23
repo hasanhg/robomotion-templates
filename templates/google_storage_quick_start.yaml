@@ -1,0 +1,18 @@
+- name: Google Storage Quick Start
+  description: Shows upload, get, download and delete object operations in S3 bucket
+  slug: google-storage-quick-start
+  icon: google_storage_quick_start_icon.png
+  screenshots:
+    - google_storage_quick_start_screenshot.png
+  author: Robomotion
+  category: Files
+  tags:
+    - google
+    - storage
+    - object
+    - cloud
+    - bucket
+  applications:
+    - GoogleStorage
+    - Javascript
+    
