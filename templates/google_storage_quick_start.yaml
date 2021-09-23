@@ -1,5 +1,5 @@
 - name: Google Storage Quick Start
-  description: Shows upload, get, download and delete object operations in S3 bucket
+  description: Shows some object and bucket operations in Google Storage bucket
   slug: google-storage-quick-start
   icon: google_storage_quick_start_icon.png
   screenshots:
