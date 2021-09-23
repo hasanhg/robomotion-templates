@@ -1,0 +1,1388 @@
+{
+	"nodes": [{
+		"id": "5e10e99b-64ac-4c4a-8d75-f32dad19d67a",
+		"type": "simple",
+		"selected": true,
+		"x": 144.30769230769232,
+		"y": 1.0769230769230802,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "157bfde5-69a5-427d-a6da-8cce5bcda4e8",
+			"type": "default",
+			"selected": false,
+			"name": "out_157bfde5-69a5-427d-a6da-8cce5bcda4e8",
+			"parentNode": "5e10e99b-64ac-4c4a-8d75-f32dad19d67a",
+			"links": ["41684614-0ce8-4a86-be11-deddb32ae220"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "5e10e99b-64ac-4c4a-8d75-f32dad19d67a",
+			"name": "Inject",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "4544280d-4227-476e-9c6e-3c185e0df21f",
+		"type": "simple",
+		"selected": true,
+		"x": 141.9884813205069,
+		"y": 51.30414098174909,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.uploadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will upload to bucket\nmsg.downloadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will download from bucket\nmsg.bucketname = 'test-bucket'; // Name of bucket\nmsg.objectname = 'test.txt'; // Name of object\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "9fee0191-01ac-4335-9e7e-bef6a7deb883",
+			"type": "default",
+			"selected": false,
+			"name": "out_9fee0191-01ac-4335-9e7e-bef6a7deb883",
+			"parentNode": "4544280d-4227-476e-9c6e-3c185e0df21f",
+			"links": ["cb6866b5-f421-4955-b0b8-a48ead29d725"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c1f41733-8246-4326-afe7-b34246f44293",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "4544280d-4227-476e-9c6e-3c185e0df21f",
+			"links": ["41684614-0ce8-4a86-be11-deddb32ae220"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "4544280d-4227-476e-9c6e-3c185e0df21f",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.uploadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will upload to bucket\nmsg.downloadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will download from bucket\nmsg.bucketname = 'test-bucket'; // Name of bucket\nmsg.objectname = 'test.txt'; // Name of object\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.uploadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will upload to bucket\nmsg.downloadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will download from bucket\nmsg.bucketname = 'test-bucket'; // Name of bucket\nmsg.objectname = 'test.txt'; // Name of object\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "60985269-d61c-43bd-b119-60355ce06bb4",
+		"type": "simple",
+		"selected": true,
+		"x": 431.86746586746585,
+		"y": -5.51048951048951,
+		"extras": {
+			"inEndPoint": {
+				"scope": "Message",
+				"name": "endpoint"
+			},
+			"outClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"optAccessKeyID": {
+				"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+				"itemId": "0de37a47-5de2-479d-93d0-e2397c672f5f"
+			},
+			"optSecretKeyAccess": {
+				"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+				"itemId": "5f0ae90a-a8b2-4e03-97d8-65e4c83ab999"
+			}
+		},
+		"ports": [{
+			"id": "75f8373e-68bb-4d72-98af-738ddfef8048",
+			"type": "default",
+			"selected": false,
+			"name": "out_75f8373e-68bb-4d72-98af-738ddfef8048",
+			"parentNode": "60985269-d61c-43bd-b119-60355ce06bb4",
+			"links": ["d66d86f2-df07-4a32-84ac-435692e4a44f"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "01c52248-d9d5-4de3-9b9a-a5c7fef338ba",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "60985269-d61c-43bd-b119-60355ce06bb4",
+			"links": ["cb6866b5-f421-4955-b0b8-a48ead29d725"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "60985269-d61c-43bd-b119-60355ce06bb4",
+			"name": "Connect",
+			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
+			"color": "#ffd04b",
+			"namespace": "Robomotion.S3Storage.Connect",
+			"version": "0.1.9",
+			"abc": [{
+				"name": "Connect",
+				"version": "0.1.9",
+				"color": "#ffd04b",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inEndPoint": {
+					"scope": "Message",
+					"name": "endpoint"
+				}
+			}, {
+				"outClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}, {
+				"optAccessKeyID": {
+					"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+					"itemId": "0de37a47-5de2-479d-93d0-e2397c672f5f"
+				},
+				"optSecretKeyAccess": {
+					"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+					"itemId": "5f0ae90a-a8b2-4e03-97d8-65e4c83ab999"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inEndPoint": {
+							"type": "object",
+							"title": "End Point",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inEndPoint": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inEndPoint": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inEndPoint"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outClientId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientId"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optAccessKeyID": {
+							"type": "object",
+							"title": "Access Key Id",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						},
+						"optSecretKeyAccess": {
+							"type": "object",
+							"title": "Secret Key Access",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"formData": {},
+				"uiSchema": {
+					"optAccessKeyID": {
+						"ui:field": "credentials"
+					},
+					"optSecretKeyAccess": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optAccessKeyID", "optSecretKeyAccess"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "e7afc967-2d92-475b-8642-85c0cbabdbbf",
+		"type": "simple",
+		"selected": true,
+		"x": 430.9304029304029,
+		"y": 52.61538461538462,
+		"extras": {
+			"inBucketName": {
+				"name": "bucketname",
+				"scope": "Message"
+			},
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inFilePath": {
+				"scope": "Message",
+				"name": "uploadpath"
+			},
+			"inObjectName": {
+				"name": "objectname",
+				"scope": "Message"
+			},
+			"optContentType": {
+				"name": "",
+				"scope": "Custom"
+			}
+		},
+		"ports": [{
+			"id": "92a2892f-064d-4999-81ce-89154f2160c7",
+			"type": "default",
+			"selected": false,
+			"name": "out_92a2892f-064d-4999-81ce-89154f2160c7",
+			"parentNode": "e7afc967-2d92-475b-8642-85c0cbabdbbf",
+			"links": ["ce6fcf4b-5851-46c5-b027-18671532cb77"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "7ee59e83-b59d-4adb-a83f-e90494ce1edc",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e7afc967-2d92-475b-8642-85c0cbabdbbf",
+			"links": ["d66d86f2-df07-4a32-84ac-435692e4a44f"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e7afc967-2d92-475b-8642-85c0cbabdbbf",
+			"name": "Upload Object",
+			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
+			"color": "#ffd04b",
+			"namespace": "Robomotion.S3Storage.UploadObject",
+			"version": "0.1.9",
+			"abc": [{
+				"name": "Upload Object",
+				"version": "0.1.9",
+				"color": "#ffd04b",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inBucketName": {
+					"name": "bucketname",
+					"scope": "Message"
+				},
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inFilePath": {
+					"scope": "Message",
+					"name": "uploadpath"
+				},
+				"inObjectName": {
+					"name": "objectname",
+					"scope": "Message"
+				}
+			}, {
+				"optContentType": {
+					"name": "",
+					"scope": "Custom"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inBucketName": {
+							"type": "object",
+							"title": "Bucket Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inClientID": {
+							"type": "object",
+							"title": " Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inFilePath": {
+							"type": "object",
+							"title": "File Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inObjectName": {
+							"type": "object",
+							"title": "Object Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inBucketName": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inFilePath": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inObjectName": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inBucketName": {
+						"ui:field": "variable"
+					},
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inFilePath": {
+						"ui:field": "variable"
+					},
+					"inObjectName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inFilePath", "inBucketName", "inObjectName"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optContentType": {
+							"type": "object",
+							"title": "Content Type",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"optContentType": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optContentType": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optContentType"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "abb3a75b-7f5c-4344-a1b7-5d0178945d44",
+		"type": "simple",
+		"selected": true,
+		"x": 424.65767565767567,
+		"y": 114.09090909090907,
+		"extras": {
+			"inBucketName": {
+				"scope": "Message",
+				"name": "bucketname"
+			},
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inObjectName": {
+				"scope": "Message",
+				"name": "objectname"
+			},
+			"outResult": {
+				"name": "result",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "c06e7217-f35e-4c33-bf28-be36da05a046",
+			"type": "default",
+			"selected": false,
+			"name": "out_c06e7217-f35e-4c33-bf28-be36da05a046",
+			"parentNode": "abb3a75b-7f5c-4344-a1b7-5d0178945d44",
+			"links": ["491b3597-7f4e-4ce0-ac2b-b39f2cf48076"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "91adf176-4fa5-4cb6-869b-672bb563f54d",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "abb3a75b-7f5c-4344-a1b7-5d0178945d44",
+			"links": ["ce6fcf4b-5851-46c5-b027-18671532cb77"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "abb3a75b-7f5c-4344-a1b7-5d0178945d44",
+			"name": "Get Object",
+			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
+			"color": "#ffd04b",
+			"namespace": "Robomotion.S3Storage.GetObject",
+			"version": "0.1.9",
+			"abc": [{
+				"name": "Get Object",
+				"version": "0.1.9",
+				"color": "#ffd04b",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inBucketName": {
+					"scope": "Message",
+					"name": "bucketname"
+				},
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inObjectName": {
+					"scope": "Message",
+					"name": "objectname"
+				}
+			}, {
+				"outResult": {
+					"name": "result",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inBucketName": {
+							"type": "object",
+							"title": "Bucket Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inClientID": {
+							"type": "object",
+							"title": " Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inObjectName": {
+							"type": "object",
+							"title": "Object Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inBucketName": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inObjectName": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inBucketName": {
+						"ui:field": "variable"
+					},
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inObjectName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inBucketName", "inObjectName"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "result",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "Object"
+						}
+					}
+				},
+				"formData": {
+					"outResult": {
+						"name": "result",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outResult"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "c6c53b04-928b-4267-8192-eed7e5cc4347",
+		"type": "simple",
+		"selected": true,
+		"x": 419.3919413919414,
+		"y": 169.99999999999997,
+		"extras": {
+			"inBucketName": {
+				"name": "bucketname",
+				"scope": "Message"
+			},
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inFilePath": {
+				"scope": "Message",
+				"name": "downloadpath"
+			},
+			"inObjectName": {
+				"name": "objectname",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "335272e5-1473-4bfe-ab14-7f178c375001",
+			"type": "default",
+			"selected": false,
+			"name": "out_335272e5-1473-4bfe-ab14-7f178c375001",
+			"parentNode": "c6c53b04-928b-4267-8192-eed7e5cc4347",
+			"links": ["9a54776a-fb3c-45ff-a164-572075fd7d3b"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "644e7e19-fba3-43a3-9287-2f45bfba92f2",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c6c53b04-928b-4267-8192-eed7e5cc4347",
+			"links": ["491b3597-7f4e-4ce0-ac2b-b39f2cf48076"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c6c53b04-928b-4267-8192-eed7e5cc4347",
+			"name": "Download Object",
+			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
+			"color": "#ffd04b",
+			"namespace": "Robomotion.S3Storage.DownloadObject",
+			"version": "0.1.9",
+			"abc": [{
+				"name": "Download Object",
+				"version": "0.1.9",
+				"color": "#ffd04b",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inBucketName": {
+					"name": "bucketname",
+					"scope": "Message"
+				},
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inFilePath": {
+					"scope": "Message",
+					"name": "downloadpath"
+				},
+				"inObjectName": {
+					"name": "objectname",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inBucketName": {
+							"type": "object",
+							"title": "Bucket Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inClientID": {
+							"type": "object",
+							"title": " Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inFilePath": {
+							"type": "object",
+							"title": "File Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inObjectName": {
+							"type": "object",
+							"title": "Object Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inBucketName": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inFilePath": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inObjectName": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inBucketName": {
+						"ui:field": "variable"
+					},
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inFilePath": {
+						"ui:field": "variable"
+					},
+					"inObjectName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inBucketName", "inObjectName", "inFilePath"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "48aa2780-4e40-456e-a317-34825d0241d1",
+		"type": "simple",
+		"selected": true,
+		"x": 418.4175824175825,
+		"y": 227.0769230769231,
+		"extras": {
+			"inBucketName": {
+				"scope": "Message",
+				"name": "bucketname"
+			},
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inObjectName": {
+				"scope": "Message",
+				"name": "objectname"
+			},
+			"inVersionId": {
+				"name": "",
+				"scope": "Custom"
+			}
+		},
+		"ports": [{
+			"id": "8843437f-e859-49d3-8c4e-cc8c16879fdb",
+			"type": "default",
+			"selected": false,
+			"name": "out_8843437f-e859-49d3-8c4e-cc8c16879fdb",
+			"parentNode": "48aa2780-4e40-456e-a317-34825d0241d1",
+			"links": ["9cdcf10f-b298-45e4-825d-af07351f9025"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "ac7db759-6cce-4c40-86ea-cb07f9e04451",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "48aa2780-4e40-456e-a317-34825d0241d1",
+			"links": ["9a54776a-fb3c-45ff-a164-572075fd7d3b"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "48aa2780-4e40-456e-a317-34825d0241d1",
+			"name": "Delete Object",
+			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
+			"color": "#ffd04b",
+			"namespace": "Robomotion.S3Storage.DeleteObject",
+			"version": "0.1.9",
+			"abc": [{
+				"name": "Delete Object",
+				"version": "0.1.9",
+				"color": "#ffd04b",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inBucketName": {
+					"scope": "Message",
+					"name": "bucketname"
+				},
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inObjectName": {
+					"scope": "Message",
+					"name": "objectname"
+				}
+			}, {
+				"inVersionId": {
+					"name": "",
+					"scope": "Custom"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inBucketName": {
+							"type": "object",
+							"title": "Bucket Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inClientID": {
+							"type": "object",
+							"title": " Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inObjectName": {
+							"type": "object",
+							"title": "Object Name",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inBucketName": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inObjectName": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inBucketName": {
+						"ui:field": "variable"
+					},
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inObjectName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inBucketName", "inObjectName"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"inVersionId": {
+							"type": "object",
+							"title": "Version Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inVersionId": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inVersionId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inVersionId"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "225ff9be-2654-4552-af58-265ca9c89b4d",
+		"type": "simple",
+		"selected": true,
+		"x": -285.56221556221567,
+		"y": -432.503885003885,
+		"extras": {
+			"optText": "## S3 Storage Quick Start\r\n\r\nThis template uses *S3 Storage* nodes for object operations on Amazon S3 Bucket.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see S3 Storage package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.uploadpath and msg.downloadpath fields to the full path file.\r\nupload to bucket. Set the msg.objectname field to name of object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+		},
+		"ports": [],
+		"model": {
+			"id": "225ff9be-2654-4552-af58-265ca9c89b4d",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## S3 Storage Quick Start\r\n\r\nThis template uses *S3 Storage* nodes for object operations on Amazon S3 Bucket.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see S3 Storage package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.uploadpath and msg.downloadpath fields to the full path file.\r\nupload to bucket. Set the msg.objectname field to name of object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## S3 Storage Quick Start\r\n\r\nThis template uses *S3 Storage* nodes for object operations on Amazon S3 Bucket.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see S3 Storage package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.uploadpath and msg.downloadpath fields to the full path file.\r\nupload to bucket. Set the msg.objectname field to name of object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "49bac807-1224-4e59-94dc-d5ff3c162473",
+		"type": "simple",
+		"selected": true,
+		"x": 723.8822288822289,
+		"y": 91.27389277389274,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "234444ac-8fce-4f7d-92cb-17b28249c859",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "49bac807-1224-4e59-94dc-d5ff3c162473",
+			"links": ["9cdcf10f-b298-45e4-825d-af07351f9025"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "49bac807-1224-4e59-94dc-d5ff3c162473",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

@@ -1,0 +1,20 @@
+- name: Backup To S3 Bucket
+  description: Creates a zip file and uploads to S3 bucket
+  slug: backup-to-s3-bucket
+  icon: backup_to_s3_bucket_icon.png
+  screenshots:
+    - backup_to_s3_bucket_screenshot.png
+  author: Robomotion
+  category: Files
+  tags:
+    - s3 storage
+    - compress
+    - file
+    - backup
+    - cloud
+  applications:
+    - Compress
+    - Javascript
+    - S3Storage
+
+    

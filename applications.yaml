@@ -1,14 +1,17 @@
 applications:
   - Chrome
+  - Compress
   - Cryptography
   - CSV
   - Datetime
   - Discord
   - Excel
   - Filesystem
+  - GoogleStorage
   - Javascript
   - Mail
   - MongoDB
+  - S3Storage
   - Slack
   - SQLite
   - Twilio

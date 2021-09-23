@@ -18,6 +18,29 @@
     ]
   },
   {
+    "name": "Backup To S3 Bucket",
+    "description": "Creates a zip file and uploads to S3 bucket",
+    "slug": "backup-to-s3-bucket",
+    "icon": "backup_to_s3_bucket_icon.png",
+    "screenshots": [
+      "backup_to_s3_bucket_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "s3 storage",
+      "compress",
+      "file",
+      "backup",
+      "cloud"
+    ],
+    "applications": [
+      "Compress",
+      "Javascript",
+      "S3Storage"
+    ]
+  },
+  {
     "name": "Birthday Celebrator",
     "description": "Sends birthday messages to Slack Channel",
     "slug": "birthday-celebrator",
@@ -350,6 +373,28 @@
     ]
   },
   {
+    "name": "Google Storage Quick Start",
+    "description": "Shows some object and bucket operations in Google Storage bucket",
+    "slug": "google-storage-quick-start",
+    "icon": "google_storage_quick_start_icon.png",
+    "screenshots": [
+      "google_storage_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "google",
+      "storage",
+      "object",
+      "cloud",
+      "bucket"
+    ],
+    "applications": [
+      "GoogleStorage",
+      "Javascript"
+    ]
+  },
+  {
     "name": "Handle Errors",
     "description": "Shows how to throw errors and handle them.",
     "slug": "handle-errors",
@@ -622,6 +667,28 @@
     ],
     "applications": [
       "System"
+    ]
+  },
+  {
+    "name": "S3 Storage Quick Start",
+    "description": "Shows upload, get, download and delete object operations in S3 bucket",
+    "slug": "s3-storage-quick-start",
+    "icon": "s3_storage_quick_start_icon.png",
+    "screenshots": [
+      "s3_storage_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "s3",
+      "storage",
+      "object",
+      "cloud",
+      "bucket"
+    ],
+    "applications": [
+      "S3Storage",
+      "Javascript"
     ]
   },
   {
