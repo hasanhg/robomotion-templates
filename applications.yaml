@@ -1,25 +1,15 @@
 applications:
   - Chrome
-  - Compress
-  - Cryptography
   - CSV
-  - Datetime
   - Discord
   - Excel
-  - Filesystem
   - GoogleStorage
   - Javascript
-  - Mail
   - MongoDB
+  - Other
   - S3Storage
   - Slack
   - SQLite
   - Twilio
   - Twitter
-  - REST
   - Instagram
-  - Web
-  - Vision
-  - Process
-  - System
-  - SSH

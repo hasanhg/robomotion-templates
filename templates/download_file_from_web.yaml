@@ -10,5 +10,6 @@
   tags:
     - download
     - file
+    - web
   applications:
-    - Web
+    - Other

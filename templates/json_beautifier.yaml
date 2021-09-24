@@ -10,7 +10,7 @@
     - javascript
     - json
     - beautify
+    - file
   applications:
-    - Filesystem
     - Javascript
     

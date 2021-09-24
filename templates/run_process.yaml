@@ -11,5 +11,6 @@
     - process
     - executable_file
     - exe
+    - system
   applications:
-    - System
+    - Other

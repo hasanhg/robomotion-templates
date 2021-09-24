@@ -10,7 +10,7 @@
   tags:
     - csv
     - merge
+    - file
   applications:
     - CSV
-    - Filesystem
     - Javascript

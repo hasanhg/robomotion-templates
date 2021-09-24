@@ -11,5 +11,6 @@
   tags:
     - clipboard
     - copy
+    - system
   applications:
-    - System
+    - Other
