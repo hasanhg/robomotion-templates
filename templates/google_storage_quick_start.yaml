@@ -13,6 +13,6 @@
     - cloud
     - bucket
   applications:
-    - GoogleStorage
+    - Google_Storage
     - Javascript
     

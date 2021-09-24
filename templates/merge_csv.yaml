@@ -12,5 +12,4 @@
     - merge
     - file
   applications:
-    - CSV
     - Javascript

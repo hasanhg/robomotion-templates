@@ -12,5 +12,4 @@
     - split
     - file
   applications:
-    - CSV
     - Javascript

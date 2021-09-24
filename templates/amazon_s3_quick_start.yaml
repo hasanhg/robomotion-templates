@@ -1,9 +1,9 @@
-- name: S3 Storage Quick Start
+- name: Amazon S3 Quick Start
   description: Shows upload, get, download and delete object operations in S3 bucket
-  slug: s3-storage-quick-start
-  icon: s3_storage_quick_start_icon.png
+  slug: amazon-s3-quick-start
+  icon: amazon_s3_quick_start_icon.png
   screenshots:
-    - s3_storage_quick_start_screenshot.png
+    - amazon_s3_quick_start_screenshot.png
   author: Robomotion
   category: Files
   tags:
@@ -13,6 +13,6 @@
     - cloud
     - bucket
   applications:
-    - S3Storage
+    - Amazon_S3
     - Javascript
     
