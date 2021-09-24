@@ -10,5 +10,6 @@
   tags:
     - clipboard
     - paste
+    - system
   applications:
-    - System
+    - Other

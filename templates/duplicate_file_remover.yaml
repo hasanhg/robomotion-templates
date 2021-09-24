@@ -12,8 +12,7 @@
     - file
     - remover
     - directory
+    - cryptography
   applications:
-    - Cryptography
-    - Filesystem
     - Javascript
     
