@@ -1,5 +1,27 @@
 [
   {
+    "name": "Amazon S3 Quick Start",
+    "description": "Shows upload, get, download and delete object operations in S3 bucket",
+    "slug": "s3-storage-quick-start",
+    "icon": "s3_storage_quick_start_icon.png",
+    "screenshots": [
+      "s3_storage_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "s3",
+      "storage",
+      "object",
+      "cloud",
+      "bucket"
+    ],
+    "applications": [
+      "Amazon_S3",
+      "Javascript"
+    ]
+  },
+  {
     "name": "API Health Check",
     "description": "Monitors the operational status of your microservices",
     "slug": "api-health-check",
@@ -36,7 +58,7 @@
     ],
     "applications": [
       "Javascript",
-      "S3Storage"
+      "Amazon_S3"
     ]
   },
   {
@@ -310,8 +332,7 @@
       "conversion"
     ],
     "applications": [
-      "Excel",
-      "CSV"
+      "Excel"
     ]
   },
   {
@@ -391,7 +412,7 @@
       "bucket"
     ],
     "applications": [
-      "GoogleStorage",
+      "Google_Storage",
       "Javascript"
     ]
   },
@@ -495,7 +516,6 @@
       "file"
     ],
     "applications": [
-      "CSV",
       "Javascript"
     ]
   },
@@ -673,28 +693,6 @@
     ]
   },
   {
-    "name": "S3 Storage Quick Start",
-    "description": "Shows upload, get, download and delete object operations in S3 bucket",
-    "slug": "s3-storage-quick-start",
-    "icon": "s3_storage_quick_start_icon.png",
-    "screenshots": [
-      "s3_storage_quick_start_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Files",
-    "tags": [
-      "s3",
-      "storage",
-      "object",
-      "cloud",
-      "bucket"
-    ],
-    "applications": [
-      "S3Storage",
-      "Javascript"
-    ]
-  },
-  {
     "name": "Screen Capture",
     "description": "Browser screen capture example",
     "slug": "screen-capture",
@@ -807,7 +805,6 @@
       "file"
     ],
     "applications": [
-      "CSV",
       "Javascript"
     ]
   },

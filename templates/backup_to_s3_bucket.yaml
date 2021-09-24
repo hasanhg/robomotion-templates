@@ -14,6 +14,6 @@
     - cloud
   applications:
     - Javascript
-    - S3Storage
+    - Amazon_S3
 
     

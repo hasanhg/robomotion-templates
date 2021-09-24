@@ -1,13 +1,12 @@
 applications:
+  - Amazon_S3
   - Chrome
-  - CSV
   - Discord
   - Excel
-  - GoogleStorage
+  - Google_Storage
   - Javascript
   - MongoDB
   - Other
-  - S3Storage
   - Slack
   - SQLite
   - Twilio
