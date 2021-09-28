@@ -618,6 +618,26 @@
     ]
   },
   {
+    "name": "Read Word Document",
+    "description": "Reads the content of a Word document",
+    "slug": "read-word-document",
+    "icon": "read_word_document_icon.png",
+    "screenshots": [
+      "read_word_document_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "microsoft",
+      "word",
+      "document"
+    ],
+    "applications": [
+      "Word",
+      "Javascript"
+    ]
+  },
+  {
     "name": "ReCaptcha Solver",
     "description": "Verify Google ReCaptcha V2 automatically with solving services.",
     "slug": "recaptcha-solver",
@@ -631,6 +651,26 @@
       "captcha"
     ],
     "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Replace Words in Word Document",
+    "description": "Replaces words in a word document",
+    "slug": "replace-words-in-word-document",
+    "icon": "replace_words_in_word_document_icon.png",
+    "screenshots": [
+      "replace_words_in_word_document_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "microsoft",
+      "word",
+      "document"
+    ],
+    "applications": [
+      "Word",
       "Javascript"
     ]
   },
@@ -1022,6 +1062,26 @@
     ],
     "applications": [
       "Other"
+    ]
+  },
+  {
+    "name": "Write to Word Document",
+    "description": "Reads a txt file and writes output to a new word document",
+    "slug": "write-to-word-document",
+    "icon": "write_to_word_document_icon.png",
+    "screenshots": [
+      "write_to_word_document_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "microsoft",
+      "word",
+      "document"
+    ],
+    "applications": [
+      "Word",
+      "Javascript"
     ]
   },
   {

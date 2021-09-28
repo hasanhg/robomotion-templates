@@ -1,0 +1,16 @@
+- name: Read Word Document
+  description: Reads the content of a Word document
+  slug: read-word-document
+  icon: read_word_document_icon.png
+  screenshots:
+    - read_word_document_screenshot.png
+  author: Robomotion
+  category: Files
+  tags:
+    - microsoft
+    - word
+    - document
+  applications:
+    - Word
+    - Javascript
+    
