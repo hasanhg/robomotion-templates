@@ -317,6 +317,28 @@
     ]
   },
   {
+    "name": "Excel Range to Word Table",
+    "description": "Reads range from excel file and writes to a newly created word document",
+    "slug": "excel-range-to-word-table",
+    "icon": "excel_range_to_word_table_icon.png",
+    "screenshots": [
+      "excel_range_to_word_table_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "microsoft",
+      "excel",
+      "word",
+      "document"
+    ],
+    "applications": [
+      "Excel",
+      "Word",
+      "Javascript"
+    ]
+  },
+  {
     "name": "Excel To CSV",
     "description": "Converts an excel file to a csv file in your file system",
     "slug": "excel-to-csv",
