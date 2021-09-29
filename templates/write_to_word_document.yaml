@@ -1,0 +1,16 @@
+- name: Write to Word Document
+  description: Reads a txt file and writes output to a new word document
+  slug: write-to-word-document
+  icon: write_to_word_document_icon.png
+  screenshots:
+    - write_to_word_document_screenshot.png
+  author: Robomotion
+  category: Files
+  tags:
+    - microsoft
+    - word
+    - document
+  applications:
+    - Word
+    - Javascript
+    

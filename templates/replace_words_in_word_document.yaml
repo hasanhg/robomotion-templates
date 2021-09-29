@@ -1,0 +1,16 @@
+- name: Replace Words in Word Document
+  description: Replaces words in a word document
+  slug: replace-words-in-word-document
+  icon: replace_words_in_word_document_icon.png
+  screenshots:
+    - replace_words_in_word_document_screenshot.png
+  author: Robomotion
+  category: Files
+  tags:
+    - microsoft
+    - word
+    - document
+  applications:
+    - Word
+    - Javascript
+    
