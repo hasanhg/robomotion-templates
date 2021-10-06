@@ -1,0 +1,862 @@
+{
+	"nodes": [{
+		"id": "34dd5548-8333-4f4d-9fd4-c93ad61fadcf",
+		"type": "simple",
+		"selected": true,
+		"x": 474.2313097017184,
+		"y": -48.903933317612164,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "6ea9f694-dc91-4b89-8bd6-2e154f8642ce",
+			"type": "default",
+			"selected": false,
+			"name": "out_6ea9f694-dc91-4b89-8bd6-2e154f8642ce",
+			"parentNode": "34dd5548-8333-4f4d-9fd4-c93ad61fadcf",
+			"links": ["1e6469e8-dd3d-49a2-9828-cb2b5d9f337e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "34dd5548-8333-4f4d-9fd4-c93ad61fadcf",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "be749375-197a-4d21-8673-e7ebf5f97baa",
+		"type": "simple",
+		"selected": true,
+		"x": 51.77692821512478,
+		"y": -228.37823946925477,
+		"extras": {
+			"optText": "## Extract Text From Image\nThis template uses *Google Vision* nodes for extracting text. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Google Vision package icon, install it.\n\n**5.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**7.** Go to Vaults and create new document item with this json key.\n\n**8.** Set this vault item to connect node credentials.\n\n**9.** Edit the config node.\n\n**10.** Set the msg.imagepath to the path of image.\n\n**11.** Set the msg.txtfilepath to the path of text file for writing result.\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "be749375-197a-4d21-8673-e7ebf5f97baa",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## Extract Text From Image\nThis template uses *Google Vision* nodes for extracting text. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Google Vision package icon, install it.\n\n**5.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**7.** Go to Vaults and create new document item with this json key.\n\n**8.** Set this vault item to connect node credentials.\n\n**9.** Edit the config node.\n\n**10.** Set the msg.imagepath to the path of image.\n\n**11.** Set the msg.txtfilepath to the path of text file for writing result.\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## Extract Text From Image\nThis template uses *Google Vision* nodes for extracting text. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Google Vision package icon, install it.\n\n**5.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**7.** Go to Vaults and create new document item with this json key.\n\n**8.** Set this vault item to connect node credentials.\n\n**9.** Edit the config node.\n\n**10.** Set the msg.imagepath to the path of image.\n\n**11.** Set the msg.txtfilepath to the path of text file for writing result.\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "fefb7e32-b58a-486a-89de-5262351c5854",
+		"type": "simple",
+		"selected": true,
+		"x": 764.6452601870214,
+		"y": 112.08249293016866,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "e523fd68-b25f-43e8-971a-c924368246ba",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "fefb7e32-b58a-486a-89de-5262351c5854",
+			"links": ["9066ae98-9ac6-4296-a448-5de959fa2b23"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "fefb7e32-b58a-486a-89de-5262351c5854",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "e4b92caa-adf4-4d86-b572-0dd23d22cb54",
+		"type": "simple",
+		"selected": true,
+		"x": 761.7608116854161,
+		"y": 61.33259155049574,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "txtfilepath"
+			},
+			"inText": {
+				"scope": "Message",
+				"name": "text"
+			},
+			"optMode": "append"
+		},
+		"ports": [{
+			"id": "7862a8fd-91d9-4d55-9f93-2f2fd2869fb5",
+			"type": "default",
+			"selected": false,
+			"name": "out_7862a8fd-91d9-4d55-9f93-2f2fd2869fb5",
+			"parentNode": "e4b92caa-adf4-4d86-b572-0dd23d22cb54",
+			"links": ["9066ae98-9ac6-4296-a448-5de959fa2b23"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "4ec74c84-9042-462b-93a2-bd770c910af8",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e4b92caa-adf4-4d86-b572-0dd23d22cb54",
+			"links": ["eae7a590-d068-4cea-adc4-69ef820d529b"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e4b92caa-adf4-4d86-b572-0dd23d22cb54",
+			"name": "Write File",
+			"icon": "M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z",
+			"color": "#dbdfa0",
+			"namespace": "Core.FileSystem.WriteFile",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Write File",
+				"version": "1.11.6",
+				"color": "#dbdfa0",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "txtfilepath"
+				},
+				"inText": {
+					"scope": "Message",
+					"name": "text"
+				}
+			}, {
+				"optMode": "append"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Path",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inText": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inText"]
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Message",
+						"name": "txtfilepath"
+					},
+					"inText": {
+						"scope": "Message",
+						"name": "text"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optMode": {
+							"title": "Write Mode",
+							"type": "string",
+							"enum": ["append", "truncate"],
+							"enumNames": ["Append", "Truncate"]
+						}
+					}
+				},
+				"uiSchema": {},
+				"formData": {
+					"optMode": "append"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "952f45b1-8f45-4547-b011-f78d487334f2",
+		"type": "simple",
+		"selected": true,
+		"x": 464.72010841483996,
+		"y": 1.1338385813159562,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.imagepath = \"C:/Users/user/Desktop/ocrimage.png\";\nmsg.txtfilepath = \"C:/Users/user/Desktop/ocrtext.txt\";\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "cbf659d2-677e-44cc-84d3-d54735cbb509",
+			"type": "default",
+			"selected": false,
+			"name": "out_cbf659d2-677e-44cc-84d3-d54735cbb509",
+			"parentNode": "952f45b1-8f45-4547-b011-f78d487334f2",
+			"links": ["327bec7e-1278-49e1-88d6-c5d5a5c14a39"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c91ec59c-a731-4f6a-8b8c-1c069bb41cf3",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "952f45b1-8f45-4547-b011-f78d487334f2",
+			"links": ["1e6469e8-dd3d-49a2-9828-cb2b5d9f337e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "952f45b1-8f45-4547-b011-f78d487334f2",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.imagepath = \"C:/Users/user/Desktop/ocrimage.png\";\nmsg.txtfilepath = \"C:/Users/user/Desktop/ocrtext.txt\";\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.imagepath = \"C:/Users/user/Desktop/ocrimage.png\";\nmsg.txtfilepath = \"C:/Users/user/Desktop/ocrtext.txt\";\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "7bacddda-f7a8-426d-93cb-a212e03327df",
+		"type": "simple",
+		"selected": true,
+		"x": 756.2017441856001,
+		"y": 9.083370338702233,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "imagepath"
+			},
+			"inVisionClientID": {
+				"name": "vision_client_id",
+				"scope": "Message"
+			},
+			"outConfidence": {
+				"name": "confidence",
+				"scope": "Message"
+			},
+			"outText": {
+				"name": "outtext",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "80c16d2b-81a4-4b83-b11b-2cc9a3f8534a",
+			"type": "default",
+			"selected": false,
+			"name": "out_80c16d2b-81a4-4b83-b11b-2cc9a3f8534a",
+			"parentNode": "7bacddda-f7a8-426d-93cb-a212e03327df",
+			"links": ["eae7a590-d068-4cea-adc4-69ef820d529b"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "99d02f95-74de-428e-89f2-1788db90bd89",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "7bacddda-f7a8-426d-93cb-a212e03327df",
+			"links": ["edd00b5e-775b-4600-ac9f-e75d8f3ad990"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "7bacddda-f7a8-426d-93cb-a212e03327df",
+			"name": "Image To Text",
+			"icon": "M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6,20H15L18,20V12L14,16L12,14L6,20M8,9A2,2 0 0,0 6,11A2,2 0 0,0 8,13A2,2 0 0,0 10,11A2,2 0 0,0 8,9Z",
+			"color": "#ff1a1a",
+			"namespace": "Robomotion.GoogleVision.ImageToText",
+			"version": "0.2.0",
+			"abc": [{
+				"name": "Image To Text",
+				"version": "0.2.0",
+				"color": "#ff1a1a",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "imagepath"
+				},
+				"inVisionClientID": {
+					"name": "vision_client_id",
+					"scope": "Message"
+				}
+			}, {
+				"outConfidence": {
+					"name": "confidence",
+					"scope": "Message"
+				},
+				"outText": {
+					"name": "outtext",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inVisionClientID": {
+							"type": "object",
+							"title": "Vision Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Custom",
+						"name": "C:/Users/user/Desktop/test.png"
+					},
+					"inVisionClientID": {
+						"name": "vision_client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inVisionClientID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inVisionClientID", "inPath"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outConfidence": {
+							"type": "object",
+							"title": "Confidence",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "Object"
+						},
+						"outText": {
+							"type": "object",
+							"title": "Text",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outConfidence": {
+						"name": "confidence",
+						"scope": "Message"
+					},
+					"outText": {
+						"name": "outtext",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outConfidence": {
+						"ui:field": "variable"
+					},
+					"outText": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outConfidence", "outText"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "442a5380-5916-4697-819f-59262aa06d13",
+		"type": "simple",
+		"selected": true,
+		"x": 758.5578762610718,
+		"y": -40.812396585310154,
+		"extras": {
+			"outVisionId": {
+				"name": "vision_client_id",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "411009e3-70e3-40f2-a654-e60b3fd1efc1",
+			"type": "default",
+			"selected": false,
+			"name": "out_411009e3-70e3-40f2-a654-e60b3fd1efc1",
+			"parentNode": "442a5380-5916-4697-819f-59262aa06d13",
+			"links": ["edd00b5e-775b-4600-ac9f-e75d8f3ad990"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "419e66cc-e6ba-403b-ae96-9367ab8de1c9",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "442a5380-5916-4697-819f-59262aa06d13",
+			"links": ["327bec7e-1278-49e1-88d6-c5d5a5c14a39"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "442a5380-5916-4697-819f-59262aa06d13",
+			"name": "Connect",
+			"icon": "M19,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4H10L12,6H19A2,2 0 0,1 21,8H21L4,8V18L6.14,10H23.21L20.93,18.5C20.7,19.37 19.92,20 19,20Z",
+			"color": "#ff1a1a",
+			"namespace": "Robomotion.GoogleVision.Connect",
+			"version": "0.2.0",
+			"abc": [{}, {
+				"outVisionId": {
+					"name": "vision_client_id",
+					"scope": "Message"
+				}
+			}, {}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outVisionId": {
+							"type": "object",
+							"title": "Vision Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outVisionId": {
+						"name": "vision_client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outVisionId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outVisionId"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 0,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"formData": {},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optCredentials"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}

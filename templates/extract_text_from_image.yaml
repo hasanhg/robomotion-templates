@@ -1,0 +1,16 @@
+- name: Extract Text From Image
+  description: Extracts text from an image file and writes to a text file
+  slug: extract-text-from-image
+  icon: extract_text_from_image_icon.png
+  screenshots:
+    - extract_text_from_image_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - image
+    - ai
+    - google
+    - ocr
+  applications:
+    - Google_Vision
+

@@ -1,0 +1,16 @@
+- name: Check Image Safety
+  description: Checks an image's safety via Google Vision
+  slug: check-image-safety
+  icon: check_image_safety_icon.png
+  screenshots:
+    - check_image_safety_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - image
+    - safety
+    - ai
+    - google
+  applications:
+    - Google_Vision
+

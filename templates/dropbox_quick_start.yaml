@@ -1,0 +1,17 @@
+- name: Dropbox Quick Start
+  description: Shows how to make some Dropbox operations
+  slug: dropbox-quick-start
+  icon: dropbox_quick_start_icon.png
+  screenshots:
+    - dropbox_quick_start_screenshot1.png
+    - dropbox_quick_start_screenshot2.png
+  author: Robomotion
+  category: Files
+  tags:
+    - dropbox
+    - storage
+    - file
+    - cloud
+  applications:
+    - Dropbox
+    

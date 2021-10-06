@@ -2,8 +2,10 @@ applications:
   - Amazon_S3
   - Chrome
   - Discord
+  - Dropbox
   - Excel
   - Google_Storage
+  - Google_Vision
   - Javascript
   - MongoDB
   - Other
