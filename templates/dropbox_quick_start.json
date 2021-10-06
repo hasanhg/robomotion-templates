@@ -1,0 +1,1297 @@
+{
+	"nodes": [{
+		"id": "2ff76562-37cc-43cc-bdf9-4da835cb04b4",
+		"type": "simple",
+		"selected": true,
+		"x": 406,
+		"y": 146,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "236e015c-8494-4a55-9a29-ce3b7324213b",
+			"type": "default",
+			"selected": false,
+			"name": "out_236e015c-8494-4a55-9a29-ce3b7324213b",
+			"parentNode": "2ff76562-37cc-43cc-bdf9-4da835cb04b4",
+			"links": ["cb956262-7aee-4f08-8cfc-8c995a699e06"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "2ff76562-37cc-43cc-bdf9-4da835cb04b4",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "b8d1b638-e98c-4045-af35-b5b0c03f7fba",
+		"type": "simple",
+		"selected": true,
+		"x": 671.3333333333334,
+		"y": 148.33333333333334,
+		"extras": {
+			"outClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"optToken": {
+				"vaultId": "_",
+				"itemId": "_"
+			}
+		},
+		"ports": [{
+			"id": "82d5a6ad-fef2-4158-9d9e-c8f8eb8698f8",
+			"type": "default",
+			"selected": false,
+			"name": "out_82d5a6ad-fef2-4158-9d9e-c8f8eb8698f8",
+			"parentNode": "b8d1b638-e98c-4045-af35-b5b0c03f7fba",
+			"links": ["ddf9d95f-7c4b-4552-aa0c-6308eaecab88"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "73cc5789-c249-4d21-8e00-7cf7539c62f2",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b8d1b638-e98c-4045-af35-b5b0c03f7fba",
+			"links": ["749274d3-d4e1-4d58-a8bc-62e1e192c544"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b8d1b638-e98c-4045-af35-b5b0c03f7fba",
+			"name": "Connect",
+			"icon": "M12,14.56L16.35,18.16L18.2,16.95V18.3L12,22L5.82,18.3V16.95L7.68,18.16L12,14.56M7.68,2.5L12,6.09L16.32,2.5L22.5,6.5L18.23,9.94L22.5,13.36L16.32,17.39L12,13.78L7.68,17.39L1.5,13.36L5.77,9.94L1.5,6.5L7.68,2.5M12,13.68L18.13,9.94L12,6.19L5.87,9.94L12,13.68Z",
+			"color": "#007ee5",
+			"namespace": "Robomotion.Dropbox.Connect",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Connect",
+				"version": "0.0.3",
+				"color": "#007ee5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}, {
+				"optToken": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outClientID": {
+							"type": "object",
+							"title": "Client ID",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						}
+					}
+				},
+				"formData": {
+					"outClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outClientID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientID"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optToken": {
+							"type": "object",
+							"title": "Dropbox Token",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"formData": {
+					"optToken": {
+						"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+						"itemId": "2afec9a6-a438-4b53-8e6e-f405909eb04e"
+					}
+				},
+				"uiSchema": {
+					"optToken": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optToken"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b72d1ebe-23a2-47a3-9848-2d4cb7db3dac",
+		"type": "simple",
+		"selected": true,
+		"x": 683,
+		"y": 195,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inDropboxPath": {
+				"scope": "Message",
+				"name": "folderName"
+			}
+		},
+		"ports": [{
+			"id": "58517263-49ca-4379-856f-fe1d03f08554",
+			"type": "default",
+			"selected": false,
+			"name": "out_58517263-49ca-4379-856f-fe1d03f08554",
+			"parentNode": "b72d1ebe-23a2-47a3-9848-2d4cb7db3dac",
+			"links": ["ced453d9-f957-4a95-a54b-adfd7bd5fa07"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f148e61c-7b22-4ba6-8fe9-545e00769c4e",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b72d1ebe-23a2-47a3-9848-2d4cb7db3dac",
+			"links": ["ddf9d95f-7c4b-4552-aa0c-6308eaecab88"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b72d1ebe-23a2-47a3-9848-2d4cb7db3dac",
+			"name": "Create Folder",
+			"icon": "M12,14.56L16.35,18.16L18.2,16.95V18.3L12,22L5.82,18.3V16.95L7.68,18.16L12,14.56M7.68,2.5L12,6.09L16.32,2.5L22.5,6.5L18.23,9.94L22.5,13.36L16.32,17.39L12,13.78L7.68,17.39L1.5,13.36L5.77,9.94L1.5,6.5L7.68,2.5M12,13.68L18.13,9.94L12,6.19L5.87,9.94L12,13.68Z",
+			"color": "#007ee5",
+			"namespace": "Robomotion.Dropbox.CreateFolder",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Create Folder",
+				"version": "0.0.3",
+				"color": "#007ee5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inDropboxPath": {
+					"scope": "Message",
+					"name": "folderName"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client ID",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						},
+						"inDropboxPath": {
+							"type": "object",
+							"title": "Dropbox Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inDropboxPath": {
+						"scope": "Message",
+						"name": "folderName"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inDropboxPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inDropboxPath"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "37532882-53b8-4613-b004-fa081a55bb4c",
+		"type": "simple",
+		"selected": true,
+		"x": 716,
+		"y": 292,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inDropboxPath": {
+				"name": "dropboxIconPath",
+				"scope": "Message"
+			},
+			"inLocalPath": {
+				"scope": "Message",
+				"name": "localDownloadPath"
+			}
+		},
+		"ports": [{
+			"id": "49998170-fe4a-4064-9110-1eb85c14b3a6",
+			"type": "default",
+			"selected": false,
+			"name": "out_49998170-fe4a-4064-9110-1eb85c14b3a6",
+			"parentNode": "37532882-53b8-4613-b004-fa081a55bb4c",
+			"links": ["9b6b7098-9d64-42d8-9473-123d688619f9"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "1c84ebc4-ac9d-448d-8758-e2cee2ffdf3c",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "37532882-53b8-4613-b004-fa081a55bb4c",
+			"links": ["fad8d023-72bf-4309-96a5-75a58cc37300"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "37532882-53b8-4613-b004-fa081a55bb4c",
+			"name": "Download File",
+			"icon": "M12,14.56L16.35,18.16L18.2,16.95V18.3L12,22L5.82,18.3V16.95L7.68,18.16L12,14.56M7.68,2.5L12,6.09L16.32,2.5L22.5,6.5L18.23,9.94L22.5,13.36L16.32,17.39L12,13.78L7.68,17.39L1.5,13.36L5.77,9.94L1.5,6.5L7.68,2.5M12,13.68L18.13,9.94L12,6.19L5.87,9.94L12,13.68Z",
+			"color": "#007ee5",
+			"namespace": "Robomotion.Dropbox.DownloadFile",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Download File",
+				"version": "0.0.3",
+				"color": "#007ee5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inDropboxPath": {
+					"name": "dropboxIconPath",
+					"scope": "Message"
+				},
+				"inLocalPath": {
+					"scope": "Message",
+					"name": "localDownloadPath"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client ID",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						},
+						"inDropboxPath": {
+							"type": "object",
+							"title": "Dropbox Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inLocalPath": {
+							"type": "object",
+							"title": "Local Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inDropboxPath": {
+						"name": "dropboxIconPath",
+						"scope": "Message"
+					},
+					"inLocalPath": {
+						"scope": "Message",
+						"name": "localDownlaodPath"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inDropboxPath": {
+						"ui:field": "variable"
+					},
+					"inLocalPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inDropboxPath", "inLocalPath"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "862af24e-7432-4eea-b8b8-8a2bcbf1c6e7",
+		"type": "simple",
+		"selected": true,
+		"x": 725,
+		"y": 340,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inDropboxPath": {
+				"scope": "Message",
+				"name": "dropboxIconPath"
+			},
+			"outStats": {
+				"name": "stats",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "55a73cd1-5f20-4529-8a11-4a71d0b4491b",
+			"type": "default",
+			"selected": false,
+			"name": "out_55a73cd1-5f20-4529-8a11-4a71d0b4491b",
+			"parentNode": "862af24e-7432-4eea-b8b8-8a2bcbf1c6e7",
+			"links": ["ffcd721f-35b1-4616-aa0d-f5f5044af88c"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f7fbddd7-41db-436e-bacf-512be1d64298",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "862af24e-7432-4eea-b8b8-8a2bcbf1c6e7",
+			"links": ["9b6b7098-9d64-42d8-9473-123d688619f9"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "862af24e-7432-4eea-b8b8-8a2bcbf1c6e7",
+			"name": "File Stat",
+			"icon": "M12,14.56L16.35,18.16L18.2,16.95V18.3L12,22L5.82,18.3V16.95L7.68,18.16L12,14.56M7.68,2.5L12,6.09L16.32,2.5L22.5,6.5L18.23,9.94L22.5,13.36L16.32,17.39L12,13.78L7.68,17.39L1.5,13.36L5.77,9.94L1.5,6.5L7.68,2.5M12,13.68L18.13,9.94L12,6.19L5.87,9.94L12,13.68Z",
+			"color": "#007ee5",
+			"namespace": "Robomotion.Dropbox.FileStat",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "File Stat",
+				"version": "0.0.2",
+				"color": "#007ee5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inDropboxPath": {
+					"scope": "Message",
+					"name": "dropboxIconPath"
+				}
+			}, {
+				"outStats": {
+					"name": "stats",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client ID",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						},
+						"inDropboxPath": {
+							"type": "object",
+							"title": "Dropbox Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inDropboxPath": {
+						"scope": "Message",
+						"name": "dropboxIconPath"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inDropboxPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inDropboxPath"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outStats": {
+							"type": "object",
+							"title": "Stats",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						}
+					}
+				},
+				"formData": {
+					"outStats": {
+						"name": "stats",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outStats": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outStats"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "ac4a4e87-8d70-4ee3-9419-7555df3183b5",
+		"type": "simple",
+		"selected": true,
+		"x": 737,
+		"y": 387,
+		"extras": {
+			"inText": {
+				"scope": "Message",
+				"name": "stats"
+			},
+			"inTitle": {
+				"scope": "Custom",
+				"name": "File Stat"
+			},
+			"outConfirmed": {
+				"scope": "Message",
+				"name": "confirmed"
+			},
+			"optType": "info"
+		},
+		"ports": [{
+			"id": "07f02463-706e-475e-bd3d-b29cd5d970b6",
+			"type": "default",
+			"selected": false,
+			"name": "out_07f02463-706e-475e-bd3d-b29cd5d970b6",
+			"parentNode": "ac4a4e87-8d70-4ee3-9419-7555df3183b5",
+			"links": ["40ef5731-a372-49d1-8d36-b0c6510289f2"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "ef49c576-d9be-402b-9136-4683302c36a4",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ac4a4e87-8d70-4ee3-9419-7555df3183b5",
+			"links": ["ffcd721f-35b1-4616-aa0d-f5f5044af88c"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ac4a4e87-8d70-4ee3-9419-7555df3183b5",
+			"name": "Message Box",
+			"icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
+			"color": "#4da5fb",
+			"namespace": "Core.Dialog.MessageBox",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Message Box",
+				"version": "1.11.6",
+				"color": "#4da5fb",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inText": {
+					"scope": "Message",
+					"name": "stats"
+				},
+				"inTitle": {
+					"scope": "Custom",
+					"name": "File Stat"
+				}
+			}, {
+				"outConfirmed": {
+					"scope": "Message",
+					"name": "confirmed"
+				}
+			}, {
+				"optType": "info"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTitle": {
+							"type": "object",
+							"title": "Title",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["inTitle", "inText"],
+					"inText": {
+						"ui:field": "variable"
+					},
+					"inTitle": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inText": {
+						"scope": "Message",
+						"name": "stats"
+					},
+					"inTitle": {
+						"scope": "Custom",
+						"name": "File Stat"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outConfirmed": {
+							"type": "object",
+							"title": "Confirmed",
+							"variableType": "Boolean",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outConfirmed": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outConfirmed": {
+						"scope": "Message",
+						"name": "confirmed"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optType": {
+							"type": "string",
+							"title": "Type",
+							"enum": ["yesno", "info", "error"],
+							"enumNames": ["Yes / No", "Info", "Error"]
+						}
+					}
+				},
+				"uiSchema": {},
+				"formData": {
+					"optType": "info"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "0c256fbc-9504-4451-888d-3ec48c178352",
+		"type": "simple",
+		"selected": true,
+		"x": 403,
+		"y": 199.46153846153845,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.folderName = \"Testtt1\"; //Name of folder that will be created in your dropbox.\nmsg.localUploadPath = \"C:/Users/user/Desktop/icon.png\"; //Path of icon for upload operation.\nmsg.dropboxIconPath = msg.folderName + \"/dropboxicon.png\";// Path of icon after upload operation.\nmsg.localDownloadPath = \"C:/Users/user/Desktop/dropboxicon.png\"; //Path of icon after download operation.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "f315b655-028c-4bad-a3ec-85101479c040",
+			"type": "default",
+			"selected": false,
+			"name": "out_f315b655-028c-4bad-a3ec-85101479c040",
+			"parentNode": "0c256fbc-9504-4451-888d-3ec48c178352",
+			"links": ["749274d3-d4e1-4d58-a8bc-62e1e192c544"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "7f8cea77-1aad-4360-b7ac-e331667eb3f7",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "0c256fbc-9504-4451-888d-3ec48c178352",
+			"links": ["cb956262-7aee-4f08-8cfc-8c995a699e06"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "0c256fbc-9504-4451-888d-3ec48c178352",
+			"name": "Function",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outputs": 1,
+				"func": "msg.folderName = \"Testtt1\"; //Name of folder that will be created in your dropbox.\nmsg.localUploadPath = \"C:/Users/user/Desktop/icon.png\"; //Path of icon for upload operation.\nmsg.dropboxIconPath = msg.folderName + \"/dropboxicon.png\";// Path of icon after upload operation.\nmsg.localDownloadPath = \"C:/Users/user/Desktop/dropboxicon.png\"; //Path of icon after download operation.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.folderName = \"Testtt1\"; //Name of folder that will be created in your dropbox.\nmsg.localUploadPath = \"C:/Users/user/Desktop/icon.png\"; //Path of icon for upload operation.\nmsg.dropboxIconPath = msg.folderName + \"/dropboxicon.png\";// Path of icon after upload operation.\nmsg.localDownloadPath = \"C:/Users/user/Desktop/dropboxicon.png\"; //Path of icon after download operation.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "58b4557b-02f2-4bd4-bc92-e11f49821f8e",
+		"type": "simple",
+		"selected": true,
+		"x": 700,
+		"y": 245,
+		"extras": {
+			"inClientID": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inDropboxPath": {
+				"name": "dropboxIconPath",
+				"scope": "Message"
+			},
+			"inFilePath": {
+				"scope": "Message",
+				"name": "localUploadPath"
+			}
+		},
+		"ports": [{
+			"id": "a589fb95-ab22-4a9d-9dc1-77e13e7d71b9",
+			"type": "default",
+			"selected": false,
+			"name": "out_a589fb95-ab22-4a9d-9dc1-77e13e7d71b9",
+			"parentNode": "58b4557b-02f2-4bd4-bc92-e11f49821f8e",
+			"links": ["fad8d023-72bf-4309-96a5-75a58cc37300"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "7323d025-c98d-43ee-bd8b-3d24dd04fb16",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "58b4557b-02f2-4bd4-bc92-e11f49821f8e",
+			"links": ["ced453d9-f957-4a95-a54b-adfd7bd5fa07"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "58b4557b-02f2-4bd4-bc92-e11f49821f8e",
+			"name": "Upload File",
+			"icon": "M12,14.56L16.35,18.16L18.2,16.95V18.3L12,22L5.82,18.3V16.95L7.68,18.16L12,14.56M7.68,2.5L12,6.09L16.32,2.5L22.5,6.5L18.23,9.94L22.5,13.36L16.32,17.39L12,13.78L7.68,17.39L1.5,13.36L5.77,9.94L1.5,6.5L7.68,2.5M12,13.68L18.13,9.94L12,6.19L5.87,9.94L12,13.68Z",
+			"color": "#007ee5",
+			"namespace": "Robomotion.Dropbox.UploadFile",
+			"version": "0.0.3",
+			"abc": [{
+				"name": "Upload File",
+				"version": "0.0.3",
+				"color": "#007ee5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inClientID": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inDropboxPath": {
+					"name": "dropboxIconPath",
+					"scope": "Message"
+				},
+				"inFilePath": {
+					"scope": "Message",
+					"name": "localUploadPath"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientID": {
+							"type": "object",
+							"title": "Client ID",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						},
+						"inDropboxPath": {
+							"type": "object",
+							"title": "Dropbox Path",
+							"description": "Path of file where file will be uploaded",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inFilePath": {
+							"type": "object",
+							"title": "File Path",
+							"description": "Local file path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"formData": {
+					"inClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inDropboxPath": {
+						"name": "dropboxIconPath",
+						"scope": "Message"
+					},
+					"inFilePath": {
+						"scope": "Message",
+						"name": "localUploadPath"
+					}
+				},
+				"uiSchema": {
+					"inClientID": {
+						"ui:field": "variable"
+					},
+					"inDropboxPath": {
+						"ui:field": "variable"
+					},
+					"inFilePath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientID", "inDropboxPath", "inFilePath"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "c51a071f-b05f-4b9b-8dbd-e74a3af91f1d",
+		"type": "simple",
+		"selected": true,
+		"x": 753,
+		"y": 436,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "805ed073-5950-4ab7-abb4-2baf5436a4c5",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c51a071f-b05f-4b9b-8dbd-e74a3af91f1d",
+			"links": ["40ef5731-a372-49d1-8d36-b0c6510289f2"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c51a071f-b05f-4b9b-8dbd-e74a3af91f1d",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "7ab9cced-ba2f-486d-b3f4-079c2be2b691",
+		"type": "simple",
+		"selected": true,
+		"x": 42.631701631701674,
+		"y": -142.08857808857806,
+		"extras": {
+			"optText": "## Dropbox Quick Start\r\n\r\nThis template uses *Dropbox* nodes for showing some dropbox operations. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Dropbox package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.folderName to the name of folder that you will create in dropbox.\r\n\r\n**7.** Set the msg.localUploadPath to the Path of icon to upload.\r\n\r\n**8.** Set the msg.dropboxIconPath to the Dropbox Path of icon after upload.\r\n\r\n**9.** Set the msg.localDownloadPath to the Path of icon after download.\r\n\r\n**10.** You need to a vault item that contain Dropbox API Access Token for access, see [here](http://99rabbits.com/get-dropbox-access-token/).\r\n\r\n**11.** Set your token to Connect node's Dropbox Token field.\r\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "7ab9cced-ba2f-486d-b3f4-079c2be2b691",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## Dropbox Quick Start\r\n\r\nThis template uses *Dropbox* nodes for showing some dropbox operations. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Dropbox package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.folderName to the name of folder that you will create in dropbox.\r\n\r\n**7.** Set the msg.localUploadPath to the Path of icon to upload.\r\n\r\n**8.** Set the msg.dropboxIconPath to the Dropbox Path of icon after upload.\r\n\r\n**9.** Set the msg.localDownloadPath to the Path of icon after download.\r\n\r\n**10.** You need to a vault item that contain Dropbox API Access Token for access, see [here](http://99rabbits.com/get-dropbox-access-token/).\r\n\r\n**11.** Set your token to Connect node's Dropbox Token field.\r\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## Dropbox Quick Start\r\n\r\nThis template uses *Dropbox* nodes for showing some dropbox operations. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Dropbox package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.folderName to the name of folder that you will create in dropbox.\r\n\r\n**7.** Set the msg.localUploadPath to the Path of icon to upload.\r\n\r\n**8.** Set the msg.dropboxIconPath to the Dropbox Path of icon after upload.\r\n\r\n**9.** Set the msg.localDownloadPath to the Path of icon after download.\r\n\r\n**10.** You need to a vault item that contain Dropbox API Access Token for access, see [here](http://99rabbits.com/get-dropbox-access-token/).\r\n\r\n**11.** Set your token to Connect node's Dropbox Token field.\r\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": []
+}

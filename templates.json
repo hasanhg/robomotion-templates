@@ -122,6 +122,26 @@
     ]
   },
   {
+    "name": "Check Image Safety",
+    "description": "Checks an image's safety via Google Vision",
+    "slug": "check-image-safety",
+    "icon": "check_image_safety_icon.png",
+    "screenshots": [
+      "check_image_safety_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "image",
+      "safety",
+      "ai",
+      "google"
+    ],
+    "applications": [
+      "Google_Vision"
+    ]
+  },
+  {
     "name": "Click Image In Screen",
     "description": "Searches a predefined image in the screen. If finds an image with enough confidence value, clicks to it.",
     "slug": "click-image-in-screen",
@@ -257,6 +277,27 @@
     ]
   },
   {
+    "name": "Dropbox Quick Start",
+    "description": "Shows how to make some Dropbox operations",
+    "slug": "dropbox-quick-start",
+    "icon": "dropbox_quick_start_icon.png",
+    "screenshots": [
+      "dropbox_quick_start_screenshot1.png",
+      "dropbox_quick_start_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "dropbox",
+      "storage",
+      "file",
+      "cloud"
+    ],
+    "applications": [
+      "Dropbox"
+    ]
+  },
+  {
     "name": "Duplicate File Remover",
     "description": "Removes duplicated files in a given directory in your file system",
     "slug": "duplicate-file-remover",
@@ -355,6 +396,45 @@
     ],
     "applications": [
       "Excel"
+    ]
+  },
+  {
+    "name": "Extract Image Labels",
+    "description": "Extracts an image's first 10 labels",
+    "slug": "extract-image-labels",
+    "icon": "extract_image_labels_icon.png",
+    "screenshots": [
+      "extract_image_labels_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "image",
+      "ai",
+      "google"
+    ],
+    "applications": [
+      "Google_Vision"
+    ]
+  },
+  {
+    "name": "Extract Text From Image",
+    "description": "Extracts text from an image file and writes to a text file",
+    "slug": "extract-text-from-image",
+    "icon": "extract_text_from_image_icon.png",
+    "screenshots": [
+      "extract_text_from_image_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "image",
+      "ai",
+      "google",
+      "ocr"
+    ],
+    "applications": [
+      "Google_Vision"
     ]
   },
   {
