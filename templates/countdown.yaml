@@ -1,0 +1,14 @@
+- name: Countdown
+  description: Counts down for a specified date starting from the current time
+  slug: countdown
+  icon: countdown_icon.png
+  screenshots:
+    - countdown_screenshot.png
+  author: Robomotion
+  category: Other
+  tags:
+    - countdown
+    - time
+    - date
+  applications:
+    - Javascript

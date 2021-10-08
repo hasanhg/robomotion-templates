@@ -5,7 +5,7 @@
     "slug": "amazon-s3-quick-start",
     "icon": "amazon_s3_quick_start_icon.png",
     "screenshots": [
-      "s3_storage_quick_start_screenshot.png"
+      "amazon_s3_quick_start_screenshot.png"
     ],
     "author": "Robomotion",
     "category": "Files",
@@ -164,25 +164,6 @@
   },
   {
     "name": "Click To Specific Point",
-    "description": "Clicks to specified point in the screen with mouse.",
-    "slug": "click-to-specific-point",
-    "icon": "click_to_specific_point_icon.png",
-    "screenshots": [
-      "click_to_specific_point_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "mouse",
-      "click",
-      "system"
-    ],
-    "applications": [
-      "Other"
-    ]
-  },
-  {
-    "name": "Content Checker",
     "description": "Checks spesific field in given website url and notifies if content has changed.",
     "slug": "content-checker",
     "icon": "content_checker_icon.png",
@@ -193,6 +174,25 @@
     "category": "Monitoring",
     "tags": [
       "monitoring"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Countdown",
+    "description": "Counts down for a specified date starting from the current time",
+    "slug": "countdown",
+    "icon": "countdown_icon.png",
+    "screenshots": [
+      "countdown_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "countdown",
+      "time",
+      "date"
     ],
     "applications": [
       "Javascript"
@@ -366,7 +366,7 @@
       "excel_range_to_word_table_screenshot.png"
     ],
     "author": "Robomotion",
-    "category": "Productivity",
+    "category": "Files",
     "tags": [
       "microsoft",
       "excel",
@@ -1015,25 +1015,6 @@
   },
   {
     "name": "Translator",
-    "description": "Translates the text from a specified language to another one using Google Translate",
-    "slug": "translator",
-    "icon": "translator_icon.png",
-    "screenshots": [
-      "translator_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "browser",
-      "dialog",
-      "translate"
-    ],
-    "applications": [
-      "Chrome"
-    ]
-  },
-  {
-    "name": "Twitter Auto Follow",
     "description": "Follows a specified Twitter account",
     "slug": "twitter-auto-follow",
     "icon": "twitter_auto_follow_icon.png",
