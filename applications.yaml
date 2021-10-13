@@ -4,10 +4,12 @@ applications:
   - Discord
   - Dropbox
   - Excel
+  - Google_Sheets
   - Google_Storage
   - Google_Vision
   - Javascript
   - MongoDB
+  - MySQL
   - Other
   - Slack
   - SQLite

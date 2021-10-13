@@ -1,0 +1,1332 @@
+{
+	"nodes": [{
+		"id": "dc888a9d-94d1-47bf-86ac-5b1619e76e4b",
+		"type": "simple",
+		"selected": true,
+		"x": 828.1324110671939,
+		"y": 221.1739130434783,
+		"extras": {
+			"path": {
+				"scope": "Message",
+				"name": "excelFilePath"
+			},
+			"outApplicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"optVisible": true
+		},
+		"ports": [{
+			"id": "dd482142-4a94-4857-9a82-4a9edd24860c",
+			"type": "default",
+			"selected": false,
+			"name": "out_dd482142-4a94-4857-9a82-4a9edd24860c",
+			"parentNode": "dc888a9d-94d1-47bf-86ac-5b1619e76e4b",
+			"links": ["8167bce4-4b3c-43c2-b0bd-3d0f674087ba"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "cb9d9868-444f-415b-bb0d-bbcb38907c4a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "dc888a9d-94d1-47bf-86ac-5b1619e76e4b",
+			"links": ["05f5dfa1-906b-4f08-8ceb-1df5d1103e45"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "dc888a9d-94d1-47bf-86ac-5b1619e76e4b",
+			"name": "Open Excel",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.OpenExcel",
+			"version": "1.0.5",
+			"abc": [{
+				"name": "Open Excel",
+				"version": "1.0.5",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"path": {
+					"scope": "Message",
+					"name": "excelFilePath"
+				}
+			}, {
+				"outApplicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				}
+			}, {
+				"optVisible": true
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"path": {
+							"type": "object",
+							"title": "Path",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"path": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["path"]
+				},
+				"formData": {
+					"path": {
+						"scope": "Message",
+						"name": "excelFilePath"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outApplicationId": {
+							"type": "object",
+							"title": "Out File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageOnly": true
+						}
+					}
+				},
+				"uiSchema": {
+					"outApplicationId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outApplicationId"]
+				},
+				"formData": {
+					"outApplicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optVisible": {
+							"type": "boolean",
+							"title": "Visible"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optVisible"]
+				},
+				"formData": {
+					"optVisible": true
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "58cb8fed-576f-47d3-babc-4897a6053fd3",
+		"type": "simple",
+		"selected": true,
+		"x": 829.5050967339298,
+		"y": 271.1345781898061,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"startCell": {
+				"scope": "Message",
+				"name": "startCell"
+			},
+			"range": {
+				"scope": "Message",
+				"name": "table"
+			},
+			"optHeaders": true,
+			"delayAfter": 3
+		},
+		"ports": [{
+			"id": "995a7be0-b87d-473f-a75d-216d567be801",
+			"type": "default",
+			"selected": false,
+			"name": "out_995a7be0-b87d-473f-a75d-216d567be801",
+			"parentNode": "58cb8fed-576f-47d3-babc-4897a6053fd3",
+			"links": ["0f016ef0-c7ce-4125-a52c-d74ef2142b32"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "6dd7b38f-1e44-433c-8d64-4e4b0436e817",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "58cb8fed-576f-47d3-babc-4897a6053fd3",
+			"links": ["8167bce4-4b3c-43c2-b0bd-3d0f674087ba"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "58cb8fed-576f-47d3-babc-4897a6053fd3",
+			"name": "Set Range",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.SetRange",
+			"version": "1.0.5",
+			"abc": [{
+				"name": "Set Range",
+				"version": "1.0.5",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 3,
+				"continueOnError": false
+			}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				},
+				"startCell": {
+					"scope": "Message",
+					"name": "startCell"
+				},
+				"range": {
+					"scope": "Message",
+					"name": "table"
+				}
+			}, {
+				"optHeaders": true
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						},
+						"startCell": {
+							"type": "object",
+							"title": "Start Cell",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						},
+						"range": {
+							"type": "object",
+							"title": "Range",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "SetRange+Table",
+							"messageOnly": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"startCell": {
+						"ui:field": "variable"
+					},
+					"range": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId", "startCell", "range"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					},
+					"startCell": {
+						"scope": "Message",
+						"name": "startCell"
+					},
+					"range": {
+						"scope": "Message",
+						"name": "table"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optHeaders": {
+							"type": "boolean",
+							"title": "Headers"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optHeaders"]
+				},
+				"formData": {
+					"optHeaders": true
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "8f96c9c8-cc77-4a0e-8d44-7f60aa748078",
+		"type": "simple",
+		"selected": true,
+		"x": 845.2926981485336,
+		"y": 367.1428125650093,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			}
+		},
+		"ports": [{
+			"id": "0d7288bc-ccd3-44c5-ac76-1471d791813b",
+			"type": "default",
+			"selected": false,
+			"name": "out_0d7288bc-ccd3-44c5-ac76-1471d791813b",
+			"parentNode": "8f96c9c8-cc77-4a0e-8d44-7f60aa748078",
+			"links": ["60274f99-872b-4511-b3c0-dba69072b1d7"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "022944fd-64aa-45dd-911c-c136bcf64f73",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "8f96c9c8-cc77-4a0e-8d44-7f60aa748078",
+			"links": ["906ea46f-f1a9-47b1-a86e-147e2c7cbefd"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "8f96c9c8-cc77-4a0e-8d44-7f60aa748078",
+			"name": "Close Excel",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.CloseExcel",
+			"version": "1.0.5",
+			"abc": [{
+				"name": "Close Excel",
+				"version": "1.0.5",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "68af4579-13e3-46b8-92de-dc0ee3bd5102",
+		"type": "simple",
+		"selected": true,
+		"x": 838.0125858123571,
+		"y": 319.9450800915331,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"path": {
+				"scope": "Custom",
+				"name": ""
+			}
+		},
+		"ports": [{
+			"id": "34e8ef30-a265-4988-808c-5a5786f52005",
+			"type": "default",
+			"selected": false,
+			"name": "out_34e8ef30-a265-4988-808c-5a5786f52005",
+			"parentNode": "68af4579-13e3-46b8-92de-dc0ee3bd5102",
+			"links": ["906ea46f-f1a9-47b1-a86e-147e2c7cbefd"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "597eeaf1-fba7-4d7c-8356-550e5b3bde79",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "68af4579-13e3-46b8-92de-dc0ee3bd5102",
+			"links": ["0f016ef0-c7ce-4125-a52c-d74ef2142b32"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "68af4579-13e3-46b8-92de-dc0ee3bd5102",
+			"name": "Save Excel",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.SaveExcel",
+			"version": "1.0.5",
+			"abc": [{}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				},
+				"path": {
+					"scope": "Custom",
+					"name": ""
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						},
+						"path": {
+							"type": "object",
+							"title": "Path",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"path": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId", "path"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					},
+					"path": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "8c3e74a4-56ed-468c-a4b3-0f635ce94d40",
+		"type": "simple",
+		"selected": true,
+		"x": 290.88183898481384,
+		"y": 217.43613480341168,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "3d1a4346-8c77-42e5-992e-09186d43b259",
+			"type": "default",
+			"selected": false,
+			"name": "out_3d1a4346-8c77-42e5-992e-09186d43b259",
+			"parentNode": "8c3e74a4-56ed-468c-a4b3-0f635ce94d40",
+			"links": ["0e201c07-8c4f-4e7e-b4c3-b0c39c9d45dc"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "8c3e74a4-56ed-468c-a4b3-0f635ce94d40",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "e3de6cdc-4555-4350-a17f-e05aca496848",
+		"type": "simple",
+		"selected": true,
+		"x": 290.5810099922364,
+		"y": 266.7936410817014,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/1NMYbAxnz2ste01KOjtz9WKGSSr-nB-luVATWFOg-RbE/\"; // Url of spreadsheet.\nmsg.fromCell = \"A1\"; // Start of the range.\nmsg.toCell = \"C8\"; // End of the range.\nmsg.excelFilePath = \"C:/Users/user/Desktop/birthdays.xlsx\"; // Excel file path for set range.\nmsg.startCell = \"A1\"; // Start of Excel Range.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "0c0c0463-b9a9-4b71-9030-51f625cb6b84",
+			"type": "default",
+			"selected": false,
+			"name": "out_0c0c0463-b9a9-4b71-9030-51f625cb6b84",
+			"parentNode": "e3de6cdc-4555-4350-a17f-e05aca496848",
+			"links": ["27fd467d-100a-4ebc-bb7a-830f6ddec18a"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "939cd188-de6c-489a-8a8f-5bbf92fc1588",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e3de6cdc-4555-4350-a17f-e05aca496848",
+			"links": ["0e201c07-8c4f-4e7e-b4c3-b0c39c9d45dc"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e3de6cdc-4555-4350-a17f-e05aca496848",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/1NMYbAxnz2ste01KOjtz9WKGSSr-nB-luVATWFOg-RbE/\"; // Url of spreadsheet.\nmsg.fromCell = \"A1\"; // Start of the range.\nmsg.toCell = \"C8\"; // End of the range.\nmsg.excelFilePath = \"C:/Users/user/Desktop/birthdays.xlsx\"; // Excel file path for set range.\nmsg.startCell = \"A1\"; // Start of Excel Range.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/1NMYbAxnz2ste01KOjtz9WKGSSr-nB-luVATWFOg-RbE/\"; // Url of spreadsheet.\nmsg.fromCell = \"A1\"; // Start of the range.\nmsg.toCell = \"C8\"; // End of the range.\nmsg.excelFilePath = \"C:/Users/user/Desktop/birthdays.xlsx\"; // Excel file path for set range.\nmsg.startCell = \"A1\"; // Start of Excel Range.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "afbf0ab3-7d90-4b5f-b785-75376dc9c88d",
+		"type": "simple",
+		"selected": true,
+		"x": 856.3023538657542,
+		"y": 423.0586484927685,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "972ec37b-cecf-4008-bab3-63d2adb4b338",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "afbf0ab3-7d90-4b5f-b785-75376dc9c88d",
+			"links": ["60274f99-872b-4511-b3c0-dba69072b1d7"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "afbf0ab3-7d90-4b5f-b785-75376dc9c88d",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "852ea371-20a7-45e4-a79c-8f4c85e996e5",
+		"type": "simple",
+		"selected": true,
+		"x": -40.76813361777684,
+		"y": 102.31984743875012,
+		"extras": {
+			"optText": "## Google Sheets to Range to Excel\r\nThis template uses *Google Sheets* and *Microsoft Excel* nodes for read range from a spreadsheet and write it to excel file. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Google Sheets and Microsoft Excel package icons, install them.\r\n\r\n**5.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**7.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**8.** Go to Vaults and create new document item with this json key.\r\n\r\n**9.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**10.** Edit the Config Node.\r\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "852ea371-20a7-45e4-a79c-8f4c85e996e5",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## Google Sheets to Range to Excel\r\nThis template uses *Google Sheets* and *Microsoft Excel* nodes for read range from a spreadsheet and write it to excel file. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Google Sheets and Microsoft Excel package icons, install them.\r\n\r\n**5.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**7.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**8.** Go to Vaults and create new document item with this json key.\r\n\r\n**9.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**10.** Edit the Config Node.\r\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## Google Sheets to Range to Excel\r\nThis template uses *Google Sheets* and *Microsoft Excel* nodes for read range from a spreadsheet and write it to excel file. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Google Sheets and Microsoft Excel package icons, install them.\r\n\r\n**5.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**7.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**8.** Go to Vaults and create new document item with this json key.\r\n\r\n**9.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**10.** Edit the Config Node.\r\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "4139360d-26d3-4424-b0ad-f55e39f6f3b3",
+		"type": "simple",
+		"selected": true,
+		"x": 547.9971091715624,
+		"y": 219.08206256585328,
+		"extras": {
+			"inUrl": {
+				"scope": "Message",
+				"name": "spreadsheetUrl"
+			},
+			"outSpreadsheetId": {
+				"name": "spreadsheet_id",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "8b4c7d91-f22c-461a-b122-4b7faf1f4a8b",
+			"type": "default",
+			"selected": false,
+			"name": "out_8b4c7d91-f22c-461a-b122-4b7faf1f4a8b",
+			"parentNode": "4139360d-26d3-4424-b0ad-f55e39f6f3b3",
+			"links": ["1ec9587a-9a5d-4d81-b867-2f6d5edbf0bb"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "51a39f78-9395-43ed-9d95-7c65fc6f7398",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "4139360d-26d3-4424-b0ad-f55e39f6f3b3",
+			"links": ["27fd467d-100a-4ebc-bb7a-830f6ddec18a"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "4139360d-26d3-4424-b0ad-f55e39f6f3b3",
+			"name": "Open Spreadsheet",
+			"icon": "M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z",
+			"color": "#1fa463",
+			"namespace": "Robomotion.GoogleSheets.OpenSpreadsheet",
+			"version": "0.2.1",
+			"abc": [{
+				"name": "Open Spreadsheet",
+				"version": "0.2.1",
+				"color": "#1fa463",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inUrl": {
+					"scope": "Message",
+					"name": "spreadsheetUrl"
+				}
+			}, {
+				"outSpreadsheetId": {
+					"name": "spreadsheet_id",
+					"scope": "Message"
+				}
+			}, {}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inUrl": {
+							"type": "object",
+							"title": "Spreadsheet URL",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inUrl": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inUrl": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inUrl"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outSpreadsheetId": {
+							"type": "object",
+							"title": "Spreadsheet Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outSpreadsheetId": {
+						"name": "spreadsheet_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outSpreadsheetId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outSpreadsheetId"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 6,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"formData": {},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optCredentials"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b2c1c4a9-5a54-4b21-9601-269dd76a04fd",
+		"type": "simple",
+		"selected": true,
+		"x": 557.4910850751769,
+		"y": 266.27483365019066,
+		"extras": {
+			"inFromCell": {
+				"scope": "Message",
+				"name": "fromCell"
+			},
+			"inSpreadSheetId": {
+				"name": "spreadsheet_id",
+				"scope": "Message"
+			},
+			"inToCell": {
+				"scope": "Message",
+				"name": "toCell"
+			},
+			"outRange": {
+				"name": "table",
+				"scope": "Message"
+			},
+			"optHeaders": true,
+			"optJsonify": false,
+			"optTarget": "all-range"
+		},
+		"ports": [{
+			"id": "5bcbd136-3cba-4ba4-af16-dd7945af4e0c",
+			"type": "default",
+			"selected": false,
+			"name": "out_5bcbd136-3cba-4ba4-af16-dd7945af4e0c",
+			"parentNode": "b2c1c4a9-5a54-4b21-9601-269dd76a04fd",
+			"links": ["05f5dfa1-906b-4f08-8ceb-1df5d1103e45"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "260557f9-3f84-4409-853e-f44d96b620bd",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b2c1c4a9-5a54-4b21-9601-269dd76a04fd",
+			"links": ["1ec9587a-9a5d-4d81-b867-2f6d5edbf0bb"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b2c1c4a9-5a54-4b21-9601-269dd76a04fd",
+			"name": "Get Range",
+			"icon": "M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z",
+			"color": "#1fa463",
+			"namespace": "Robomotion.GoogleSheets.GetRange",
+			"version": "0.2.1",
+			"abc": [{
+				"name": "Get Range",
+				"version": "0.2.1",
+				"color": "#1fa463",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inFromCell": {
+					"scope": "Message",
+					"name": "fromCell"
+				},
+				"inSpreadSheetId": {
+					"name": "spreadsheet_id",
+					"scope": "Message"
+				},
+				"inToCell": {
+					"scope": "Message",
+					"name": "toCell"
+				}
+			}, {
+				"outRange": {
+					"name": "table",
+					"scope": "Message"
+				}
+			}, {
+				"optHeaders": true,
+				"optJsonify": false,
+				"optTarget": "all-range"
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inFromCell": {
+							"type": "object",
+							"title": "From Cell",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inSpreadSheetId": {
+							"type": "object",
+							"title": "Spreadsheet Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inToCell": {
+							"type": "object",
+							"title": "To Cell",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inFromCell": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inSpreadSheetId": {
+						"name": "spreadsheet_id",
+						"scope": "Message"
+					},
+					"inToCell": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inFromCell": {
+						"ui:field": "variable"
+					},
+					"inSpreadSheetId": {
+						"ui:field": "variable"
+					},
+					"inToCell": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inSpreadSheetId", "inFromCell", "inToCell"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outRange": {
+							"type": "object",
+							"title": "Table",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outRange": {
+						"name": "table",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outRange": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outRange"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optHeaders": {
+							"type": "boolean",
+							"title": "Headers"
+						},
+						"optJsonify": {
+							"type": "boolean",
+							"title": "Jsonify"
+						},
+						"optTarget": {
+							"type": "string",
+							"title": "Target",
+							"multiple": true,
+							"enum": ["all-range", "specific-range"],
+							"enumNames": ["All Range", "Specific Range"]
+						}
+					}
+				},
+				"formData": {
+					"optHeaders": false,
+					"optJsonify": false,
+					"optTarget": "all-range"
+				},
+				"uiSchema": {
+					"ui:order": ["optTarget", "optHeaders", "optJsonify"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}
