@@ -497,6 +497,27 @@
     ]
   },
   {
+    "name": "Google Sheets Range to Excel",
+    "description": " Gets range from spreadsheet and writes to excel file.",
+    "slug": "google-sheets-range-to-excel",
+    "icon": "google_sheets_range_to_excel_icon.png",
+    "screenshots": [
+      "google_sheets_range_to_excel_screenshot1.png",
+      "google_sheets_range_to_excel_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "google",
+      "sheets",
+      "excel"
+    ],
+    "applications": [
+      "Excel",
+      "Google_Sheets"
+    ]
+  },
+  {
     "name": "Google Storage Quick Start",
     "description": "Shows some object and bucket operations in Google Storage bucket",
     "slug": "google-storage-quick-start",
@@ -639,6 +660,48 @@
     "applications": [
       "Javascript",
       "MongoDB"
+    ]
+  },
+  {
+    "name": "MySQL Quick Start",
+    "description": "This flow shows how to insert and select from MySQL databases.",
+    "slug": "mysql-quick-start",
+    "icon": "mysql_quick_start_icon.png",
+    "screenshots": [
+      "mysql_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "IT Operations",
+    "tags": [
+      "database",
+      "javascript",
+      "mysql"
+    ],
+    "applications": [
+      "Javascript",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "MySQL Table To Google Sheets",
+    "description": "Executes query for reading data from MySQL table and writes to spreadsheet.",
+    "slug": "mysql-table-to-google-sheets",
+    "icon": "mysql_table_to_google_sheets_icon.png",
+    "screenshots": [
+      "mysql_table_to_google_sheets_screenshot1.png",
+      "mysql_table_to_google_sheets_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "google",
+      "sheets",
+      "mysql",
+      "table"
+    ],
+    "applications": [
+      "Google_Sheets",
+      "MySQL"
     ]
   },
   {
@@ -1011,6 +1074,28 @@
     "applications": [
       "Chrome",
       "Excel"
+    ]
+  },
+  {
+    "name": "Stock Prices With Google Sheets",
+    "description": "Stock price scraping flow using a Google Sheets document",
+    "slug": "stock-prices-with-google-sheets",
+    "icon": "stock_prices_with_google_sheets_icon.png",
+    "screenshots": [
+      "stock_prices_with_google_sheets_screenshot1.png",
+      "stock_prices_with_google_sheets_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "google",
+      "sheets",
+      "scraping",
+      "browser"
+    ],
+    "applications": [
+      "Chrome",
+      "Google_Sheets"
     ]
   },
   {

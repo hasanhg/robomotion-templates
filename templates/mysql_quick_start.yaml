@@ -1,0 +1,16 @@
+- name: MySQL Quick Start
+  description: This flow shows how to insert and select from MySQL databases.
+  slug: mysql-quick-start
+  icon: mysql_quick_start_icon.png
+  screenshots:
+    - mysql_quick_start_screenshot.png
+  author: Robomotion
+  category: IT Operations
+  tags:
+    - database
+    - javascript
+    - mysql
+  applications:
+    - Javascript
+    - MySQL
+
