@@ -7,5 +7,5 @@ Monitors the operational status of your microservices. It simply tests given ser
 
 2. Set the msg.endpoint field to the service URL you want to check
 ```js
-msg.endpoint = "https://httpstat.us/500";
+msg.endpoint = "https://api.robomotion.io/version";
 ```

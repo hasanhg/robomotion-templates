@@ -1,11 +1,11 @@
 {
     "nodes": [
         {
-            "id": "89873b1e-c4a6-44f9-9573-59ca4b141782",
+            "id": "6af2d2f7-e206-4346-b3f6-e974b611d299",
             "type": "simple",
             "selected": true,
-            "x": 353.3998917748918,
-            "y": 64.57440476190476,
+            "x": 750,
+            "y": 100,
             "extras": {
                 "inPayload": {
                     "name": "Date.now()",
@@ -21,13 +21,13 @@
             },
             "ports": [
                 {
-                    "id": "87f31b33-34ed-4ceb-b792-dede46884185",
+                    "id": "bc589ee9-6ac3-49d5-a150-4e909bf7538f",
                     "type": "default",
                     "selected": false,
-                    "name": "out_87f31b33-34ed-4ceb-b792-dede46884185",
-                    "parentNode": "89873b1e-c4a6-44f9-9573-59ca4b141782",
+                    "name": "out_bc589ee9-6ac3-49d5-a150-4e909bf7538f",
+                    "parentNode": "6af2d2f7-e206-4346-b3f6-e974b611d299",
                     "links": [
-                        "cea8abd6-b2f5-43ac-97e9-4e1b63f0a3e0"
+                        "3dcdfc33-12d3-403c-93a4-ea5ab565e462"
                     ],
                     "in": false,
                     "label": "simple",
@@ -35,7 +35,7 @@
                 }
             ],
             "model": {
-                "id": "89873b1e-c4a6-44f9-9573-59ca4b141782",
+                "id": "6af2d2f7-e206-4346-b3f6-e974b611d299",
                 "name": "Start",
                 "icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
                 "color": "#FDD835",
@@ -175,11 +175,11 @@
             }
         },
         {
-            "id": "3143eb2e-eba6-435b-bd62-9af01ce62200",
+            "id": "eb7a5ede-d179-4e6d-b18e-8935800a7a75",
             "type": "simple",
             "selected": true,
-            "x": 351.3373917748918,
-            "y": 216.19940476190476,
+            "x": 747.9375,
+            "y": 251.625,
             "extras": {
                 "inBody": {
                     "name": "req",
@@ -239,26 +239,26 @@
             },
             "ports": [
                 {
-                    "id": "98f68f90-d8e4-463d-9fe4-7f4256f8f0d3",
+                    "id": "82b8282c-d6a7-4589-8cc6-af668961ec89",
                     "type": "default",
                     "selected": false,
-                    "name": "out_98f68f90-d8e4-463d-9fe4-7f4256f8f0d3",
-                    "parentNode": "3143eb2e-eba6-435b-bd62-9af01ce62200",
+                    "name": "out_82b8282c-d6a7-4589-8cc6-af668961ec89",
+                    "parentNode": "eb7a5ede-d179-4e6d-b18e-8935800a7a75",
                     "links": [
-                        "6a84e3cf-0e4a-4631-b49e-63effd48c359"
+                        "6e33cb6a-f922-444a-be23-3ddc291e9270"
                     ],
                     "in": false,
                     "label": "simple",
                     "position": "out"
                 },
                 {
-                    "id": "456e98a8-64aa-4f33-9e18-dcff1100e9e6",
+                    "id": "102b65fa-8080-4323-8f4c-f7034f569fe5",
                     "type": "default",
                     "selected": false,
                     "name": "in",
-                    "parentNode": "3143eb2e-eba6-435b-bd62-9af01ce62200",
+                    "parentNode": "eb7a5ede-d179-4e6d-b18e-8935800a7a75",
                     "links": [
-                        "b9e5a7a5-5123-4c18-88f0-95512ca7962f"
+                        "08988eee-8543-4837-a9ec-d6c470f29062"
                     ],
                     "in": true,
                     "label": "simple",
@@ -266,7 +266,7 @@
                 }
             ],
             "model": {
-                "id": "3143eb2e-eba6-435b-bd62-9af01ce62200",
+                "id": "eb7a5ede-d179-4e6d-b18e-8935800a7a75",
                 "name": "Test Endpoint",
                 "icon": "M6,20A6,6 0 0,1 0,14C0,10.91 2.34,8.36 5.35,8.04C6.6,5.64 9.11,4 12,4C15.63,4 18.66,6.58 19.35,10C21.95,10.19 24,12.36 24,15A5,5 0 0,1 19,20H6M18.5,12H18A1,1 0 0,1 17,11V10A2,2 0 0,0 15,8H13.5V10H15V11A2,2 0 0,0 17,13A2,2 0 0,0 15,15V16H13.5V18H15A2,2 0 0,0 17,16V15A1,1 0 0,1 18,14H18.5V12M5.5,12V14H6A1,1 0 0,1 7,15V16A2,2 0 0,0 9,18H10.5V16H9V15A2,2 0 0,0 7,13A2,2 0 0,0 9,11V10H10.5V8H9A2,2 0 0,0 7,10V11A1,1 0 0,1 6,12H5.5Z",
                 "color": "#c9d9ff",
@@ -762,39 +762,39 @@
             }
         },
         {
-            "id": "c515c31b-007c-431d-9993-b31e50f16f90",
+            "id": "870412a0-dc22-43df-a0e0-c4d1f7382ed7",
             "type": "simple",
             "selected": true,
-            "x": 347.0497835497835,
-            "y": 141.0238095238095,
+            "x": 743.6498917748918,
+            "y": 176.44940476190473,
             "extras": {
-                "func": "// The API endpoint to check\nmsg.endpoint = \"https://httpstat.us/500\";\n\nreturn msg;",
+                "func": "// The API endpoint to check\nmsg.endpoint = \"https://api.robomotion.io/version\";\n\nreturn msg;",
                 "optTimeout": 30,
                 "outputs": 1,
                 "variables": []
             },
             "ports": [
                 {
-                    "id": "9ce8c6b3-f1bc-4c09-ac5e-6e479bedc740",
+                    "id": "0fe4bbf8-1a67-4f59-a6ed-a6ec48119f1c",
                     "type": "default",
                     "selected": false,
-                    "name": "out_9ce8c6b3-f1bc-4c09-ac5e-6e479bedc740",
-                    "parentNode": "c515c31b-007c-431d-9993-b31e50f16f90",
+                    "name": "out_0fe4bbf8-1a67-4f59-a6ed-a6ec48119f1c",
+                    "parentNode": "870412a0-dc22-43df-a0e0-c4d1f7382ed7",
                     "links": [
-                        "b9e5a7a5-5123-4c18-88f0-95512ca7962f"
+                        "08988eee-8543-4837-a9ec-d6c470f29062"
                     ],
                     "in": false,
                     "label": "simple",
                     "position": "out"
                 },
                 {
-                    "id": "fe302cd3-9716-430d-8e91-a0b27cd7dae7",
+                    "id": "a262cb74-851b-4f0b-98c0-f6c9de74260a",
                     "type": "default",
                     "selected": false,
                     "name": "in",
-                    "parentNode": "c515c31b-007c-431d-9993-b31e50f16f90",
+                    "parentNode": "870412a0-dc22-43df-a0e0-c4d1f7382ed7",
                     "links": [
-                        "cea8abd6-b2f5-43ac-97e9-4e1b63f0a3e0"
+                        "3dcdfc33-12d3-403c-93a4-ea5ab565e462"
                     ],
                     "in": true,
                     "label": "simple",
@@ -802,7 +802,7 @@
                 }
             ],
             "model": {
-                "id": "c515c31b-007c-431d-9993-b31e50f16f90",
+                "id": "870412a0-dc22-43df-a0e0-c4d1f7382ed7",
                 "name": "Config",
                 "icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
                 "color": "#F27925",
@@ -819,7 +819,7 @@
                         "version": "0.0.0"
                     },
                     {
-                        "func": "// The API endpoint to check\nmsg.endpoint = \"https://httpstat.us/500\";\n\nreturn msg;",
+                        "func": "// The API endpoint to check\nmsg.endpoint = \"https://api.robomotion.io/version\";\n\nreturn msg;",
                         "optTimeout": 30,
                         "outputs": 1
                     },
@@ -830,7 +830,7 @@
                 "xyz": [
                     {
                         "formData": {
-                            "func": "// The API endpoint to check\nmsg.endpoint = \"https://httpstat.us/500\";\n\nreturn msg;",
+                            "func": "// The API endpoint to check\nmsg.endpoint = \"https://api.robomotion.io/version\";\n\nreturn msg;",
                             "optTimeout": 30,
                             "outputs": 1
                         },
@@ -902,11 +902,11 @@
             }
         },
         {
-            "id": "dd81daf4-b8b7-406b-8d2e-8510c7e4abe7",
+            "id": "ce5ebdef-52e3-4f8c-8f83-65b726e42be2",
             "type": "simple",
             "selected": true,
-            "x": 929.9247835497836,
-            "y": 308.4613095238095,
+            "x": 1326.5248917748918,
+            "y": 343.88690476190476,
             "extras": {
                 "outResult": {
                     "name": "error",
@@ -915,14 +915,14 @@
             },
             "ports": [
                 {
-                    "id": "3109dfcb-efcd-42e5-a323-b6d6261d6cf9",
+                    "id": "f5417ac8-1461-49a7-ac28-9466fd4ebb5e",
                     "type": "default",
                     "selected": false,
                     "name": "in",
-                    "parentNode": "dd81daf4-b8b7-406b-8d2e-8510c7e4abe7",
+                    "parentNode": "ce5ebdef-52e3-4f8c-8f83-65b726e42be2",
                     "links": [
-                        "28024082-5034-4b22-858b-75ca43a6724f",
-                        "c3aaee4b-4cec-47c8-b84d-2058799cf30c"
+                        "ccd43196-b67d-43c5-aab9-e36caffe3e28",
+                        "4a24615a-a155-4591-9719-608ceb531072"
                     ],
                     "in": true,
                     "label": "simple",
@@ -930,7 +930,7 @@
                 }
             ],
             "model": {
-                "id": "dd81daf4-b8b7-406b-8d2e-8510c7e4abe7",
+                "id": "ce5ebdef-52e3-4f8c-8f83-65b726e42be2",
                 "name": "Stop",
                 "icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
                 "color": "#fb2727",
@@ -988,11 +988,11 @@
             }
         },
         {
-            "id": "15d9d61f-1dc7-48e0-8860-34ef70af8769",
+            "id": "feb24578-1538-47a7-9763-0ff0c7c81be2",
             "type": "simple",
             "selected": true,
-            "x": 353.92478354978357,
-            "y": 288.0863095238095,
+            "x": 750.5248917748918,
+            "y": 323.51190476190476,
             "extras": {
                 "optConditions": [
                     "msg.respStatus === 500",
@@ -1001,39 +1001,39 @@
             },
             "ports": [
                 {
-                    "id": "a2defed9-0ee7-4145-a696-93bfc491c6b4",
+                    "id": "8c1897d7-2ff5-4584-bad8-dc08b5021748",
                     "type": "default",
                     "selected": false,
-                    "name": "out_a2defed9-0ee7-4145-a696-93bfc491c6b4",
-                    "parentNode": "15d9d61f-1dc7-48e0-8860-34ef70af8769",
+                    "name": "out_8c1897d7-2ff5-4584-bad8-dc08b5021748",
+                    "parentNode": "feb24578-1538-47a7-9763-0ff0c7c81be2",
                     "links": [
-                        "65632e7b-3c9a-4f4f-950e-324416ab504e"
+                        "f54d2e6b-521d-4be5-8240-88bb1327d8ff"
                     ],
                     "in": false,
                     "label": "simple",
                     "position": "out"
                 },
                 {
-                    "id": "21cc55ff-3e51-4d26-baad-f757c8127b60",
+                    "id": "d6e1954a-2889-4731-b172-d437b6cc7e07",
                     "type": "default",
                     "selected": false,
-                    "name": "out_21cc55ff-3e51-4d26-baad-f757c8127b60",
-                    "parentNode": "15d9d61f-1dc7-48e0-8860-34ef70af8769",
+                    "name": "out_d6e1954a-2889-4731-b172-d437b6cc7e07",
+                    "parentNode": "feb24578-1538-47a7-9763-0ff0c7c81be2",
                     "links": [
-                        "83274dae-790d-4934-8f7d-ec980ffc6fe4"
+                        "273a75d5-bd98-425d-81a8-4b6e784a6fd7"
                     ],
                     "in": false,
                     "label": "simple",
                     "position": "out"
                 },
                 {
-                    "id": "bd959da3-f792-4a35-8ee3-f49f7bb8218b",
+                    "id": "698c7fc4-e1a0-4b34-a447-987829a94f40",
                     "type": "default",
                     "selected": false,
                     "name": "in",
-                    "parentNode": "15d9d61f-1dc7-48e0-8860-34ef70af8769",
+                    "parentNode": "feb24578-1538-47a7-9763-0ff0c7c81be2",
                     "links": [
-                        "6a84e3cf-0e4a-4631-b49e-63effd48c359"
+                        "6e33cb6a-f922-444a-be23-3ddc291e9270"
                     ],
                     "in": true,
                     "label": "simple",
@@ -1041,7 +1041,7 @@
                 }
             ],
             "model": {
-                "id": "15d9d61f-1dc7-48e0-8860-34ef70af8769",
+                "id": "feb24578-1538-47a7-9763-0ff0c7c81be2",
                 "name": "Check Status Code",
                 "icon": "M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29",
                 "color": "#1DE9B6",
@@ -1102,11 +1102,11 @@
             }
         },
         {
-            "id": "63a7401c-5223-40d5-9eaf-5d3c31b5ce0f",
+            "id": "44375531-2233-43c8-9763-64e1d17c02a6",
             "type": "simple",
             "selected": true,
-            "x": 649.9247835497836,
-            "y": 265.0863095238095,
+            "x": 1046.5248917748918,
+            "y": 300.51190476190476,
             "extras": {
                 "inText": {
                     "name": "Failed",
@@ -1124,26 +1124,26 @@
             },
             "ports": [
                 {
-                    "id": "604d16ff-0f15-4f18-80d9-59698d33f1af",
+                    "id": "d2b5b0bc-ccf1-47af-9022-750708b8511b",
                     "type": "default",
                     "selected": false,
-                    "name": "out_604d16ff-0f15-4f18-80d9-59698d33f1af",
-                    "parentNode": "63a7401c-5223-40d5-9eaf-5d3c31b5ce0f",
+                    "name": "out_d2b5b0bc-ccf1-47af-9022-750708b8511b",
+                    "parentNode": "44375531-2233-43c8-9763-64e1d17c02a6",
                     "links": [
-                        "28024082-5034-4b22-858b-75ca43a6724f"
+                        "ccd43196-b67d-43c5-aab9-e36caffe3e28"
                     ],
                     "in": false,
                     "label": "simple",
                     "position": "out"
                 },
                 {
-                    "id": "323f4f7d-42ea-4ca4-97d3-35b8d967a85e",
+                    "id": "4ca3f5da-8a3c-429a-b1ad-b2fb8da89699",
                     "type": "default",
                     "selected": false,
                     "name": "in",
-                    "parentNode": "63a7401c-5223-40d5-9eaf-5d3c31b5ce0f",
+                    "parentNode": "44375531-2233-43c8-9763-64e1d17c02a6",
                     "links": [
-                        "65632e7b-3c9a-4f4f-950e-324416ab504e"
+                        "f54d2e6b-521d-4be5-8240-88bb1327d8ff"
                     ],
                     "in": true,
                     "label": "simple",
@@ -1151,7 +1151,7 @@
                 }
             ],
             "model": {
-                "id": "63a7401c-5223-40d5-9eaf-5d3c31b5ce0f",
+                "id": "44375531-2233-43c8-9763-64e1d17c02a6",
                 "name": "Internal Error 500",
                 "icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
                 "color": "#4da5fb",
@@ -1314,11 +1314,11 @@
             }
         },
         {
-            "id": "a8f64ec7-7081-4a74-84a0-5ae6403aa165",
+            "id": "252785d7-68c4-434d-a287-b768ec7a1460",
             "type": "simple",
             "selected": true,
-            "x": 655.9247835497836,
-            "y": 353.0863095238095,
+            "x": 1052.5248917748918,
+            "y": 388.51190476190476,
             "extras": {
                 "inText": {
                     "name": "Everything is OK",
@@ -1336,26 +1336,26 @@
             },
             "ports": [
                 {
-                    "id": "6cecd74d-65c5-43d6-be2e-024001e115c9",
+                    "id": "a5b42c47-1b4f-44f6-be07-941e047a2e35",
                     "type": "default",
                     "selected": false,
-                    "name": "out_6cecd74d-65c5-43d6-be2e-024001e115c9",
-                    "parentNode": "a8f64ec7-7081-4a74-84a0-5ae6403aa165",
+                    "name": "out_a5b42c47-1b4f-44f6-be07-941e047a2e35",
+                    "parentNode": "252785d7-68c4-434d-a287-b768ec7a1460",
                     "links": [
-                        "c3aaee4b-4cec-47c8-b84d-2058799cf30c"
+                        "4a24615a-a155-4591-9719-608ceb531072"
                     ],
                     "in": false,
                     "label": "simple",
                     "position": "out"
                 },
                 {
-                    "id": "b148b6cf-5730-417e-868a-a6d89dd0984b",
+                    "id": "aff8176a-d12a-43a1-b658-3141fc25975f",
                     "type": "default",
                     "selected": false,
                     "name": "in",
-                    "parentNode": "a8f64ec7-7081-4a74-84a0-5ae6403aa165",
+                    "parentNode": "252785d7-68c4-434d-a287-b768ec7a1460",
                     "links": [
-                        "83274dae-790d-4934-8f7d-ec980ffc6fe4"
+                        "273a75d5-bd98-425d-81a8-4b6e784a6fd7"
                     ],
                     "in": true,
                     "label": "simple",
@@ -1363,7 +1363,7 @@
                 }
             ],
             "model": {
-                "id": "a8f64ec7-7081-4a74-84a0-5ae6403aa165",
+                "id": "252785d7-68c4-434d-a287-b768ec7a1460",
                 "name": "OK 200",
                 "icon": "M4,8H8V4H20V16H16V20H4V8M16,8V14H18V6H10V8H16M6,12V18H14V12H6Z",
                 "color": "#4da5fb",
@@ -1526,17 +1526,17 @@
             }
         },
         {
-            "id": "4f47ad1c-74bb-449b-8e07-13705599e700",
+            "id": "a8bd2586-76a0-4f10-9d04-fe52fe5a8f5e",
             "type": "simple",
             "selected": true,
-            "x": -74.60010822510822,
-            "y": 24.57440476190476,
+            "x": 322,
+            "y": 60,
             "extras": {
                 "optText": "##### API Health check How-To \n\nThis template uses the *Net > Http Request* node to test if an endpoint works or not.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.endpoint URL to the API you want to test\n"
             },
             "ports": [],
             "model": {
-                "id": "4f47ad1c-74bb-449b-8e07-13705599e700",
+                "id": "a8bd2586-76a0-4f10-9d04-fe52fe5a8f5e",
                 "name": "Comment",
                 "icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
                 "color": "#FBE364",
