@@ -3,16 +3,14 @@ Creates a zip file and uploads to S3 bucket.
 
 ### How it Works?
 
-**1.** Go to Repositories screen in Admin Console.
+**1.** Go to Flow Designer and press package icon above the node palette.
 
-**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.
+**2.** You should see Compress and Amazon S3 package icons, install them.
 
-**3.** Go to Flow Designer and press package icon above the node palette.
+**3.** Edit the Config Node.
 
-**4.** You should see Compress and S3 Storage package icons, install them.
+**4.** Set the msg.targetpath field to the path of the directory you want to
+take backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.
+Set the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.
 
-**5.** Edit the Config Node.
-
-**6.** Set the required fields.
-
-**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket
+**5.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket.

@@ -1,10 +1,10 @@
 {
 	"nodes": [{
-		"id": "e66382dc-d6d8-482c-bdbc-b2e6a09c3777",
+		"id": "5a9d4054-5934-4efc-987c-1622d3ba9bfe",
 		"type": "simple",
 		"selected": true,
-		"x": 686.6363636363636,
-		"y": 157.54545454545453,
+		"x": 750,
+		"y": 100,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -19,18 +19,18 @@
 			"optOnceDelay": 0.1
 		},
 		"ports": [{
-			"id": "959a8eb2-98be-4f8f-8854-b1ce28169bf6",
+			"id": "e32612dd-dc5d-4af6-925f-3ce12295728f",
 			"type": "default",
 			"selected": false,
-			"name": "out_959a8eb2-98be-4f8f-8854-b1ce28169bf6",
-			"parentNode": "e66382dc-d6d8-482c-bdbc-b2e6a09c3777",
-			"links": ["fecfcfe1-dd64-408b-b77a-263076948f06"],
+			"name": "out_e32612dd-dc5d-4af6-925f-3ce12295728f",
+			"parentNode": "5a9d4054-5934-4efc-987c-1622d3ba9bfe",
+			"links": ["63cff084-1a01-4385-b3d6-84a2e77a68a9"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "e66382dc-d6d8-482c-bdbc-b2e6a09c3777",
+			"id": "5a9d4054-5934-4efc-987c-1622d3ba9bfe",
 			"name": "Inject",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -149,11 +149,266 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "476a59a1-e3ee-492a-9853-7fbf4464185a",
+		"id": "c73d56c8-a76b-4b63-a4ac-d38bbdbd8c45",
 		"type": "simple",
 		"selected": true,
-		"x": 995.6363636363636,
-		"y": 154.54545454545453,
+		"x": 746,
+		"y": 149,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.wordpath = \"C:/Users/user/Documents/sampleword.docx\"; //Path to word document.\nmsg.oldtext = \"Test\"; // Text to change.\nmsg.newtext = \"New\"; // New text.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "aa76499e-e1e5-40a7-9812-4da8066a2c39",
+			"type": "default",
+			"selected": false,
+			"name": "out_aa76499e-e1e5-40a7-9812-4da8066a2c39",
+			"parentNode": "c73d56c8-a76b-4b63-a4ac-d38bbdbd8c45",
+			"links": ["10b72b3a-d7e3-43a0-babf-6dbb99b9560e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "9737ff9d-2c2b-4617-ab24-db1e178d0ad0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c73d56c8-a76b-4b63-a4ac-d38bbdbd8c45",
+			"links": ["63cff084-1a01-4385-b3d6-84a2e77a68a9"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c73d56c8-a76b-4b63-a4ac-d38bbdbd8c45",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.wordpath = \"C:/Users/user/Documents/sampleword.docx\"; //Path to word document.\nmsg.oldtext = \"Test\"; // Text to change.\nmsg.newtext = \"New\"; // New text.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.wordpath = \"C:/Users/user/Documents/sampleword.docx\"; //Path to word document.\nmsg.oldtext = \"Test\"; // Text to change.\nmsg.newtext = \"New\"; // New text.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "74cdc92a-d4a3-43c2-9a7f-7730371026a1",
+		"type": "simple",
+		"selected": true,
+		"x": 351.30303030303037,
+		"y": -166.30303030303025,
+		"extras": {
+			"optText": "## Replace Words in Word Document\r\n\r\nThis template uses *Microsoft Word* nodes for replace words in a word document. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Microsoft package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "74cdc92a-d4a3-43c2-9a7f-7730371026a1",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## Replace Words in Word Document\r\n\r\nThis template uses *Microsoft Word* nodes for replace words in a word document. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Microsoft package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## Replace Words in Word Document\r\n\r\nThis template uses *Microsoft Word* nodes for replace words in a word document. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Microsoft package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "6f17d6dc-6e2a-4d88-80ad-2920724282b1",
+		"type": "simple",
+		"selected": true,
+		"x": 1315.3030303030305,
+		"y": 203.69696969696972,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "36cc9eef-4fff-4a10-a463-d3cd1d4c4f07",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "6f17d6dc-6e2a-4d88-80ad-2920724282b1",
+			"links": ["174fedb6-e431-4d54-afe8-942d8fc070e3"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "6f17d6dc-6e2a-4d88-80ad-2920724282b1",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "89255966-ab24-4316-9831-42773115fb09",
+		"type": "simple",
+		"selected": true,
+		"x": 1045,
+		"y": 103,
 		"extras": {
 			"path": {
 				"scope": "Message",
@@ -166,36 +421,36 @@
 			"optVisible": true
 		},
 		"ports": [{
-			"id": "3419eb3b-dc4f-45a4-af87-1754b2366a31",
+			"id": "080bda5b-24ae-477b-91db-e5b034e97dc8",
 			"type": "default",
 			"selected": false,
-			"name": "out_3419eb3b-dc4f-45a4-af87-1754b2366a31",
-			"parentNode": "476a59a1-e3ee-492a-9853-7fbf4464185a",
-			"links": ["dd211905-468a-4002-b0f6-18d8ac1b7a57"],
+			"name": "out_080bda5b-24ae-477b-91db-e5b034e97dc8",
+			"parentNode": "89255966-ab24-4316-9831-42773115fb09",
+			"links": ["d6259df9-4dc5-4c19-ac4e-13c2b5837850"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "4f33a020-38d6-439d-8470-c01b56bb0e3b",
+			"id": "6f282330-e975-4340-ae33-ab82b5f7c414",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "476a59a1-e3ee-492a-9853-7fbf4464185a",
-			"links": ["e113de38-e00a-4da1-9fb5-89cf123029d3"],
+			"parentNode": "89255966-ab24-4316-9831-42773115fb09",
+			"links": ["10b72b3a-d7e3-43a0-babf-6dbb99b9560e"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "476a59a1-e3ee-492a-9853-7fbf4464185a",
+			"id": "89255966-ab24-4316-9831-42773115fb09",
 			"name": "Open Word",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.2,20H13.8L12,13.2L10.2,20H8.8L6.6,11H8.1L9.5,17.8L11.3,11H12.6L14.4,17.8L15.8,11H17.3L15.2,20M13,9V3.5L18.5,9H13Z",
 			"color": "#003b57",
 			"namespace": "Robomotion.MicrosoftWord.OpenWord",
-			"version": "1.1.0",
+			"version": "1.1.1",
 			"abc": [{
 				"name": "Open Word",
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"color": "#003b57",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -243,8 +498,8 @@
 				},
 				"formData": {
 					"path": {
-						"scope": "Message",
-						"name": "wordpath"
+						"scope": "Custom",
+						"name": ""
 					}
 				}
 			}, {
@@ -295,18 +550,18 @@
 					"ui:order": ["optVisible"]
 				},
 				"formData": {
-					"optVisible": true
+					"optVisible": false
 				}
 			}],
 			"outputs": 1,
 			"inputs": 1
 		}
 	}, {
-		"id": "708738bb-e172-48a8-9b96-c0c7b7ba9ccb",
+		"id": "a72ca8f6-642e-4375-b505-29e566daa139",
 		"type": "simple",
 		"selected": true,
-		"x": 998.9696969696971,
-		"y": 206.21212121212122,
+		"x": 1050,
+		"y": 153,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -322,36 +577,36 @@
 			}
 		},
 		"ports": [{
-			"id": "b2f7e985-ce7c-4116-9a0c-65b9a97017d7",
+			"id": "a7187233-93a1-4d31-911c-7618c2f9d8da",
 			"type": "default",
 			"selected": false,
-			"name": "out_b2f7e985-ce7c-4116-9a0c-65b9a97017d7",
-			"parentNode": "708738bb-e172-48a8-9b96-c0c7b7ba9ccb",
-			"links": ["8f9850bf-b109-4a65-825b-56bca0b2f562"],
+			"name": "out_a7187233-93a1-4d31-911c-7618c2f9d8da",
+			"parentNode": "a72ca8f6-642e-4375-b505-29e566daa139",
+			"links": ["d08bf84e-cc43-4348-bb74-bc1ee6bb3bf5"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "4661c366-193b-40a6-8055-c792d18116e8",
+			"id": "ffd95126-2cca-400f-bacb-dc8ff141d224",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "708738bb-e172-48a8-9b96-c0c7b7ba9ccb",
-			"links": ["dd211905-468a-4002-b0f6-18d8ac1b7a57"],
+			"parentNode": "a72ca8f6-642e-4375-b505-29e566daa139",
+			"links": ["d6259df9-4dc5-4c19-ac4e-13c2b5837850"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "708738bb-e172-48a8-9b96-c0c7b7ba9ccb",
+			"id": "a72ca8f6-642e-4375-b505-29e566daa139",
 			"name": "Replace Text",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.2,20H13.8L12,13.2L10.2,20H8.8L6.6,11H8.1L9.5,17.8L11.3,11H12.6L14.4,17.8L15.8,11H17.3L15.2,20M13,9V3.5L18.5,9H13Z",
 			"color": "#003b57",
 			"namespace": "Robomotion.MicrosoftWord.ReplaceText",
-			"version": "1.1.0",
+			"version": "1.1.1",
 			"abc": [{
 				"name": "Replace Text",
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"color": "#003b57",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -440,12 +695,12 @@
 						"name": "word_fd"
 					},
 					"text": {
-						"scope": "Message",
-						"name": "oldtext"
+						"scope": "Custom",
+						"name": ""
 					},
 					"newText": {
-						"scope": "Message",
-						"name": "newtext"
+						"scope": "Custom",
+						"name": ""
 					}
 				}
 			}],
@@ -453,306 +708,54 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "f0fcaf46-f906-4dbc-815b-d50e754cf500",
+		"id": "349a5c16-283b-4329-83b2-1f59003cf5f4",
 		"type": "simple",
 		"selected": true,
-		"x": 681.6363636363636,
-		"y": 209.54545454545453,
-		"extras": {
-			"outputs": 1,
-			"func": "msg.wordpath = \"C:/Users/user/Desktop/test.docx\"; //Path to word document.\nmsg.oldtext = \"test\"; // Text to change.\nmsg.newtext = \"changedtext\"; // New text.\nreturn msg;",
-			"optTimeout": 30,
-			"variables": []
-		},
-		"ports": [{
-			"id": "2eda6c84-38e6-4303-848b-b453343ec834",
-			"type": "default",
-			"selected": false,
-			"name": "out_2eda6c84-38e6-4303-848b-b453343ec834",
-			"parentNode": "f0fcaf46-f906-4dbc-815b-d50e754cf500",
-			"links": ["e113de38-e00a-4da1-9fb5-89cf123029d3"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "3f0ff004-ec10-4f1e-981c-bf87aac562ec",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "f0fcaf46-f906-4dbc-815b-d50e754cf500",
-			"links": ["fecfcfe1-dd64-408b-b77a-263076948f06"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "f0fcaf46-f906-4dbc-815b-d50e754cf500",
-			"name": "Config",
-			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
-			"color": "#F27925",
-			"editor": "javascript",
-			"namespace": "Core.Programming.Function",
-			"version": "1.11.6",
-			"abc": [{
-				"name": "Config",
-				"color": "#F27925",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false,
-				"version": "1.11.6"
-			}, {
-				"outputs": 1,
-				"func": "msg.wordpath = \"C:/Users/user/Desktop/test.docx\"; //Path to word document.\nmsg.oldtext = \"test\"; // Text to change.\nmsg.newtext = \"changedtext\"; // New text.\nreturn msg;",
-				"optTimeout": 30
-			}, {
-				"variables": []
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"func": {
-							"title": "Function",
-							"type": "string"
-						},
-						"outputs": {
-							"title": "Outputs",
-							"type": "number",
-							"minimum": 1,
-							"maximum": 32
-						},
-						"optTimeout": {
-							"title": "Script Timeout",
-							"type": "number"
-						}
-					}
-				},
-				"uiSchema": {
-					"outputs": {
-						"ui:widget": "updown"
-					},
-					"func": {
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 6
-						}
-					}
-				},
-				"formData": {
-					"outputs": 1,
-					"func": "msg.wordpath = \"C:/Users/user/Desktop/test.docx\"; //Path to word document.\nmsg.oldtext = \"test\"; // Text to change.\nmsg.newtext = \"changedtext\"; // New text.\nreturn msg;",
-					"optTimeout": 30
-				}
-			}, {
-				"schema": {
-					"title": "Local Variables",
-					"type": "object",
-					"properties": {
-						"variables": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"name": {
-										"type": "string"
-									},
-									"variableType": {
-										"type": "string"
-									}
-								}
-							}
-						}
-					}
-				},
-				"uiSchema": {
-					"variables": {
-						"ui:field": "localVariable"
-					}
-				},
-				"formData": {
-					"variables": []
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "80b05519-10e3-4b8e-80c4-d09858bb856e",
-		"type": "simple",
-		"selected": true,
-		"x": 287.939393939394,
-		"y": -108.75757575757571,
-		"extras": {
-			"optText": "## Replace Words in Word Document\r\n\r\nThis template uses *Microsoft Word* nodes for replace words in a word document. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Microsoft package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n"
-		},
-		"ports": [],
-		"model": {
-			"id": "80b05519-10e3-4b8e-80c4-d09858bb856e",
-			"name": "Comment",
-			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
-			"color": "#FBE364",
-			"namespace": "Core.Flow.Comment",
-			"version": "1.11.6",
-			"abc": [{}, {
-				"optText": "## Replace Words in Word Document\r\n\r\nThis template uses *Microsoft Word* nodes for replace words in a word document. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Microsoft package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n"
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"comment": {
-							"title": "Comment",
-							"type": "string"
-						},
-						"optText": {
-							"title": "Text",
-							"type": "string"
-						}
-					}
-				},
-				"uiSchema": {
-					"optText": {
-						"ui:description": "Comment",
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 8
-						}
-					},
-					"comment": {
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 6
-						}
-					}
-				},
-				"formData": {
-					"optText": "## Replace Words in Word Document\r\n\r\nThis template uses *Microsoft Word* nodes for replace words in a word document. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Microsoft package icon, install it.\r\n\r\n**5.** Edit the Config Node.\r\n"
-				}
-			}],
-			"outputs": 0,
-			"inputs": 0
-		}
-	}, {
-		"id": "c1ea887c-0df6-463a-b020-305095c9ac37",
-		"type": "simple",
-		"selected": true,
-		"x": 1288.939393939394,
-		"y": 257.24242424242425,
-		"extras": {
-			"outResult": {
-				"scope": "Message",
-				"name": "error"
-			}
-		},
-		"ports": [{
-			"id": "a416fba7-c916-4c4f-9daa-a1bbc4b35102",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "c1ea887c-0df6-463a-b020-305095c9ac37",
-			"links": ["fe6db60c-8334-439b-b3ee-837cad3697d2"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "c1ea887c-0df6-463a-b020-305095c9ac37",
-			"name": "Stop",
-			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
-			"color": "#fb2727",
-			"namespace": "Core.Flow.Stop",
-			"version": "1.11.6",
-			"abc": [{}, {
-				"outResult": {
-					"scope": "Message",
-					"name": "error"
-				}
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Output",
-					"type": "object",
-					"properties": {
-						"outResult": {
-							"type": "object",
-							"title": "Error",
-							"variableType": "String",
-							"messageOnly": true,
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							}
-						}
-					}
-				},
-				"uiSchema": {
-					"ui:order": ["outResult"],
-					"outResult": {
-						"ui:field": "variable"
-					}
-				},
-				"formData": {
-					"outResult": {
-						"scope": "Message",
-						"name": "error"
-					}
-				}
-			}],
-			"outputs": 0,
-			"inputs": 1
-		}
-	}, {
-		"id": "f9367853-4311-4720-8e8c-4202292579b9",
-		"type": "simple",
-		"selected": true,
-		"x": 1003.8686868686868,
-		"y": 264.3959779065065,
+		"x": 1052,
+		"y": 202,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
 				"name": "word_fd"
 			},
-			"saveAsPath": "",
+			"saveAsPath": {
+				"scope": "Custom",
+				"name": ""
+			},
 			"optSaveChanges": true,
 			"saveAs": "_"
 		},
 		"ports": [{
-			"id": "4448f7b5-f614-4b03-85e2-c715cf32435a",
+			"id": "e640a664-91b8-48c4-9eee-a4ff44f803a2",
 			"type": "default",
 			"selected": false,
-			"name": "out_4448f7b5-f614-4b03-85e2-c715cf32435a",
-			"parentNode": "f9367853-4311-4720-8e8c-4202292579b9",
-			"links": ["fe6db60c-8334-439b-b3ee-837cad3697d2"],
+			"name": "out_e640a664-91b8-48c4-9eee-a4ff44f803a2",
+			"parentNode": "349a5c16-283b-4329-83b2-1f59003cf5f4",
+			"links": ["174fedb6-e431-4d54-afe8-942d8fc070e3"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "21f49b68-717a-4989-ae94-46c74ac02cec",
+			"id": "c1e71620-157d-4ff2-900d-28ef461a6eaf",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "f9367853-4311-4720-8e8c-4202292579b9",
-			"links": ["8f9850bf-b109-4a65-825b-56bca0b2f562"],
+			"parentNode": "349a5c16-283b-4329-83b2-1f59003cf5f4",
+			"links": ["d08bf84e-cc43-4348-bb74-bc1ee6bb3bf5"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "f9367853-4311-4720-8e8c-4202292579b9",
+			"id": "349a5c16-283b-4329-83b2-1f59003cf5f4",
 			"name": "Close Word",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.2,20H13.8L12,13.2L10.2,20H8.8L6.6,11H8.1L9.5,17.8L11.3,11H12.6L14.4,17.8L15.8,11H17.3L15.2,20M13,9V3.5L18.5,9H13Z",
 			"color": "#003b57",
 			"namespace": "Robomotion.MicrosoftWord.CloseWord",
-			"version": "1.1.0",
+			"version": "1.1.1",
 			"abc": [{
 				"name": "Close Word",
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"color": "#003b57",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -763,7 +766,10 @@
 					"name": "word_fd"
 				}
 			}, {
-				"saveAsPath": "",
+				"saveAsPath": {
+					"scope": "Custom",
+					"name": ""
+				},
 				"optSaveChanges": true,
 				"saveAs": "_"
 			}],
@@ -839,7 +845,10 @@
 					"ui:order": ["saveAsPath", "optSaveChanges", "saveAs"]
 				},
 				"formData": {
-					"saveAsPath": "",
+					"saveAsPath": {
+						"scope": "Custom",
+						"name": ""
+					},
 					"optSaveChanges": false,
 					"saveAs": "_"
 				}

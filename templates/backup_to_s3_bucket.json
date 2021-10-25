@@ -1,10 +1,10 @@
 {
 	"nodes": [{
-		"id": "9c3c434f-dae8-430b-853b-7019aa791094",
+		"id": "8a63562e-9af9-4efe-a7f9-b3e3f46e7a5b",
 		"type": "simple",
 		"selected": true,
-		"x": 232.3611111111111,
-		"y": 222.5,
+		"x": 755.6818181818181,
+		"y": 101.13636363636364,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -19,18 +19,18 @@
 			"optOnceDelay": 0.1
 		},
 		"ports": [{
-			"id": "225e300b-75ef-4102-86c6-a54d281633e2",
+			"id": "d114927c-5120-412f-9c32-7b3886f9a071",
 			"type": "default",
 			"selected": false,
-			"name": "out_225e300b-75ef-4102-86c6-a54d281633e2",
-			"parentNode": "9c3c434f-dae8-430b-853b-7019aa791094",
-			"links": ["bd5465fc-5c0e-4dc5-9231-0d649a329917"],
+			"name": "out_d114927c-5120-412f-9c32-7b3886f9a071",
+			"parentNode": "8a63562e-9af9-4efe-a7f9-b3e3f46e7a5b",
+			"links": ["84032f8b-7d11-4a19-89e8-0f4a8feb233e"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "9c3c434f-dae8-430b-853b-7019aa791094",
+			"id": "8a63562e-9af9-4efe-a7f9-b3e3f46e7a5b",
 			"name": "Start",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -156,40 +156,40 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "97959442-40e2-4ee7-92fc-d4b66cf543a5",
+		"id": "74536cfe-6af7-402a-bd22-47a02d20e67f",
 		"type": "simple",
 		"selected": true,
-		"x": 221.46031746031753,
-		"y": 282.2380952380952,
+		"x": 764.0992063492065,
+		"y": 150.64718614718612,
 		"extras": {
 			"outputs": 1,
-			"func": "msg.targetpath = 'C:/Users/user/Desktop/bucket-test/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
+			"func": "msg.sourcepath = [\"C:/Users/user/Desktop/bucket-test/\"]; // Directory path which you want to backup (you can add more directory or file).\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
 			"optTimeout": 30,
 			"variables": []
 		},
 		"ports": [{
-			"id": "43c31136-7ca3-41ce-ae04-1cfdf5b900f7",
+			"id": "0fadacc7-e336-4fdc-b0a3-4aff4f8d1b47",
 			"type": "default",
 			"selected": false,
-			"name": "out_43c31136-7ca3-41ce-ae04-1cfdf5b900f7",
-			"parentNode": "97959442-40e2-4ee7-92fc-d4b66cf543a5",
-			"links": ["8453f9c5-221f-4d31-abb2-6a88371b9abf"],
+			"name": "out_0fadacc7-e336-4fdc-b0a3-4aff4f8d1b47",
+			"parentNode": "74536cfe-6af7-402a-bd22-47a02d20e67f",
+			"links": ["30249ce3-91b6-4cd2-91a6-d240db63b773"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "841cc69a-85fd-4d7a-94cc-739a27e29717",
+			"id": "7596b887-8470-4184-91d2-8316a98b10ca",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "97959442-40e2-4ee7-92fc-d4b66cf543a5",
-			"links": ["bd5465fc-5c0e-4dc5-9231-0d649a329917"],
+			"parentNode": "74536cfe-6af7-402a-bd22-47a02d20e67f",
+			"links": ["84032f8b-7d11-4a19-89e8-0f4a8feb233e"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "97959442-40e2-4ee7-92fc-d4b66cf543a5",
+			"id": "74536cfe-6af7-402a-bd22-47a02d20e67f",
 			"name": "Config",
 			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
 			"color": "#F27925",
@@ -205,7 +205,7 @@
 				"version": "1.11.6"
 			}, {
 				"outputs": 1,
-				"func": "msg.targetpath = 'C:/Users/user/Desktop/bucket-test/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
+				"func": "msg.sourcepath = [\"C:/Users/user/Desktop/bucket-test/\"]; // Directory path which you want to backup (you can add more directory or file).\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
 				"optTimeout": 30
 			}, {
 				"variables": []
@@ -244,7 +244,7 @@
 				},
 				"formData": {
 					"outputs": 1,
-					"func": "msg.targetpath = 'C:/Users/user/Desktop/bucket-test/'; // Directory path which you want to backup\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
+					"func": "msg.sourcepath = [\"C:/Users/user/Desktop/bucket-test/\"]; // Directory path which you want to backup (you can add more directory or file).\nmsg.zippath = 'C:/Users/user/Desktop/test.zip'; // Filepath of zip after compression\nmsg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.bucketname = 'test-space'; // Name of S3 bucket\nmsg.objname = 'backupfolder'; // Name of object to upload\nreturn msg;",
 					"optTimeout": 30
 				}
 			}, {
@@ -281,24 +281,24 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "1ce7b6a0-8676-422d-aa17-1d55b2a3eea2",
+		"id": "49400ab8-dfbd-4aae-8cff-e0a66c18947b",
 		"type": "simple",
 		"selected": true,
-		"x": -137.92632204396912,
-		"y": -46.45276292335114,
+		"x": 379.7125668449198,
+		"y": -174.6345811051693,
 		"extras": {
-			"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+			"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compression* and *Amazon S3* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Compression and Amazon S3 package icons, install them.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**5.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 		},
 		"ports": [],
 		"model": {
-			"id": "1ce7b6a0-8676-422d-aa17-1d55b2a3eea2",
+			"id": "49400ab8-dfbd-4aae-8cff-e0a66c18947b",
 			"name": "Comment",
 			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
 			"color": "#FBE364",
 			"namespace": "Core.Flow.Comment",
 			"version": "1.11.6",
 			"abc": [{}, {
-				"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+				"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compression* and *Amazon S3* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Compression and Amazon S3 package icons, install them.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**5.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 			}],
 			"xyz": [{
 				"schema": {
@@ -331,18 +331,18 @@
 					}
 				},
 				"formData": {
-					"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compress* and *S3 Storage* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Repositories screen in Admin Console.\r\n\r\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\r\n\r\n**3.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**4.** You should see Compress and S3 Storage package icons, install them.\r\n\r\n**5.** Edit the Config Node.\r\n\r\n**6.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**7.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
+					"optText": "## Backup Folder To S3 Bucket\r\nThis template uses *Compression* and *Amazon S3* nodes to backup a directory in your local system and send it to a S3 bucket as a compressed folder.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Compression and Amazon S3 package icons, install them.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.targetpath field to the path of the directory you want to\r\ntake backup, set the zippath field to the path which you want to store zip. Set the msg.objname field to object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**5.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 				}
 			}],
 			"outputs": 0,
 			"inputs": 0
 		}
 	}, {
-		"id": "9c30bcc9-356e-42c6-a93a-83aec20aa593",
+		"id": "9cc0914b-7412-4568-afe3-424ffb167992",
 		"type": "simple",
 		"selected": true,
-		"x": 548.7650143973674,
-		"y": 363.4067941862059,
+		"x": 1295.9493578317108,
+		"y": 154.54315782256955,
 		"extras": {
 			"outResult": {
 				"scope": "Message",
@@ -350,18 +350,18 @@
 			}
 		},
 		"ports": [{
-			"id": "e8af5086-d393-411c-8448-839180975da6",
+			"id": "e49c69a2-a3bf-4e99-8397-b2bfaa3e59d5",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "9c30bcc9-356e-42c6-a93a-83aec20aa593",
-			"links": ["35bb6ef8-a009-447b-90e8-f5c7d227df0e"],
+			"parentNode": "9cc0914b-7412-4568-afe3-424ffb167992",
+			"links": ["37590f13-f2c3-4970-b862-7da74103c9a5"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "9c30bcc9-356e-42c6-a93a-83aec20aa593",
+			"id": "9cc0914b-7412-4568-afe3-424ffb167992",
 			"name": "Stop",
 			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
 			"color": "#fb2727",
@@ -411,83 +411,89 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "e92f473c-aa1d-4e3d-961a-da830bfcc264",
+		"id": "4befcadf-e0db-40fd-a910-05942bca39b7",
 		"type": "simple",
 		"selected": true,
-		"x": 228.97014260249557,
-		"y": 345.62357740298916,
+		"x": 779.4611330698286,
+		"y": 203.8111001317523,
 		"extras": {
-			"inPath": {
-				"name": "targetpath",
+			"inSourcePath": {
+				"name": "sourcepath",
 				"scope": "Message"
 			},
-			"inPathOut": {
+			"inTargetPath": {
 				"scope": "Message",
 				"name": "zippath"
 			},
-			"outResult": {
-				"name": "result",
-				"scope": "Message"
-			}
+			"inArchiveType": "Zip",
+			"optContinueOnError": true,
+			"optImplicitTopLevelFolder": true,
+			"optMkdirAll": true,
+			"optOverwriteExisting": true,
+			"optTarGzCompressionLevel": "Default",
+			"optTarGzSingleThreaded": false
 		},
 		"ports": [{
-			"id": "288b323a-9e29-43be-9bad-f8bd2523fa75",
+			"id": "04ba106d-d833-48e5-8f05-519d0175ce2f",
 			"type": "default",
 			"selected": false,
-			"name": "out_288b323a-9e29-43be-9bad-f8bd2523fa75",
-			"parentNode": "e92f473c-aa1d-4e3d-961a-da830bfcc264",
-			"links": ["359d7732-0a15-44b8-80d0-3524c9f8bc29"],
+			"name": "out_04ba106d-d833-48e5-8f05-519d0175ce2f",
+			"parentNode": "4befcadf-e0db-40fd-a910-05942bca39b7",
+			"links": ["c6646ed0-b1dd-4c0f-aabd-24fa0734f4e3"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "232f9646-2329-410a-a78f-43000a0b8f97",
+			"id": "39219ce6-2bfb-4259-b996-2ce6fd6b5ca6",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "e92f473c-aa1d-4e3d-961a-da830bfcc264",
-			"links": ["8453f9c5-221f-4d31-abb2-6a88371b9abf"],
+			"parentNode": "4befcadf-e0db-40fd-a910-05942bca39b7",
+			"links": ["30249ce3-91b6-4cd2-91a6-d240db63b773"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "e92f473c-aa1d-4e3d-961a-da830bfcc264",
-			"name": "Compress",
-			"icon": "M20 6H12L10 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6M18 12H16V14H18V16H16V18H14V16H16V14H14V12H16V10H14V8H16V10H18V12Z",
+			"id": "4befcadf-e0db-40fd-a910-05942bca39b7",
+			"name": "Archive",
+			"icon": "M3,3H21V7H3V3M4,8H20V21H4V8M9.5,11A0.5,0.5 0 0,0 9,11.5V13H15V11.5A0.5,0.5 0 0,0 14.5,11H9.5Z",
 			"color": "#355474",
-			"namespace": "Robomotion.Compress.Compress",
-			"version": "0.0.1",
+			"namespace": "Robomotion.Compression.Archive",
+			"version": "0.0.4",
 			"abc": [{
-				"name": "Compress",
-				"version": "0.0.1",
+				"name": "Archive",
+				"version": "0.0.4",
 				"color": "#355474",
 				"delayBefore": 0,
 				"delayAfter": 0,
 				"continueOnError": false
 			}, {
-				"inPath": {
-					"name": "targetpath",
+				"inSourcePath": {
+					"name": "sourcepath",
 					"scope": "Message"
 				},
-				"inPathOut": {
+				"inTargetPath": {
 					"scope": "Message",
 					"name": "zippath"
 				}
 			}, {
-				"outResult": {
-					"name": "result",
-					"scope": "Message"
-				}
+				"inArchiveType": "Zip",
+				"optContinueOnError": true,
+				"optImplicitTopLevelFolder": true,
+				"optMkdirAll": true,
+				"optOverwriteExisting": true,
+				"optTarGzCompressionLevel": "Default",
+				"optTarGzSingleThreaded": false
 			}],
 			"xyz": [{
 				"schema": {
 					"type": "object",
 					"title": "Input",
 					"properties": {
-						"inPath": {
+						"inSourcePath": {
 							"type": "object",
-							"title": "Path",
+							"title": "Source Path",
 							"properties": {
 								"name": {
 									"type": "string"
@@ -498,11 +504,11 @@
 							},
 							"customScope": true,
 							"messageScope": true,
-							"variableType": "String"
+							"variableType": "Object"
 						},
-						"inPathOut": {
+						"inTargetPath": {
 							"type": "object",
-							"title": "Out Path",
+							"title": "Target Path",
 							"properties": {
 								"name": {
 									"type": "string"
@@ -518,67 +524,95 @@
 					}
 				},
 				"formData": {
-					"inPath": {
-						"name": "targetpath",
-						"scope": "Message"
+					"inSourcePath": {
+						"name": "",
+						"scope": "Custom"
 					},
-					"inPathOut": {
-						"scope": "Message",
-						"name": "zippath"
+					"inTargetPath": {
+						"name": "",
+						"scope": "Custom"
 					}
 				},
 				"uiSchema": {
-					"inPath": {
+					"inSourcePath": {
 						"ui:field": "variable"
 					},
-					"inPathOut": {
+					"inTargetPath": {
 						"ui:field": "variable"
 					},
-					"ui:order": ["inPath", "inPathOut"]
+					"ui:order": ["inSourcePath", "inTargetPath"]
 				}
 			}, {
 				"schema": {
 					"type": "object",
-					"title": "Output",
+					"title": "Options",
 					"properties": {
-						"outResult": {
-							"type": "object",
-							"title": "Result",
-							"properties": {
-								"name": {
-									"type": "string"
-								},
-								"scope": {
-									"type": "string"
-								}
-							},
-							"messageScope": true,
-							"variableType": "Object"
+						"inArchiveType": {
+							"type": "string",
+							"title": "Type",
+							"multiple": true,
+							"enum": ["Zip", "Tar", "TarGz"],
+							"enumNames": ["Zip", "Tar", "TarGz"]
+						},
+						"optContinueOnError": {
+							"type": "boolean",
+							"title": "Continue On Error"
+						},
+						"optImplicitTopLevelFolder": {
+							"type": "boolean",
+							"title": "Implicit Top Level Folder"
+						},
+						"optMkdirAll": {
+							"type": "boolean",
+							"title": "Make Directory All"
+						},
+						"optOverwriteExisting": {
+							"type": "boolean",
+							"title": "Overwrite Existing"
+						},
+						"optTarGzCompressionLevel": {
+							"type": "string",
+							"title": "Compression Level",
+							"description": "Only available if TarGz is selected",
+							"multiple": true,
+							"enum": ["Default", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+							"enumNames": ["Default", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+						},
+						"optTarGzSingleThreaded": {
+							"type": "boolean",
+							"title": "Single Threaded",
+							"description": "Only available if TarGz is selected"
 						}
 					}
 				},
 				"formData": {
-					"outResult": {
-						"name": "result",
-						"scope": "Message"
-					}
+					"inArchiveType": "Zip",
+					"optContinueOnError": false,
+					"optImplicitTopLevelFolder": false,
+					"optMkdirAll": false,
+					"optOverwriteExisting": false,
+					"optTarGzCompressionLevel": "Default",
+					"optTarGzSingleThreaded": false
 				},
 				"uiSchema": {
-					"outResult": {
-						"ui:field": "variable"
+					"optTarGzCompressionLevel": {
+						"ui:field": "input"
 					},
-					"ui:order": ["outResult"]
+					"optTarGzSingleThreaded": {
+						"ui:field": "input"
+					},
+					"ui:order": ["inArchiveType", "optMkdirAll", "optContinueOnError", "optOverwriteExisting", "optImplicitTopLevelFolder", "optTarGzSingleThreaded", "optTarGzCompressionLevel"]
 				}
 			}],
 			"outputs": 1,
 			"inputs": 1
 		}
 	}, {
-		"id": "56f2b05a-e4e4-4434-8367-73cc9a1cdb74",
+		"id": "df8f702f-bf14-4d91-9313-3489c3e44af8",
 		"type": "simple",
 		"selected": true,
-		"x": 530.0766896502191,
-		"y": 240.59823653172612,
+		"x": 1043.0520421607378,
+		"y": 101.8565546772068,
 		"extras": {
 			"inEndPoint": {
 				"scope": "Message",
@@ -587,47 +621,39 @@
 			"outClientId": {
 				"name": "client_id",
 				"scope": "Message"
-			},
-			"optAccessKeyID": {
-				"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-				"itemId": "0de37a47-5de2-479d-93d0-e2397c672f5f"
-			},
-			"optSecretKeyAccess": {
-				"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-				"itemId": "5f0ae90a-a8b2-4e03-97d8-65e4c83ab999"
 			}
 		},
 		"ports": [{
-			"id": "e0625ef6-9e2a-4977-90c4-35fde6bfb680",
+			"id": "0460fe50-7e15-4bfc-a36e-71a24668e953",
 			"type": "default",
 			"selected": false,
-			"name": "out_e0625ef6-9e2a-4977-90c4-35fde6bfb680",
-			"parentNode": "56f2b05a-e4e4-4434-8367-73cc9a1cdb74",
-			"links": ["6c88dc86-1149-4681-a396-79319f18ba6a"],
+			"name": "out_0460fe50-7e15-4bfc-a36e-71a24668e953",
+			"parentNode": "df8f702f-bf14-4d91-9313-3489c3e44af8",
+			"links": ["22a4c14a-9435-41d7-b30a-c240eae07029"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "43e952e3-ddaa-4026-8ab6-a6d50e140958",
+			"id": "15bdcce0-ce71-4040-9fe8-25e56a0b77a1",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "56f2b05a-e4e4-4434-8367-73cc9a1cdb74",
-			"links": ["359d7732-0a15-44b8-80d0-3524c9f8bc29"],
+			"parentNode": "df8f702f-bf14-4d91-9313-3489c3e44af8",
+			"links": ["c6646ed0-b1dd-4c0f-aabd-24fa0734f4e3"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "56f2b05a-e4e4-4434-8367-73cc9a1cdb74",
+			"id": "df8f702f-bf14-4d91-9313-3489c3e44af8",
 			"name": "Connect",
 			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
 			"color": "#ffd04b",
-			"namespace": "Robomotion.S3Storage.Connect",
-			"version": "0.1.9",
+			"namespace": "Robomotion.AmazonS3.Connect",
+			"version": "0.2.0",
 			"abc": [{
 				"name": "Connect",
-				"version": "0.1.9",
+				"version": "0.2.0",
 				"color": "#ffd04b",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -642,16 +668,7 @@
 					"name": "client_id",
 					"scope": "Message"
 				}
-			}, {
-				"optAccessKeyID": {
-					"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-					"itemId": "0de37a47-5de2-479d-93d0-e2397c672f5f"
-				},
-				"optSecretKeyAccess": {
-					"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-					"itemId": "5f0ae90a-a8b2-4e03-97d8-65e4c83ab999"
-				}
-			}],
+			}, {}],
 			"xyz": [{
 				"schema": {
 					"type": "object",
@@ -676,8 +693,8 @@
 				},
 				"formData": {
 					"inEndPoint": {
-						"scope": "Message",
-						"name": "endpoint"
+						"name": "",
+						"scope": "Custom"
 					}
 				},
 				"uiSchema": {
@@ -754,16 +771,7 @@
 						}
 					}
 				},
-				"formData": {
-					"optAccessKeyID": {
-						"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-						"itemId": "0de37a47-5de2-479d-93d0-e2397c672f5f"
-					},
-					"optSecretKeyAccess": {
-						"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-						"itemId": "5f0ae90a-a8b2-4e03-97d8-65e4c83ab999"
-					}
-				},
+				"formData": {},
 				"uiSchema": {
 					"optAccessKeyID": {
 						"ui:field": "credentials"
@@ -778,27 +786,27 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "829aaf1b-64bc-4e1d-a492-ef6018773060",
+		"id": "fe33e15c-ed6c-4d9f-99eb-fbca377884fb",
 		"type": "simple",
 		"selected": true,
-		"x": 538.0766896502191,
-		"y": 297.66492761245524,
+		"x": 1056.1884057971015,
+		"y": 152.99291831357044,
 		"extras": {
 			"inBucketName": {
-				"name": "bucketname",
-				"scope": "Message"
+				"scope": "Message",
+				"name": "bucketname"
 			},
 			"inClientID": {
 				"name": "client_id",
 				"scope": "Message"
 			},
 			"inFilePath": {
-				"scope": "Message",
-				"name": "zippath"
+				"name": "zippath",
+				"scope": "Message"
 			},
 			"inObjectName": {
-				"name": "objname",
-				"scope": "Message"
+				"scope": "Message",
+				"name": "objname"
 			},
 			"optContentType": {
 				"name": "",
@@ -806,56 +814,56 @@
 			}
 		},
 		"ports": [{
-			"id": "f469c3fb-c783-4bd7-8135-59010b0f4470",
+			"id": "97e56e13-e154-4b48-ba9c-e799060d27a4",
 			"type": "default",
 			"selected": false,
-			"name": "out_f469c3fb-c783-4bd7-8135-59010b0f4470",
-			"parentNode": "829aaf1b-64bc-4e1d-a492-ef6018773060",
-			"links": ["35bb6ef8-a009-447b-90e8-f5c7d227df0e"],
+			"name": "out_97e56e13-e154-4b48-ba9c-e799060d27a4",
+			"parentNode": "fe33e15c-ed6c-4d9f-99eb-fbca377884fb",
+			"links": ["37590f13-f2c3-4970-b862-7da74103c9a5"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "20dbb027-5209-42fb-8219-ce99653b5e29",
+			"id": "47766307-3144-4a83-a226-7d7c98c4dc43",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "829aaf1b-64bc-4e1d-a492-ef6018773060",
-			"links": ["6c88dc86-1149-4681-a396-79319f18ba6a"],
+			"parentNode": "fe33e15c-ed6c-4d9f-99eb-fbca377884fb",
+			"links": ["22a4c14a-9435-41d7-b30a-c240eae07029"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "829aaf1b-64bc-4e1d-a492-ef6018773060",
+			"id": "fe33e15c-ed6c-4d9f-99eb-fbca377884fb",
 			"name": "Upload Object",
 			"icon": "M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.65,8.12 11.68,8 13.23,7.83V7.5C13.23,6.84 13.28,6.09 12.9,5.54C12.58,5.05 11.95,4.84 11.4,4.84C10.38,4.84 9.47,5.37 9.25,6.45C9.2,6.69 9,6.93 8.78,6.94L6.18,6.66C5.96,6.61 5.72,6.44 5.78,6.1C6.38,2.95 9.23,2 11.78,2C13.08,2 14.78,2.35 15.81,3.33C17.11,4.55 17,6.18 17,7.95V12.12C17,13.37 17.5,13.93 18,14.6C18.17,14.85 18.21,15.14 18,15.31L15.94,17.09H15.93M13.23,10.56V10C11.29,10 9.24,10.39 9.24,12.67C9.24,13.83 9.85,14.62 10.87,14.62C11.63,14.62 12.3,14.15 12.73,13.4C13.25,12.47 13.23,11.6 13.23,10.56M20.16,19.54C18,21.14 14.82,22 12.1,22C8.29,22 4.85,20.59 2.25,18.24C2.05,18.06 2.23,17.81 2.5,17.95C5.28,19.58 8.75,20.56 12.33,20.56C14.74,20.56 17.4,20.06 19.84,19.03C20.21,18.87 20.5,19.27 20.16,19.54M21.07,18.5C20.79,18.14 19.22,18.33 18.5,18.42C18.31,18.44 18.28,18.26 18.47,18.12C19.71,17.24 21.76,17.5 22,17.79C22.24,18.09 21.93,20.14 20.76,21.11C20.58,21.27 20.41,21.18 20.5,21C20.76,20.33 21.35,18.86 21.07,18.5Z",
 			"color": "#ffd04b",
-			"namespace": "Robomotion.S3Storage.UploadObject",
-			"version": "0.1.9",
+			"namespace": "Robomotion.AmazonS3.UploadObject",
+			"version": "0.2.0",
 			"abc": [{
 				"name": "Upload Object",
-				"version": "0.1.9",
+				"version": "0.2.0",
 				"color": "#ffd04b",
 				"delayBefore": 0,
 				"delayAfter": 0,
 				"continueOnError": false
 			}, {
 				"inBucketName": {
-					"name": "bucketname",
-					"scope": "Message"
+					"scope": "Message",
+					"name": "bucketname"
 				},
 				"inClientID": {
 					"name": "client_id",
 					"scope": "Message"
 				},
 				"inFilePath": {
-					"scope": "Message",
-					"name": "zippath"
+					"name": "zippath",
+					"scope": "Message"
 				},
 				"inObjectName": {
-					"name": "objname",
-					"scope": "Message"
+					"scope": "Message",
+					"name": "objname"
 				}
 			}, {
 				"optContentType": {
@@ -931,20 +939,20 @@
 				},
 				"formData": {
 					"inBucketName": {
-						"name": "bucketname",
-						"scope": "Message"
+						"name": "",
+						"scope": "Custom"
 					},
 					"inClientID": {
 						"name": "client_id",
 						"scope": "Message"
 					},
 					"inFilePath": {
-						"scope": "Message",
-						"name": "zippath"
+						"name": "",
+						"scope": "Custom"
 					},
 					"inObjectName": {
-						"name": "objname",
-						"scope": "Message"
+						"name": "",
+						"scope": "Custom"
 					}
 				},
 				"uiSchema": {
