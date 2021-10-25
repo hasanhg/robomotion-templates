@@ -1,16 +1,16 @@
 {
 	"nodes": [{
-		"id": "7e74c905-8a51-4c6f-9b06-1d96c99f6544",
+		"id": "625bf875-7359-4481-9ab4-dcc5af46b342",
 		"type": "simple",
 		"selected": true,
-		"x": 57.25,
-		"y": 91,
+		"x": 750,
+		"y": 100,
 		"extras": {
 			"optText": "#### Excel Copy Paste\r\n\r\nThis template shows copy and paste between sheets in excel file \r\n\r\n###### How it Works?\r\n\r\n**1.** Edit the Config Node.\r\n\r\n**2.** Set the msg.path field to the excel file.\r\n\r\n**3.** If not required don't edit other sheet fields in Config node.\r\n"
 		},
 		"ports": [],
 		"model": {
-			"id": "7e74c905-8a51-4c6f-9b06-1d96c99f6544",
+			"id": "625bf875-7359-4481-9ab4-dcc5af46b342",
 			"name": "Comment",
 			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
 			"color": "#FBE364",
@@ -57,11 +57,11 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "f9c1cf4f-624a-430e-923c-eb27b21ff057",
+		"id": "7f65bd22-5fdb-441d-a0f8-e94d5c400039",
 		"type": "simple",
 		"selected": true,
-		"x": 393.5,
-		"y": 117.5,
+		"x": 1125.4391891891892,
+		"y": 140.01351351351352,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -76,18 +76,18 @@
 			"optOnceDelay": 0.1
 		},
 		"ports": [{
-			"id": "f2a894b3-6a1a-48d0-a915-fbddf8f83113",
+			"id": "72c8229f-5c84-4ede-b4c6-00861b44daf3",
 			"type": "default",
 			"selected": false,
-			"name": "out_f2a894b3-6a1a-48d0-a915-fbddf8f83113",
-			"parentNode": "f9c1cf4f-624a-430e-923c-eb27b21ff057",
-			"links": ["43786af2-ddd2-4611-bff9-bd8a059cea18"],
+			"name": "out_72c8229f-5c84-4ede-b4c6-00861b44daf3",
+			"parentNode": "7f65bd22-5fdb-441d-a0f8-e94d5c400039",
+			"links": ["d1a4612b-61b1-4e7d-b2c0-e48372e6ef34"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "f9c1cf4f-624a-430e-923c-eb27b21ff057",
+			"id": "7f65bd22-5fdb-441d-a0f8-e94d5c400039",
 			"name": "Start",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -213,11 +213,209 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "a88896a0-188e-4489-9c15-b94e667637af",
+		"id": "b6d8a763-d53d-4896-9c0c-eab0edca7fbd",
 		"type": "simple",
 		"selected": true,
-		"x": 687.5,
-		"y": 164.5,
+		"x": 1375.435913185913,
+		"y": 142.07411957411958,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.path = 'C:\\\\Users\\\\user\\\\Documents\\\\excelcopypaste.xlsx';// Path to excel file.\nmsg.firstsheet = 'Person';\nmsg.secondsheet = 'Info';\nmsg.resultsheet = 'Result';\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "f2b05800-9a87-43bc-86fa-90af8f8f9071",
+			"type": "default",
+			"selected": false,
+			"name": "out_f2b05800-9a87-43bc-86fa-90af8f8f9071",
+			"parentNode": "b6d8a763-d53d-4896-9c0c-eab0edca7fbd",
+			"links": ["451026b7-abce-4ce5-beee-a0650adb9d74"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "5f84141d-24b7-4575-9eba-a53d847cd180",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b6d8a763-d53d-4896-9c0c-eab0edca7fbd",
+			"links": ["d1a4612b-61b1-4e7d-b2c0-e48372e6ef34"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b6d8a763-d53d-4896-9c0c-eab0edca7fbd",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.path = 'C:\\\\Users\\\\user\\\\Documents\\\\excelcopypaste.xlsx';// Path to excel file.\nmsg.firstsheet = 'Person';\nmsg.secondsheet = 'Info';\nmsg.resultsheet = 'Result';\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.path = 'C:\\\\Users\\\\user\\\\Documents\\\\excelcopypaste.xlsx';// Path to excel file.\nmsg.firstsheet = 'Person';\nmsg.secondsheet = 'Info';\nmsg.resultsheet = 'Result';\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "363a696c-1907-44ed-bcd2-7d356914b18c",
+		"type": "simple",
+		"selected": true,
+		"x": 1952.9862817362819,
+		"y": 408.6081081081081,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "e2d5e6bd-2c2b-479d-818c-0552f7d478e2",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "363a696c-1907-44ed-bcd2-7d356914b18c",
+			"links": ["71aea737-c419-4448-a8b4-bbeb254ff701"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "363a696c-1907-44ed-bcd2-7d356914b18c",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "ea5a1c95-7188-438b-9e5b-16d62eca5471",
+		"type": "simple",
+		"selected": true,
+		"x": 1385.5565305565308,
+		"y": 192.6426816426817,
 		"extras": {
 			"path": {
 				"scope": "Message",
@@ -230,36 +428,36 @@
 			"optVisible": true
 		},
 		"ports": [{
-			"id": "0c0db583-8760-4280-b631-0ee938a0aec0",
+			"id": "e2aed324-2021-4392-9ee1-7aa82f3a709a",
 			"type": "default",
 			"selected": false,
-			"name": "out_0c0db583-8760-4280-b631-0ee938a0aec0",
-			"parentNode": "a88896a0-188e-4489-9c15-b94e667637af",
-			"links": ["12ac680a-5cb5-464a-95af-afc24d62dfc7"],
+			"name": "out_e2aed324-2021-4392-9ee1-7aa82f3a709a",
+			"parentNode": "ea5a1c95-7188-438b-9e5b-16d62eca5471",
+			"links": ["041f1ce6-8148-4050-b08b-b564cd592d19"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "535bad6f-1dee-4abd-a11a-4bb832e7df73",
+			"id": "17632050-009a-4f62-9d9a-151bd0ce1402",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "a88896a0-188e-4489-9c15-b94e667637af",
-			"links": ["2d32c503-1e1f-443e-bb90-896eb6ce3dac"],
+			"parentNode": "ea5a1c95-7188-438b-9e5b-16d62eca5471",
+			"links": ["451026b7-abce-4ce5-beee-a0650adb9d74"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "a88896a0-188e-4489-9c15-b94e667637af",
+			"id": "ea5a1c95-7188-438b-9e5b-16d62eca5471",
 			"name": "Open Excel",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.OpenExcel",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.OpenExcel",
+			"version": "1.0.6",
 			"abc": [{
 				"name": "Open Excel",
-				"version": "1.0.3",
+				"version": "1.0.6",
 				"color": "#4caf50",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -366,371 +564,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "6f4d9c4c-1210-4ea0-ab3a-8d18758a04c4",
+		"id": "4b53fc5b-bcc7-44a5-9639-d3eb73ec0fc8",
 		"type": "simple",
 		"selected": true,
-		"x": 697.5,
-		"y": 270.5,
-		"extras": {
-			"applicationId": {
-				"scope": "Message",
-				"name": "excel_fd"
-			},
-			"range": {
-				"scope": "Custom",
-				"name": "A1:B6"
-			}
-		},
-		"ports": [{
-			"id": "3257b530-c3fd-4a35-873f-0ad4d1cf811b",
-			"type": "default",
-			"selected": false,
-			"name": "out_3257b530-c3fd-4a35-873f-0ad4d1cf811b",
-			"parentNode": "6f4d9c4c-1210-4ea0-ab3a-8d18758a04c4",
-			"links": ["8f03f87f-9df6-4cb9-844f-db18af7791be"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "9a951d1e-a258-400c-9546-9bd5c04f2197",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "6f4d9c4c-1210-4ea0-ab3a-8d18758a04c4",
-			"links": ["65793564-ee5b-4534-8305-bf571c024ff7"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "6f4d9c4c-1210-4ea0-ab3a-8d18758a04c4",
-			"name": "Copy Range",
-			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
-			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.CopyRange",
-			"version": "1.0.3",
-			"abc": [{
-				"name": "Copy Range",
-				"version": "1.0.3",
-				"color": "#4caf50",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false
-			}, {
-				"applicationId": {
-					"scope": "Message",
-					"name": "excel_fd"
-				},
-				"range": {
-					"scope": "Custom",
-					"name": "A1:B6"
-				}
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Input",
-					"type": "object",
-					"properties": {
-						"applicationId": {
-							"type": "object",
-							"title": "File Descriptor",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"messageScope": true
-						},
-						"range": {
-							"type": "object",
-							"title": "Range",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"customScope": true,
-							"messageScope": true
-						}
-					}
-				},
-				"uiSchema": {
-					"applicationId": {
-						"ui:field": "variable"
-					},
-					"range": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["applicationId", "range"]
-				},
-				"formData": {
-					"applicationId": {
-						"scope": "Message",
-						"name": "excel_fd"
-					},
-					"range": {
-						"scope": "Custom",
-						"name": "A1:B6"
-					}
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "8e8b51ec-088f-4164-b595-cf4d0d5dc689",
-		"type": "simple",
-		"selected": true,
-		"x": 955.5,
-		"y": 128.5,
-		"extras": {
-			"applicationId": {
-				"scope": "Message",
-				"name": "excel_fd"
-			},
-			"sheetName": {
-				"scope": "Message",
-				"name": "secondsheet"
-			}
-		},
-		"ports": [{
-			"id": "28b64c6a-cfa4-444a-ac66-3d6b0ae69e7a",
-			"type": "default",
-			"selected": false,
-			"name": "out_28b64c6a-cfa4-444a-ac66-3d6b0ae69e7a",
-			"parentNode": "8e8b51ec-088f-4164-b595-cf4d0d5dc689",
-			"links": ["66a95320-a5b0-4b6f-9bec-d1abdbae408a"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "5dc18313-c010-44e0-8372-842c9ef1b303",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "8e8b51ec-088f-4164-b595-cf4d0d5dc689",
-			"links": ["5b73a812-70fc-419a-bb7e-24c3bed53adc"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "8e8b51ec-088f-4164-b595-cf4d0d5dc689",
-			"name": "Activate Sheet",
-			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
-			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.ActivateSheet",
-			"version": "1.0.3",
-			"abc": [{
-				"name": "Activate Sheet",
-				"version": "1.0.3",
-				"color": "#4caf50",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false
-			}, {
-				"applicationId": {
-					"scope": "Message",
-					"name": "excel_fd"
-				},
-				"sheetName": {
-					"scope": "Message",
-					"name": "secondsheet"
-				}
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Input",
-					"type": "object",
-					"properties": {
-						"applicationId": {
-							"type": "object",
-							"title": "File Descriptor",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"messageScope": true
-						},
-						"sheetName": {
-							"type": "object",
-							"title": "Sheet Name",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"customScope": true,
-							"messageScope": true
-						}
-					}
-				},
-				"uiSchema": {
-					"applicationId": {
-						"ui:field": "variable"
-					},
-					"sheetName": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["applicationId", "sheetName"]
-				},
-				"formData": {
-					"applicationId": {
-						"scope": "Message",
-						"name": "excel_fd"
-					},
-					"sheetName": {
-						"scope": "Message",
-						"name": "secondsheet"
-					}
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "67184dc8-6d24-4a83-8fba-4b9670082118",
-		"type": "simple",
-		"selected": true,
-		"x": 709.5,
-		"y": 372.5,
-		"extras": {
-			"applicationId": {
-				"scope": "Message",
-				"name": "excel_fd"
-			},
-			"range": {
-				"scope": "Custom",
-				"name": "A1:B6"
-			}
-		},
-		"ports": [{
-			"id": "6b7c454c-0c62-48da-a04f-00fabb98b735",
-			"type": "default",
-			"selected": false,
-			"name": "out_6b7c454c-0c62-48da-a04f-00fabb98b735",
-			"parentNode": "67184dc8-6d24-4a83-8fba-4b9670082118",
-			"links": ["5b73a812-70fc-419a-bb7e-24c3bed53adc"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "bac97324-86ad-4a03-b6d4-5621df5398de",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "67184dc8-6d24-4a83-8fba-4b9670082118",
-			"links": ["3f69d6b2-9066-4ab4-8c54-38e1a98de867"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "67184dc8-6d24-4a83-8fba-4b9670082118",
-			"name": "Paste Range",
-			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
-			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.PasteRange",
-			"version": "1.0.3",
-			"abc": [{
-				"name": "Paste Range",
-				"version": "1.0.3",
-				"color": "#4caf50",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false
-			}, {
-				"applicationId": {
-					"scope": "Message",
-					"name": "excel_fd"
-				},
-				"range": {
-					"scope": "Custom",
-					"name": "A1:B6"
-				}
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Input",
-					"type": "object",
-					"properties": {
-						"applicationId": {
-							"type": "object",
-							"title": "File Descriptor",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"messageScope": true
-						},
-						"range": {
-							"type": "object",
-							"title": "Range",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"customScope": true,
-							"messageScope": true
-						}
-					}
-				},
-				"uiSchema": {
-					"applicationId": {
-						"ui:field": "variable"
-					},
-					"range": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["applicationId", "range"]
-				},
-				"formData": {
-					"applicationId": {
-						"scope": "Message",
-						"name": "excel_fd"
-					},
-					"range": {
-						"scope": "Custom",
-						"name": "A1:B6"
-					}
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "81260d34-b0b8-4c22-a41c-a0981bfa79de",
-		"type": "simple",
-		"selected": true,
-		"x": 694.5,
-		"y": 211.5,
+		"x": 1388.8876899666666,
+		"y": 242.41548667688815,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -742,36 +580,36 @@
 			}
 		},
 		"ports": [{
-			"id": "0afd72ae-f488-47b5-a6af-e8c6df1293e7",
+			"id": "f87fa08d-2b3e-4563-8e97-f4ed6510547e",
 			"type": "default",
 			"selected": false,
-			"name": "out_0afd72ae-f488-47b5-a6af-e8c6df1293e7",
-			"parentNode": "81260d34-b0b8-4c22-a41c-a0981bfa79de",
-			"links": ["65793564-ee5b-4534-8305-bf571c024ff7"],
+			"name": "out_f87fa08d-2b3e-4563-8e97-f4ed6510547e",
+			"parentNode": "4b53fc5b-bcc7-44a5-9639-d3eb73ec0fc8",
+			"links": ["e33ff390-47be-4dc7-b8ac-17bd6b9be59f"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "bca988e1-2495-440f-b593-7ad9e2b5d076",
+			"id": "f0b07d90-d428-4f0e-97d1-c9413c9deb31",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "81260d34-b0b8-4c22-a41c-a0981bfa79de",
-			"links": ["12ac680a-5cb5-464a-95af-afc24d62dfc7"],
+			"parentNode": "4b53fc5b-bcc7-44a5-9639-d3eb73ec0fc8",
+			"links": ["041f1ce6-8148-4050-b08b-b564cd592d19"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "81260d34-b0b8-4c22-a41c-a0981bfa79de",
+			"id": "4b53fc5b-bcc7-44a5-9639-d3eb73ec0fc8",
 			"name": "Activate Sheet",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.ActivateSheet",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.ActivateSheet",
+			"version": "1.0.6",
 			"abc": [{
 				"name": "Activate Sheet",
-				"version": "1.0.3",
+				"version": "1.0.6",
 				"color": "#4caf50",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -846,11 +684,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "6cab50cd-99f5-42c5-a7ef-7f7f78e17afe",
+		"id": "643751f3-5ec2-4033-9ac5-d3b750add97d",
 		"type": "simple",
 		"selected": true,
-		"x": 966.5,
-		"y": 180.5,
+		"x": 1391.4749135538902,
+		"y": 291.6587299201314,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -862,36 +700,36 @@
 			}
 		},
 		"ports": [{
-			"id": "e4b58c13-7312-43ce-8b18-cb42d5990f0c",
+			"id": "063f00bf-1f78-4b69-b5c3-752e242a8064",
 			"type": "default",
 			"selected": false,
-			"name": "out_e4b58c13-7312-43ce-8b18-cb42d5990f0c",
-			"parentNode": "6cab50cd-99f5-42c5-a7ef-7f7f78e17afe",
-			"links": ["e623830e-eee4-454a-ac8d-3ecd0cf25073"],
+			"name": "out_063f00bf-1f78-4b69-b5c3-752e242a8064",
+			"parentNode": "643751f3-5ec2-4033-9ac5-d3b750add97d",
+			"links": ["2c5da78d-7fce-4486-a475-9e9fbb8b6d19"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "d283183d-92e4-4e07-888c-34096dc897a8",
+			"id": "47e613e2-d9cc-46e9-ad9c-c38526ec2f01",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "6cab50cd-99f5-42c5-a7ef-7f7f78e17afe",
-			"links": ["66a95320-a5b0-4b6f-9bec-d1abdbae408a"],
+			"parentNode": "643751f3-5ec2-4033-9ac5-d3b750add97d",
+			"links": ["e33ff390-47be-4dc7-b8ac-17bd6b9be59f"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "6cab50cd-99f5-42c5-a7ef-7f7f78e17afe",
+			"id": "643751f3-5ec2-4033-9ac5-d3b750add97d",
 			"name": "Copy Range",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.CopyRange",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.CopyRange",
+			"version": "1.0.6",
 			"abc": [{
 				"name": "Copy Range",
-				"version": "1.0.3",
+				"version": "1.0.6",
 				"color": "#4caf50",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -966,11 +804,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "82670076-5381-42ca-b944-32f8b30c9133",
+		"id": "47241beb-4ff8-4bc3-85a0-e931f934458a",
 		"type": "simple",
 		"selected": true,
-		"x": 969.5,
-		"y": 234.5,
+		"x": 1395.2873623663393,
+		"y": 342.52113778253926,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -982,36 +820,36 @@
 			}
 		},
 		"ports": [{
-			"id": "2afbb9bc-ed65-41ca-b83f-10fcce248751",
+			"id": "3e2901e8-6dea-4fab-b395-187bc1650698",
 			"type": "default",
 			"selected": false,
-			"name": "out_2afbb9bc-ed65-41ca-b83f-10fcce248751",
-			"parentNode": "82670076-5381-42ca-b944-32f8b30c9133",
-			"links": ["728e9133-206d-45bb-9cd7-267555f72fa8"],
+			"name": "out_3e2901e8-6dea-4fab-b395-187bc1650698",
+			"parentNode": "47241beb-4ff8-4bc3-85a0-e931f934458a",
+			"links": ["6f275cc6-38db-457b-ba57-037c70e0ef0d"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "9992a141-1eb8-4653-9945-0c71950ed191",
+			"id": "8eaecd53-5d04-424b-ad7c-25d41bf408cd",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "82670076-5381-42ca-b944-32f8b30c9133",
-			"links": ["e623830e-eee4-454a-ac8d-3ecd0cf25073"],
+			"parentNode": "47241beb-4ff8-4bc3-85a0-e931f934458a",
+			"links": ["2c5da78d-7fce-4486-a475-9e9fbb8b6d19"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "82670076-5381-42ca-b944-32f8b30c9133",
+			"id": "47241beb-4ff8-4bc3-85a0-e931f934458a",
 			"name": "Activate Sheet",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.ActivateSheet",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.ActivateSheet",
+			"version": "1.0.6",
 			"abc": [{
 				"name": "Activate Sheet",
-				"version": "1.0.3",
+				"version": "1.0.6",
 				"color": "#4caf50",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -1086,11 +924,491 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "ca7e9f51-369c-4a96-9381-e8bb708b7eb1",
+		"id": "ebd592b0-6b29-4ee7-80d9-782a22824263",
 		"type": "simple",
 		"selected": true,
-		"x": 973.5,
-		"y": 283.5,
+		"x": 1399.191539270516,
+		"y": 393.3270345884361,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"range": {
+				"scope": "Custom",
+				"name": "A1:B6"
+			}
+		},
+		"ports": [{
+			"id": "f974052a-df33-41c8-b57a-354b3012460b",
+			"type": "default",
+			"selected": false,
+			"name": "out_f974052a-df33-41c8-b57a-354b3012460b",
+			"parentNode": "ebd592b0-6b29-4ee7-80d9-782a22824263",
+			"links": ["ad4e3dc0-be7d-4de4-8106-21f180005c61"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "3964af58-276b-425b-ada5-71ed9c27a1b9",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ebd592b0-6b29-4ee7-80d9-782a22824263",
+			"links": ["6f275cc6-38db-457b-ba57-037c70e0ef0d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ebd592b0-6b29-4ee7-80d9-782a22824263",
+			"name": "Paste Range",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.PasteRange",
+			"version": "1.0.6",
+			"abc": [{
+				"name": "Paste Range",
+				"version": "1.0.6",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				},
+				"range": {
+					"scope": "Custom",
+					"name": "A1:B6"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						},
+						"range": {
+							"type": "object",
+							"title": "Range",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"range": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId", "range"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					},
+					"range": {
+						"scope": "Custom",
+						"name": "A1:B6"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "dad7cb80-4bb3-4dcb-89fb-39ed785e6429",
+		"type": "simple",
+		"selected": true,
+		"x": 1688.3037423827186,
+		"y": 144.9240861854877,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"sheetName": {
+				"scope": "Message",
+				"name": "secondsheet"
+			}
+		},
+		"ports": [{
+			"id": "745f4a45-adbf-4261-a260-df908305afcb",
+			"type": "default",
+			"selected": false,
+			"name": "out_745f4a45-adbf-4261-a260-df908305afcb",
+			"parentNode": "dad7cb80-4bb3-4dcb-89fb-39ed785e6429",
+			"links": ["4d800f6e-7721-46c1-adfe-5c385b560aa8"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "b34d5bf7-6d98-409a-a634-9b447aedd817",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "dad7cb80-4bb3-4dcb-89fb-39ed785e6429",
+			"links": ["ad4e3dc0-be7d-4de4-8106-21f180005c61"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "dad7cb80-4bb3-4dcb-89fb-39ed785e6429",
+			"name": "Activate Sheet",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.ActivateSheet",
+			"version": "1.0.6",
+			"abc": [{
+				"name": "Activate Sheet",
+				"version": "1.0.6",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				},
+				"sheetName": {
+					"scope": "Message",
+					"name": "secondsheet"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						},
+						"sheetName": {
+							"type": "object",
+							"title": "Sheet Name",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"sheetName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId", "sheetName"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					},
+					"sheetName": {
+						"scope": "Message",
+						"name": "secondsheet"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "12766a74-51bb-4e08-8702-dd7a01ccc234",
+		"type": "simple",
+		"selected": true,
+		"x": 1694.3340454130216,
+		"y": 194.3786316400332,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"range": {
+				"scope": "Custom",
+				"name": "A1:B6"
+			}
+		},
+		"ports": [{
+			"id": "27445163-30cb-4e37-967b-a58d31db141a",
+			"type": "default",
+			"selected": false,
+			"name": "out_27445163-30cb-4e37-967b-a58d31db141a",
+			"parentNode": "12766a74-51bb-4e08-8702-dd7a01ccc234",
+			"links": ["cc878562-31b9-4d7e-bac4-5aa3af510d2b"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "37af5dc4-33f9-42fb-8022-96d419f91901",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "12766a74-51bb-4e08-8702-dd7a01ccc234",
+			"links": ["4d800f6e-7721-46c1-adfe-5c385b560aa8"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "12766a74-51bb-4e08-8702-dd7a01ccc234",
+			"name": "Copy Range",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.CopyRange",
+			"version": "1.0.6",
+			"abc": [{
+				"name": "Copy Range",
+				"version": "1.0.6",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				},
+				"range": {
+					"scope": "Custom",
+					"name": "A1:B6"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						},
+						"range": {
+							"type": "object",
+							"title": "Range",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"range": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId", "range"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					},
+					"range": {
+						"scope": "Custom",
+						"name": "A1:B6"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "68e0805e-5ddd-44ba-89d8-c70063d5ca6f",
+		"type": "simple",
+		"selected": true,
+		"x": 1695.8491969281731,
+		"y": 247.4089346703362,
+		"extras": {
+			"applicationId": {
+				"scope": "Message",
+				"name": "excel_fd"
+			},
+			"sheetName": {
+				"scope": "Message",
+				"name": "resultsheet"
+			}
+		},
+		"ports": [{
+			"id": "18934f4e-e748-4887-9d1f-467154f39c65",
+			"type": "default",
+			"selected": false,
+			"name": "out_18934f4e-e748-4887-9d1f-467154f39c65",
+			"parentNode": "68e0805e-5ddd-44ba-89d8-c70063d5ca6f",
+			"links": ["917da9ca-7895-4d54-b81d-4e986c460670"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "3f8cb254-cf9c-4648-944c-c6192efb57e1",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "68e0805e-5ddd-44ba-89d8-c70063d5ca6f",
+			"links": ["cc878562-31b9-4d7e-bac4-5aa3af510d2b"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "68e0805e-5ddd-44ba-89d8-c70063d5ca6f",
+			"name": "Activate Sheet",
+			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
+			"color": "#4caf50",
+			"namespace": "Robomotion.MicrosoftExcel.ActivateSheet",
+			"version": "1.0.6",
+			"abc": [{
+				"name": "Activate Sheet",
+				"version": "1.0.6",
+				"color": "#4caf50",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"applicationId": {
+					"scope": "Message",
+					"name": "excel_fd"
+				},
+				"sheetName": {
+					"scope": "Message",
+					"name": "resultsheet"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"applicationId": {
+							"type": "object",
+							"title": "File Descriptor",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"messageScope": true
+						},
+						"sheetName": {
+							"type": "object",
+							"title": "Sheet Name",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"applicationId": {
+						"ui:field": "variable"
+					},
+					"sheetName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["applicationId", "sheetName"]
+				},
+				"formData": {
+					"applicationId": {
+						"scope": "Message",
+						"name": "excel_fd"
+					},
+					"sheetName": {
+						"scope": "Message",
+						"name": "resultsheet"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "90c9735c-31b5-40c8-afa8-9f9e06f67541",
+		"type": "simple",
+		"selected": true,
+		"x": 1697.6976817766583,
+		"y": 297.86348012488173,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -1102,36 +1420,36 @@
 			}
 		},
 		"ports": [{
-			"id": "69214436-c20d-4264-9402-a38a86251a1b",
+			"id": "f8876048-8561-4747-ba83-770e833ae322",
 			"type": "default",
 			"selected": false,
-			"name": "out_69214436-c20d-4264-9402-a38a86251a1b",
-			"parentNode": "ca7e9f51-369c-4a96-9381-e8bb708b7eb1",
-			"links": ["6b1b551b-11aa-43b5-ab70-4c6e19222953"],
+			"name": "out_f8876048-8561-4747-ba83-770e833ae322",
+			"parentNode": "90c9735c-31b5-40c8-afa8-9f9e06f67541",
+			"links": ["c25a9e8e-8957-4535-b55a-641abf8a7736"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "af4a2ccb-6f36-4f45-90e1-257ed01758c1",
+			"id": "b401dbdd-cb8a-450a-9789-1739fc43ab26",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "ca7e9f51-369c-4a96-9381-e8bb708b7eb1",
-			"links": ["728e9133-206d-45bb-9cd7-267555f72fa8"],
+			"parentNode": "90c9735c-31b5-40c8-afa8-9f9e06f67541",
+			"links": ["917da9ca-7895-4d54-b81d-4e986c460670"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "ca7e9f51-369c-4a96-9381-e8bb708b7eb1",
+			"id": "90c9735c-31b5-40c8-afa8-9f9e06f67541",
 			"name": "Paste Range",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.PasteRange",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.PasteRange",
+			"version": "1.0.6",
 			"abc": [{
 				"name": "Paste Range",
-				"version": "1.0.3",
+				"version": "1.0.6",
 				"color": "#4caf50",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -1206,256 +1524,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "499c5443-37f6-4055-bd44-1cec22c675e0",
+		"id": "d8729461-16e8-4146-a8b5-353a6861d94e",
 		"type": "simple",
 		"selected": true,
-		"x": 701.5,
-		"y": 323.5,
-		"extras": {
-			"applicationId": {
-				"scope": "Message",
-				"name": "excel_fd"
-			},
-			"sheetName": {
-				"scope": "Message",
-				"name": "resultsheet"
-			}
-		},
-		"ports": [{
-			"id": "35d98d86-65bc-4f4a-8440-caf1a7b912b5",
-			"type": "default",
-			"selected": false,
-			"name": "out_35d98d86-65bc-4f4a-8440-caf1a7b912b5",
-			"parentNode": "499c5443-37f6-4055-bd44-1cec22c675e0",
-			"links": ["3f69d6b2-9066-4ab4-8c54-38e1a98de867"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "d09b5d43-828f-41ba-85dd-8971f1130bb2",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "499c5443-37f6-4055-bd44-1cec22c675e0",
-			"links": ["8f03f87f-9df6-4cb9-844f-db18af7791be"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "499c5443-37f6-4055-bd44-1cec22c675e0",
-			"name": "Activate Sheet",
-			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
-			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.ActivateSheet",
-			"version": "1.0.3",
-			"abc": [{
-				"name": "Activate Sheet",
-				"version": "1.0.3",
-				"color": "#4caf50",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false
-			}, {
-				"applicationId": {
-					"scope": "Message",
-					"name": "excel_fd"
-				},
-				"sheetName": {
-					"scope": "Message",
-					"name": "resultsheet"
-				}
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Input",
-					"type": "object",
-					"properties": {
-						"applicationId": {
-							"type": "object",
-							"title": "File Descriptor",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"messageScope": true
-						},
-						"sheetName": {
-							"type": "object",
-							"title": "Sheet Name",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"variableType": "String",
-							"customScope": true,
-							"messageScope": true
-						}
-					}
-				},
-				"uiSchema": {
-					"applicationId": {
-						"ui:field": "variable"
-					},
-					"sheetName": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["applicationId", "sheetName"]
-				},
-				"formData": {
-					"applicationId": {
-						"scope": "Message",
-						"name": "excel_fd"
-					},
-					"sheetName": {
-						"scope": "Message",
-						"name": "resultsheet"
-					}
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "01590a9e-17ff-4a8a-a064-cdfb3c1f16a0",
-		"type": "simple",
-		"selected": true,
-		"x": 669.5,
-		"y": 113.5,
-		"extras": {
-			"outputs": 1,
-			"func": "msg.path = 'C:\\\\Users\\\\path_to_excelcopypaste.xlsx';// Path to excel file.\nmsg.firstsheet = 'Person';\nmsg.secondsheet = 'Info';\nmsg.resultsheet = 'Result';\nreturn msg;",
-			"optTimeout": 30,
-			"variables": []
-		},
-		"ports": [{
-			"id": "c4ba5d82-75a5-43a7-88d9-5851e4140bf8",
-			"type": "default",
-			"selected": false,
-			"name": "out_c4ba5d82-75a5-43a7-88d9-5851e4140bf8",
-			"parentNode": "01590a9e-17ff-4a8a-a064-cdfb3c1f16a0",
-			"links": ["2d32c503-1e1f-443e-bb90-896eb6ce3dac"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "b61c5a75-fc83-411f-863b-b4482a1a8c75",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "01590a9e-17ff-4a8a-a064-cdfb3c1f16a0",
-			"links": ["43786af2-ddd2-4611-bff9-bd8a059cea18"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "01590a9e-17ff-4a8a-a064-cdfb3c1f16a0",
-			"name": "Config",
-			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
-			"color": "#F27925",
-			"editor": "javascript",
-			"namespace": "Core.Programming.Function",
-			"version": "1.11.6",
-			"abc": [{
-				"name": "Config",
-				"color": "#F27925",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false,
-				"version": "1.11.6"
-			}, {
-				"outputs": 1,
-				"func": "msg.path = 'C:\\\\Users\\\\path_to_excelcopypaste.xlsx';// Path to excel file.\nmsg.firstsheet = 'Person';\nmsg.secondsheet = 'Info';\nmsg.resultsheet = 'Result';\nreturn msg;",
-				"optTimeout": 30
-			}, {
-				"variables": []
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"func": {
-							"title": "Function",
-							"type": "string"
-						},
-						"outputs": {
-							"title": "Outputs",
-							"type": "number",
-							"minimum": 1,
-							"maximum": 32
-						},
-						"optTimeout": {
-							"title": "Script Timeout",
-							"type": "number"
-						}
-					}
-				},
-				"uiSchema": {
-					"outputs": {
-						"ui:widget": "updown"
-					},
-					"func": {
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 6
-						}
-					}
-				},
-				"formData": {
-					"outputs": 1,
-					"func": "msg.path = 'C:\\\\Users\\\\path_to_excelcopypaste.xlsx';// Path to excel file.\nmsg.firstsheet = 'Person';\nmsg.secondsheet = 'Info';\nmsg.resultsheet = 'Result';\nreturn msg;",
-					"optTimeout": 30
-				}
-			}, {
-				"schema": {
-					"title": "Local Variables",
-					"type": "object",
-					"properties": {
-						"variables": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"name": {
-										"type": "string"
-									},
-									"variableType": {
-										"type": "string"
-									}
-								}
-							}
-						}
-					}
-				},
-				"uiSchema": {
-					"variables": {
-						"ui:field": "localVariable"
-					}
-				},
-				"formData": {
-					"variables": []
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "80483efa-e288-4fe7-acc6-03d3f571205d",
-		"type": "simple",
-		"selected": true,
-		"x": 980.5,
-		"y": 333.5,
+		"x": 1705.637075716052,
+		"y": 355.59075285215437,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -1467,33 +1540,33 @@
 			}
 		},
 		"ports": [{
-			"id": "d455bd57-cdc1-4dba-8e2e-4881fcf1cd73",
+			"id": "4a282323-364e-4ca4-9d67-06e02505e8f3",
 			"type": "default",
 			"selected": false,
-			"name": "out_d455bd57-cdc1-4dba-8e2e-4881fcf1cd73",
-			"parentNode": "80483efa-e288-4fe7-acc6-03d3f571205d",
-			"links": ["fbd48eb6-15c5-46ed-82db-df7ddfc68440"],
+			"name": "out_4a282323-364e-4ca4-9d67-06e02505e8f3",
+			"parentNode": "d8729461-16e8-4146-a8b5-353a6861d94e",
+			"links": ["db37a287-ea4e-4914-908d-274994ff3dac"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "bafccb44-7d87-401c-9261-e193929c1c08",
+			"id": "af769942-b305-4b1d-9948-855b2b607753",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "80483efa-e288-4fe7-acc6-03d3f571205d",
-			"links": ["6b1b551b-11aa-43b5-ab70-4c6e19222953"],
+			"parentNode": "d8729461-16e8-4146-a8b5-353a6861d94e",
+			"links": ["c25a9e8e-8957-4535-b55a-641abf8a7736"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "80483efa-e288-4fe7-acc6-03d3f571205d",
+			"id": "d8729461-16e8-4146-a8b5-353a6861d94e",
 			"name": "Save Excel",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.SaveExcel",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.SaveExcel",
+			"version": "1.0.6",
 			"abc": [{}, {
 				"applicationId": {
 					"scope": "Message",
@@ -1564,11 +1637,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "17e9d809-733f-4de1-bda7-c22ce064a8cd",
+		"id": "ffb11720-ece3-4eab-b2d2-84c1d4a5cbba",
 		"type": "simple",
 		"selected": true,
-		"x": 993.5,
-		"y": 381.5,
+		"x": 1709.503578582555,
+		"y": 406.4760927374942,
 		"extras": {
 			"applicationId": {
 				"scope": "Message",
@@ -1576,33 +1649,33 @@
 			}
 		},
 		"ports": [{
-			"id": "2560d657-c861-4659-a806-23bb3fa3eb52",
+			"id": "95df684f-afbc-4508-99bd-e1326891706d",
 			"type": "default",
 			"selected": false,
-			"name": "out_2560d657-c861-4659-a806-23bb3fa3eb52",
-			"parentNode": "17e9d809-733f-4de1-bda7-c22ce064a8cd",
-			"links": ["ac4b24a1-fb32-494b-b6ca-4cbd7a1a2f64"],
+			"name": "out_95df684f-afbc-4508-99bd-e1326891706d",
+			"parentNode": "ffb11720-ece3-4eab-b2d2-84c1d4a5cbba",
+			"links": ["71aea737-c419-4448-a8b4-bbeb254ff701"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "e1900a18-9d32-4035-92cd-249dd5a2de4d",
+			"id": "4d4b7165-5bff-4eb2-b95b-b89678a66e06",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "17e9d809-733f-4de1-bda7-c22ce064a8cd",
-			"links": ["fbd48eb6-15c5-46ed-82db-df7ddfc68440"],
+			"parentNode": "ffb11720-ece3-4eab-b2d2-84c1d4a5cbba",
+			"links": ["db37a287-ea4e-4914-908d-274994ff3dac"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "17e9d809-733f-4de1-bda7-c22ce064a8cd",
+			"id": "ffb11720-ece3-4eab-b2d2-84c1d4a5cbba",
 			"name": "Close Excel",
 			"icon": "M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M15.8,20H14L12,16.6L10,20H8.2L11.1,15.5L8.2,11H10L12,14.4L14,11H15.8L12.9,15.5L15.8,20M13,9V3.5L18.5,9H13Z",
 			"color": "#4caf50",
-			"namespace": "Robomotion.MsExcel.CloseExcel",
-			"version": "1.0.3",
+			"namespace": "Robomotion.MicrosoftExcel.CloseExcel",
+			"version": "1.0.6",
 			"abc": [{}, {
 				"applicationId": {
 					"scope": "Message",
@@ -1644,79 +1717,6 @@
 				}
 			}],
 			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "e2bcb26e-2954-43c2-bd7c-c2ccb6b26228",
-		"type": "simple",
-		"selected": true,
-		"x": 1278.5,
-		"y": 341.5,
-		"extras": {
-			"outResult": {
-				"scope": "Message",
-				"name": "error"
-			}
-		},
-		"ports": [{
-			"id": "cd5fde71-48dd-4c98-aa11-2205fe628c10",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "e2bcb26e-2954-43c2-bd7c-c2ccb6b26228",
-			"links": ["ac4b24a1-fb32-494b-b6ca-4cbd7a1a2f64"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "e2bcb26e-2954-43c2-bd7c-c2ccb6b26228",
-			"name": "Stop",
-			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
-			"color": "#fb2727",
-			"namespace": "Core.Flow.Stop",
-			"version": "1.11.6",
-			"abc": [{}, {
-				"outResult": {
-					"scope": "Message",
-					"name": "error"
-				}
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Output",
-					"type": "object",
-					"properties": {
-						"outResult": {
-							"type": "object",
-							"title": "Error",
-							"variableType": "String",
-							"messageOnly": true,
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							}
-						}
-					}
-				},
-				"uiSchema": {
-					"ui:order": ["outResult"],
-					"outResult": {
-						"ui:field": "variable"
-					}
-				},
-				"formData": {
-					"outResult": {
-						"scope": "Message",
-						"name": "error"
-					}
-				}
-			}],
-			"outputs": 0,
 			"inputs": 1
 		}
 	}],
