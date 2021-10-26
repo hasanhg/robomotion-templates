@@ -164,6 +164,24 @@
   },
   {
     "name": "Click To Specific Point",
+    "description": "Clicks to specified point in the screen with mouse.",
+    "slug": "click-to-specific-point",
+    "icon": "click_to_specific_point_icon.png",
+    "screenshots": [
+      "click_to_specific_point_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "mouse",
+      "click"
+    ],
+    "applications": [
+      "System"
+    ]
+  },
+  {
+    "name": "Content Checker",
     "description": "Checks spesific field in given website url and notifies if content has changed.",
     "slug": "content-checker",
     "icon": "content_checker_icon.png",
