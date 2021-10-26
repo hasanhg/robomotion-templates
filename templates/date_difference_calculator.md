@@ -8,7 +8,7 @@ Calculates the difference between now and a specific date. The result is calcula
 
 2. Add [Contrib](https://packages.robomotion.io/contrib) package repository url.
 
-3.Go to Flow Designer and press package icon above the node palette.
+3. Go to Flow Designer and press package icon above the node palette.
 
 4. You should see Date Time package icon, install it.
 

@@ -1,43 +1,43 @@
 {
 	"nodes": [{
-		"id": "ad821054-44d7-49c1-9fb1-51e1d2318fc8",
+		"id": "8701a5f7-2e80-4b3f-a2ea-ba4cfd9acf27",
 		"type": "simple",
 		"selected": true,
-		"x": 533,
-		"y": 87,
+		"x": 750,
+		"y": 100,
 		"extras": {
 			"outVisionId": {
 				"name": "vision_client_id",
 				"scope": "Message"
 			},
 			"optCredentials": {
-				"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-				"itemId": "20214890-5be8-41f4-bf73-425d2fd57881"
+				"vaultId": "_",
+				"itemId": "_"
 			}
 		},
 		"ports": [{
-			"id": "8b8e9a9e-3f81-42a2-9708-f0152db53dac",
+			"id": "e36ec8a0-4e01-4154-b0d4-e4009ef3647b",
 			"type": "default",
 			"selected": false,
-			"name": "out_8b8e9a9e-3f81-42a2-9708-f0152db53dac",
-			"parentNode": "ad821054-44d7-49c1-9fb1-51e1d2318fc8",
-			"links": ["74c7417a-a961-469c-af08-7d410ef7c925"],
+			"name": "out_e36ec8a0-4e01-4154-b0d4-e4009ef3647b",
+			"parentNode": "8701a5f7-2e80-4b3f-a2ea-ba4cfd9acf27",
+			"links": ["d04e91d9-281a-40d3-9601-bd5763fd015a"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "2a72b339-5ff9-4321-a048-40d75b5a987d",
+			"id": "4747967e-20ef-46df-82b6-84e312dd658f",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "ad821054-44d7-49c1-9fb1-51e1d2318fc8",
-			"links": ["dd42e276-6c33-4648-a083-89a16671707d"],
+			"parentNode": "8701a5f7-2e80-4b3f-a2ea-ba4cfd9acf27",
+			"links": ["7e35f6a8-af3f-494f-b09d-dd6f4a19b5fc"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "ad821054-44d7-49c1-9fb1-51e1d2318fc8",
+			"id": "8701a5f7-2e80-4b3f-a2ea-ba4cfd9acf27",
 			"name": "Connect",
 			"icon": "M19,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4H10L12,6H19A2,2 0 0,1 21,8H21L4,8V18L6.14,10H23.21L20.93,18.5C20.7,19.37 19.92,20 19,20Z",
 			"color": "#ff1a1a",
@@ -57,8 +57,8 @@
 				}
 			}, {
 				"optCredentials": {
-					"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
-					"itemId": "20214890-5be8-41f4-bf73-425d2fd57881"
+					"vaultId": "_",
+					"itemId": "_"
 				}
 			}],
 			"xyz": [{
@@ -133,11 +133,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "ffaa890b-def6-4188-a646-2e65c79cf38e",
+		"id": "47bdb49e-8df2-4c30-852f-09ddf6a6e6c5",
 		"type": "simple",
 		"selected": true,
-		"x": 535,
-		"y": 39,
+		"x": 752,
+		"y": 52,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -152,18 +152,18 @@
 			"optOnceDelay": 0.1
 		},
 		"ports": [{
-			"id": "de2dc995-9094-43c4-a8f8-bb1be3d339cd",
+			"id": "5d92750d-c48c-482f-ae80-e0616a435073",
 			"type": "default",
 			"selected": false,
-			"name": "out_de2dc995-9094-43c4-a8f8-bb1be3d339cd",
-			"parentNode": "ffaa890b-def6-4188-a646-2e65c79cf38e",
-			"links": ["dd42e276-6c33-4648-a083-89a16671707d"],
+			"name": "out_5d92750d-c48c-482f-ae80-e0616a435073",
+			"parentNode": "47bdb49e-8df2-4c30-852f-09ddf6a6e6c5",
+			"links": ["7e35f6a8-af3f-494f-b09d-dd6f4a19b5fc"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "ffaa890b-def6-4188-a646-2e65c79cf38e",
+			"id": "47bdb49e-8df2-4c30-852f-09ddf6a6e6c5",
 			"name": "Inject",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -282,11 +282,11 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "e5d61165-d46b-497d-9328-8d6de9c55ea4",
+		"id": "e912aceb-e884-4a32-bbd9-8884e835f383",
 		"type": "simple",
 		"selected": true,
-		"x": 522.1257606490872,
-		"y": 145.87423935091277,
+		"x": 750.1257606490872,
+		"y": 152.87423935091277,
 		"extras": {
 			"inPath": {
 				"scope": "Custom",
@@ -302,28 +302,28 @@
 			}
 		},
 		"ports": [{
-			"id": "053b114f-c92f-46b6-942b-0b8d655dcb8d",
+			"id": "02396267-eb14-486e-981a-7605ba4d5b17",
 			"type": "default",
 			"selected": false,
-			"name": "out_053b114f-c92f-46b6-942b-0b8d655dcb8d",
-			"parentNode": "e5d61165-d46b-497d-9328-8d6de9c55ea4",
-			"links": ["76e328fb-6b80-4308-b53a-704e72e878e4"],
+			"name": "out_02396267-eb14-486e-981a-7605ba4d5b17",
+			"parentNode": "e912aceb-e884-4a32-bbd9-8884e835f383",
+			"links": ["8eda884e-43bb-41d7-9441-76e94fec9821"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "5327f384-b6c5-4b66-bda1-da88a37f4a89",
+			"id": "6ab77df0-fb47-48c4-8473-b0ace59a1524",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "e5d61165-d46b-497d-9328-8d6de9c55ea4",
-			"links": ["74c7417a-a961-469c-af08-7d410ef7c925"],
+			"parentNode": "e912aceb-e884-4a32-bbd9-8884e835f383",
+			"links": ["d04e91d9-281a-40d3-9601-bd5763fd015a"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "e5d61165-d46b-497d-9328-8d6de9c55ea4",
+			"id": "e912aceb-e884-4a32-bbd9-8884e835f383",
 			"name": "Extract Image Labels",
 			"icon": "M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6,20H15L18,20V12L14,16L12,14L6,20M8,9A2,2 0 0,0 6,11A2,2 0 0,0 8,13A2,2 0 0,0 10,11A2,2 0 0,0 8,9Z",
 			"color": "#ff1a1a",
@@ -446,11 +446,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "3e52c6fa-2895-455d-8799-e300a1f2a294",
+		"id": "6e1379d7-5819-49fd-be66-4b9db4d82f75",
 		"type": "simple",
 		"selected": true,
-		"x": 529.5942010856629,
-		"y": 200.69613994110907,
+		"x": 754.5942010856629,
+		"y": 207.69613994110907,
 		"extras": {
 			"optDebugData": {
 				"name": "",
@@ -460,18 +460,18 @@
 			"optSysConsole": false
 		},
 		"ports": [{
-			"id": "e55bface-f31e-4999-a007-09f21da290e5",
+			"id": "b47814bc-8621-493a-85dd-dfe2f2427651",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "3e52c6fa-2895-455d-8799-e300a1f2a294",
-			"links": ["76e328fb-6b80-4308-b53a-704e72e878e4"],
+			"parentNode": "6e1379d7-5819-49fd-be66-4b9db4d82f75",
+			"links": ["8eda884e-43bb-41d7-9441-76e94fec9821"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "3e52c6fa-2895-455d-8799-e300a1f2a294",
+			"id": "6e1379d7-5819-49fd-be66-4b9db4d82f75",
 			"name": "Debug",
 			"icon": "M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z",
 			"color": "#E6EE9C",
@@ -533,24 +533,24 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "b0249c04-10bf-4e01-9d37-3bd5580bb2cc",
+		"id": "91e9763c-d352-4d9c-8074-cb1dc9884a29",
 		"type": "simple",
 		"selected": true,
-		"x": 120.08264532305263,
-		"y": -81.80853147680813,
+		"x": 337.08264532305265,
+		"y": -68.80853147680813,
 		"extras": {
-			"optText": "## Extract Image Labels\nThis template uses *Google Vision* nodes for extracting labels of image. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Google Vision package icon, install it.\n\n**5.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**7.** Go to Vaults and create new document item with this json key.\n\n**8.** Set this vault item to connect node credentials.\n\n**9.** Set the Extract Image Labels node's Path input to the local path of image.\n"
+			"optText": "## Extract Image Labels\nThis template uses *Google Vision* nodes for extracting labels of image. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Flow Designer and press package icon above the node palette.\n\n**2.** You should see Google Vision package icon, install it.\n\n**3.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**5.** Go to Vaults and create new document item with this json key.\n\n**6.** Set this vault item to connect node credentials.\n\n**7.** Set the Extract Image Labels node's Path input to the local path of image.\n"
 		},
 		"ports": [],
 		"model": {
-			"id": "b0249c04-10bf-4e01-9d37-3bd5580bb2cc",
+			"id": "91e9763c-d352-4d9c-8074-cb1dc9884a29",
 			"name": "Comment",
 			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
 			"color": "#FBE364",
 			"namespace": "Core.Flow.Comment",
 			"version": "1.11.6",
 			"abc": [{}, {
-				"optText": "## Extract Image Labels\nThis template uses *Google Vision* nodes for extracting labels of image. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Google Vision package icon, install it.\n\n**5.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**7.** Go to Vaults and create new document item with this json key.\n\n**8.** Set this vault item to connect node credentials.\n\n**9.** Set the Extract Image Labels node's Path input to the local path of image.\n"
+				"optText": "## Extract Image Labels\nThis template uses *Google Vision* nodes for extracting labels of image. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Flow Designer and press package icon above the node palette.\n\n**2.** You should see Google Vision package icon, install it.\n\n**3.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**5.** Go to Vaults and create new document item with this json key.\n\n**6.** Set this vault item to connect node credentials.\n\n**7.** Set the Extract Image Labels node's Path input to the local path of image.\n"
 			}],
 			"xyz": [{
 				"schema": {
@@ -583,7 +583,7 @@
 					}
 				},
 				"formData": {
-					"optText": "## Extract Image Labels\nThis template uses *Google Vision* nodes for extracting labels of image. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Google Vision package icon, install it.\n\n**5.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**6.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**7.** Go to Vaults and create new document item with this json key.\n\n**8.** Set this vault item to connect node credentials.\n\n**9.** Set the Extract Image Labels node's Path input to the local path of image.\n"
+					"optText": "## Extract Image Labels\nThis template uses *Google Vision* nodes for extracting labels of image. \n\n### How it Works?\n\nFollow these steps to test this template;\n\n**1.** Go to Flow Designer and press package icon above the node palette.\n\n**2.** You should see Google Vision package icon, install it.\n\n**3.** You need to service account to test this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\n\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\n\n**5.** Go to Vaults and create new document item with this json key.\n\n**6.** Set this vault item to connect node credentials.\n\n**7.** Set the Extract Image Labels node's Path input to the local path of image.\n"
 				}
 			}],
 			"outputs": 0,

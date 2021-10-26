@@ -3,8 +3,8 @@
 		"id": "40108e6f-01d2-4c12-ae73-69dfbdaf1061",
 		"type": "simple",
 		"selected": true,
-		"x": 699,
-		"y": -254,
+		"x": 728.7619047619048,
+		"y": -238.52380952380952,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -152,8 +152,8 @@
 		"id": "35d95e9e-83e4-47d0-aeab-f13def61a597",
 		"type": "simple",
 		"selected": true,
-		"x": 696.6807890128146,
-		"y": -203.772782095174,
+		"x": 726.4426937747194,
+		"y": -188.2965916189835,
 		"extras": {
 			"outputs": 1,
 			"func": "msg.endpoint = 'fra1.digitaloceanspaces.com'; // Endpoint of bucket\nmsg.uploadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will upload to bucket\nmsg.downloadpath = 'C:/Users/user/Desktop/bucket-test/test.txt'; // Path of file that will download from bucket\nmsg.bucketname = 'test-bucket'; // Name of bucket\nmsg.objectname = 'test.txt'; // Name of object\nreturn msg;",
@@ -274,8 +274,8 @@
 		"id": "b5755313-a096-4eb8-a46e-84620b1a25d4",
 		"type": "simple",
 		"selected": true,
-		"x": 320.13009213009195,
-		"y": -333.5808080808081,
+		"x": 349.8919968919967,
+		"y": -318.1046176046176,
 		"extras": {
 			"optText": "## Amazon S3 Quick Start\r\n\r\nThis template uses *Amazon S3* nodes for object operations on Amazon S3 Bucket.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Amazon S3 package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.uploadpath and msg.downloadpath fields to the full path file.\r\nupload to bucket. Set the msg.objectname field to name of object that will upload.\r\nSet the msg.bucketname to your s3 bucket name. Set the endpoint to your bucket's endpoint.\r\n\r\n**5.** Set the Access Key Id and Secret Key Access credentials for access to s3 bucket."
 		},
@@ -331,8 +331,8 @@
 		"id": "9e3c8d9c-b31b-4ba0-9892-99830f34488c",
 		"type": "simple",
 		"selected": true,
-		"x": 1502.1935841935842,
-		"y": -199.18398268398275,
+		"x": 1261.7173937173939,
+		"y": -64.66017316017322,
 		"extras": {
 			"outResult": {
 				"scope": "Message",
@@ -404,8 +404,8 @@
 		"id": "8d2e2846-aa1a-43e4-ba8d-abfcd4ddd719",
 		"type": "simple",
 		"selected": true,
-		"x": 978,
-		"y": -254,
+		"x": 1006.5714285714287,
+		"y": -238.52380952380952,
 		"extras": {
 			"inEndPoint": {
 				"scope": "Message",
@@ -582,8 +582,8 @@
 		"id": "bce104b4-252e-4a57-8209-bff88bc81b4d",
 		"type": "simple",
 		"selected": true,
-		"x": 966,
-		"y": -204,
+		"x": 1006.4761904761905,
+		"y": -188.52380952380952,
 		"extras": {
 			"inBucketName": {
 				"name": "bucketname",
@@ -805,8 +805,8 @@
 		"id": "6813bb69-11e0-49a1-9646-42b8f12204e9",
 		"type": "simple",
 		"selected": true,
-		"x": 953,
-		"y": -155,
+		"x": 1001.8095238095239,
+		"y": -140.71428571428572,
 		"extras": {
 			"inBucketName": {
 				"scope": "Message",
@@ -997,8 +997,8 @@
 		"id": "f36eb760-bc1c-42c9-8327-f4b96338cacc",
 		"type": "simple",
 		"selected": true,
-		"x": 1274,
-		"y": -252,
+		"x": 1001.3809523809525,
+		"y": -91.28571428571426,
 		"extras": {
 			"inBucketName": {
 				"name": "bucketname",
@@ -1177,8 +1177,8 @@
 		"id": "0b6d1da2-576c-4d85-ae45-7824c9bea13b",
 		"type": "simple",
 		"selected": true,
-		"x": 1263,
-		"y": -201,
+		"x": 1003.4761904761906,
+		"y": -42.66666666666664,
 		"extras": {
 			"inBucketName": {
 				"scope": "Message",

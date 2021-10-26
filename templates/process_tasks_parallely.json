@@ -1,10 +1,10 @@
 {
 	"nodes": [{
-		"id": "ad60bdd5-8092-4a10-8867-fa74b3ff547b",
+		"id": "d25b8032-3cc5-4c3f-8906-04843289fa11",
 		"type": "simple",
 		"selected": true,
-		"x": 215,
-		"y": -11,
+		"x": 750,
+		"y": 100,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -19,18 +19,18 @@
 			"optOnceDelay": 0.1
 		},
 		"ports": [{
-			"id": "e22de488-51a7-4a91-b8ac-4117e2b49a1f",
+			"id": "9cd62b82-9017-43c5-93aa-d4cfa6825159",
 			"type": "default",
 			"selected": false,
-			"name": "out_e22de488-51a7-4a91-b8ac-4117e2b49a1f",
-			"parentNode": "ad60bdd5-8092-4a10-8867-fa74b3ff547b",
-			"links": ["14efd8e9-09ab-4998-bcc2-9396af7310d7"],
+			"name": "out_9cd62b82-9017-43c5-93aa-d4cfa6825159",
+			"parentNode": "d25b8032-3cc5-4c3f-8906-04843289fa11",
+			"links": ["248ecb7b-cf3f-40c1-89ed-c80c17440f3a"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "ad60bdd5-8092-4a10-8867-fa74b3ff547b",
+			"id": "d25b8032-3cc5-4c3f-8906-04843289fa11",
 			"name": "Start",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -156,11 +156,11 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "4f402a91-cc02-477d-9633-17a2834bdeb9",
+		"id": "040d2085-99a5-426b-94c2-a003d05c88a3",
 		"type": "simple",
 		"selected": true,
-		"x": 211,
-		"y": 100,
+		"x": 746,
+		"y": 211,
 		"extras": {
 			"outputs": 1,
 			"func": "var numbers = Array.from(Array(msg.task_count), (_, index) => index + 1);//Sample array is created for sending messages\nmsg.batches = [];\n\nfor(var i = 0; i < msg.branch_count; i++){\n  msg.batches.push(new Array())\n}\n\nfor(var i = 0; i < numbers.length;){\n  console.log(i)\n  for(var j = 0; j < msg.branch_count && i < numbers.length; j++){\n      msg.batches[j].push(numbers[i])\n     i++;\n  }\n}\nreturn msg;",
@@ -168,28 +168,28 @@
 			"variables": []
 		},
 		"ports": [{
-			"id": "40318e6c-e5cd-43c1-8636-c59f3ca56c5e",
+			"id": "01f6852a-9f7e-46d0-a7a6-8786e534cf3d",
 			"type": "default",
 			"selected": false,
-			"name": "out_40318e6c-e5cd-43c1-8636-c59f3ca56c5e",
-			"parentNode": "4f402a91-cc02-477d-9633-17a2834bdeb9",
-			"links": ["c6d8027e-dc23-4baa-86af-74b590274b77"],
+			"name": "out_01f6852a-9f7e-46d0-a7a6-8786e534cf3d",
+			"parentNode": "040d2085-99a5-426b-94c2-a003d05c88a3",
+			"links": ["6042982e-1558-460b-810e-939680d7fc3f"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "3424109d-8895-4019-93ce-cbd0379fb1c3",
+			"id": "9f7baf56-1356-4eeb-b4f2-cdc45d52679e",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "4f402a91-cc02-477d-9633-17a2834bdeb9",
-			"links": ["baaf29ed-3631-4833-a6ec-f28a2ad6b5b2"],
+			"parentNode": "040d2085-99a5-426b-94c2-a003d05c88a3",
+			"links": ["501f9f40-ae50-49d0-99cc-3fb913093962"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "4f402a91-cc02-477d-9633-17a2834bdeb9",
+			"id": "040d2085-99a5-426b-94c2-a003d05c88a3",
 			"name": "Create Sample Array",
 			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
 			"color": "#F27925",
@@ -281,11 +281,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "067c0c23-0746-43cb-83fd-fb70c0f3a910",
+		"id": "765ab6fc-ab35-4e51-8541-292e20234a34",
 		"type": "simple",
 		"selected": true,
-		"x": 489,
-		"y": 244,
+		"x": 1024,
+		"y": 355,
 		"extras": {
 			"optInput": {
 				"scope": "Message",
@@ -297,38 +297,38 @@
 			}
 		},
 		"ports": [{
-			"id": "1d9776bf-a5b9-416b-8bb9-c224cfabad14",
+			"id": "23a8078a-9e02-4ec5-b696-f352b9d209e8",
 			"type": "default",
 			"selected": false,
-			"name": "out_1d9776bf-a5b9-416b-8bb9-c224cfabad14",
-			"parentNode": "067c0c23-0746-43cb-83fd-fb70c0f3a910",
-			"links": ["1b8ca6ed-3c84-4d45-8711-3cd6f45bd38c", "4b227211-bc96-4c92-aceb-ffd11669fdd2"],
+			"name": "out_23a8078a-9e02-4ec5-b696-f352b9d209e8",
+			"parentNode": "765ab6fc-ab35-4e51-8541-292e20234a34",
+			"links": ["70bdd97c-3b7d-4451-942a-d18cb985025d", "77071607-d58c-40f0-abd7-150bfee4fb85"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "10e24e4e-d576-4d6e-b9fa-73885a4643c0",
+			"id": "607233da-e5de-4589-bc14-a4e853c73ed1",
 			"type": "default",
 			"selected": false,
-			"name": "out_10e24e4e-d576-4d6e-b9fa-73885a4643c0",
-			"parentNode": "067c0c23-0746-43cb-83fd-fb70c0f3a910",
+			"name": "out_607233da-e5de-4589-bc14-a4e853c73ed1",
+			"parentNode": "765ab6fc-ab35-4e51-8541-292e20234a34",
 			"links": [],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "d7e98fa3-6bb9-40e6-b169-17d4b0e1418c",
+			"id": "71785c28-fb88-483e-b6e1-f98223177663",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "067c0c23-0746-43cb-83fd-fb70c0f3a910",
-			"links": ["1b2bf508-db79-46fc-a98e-1499325f619b", "a840e35d-b481-4c1c-bc76-7338bac47636"],
+			"parentNode": "765ab6fc-ab35-4e51-8541-292e20234a34",
+			"links": ["dd9bcd48-954c-4f23-b26a-73d9e6b59cfe", "0fd037ad-cb85-40db-a5c2-0444644d183b"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "067c0c23-0746-43cb-83fd-fb70c0f3a910",
+			"id": "765ab6fc-ab35-4e51-8541-292e20234a34",
 			"name": "For Each",
 			"icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
 			"color": "#b9aeec",
@@ -398,11 +398,11 @@
 				"formData": {
 					"optInput": {
 						"scope": "Message",
-						"name": ""
+						"name": "batches"
 					},
 					"optOutput": {
 						"scope": "Message",
-						"name": ""
+						"name": "batch"
 					}
 				}
 			}],
@@ -410,30 +410,30 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "3138a57f-a445-4d3e-b71a-a9d27abca4e0",
+		"id": "71a73c1d-4fe2-4d18-bcdc-51621c444afc",
 		"type": "simple",
 		"selected": true,
-		"x": 834.25,
-		"y": 168.25,
+		"x": 1369.25,
+		"y": 279.25,
 		"extras": {
 			"optNodes": {
 				"all": false,
-				"ids": ["2f5356d3-4a51-4995-b0e5-1da13a97a1d0"]
+				"ids": ["a6ea46bd-e4c2-427e-b3f3-11ba90c06525"]
 			}
 		},
 		"ports": [{
-			"id": "ef81e0f3-8d5e-4cb8-958c-f7ed0025c043",
+			"id": "5a125be5-7bbb-4cf1-97b8-90bc3f07b5f7",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "3138a57f-a445-4d3e-b71a-a9d27abca4e0",
-			"links": ["1b8ca6ed-3c84-4d45-8711-3cd6f45bd38c"],
+			"parentNode": "71a73c1d-4fe2-4d18-bcdc-51621c444afc",
+			"links": ["70bdd97c-3b7d-4451-942a-d18cb985025d"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "3138a57f-a445-4d3e-b71a-a9d27abca4e0",
+			"id": "71a73c1d-4fe2-4d18-bcdc-51621c444afc",
 			"name": "Go To Next Batch",
 			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
 			"color": "#444",
@@ -449,7 +449,7 @@
 			}, {
 				"optNodes": {
 					"all": false,
-					"ids": ["2f5356d3-4a51-4995-b0e5-1da13a97a1d0"]
+					"ids": ["a6ea46bd-e4c2-427e-b3f3-11ba90c06525"]
 				}
 			}],
 			"xyz": [{
@@ -486,9 +486,8 @@
 				},
 				"formData": {
 					"optNodes": {
-						"ids": [],
-						"type": "goto",
-						"all": false
+						"all": false,
+						"ids": ["a6ea46bd-e4c2-427e-b3f3-11ba90c06525"]
 					}
 				}
 			}],
@@ -496,25 +495,25 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "2f5356d3-4a51-4995-b0e5-1da13a97a1d0",
+		"id": "a6ea46bd-e4c2-427e-b3f3-11ba90c06525",
 		"type": "simple",
 		"selected": true,
-		"x": 244,
-		"y": 346,
+		"x": 779,
+		"y": 457,
 		"extras": {},
 		"ports": [{
-			"id": "dd8d1b10-5ea8-4f8c-a90f-95a5ede60600",
+			"id": "09f964ce-fd31-4b6e-9ae9-897aba03b89c",
 			"type": "default",
 			"selected": false,
-			"name": "out_dd8d1b10-5ea8-4f8c-a90f-95a5ede60600",
-			"parentNode": "2f5356d3-4a51-4995-b0e5-1da13a97a1d0",
-			"links": ["1b2bf508-db79-46fc-a98e-1499325f619b"],
+			"name": "out_09f964ce-fd31-4b6e-9ae9-897aba03b89c",
+			"parentNode": "a6ea46bd-e4c2-427e-b3f3-11ba90c06525",
+			"links": ["dd9bcd48-954c-4f23-b26a-73d9e6b59cfe"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "2f5356d3-4a51-4995-b0e5-1da13a97a1d0",
+			"id": "a6ea46bd-e4c2-427e-b3f3-11ba90c06525",
 			"name": "Next Batch",
 			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
 			"color": "#444",
@@ -533,38 +532,38 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "ffeda0e7-d50a-4cb4-bd02-84d8642d9418",
+		"id": "e073af8d-cc48-49b3-84fd-f988f2ae4494",
 		"type": "simple",
 		"selected": true,
-		"x": 856,
-		"y": 240,
+		"x": 1391,
+		"y": 351,
 		"extras": {
 			"outputs": 1,
-			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/a3be5e90-49a9-4771-85dc-328d5bbcc500/subflows/ffeda0e7-d50a-4cb4-bd02-84d8642d9418.flow"
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/{fid}/subflows/e073af8d-cc48-49b3-84fd-f988f2ae4494.flow"
 		},
 		"ports": [{
-			"id": "17b8f9bd-8506-496e-a391-99cf3c107c0c",
+			"id": "bed43416-e140-467d-a159-ecc8fd352d48",
 			"type": "default",
 			"selected": false,
-			"name": "out_17b8f9bd-8506-496e-a391-99cf3c107c0c",
-			"parentNode": "ffeda0e7-d50a-4cb4-bd02-84d8642d9418",
+			"name": "out_bed43416-e140-467d-a159-ecc8fd352d48",
+			"parentNode": "e073af8d-cc48-49b3-84fd-f988f2ae4494",
 			"links": [],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "b1c27c0c-0d40-4637-a159-663cfd326809",
+			"id": "ba10e2c5-8490-4c03-a16a-a0ab70f641ec",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "ffeda0e7-d50a-4cb4-bd02-84d8642d9418",
-			"links": ["4b227211-bc96-4c92-aceb-ffd11669fdd2"],
+			"parentNode": "e073af8d-cc48-49b3-84fd-f988f2ae4494",
+			"links": ["77071607-d58c-40f0-abd7-150bfee4fb85"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "ffeda0e7-d50a-4cb4-bd02-84d8642d9418",
+			"id": "e073af8d-cc48-49b3-84fd-f988f2ae4494",
 			"name": "Send Message",
 			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
 			"color": "#646bf5",
@@ -579,7 +578,7 @@
 				"version": "1.11.6"
 			}, {
 				"outputs": 1,
-				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/a3be5e90-49a9-4771-85dc-328d5bbcc500/subflows/ffeda0e7-d50a-4cb4-bd02-84d8642d9418.flow"
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/{fid}/subflows/e073af8d-cc48-49b3-84fd-f988f2ae4494.flow"
 			}],
 			"xyz": [{
 				"schema": {
@@ -609,63 +608,302 @@
 				},
 				"formData": {
 					"outputs": 1,
-					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/a3be5e90-49a9-4771-85dc-328d5bbcc500/subflows/ffeda0e7-d50a-4cb4-bd02-84d8642d9418.flow"
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/{fid}/subflows/e073af8d-cc48-49b3-84fd-f988f2ae4494.flow"
 				}
 			}],
 			"outputs": 1,
 			"inputs": 1
 		}
 	}, {
-		"id": "73592ed7-6fcf-4b1f-ab1e-8cddd09ee5c4",
+		"id": "4e7bfdce-fb9c-4be3-83b4-3ea8ff94fb57",
 		"type": "simple",
 		"selected": true,
-		"x": 215,
-		"y": 151,
+		"x": 752,
+		"y": 158,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.task_count = 21; //[Required] The total number of message elements\nmsg.branch_count = 5; //[Required] The number of branches that will run paralely\nmsg.channel_name = \"slack-package\" //[Required] The name of the slack channel that the messages will send\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "3cdd960e-1db0-449e-a8a7-128470acf397",
+			"type": "default",
+			"selected": false,
+			"name": "out_3cdd960e-1db0-449e-a8a7-128470acf397",
+			"parentNode": "4e7bfdce-fb9c-4be3-83b4-3ea8ff94fb57",
+			"links": ["501f9f40-ae50-49d0-99cc-3fb913093962"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c97968c3-9fe7-4de9-b16a-bc4aff9e1656",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "4e7bfdce-fb9c-4be3-83b4-3ea8ff94fb57",
+			"links": ["248ecb7b-cf3f-40c1-89ed-c80c17440f3a"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "4e7bfdce-fb9c-4be3-83b4-3ea8ff94fb57",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.task_count = 21; //[Required] The total number of message elements\nmsg.branch_count = 5; //[Required] The number of branches that will run paralely\nmsg.channel_name = \"slack-package\" //[Required] The name of the slack channel that the messages will send\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.task_count = 21; //[Required] The total number of message elements\nmsg.branch_count = 5; //[Required] The number of branches that will run paralely\nmsg.channel_name = \"slack-package\" //[Required] The name of the slack channel that the messages will send\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "02356444-75be-492a-a660-2929d218c719",
+		"type": "simple",
+		"selected": true,
+		"x": 296,
+		"y": 2,
+		"extras": {
+			"optText": "##### Process Tasks Parallely \n\nThis template exemplifies how sequential tasks are done as parallely in shorter time. In this sample, the task is sending messages to Slack with task number. The messages are sent to Slack as unordered since it runs paralely. If it would run sequentially, the messages would send ordered, but in longer time\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.task_count field with the number of task you want to test\n\n**3.** Update msg.branch_count field with the number of branch you want to run parallely\n\n**4.** Update msg.channel_name field with the name of the Slack channel you want to send messages\n\n**5.** Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**6.** Set credentials to the item you created in step 3 for **Connect To Slack** node"
+		},
+		"ports": [],
+		"model": {
+			"id": "02356444-75be-492a-a660-2929d218c719",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Process Tasks Parallely \n\nThis template exemplifies how sequential tasks are done as parallely in shorter time. In this sample, the task is sending messages to Slack with task number. The messages are sent to Slack as unordered since it runs paralely. If it would run sequentially, the messages would send ordered, but in longer time\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.task_count field with the number of task you want to test\n\n**3.** Update msg.branch_count field with the number of branch you want to run parallely\n\n**4.** Update msg.channel_name field with the name of the Slack channel you want to send messages\n\n**5.** Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**6.** Set credentials to the item you created in step 3 for **Connect To Slack** node"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Process Tasks Parallely \n\nThis template exemplifies how sequential tasks are done as parallely in shorter time. In this sample, the task is sending messages to Slack with task number. The messages are sent to Slack as unordered since it runs paralely. If it would run sequentially, the messages would send ordered, but in longer time\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.task_count field with the number of task you want to test\n\n**3.** Update msg.branch_count field with the number of branch you want to run parallely\n\n**4.** Update msg.channel_name field with the name of the Slack channel you want to send messages\n\n**5.** Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**6.** Set credentials to the item you created in step 3 for **Connect To Slack** node"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "449f7ede-d234-493a-830b-9032b4bdb9dd",
+		"type": "simple",
+		"selected": true,
+		"x": 1040.0277777777778,
+		"y": 425.6111111111111,
+		"extras": {
+			"optText": "#### Note\n Takes takes as batches and handles them parallely"
+		},
+		"ports": [],
+		"model": {
+			"id": "449f7ede-d234-493a-830b-9032b4bdb9dd",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "#### Note\n Takes takes as batches and handles them parallely"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "#### Note\n Takes takes as batches and handles them parallely"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "2ea3e6de-7e8b-4e37-a0aa-8e2d35fcf995",
+		"type": "simple",
+		"selected": true,
+		"x": 756,
+		"y": 267,
 		"extras": {
 			"outClientID": {
 				"name": "client_id",
 				"scope": "Message"
 			},
 			"optToken": {
-				"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
-				"itemId": "48584203-f8dc-4016-9f04-9b39704ae80c"
+				"vaultId": "_",
+				"itemId": "_"
 			}
 		},
 		"ports": [{
-			"id": "59c2631b-1385-4c1c-9621-a588310a5d01",
+			"id": "8e8f28fb-f465-4901-b656-03b8a110725e",
 			"type": "default",
 			"selected": false,
-			"name": "out_59c2631b-1385-4c1c-9621-a588310a5d01",
-			"parentNode": "73592ed7-6fcf-4b1f-ab1e-8cddd09ee5c4",
-			"links": ["a840e35d-b481-4c1c-bc76-7338bac47636"],
+			"name": "out_8e8f28fb-f465-4901-b656-03b8a110725e",
+			"parentNode": "2ea3e6de-7e8b-4e37-a0aa-8e2d35fcf995",
+			"links": ["0fd037ad-cb85-40db-a5c2-0444644d183b"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "214d8197-d57c-4741-9a53-668f90e4958d",
+			"id": "875b77c9-3a7e-4e8f-98f1-dc860e151763",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "73592ed7-6fcf-4b1f-ab1e-8cddd09ee5c4",
-			"links": ["c6d8027e-dc23-4baa-86af-74b590274b77"],
+			"parentNode": "2ea3e6de-7e8b-4e37-a0aa-8e2d35fcf995",
+			"links": ["6042982e-1558-460b-810e-939680d7fc3f"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "73592ed7-6fcf-4b1f-ab1e-8cddd09ee5c4",
+			"id": "2ea3e6de-7e8b-4e37-a0aa-8e2d35fcf995",
 			"name": "Connect To Slack",
 			"icon": "M6,15A2,2 0 0,1 4,17A2,2 0 0,1 2,15A2,2 0 0,1 4,13H6V15M7,15A2,2 0 0,1 9,13A2,2 0 0,1 11,15V20A2,2 0 0,1 9,22A2,2 0 0,1 7,20V15M9,7A2,2 0 0,1 7,5A2,2 0 0,1 9,3A2,2 0 0,1 11,5V7H9M9,8A2,2 0 0,1 11,10A2,2 0 0,1 9,12H4A2,2 0 0,1 2,10A2,2 0 0,1 4,8H9M17,10A2,2 0 0,1 19,8A2,2 0 0,1 21,10A2,2 0 0,1 19,12H17V10M16,10A2,2 0 0,1 14,12A2,2 0 0,1 12,10V5A2,2 0 0,1 14,3A2,2 0 0,1 16,5V10M14,18A2,2 0 0,1 16,20A2,2 0 0,1 14,22A2,2 0 0,1 12,20V18H14M14,17A2,2 0 0,1 12,15A2,2 0 0,1 14,13H19A2,2 0 0,1 21,15A2,2 0 0,1 19,17H14Z",
 			"color": "#000000",
 			"namespace": "Robomotion.Slack.Connect",
-			"version": "0.1.10",
+			"version": "0.2.0",
 			"abc": [{
 				"name": "Connect To Slack",
 				"color": "#000000",
 				"delayBefore": 0,
 				"delayAfter": 0,
 				"continueOnError": false,
-				"version": "0.1.10"
+				"version": "0.2.0"
 			}, {
 				"outClientID": {
 					"name": "client_id",
@@ -673,8 +911,8 @@
 				}
 			}, {
 				"optToken": {
-					"vaultId": "85431c47-21a2-464f-bf2c-0a7bc3e0908f",
-					"itemId": "48584203-f8dc-4016-9f04-9b39704ae80c"
+					"vaultId": "_",
+					"itemId": "_"
 				}
 			}],
 			"xyz": [{
@@ -742,248 +980,9 @@
 			"outputs": 1,
 			"inputs": 1
 		}
-	}, {
-		"id": "a962d66d-f82b-4341-93e3-0a2a3d8e9502",
-		"type": "simple",
-		"selected": true,
-		"x": 217,
-		"y": 47,
-		"extras": {
-			"outputs": 1,
-			"func": "msg.task_count = 21; //[Required] The total number of message elements\nmsg.branch_count = 5; //[Required] The number of branches that will run paralely\nmsg.channel_name = \"whatsapp\" //[Required] The name of the slack channel that the messages will send\nreturn msg;",
-			"optTimeout": 30,
-			"variables": []
-		},
-		"ports": [{
-			"id": "fc64bd48-eeac-4efe-85f5-95492be6d899",
-			"type": "default",
-			"selected": false,
-			"name": "out_fc64bd48-eeac-4efe-85f5-95492be6d899",
-			"parentNode": "a962d66d-f82b-4341-93e3-0a2a3d8e9502",
-			"links": ["baaf29ed-3631-4833-a6ec-f28a2ad6b5b2"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "5f115f73-7914-4d56-b56f-70ab61195aa6",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "a962d66d-f82b-4341-93e3-0a2a3d8e9502",
-			"links": ["14efd8e9-09ab-4998-bcc2-9396af7310d7"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "a962d66d-f82b-4341-93e3-0a2a3d8e9502",
-			"name": "Config",
-			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
-			"color": "#F27925",
-			"editor": "javascript",
-			"namespace": "Core.Programming.Function",
-			"version": "1.11.6",
-			"abc": [{
-				"name": "Config",
-				"color": "#F27925",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false,
-				"version": "1.11.6"
-			}, {
-				"outputs": 1,
-				"func": "msg.task_count = 21; //[Required] The total number of message elements\nmsg.branch_count = 5; //[Required] The number of branches that will run paralely\nmsg.channel_name = \"whatsapp\" //[Required] The name of the slack channel that the messages will send\nreturn msg;",
-				"optTimeout": 30
-			}, {
-				"variables": []
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"func": {
-							"title": "Function",
-							"type": "string"
-						},
-						"outputs": {
-							"title": "Outputs",
-							"type": "number",
-							"minimum": 1,
-							"maximum": 32
-						},
-						"optTimeout": {
-							"title": "Script Timeout",
-							"type": "number"
-						}
-					}
-				},
-				"uiSchema": {
-					"outputs": {
-						"ui:widget": "updown"
-					},
-					"func": {
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 6
-						}
-					}
-				},
-				"formData": {
-					"outputs": 1,
-					"func": "msg.task_count = 21; //[Required] The total number of message elements\nmsg.branch_count = 5; //[Required] The number of branches that will run paralely\nmsg.channel_name = \"whatsapp\" //[Required] The name of the slack channel that the messages will send\nreturn msg;",
-					"optTimeout": 30
-				}
-			}, {
-				"schema": {
-					"title": "Local Variables",
-					"type": "object",
-					"properties": {
-						"variables": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"name": {
-										"type": "string"
-									},
-									"variableType": {
-										"type": "string"
-									}
-								}
-							}
-						}
-					}
-				},
-				"uiSchema": {
-					"variables": {
-						"ui:field": "localVariable"
-					}
-				},
-				"formData": {
-					"variables": []
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "fcc2c30c-6b6f-421a-8cb2-7fe36abcc865",
-		"type": "simple",
-		"selected": true,
-		"x": -239,
-		"y": -109,
-		"extras": {
-			"optText": "##### Process Tasks Parallely \n\nThis template exemplifies how sequential tasks are done as parallely in shorter time. In this sample, the task is sending messages to Slack with task number. The messages are sent to Slack as unordered since it runs paralely. If it would run sequentially, the messages would send ordered, but in longer time\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.task_count field with the number of task you want to test\n\n**3.** Update msg.branch_count field with the number of branch you want to run parallely\n\n**4.** Update msg.channel_name field with the name of the Slack channel you want to send messages\n\n**5.** Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**6.** Set credentials to the item you created in step 3 for **Connect To Slack** node"
-		},
-		"ports": [],
-		"model": {
-			"id": "fcc2c30c-6b6f-421a-8cb2-7fe36abcc865",
-			"name": "Comment",
-			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
-			"color": "#FBE364",
-			"namespace": "Core.Flow.Comment",
-			"version": "1.11.6",
-			"abc": [{}, {
-				"optText": "##### Process Tasks Parallely \n\nThis template exemplifies how sequential tasks are done as parallely in shorter time. In this sample, the task is sending messages to Slack with task number. The messages are sent to Slack as unordered since it runs paralely. If it would run sequentially, the messages would send ordered, but in longer time\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.task_count field with the number of task you want to test\n\n**3.** Update msg.branch_count field with the number of branch you want to run parallely\n\n**4.** Update msg.channel_name field with the name of the Slack channel you want to send messages\n\n**5.** Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**6.** Set credentials to the item you created in step 3 for **Connect To Slack** node"
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"comment": {
-							"title": "Comment",
-							"type": "string"
-						},
-						"optText": {
-							"title": "Text",
-							"type": "string"
-						}
-					}
-				},
-				"uiSchema": {
-					"optText": {
-						"ui:description": "Comment",
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 8
-						}
-					},
-					"comment": {
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 6
-						}
-					}
-				},
-				"formData": {
-					"optText": "##### Process Tasks Parallely \n\nThis template exemplifies how sequential tasks are done as parallely in shorter time. In this sample, the task is sending messages to Slack with task number. The messages are sent to Slack as unordered since it runs paralely. If it would run sequentially, the messages would send ordered, but in longer time\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node.\n\n**2.** Update msg.task_count field with the number of task you want to test\n\n**3.** Update msg.branch_count field with the number of branch you want to run parallely\n\n**4.** Update msg.channel_name field with the name of the Slack channel you want to send messages\n\n**5.** Set the slack environment by following [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**6.** Set credentials to the item you created in step 3 for **Connect To Slack** node"
-				}
-			}],
-			"outputs": 0,
-			"inputs": 0
-		}
-	}, {
-		"id": "e801cdd3-ee0d-4537-9a54-76b68e8dcbd1",
-		"type": "simple",
-		"selected": true,
-		"x": 505.0277777777777,
-		"y": 314.6111111111111,
-		"extras": {
-			"optText": "#### Note\n Takes takes as batches and handles them parallely"
-		},
-		"ports": [],
-		"model": {
-			"id": "e801cdd3-ee0d-4537-9a54-76b68e8dcbd1",
-			"name": "Comment",
-			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
-			"color": "#FBE364",
-			"namespace": "Core.Flow.Comment",
-			"version": "1.11.6",
-			"abc": [{}, {
-				"optText": "#### Note\n Takes takes as batches and handles them parallely"
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"comment": {
-							"title": "Comment",
-							"type": "string"
-						},
-						"optText": {
-							"title": "Text",
-							"type": "string"
-						}
-					}
-				},
-				"uiSchema": {
-					"optText": {
-						"ui:description": "Comment",
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 8
-						}
-					},
-					"comment": {
-						"ui:widget": "hidden",
-						"ui:options": {
-							"rows": 6
-						}
-					}
-				},
-				"formData": {
-					"optText": "#### Note\n Takes takes as batches and handles them parallely"
-				}
-			}],
-			"outputs": 0,
-			"inputs": 0
-		}
 	}],
 	"subFlows": [{
-		"id": "ffeda0e7-d50a-4cb4-bd02-84d8642d9418",
-		"flow": "{\"id\":\"ffeda0e7-d50a-4cb4-bd02-84d8642d9418\",\"offsetX\":-145,\"offsetY\":188,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"c24d1073-1e7c-4c81-8555-36075e8c6998\",\"type\":\"default\",\"selected\":false,\"source\":\"c67fe087-bd70-4035-91e4-9ff8fc5ab676\",\"sourcePort\":\"663ca2dc-1125-4d86-b540-0962c120df2b\",\"target\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"targetPort\":\"eb15c943-c71b-408e-83cf-00f288833faa\",\"points\":[{\"id\":\"7dee36e2-c10e-40ab-afc3-e2682093a70e\",\"selected\":false,\"x\":521,\"y\":136},{\"id\":\"45c09f1a-5732-41f4-8589-adb0405a933d\",\"selected\":false,\"x\":656,\"y\":209}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"c16322cf-1f0d-49ca-9527-6fe3ff5e9460\",\"type\":\"default\",\"selected\":false,\"source\":\"f9386013-9f37-4abc-8638-1580568b40a3\",\"sourcePort\":\"a4a5aba2-e953-4bfc-90f4-b43d697acc1d\",\"target\":\"3198610f-7959-4e2d-a58a-2d966364c307\",\"targetPort\":\"4fe7079c-c46f-410a-b577-66869b1fba8e\",\"points\":[{\"id\":\"729a6f57-ac46-4c9d-949b-2688e96d27f6\",\"selected\":false,\"x\":1207,\"y\":84},{\"id\":\"25b54567-fc97-4766-bd6c-c3a00629eb57\",\"selected\":false,\"x\":998,\"y\":136}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"23a5606e-60ad-4f2d-98d8-d9b3562cfb64\",\"type\":\"default\",\"selected\":false,\"source\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"sourcePort\":\"eb15c943-c71b-408e-83cf-00f288833faa\",\"target\":\"00e87368-ad9b-4b0f-a915-047573d68bde\",\"targetPort\":\"4f647b51-21da-41a7-a338-caf9b20c6028\",\"points\":[{\"id\":\"bf5c1805-d8e3-4370-b206-13fba8a83ab7\",\"selected\":false,\"x\":656,\"y\":209},{\"id\":\"796b9748-2971-4bec-802d-a31d9da5dc7a\",\"selected\":false,\"x\":515,\"y\":295}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"67f9159f-458a-4ef8-aa80-4df0a4e754d4\",\"type\":\"default\",\"selected\":false,\"source\":\"f33ca5b5-c1cd-4c5c-aa1b-101e3bad067a\",\"sourcePort\":\"3eb82804-7157-4600-b449-8efab0fb4146\",\"target\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"targetPort\":\"143e2dd1-e46b-4e82-b814-85e7ff125e65\",\"points\":[{\"id\":\"5b299a15-9e57-4419-9393-ebe5206521ca\",\"selected\":false,\"x\":987,\"y\":280},{\"id\":\"f0171262-ff7f-4e3e-b23c-cb464ec99bd7\",\"selected\":false,\"x\":858,\"y\":220}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"92cc814d-1ae6-48dd-b96d-e22f51133b1e\",\"type\":\"default\",\"selected\":false,\"source\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"sourcePort\":\"607c2d23-897e-4d6b-9aa4-b02731a1b8af\",\"target\":\"d25408a6-41d6-44f5-84d2-ca13a46a1f0b\",\"targetPort\":\"09cfd063-f9b8-45f7-aa07-e5aa979a45be\",\"points\":[{\"id\":\"8c39320a-2fd4-43b4-a021-a568b3f2ee20\",\"selected\":false,\"x\":858,\"y\":202},{\"id\":\"5b6c2f08-cfe7-47de-bc13-391cb5f2ff39\",\"selected\":false,\"x\":1004,\"y\":25}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a28ddcb2-ab28-4b88-aa77-1cd698e67115\",\"type\":\"default\",\"selected\":false,\"source\":\"f9386013-9f37-4abc-8638-1580568b40a3\",\"sourcePort\":\"70dcb908-c3d8-44a5-a528-41e51f96555c\",\"target\":\"d25408a6-41d6-44f5-84d2-ca13a46a1f0b\",\"targetPort\":\"b11c0cf8-935f-4ca3-82dd-294b675d6193\",\"points\":[{\"id\":\"5d43842c-79af-49ec-bea5-738376dac862\",\"selected\":false,\"x\":1005,\"y\":82},{\"id\":\"f195312a-527b-4abb-b838-84a35194cd87\",\"selected\":false,\"x\":1211.5625,\"y\":27}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300}],\"nodes\":[{\"id\":\"c67fe087-bd70-4035-91e4-9ff8fc5ab676\",\"type\":\"simple\",\"selected\":false,\"x\":320,\"y\":111,\"extras\":{},\"ports\":[{\"id\":\"663ca2dc-1125-4d86-b540-0962c120df2b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_663ca2dc-1125-4d86-b540-0962c120df2b\",\"parentNode\":\"c67fe087-bd70-4035-91e4-9ff8fc5ab676\",\"links\":[\"c24d1073-1e7c-4c81-8555-36075e8c6998\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"c67fe087-bd70-4035-91e4-9ff8fc5ab676\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"f33ca5b5-c1cd-4c5c-aa1b-101e3bad067a\",\"type\":\"simple\",\"selected\":false,\"x\":980,\"y\":257,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"3eb82804-7157-4600-b449-8efab0fb4146\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"f33ca5b5-c1cd-4c5c-aa1b-101e3bad067a\",\"links\":[\"67f9159f-458a-4ef8-aa80-4df0a4e754d4\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"f33ca5b5-c1cd-4c5c-aa1b-101e3bad067a\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"type\":\"simple\",\"selected\":false,\"x\":649,\"y\":181,\"extras\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"batch\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"number\"}},\"ports\":[{\"id\":\"607c2d23-897e-4d6b-9aa4-b02731a1b8af\",\"type\":\"default\",\"selected\":false,\"name\":\"out_607c2d23-897e-4d6b-9aa4-b02731a1b8af\",\"parentNode\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"links\":[\"92cc814d-1ae6-48dd-b96d-e22f51133b1e\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"143e2dd1-e46b-4e82-b814-85e7ff125e65\",\"type\":\"default\",\"selected\":false,\"name\":\"out_143e2dd1-e46b-4e82-b814-85e7ff125e65\",\"parentNode\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"links\":[\"67f9159f-458a-4ef8-aa80-4df0a4e754d4\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"eb15c943-c71b-408e-83cf-00f288833faa\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"links\":[\"c24d1073-1e7c-4c81-8555-36075e8c6998\",\"23a5606e-60ad-4f2d-98d8-d9b3562cfb64\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"7004b767-a6e6-4176-a7f9-26a5d7c2ae57\",\"name\":\"For Each\",\"icon\":\"M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z\",\"color\":\"#b9aeec\",\"namespace\":\"Core.Programming.ForEach\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"For Each\",\"version\":\"1.11.6\",\"color\":\"#b9aeec\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"optInput\":{\"scope\":\"Message\",\"name\":\"batch\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"number\"}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optInput\":{\"type\":\"object\",\"title\":\"Loop through object\",\"variableType\":\"Array\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optOutput\":{\"type\":\"object\",\"title\":\"Current Item\",\"variableType\":\"string\",\"messageScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optInput\":{\"ui:field\":\"variable\"},\"optOutput\":{\"ui:field\":\"variable\"}},\"formData\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"\"}}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"f9386013-9f37-4abc-8638-1580568b40a3\",\"type\":\"simple\",\"selected\":true,\"x\":998,\"y\":59,\"extras\":{\"inChannelName\":{\"scope\":\"Message\",\"name\":\"channel_name\"},\"inClientID\":{\"name\":\"client_id\",\"scope\":\"Message\"},\"inMessage\":{\"name\":\"message\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"a4a5aba2-e953-4bfc-90f4-b43d697acc1d\",\"type\":\"default\",\"selected\":false,\"name\":\"out_a4a5aba2-e953-4bfc-90f4-b43d697acc1d\",\"parentNode\":\"f9386013-9f37-4abc-8638-1580568b40a3\",\"links\":[\"c16322cf-1f0d-49ca-9527-6fe3ff5e9460\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"70dcb908-c3d8-44a5-a528-41e51f96555c\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"f9386013-9f37-4abc-8638-1580568b40a3\",\"links\":[\"a28ddcb2-ab28-4b88-aa77-1cd698e67115\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"f9386013-9f37-4abc-8638-1580568b40a3\",\"name\":\"Send Message\",\"icon\":\"M6,15A2,2 0 0,1 4,17A2,2 0 0,1 2,15A2,2 0 0,1 4,13H6V15M7,15A2,2 0 0,1 9,13A2,2 0 0,1 11,15V20A2,2 0 0,1 9,22A2,2 0 0,1 7,20V15M9,7A2,2 0 0,1 7,5A2,2 0 0,1 9,3A2,2 0 0,1 11,5V7H9M9,8A2,2 0 0,1 11,10A2,2 0 0,1 9,12H4A2,2 0 0,1 2,10A2,2 0 0,1 4,8H9M17,10A2,2 0 0,1 19,8A2,2 0 0,1 21,10A2,2 0 0,1 19,12H17V10M16,10A2,2 0 0,1 14,12A2,2 0 0,1 12,10V5A2,2 0 0,1 14,3A2,2 0 0,1 16,5V10M14,18A2,2 0 0,1 16,20A2,2 0 0,1 14,22A2,2 0 0,1 12,20V18H14M14,17A2,2 0 0,1 12,15A2,2 0 0,1 14,13H19A2,2 0 0,1 21,15A2,2 0 0,1 19,17H14Z\",\"color\":\"#000000\",\"namespace\":\"Robomotion.Slack.SendMessage\",\"version\":\"0.1.10\",\"abc\":[{\"name\":\"Send Message\",\"version\":\"0.1.10\",\"color\":\"#000000\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inChannelName\":{\"scope\":\"Message\",\"name\":\"channel_name\"},\"inClientID\":{\"name\":\"client_id\",\"scope\":\"Message\"},\"inMessage\":{\"name\":\"message\",\"scope\":\"Message\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inChannelName\":{\"type\":\"object\",\"title\":\"Channel Name\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"},\"inClientID\":{\"type\":\"object\",\"title\":\"Client Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"messageScope\":true,\"variableType\":\"String\"},\"inMessage\":{\"type\":\"object\",\"title\":\"Message\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inChannelName\":{\"name\":\"\",\"scope\":\"Custom\"},\"inClientID\":{\"name\":\"client_id\",\"scope\":\"Message\"},\"inMessage\":{\"name\":\"\",\"scope\":\"Custom\"}},\"uiSchema\":{\"inChannelName\":{\"ui:field\":\"variable\"},\"inClientID\":{\"ui:field\":\"variable\"},\"inMessage\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inClientID\",\"inChannelName\",\"inMessage\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"3198610f-7959-4e2d-a58a-2d966364c307\",\"type\":\"simple\",\"selected\":false,\"x\":991,\"y\":113,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"00e87368-ad9b-4b0f-a915-047573d68bde\"]}},\"ports\":[{\"id\":\"4fe7079c-c46f-410a-b577-66869b1fba8e\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3198610f-7959-4e2d-a58a-2d966364c307\",\"links\":[\"c16322cf-1f0d-49ca-9527-6fe3ff5e9460\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3198610f-7959-4e2d-a58a-2d966364c307\",\"name\":\"Go To Next Message\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.GoTo\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go To Next Message\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optNodes\":{\"all\":false,\"ids\":[\"00e87368-ad9b-4b0f-a915-047573d68bde\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"ids\":[],\"type\":\"goto\",\"all\":false}}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"00e87368-ad9b-4b0f-a915-047573d68bde\",\"type\":\"simple\",\"selected\":false,\"x\":314,\"y\":270,\"extras\":{},\"ports\":[{\"id\":\"4f647b51-21da-41a7-a338-caf9b20c6028\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4f647b51-21da-41a7-a338-caf9b20c6028\",\"parentNode\":\"00e87368-ad9b-4b0f-a915-047573d68bde\",\"links\":[\"23a5606e-60ad-4f2d-98d8-d9b3562cfb64\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"00e87368-ad9b-4b0f-a915-047573d68bde\",\"name\":\"Next Message\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.Label\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Next Message\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"}],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"d25408a6-41d6-44f5-84d2-ca13a46a1f0b\",\"type\":\"simple\",\"selected\":false,\"x\":997,\"y\":2,\"extras\":{\"outputs\":1,\"func\":\"msg.message = \\\"Number: \\\" + msg.number\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"b11c0cf8-935f-4ca3-82dd-294b675d6193\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b11c0cf8-935f-4ca3-82dd-294b675d6193\",\"parentNode\":\"d25408a6-41d6-44f5-84d2-ca13a46a1f0b\",\"links\":[\"a28ddcb2-ab28-4b88-aa77-1cd698e67115\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"09cfd063-f9b8-45f7-aa07-e5aa979a45be\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"d25408a6-41d6-44f5-84d2-ca13a46a1f0b\",\"links\":[\"92cc814d-1ae6-48dd-b96d-e22f51133b1e\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"d25408a6-41d6-44f5-84d2-ca13a46a1f0b\",\"name\":\"Prepare Message\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Prepare Message\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.message = \\\"Number: \\\" + msg.number\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.message = \\\"Number: \\\" + msg.number\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}}]}"
+		"id": "e073af8d-cc48-49b3-84fd-f988f2ae4494",
+		"flow": "{\"id\":\"e073af8d-cc48-49b3-84fd-f988f2ae4494\",\"offsetX\":-145.57142857142858,\"offsetY\":188.95238095238096,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"c24d1073-1e7c-4c81-8555-36075e8c6998\",\"type\":\"default\",\"selected\":false,\"source\":\"ce3cff0c-190b-41c4-be03-877efb4f8de8\",\"sourcePort\":\"663ca2dc-1125-4d86-b540-0962c120df2b\",\"target\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"targetPort\":\"eb15c943-c71b-408e-83cf-00f288833faa\",\"points\":[{\"id\":\"7dee36e2-c10e-40ab-afc3-e2682093a70e\",\"selected\":false,\"x\":521,\"y\":136},{\"id\":\"45c09f1a-5732-41f4-8589-adb0405a933d\",\"selected\":false,\"x\":656,\"y\":209}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"23a5606e-60ad-4f2d-98d8-d9b3562cfb64\",\"type\":\"default\",\"selected\":false,\"source\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"sourcePort\":\"eb15c943-c71b-408e-83cf-00f288833faa\",\"target\":\"56c45abb-cfe2-4358-8df2-959a30ce8e23\",\"targetPort\":\"4f647b51-21da-41a7-a338-caf9b20c6028\",\"points\":[{\"id\":\"bf5c1805-d8e3-4370-b206-13fba8a83ab7\",\"selected\":false,\"x\":656,\"y\":209},{\"id\":\"796b9748-2971-4bec-802d-a31d9da5dc7a\",\"selected\":false,\"x\":515,\"y\":295}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"67f9159f-458a-4ef8-aa80-4df0a4e754d4\",\"type\":\"default\",\"selected\":false,\"source\":\"3d5cb8c4-3685-40c2-8163-4ef7e09536f2\",\"sourcePort\":\"3eb82804-7157-4600-b449-8efab0fb4146\",\"target\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"targetPort\":\"143e2dd1-e46b-4e82-b814-85e7ff125e65\",\"points\":[{\"id\":\"5b299a15-9e57-4419-9393-ebe5206521ca\",\"selected\":false,\"x\":987,\"y\":280},{\"id\":\"f0171262-ff7f-4e3e-b23c-cb464ec99bd7\",\"selected\":false,\"x\":858,\"y\":220}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"92cc814d-1ae6-48dd-b96d-e22f51133b1e\",\"type\":\"default\",\"selected\":false,\"source\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"sourcePort\":\"607c2d23-897e-4d6b-9aa4-b02731a1b8af\",\"target\":\"eaf1f6ea-d258-4fc3-abff-212b7658d6e5\",\"targetPort\":\"09cfd063-f9b8-45f7-aa07-e5aa979a45be\",\"points\":[{\"id\":\"8c39320a-2fd4-43b4-a021-a568b3f2ee20\",\"selected\":false,\"x\":858,\"y\":202},{\"id\":\"5b6c2f08-cfe7-47de-bc13-391cb5f2ff39\",\"selected\":false,\"x\":1004,\"y\":25}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"fa601426-2903-4c48-b021-7bea903556e0\",\"type\":\"default\",\"selected\":false,\"source\":\"eaf1f6ea-d258-4fc3-abff-212b7658d6e5\",\"sourcePort\":\"b11c0cf8-935f-4ca3-82dd-294b675d6193\",\"target\":\"b2bf78d6-38b0-470e-8858-60a0928f5739\",\"targetPort\":\"f0549916-1330-471f-8b4e-bf892d6b93d8\",\"points\":[{\"id\":\"17c6745e-b807-4d4c-90f5-f51801eb6a67\",\"selected\":false,\"x\":1211.5781424386162,\"y\":27.000011625744037},{\"id\":\"6a2e6669-7150-42ca-8d71-14ad8ecc9dd6\",\"selected\":true,\"x\":999.562517438616,\"y\":81.04688662574404}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"a9d58f08-e2de-4053-b093-e9cb7da6330e\",\"type\":\"default\",\"selected\":false,\"source\":\"b2bf78d6-38b0-470e-8858-60a0928f5739\",\"sourcePort\":\"d11064d5-0ac5-4c91-8839-7af5d3a0b824\",\"target\":\"55d72160-6a97-4ea5-825b-5eff723fc5fc\",\"targetPort\":\"4fe7079c-c46f-410a-b577-66869b1fba8e\",\"points\":[{\"id\":\"7e24b9f2-1b57-43f0-96d3-2ae79092fe9e\",\"selected\":false,\"x\":1201.5625174386162,\"y\":83.04688662574404},{\"id\":\"7166a2be-6d08-42e4-a13f-e54a628b9852\",\"selected\":true,\"x\":998.000017438616,\"y\":136.00001162574404}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"ce3cff0c-190b-41c4-be03-877efb4f8de8\",\"type\":\"simple\",\"selected\":false,\"x\":320,\"y\":111,\"extras\":{},\"ports\":[{\"id\":\"663ca2dc-1125-4d86-b540-0962c120df2b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_663ca2dc-1125-4d86-b540-0962c120df2b\",\"parentNode\":\"ce3cff0c-190b-41c4-be03-877efb4f8de8\",\"links\":[\"c24d1073-1e7c-4c81-8555-36075e8c6998\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"ce3cff0c-190b-41c4-be03-877efb4f8de8\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"3d5cb8c4-3685-40c2-8163-4ef7e09536f2\",\"type\":\"simple\",\"selected\":false,\"x\":980,\"y\":257,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"3eb82804-7157-4600-b449-8efab0fb4146\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"3d5cb8c4-3685-40c2-8163-4ef7e09536f2\",\"links\":[\"67f9159f-458a-4ef8-aa80-4df0a4e754d4\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"3d5cb8c4-3685-40c2-8163-4ef7e09536f2\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"type\":\"simple\",\"selected\":false,\"x\":649,\"y\":181,\"extras\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"batch\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"number\"}},\"ports\":[{\"id\":\"607c2d23-897e-4d6b-9aa4-b02731a1b8af\",\"type\":\"default\",\"selected\":false,\"name\":\"out_607c2d23-897e-4d6b-9aa4-b02731a1b8af\",\"parentNode\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"links\":[\"92cc814d-1ae6-48dd-b96d-e22f51133b1e\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"143e2dd1-e46b-4e82-b814-85e7ff125e65\",\"type\":\"default\",\"selected\":false,\"name\":\"out_143e2dd1-e46b-4e82-b814-85e7ff125e65\",\"parentNode\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"links\":[\"67f9159f-458a-4ef8-aa80-4df0a4e754d4\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"eb15c943-c71b-408e-83cf-00f288833faa\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"links\":[\"c24d1073-1e7c-4c81-8555-36075e8c6998\",\"23a5606e-60ad-4f2d-98d8-d9b3562cfb64\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"b21d052d-6433-42a4-a686-64f1ed2cfeae\",\"name\":\"For Each\",\"icon\":\"M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z\",\"color\":\"#b9aeec\",\"namespace\":\"Core.Programming.ForEach\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"For Each\",\"version\":\"1.11.6\",\"color\":\"#b9aeec\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"optInput\":{\"scope\":\"Message\",\"name\":\"batch\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"number\"}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optInput\":{\"type\":\"object\",\"title\":\"Loop through object\",\"variableType\":\"Array\",\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optOutput\":{\"type\":\"object\",\"title\":\"Current Item\",\"variableType\":\"string\",\"messageScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optInput\":{\"ui:field\":\"variable\"},\"optOutput\":{\"ui:field\":\"variable\"}},\"formData\":{\"optInput\":{\"scope\":\"Message\",\"name\":\"batch\"},\"optOutput\":{\"scope\":\"Message\",\"name\":\"number\"}}}],\"outputs\":2,\"inputs\":1}},{\"id\":\"55d72160-6a97-4ea5-825b-5eff723fc5fc\",\"type\":\"simple\",\"selected\":false,\"x\":991,\"y\":113,\"extras\":{\"optNodes\":{\"all\":false,\"ids\":[\"56c45abb-cfe2-4358-8df2-959a30ce8e23\"]}},\"ports\":[{\"id\":\"4fe7079c-c46f-410a-b577-66869b1fba8e\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"55d72160-6a97-4ea5-825b-5eff723fc5fc\",\"links\":[\"a9d58f08-e2de-4053-b093-e9cb7da6330e\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"55d72160-6a97-4ea5-825b-5eff723fc5fc\",\"name\":\"Go To Next Message\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.GoTo\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Go To Next Message\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optNodes\":{\"all\":false,\"ids\":[\"56c45abb-cfe2-4358-8df2-959a30ce8e23\"]}}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"inputs\":1,\"outputs\":1,\"properties\":{\"optNodes\":{\"type\":\"object\",\"title\":\"\",\"properties\":{\"ids\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}},\"all\":{\"title\":\"All\",\"type\":\"boolean\"}}}}},\"uiSchema\":{\"optNodes\":{\"ui:field\":\"catch\"},\"ui:order\":[\"optNodes\"]},\"formData\":{\"optNodes\":{\"all\":false,\"ids\":[\"56c45abb-cfe2-4358-8df2-959a30ce8e23\"]}}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"56c45abb-cfe2-4358-8df2-959a30ce8e23\",\"type\":\"simple\",\"selected\":false,\"x\":314,\"y\":270,\"extras\":{},\"ports\":[{\"id\":\"4f647b51-21da-41a7-a338-caf9b20c6028\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4f647b51-21da-41a7-a338-caf9b20c6028\",\"parentNode\":\"56c45abb-cfe2-4358-8df2-959a30ce8e23\",\"links\":[\"23a5606e-60ad-4f2d-98d8-d9b3562cfb64\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"56c45abb-cfe2-4358-8df2-959a30ce8e23\",\"name\":\"Next Message\",\"icon\":\"M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z\",\"color\":\"#444\",\"namespace\":\"Core.Flow.Label\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Next Message\",\"color\":\"#444\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"}],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"eaf1f6ea-d258-4fc3-abff-212b7658d6e5\",\"type\":\"simple\",\"selected\":false,\"x\":997,\"y\":2,\"extras\":{\"outputs\":1,\"func\":\"msg.message = \\\"Number: \\\" + msg.number\\nreturn msg;\",\"optTimeout\":30,\"variables\":[]},\"ports\":[{\"id\":\"b11c0cf8-935f-4ca3-82dd-294b675d6193\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b11c0cf8-935f-4ca3-82dd-294b675d6193\",\"parentNode\":\"eaf1f6ea-d258-4fc3-abff-212b7658d6e5\",\"links\":[\"fa601426-2903-4c48-b021-7bea903556e0\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"09cfd063-f9b8-45f7-aa07-e5aa979a45be\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"eaf1f6ea-d258-4fc3-abff-212b7658d6e5\",\"links\":[\"92cc814d-1ae6-48dd-b96d-e22f51133b1e\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"eaf1f6ea-d258-4fc3-abff-212b7658d6e5\",\"name\":\"Prepare Message\",\"icon\":\"M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z\",\"color\":\"#F27925\",\"editor\":\"javascript\",\"namespace\":\"Core.Programming.Function\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Prepare Message\",\"color\":\"#F27925\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"outputs\":1,\"func\":\"msg.message = \\\"Number: \\\" + msg.number\\nreturn msg;\",\"optTimeout\":30},{\"variables\":[]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"func\":{\"title\":\"Function\",\"type\":\"string\"},\"outputs\":{\"title\":\"Outputs\",\"type\":\"number\",\"minimum\":1,\"maximum\":32},\"optTimeout\":{\"title\":\"Script Timeout\",\"type\":\"number\"}}},\"uiSchema\":{\"outputs\":{\"ui:widget\":\"updown\"},\"func\":{\"ui:widget\":\"hidden\",\"ui:options\":{\"rows\":6}}},\"formData\":{\"outputs\":1,\"func\":\"msg.message = \\\"Number: \\\" + msg.number\\nreturn msg;\",\"optTimeout\":30}},{\"schema\":{\"title\":\"Local Variables\",\"type\":\"object\",\"properties\":{\"variables\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"variableType\":{\"type\":\"string\"}}}}}},\"uiSchema\":{\"variables\":{\"ui:field\":\"localVariable\"}},\"formData\":{\"variables\":[]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"b2bf78d6-38b0-470e-8858-60a0928f5739\",\"type\":\"simple\",\"selected\":true,\"x\":992.5714285714287,\"y\":58.04761904761904,\"extras\":{\"inChannelName\":{\"name\":\"channel_name\",\"scope\":\"Message\"},\"inClientID\":{\"name\":\"client_id\",\"scope\":\"Message\"},\"inMessage\":{\"scope\":\"Message\",\"name\":\"message\"}},\"ports\":[{\"id\":\"d11064d5-0ac5-4c91-8839-7af5d3a0b824\",\"type\":\"default\",\"selected\":false,\"name\":\"out_d11064d5-0ac5-4c91-8839-7af5d3a0b824\",\"parentNode\":\"b2bf78d6-38b0-470e-8858-60a0928f5739\",\"links\":[\"a9d58f08-e2de-4053-b093-e9cb7da6330e\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f0549916-1330-471f-8b4e-bf892d6b93d8\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"b2bf78d6-38b0-470e-8858-60a0928f5739\",\"links\":[\"fa601426-2903-4c48-b021-7bea903556e0\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"b2bf78d6-38b0-470e-8858-60a0928f5739\",\"name\":\"Send Message\",\"icon\":\"M6,15A2,2 0 0,1 4,17A2,2 0 0,1 2,15A2,2 0 0,1 4,13H6V15M7,15A2,2 0 0,1 9,13A2,2 0 0,1 11,15V20A2,2 0 0,1 9,22A2,2 0 0,1 7,20V15M9,7A2,2 0 0,1 7,5A2,2 0 0,1 9,3A2,2 0 0,1 11,5V7H9M9,8A2,2 0 0,1 11,10A2,2 0 0,1 9,12H4A2,2 0 0,1 2,10A2,2 0 0,1 4,8H9M17,10A2,2 0 0,1 19,8A2,2 0 0,1 21,10A2,2 0 0,1 19,12H17V10M16,10A2,2 0 0,1 14,12A2,2 0 0,1 12,10V5A2,2 0 0,1 14,3A2,2 0 0,1 16,5V10M14,18A2,2 0 0,1 16,20A2,2 0 0,1 14,22A2,2 0 0,1 12,20V18H14M14,17A2,2 0 0,1 12,15A2,2 0 0,1 14,13H19A2,2 0 0,1 21,15A2,2 0 0,1 19,17H14Z\",\"color\":\"#000000\",\"namespace\":\"Robomotion.Slack.SendMessage\",\"version\":\"0.2.0\",\"abc\":[{\"name\":\"Send Message\",\"version\":\"0.2.0\",\"color\":\"#000000\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inChannelName\":{\"name\":\"channel_name\",\"scope\":\"Message\"},\"inClientID\":{\"name\":\"client_id\",\"scope\":\"Message\"},\"inMessage\":{\"scope\":\"Message\",\"name\":\"message\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inChannelName\":{\"type\":\"object\",\"title\":\"Channel Name\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"},\"inClientID\":{\"type\":\"object\",\"title\":\"Client Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"messageScope\":true,\"variableType\":\"String\"},\"inMessage\":{\"type\":\"object\",\"title\":\"Message\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inChannelName\":{\"name\":\"\",\"scope\":\"Custom\"},\"inClientID\":{\"name\":\"client_id\",\"scope\":\"Message\"},\"inMessage\":{\"name\":\"\",\"scope\":\"Custom\"}},\"uiSchema\":{\"inChannelName\":{\"ui:field\":\"variable\"},\"inClientID\":{\"ui:field\":\"variable\"},\"inMessage\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inClientID\",\"inChannelName\",\"inMessage\"]}}],\"outputs\":1,\"inputs\":1}}]}"
 	}]
 }

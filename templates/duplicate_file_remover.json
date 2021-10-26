@@ -1,319 +1,336 @@
 {
-	"nodes": [
-		{
-			"id": "1feb73b2-2996-4de7-9386-916660174126",
-			"type": "simple",
-			"selected": true,
-			"x": 489,
-			"y": 141,
-			"extras": {
+	"nodes": [{
+		"id": "91cf39c8-d747-4c42-ba2e-e8edf8611c2c",
+		"type": "simple",
+		"selected": true,
+		"x": 750,
+		"y": 100,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "09b939ed-c7cf-455b-aa3c-fa754593d22a",
+			"type": "default",
+			"selected": false,
+			"name": "out_09b939ed-c7cf-455b-aa3c-fa754593d22a",
+			"parentNode": "91cf39c8-d747-4c42-ba2e-e8edf8611c2c",
+			"links": ["1b9fe6f6-2c7d-450a-87b9-2c57637cb88e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "91cf39c8-d747-4c42-ba2e-e8edf8611c2c",
+			"name": "Inject",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{}, {
 				"inPayload": {
 					"scope": "JS",
 					"name": "Date.now()"
-				},
+				}
+			}, {
 				"outPayload": {
 					"scope": "Message",
 					"name": "payload"
-				},
+				}
+			}, {
 				"optRepeat": 1,
 				"optOnce": true,
 				"optOnceDelay": 0.1
-			},
-			"ports": [
-				{
-					"id": "8d7ea709-4da6-415a-b36f-83f2dee10f65",
-					"type": "default",
-					"selected": false,
-					"name": "out_8d7ea709-4da6-415a-b36f-83f2dee10f65",
-					"parentNode": "1feb73b2-2996-4de7-9386-916660174126",
-					"links": [
-						"5e506c5f-71c0-4c97-946a-5af354d136f8"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				}
-			],
-			"model": {
-				"id": "1feb73b2-2996-4de7-9386-916660174126",
-				"name": "Inject",
-				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
-				"color": "#FDD835",
-				"namespace": "Core.Trigger.Inject",
-				"version": "1.11.6",
-				"abc": [
-					{},
-					{
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
 						"inPayload": {
-							"scope": "JS",
-							"name": "Date.now()"
-						}
-					},
-					{
-						"outPayload": {
-							"scope": "Message",
-							"name": "payload"
-						}
-					},
-					{
-						"optRepeat": 1,
-						"optOnce": true,
-						"optOnceDelay": 0.1
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Input",
 							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
 							"properties": {
-								"inPayload": {
-									"type": "object",
-									"title": "Payload",
-									"variableType": "String",
-									"customScope": true,
-									"jsScope": true,
-									"argsScope": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
-								}
-							}
-						},
-						"uiSchema": {
-							"inPayload": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"inPayload": {
-								"scope": "JS",
-								"name": "Date.now()"
-							}
-						}
-					},
-					{
-						"schema": {
-							"title": "Output",
-							"type": "object",
-							"properties": {
-								"outPayload": {
-									"type": "object",
-									"title": "Payload",
-									"variableType": "String",
-									"messageOnly": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
-								}
-							}
-						},
-						"uiSchema": {
-							"outPayload": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"outPayload": {
-								"scope": "Message",
-								"name": "payload"
-							}
-						}
-					},
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"properties": {
-								"optRepeat": {
-									"title": "Repeat Interval (sec)",
-									"type": "number"
-								},
-								"optOnce": {
-									"title": "Once",
-									"type": "boolean"
-								},
-								"optOnceDelay": {
-									"title": "Once Delay (sec)",
-									"type": "number"
-								}
-							}
-						},
-						"uiSchema": {
-							"ui:order": [
-								"optRepeat",
-								"optOnceDelay",
-								"optOnce"
-							]
-						},
-						"formData": {
-							"optRepeat": 1,
-							"optOnce": true,
-							"optOnceDelay": 0.1
-						}
-					}
-				],
-				"outputs": 1,
-				"inputs": 0
-			}
-		},
-		{
-			"id": "d8e350bf-0613-4f35-abcb-18c67f9eb5a5",
-			"type": "simple",
-			"selected": true,
-			"x": 737,
-			"y": 143,
-			"extras": {
-				"outputs": 1,
-				"func": "msg.dir = '/home/gursoy/test'; // [Required]\n\n// DO NOT edit below!\nmsg.hash_table = {};\nreturn msg;",
-				"optTimeout": 30,
-				"variables": []
-			},
-			"ports": [
-				{
-					"id": "42cae3b3-3409-4691-ac9e-80b05fedf6d2",
-					"type": "default",
-					"selected": false,
-					"name": "out_42cae3b3-3409-4691-ac9e-80b05fedf6d2",
-					"parentNode": "d8e350bf-0613-4f35-abcb-18c67f9eb5a5",
-					"links": [
-						"5e3b0719-70b9-4451-91a5-a42730c1e6e1"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "d2e96408-eade-46a1-b71d-7db263a19148",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "d8e350bf-0613-4f35-abcb-18c67f9eb5a5",
-					"links": [
-						"5e506c5f-71c0-4c97-946a-5af354d136f8"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "d8e350bf-0613-4f35-abcb-18c67f9eb5a5",
-				"name": "Config",
-				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
-				"color": "#F27925",
-				"editor": "javascript",
-				"namespace": "Core.Programming.Function",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "Config",
-						"color": "#F27925",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
-					},
-					{
-						"outputs": 1,
-						"func": "msg.dir = '/home/gursoy/test'; // [Required]\n\n// DO NOT edit below!\nmsg.hash_table = {};\nreturn msg;",
-						"optTimeout": 30
-					},
-					{
-						"variables": []
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"properties": {
-								"func": {
-									"title": "Function",
+								"scope": {
 									"type": "string"
 								},
-								"outputs": {
-									"title": "Outputs",
-									"type": "number",
-									"minimum": 1,
-									"maximum": 32
-								},
-								"optTimeout": {
-									"title": "Script Timeout",
-									"type": "number"
+								"name": {
+									"type": "string"
 								}
 							}
-						},
-						"uiSchema": {
-							"outputs": {
-								"ui:widget": "updown"
-							},
-							"func": {
-								"ui:widget": "hidden",
-								"ui:options": {
-									"rows": 6
-								}
-							}
-						},
-						"formData": {
-							"outputs": 1,
-							"func": "msg.dir = '/home/gursoy/test'; // [Required]\n\n// DO NOT edit below!\nmsg.hash_table = {};\nreturn msg;",
-							"optTimeout": 30
 						}
-					},
-					{
-						"schema": {
-							"title": "Local Variables",
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
 							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
 							"properties": {
-								"variables": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"name": {
-												"type": "string"
-											},
-											"variableType": {
-												"type": "string"
-											}
-										}
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "62fef6c1-9656-45c5-bb5a-794519f415e8",
+		"type": "simple",
+		"selected": true,
+		"x": 998,
+		"y": 102,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.dir = '/home/gursoy/test'; // [Required]\n\n// DO NOT edit below!\nmsg.hash_table = {};\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "2814c2cc-93cc-4f14-a5fb-4862b50d6d89",
+			"type": "default",
+			"selected": false,
+			"name": "out_2814c2cc-93cc-4f14-a5fb-4862b50d6d89",
+			"parentNode": "62fef6c1-9656-45c5-bb5a-794519f415e8",
+			"links": ["2e64a1b3-94ac-446e-a007-2c53e1782efa"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "7f77af33-84ae-4b08-b46b-247dd001966a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "62fef6c1-9656-45c5-bb5a-794519f415e8",
+			"links": ["1b9fe6f6-2c7d-450a-87b9-2c57637cb88e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "62fef6c1-9656-45c5-bb5a-794519f415e8",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.dir = '/home/gursoy/test'; // [Required]\n\n// DO NOT edit below!\nmsg.hash_table = {};\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.dir = '/home/gursoy/test'; // [Required]\n\n// DO NOT edit below!\nmsg.hash_table = {};\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
 									}
 								}
 							}
-						},
-						"uiSchema": {
-							"variables": {
-								"ui:field": "localVariable"
-							}
-						},
-						"formData": {
-							"variables": []
 						}
 					}
-				],
-				"outputs": 1,
-				"inputs": 1
-			}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "85105e45-3f67-4ca6-b79f-2bc0753b73ee",
+		"type": "simple",
+		"selected": true,
+		"x": 999,
+		"y": 162,
+		"extras": {
+			"inDirPath": {
+				"scope": "Message",
+				"name": "dir"
+			},
+			"inNameFilter": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"outFiles": {
+				"scope": "Message",
+				"name": "files"
+			},
+			"optSort": "ascend",
+			"optTop": 10
 		},
-		{
-			"id": "c61cf500-b8e1-4975-b61c-58d41b3525e1",
-			"type": "simple",
-			"selected": true,
-			"x": 738,
-			"y": 203,
-			"extras": {
+		"ports": [{
+			"id": "cd74648e-3fae-445d-9e62-ed198cd658f8",
+			"type": "default",
+			"selected": false,
+			"name": "out_cd74648e-3fae-445d-9e62-ed198cd658f8",
+			"parentNode": "85105e45-3f67-4ca6-b79f-2bc0753b73ee",
+			"links": ["eb3eba91-d0e3-4211-a273-7b831892e784"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "347c3720-5d4b-40df-976c-a4bbf6cb104b",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "85105e45-3f67-4ca6-b79f-2bc0753b73ee",
+			"links": ["2e64a1b3-94ac-446e-a007-2c53e1782efa"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "85105e45-3f67-4ca6-b79f-2bc0753b73ee",
+			"name": "List Directory",
+			"icon": "M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z",
+			"color": "#dbdfa0",
+			"namespace": "Core.FileSystem.List",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "List Directory",
+				"version": "1.11.6",
+				"color": "#dbdfa0",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
 				"inDirPath": {
 					"scope": "Message",
 					"name": "dir"
@@ -321,224 +338,195 @@
 				"inNameFilter": {
 					"scope": "Custom",
 					"name": ""
-				},
+				}
+			}, {
 				"outFiles": {
 					"scope": "Message",
 					"name": "files"
-				},
+				}
+			}, {
 				"optSort": "ascend",
 				"optTop": 10
-			},
-			"ports": [
-				{
-					"id": "97487a28-cd38-43bd-b45a-e3e1da42bf39",
-					"type": "default",
-					"selected": false,
-					"name": "out_97487a28-cd38-43bd-b45a-e3e1da42bf39",
-					"parentNode": "c61cf500-b8e1-4975-b61c-58d41b3525e1",
-					"links": [
-						"98c8dab5-0edf-443e-a5e8-e1e22b75bf08"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "7fb107cf-a59f-41ea-a28c-8fb8c9980d7a",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "c61cf500-b8e1-4975-b61c-58d41b3525e1",
-					"links": [
-						"5e3b0719-70b9-4451-91a5-a42730c1e6e1"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "c61cf500-b8e1-4975-b61c-58d41b3525e1",
-				"name": "List Directory",
-				"icon": "M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z",
-				"color": "#dbdfa0",
-				"namespace": "Core.FileSystem.List",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "List Directory",
-						"version": "1.11.6",
-						"color": "#dbdfa0",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false
-					},
-					{
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
 						"inDirPath": {
-							"scope": "Message",
-							"name": "dir"
+							"type": "object",
+							"title": "Directory Path",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
 						},
 						"inNameFilter": {
-							"scope": "Custom",
-							"name": ""
+							"type": "object",
+							"title": "Name Filter (Regex)",
+							"variableType": "String",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
 						}
+					}
+				},
+				"uiSchema": {
+					"inDirPath": {
+						"ui:field": "variable"
 					},
-					{
+					"inNameFilter": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inDirPath", "inNameFilter"]
+				},
+				"formData": {
+					"inDirPath": {
+						"scope": "Message",
+						"name": "dir"
+					},
+					"inNameFilter": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
 						"outFiles": {
-							"scope": "Message",
-							"name": "files"
-						}
-					},
-					{
-						"optSort": "ascend",
-						"optTop": 10
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Input",
 							"type": "object",
+							"title": "Files",
+							"variableType": "String",
+							"messageOnly": true,
 							"properties": {
-								"inDirPath": {
-									"type": "object",
-									"title": "Directory Path",
-									"variableType": "String",
-									"messageScope": true,
-									"customScope": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
+								"scope": {
+									"type": "string"
 								},
-								"inNameFilter": {
-									"type": "object",
-									"title": "Name Filter (Regex)",
-									"variableType": "String",
-									"customScope": true,
-									"messageOnly": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
+								"name": {
+									"type": "string"
 								}
 							}
-						},
-						"uiSchema": {
-							"inDirPath": {
-								"ui:field": "variable"
-							},
-							"inNameFilter": {
-								"ui:field": "variable"
-							},
-							"ui:order": [
-								"inDirPath",
-								"inNameFilter"
-							]
-						},
-						"formData": {
-							"inDirPath": {
-								"scope": "Message",
-								"name": "dir"
-							},
-							"inNameFilter": {
-								"scope": "Custom",
-								"name": ""
-							}
-						}
-					},
-					{
-						"schema": {
-							"title": "Output",
-							"type": "object",
-							"properties": {
-								"outFiles": {
-									"type": "object",
-									"title": "Files",
-									"variableType": "String",
-									"messageOnly": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
-								}
-							}
-						},
-						"uiSchema": {
-							"outFiles": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"outFiles": {
-								"scope": "Message",
-								"name": "files"
-							}
-						}
-					},
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"properties": {
-								"optSort": {
-									"type": "string",
-									"title": "Sort",
-									"enum": [
-										"ascend",
-										"descend",
-										"modifiedlatest",
-										"modifiedearlier"
-									],
-									"enumNames": [
-										"Name - Ascending",
-										"Name - Descending",
-										"Date - Last Modified",
-										"Date - Earliest Modified"
-									]
-								},
-								"optTop": {
-									"title": "Top",
-									"type": "number",
-									"minimum": 0
-								}
-							}
-						},
-						"uiSchema": {
-							"ui:order": [
-								"optSort",
-								"optTop"
-							]
-						},
-						"formData": {
-							"optSort": "ascend",
-							"optTop": 10
 						}
 					}
-				],
-				"outputs": 1,
-				"inputs": 1
+				},
+				"uiSchema": {
+					"outFiles": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outFiles": {
+						"scope": "Message",
+						"name": "files"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optSort": {
+							"type": "string",
+							"title": "Sort",
+							"enum": ["ascend", "descend", "modifiedlatest", "modifiedearlier"],
+							"enumNames": ["Name - Ascending", "Name - Descending", "Date - Last Modified", "Date - Earliest Modified"]
+						},
+						"optTop": {
+							"title": "Top",
+							"type": "number",
+							"minimum": 0
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optSort", "optTop"]
+				},
+				"formData": {
+					"optSort": "ascend",
+					"optTop": 10
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "1a24667a-cdfd-4639-a353-08d5c1dc0df2",
+		"type": "simple",
+		"selected": true,
+		"x": 998,
+		"y": 223,
+		"extras": {
+			"optInput": {
+				"scope": "Message",
+				"name": "files"
+			},
+			"optOutput": {
+				"scope": "Message",
+				"name": "file"
 			}
 		},
-		{
-			"id": "be63ece8-8666-4c10-a1e0-5df0ab699917",
-			"type": "simple",
-			"selected": true,
-			"x": 737,
-			"y": 264,
-			"extras": {
+		"ports": [{
+			"id": "658a3d49-3976-4d3f-b9d8-8e413840bc4c",
+			"type": "default",
+			"selected": false,
+			"name": "out_658a3d49-3976-4d3f-b9d8-8e413840bc4c",
+			"parentNode": "1a24667a-cdfd-4639-a353-08d5c1dc0df2",
+			"links": ["f35ec455-5307-4842-af06-74cc675bde63"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "1a96f85c-4b66-4dac-a21a-f285b2735006",
+			"type": "default",
+			"selected": false,
+			"name": "out_1a96f85c-4b66-4dac-a21a-f285b2735006",
+			"parentNode": "1a24667a-cdfd-4639-a353-08d5c1dc0df2",
+			"links": ["f7a5e8dd-f3a9-4f62-b49b-c1f3f7677644"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "bc146fd7-1769-4e2b-8064-fe8c7cabbf4b",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "1a24667a-cdfd-4639-a353-08d5c1dc0df2",
+			"links": ["eb3eba91-d0e3-4211-a273-7b831892e784", "ae8db2f5-0c7e-4496-96e5-4d535fe84812"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "1a24667a-cdfd-4639-a353-08d5c1dc0df2",
+			"name": "For Each File",
+			"icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
+			"color": "#b9aeec",
+			"namespace": "Core.Programming.ForEach",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "For Each File",
+				"color": "#b9aeec",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
 				"optInput": {
 					"scope": "Message",
 					"name": "files"
@@ -547,1073 +535,873 @@
 					"scope": "Message",
 					"name": "file"
 				}
-			},
-			"ports": [
-				{
-					"id": "857dbcde-fb85-4adb-98de-63a1db6cd5b8",
-					"type": "default",
-					"selected": false,
-					"name": "out_857dbcde-fb85-4adb-98de-63a1db6cd5b8",
-					"parentNode": "be63ece8-8666-4c10-a1e0-5df0ab699917",
-					"links": [
-						"73c31124-f4bb-42b6-a8da-03a407a9c23e"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "2af3ce53-7d66-4768-89be-45c4b247e0e3",
-					"type": "default",
-					"selected": false,
-					"name": "out_2af3ce53-7d66-4768-89be-45c4b247e0e3",
-					"parentNode": "be63ece8-8666-4c10-a1e0-5df0ab699917",
-					"links": [
-						"c88efc5b-76f9-4e67-807a-32c9be90d1cb"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "c7555781-d12a-4b87-a6ff-f0998cd720fb",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "be63ece8-8666-4c10-a1e0-5df0ab699917",
-					"links": [
-						"98c8dab5-0edf-443e-a5e8-e1e22b75bf08",
-						"a059f434-87db-4960-b183-54782cc02b34"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "be63ece8-8666-4c10-a1e0-5df0ab699917",
-				"name": "For Each File",
-				"icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
-				"color": "#b9aeec",
-				"namespace": "Core.Programming.ForEach",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "For Each File",
-						"color": "#b9aeec",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
-					},
-					{
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
 						"optInput": {
-							"scope": "Message",
-							"name": "files"
-						},
-						"optOutput": {
-							"scope": "Message",
-							"name": "file"
-						}
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Options",
 							"type": "object",
+							"title": "Loop through object",
+							"variableType": "Array",
+							"messageScope": true,
 							"properties": {
-								"optInput": {
-									"type": "object",
-									"title": "Loop through object",
-									"variableType": "Array",
-									"messageScope": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
+								"scope": {
+									"type": "string"
 								},
-								"optOutput": {
-									"type": "object",
-									"title": "Current Item",
-									"variableType": "string",
-									"messageScope": true,
-									"messageOnly": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
+								"name": {
+									"type": "string"
 								}
 							}
 						},
-						"uiSchema": {
-							"optInput": {
-								"ui:field": "variable"
-							},
-							"optOutput": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"optInput": {
-								"scope": "Message",
-								"name": ""
-							},
-							"optOutput": {
-								"scope": "Message",
-								"name": ""
+						"optOutput": {
+							"type": "object",
+							"title": "Current Item",
+							"variableType": "string",
+							"messageScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
 							}
 						}
 					}
-				],
-				"outputs": 2,
-				"inputs": 1
-			}
-		},
-		{
-			"id": "75179571-40d5-4613-8c8a-37fb2388719a",
-			"type": "simple",
-			"selected": true,
-			"x": 486,
-			"y": 267,
-			"extras": {},
-			"ports": [
-				{
-					"id": "cc023092-f191-41bb-9db0-1a79792c6094",
-					"type": "default",
-					"selected": false,
-					"name": "out_cc023092-f191-41bb-9db0-1a79792c6094",
-					"parentNode": "75179571-40d5-4613-8c8a-37fb2388719a",
-					"links": [
-						"a059f434-87db-4960-b183-54782cc02b34"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				}
-			],
-			"model": {
-				"id": "75179571-40d5-4613-8c8a-37fb2388719a",
-				"name": "Next File",
-				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
-				"color": "#444",
-				"namespace": "Core.Flow.Label",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "Next File",
-						"color": "#444",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
+				},
+				"uiSchema": {
+					"optInput": {
+						"ui:field": "variable"
+					},
+					"optOutput": {
+						"ui:field": "variable"
 					}
-				],
-				"xyz": [],
-				"outputs": 1,
-				"inputs": 0
-			}
+				},
+				"formData": {
+					"optInput": {
+						"scope": "Message",
+						"name": "files"
+					},
+					"optOutput": {
+						"scope": "Message",
+						"name": "file"
+					}
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "b89a0cc7-29dd-4f3a-ad89-1926b1434907",
+		"type": "simple",
+		"selected": true,
+		"x": 747,
+		"y": 226,
+		"extras": {},
+		"ports": [{
+			"id": "f583f9d9-4354-43f8-a57d-552fe9031317",
+			"type": "default",
+			"selected": false,
+			"name": "out_f583f9d9-4354-43f8-a57d-552fe9031317",
+			"parentNode": "b89a0cc7-29dd-4f3a-ad89-1926b1434907",
+			"links": ["ae8db2f5-0c7e-4496-96e5-4d535fe84812"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "b89a0cc7-29dd-4f3a-ad89-1926b1434907",
+			"name": "Next File",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.Label",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Next File",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}],
+			"xyz": [],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "a4ea5233-4fa2-4cee-b738-ba8eae58bf21",
+		"type": "simple",
+		"selected": true,
+		"x": 1507,
+		"y": 223,
+		"extras": {
+			"inFilePath": {
+				"scope": "Message",
+				"name": "path"
+			},
+			"outHash": {
+				"name": "hash",
+				"scope": "Message"
+			},
+			"optFunction": "sha256-file"
 		},
-		{
-			"id": "fad7228f-da53-4768-90f6-cbe1af10afac",
-			"type": "simple",
-			"selected": true,
-			"x": 1246,
-			"y": 264,
-			"extras": {
+		"ports": [{
+			"id": "9c9894d8-ee98-44c6-ad97-a692dade249b",
+			"type": "default",
+			"selected": false,
+			"name": "out_9c9894d8-ee98-44c6-ad97-a692dade249b",
+			"parentNode": "a4ea5233-4fa2-4cee-b738-ba8eae58bf21",
+			"links": ["8480d7df-5e90-411d-a2f1-cb2b3a55dda1"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d49df5a6-1589-49a9-8282-601d550f0d2a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "a4ea5233-4fa2-4cee-b738-ba8eae58bf21",
+			"links": ["9990b846-e439-4f9a-a2ae-cd4275dabfa3"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "a4ea5233-4fa2-4cee-b738-ba8eae58bf21",
+			"name": "File Hash",
+			"icon": "M12,1C5.92,1 1,5.92 1,12C1,18.08 5.92,23 12,23C18.08,23 23,18.08 23,12C23,5.92 18.08,1 12,1M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M13,13.5C13,14.13 13.4,14.7 14,14.91V18H10V11.91C10.78,11.64 11.19,10.8 10.93,10C10.78,9.58 10.44,9.24 10,9.09V6H14V12.09C13.4,12.3 13,12.87 13,13.5Z",
+			"color": "#1fa463",
+			"namespace": "Robomotion.Cryptography.HashFile",
+			"version": "0.2.1",
+			"abc": [{
+				"name": "File Hash",
+				"version": "0.2.1",
+				"color": "#1fa463",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
 				"inFilePath": {
 					"scope": "Message",
 					"name": "path"
-				},
+				}
+			}, {
 				"outHash": {
 					"name": "hash",
 					"scope": "Message"
-				},
-				"optFunction": "sha256-file"
-			},
-			"ports": [
-				{
-					"id": "9682fbf6-3c22-4670-9f02-30859568c5ed",
-					"type": "default",
-					"selected": false,
-					"name": "out_9682fbf6-3c22-4670-9f02-30859568c5ed",
-					"parentNode": "fad7228f-da53-4768-90f6-cbe1af10afac",
-					"links": [
-						"6b618ede-1517-42f2-9d61-5185ed903126"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "209cd1e4-86a0-4d97-85f5-d9c69f1c958e",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "fad7228f-da53-4768-90f6-cbe1af10afac",
-					"links": [
-						"ce283752-8dc7-4edf-8133-d474f4139f45"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
 				}
-			],
-			"model": {
-				"id": "fad7228f-da53-4768-90f6-cbe1af10afac",
-				"name": "File Hash",
-				"icon": "M12,1C5.92,1 1,5.92 1,12C1,18.08 5.92,23 12,23C18.08,23 23,18.08 23,12C23,5.92 18.08,1 12,1M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M13,13.5C13,14.13 13.4,14.7 14,14.91V18H10V11.91C10.78,11.64 11.19,10.8 10.93,10C10.78,9.58 10.44,9.24 10,9.09V6H14V12.09C13.4,12.3 13,12.87 13,13.5Z",
-				"color": "#1fa463",
-				"namespace": "Robomotion.Cryptography.HashFile",
-				"version": "0.2.1",
-				"abc": [
-					{
-						"name": "File Hash",
-						"version": "0.2.1",
-						"color": "#1fa463",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false
-					},
-					{
+			}, {
+				"optFunction": "sha256-file"
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
 						"inFilePath": {
-							"scope": "Message",
-							"name": "path"
+							"type": "object",
+							"title": "File Path",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
 						}
+					}
+				},
+				"formData": {
+					"inFilePath": {
+						"scope": "Message",
+						"name": "path"
+					}
+				},
+				"uiSchema": {
+					"inFilePath": {
+						"ui:field": "variable"
 					},
-					{
+					"ui:order": ["inFilePath"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
 						"outHash": {
-							"name": "hash",
-							"scope": "Message"
-						}
-					},
-					{
-						"optFunction": "sha256-file"
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
 							"type": "object",
-							"title": "Input",
+							"title": "Hash",
 							"properties": {
-								"inFilePath": {
-									"type": "object",
-									"title": "File Path",
-									"properties": {
-										"name": {
-											"type": "string"
-										},
-										"scope": {
-											"type": "string"
-										}
-									},
-									"customScope": true,
-									"messageScope": true,
-									"variableType": "String"
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
 								}
-							}
-						},
-						"formData": {
-							"inFilePath": {
-								"name": "",
-								"scope": "Custom"
-							}
-						},
-						"uiSchema": {
-							"inFilePath": {
-								"ui:field": "variable"
 							},
-							"ui:order": [
-								"inFilePath"
-							]
-						}
-					},
-					{
-						"schema": {
-							"type": "object",
-							"title": "Output",
-							"properties": {
-								"outHash": {
-									"type": "object",
-									"title": "Hash",
-									"properties": {
-										"name": {
-											"type": "string"
-										},
-										"scope": {
-											"type": "string"
-										}
-									},
-									"customScope": true,
-									"messageScope": true,
-									"variableType": "String"
-								}
-							}
-						},
-						"formData": {
-							"outHash": {
-								"name": "hash",
-								"scope": "Message"
-							}
-						},
-						"uiSchema": {
-							"outHash": {
-								"ui:field": "variable"
-							},
-							"ui:order": [
-								"outHash"
-							]
-						}
-					},
-					{
-						"schema": {
-							"type": "object",
-							"title": "Options",
-							"properties": {
-								"optFunction": {
-									"type": "string",
-									"title": "Hash Function",
-									"multiple": true,
-									"enum": [
-										"md5-file",
-										"sha256-file",
-										"sha512-file",
-										"blake256-file",
-										"blake512-file",
-										"whirlpool-file"
-									],
-									"enumNames": [
-										"md5",
-										"sha256",
-										"sha512",
-										"blake256",
-										"blake512",
-										"whirlpool"
-									]
-								}
-							}
-						},
-						"formData": {
-							"optFunction": "md5-file"
-						},
-						"uiSchema": {
-							"ui:order": [
-								"optFunction"
-							]
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
 						}
 					}
-				],
-				"outputs": 1,
-				"inputs": 1
-			}
+				},
+				"formData": {
+					"outHash": {
+						"name": "hash",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outHash": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outHash"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optFunction": {
+							"type": "string",
+							"title": "Hash Function",
+							"multiple": true,
+							"enum": ["md5-file", "sha256-file", "sha512-file", "blake256-file", "blake512-file", "whirlpool-file"],
+							"enumNames": ["md5", "sha256", "sha512", "blake256", "blake512", "whirlpool"]
+						}
+					}
+				},
+				"formData": {
+					"optFunction": "sha256-file"
+				},
+				"uiSchema": {
+					"ui:order": ["optFunction"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "936c0db9-a479-421b-b141-4cfbe9a9db73",
+		"type": "simple",
+		"selected": true,
+		"x": 1251,
+		"y": 221,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.path = `${msg.dir}/${msg.file.Name}`;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
 		},
-		{
-			"id": "5305fbab-8eb1-4d33-be48-61309183f4e6",
-			"type": "simple",
-			"selected": true,
-			"x": 990,
-			"y": 262,
-			"extras": {
+		"ports": [{
+			"id": "b74589a7-35b1-44f5-a2af-616d2e7e72ff",
+			"type": "default",
+			"selected": false,
+			"name": "out_b74589a7-35b1-44f5-a2af-616d2e7e72ff",
+			"parentNode": "936c0db9-a479-421b-b141-4cfbe9a9db73",
+			"links": ["9990b846-e439-4f9a-a2ae-cd4275dabfa3"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "9c4d9294-0495-4ced-ac93-10d7a164c72f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "936c0db9-a479-421b-b141-4cfbe9a9db73",
+			"links": ["f35ec455-5307-4842-af06-74cc675bde63"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "936c0db9-a479-421b-b141-4cfbe9a9db73",
+			"name": "Get Path",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Get Path",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
 				"outputs": 1,
 				"func": "msg.path = `${msg.dir}/${msg.file.Name}`;\nreturn msg;",
-				"optTimeout": 30,
+				"optTimeout": 30
+			}, {
 				"variables": []
-			},
-			"ports": [
-				{
-					"id": "f5289e99-e42c-4ae1-ac19-5b30cb5893ec",
-					"type": "default",
-					"selected": false,
-					"name": "out_f5289e99-e42c-4ae1-ac19-5b30cb5893ec",
-					"parentNode": "5305fbab-8eb1-4d33-be48-61309183f4e6",
-					"links": [
-						"ce283752-8dc7-4edf-8133-d474f4139f45"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "659c1cda-5cf9-4cf5-a030-dccb99a4cb34",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "5305fbab-8eb1-4d33-be48-61309183f4e6",
-					"links": [
-						"73c31124-f4bb-42b6-a8da-03a407a9c23e"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "5305fbab-8eb1-4d33-be48-61309183f4e6",
-				"name": "Get Path",
-				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
-				"color": "#F27925",
-				"editor": "javascript",
-				"namespace": "Core.Programming.Function",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "Get Path",
-						"color": "#F27925",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
-					},
-					{
-						"outputs": 1,
-						"func": "msg.path = `${msg.dir}/${msg.file.Name}`;\nreturn msg;",
-						"optTimeout": 30
-					},
-					{
-						"variables": []
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"properties": {
-								"func": {
-									"title": "Function",
-									"type": "string"
-								},
-								"outputs": {
-									"title": "Outputs",
-									"type": "number",
-									"minimum": 1,
-									"maximum": 32
-								},
-								"optTimeout": {
-									"title": "Script Timeout",
-									"type": "number"
-								}
-							}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
 						},
-						"uiSchema": {
-							"outputs": {
-								"ui:widget": "updown"
-							},
-							"func": {
-								"ui:widget": "hidden",
-								"ui:options": {
-									"rows": 6
-								}
-							}
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
 						},
-						"formData": {
-							"outputs": 1,
-							"func": "msg.path = `${msg.dir}/${msg.file.Name}`;\nreturn msg;",
-							"optTimeout": 30
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
 						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
 					},
-					{
-						"schema": {
-							"title": "Local Variables",
-							"type": "object",
-							"properties": {
-								"variables": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"name": {
-												"type": "string"
-											},
-											"variableType": {
-												"type": "string"
-											}
-										}
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.path = `${msg.dir}/${msg.file.Name}`;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
 									}
 								}
 							}
-						},
-						"uiSchema": {
-							"variables": {
-								"ui:field": "localVariable"
-							}
-						},
-						"formData": {
-							"variables": []
 						}
 					}
-				],
-				"outputs": 1,
-				"inputs": 1
-			}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "3d3b3a6d-6210-404d-97a1-d1125b1e4f53",
+		"type": "simple",
+		"selected": true,
+		"x": 1506,
+		"y": 282,
+		"extras": {
+			"func": "if (msg.hash in msg.hash_table) {\n  return [null, msg];\n}\n\nmsg.hash_table[msg.hash] = {};\nreturn [msg, null];",
+			"outputs": 2,
+			"optTimeout": 30,
+			"variables": []
 		},
-		{
-			"id": "7f38aa60-3186-41cd-bfb1-b0cd1d67a821",
-			"type": "simple",
-			"selected": true,
-			"x": 1245,
-			"y": 323,
-			"extras": {
+		"ports": [{
+			"id": "9fa049e3-f16d-4c32-a476-d63f9ba0b97e",
+			"type": "default",
+			"selected": false,
+			"name": "out_9fa049e3-f16d-4c32-a476-d63f9ba0b97e",
+			"parentNode": "3d3b3a6d-6210-404d-97a1-d1125b1e4f53",
+			"links": ["08aa982d-1119-489b-96c0-60aa09e19f4b"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "0d49a619-c9a1-46c1-aaf2-3bf9b11a93a2",
+			"type": "default",
+			"selected": false,
+			"name": "out_0d49a619-c9a1-46c1-aaf2-3bf9b11a93a2",
+			"parentNode": "3d3b3a6d-6210-404d-97a1-d1125b1e4f53",
+			"links": ["1e8a8267-cda4-4752-aedf-6d909780e9a1"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f83fd880-f99f-437f-8ce5-40dbf177c9c0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "3d3b3a6d-6210-404d-97a1-d1125b1e4f53",
+			"links": ["8480d7df-5e90-411d-a2f1-cb2b3a55dda1"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "3d3b3a6d-6210-404d-97a1-d1125b1e4f53",
+			"name": "Check File Hash",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Check File Hash",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
 				"func": "if (msg.hash in msg.hash_table) {\n  return [null, msg];\n}\n\nmsg.hash_table[msg.hash] = {};\nreturn [msg, null];",
 				"outputs": 2,
-				"optTimeout": 30,
+				"optTimeout": 30
+			}, {
 				"variables": []
-			},
-			"ports": [
-				{
-					"id": "1d79fb77-fb25-44d7-bfad-8107ace8573c",
-					"type": "default",
-					"selected": false,
-					"name": "out_1d79fb77-fb25-44d7-bfad-8107ace8573c",
-					"parentNode": "7f38aa60-3186-41cd-bfb1-b0cd1d67a821",
-					"links": [
-						"a9cc9293-5e40-4fa6-8897-a04a5e45bd0c"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "1af34114-7111-4a0d-96df-1a8986a1cfa1",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "7f38aa60-3186-41cd-bfb1-b0cd1d67a821",
-					"links": [
-						"6b618ede-1517-42f2-9d61-5185ed903126"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				},
-				{
-					"id": "cc5e2cf0-2aa5-4b9d-9199-2e6a40667118",
-					"type": "default",
-					"selected": false,
-					"name": "out_cc5e2cf0-2aa5-4b9d-9199-2e6a40667118",
-					"parentNode": "7f38aa60-3186-41cd-bfb1-b0cd1d67a821",
-					"links": [
-						"75f47d0e-5c8d-41c6-ad3c-07a895c9715c"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				}
-			],
-			"model": {
-				"id": "7f38aa60-3186-41cd-bfb1-b0cd1d67a821",
-				"name": "Check File Hash",
-				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
-				"color": "#F27925",
-				"editor": "javascript",
-				"namespace": "Core.Programming.Function",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "Check File Hash",
-						"color": "#F27925",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
-					},
-					{
-						"func": "if (msg.hash in msg.hash_table) {\n  return [null, msg];\n}\n\nmsg.hash_table[msg.hash] = {};\nreturn [msg, null];",
-						"outputs": 2,
-						"optTimeout": 30
-					},
-					{
-						"variables": []
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"properties": {
-								"func": {
-									"title": "Function",
-									"type": "string"
-								},
-								"outputs": {
-									"title": "Outputs",
-									"type": "number",
-									"minimum": 1,
-									"maximum": 32
-								},
-								"optTimeout": {
-									"title": "Script Timeout",
-									"type": "number"
-								}
-							}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
 						},
-						"uiSchema": {
-							"outputs": {
-								"ui:widget": "updown"
-							},
-							"func": {
-								"ui:widget": "hidden",
-								"ui:options": {
-									"rows": 6
-								}
-							}
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
 						},
-						"formData": {
-							"outputs": 1,
-							"func": "if (msg.hash in msg.hash_table) {\n  return [null, msg];\n}\n\nmsg.hash_table[msg.hash] = {};\nreturn [msg, null];",
-							"optTimeout": 30
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
 						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
 					},
-					{
-						"schema": {
-							"title": "Local Variables",
-							"type": "object",
-							"properties": {
-								"variables": {
-									"type": "array",
-									"items": {
-										"type": "object",
-										"properties": {
-											"name": {
-												"type": "string"
-											},
-											"variableType": {
-												"type": "string"
-											}
-										}
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"func": "if (msg.hash in msg.hash_table) {\n  return [null, msg];\n}\n\nmsg.hash_table[msg.hash] = {};\nreturn [msg, null];",
+					"outputs": 2,
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
 									}
 								}
 							}
-						},
-						"uiSchema": {
-							"variables": {
-								"ui:field": "localVariable"
-							}
-						},
-						"formData": {
-							"variables": []
 						}
 					}
-				],
-				"outputs": 2,
-				"inputs": 1
-			}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "31818e5b-a943-4bf0-85ff-06233b044f1b",
+		"type": "simple",
+		"selected": true,
+		"x": 1506,
+		"y": 372,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "path"
+			},
+			"optNameFilter": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"optRecursive": false
 		},
-		{
-			"id": "4dd88fa2-9c22-4f2c-846a-a2e3bb572693",
-			"type": "simple",
-			"selected": true,
-			"x": 1245,
-			"y": 413,
-			"extras": {
+		"ports": [{
+			"id": "f13c26bf-10ba-4ec9-8fb0-9b0690294583",
+			"type": "default",
+			"selected": false,
+			"name": "out_f13c26bf-10ba-4ec9-8fb0-9b0690294583",
+			"parentNode": "31818e5b-a943-4bf0-85ff-06233b044f1b",
+			"links": ["b22c808c-444f-4760-a436-b65f13f2a583"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "91d71c8f-400a-4eaf-b705-092537932687",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "31818e5b-a943-4bf0-85ff-06233b044f1b",
+			"links": ["1e8a8267-cda4-4752-aedf-6d909780e9a1"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "31818e5b-a943-4bf0-85ff-06233b044f1b",
+			"name": "Delete Duplicate",
+			"icon": "M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z",
+			"color": "#dbdfa0",
+			"namespace": "Core.FileSystem.Delete",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Delete Duplicate",
+				"color": "#dbdfa0",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
 				"inPath": {
 					"scope": "Message",
 					"name": "path"
-				},
+				}
+			}, {
 				"optNameFilter": {
 					"scope": "Custom",
 					"name": ""
 				},
 				"optRecursive": false
-			},
-			"ports": [
-				{
-					"id": "62aa64cc-fce7-4d68-b32a-9fe4d96378e0",
-					"type": "default",
-					"selected": false,
-					"name": "out_62aa64cc-fce7-4d68-b32a-9fe4d96378e0",
-					"parentNode": "4dd88fa2-9c22-4f2c-846a-a2e3bb572693",
-					"links": [
-						"e4b2c7f4-23fb-4420-9127-8bc3a1554095"
-					],
-					"in": false,
-					"label": "simple",
-					"position": "out"
-				},
-				{
-					"id": "94d72a91-4ee8-48aa-9931-2adc5b726be5",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "4dd88fa2-9c22-4f2c-846a-a2e3bb572693",
-					"links": [
-						"75f47d0e-5c8d-41c6-ad3c-07a895c9715c"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "4dd88fa2-9c22-4f2c-846a-a2e3bb572693",
-				"name": "Delete Duplicate",
-				"icon": "M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z",
-				"color": "#dbdfa0",
-				"namespace": "Core.FileSystem.Delete",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "Delete Duplicate",
-						"color": "#dbdfa0",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
-					},
-					{
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
 						"inPath": {
-							"scope": "Message",
-							"name": "path"
-						}
-					},
-					{
-						"optNameFilter": {
-							"scope": "Custom",
-							"name": ""
-						},
-						"optRecursive": false
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Input",
 							"type": "object",
+							"title": "Path",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
 							"properties": {
-								"inPath": {
-									"type": "object",
-									"title": "Path",
-									"variableType": "String",
-									"messageScope": true,
-									"customScope": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Message",
+						"name": "path"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optNameFilter": {
+							"type": "object",
+							"title": "Name Filter",
+							"variableType": "String",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
 								}
 							}
 						},
-						"uiSchema": {
-							"inPath": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"inPath": {
-								"scope": "Custom",
-								"name": ""
-							}
+						"optRecursive": {
+							"title": "Recursive",
+							"type": "boolean"
 						}
+					}
+				},
+				"uiSchema": {
+					"optNameFilter": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optNameFilter": {
+						"scope": "Custom",
+						"name": ""
 					},
-					{
-						"schema": {
-							"title": "Options",
+					"optRecursive": false
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "fc384002-6b04-4b7d-8109-35350c66ce6e",
+		"type": "simple",
+		"selected": true,
+		"x": 1806,
+		"y": 291,
+		"extras": {
+			"optNodes": {
+				"all": false,
+				"ids": ["b89a0cc7-29dd-4f3a-ad89-1926b1434907"]
+			}
+		},
+		"ports": [{
+			"id": "4d0da34f-5d6a-446b-916c-f3cb1734b1ac",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "fc384002-6b04-4b7d-8109-35350c66ce6e",
+			"links": ["08aa982d-1119-489b-96c0-60aa09e19f4b", "b22c808c-444f-4760-a436-b65f13f2a583"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "fc384002-6b04-4b7d-8109-35350c66ce6e",
+			"name": "Go To Next File",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.GoTo",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Go To Next File",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"optNodes": {
+					"all": false,
+					"ids": ["b89a0cc7-29dd-4f3a-ad89-1926b1434907"]
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"inputs": 1,
+					"outputs": 1,
+					"properties": {
+						"optNodes": {
 							"type": "object",
+							"title": "",
 							"properties": {
-								"optNameFilter": {
-									"type": "object",
-									"title": "Name Filter",
-									"variableType": "String",
-									"customScope": true,
-									"messageOnly": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
+								"ids": {
+									"title": "",
+									"type": "array",
+									"items": {
+										"type": "string"
 									}
 								},
-								"optRecursive": {
-									"title": "Recursive",
+								"all": {
+									"title": "All",
 									"type": "boolean"
 								}
 							}
-						},
-						"uiSchema": {
-							"optNameFilter": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"optNameFilter": {
-								"scope": "Custom",
-								"name": ""
-							},
-							"optRecursive": false
 						}
 					}
-				],
-				"outputs": 1,
-				"inputs": 1
-			}
-		},
-		{
-			"id": "bc075aec-856a-485b-868c-84111274efd1",
-			"type": "simple",
-			"selected": true,
-			"x": 1545,
-			"y": 332,
-			"extras": {
-				"optNodes": {
-					"all": false,
-					"ids": [
-						"75179571-40d5-4613-8c8a-37fb2388719a"
-					]
-				}
-			},
-			"ports": [
-				{
-					"id": "55755317-e3c4-43bf-952d-5dc41b550a6c",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "bc075aec-856a-485b-868c-84111274efd1",
-					"links": [
-						"a9cc9293-5e40-4fa6-8897-a04a5e45bd0c",
-						"e4b2c7f4-23fb-4420-9127-8bc3a1554095"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "bc075aec-856a-485b-868c-84111274efd1",
-				"name": "Go To Next File",
-				"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
-				"color": "#444",
-				"namespace": "Core.Flow.GoTo",
-				"version": "1.11.6",
-				"abc": [
-					{
-						"name": "Go To Next File",
-						"color": "#444",
-						"delayBefore": 0,
-						"delayAfter": 0,
-						"continueOnError": false,
-						"version": "1.11.6"
+				},
+				"uiSchema": {
+					"optNodes": {
+						"ui:field": "catch"
 					},
-					{
-						"optNodes": {
-							"all": false,
-							"ids": [
-								"75179571-40d5-4613-8c8a-37fb2388719a"
-							]
-						}
+					"ui:order": ["optNodes"]
+				},
+				"formData": {
+					"optNodes": {
+						"all": false,
+						"ids": ["b89a0cc7-29dd-4f3a-ad89-1926b1434907"]
 					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"inputs": 1,
-							"outputs": 1,
-							"properties": {
-								"optNodes": {
-									"type": "object",
-									"title": "",
-									"properties": {
-										"ids": {
-											"title": "",
-											"type": "array",
-											"items": {
-												"type": "string"
-											}
-										},
-										"all": {
-											"title": "All",
-											"type": "boolean"
-										}
-									}
-								}
-							}
-						},
-						"uiSchema": {
-							"optNodes": {
-								"ui:field": "catch"
-							},
-							"ui:order": [
-								"optNodes"
-							]
-						},
-						"formData": {
-							"optNodes": {
-								"ids": [],
-								"type": "goto",
-								"all": false
-							}
-						}
-					}
-				],
-				"outputs": 0,
-				"inputs": 1
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "9bfd59bb-2eae-4257-90e3-00ed8897ea20",
+		"type": "simple",
+		"selected": true,
+		"x": 1248,
+		"y": 288,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
 			}
 		},
-		{
-			"id": "f2c2b7a6-303a-48eb-8a2a-626ddf90dabb",
-			"type": "simple",
-			"selected": true,
-			"x": 987,
-			"y": 329,
-			"extras": {
+		"ports": [{
+			"id": "55f5de6b-09a4-45d3-a963-55dd56b96008",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "9bfd59bb-2eae-4257-90e3-00ed8897ea20",
+			"links": ["f7a5e8dd-f3a9-4f62-b49b-c1f3f7677644"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "9bfd59bb-2eae-4257-90e3-00ed8897ea20",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
 				"outResult": {
 					"scope": "Message",
 					"name": "error"
 				}
-			},
-			"ports": [
-				{
-					"id": "9fcf60b8-7f6f-4945-9b6f-a57f02570108",
-					"type": "default",
-					"selected": false,
-					"name": "in",
-					"parentNode": "f2c2b7a6-303a-48eb-8a2a-626ddf90dabb",
-					"links": [
-						"c88efc5b-76f9-4e67-807a-32c9be90d1cb"
-					],
-					"in": true,
-					"label": "simple",
-					"position": "in"
-				}
-			],
-			"model": {
-				"id": "f2c2b7a6-303a-48eb-8a2a-626ddf90dabb",
-				"name": "Stop",
-				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
-				"color": "#fb2727",
-				"namespace": "Core.Flow.Stop",
-				"version": "1.11.6",
-				"abc": [
-					{},
-					{
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
 						"outResult": {
-							"scope": "Message",
-							"name": "error"
-						}
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Output",
 							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
 							"properties": {
-								"outResult": {
-									"type": "object",
-									"title": "Error",
-									"variableType": "String",
-									"messageOnly": true,
-									"properties": {
-										"scope": {
-											"type": "string"
-										},
-										"name": {
-											"type": "string"
-										}
-									}
-								}
-							}
-						},
-						"uiSchema": {
-							"ui:order": [
-								"outResult"
-							],
-							"outResult": {
-								"ui:field": "variable"
-							}
-						},
-						"formData": {
-							"outResult": {
-								"scope": "Message",
-								"name": "error"
-							}
-						}
-					}
-				],
-				"outputs": 0,
-				"inputs": 1
-			}
-		},
-		{
-			"id": "81b304c1-8a39-4349-bec5-386259f8266a",
-			"type": "simple",
-			"selected": true,
-			"x": 119,
-			"y": -23,
-			"extras": {
-				"optText": "##### Duplicate File Remover How-To \n\nThis template uses *Cryptography* and *File System* nodes to remove, not recursively,\nduplicated files in a given directory in your file system.\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Cryptography package icon, install it.\n\n**5.** Edit the Config Node\n\n**6.** Set the msg.dir field to the full filepath of the directory you want to\ncheck for duplicated files."
-			},
-			"ports": [],
-			"model": {
-				"id": "81b304c1-8a39-4349-bec5-386259f8266a",
-				"name": "Comment",
-				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
-				"color": "#FBE364",
-				"namespace": "Core.Flow.Comment",
-				"version": "1.11.6",
-				"abc": [
-					{},
-					{
-						"optText": "##### Duplicate File Remover How-To \n\nThis template uses *Cryptography* and *File System* nodes to remove, not recursively,\nduplicated files in a given directory in your file system.\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Cryptography package icon, install it.\n\n**5.** Edit the Config Node\n\n**6.** Set the msg.dir field to the full filepath of the directory you want to\ncheck for duplicated files."
-					}
-				],
-				"xyz": [
-					{
-						"schema": {
-							"title": "Options",
-							"type": "object",
-							"properties": {
-								"comment": {
-									"title": "Comment",
+								"scope": {
 									"type": "string"
 								},
-								"optText": {
-									"title": "Text",
+								"name": {
 									"type": "string"
 								}
 							}
-						},
-						"uiSchema": {
-							"optText": {
-								"ui:description": "Comment",
-								"ui:widget": "hidden",
-								"ui:options": {
-									"rows": 8
-								}
-							},
-							"comment": {
-								"ui:widget": "hidden",
-								"ui:options": {
-									"rows": 6
-								}
-							}
-						},
-						"formData": {
-							"optText": "##### Duplicate File Remover How-To \n\nThis template uses *Cryptography* and *File System* nodes to remove, not recursively,\nduplicated files in a given directory in your file system.\n\nFollow these steps to test this template;\n\n**1.** Go to Repositories screen in Admin Console.\n\n**2.** Add [Testing](https://packages.robomotion.io/testing) package repository url.\n\n**3.** Go to Flow Designer and press package icon above the node palette.\n\n**4.** You should see Cryptography package icon, install it.\n\n**5.** Edit the Config Node\n\n**6.** Set the msg.dir field to the full filepath of the directory you want to\ncheck for duplicated files."
 						}
 					}
-				],
-				"outputs": 0,
-				"inputs": 0
-			}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
 		}
-	],
+	}, {
+		"id": "afbf8315-e4ec-4d32-92f2-afb35fe2fd57",
+		"type": "simple",
+		"selected": true,
+		"x": 378.9130434782609,
+		"y": -65.08695652173913,
+		"extras": {
+			"optText": "##### Duplicate File Remover How-To \n\nThis template uses *Cryptography* and *File System* nodes to remove, not recursively,\nduplicated files in a given directory in your file system.\n\nFollow these steps to test this template;\n\n**1.** Go to Flow Designer and press package icon above the node palette.\n\n**2.** You should see Cryptography package icon, install it.\n\n**3.** Edit the Config Node\n\n**4.** Set the msg.dir field to the full filepath of the directory you want to\ncheck for duplicated files."
+		},
+		"ports": [],
+		"model": {
+			"id": "afbf8315-e4ec-4d32-92f2-afb35fe2fd57",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Duplicate File Remover How-To \n\nThis template uses *Cryptography* and *File System* nodes to remove, not recursively,\nduplicated files in a given directory in your file system.\n\nFollow these steps to test this template;\n\n**1.** Go to Flow Designer and press package icon above the node palette.\n\n**2.** You should see Cryptography package icon, install it.\n\n**3.** Edit the Config Node\n\n**4.** Set the msg.dir field to the full filepath of the directory you want to\ncheck for duplicated files."
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Duplicate File Remover How-To \n\nThis template uses *Cryptography* and *File System* nodes to remove, not recursively,\nduplicated files in a given directory in your file system.\n\nFollow these steps to test this template;\n\n**1.** Go to Flow Designer and press package icon above the node palette.\n\n**2.** You should see Cryptography package icon, install it.\n\n**3.** Edit the Config Node\n\n**4.** Set the msg.dir field to the full filepath of the directory you want to\ncheck for duplicated files."
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
 	"subFlows": []
 }
