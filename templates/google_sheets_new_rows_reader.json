@@ -1,0 +1,1222 @@
+{
+	"nodes": [{
+		"id": "057da901-08b4-4ef7-91f6-23b86fc729d4",
+		"type": "simple",
+		"selected": true,
+		"x": 491.7308125198723,
+		"y": 185.06414585320562,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "fc776410-107b-47f7-8645-17185990586f",
+			"type": "default",
+			"selected": false,
+			"name": "out_fc776410-107b-47f7-8645-17185990586f",
+			"parentNode": "057da901-08b4-4ef7-91f6-23b86fc729d4",
+			"links": ["0b8fe81d-e259-4010-bc8b-a6e7b3505094"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "057da901-08b4-4ef7-91f6-23b86fc729d4",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "c7d78057-8f5d-4236-be54-ba1bda368ddb",
+		"type": "simple",
+		"selected": true,
+		"x": 762.9147054646573,
+		"y": 347,
+		"extras": {
+			"outputs": 1,
+			"func": "if (msg.table.rows !== null){\n  if (msg.table.rows.length > msg.len){\n  msg.newRows = true;\n  var counter = msg.table.rows.length - msg.len;\n  while (counter > 0){\n  msg.text += JSON.stringify(msg.table.rows[msg.table.rows.length-counter]) + \"\\n\";\n  counter--;\n}\n} else {\n  msg.newRows = false;\n}\nmsg.len = msg.table.rows.length;\n} else {\n  msg.newRows = false;\n  msg.len = 0;\n}\n\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "05a8858f-8bb8-4aa7-b339-7f56c54a1336",
+			"type": "default",
+			"selected": false,
+			"name": "out_05a8858f-8bb8-4aa7-b339-7f56c54a1336",
+			"parentNode": "c7d78057-8f5d-4236-be54-ba1bda368ddb",
+			"links": ["9a7f6e99-7235-44ff-bd62-b522b4e06deb"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "5e12a20d-130e-442a-a48f-856c918b11a4",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c7d78057-8f5d-4236-be54-ba1bda368ddb",
+			"links": ["742d1172-61db-4e27-a539-953a4102ede2"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c7d78057-8f5d-4236-be54-ba1bda368ddb",
+			"name": "Function",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Function",
+				"version": "1.11.6",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"func": "if (msg.table.rows !== null){\n  if (msg.table.rows.length > msg.len){\n  msg.newRows = true;\n  var counter = msg.table.rows.length - msg.len;\n  while (counter > 0){\n  msg.text += JSON.stringify(msg.table.rows[msg.table.rows.length-counter]) + \"\\n\";\n  counter--;\n}\n} else {\n  msg.newRows = false;\n}\nmsg.len = msg.table.rows.length;\n} else {\n  msg.newRows = false;\n  msg.len = 0;\n}\n\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "if (msg.table.rows !== null){\n  if (msg.table.rows.length > msg.len){\n  msg.newRows = true;\n  var counter = msg.table.rows.length - msg.len;\n  while (counter > 0){\n  msg.text += JSON.stringify(msg.table.rows[msg.table.rows.length-counter]) + \"\\n\";\n  counter--;\n}\n} else {\n  msg.newRows = false;\n}\nmsg.len = msg.table.rows.length;\n} else {\n  msg.newRows = false;\n  msg.len = 0;\n}\n\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "14d980e6-c5f0-484c-98b6-e4ccdbf9abac",
+		"type": "simple",
+		"selected": true,
+		"x": 1019.1428835187712,
+		"y": 331.7838596865363,
+		"extras": {
+			"optConditions": ["msg.newRows === true", "msg.newRows === false"],
+			"delayAfter": 20
+		},
+		"ports": [{
+			"id": "8e5e7858-b23b-4f63-b3c9-ed1c4e5d5f13",
+			"type": "default",
+			"selected": false,
+			"name": "out_8e5e7858-b23b-4f63-b3c9-ed1c4e5d5f13",
+			"parentNode": "14d980e6-c5f0-484c-98b6-e4ccdbf9abac",
+			"links": ["00854f15-885a-4bb8-8cd4-93d39efac20c"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "92a5f4b9-c66f-4155-ba30-3964ce5f5e32",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "14d980e6-c5f0-484c-98b6-e4ccdbf9abac",
+			"links": ["9a7f6e99-7235-44ff-bd62-b522b4e06deb"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}, {
+			"id": "4514fe35-2f96-40fd-8b0e-d5935f202bae",
+			"type": "default",
+			"selected": false,
+			"name": "out_4514fe35-2f96-40fd-8b0e-d5935f202bae",
+			"parentNode": "14d980e6-c5f0-484c-98b6-e4ccdbf9abac",
+			"links": ["273ea595-d133-40c2-a1dd-2da756714ff9"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "14d980e6-c5f0-484c-98b6-e4ccdbf9abac",
+			"name": "New Check",
+			"icon": "M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29",
+			"color": "#1DE9B6",
+			"namespace": "Core.Programming.Switch",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "New Check",
+				"color": "#1DE9B6",
+				"delayBefore": 0,
+				"delayAfter": 20,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"optConditions": ["msg.newRows === true", "msg.newRows === false"]
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optConditions": {
+							"title": "",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optConditions": {
+						"ui:description": "Output Ports",
+						"items": {
+							"ui:placeholder": "Enter a JS expression"
+						},
+						"ui:options": {
+							"orderable": false
+						}
+					}
+				},
+				"formData": {
+					"optConditions": ["msg.newnode === true", "msg.newnode === false"]
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "b3bc9c07-8504-4834-9af5-b0062c7b3822",
+		"type": "simple",
+		"selected": true,
+		"x": 216.03829456620687,
+		"y": 342.70512202097063,
+		"extras": {},
+		"ports": [{
+			"id": "1cd9c4e9-efc1-4d91-8e07-1591d5e9ec0a",
+			"type": "default",
+			"selected": false,
+			"name": "out_1cd9c4e9-efc1-4d91-8e07-1591d5e9ec0a",
+			"parentNode": "b3bc9c07-8504-4834-9af5-b0062c7b3822",
+			"links": ["ee27b2fb-9869-4a81-941a-7e54bd39e205"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "b3bc9c07-8504-4834-9af5-b0062c7b3822",
+			"name": "Read Rows",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.Label",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Read Rows",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}],
+			"xyz": [],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "450dc1be-a628-409f-ba68-1475cf647e14",
+		"type": "simple",
+		"selected": true,
+		"x": 1249.7499218982923,
+		"y": 310.0827567669082,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "textFilePath"
+			},
+			"inText": {
+				"scope": "Message",
+				"name": "text"
+			},
+			"optMode": "append",
+			"optBase64": false
+		},
+		"ports": [{
+			"id": "f78383d9-bde6-4312-8dd1-782ded9e37c7",
+			"type": "default",
+			"selected": false,
+			"name": "out_f78383d9-bde6-4312-8dd1-782ded9e37c7",
+			"parentNode": "450dc1be-a628-409f-ba68-1475cf647e14",
+			"links": ["19b75dc9-4909-490e-8049-4bb408cb56fb"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "733982aa-d8e4-4bfd-81f3-69a25fe6dbec",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "450dc1be-a628-409f-ba68-1475cf647e14",
+			"links": ["00854f15-885a-4bb8-8cd4-93d39efac20c"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "450dc1be-a628-409f-ba68-1475cf647e14",
+			"name": "Write File",
+			"icon": "M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z",
+			"color": "#dbdfa0",
+			"namespace": "Core.FileSystem.WriteFile",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Write File",
+				"version": "1.11.6",
+				"color": "#dbdfa0",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "textFilePath"
+				},
+				"inText": {
+					"scope": "Message",
+					"name": "text"
+				}
+			}, {
+				"optMode": "append",
+				"optBase64": false
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Path",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inText": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "String",
+							"messageOnly": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inText": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inText"]
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Custom",
+						"name": "C:/Users/Rohat/Desktop/sampletext.txt"
+					},
+					"inText": {
+						"scope": "Message",
+						"name": "text"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optMode": {
+							"title": "Write Mode",
+							"type": "string",
+							"enum": ["append", "truncate"],
+							"enumNames": ["Append", "Truncate"]
+						},
+						"optBase64": {
+							"title": "Base64",
+							"type": "boolean"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optMode", "optBase64"]
+				},
+				"formData": {
+					"optMode": "append",
+					"optBase64": false
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "5b442ff3-fad4-4a82-beb5-e7fe676b8261",
+		"type": "simple",
+		"selected": true,
+		"x": 1448.15414299341,
+		"y": 359.4614642516475,
+		"extras": {
+			"optNodes": {
+				"all": false,
+				"ids": ["b3bc9c07-8504-4834-9af5-b0062c7b3822"]
+			}
+		},
+		"ports": [{
+			"id": "7215b41d-57a4-4a5d-812f-3603ad2b7f5f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "5b442ff3-fad4-4a82-beb5-e7fe676b8261",
+			"links": ["273ea595-d133-40c2-a1dd-2da756714ff9", "19b75dc9-4909-490e-8049-4bb408cb56fb"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "5b442ff3-fad4-4a82-beb5-e7fe676b8261",
+			"name": "Go To Read Rows",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.GoTo",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Go To Read Rows",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": null,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"optNodes": {
+					"all": false,
+					"ids": ["b3bc9c07-8504-4834-9af5-b0062c7b3822"]
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"inputs": 1,
+					"outputs": 1,
+					"properties": {
+						"optNodes": {
+							"type": "object",
+							"title": "",
+							"properties": {
+								"ids": {
+									"title": "",
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"all": {
+									"title": "All",
+									"type": "boolean"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optNodes": {
+						"ui:field": "catch"
+					},
+					"ui:order": ["optNodes"]
+				},
+				"formData": {
+					"optNodes": {
+						"all": false,
+						"ids": ["b3bc9c07-8504-4834-9af5-b0062c7b3822"]
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "e613990d-a37f-4b70-ad13-7f33436fad9e",
+		"type": "simple",
+		"selected": true,
+		"x": 489.1153660629119,
+		"y": 237.26902669203065,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.text = \"\";// Don't edit if not required.\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/your_spreadsheet_id/\"; //Url of spreadsheet that you want to read rows.\nmsg.textFilePath = \"C:/Users/user/Desktop/newrows.txt\"; // Path of text file.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "3bd4b8da-be30-4096-88f5-5b52af87785b",
+			"type": "default",
+			"selected": false,
+			"name": "out_3bd4b8da-be30-4096-88f5-5b52af87785b",
+			"parentNode": "e613990d-a37f-4b70-ad13-7f33436fad9e",
+			"links": ["6100e94f-780c-4e02-8f3e-8e49c30dc939"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "f9d1b49a-dbe6-47ac-88d5-6440c3623cd3",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e613990d-a37f-4b70-ad13-7f33436fad9e",
+			"links": ["0b8fe81d-e259-4010-bc8b-a6e7b3505094"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e613990d-a37f-4b70-ad13-7f33436fad9e",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.text = \"\";// Don't edit if not required.\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/your_spreadsheet_id/\"; //Url of spreadsheet that you want to read rows.\nmsg.textFilePath = \"C:/Users/user/Desktop/newrows.txt\"; // Path of text file.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.text = \"\";// Don't edit if not required.\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/your_spreadsheet_id/\"; //Url of spreadsheet that you want to read rows.\nmsg.textFilePath = \"C:/Users/user/Desktop/newrows.txt\"; // Path of text file.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "9a12a396-e9ba-4372-9d62-8c248fdbd027",
+		"type": "simple",
+		"selected": true,
+		"x": 498.0168225761829,
+		"y": 288.91038065282197,
+		"extras": {
+			"inUrl": {
+				"scope": "Message",
+				"name": "spreadsheetUrl"
+			},
+			"outSpreadsheetId": {
+				"name": "spreadsheet_id",
+				"scope": "Message"
+			},
+			"optCredentials": {
+				"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+				"itemId": "20214890-5be8-41f4-bf73-425d2fd57881"
+			}
+		},
+		"ports": [{
+			"id": "b0af8518-8223-411c-8f5e-96498a8d0b14",
+			"type": "default",
+			"selected": false,
+			"name": "out_b0af8518-8223-411c-8f5e-96498a8d0b14",
+			"parentNode": "9a12a396-e9ba-4372-9d62-8c248fdbd027",
+			"links": ["98d54ac1-49ea-4051-af29-ed457c1b2ba6"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c50c0b8c-2c9b-401e-b5f3-a28288a30309",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "9a12a396-e9ba-4372-9d62-8c248fdbd027",
+			"links": ["6100e94f-780c-4e02-8f3e-8e49c30dc939"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "9a12a396-e9ba-4372-9d62-8c248fdbd027",
+			"name": "Open Spreadsheet",
+			"icon": "M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z",
+			"color": "#1fa463",
+			"namespace": "Robomotion.GoogleSheets.OpenSpreadsheet",
+			"version": "0.2.3",
+			"abc": [{
+				"name": "Open Spreadsheet",
+				"version": "0.2.3",
+				"color": "#1fa463",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inUrl": {
+					"scope": "Message",
+					"name": "spreadsheetUrl"
+				}
+			}, {
+				"outSpreadsheetId": {
+					"name": "spreadsheet_id",
+					"scope": "Message"
+				}
+			}, {
+				"optCredentials": {
+					"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+					"itemId": "20214890-5be8-41f4-bf73-425d2fd57881"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inUrl": {
+							"type": "object",
+							"title": "Spreadsheet URL",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inUrl": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inUrl": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inUrl"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outSpreadsheetId": {
+							"type": "object",
+							"title": "Spreadsheet Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outSpreadsheetId": {
+						"name": "spreadsheet_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outSpreadsheetId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outSpreadsheetId"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 6,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"formData": {},
+				"uiSchema": {
+					"optCredentials": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optCredentials"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "070fbd7d-7f14-44f8-9966-5eeacece3a10",
+		"type": "simple",
+		"selected": true,
+		"x": 504.37584640841783,
+		"y": 344.8850117301144,
+		"extras": {
+			"inFromCell": {
+				"name": "",
+				"scope": "Custom"
+			},
+			"inSpreadSheetId": {
+				"name": "spreadsheet_id",
+				"scope": "Message"
+			},
+			"inToCell": {
+				"name": "",
+				"scope": "Custom"
+			},
+			"outRange": {
+				"name": "table",
+				"scope": "Message"
+			},
+			"optHeaders": false,
+			"optJsonify": false,
+			"optTarget": "all-range"
+		},
+		"ports": [{
+			"id": "e517f583-79eb-4aa0-8e75-7d1a0b4ed464",
+			"type": "default",
+			"selected": false,
+			"name": "out_e517f583-79eb-4aa0-8e75-7d1a0b4ed464",
+			"parentNode": "070fbd7d-7f14-44f8-9966-5eeacece3a10",
+			"links": ["742d1172-61db-4e27-a539-953a4102ede2"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "8f6a1178-976f-4106-8e7e-3dab54191913",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "070fbd7d-7f14-44f8-9966-5eeacece3a10",
+			"links": ["ee27b2fb-9869-4a81-941a-7e54bd39e205", "98d54ac1-49ea-4051-af29-ed457c1b2ba6"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "070fbd7d-7f14-44f8-9966-5eeacece3a10",
+			"name": "Get Range",
+			"icon": "M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z",
+			"color": "#1fa463",
+			"namespace": "Robomotion.GoogleSheets.GetRange",
+			"version": "0.2.3",
+			"abc": [{}, {
+				"inFromCell": {
+					"name": "",
+					"scope": "Custom"
+				},
+				"inSpreadSheetId": {
+					"name": "spreadsheet_id",
+					"scope": "Message"
+				},
+				"inToCell": {
+					"name": "",
+					"scope": "Custom"
+				}
+			}, {
+				"outRange": {
+					"name": "table",
+					"scope": "Message"
+				}
+			}, {
+				"optHeaders": false,
+				"optJsonify": false,
+				"optTarget": "all-range"
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inFromCell": {
+							"type": "object",
+							"title": "From Cell",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inSpreadSheetId": {
+							"type": "object",
+							"title": "Spreadsheet Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inToCell": {
+							"type": "object",
+							"title": "To Cell",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inFromCell": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inSpreadSheetId": {
+						"name": "spreadsheet_id",
+						"scope": "Message"
+					},
+					"inToCell": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inFromCell": {
+						"ui:field": "variable"
+					},
+					"inSpreadSheetId": {
+						"ui:field": "variable"
+					},
+					"inToCell": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inSpreadSheetId", "inFromCell", "inToCell"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outRange": {
+							"type": "object",
+							"title": "Table",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outRange": {
+						"name": "table",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outRange": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outRange"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optHeaders": {
+							"type": "boolean",
+							"title": "Headers"
+						},
+						"optJsonify": {
+							"type": "boolean",
+							"title": "Jsonify"
+						},
+						"optTarget": {
+							"type": "string",
+							"title": "Target",
+							"multiple": true,
+							"enum": ["all-range", "specific-range"],
+							"enumNames": ["All Range", "Specific Range"]
+						}
+					}
+				},
+				"formData": {
+					"optHeaders": false,
+					"optJsonify": false,
+					"optTarget": "all-range"
+				},
+				"uiSchema": {
+					"ui:order": ["optTarget", "optHeaders", "optJsonify"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "9be59bbd-476e-4d99-8b39-2fd64c84c248",
+		"type": "simple",
+		"selected": true,
+		"x": 1664.1401563363943,
+		"y": 16.77846252773228,
+		"extras": {
+			"optText": "## Google Sheets New Rows Reader\r\n\r\nThis template uses *Google Sheets* and *File System* nodes for reading new rows from a spreadsheet and writing to end of a txt file.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Google Sheets package icon, install it.\r\n\r\n**3.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**5.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**6.** Go to Vaults and create new document item with this json key.\r\n\r\n**7.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**8.** Edit the Config Node.\r\n\r\n**9.**  Set the msg.spreadsheetUrl field to the url of spreadsheet that you want to read rows.\r\n```js\r\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/your_spreadsheet_id/\";\r\n```\r\n\r\n**10.**  Set the msg.textFilePath field to the path of text file.\r\n```js\r\nmsg.textFilePath = \"C:/Users/user/Documents/sample.txt\";\r\n```\r\n\r\n**11.** It checks spreadsheet every 20 seconds and you can change this from New Check Node's Delay After field."
+		},
+		"ports": [],
+		"model": {
+			"id": "9be59bbd-476e-4d99-8b39-2fd64c84c248",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## Google Sheets New Rows Reader\r\n\r\nThis template uses *Google Sheets* and *File System* nodes for reading new rows from a spreadsheet and writing to end of a txt file.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Google Sheets package icon, install it.\r\n\r\n**3.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**5.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**6.** Go to Vaults and create new document item with this json key.\r\n\r\n**7.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**8.** Edit the Config Node.\r\n\r\n**9.**  Set the msg.spreadsheetUrl field to the url of spreadsheet that you want to read rows.\r\n```js\r\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/your_spreadsheet_id/\";\r\n```\r\n\r\n**10.**  Set the msg.textFilePath field to the path of text file.\r\n```js\r\nmsg.textFilePath = \"C:/Users/user/Documents/sample.txt\";\r\n```\r\n\r\n**11.** It checks spreadsheet every 20 seconds and you can change this from New Check Node's Delay After field."
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## Google Sheets New Rows Reader\r\n\r\nThis template uses *Google Sheets* and *File System* nodes for reading new rows from a spreadsheet and writing to end of a txt file.\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Google Sheets package icon, install it.\r\n\r\n**3.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**5.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**6.** Go to Vaults and create new document item with this json key.\r\n\r\n**7.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**8.** Edit the Config Node.\r\n\r\n**9.**  Set the msg.spreadsheetUrl field to the url of spreadsheet that you want to read rows.\r\n```js\r\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/your_spreadsheet_id/\";\r\n```\r\n\r\n**10.**  Set the msg.textFilePath field to the path of text file.\r\n```js\r\nmsg.textFilePath = \"C:/Users/user/Documents/sample.txt\";\r\n```\r\n\r\n**11.** It checks spreadsheet every 20 seconds and you can change this from New Check Node's Delay After field."
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": []
+}
