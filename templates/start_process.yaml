@@ -1,0 +1,16 @@
+- name: Start Process
+  description: Runs a process existing in your computer
+  slug: start-process
+  icon: start_process_icon.png
+  screenshots:
+    - start_process_screenshot.png
+  author: Robomotion
+  category: Files
+  tags:
+    - start
+    - process
+    - run
+    - executable
+  applications:
+    - Javascript
+
