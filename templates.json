@@ -517,7 +517,7 @@
   },
   {
     "name": "Google Sheets Range to Excel",
-    "description": " Gets range from spreadsheet and writes to excel file.",
+    "description": "Gets range from spreadsheet and writes to excel file.",
     "slug": "google-sheets-range-to-excel",
     "icon": "google_sheets_range_to_excel_icon.png",
     "screenshots": [
@@ -1071,6 +1071,26 @@
     ]
   },
   {
+    "name": "Start Process",
+    "description": "Runs a process existing in your computer",
+    "slug": "start-process",
+    "icon": "start_process_icon.png",
+    "screenshots": [
+      "start_process_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "start",
+      "process",
+      "run",
+      "executable"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
     "name": "State Machine Example",
     "description": "Simulates a basic Finite State Machine example.",
     "slug": "state-machine-example",
@@ -1151,8 +1171,7 @@
       "translate"
     ],
     "applications": [
-      "Chrome",
-      "Filesystem"
+      "Chrome"
     ]
   },
   {

@@ -1,0 +1,685 @@
+{
+	"nodes": [
+		{
+			"id": "b772b1d5-b519-4e9b-ae9f-f0699dd3aa2f",
+			"type": "simple",
+			"selected": true,
+			"x": 449,
+			"y": 129,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "aec93f5e-8c6d-446c-8006-35ed4604f23d",
+					"type": "default",
+					"selected": false,
+					"name": "out_aec93f5e-8c6d-446c-8006-35ed4604f23d",
+					"parentNode": "b772b1d5-b519-4e9b-ae9f-f0699dd3aa2f",
+					"links": [
+						"8e96ed52-08c1-4f6c-91ed-5cdb2d1c384f"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "b772b1d5-b519-4e9b-ae9f-f0699dd3aa2f",
+				"name": "Inject",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "04dc7e13-a0e4-46a7-bcb7-56888dd5829d",
+			"type": "simple",
+			"selected": true,
+			"x": 713,
+			"y": 131,
+			"extras": {
+				"outputs": 1,
+				"func": "// Process path for Windows users.\nmsg.path = \"C:\\\\Windows\\\\system32\\\\calc.exe\";\n\n// Process path for Linux users.\n// msg.path = \"\";\n\n// Process path for Mac users.\n// msg.path = \"\";\n\n// Optional process arguments\nmsg.args = [];\n\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "d1d8b424-0c79-4b81-acff-ba0919b4582a",
+					"type": "default",
+					"selected": false,
+					"name": "out_d1d8b424-0c79-4b81-acff-ba0919b4582a",
+					"parentNode": "04dc7e13-a0e4-46a7-bcb7-56888dd5829d",
+					"links": [
+						"f6b8a475-b72d-4798-bda8-d8151a8fbb57"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "223f43fd-440c-4079-85a4-552fac8e886f",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "04dc7e13-a0e4-46a7-bcb7-56888dd5829d",
+					"links": [
+						"8e96ed52-08c1-4f6c-91ed-5cdb2d1c384f"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "04dc7e13-a0e4-46a7-bcb7-56888dd5829d",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Config",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "// Process path for Windows users.\nmsg.path = \"C:\\\\Windows\\\\system32\\\\calc.exe\";\n\n// Process path for Linux users.\n// msg.path = \"\";\n\n// Process path for Mac users.\n// msg.path = \"\";\n\n// Optional process arguments\nmsg.args = [];\n\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "// Process path for Windows users.\nmsg.path = \"C:\\\\Windows\\\\system32\\\\calc.exe\";\n\n// Process path for Linux users.\n// msg.path = \"\";\n\n// Process path for Mac users.\n// msg.path = \"\";\n\n// Optional process arguments\nmsg.args = [];\n\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "b03c3b3c-a170-4fa9-b480-1fd3a1df3a95",
+			"type": "simple",
+			"selected": true,
+			"x": 715,
+			"y": 194,
+			"extras": {
+				"inFilePath": {
+					"scope": "Message",
+					"name": "path"
+				},
+				"inArguments": {
+					"scope": "Message",
+					"name": "args"
+				},
+				"outPid": {
+					"scope": "Message",
+					"name": "pid"
+				},
+				"outStdout": {
+					"scope": "Message",
+					"name": "stdout"
+				}
+			},
+			"ports": [
+				{
+					"id": "d9d22d45-a64c-47a9-af67-40ceba9afcb5",
+					"type": "default",
+					"selected": false,
+					"name": "out_d9d22d45-a64c-47a9-af67-40ceba9afcb5",
+					"parentNode": "b03c3b3c-a170-4fa9-b480-1fd3a1df3a95",
+					"links": [
+						"579b711e-a6d8-4562-b121-a189fe7d6d13"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "7e2b9a22-664b-40e7-b9e3-6d04725f67cb",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "b03c3b3c-a170-4fa9-b480-1fd3a1df3a95",
+					"links": [
+						"f6b8a475-b72d-4798-bda8-d8151a8fbb57"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "b03c3b3c-a170-4fa9-b480-1fd3a1df3a95",
+				"name": "Start Process",
+				"icon": "M19,4C20.11,4 21,4.9 21,6V18A2,2 0 0,1 19,20H5C3.89,20 3,19.1 3,18V6A2,2 0 0,1 5,4H19M19,18V8H5V18H19Z",
+				"color": "#c5e9fc",
+				"namespace": "Core.Application.StartProcess",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Start Process",
+						"version": "1.11.6",
+						"color": "#c5e9fc",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false
+					},
+					{
+						"inFilePath": {
+							"scope": "Message",
+							"name": "path"
+						},
+						"inArguments": {
+							"scope": "Message",
+							"name": "args"
+						}
+					},
+					{
+						"outPid": {
+							"scope": "Message",
+							"name": "pid"
+						},
+						"outStdout": {
+							"scope": "Message",
+							"name": "stdout"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inFilePath": {
+									"type": "object",
+									"title": "Executable Path",
+									"variableType": "String",
+									"customScope": true,
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inArguments": {
+									"type": "object",
+									"title": "Arguments",
+									"variableType": "Array",
+									"messageScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"inCustomArgs": {
+									"title": "",
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inArguments": {
+								"ui:field": "variable"
+							},
+							"inFilePath": {
+								"ui:field": "variable"
+							},
+							"inCustomArgs": {
+								"ui:description": "Custom Arguments",
+								"items": {
+									"ui:placeholder": "ex: --arg=VALUE"
+								},
+								"ui:options": {
+									"orderable": false
+								}
+							},
+							"ui:order": [
+								"inFilePath",
+								"inArguments",
+								"inCustomArgs"
+							]
+						},
+						"formData": {
+							"inFilePath": {
+								"scope": "Message",
+								"name": "path"
+							},
+							"inArguments": {
+								"scope": "Message",
+								"name": "args"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPid": {
+									"type": "object",
+									"title": "Process ID",
+									"variableType": "Integer",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								},
+								"outStdout": {
+									"type": "object",
+									"title": "Standart Output",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPid": {
+								"ui:field": "variable"
+							},
+							"outStdout": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPid": {
+								"scope": "Message",
+								"name": "pid"
+							},
+							"outStdout": {
+								"scope": "Message",
+								"name": "stdout"
+							}
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "27aff303-293a-40f2-8608-26baae79ef61",
+			"type": "simple",
+			"selected": true,
+			"x": 713,
+			"y": 256,
+			"extras": {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			},
+			"ports": [
+				{
+					"id": "f8b803f7-6648-42cb-8340-5ce3330c69fb",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "27aff303-293a-40f2-8608-26baae79ef61",
+					"links": [
+						"579b711e-a6d8-4562-b121-a189fe7d6d13"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "27aff303-293a-40f2-8608-26baae79ef61",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "error"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Error",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"outResult"
+							],
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "error"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "079da5c5-e195-4d43-9c6e-ef3262923e3a",
+			"type": "simple",
+			"selected": true,
+			"x": 94,
+			"y": -22,
+			"extras": {
+				"optText": "##### Start Process How-To \n\nThis template uses *Process* nodes to run a process existing in your computer.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.path field to the full filepath of the process you want to\nexecute.\n\n**3.** Set the msg.args array to the list of arguments you want to pass to the\nprocess on execution. [Optional]"
+			},
+			"ports": [],
+			"model": {
+				"id": "079da5c5-e195-4d43-9c6e-ef3262923e3a",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "##### Start Process How-To \n\nThis template uses *Process* nodes to run a process existing in your computer.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.path field to the full filepath of the process you want to\nexecute.\n\n**3.** Set the msg.args array to the list of arguments you want to pass to the\nprocess on execution. [Optional]"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "##### Start Process How-To \n\nThis template uses *Process* nodes to run a process existing in your computer.\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.path field to the full filepath of the process you want to\nexecute.\n\n**3.** Set the msg.args array to the list of arguments you want to pass to the\nprocess on execution. [Optional]"
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": []
+}
