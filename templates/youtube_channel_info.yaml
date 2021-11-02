@@ -1,0 +1,18 @@
+- name: Youtube Channel Information
+  description: Extracts channel information from a Youtube channel
+  slug: youtube-channel-info
+  icon: youtube_channel_info_icon.png
+  screenshots:
+    - youtube_channel_info_screenshot1.png
+    - youtube_channel_info_screenshot2.png
+    - youtube_channel_info_screenshot3.png
+  author: Robomotion
+  category: Social Media
+  tags:
+    - youtube
+    - channel
+    - stats
+  applications:
+    - Chrome
+    - Javascript
+    - Google_Sheets
