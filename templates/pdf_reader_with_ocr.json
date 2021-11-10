@@ -1,0 +1,1633 @@
+{
+	"nodes": [{
+		"id": "e2bf1a6e-1d0b-46fe-a85b-b67a0e33728e",
+		"type": "simple",
+		"selected": true,
+		"x": 390.6883835119129,
+		"y": 120.73733799922788,
+		"extras": {
+			"inPath": {
+				"name": "pdfPath",
+				"scope": "Message"
+			},
+			"optPrefix": {
+				"scope": "Message",
+				"name": "imgName"
+			},
+			"outDir": {
+				"name": "outDirectory",
+				"scope": "Message"
+			},
+			"optExportType": "png",
+			"optPassword": {}
+		},
+		"ports": [{
+			"id": "2b8371f2-7338-4175-86cd-d4ad98f21c3b",
+			"type": "default",
+			"selected": false,
+			"name": "out_2b8371f2-7338-4175-86cd-d4ad98f21c3b",
+			"parentNode": "e2bf1a6e-1d0b-46fe-a85b-b67a0e33728e",
+			"links": ["27dddf46-75d0-41e9-a407-d20ff1df47e8"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "c611f95a-edf6-4c03-b605-38aae0521b74",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e2bf1a6e-1d0b-46fe-a85b-b67a0e33728e",
+			"links": ["530c05fe-e585-429c-833b-f3504d2fdd56"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e2bf1a6e-1d0b-46fe-a85b-b67a0e33728e",
+			"name": "Extract Images",
+			"icon": "M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2M10.1,11.4C10.08,11.44 9.81,13.16 8,16.09C8,16.09 4.5,17.91 5.33,19.27C6,20.35 7.65,19.23 9.07,16.59C9.07,16.59 10.89,15.95 13.31,15.77C13.31,15.77 17.17,17.5 17.7,15.66C18.22,13.8 14.64,14.22 14,14.41C14,14.41 12,13.06 11.5,11.2C11.5,11.2 12.64,7.25 10.89,7.3C9.14,7.35 9.8,10.43 10.1,11.4M10.91,12.44C10.94,12.45 11.38,13.65 12.8,14.9C12.8,14.9 10.47,15.36 9.41,15.8C9.41,15.8 10.41,14.07 10.91,12.44M14.84,15.16C15.42,15 17.17,15.31 17.1,15.64C17.04,15.97 14.84,15.16 14.84,15.16M7.77,17C7.24,18.24 6.33,19 6.1,19C5.87,19 6.8,17.4 7.77,17M10.91,10.07C10.91,10 10.55,7.87 10.91,7.92C11.45,8 10.91,10 10.91,10.07Z",
+			"color": "#f00",
+			"namespace": "Robomotion.PDFBox.ExtractImages",
+			"version": "1.4.2",
+			"abc": [{
+				"name": "Extract Images",
+				"version": "1.4.2",
+				"color": "#f00",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"name": "pdfPath",
+					"scope": "Message"
+				},
+				"optPrefix": {
+					"scope": "Message",
+					"name": "imgName"
+				},
+				"outDir": {
+					"name": "outDirectory",
+					"scope": "Message"
+				}
+			}, {
+				"optExportType": "png",
+				"optPassword": {}
+			}],
+			"xyz": [{
+				"formData": {
+					"inPath": {
+						"name": "pdfPath",
+						"scope": "Message"
+					},
+					"optPrefix": {
+						"scope": "Message",
+						"name": "imgName"
+					},
+					"outDir": {
+						"name": "outDirectory",
+						"scope": "Message"
+					}
+				},
+				"schema": {
+					"properties": {
+						"inPath": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "PDF File Path",
+							"type": "object",
+							"variableType": "String"
+						},
+						"optPrefix": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Prefix",
+							"type": "object",
+							"variableType": "String"
+						},
+						"outDir": {
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"title": "Output Directory",
+							"type": "object",
+							"variableType": "String"
+						}
+					},
+					"title": "Input",
+					"type": "object"
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"optPrefix": {
+						"ui:field": "variable"
+					},
+					"outDir": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "outDir", "optPrefix"]
+				}
+			}, {
+				"formData": {
+					"optExportType": "png",
+					"optPassword": {}
+				},
+				"schema": {
+					"properties": {
+						"optExportType": {
+							"enum": ["jpg", "png"],
+							"enumNames": ["JPG File", "PNG File"],
+							"title": "Export Type",
+							"type": "string"
+						},
+						"optPassword": {
+							"category": 4,
+							"properties": {
+								"itemId": {
+									"type": "string"
+								},
+								"vaultId": {
+									"type": "string"
+								}
+							},
+							"subtitle": "Password",
+							"title": "Password",
+							"type": "object"
+						}
+					},
+					"title": "Options",
+					"type": "object"
+				},
+				"uiSchema": {
+					"optPassword": {
+						"ui:field": "credentials"
+					},
+					"ui:order": ["optPassword", "optExportType"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "6e4ab246-4120-4bb3-87d8-789868407b35",
+		"type": "simple",
+		"selected": true,
+		"x": 380.9899708135001,
+		"y": 16.578853279263647,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "50b6bc2c-7a78-4e71-87df-d8f48ae76b46",
+			"type": "default",
+			"selected": false,
+			"name": "out_50b6bc2c-7a78-4e71-87df-d8f48ae76b46",
+			"parentNode": "6e4ab246-4120-4bb3-87d8-789868407b35",
+			"links": ["c919ae87-895c-411a-84f9-635a61ec8732"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "6e4ab246-4120-4bb3-87d8-789868407b35",
+			"name": "Start",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Start",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "98e5d259-d67b-4314-90f7-73e8fdc6ac92",
+		"type": "simple",
+		"selected": true,
+		"x": 675.299494623024,
+		"y": 80.61625935857248,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "imgPath"
+			},
+			"inBase64": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"outMessage": {
+				"scope": "Message",
+				"name": "text"
+			}
+		},
+		"ports": [{
+			"id": "488ef4db-2b56-416e-bd03-6fd8efc2182d",
+			"type": "default",
+			"selected": false,
+			"name": "out_488ef4db-2b56-416e-bd03-6fd8efc2182d",
+			"parentNode": "98e5d259-d67b-4314-90f7-73e8fdc6ac92",
+			"links": ["d407367f-c27c-4c19-af7f-1b4a070ba8d0"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "2a5a49b6-2058-435f-bc4d-488af67362aa",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "98e5d259-d67b-4314-90f7-73e8fdc6ac92",
+			"links": ["1b8d1324-d50a-4986-a3ce-c208f9c1b342"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "98e5d259-d67b-4314-90f7-73e8fdc6ac92",
+			"name": "Image To Text",
+			"icon": "M2 5V19H14V17H12C10.89 17 10 16.11 10 15V9C10 7.89 10.89 7 12 7H14V5M14 7V9H16V7M14 9H12V15H14M14 15V17H16V15M5 7H7C8.11 7 9 7.89 9 9V15C9 16.11 8.11 17 7 17H5C3.89 17 3 16.11 3 15V9C3 7.89 3.89 7 5 7M17 7V17H19V13H20V14H21V17H23V14H22V12H23V8H22V7M5 9V15H7V9M19 9H21V11H19Z",
+			"color": "#F56040",
+			"namespace": "Robomotion.Tesseract.ImageToText",
+			"version": "1.3.1",
+			"abc": [{
+				"name": "Image To Text",
+				"version": "1.3.1",
+				"color": "#F56040",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "imgPath"
+				},
+				"inBase64": {
+					"scope": "Custom",
+					"name": ""
+				}
+			}, {
+				"outMessage": {
+					"scope": "Message",
+					"name": "text"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Image Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inBase64": {
+							"type": "object",
+							"title": "Base64 Data",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inBase64": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inBase64"]
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Message",
+						"name": "imgPath"
+					},
+					"inBase64": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outMessage": {
+							"type": "object",
+							"title": "Text",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						}
+					}
+				},
+				"uiSchema": {
+					"outMessage": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outMessage"]
+				},
+				"formData": {
+					"outMessage": {
+						"scope": "Message",
+						"name": "text"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "dd4ec025-5767-48a7-9675-9238876d97c1",
+		"type": "simple",
+		"selected": true,
+		"x": 677.8550501785796,
+		"y": 131.2733900086841,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.texttowrite = msg.text.split('Issued: ',2);\nmsg.title = msg.texttowrite[1].split(' ');\nvar splittedStr = msg.title[1].split(' ');\nvar txt = msg.title[0] + \" \" + splittedStr[0];\nmsg.cellIssued = \"A\" + msg.rownumber;\nmsg.cellResult = \"B\" + msg.rownumber;\nmsg.rownumber += 1;\nmsg.value = txt.substring(0, txt.length - 9);\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "08d59063-d303-4cf8-8f03-e3caa5f2606d",
+			"type": "default",
+			"selected": false,
+			"name": "out_08d59063-d303-4cf8-8f03-e3caa5f2606d",
+			"parentNode": "dd4ec025-5767-48a7-9675-9238876d97c1",
+			"links": ["0f644b87-490e-477d-8e06-57d9bc01ee16"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "3d305b8a-c856-4887-8403-bafe928be328",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "dd4ec025-5767-48a7-9675-9238876d97c1",
+			"links": ["d407367f-c27c-4c19-af7f-1b4a070ba8d0"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "dd4ec025-5767-48a7-9675-9238876d97c1",
+			"name": "Parse Text",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Parse Text",
+				"color": "#F27925",
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.texttowrite = msg.text.split('Issued: ',2);\nmsg.title = msg.texttowrite[1].split(' ');\nvar splittedStr = msg.title[1].split(' ');\nvar txt = msg.title[0] + \" \" + splittedStr[0];\nmsg.cellIssued = \"A\" + msg.rownumber;\nmsg.cellResult = \"B\" + msg.rownumber;\nmsg.rownumber += 1;\nmsg.value = txt.substring(0, txt.length - 9);\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.texttowrite = msg.text.split('Issued: ',2);\nmsg.title = msg.texttowrite[1].split(' ');\nvar splittedStr = msg.title[1].split(' ');\nvar txt = msg.title[0] + \" \" + splittedStr[0];\nmsg.cellIssued = \"A\" + msg.rownumber;\nmsg.cellResult = \"B\" + msg.rownumber;\nmsg.rownumber += 1;\nmsg.value = txt.substring(0, txt.length - 9);\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "6104e823-ccd1-4fc3-b82f-c0ff44c26633",
+		"type": "simple",
+		"selected": true,
+		"x": 384.470037258683,
+		"y": 69.19005667535077,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.pdfPath = \"path_to_pdf\"; // Path of pdf that you downloaded.\nmsg.outDirectory = \"directory_path\"; // Path of directory where images will be extracted.\nmsg.imgName = \"extractedimg\"; // Prefix of images that will be extracted. Don't edit if not required.\nmsg.parentFolderId = \"your_parent_folder_id\"; //Drive folder id. (Note that if service account doesn't have permission to edit this folder it can not upload the file)\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/document_id/\"; //Url of spreadsheet.\nmsg.rownumber = 1; //Shouldn't edit.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "e0d00710-5369-456c-905b-09c21329bca4",
+			"type": "default",
+			"selected": false,
+			"name": "out_e0d00710-5369-456c-905b-09c21329bca4",
+			"parentNode": "6104e823-ccd1-4fc3-b82f-c0ff44c26633",
+			"links": ["530c05fe-e585-429c-833b-f3504d2fdd56"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "70fb50ab-a1c1-4dc1-9816-70cc6f76d240",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "6104e823-ccd1-4fc3-b82f-c0ff44c26633",
+			"links": ["c919ae87-895c-411a-84f9-635a61ec8732"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "6104e823-ccd1-4fc3-b82f-c0ff44c26633",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"version": "1.11.6",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"func": "msg.pdfPath = \"path_to_pdf\"; // Path of pdf that you downloaded.\nmsg.outDirectory = \"directory_path\"; // Path of directory where images will be extracted.\nmsg.imgName = \"extractedimg\"; // Prefix of images that will be extracted. Don't edit if not required.\nmsg.parentFolderId = \"your_parent_folder_id\"; //Drive folder id. (Note that if service account doesn't have permission to edit this folder it can not upload the file)\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/document_id/\"; //Url of spreadsheet.\nmsg.rownumber = 1; //Shouldn't edit.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.pdfPath = \"path_to_pdf\"; // Path of pdf that you downloaded.\nmsg.outDirectory = \"directory_path\"; // Path of directory where images will be extracted.\nmsg.imgName = \"extractedimg\"; // Prefix of images that will be extracted. Don't edit if not required.\nmsg.parentFolderId = \"your_parent_folder_id\"; //Drive folder id. (Note that if service account doesn't have permission to edit this folder it can not upload the file)\nmsg.spreadsheetUrl = \"https://docs.google.com/spreadsheets/d/document_id/\"; //Url of spreadsheet.\nmsg.rownumber = 1; //Shouldn't edit.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "bcce93d1-a7c9-4dea-9420-6a8a9847c7c8",
+		"type": "simple",
+		"selected": true,
+		"x": 390.77171684524615,
+		"y": 172.24561223090632,
+		"extras": {
+			"inDirPath": {
+				"scope": "Message",
+				"name": "outDirectory"
+			},
+			"inNameFilter": {
+				"scope": "Message",
+				"name": "imgName"
+			},
+			"outFiles": {
+				"scope": "Message",
+				"name": "files"
+			},
+			"optSort": "ascend",
+			"optTop": 10
+		},
+		"ports": [{
+			"id": "119f14f9-411b-4992-84b3-4649d6582f3c",
+			"type": "default",
+			"selected": false,
+			"name": "out_119f14f9-411b-4992-84b3-4649d6582f3c",
+			"parentNode": "bcce93d1-a7c9-4dea-9420-6a8a9847c7c8",
+			"links": ["17857375-7e16-4d90-b09f-20d66921f0f7"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "9dcea1ae-94c7-45bb-bf27-a436db32e637",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "bcce93d1-a7c9-4dea-9420-6a8a9847c7c8",
+			"links": ["27dddf46-75d0-41e9-a407-d20ff1df47e8"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "bcce93d1-a7c9-4dea-9420-6a8a9847c7c8",
+			"name": "List Directory",
+			"icon": "M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z",
+			"color": "#dbdfa0",
+			"namespace": "Core.FileSystem.List",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "List Directory",
+				"version": "1.11.6",
+				"color": "#dbdfa0",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inDirPath": {
+					"scope": "Message",
+					"name": "outDirectory"
+				},
+				"inNameFilter": {
+					"scope": "Message",
+					"name": "imgName"
+				}
+			}, {
+				"outFiles": {
+					"scope": "Message",
+					"name": "files"
+				}
+			}, {
+				"optSort": "ascend",
+				"optTop": 10
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inDirPath": {
+							"type": "object",
+							"title": "Directory Path",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inNameFilter": {
+							"type": "object",
+							"title": "Name Filter (Regex)",
+							"variableType": "String",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inDirPath": {
+						"ui:field": "variable"
+					},
+					"inNameFilter": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inDirPath", "inNameFilter"]
+				},
+				"formData": {
+					"inDirPath": {
+						"scope": "Message",
+						"name": "outDirectory"
+					},
+					"inNameFilter": {
+						"scope": "Message",
+						"name": "imgName"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outFiles": {
+							"type": "object",
+							"title": "Files",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outFiles": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outFiles": {
+						"scope": "Message",
+						"name": "files"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optSort": {
+							"type": "string",
+							"title": "Sort",
+							"enum": ["ascend", "descend", "modifiedlatest", "modifiedearlier"],
+							"enumNames": ["Name - Ascending", "Name - Descending", "Date - Last Modified", "Date - Earliest Modified"]
+						},
+						"optTop": {
+							"title": "Top",
+							"type": "number",
+							"minimum": 0
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optSort", "optTop"]
+				},
+				"formData": {
+					"optSort": "ascend",
+					"optTop": 10
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "15c71f65-e70e-410b-a449-a50f9cf5eebb",
+		"type": "simple",
+		"selected": true,
+		"x": 401.1883835119129,
+		"y": 221.27339000868415,
+		"extras": {
+			"optInput": {
+				"scope": "Message",
+				"name": "files"
+			},
+			"optOutput": {
+				"scope": "Message",
+				"name": "file"
+			}
+		},
+		"ports": [{
+			"id": "c566176c-eed8-4d62-8e57-3ae428dc2c7f",
+			"type": "default",
+			"selected": false,
+			"name": "out_c566176c-eed8-4d62-8e57-3ae428dc2c7f",
+			"parentNode": "15c71f65-e70e-410b-a449-a50f9cf5eebb",
+			"links": ["bc01b723-33f9-4f0d-bcfd-d8d89c387d6e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "6e755c33-2d99-4bcb-8af0-29b91c4d846e",
+			"type": "default",
+			"selected": false,
+			"name": "out_6e755c33-2d99-4bcb-8af0-29b91c4d846e",
+			"parentNode": "15c71f65-e70e-410b-a449-a50f9cf5eebb",
+			"links": ["730b4cc6-f3ed-4ef4-b6e2-54ea74b7d0e2"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "ffd92433-4275-4e72-b0dd-e315c57ea30f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "15c71f65-e70e-410b-a449-a50f9cf5eebb",
+			"links": ["17857375-7e16-4d90-b09f-20d66921f0f7", "3211bdbe-0537-4219-88a9-9feca58c2442"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "15c71f65-e70e-410b-a449-a50f9cf5eebb",
+			"name": "For Each",
+			"icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
+			"color": "#b9aeec",
+			"namespace": "Core.Programming.ForEach",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "For Each",
+				"version": "1.11.6",
+				"color": "#b9aeec",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"optInput": {
+					"scope": "Message",
+					"name": "files"
+				},
+				"optOutput": {
+					"scope": "Message",
+					"name": "file"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optInput": {
+							"type": "object",
+							"title": "Loop through object",
+							"variableType": "Array",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"optOutput": {
+							"type": "object",
+							"title": "Current Item",
+							"variableType": "string",
+							"messageScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optInput": {
+						"ui:field": "variable"
+					},
+					"optOutput": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optInput": {
+						"scope": "Message",
+						"name": "files"
+					},
+					"optOutput": {
+						"scope": "Message",
+						"name": "file"
+					}
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "246b8efb-53d9-4209-aeaf-848bb9225fdd",
+		"type": "simple",
+		"selected": true,
+		"x": 443.8693091947617,
+		"y": 333.5276984090897,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "42580674-894e-4341-a3b6-a41367393cb8",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "246b8efb-53d9-4209-aeaf-848bb9225fdd",
+			"links": ["e2f5e49f-5d11-4b3b-b6e8-17a32f633d68"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "246b8efb-53d9-4209-aeaf-848bb9225fdd",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "15f4d97a-705c-47a5-9228-2b9a873e1cd3",
+		"type": "simple",
+		"selected": true,
+		"x": 672.1212284447577,
+		"y": 28.59207132736543,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.imgPath = msg.outDirectory + msg.file.Name;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "331f54bc-b502-49c2-947f-9ff33f333a4c",
+			"type": "default",
+			"selected": false,
+			"name": "out_331f54bc-b502-49c2-947f-9ff33f333a4c",
+			"parentNode": "15f4d97a-705c-47a5-9228-2b9a873e1cd3",
+			"links": ["1b8d1324-d50a-4986-a3ce-c208f9c1b342"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "3df63ebb-a600-4515-af4a-40a01347b34f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "15f4d97a-705c-47a5-9228-2b9a873e1cd3",
+			"links": ["bc01b723-33f9-4f0d-bcfd-d8d89c387d6e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "15f4d97a-705c-47a5-9228-2b9a873e1cd3",
+			"name": "Set Image Path",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Set Image Path",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.imgPath = msg.outDirectory + msg.file.Name;\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.imgPath = msg.outDirectory + msg.file.Name;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "1da5fb1a-e50c-441b-b0a9-3409ce2407a8",
+		"type": "simple",
+		"selected": true,
+		"x": 938.5259903495196,
+		"y": 184.61560399624693,
+		"extras": {
+			"optNodes": {
+				"all": false,
+				"ids": ["fe2f60c5-e958-4ce4-b4cd-73b298029d0b"]
+			}
+		},
+		"ports": [{
+			"id": "4a974cc2-ddb3-4c68-adcb-b569fe4ebbf2",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "1da5fb1a-e50c-441b-b0a9-3409ce2407a8",
+			"links": ["73454479-b460-4df8-8769-68c02731eec4"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "1da5fb1a-e50c-441b-b0a9-3409ce2407a8",
+			"name": "Go To Read",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.GoTo",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Go To Read",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"optNodes": {
+					"all": false,
+					"ids": ["fe2f60c5-e958-4ce4-b4cd-73b298029d0b"]
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"inputs": 1,
+					"outputs": 1,
+					"properties": {
+						"optNodes": {
+							"type": "object",
+							"title": "",
+							"properties": {
+								"ids": {
+									"title": "",
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"all": {
+									"title": "All",
+									"type": "boolean"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optNodes": {
+						"ui:field": "catch"
+					},
+					"ui:order": ["optNodes"]
+				},
+				"formData": {
+					"optNodes": {
+						"all": false,
+						"ids": ["fe2f60c5-e958-4ce4-b4cd-73b298029d0b"]
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "fe2f60c5-e958-4ce4-b4cd-73b298029d0b",
+		"type": "simple",
+		"selected": true,
+		"x": 129.45456177809115,
+		"y": 224.59207132736543,
+		"extras": {},
+		"ports": [{
+			"id": "0853fd47-d2ec-4ec4-a4c0-6fd636e7707e",
+			"type": "default",
+			"selected": false,
+			"name": "out_0853fd47-d2ec-4ec4-a4c0-6fd636e7707e",
+			"parentNode": "fe2f60c5-e958-4ce4-b4cd-73b298029d0b",
+			"links": ["3211bdbe-0537-4219-88a9-9feca58c2442"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "fe2f60c5-e958-4ce4-b4cd-73b298029d0b",
+			"name": "Read",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.Label",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Read",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}],
+			"xyz": [],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "01e9e8c7-89ae-4fda-be8f-dcab55a878c9",
+		"type": "simple",
+		"selected": true,
+		"x": 416.9263081168589,
+		"y": 280.5719518228141,
+		"extras": {
+			"outputs": 1,
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/881674a1-224b-4f88-a8b2-52ce774aa806/subflows/01e9e8c7-89ae-4fda-be8f-dcab55a878c9.flow"
+		},
+		"ports": [{
+			"id": "23e782db-b14a-49bc-8cb6-ea389c14ebcd",
+			"type": "default",
+			"selected": false,
+			"name": "out_23e782db-b14a-49bc-8cb6-ea389c14ebcd",
+			"parentNode": "01e9e8c7-89ae-4fda-be8f-dcab55a878c9",
+			"links": ["e2f5e49f-5d11-4b3b-b6e8-17a32f633d68"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "6cbdf094-c5d5-4962-88da-2ef635926616",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "01e9e8c7-89ae-4fda-be8f-dcab55a878c9",
+			"links": ["730b4cc6-f3ed-4ef4-b6e2-54ea74b7d0e2"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "01e9e8c7-89ae-4fda-be8f-dcab55a878c9",
+			"name": "Upload to Google Drive",
+			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+			"color": "#646bf5",
+			"namespace": "Core.Flow.SubFlow",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Upload to Google Drive",
+				"version": "1.11.6",
+				"color": "#646bf5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/881674a1-224b-4f88-a8b2-52ce774aa806/subflows/01e9e8c7-89ae-4fda-be8f-dcab55a878c9.flow"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"subflow": {
+							"type": "string",
+							"properties": {}
+						}
+					}
+				},
+				"uiSchema": {
+					"subflow": {
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"ui:order": ["outputs", "*"]
+				},
+				"formData": {
+					"outputs": 1,
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/881674a1-224b-4f88-a8b2-52ce774aa806/subflows/01e9e8c7-89ae-4fda-be8f-dcab55a878c9.flow"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "3f9a6e99-99e1-48f4-8617-539cad1190fc",
+		"type": "simple",
+		"selected": true,
+		"x": 688.6784954671411,
+		"y": 183.1681619034561,
+		"extras": {
+			"outputs": 1,
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/881674a1-224b-4f88-a8b2-52ce774aa806/subflows/3f9a6e99-99e1-48f4-8617-539cad1190fc.flow"
+		},
+		"ports": [{
+			"id": "763ea49f-a603-40c8-b70b-7e4eea444cec",
+			"type": "default",
+			"selected": false,
+			"name": "out_763ea49f-a603-40c8-b70b-7e4eea444cec",
+			"parentNode": "3f9a6e99-99e1-48f4-8617-539cad1190fc",
+			"links": ["73454479-b460-4df8-8769-68c02731eec4"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "38082d9a-a9f2-4fbd-bad3-be6f344690ef",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "3f9a6e99-99e1-48f4-8617-539cad1190fc",
+			"links": ["0f644b87-490e-477d-8e06-57d9bc01ee16"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "3f9a6e99-99e1-48f4-8617-539cad1190fc",
+			"name": "Write to Google Sheets",
+			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+			"color": "#646bf5",
+			"namespace": "Core.Flow.SubFlow",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Write to Google Sheets",
+				"version": "1.11.6",
+				"color": "#646bf5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/881674a1-224b-4f88-a8b2-52ce774aa806/subflows/3f9a6e99-99e1-48f4-8617-539cad1190fc.flow"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"subflow": {
+							"type": "string",
+							"properties": {}
+						}
+					}
+				},
+				"uiSchema": {
+					"subflow": {
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"ui:order": ["outputs", "*"]
+				},
+				"formData": {
+					"outputs": 1,
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/881674a1-224b-4f88-a8b2-52ce774aa806/subflows/3f9a6e99-99e1-48f4-8617-539cad1190fc.flow"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "83c419da-f683-47f9-be9f-6a816ff0988d",
+		"type": "simple",
+		"selected": true,
+		"x": 1183.1643017673762,
+		"y": -190.13606769176388,
+		"extras": {
+			"optText": "#### Pdf Reader with OCR How-To\n \n This template uses Tesseract, PDFBox, File System, Google Sheets and Google Drive nodes to perform operations.\n \n1. Edit Config (Function) node\n\n2. Download the sample pdf file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/cards.pdf)\n\n3. Set the msg.pdfPath field to the path you downloaded the pdf file.\n\n4. Set the msg.outDirectory field to the path of directory where you want to extract images.\n\n5. Set the msg.parentFolderId field to the id of Google Drive folder that you want to upload file into.\n\n6. Set the msg.spreadsheetUrl field to the spreadsheet.\n\n7. Set the vault item to Connect node credentials for Google Sheets and Google Drive.\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "83c419da-f683-47f9-be9f-6a816ff0988d",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "#### Pdf Reader with OCR How-To\n \n This template uses Tesseract, PDFBox, File System, Google Sheets and Google Drive nodes to perform operations.\n \n1. Edit Config (Function) node\n\n2. Download the sample pdf file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/cards.pdf)\n\n3. Set the msg.pdfPath field to the path you downloaded the pdf file.\n\n4. Set the msg.outDirectory field to the path of directory where you want to extract images.\n\n5. Set the msg.parentFolderId field to the id of Google Drive folder that you want to upload file into.\n\n6. Set the msg.spreadsheetUrl field to the spreadsheet.\n\n7. Set the vault item to Connect node credentials for Google Sheets and Google Drive.\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "#### Pdf Reader with OCR How-To\n \n This template uses Tesseract, PDFBox, File System, Google Sheets and Google Drive nodes to perform operations.\n \n1. Edit Config (Function) node\n\n2. Download the sample pdf file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/cards.pdf)\n\n3. Set the msg.pdfPath field to the path you downloaded the pdf file.\n\n4. Set the msg.outDirectory field to the path of directory where you want to extract images.\n\n5. Set the msg.parentFolderId field to the id of Google Drive folder that you want to upload file into.\n\n6. Set the msg.spreadsheetUrl field to the spreadsheet.\n\n7. Set the vault item to Connect node credentials for Google Sheets and Google Drive.\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": [{
+		"id": "01e9e8c7-89ae-4fda-be8f-dcab55a878c9",
+		"flow": "{\"id\":\"01e9e8c7-89ae-4fda-be8f-dcab55a878c9\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"8e91c0be-9d65-4ca2-aa77-f32312a11059\",\"type\":\"default\",\"selected\":false,\"source\":\"9b823489-91aa-4eb6-a15e-6432d23b8858\",\"sourcePort\":\"fdab5904-2b9d-4d09-ae62-2ff294333fa1\",\"target\":\"cbae9cce-21ea-43f1-aa62-2161c361b3d4\",\"targetPort\":\"bf2d6241-22d3-4dee-904b-b809f1e76584\",\"points\":[{\"id\":\"759910c8-c66d-4e98-8d63-8fd8743da0e0\",\"selected\":false,\"x\":569,\"y\":213},{\"id\":\"091486b1-72ef-458d-af58-9efc3bb187ab\",\"selected\":false,\"x\":648,\"y\":214}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"f476b641-f185-47aa-a9b0-f4b384a4d0ce\",\"type\":\"default\",\"selected\":false,\"source\":\"cbae9cce-21ea-43f1-aa62-2161c361b3d4\",\"sourcePort\":\"eb7226dc-4529-4431-98f8-5ab73c7dc4f0\",\"target\":\"0773286a-c457-4f62-83d9-b7b6f1febda3\",\"targetPort\":\"71a52d27-be0e-4c33-b49e-3943d1412197\",\"points\":[{\"id\":\"e024fac6-b5a3-40b6-9b26-e735692910d5\",\"selected\":false,\"x\":850,\"y\":216},{\"id\":\"12d90ab0-c9f7-4f99-8949-2ab8dbd7fb46\",\"selected\":false,\"x\":660,\"y\":270}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"eaa71135-131f-4459-b8b8-265899ea5af9\",\"type\":\"default\",\"selected\":false,\"source\":\"0773286a-c457-4f62-83d9-b7b6f1febda3\",\"sourcePort\":\"702cf1ea-cc13-4b06-9717-b28d8e8db6c4\",\"target\":\"de8c0c0f-dc38-4b24-a6d2-314ef4acc978\",\"targetPort\":\"3b320637-241f-4dfe-af48-fbaf61f9bdd9\",\"points\":[{\"id\":\"da852ac1-6066-4252-ac58-2e0ab2a66049\",\"selected\":false,\"x\":862,\"y\":272},{\"id\":\"24d26d84-79db-482b-a1a0-fbf3820d37b3\",\"selected\":true,\"x\":975,\"y\":196}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"9b823489-91aa-4eb6-a15e-6432d23b8858\",\"type\":\"simple\",\"selected\":false,\"x\":368,\"y\":188,\"extras\":{},\"ports\":[{\"id\":\"fdab5904-2b9d-4d09-ae62-2ff294333fa1\",\"type\":\"default\",\"selected\":false,\"name\":\"out_fdab5904-2b9d-4d09-ae62-2ff294333fa1\",\"parentNode\":\"9b823489-91aa-4eb6-a15e-6432d23b8858\",\"links\":[\"8e91c0be-9d65-4ca2-aa77-f32312a11059\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"9b823489-91aa-4eb6-a15e-6432d23b8858\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"de8c0c0f-dc38-4b24-a6d2-314ef4acc978\",\"type\":\"simple\",\"selected\":false,\"x\":968,\"y\":173,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"3b320637-241f-4dfe-af48-fbaf61f9bdd9\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"de8c0c0f-dc38-4b24-a6d2-314ef4acc978\",\"links\":[\"eaa71135-131f-4459-b8b8-265899ea5af9\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"de8c0c0f-dc38-4b24-a6d2-314ef4acc978\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"cbae9cce-21ea-43f1-aa62-2161c361b3d4\",\"type\":\"simple\",\"selected\":false,\"x\":641,\"y\":191,\"extras\":{\"outDriveId\":{\"name\":\"drive_id\",\"scope\":\"Message\"},\"optCredentials\":{\"vaultId\":\"_\",\"itemId\":\"_\"}},\"ports\":[{\"id\":\"eb7226dc-4529-4431-98f8-5ab73c7dc4f0\",\"type\":\"default\",\"selected\":false,\"name\":\"out_eb7226dc-4529-4431-98f8-5ab73c7dc4f0\",\"parentNode\":\"cbae9cce-21ea-43f1-aa62-2161c361b3d4\",\"links\":[\"f476b641-f185-47aa-a9b0-f4b384a4d0ce\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"bf2d6241-22d3-4dee-904b-b809f1e76584\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"cbae9cce-21ea-43f1-aa62-2161c361b3d4\",\"links\":[\"8e91c0be-9d65-4ca2-aa77-f32312a11059\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"cbae9cce-21ea-43f1-aa62-2161c361b3d4\",\"name\":\"Connect\",\"icon\":\"M7.71,3.5L1.15,15L4.58,21L11.13,9.5M9.73,15L6.3,21H19.42L22.85,15M22.28,14L15.42,2H8.58L8.57,2L15.43,14H22.28Z\",\"color\":\"#ffd04b\",\"namespace\":\"Robomotion.GoogleDrive.Connect\",\"version\":\"0.1.3\",\"abc\":[{\"name\":\"Connect\",\"version\":\"0.1.3\",\"color\":\"#ffd04b\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"outDriveId\":{\"name\":\"drive_id\",\"scope\":\"Message\"}},{\"optCredentials\":{\"vaultId\":\"_\",\"itemId\":\"_\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Output\",\"properties\":{\"outDriveId\":{\"type\":\"object\",\"title\":\"Drive Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"outDriveId\":{\"name\":\"drive_id\",\"scope\":\"Message\"}},\"uiSchema\":{\"outDriveId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outDriveId\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Options\",\"properties\":{\"optCredentials\":{\"type\":\"object\",\"title\":\"Credentials\",\"subtitle\":\"Credentials\",\"category\":0,\"properties\":{\"itemId\":{\"type\":\"string\"},\"vaultId\":{\"type\":\"string\"}}}}},\"formData\":{},\"uiSchema\":{\"optCredentials\":{\"ui:field\":\"credentials\"},\"ui:order\":[\"optCredentials\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"0773286a-c457-4f62-83d9-b7b6f1febda3\",\"type\":\"simple\",\"selected\":true,\"x\":653,\"y\":247,\"extras\":{\"inDriveID\":{\"name\":\"drive_id\",\"scope\":\"Message\"},\"inFilePath\":{\"name\":\"pdfPath\",\"scope\":\"Message\"},\"inParentId\":{\"scope\":\"Message\",\"name\":\"parentFolderId\"},\"outDriveFileId\":{\"name\":\"file_id\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"702cf1ea-cc13-4b06-9717-b28d8e8db6c4\",\"type\":\"default\",\"selected\":false,\"name\":\"out_702cf1ea-cc13-4b06-9717-b28d8e8db6c4\",\"parentNode\":\"0773286a-c457-4f62-83d9-b7b6f1febda3\",\"links\":[\"eaa71135-131f-4459-b8b8-265899ea5af9\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"71a52d27-be0e-4c33-b49e-3943d1412197\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"0773286a-c457-4f62-83d9-b7b6f1febda3\",\"links\":[\"f476b641-f185-47aa-a9b0-f4b384a4d0ce\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"0773286a-c457-4f62-83d9-b7b6f1febda3\",\"name\":\"Upload File\",\"icon\":\"M7.71,3.5L1.15,15L4.58,21L11.13,9.5M9.73,15L6.3,21H19.42L22.85,15M22.28,14L15.42,2H8.58L8.57,2L15.43,14H22.28Z\",\"color\":\"#ffd04b\",\"namespace\":\"Robomotion.GoogleDrive.Upload\",\"version\":\"0.1.3\",\"abc\":[{\"name\":\"Upload File\",\"version\":\"0.1.3\",\"color\":\"#ffd04b\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inDriveID\":{\"name\":\"drive_id\",\"scope\":\"Message\"},\"inFilePath\":{\"name\":\"pdfPath\",\"scope\":\"Message\"},\"inParentId\":{\"scope\":\"Message\",\"name\":\"parentFolderId\"}},{\"outDriveFileId\":{\"name\":\"file_id\",\"scope\":\"Message\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inDriveID\":{\"type\":\"object\",\"title\":\"Drive Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"},\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"},\"inParentId\":{\"type\":\"object\",\"title\":\"Parent Folder Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inDriveID\":{\"name\":\"drive_id\",\"scope\":\"Message\"},\"inFilePath\":{\"name\":\"\",\"scope\":\"Custom\"},\"inParentId\":{\"name\":\"\",\"scope\":\"Custom\"}},\"uiSchema\":{\"inDriveID\":{\"ui:field\":\"variable\"},\"inFilePath\":{\"ui:field\":\"variable\"},\"inParentId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inDriveID\",\"inFilePath\",\"inParentId\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Output\",\"properties\":{\"outDriveFileId\":{\"type\":\"object\",\"title\":\"File Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"outDriveFileId\":{\"name\":\"file_id\",\"scope\":\"Message\"}},\"uiSchema\":{\"outDriveFileId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outDriveFileId\"]}}],\"outputs\":1,\"inputs\":1}}]}"
+	}, {
+		"id": "3f9a6e99-99e1-48f4-8617-539cad1190fc",
+		"flow": "{\"id\":\"3f9a6e99-99e1-48f4-8617-539cad1190fc\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"2d1d6743-4a24-430f-b242-e5b0dd2575a1\",\"type\":\"default\",\"selected\":false,\"source\":\"2a281b8f-5d21-48b6-bdc4-6314a150d635\",\"sourcePort\":\"a1a0f676-56e2-4c78-ba16-36937944b265\",\"target\":\"30700eb6-8693-4415-962d-36367b3e85e4\",\"targetPort\":\"b8aef1bf-94c4-483d-8cf9-b6f3989ab342\",\"points\":[{\"id\":\"8b6871b3-6a23-40c1-936d-c427fe7c033b\",\"selected\":false,\"x\":659.21875,\"y\":248.4375},{\"id\":\"1fe7d239-a075-4950-a38d-174a7e327d8f\",\"selected\":false,\"x\":843,\"y\":201}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"1ee160a2-1d93-4101-822b-820a4f52fde9\",\"type\":\"default\",\"selected\":false,\"source\":\"f6a62c15-9fde-45eb-8c18-7222f6e2e940\",\"sourcePort\":\"a4732ec2-fe57-4ed9-ae05-953833b3e151\",\"target\":\"2a281b8f-5d21-48b6-bdc4-6314a150d635\",\"targetPort\":\"821c8327-8a0e-4b1c-a830-4e24759b3088\",\"points\":[{\"id\":\"d466d547-62d2-4b6a-9167-63aaa4ce777d\",\"selected\":false,\"x\":685.234375,\"y\":298.5},{\"id\":\"9224c9e5-4e8b-4658-b596-a39dece21811\",\"selected\":false,\"x\":861.21875,\"y\":250.4375}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"493f54ce-d69a-4b8c-9d9d-0394fe8d5773\",\"type\":\"default\",\"selected\":false,\"source\":\"3615a47a-cd49-4128-96ec-b928a2b0cbf4\",\"sourcePort\":\"9baaf49d-0790-4dfc-a61b-b1ffb5ab81c6\",\"target\":\"30700eb6-8693-4415-962d-36367b3e85e4\",\"targetPort\":\"230d4e29-4830-4648-b711-1034146883d2\",\"points\":[{\"id\":\"c53030bf-cfbc-4221-9cfd-a888bbf71fbb\",\"selected\":false,\"x\":569,\"y\":198},{\"id\":\"a77b26d4-e1d5-4169-869a-55bc29570457\",\"selected\":false,\"x\":641,\"y\":199}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"f20a7c7f-39cc-4b1e-b868-5a60fcbb0468\",\"type\":\"default\",\"selected\":false,\"source\":\"f6a62c15-9fde-45eb-8c18-7222f6e2e940\",\"sourcePort\":\"7979a596-7c70-4d7b-9929-bd125f898811\",\"target\":\"e1b6b4ef-228c-44d4-b74b-ce1c9fae2a81\",\"targetPort\":\"e5b9f6a2-4b87-47da-a5a4-d9c6891fff78\",\"points\":[{\"id\":\"058641f7-8a87-4054-9446-1b4c1dd631ed\",\"selected\":false,\"x\":887.234375,\"y\":300.5},{\"id\":\"09aceac2-8e0a-4ec7-825b-8fbfdf567b9d\",\"selected\":true,\"x\":975,\"y\":196}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"3615a47a-cd49-4128-96ec-b928a2b0cbf4\",\"type\":\"simple\",\"selected\":false,\"x\":368,\"y\":173,\"extras\":{},\"ports\":[{\"id\":\"9baaf49d-0790-4dfc-a61b-b1ffb5ab81c6\",\"type\":\"default\",\"selected\":false,\"name\":\"out_9baaf49d-0790-4dfc-a61b-b1ffb5ab81c6\",\"parentNode\":\"3615a47a-cd49-4128-96ec-b928a2b0cbf4\",\"links\":[\"493f54ce-d69a-4b8c-9d9d-0394fe8d5773\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"3615a47a-cd49-4128-96ec-b928a2b0cbf4\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"e1b6b4ef-228c-44d4-b74b-ce1c9fae2a81\",\"type\":\"simple\",\"selected\":false,\"x\":968,\"y\":173,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"e5b9f6a2-4b87-47da-a5a4-d9c6891fff78\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"e1b6b4ef-228c-44d4-b74b-ce1c9fae2a81\",\"links\":[\"f20a7c7f-39cc-4b1e-b868-5a60fcbb0468\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"e1b6b4ef-228c-44d4-b74b-ce1c9fae2a81\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"30700eb6-8693-4415-962d-36367b3e85e4\",\"type\":\"simple\",\"selected\":true,\"x\":634,\"y\":176,\"extras\":{\"inUrl\":{\"scope\":\"Message\",\"name\":\"spreadsheetUrl\"},\"outSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"},\"optCredentials\":{\"vaultId\":\"_\",\"itemId\":\"_\"}},\"ports\":[{\"id\":\"b8aef1bf-94c4-483d-8cf9-b6f3989ab342\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b8aef1bf-94c4-483d-8cf9-b6f3989ab342\",\"parentNode\":\"30700eb6-8693-4415-962d-36367b3e85e4\",\"links\":[\"2d1d6743-4a24-430f-b242-e5b0dd2575a1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"230d4e29-4830-4648-b711-1034146883d2\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"30700eb6-8693-4415-962d-36367b3e85e4\",\"links\":[\"493f54ce-d69a-4b8c-9d9d-0394fe8d5773\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"30700eb6-8693-4415-962d-36367b3e85e4\",\"name\":\"Open Spreadsheet\",\"icon\":\"M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z\",\"color\":\"#1fa463\",\"namespace\":\"Robomotion.GoogleSheets.OpenSpreadsheet\",\"version\":\"0.2.3\",\"abc\":[{\"name\":\"Open Spreadsheet\",\"version\":\"0.2.3\",\"color\":\"#1fa463\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inUrl\":{\"scope\":\"Message\",\"name\":\"spreadsheetUrl\"}},{\"outSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},{\"optCredentials\":{\"vaultId\":\"_\",\"itemId\":\"_\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inUrl\":{\"type\":\"object\",\"title\":\"Spreadsheet URL\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inUrl\":{\"scope\":\"Custom\",\"name\":\"https://docs.google.com/spreadsheets/d/1ftHnoqkU2KAa6x9QTS_kqAbWwUTz-h79Em5xjBgoFLg/edit#gid=0\"}},\"uiSchema\":{\"inUrl\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inUrl\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Output\",\"properties\":{\"outSpreadsheetId\":{\"type\":\"object\",\"title\":\"Spreadsheet Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"outSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},\"uiSchema\":{\"outSpreadsheetId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outSpreadsheetId\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Options\",\"properties\":{\"optCredentials\":{\"type\":\"object\",\"title\":\"Credentials\",\"subtitle\":\"Credentials\",\"category\":6,\"properties\":{\"itemId\":{\"type\":\"string\"},\"vaultId\":{\"type\":\"string\"}}}}},\"formData\":{\"optCredentials\":{\"vaultId\":\"31728a24-3a82-4978-9ee0-3a0502e949dd\",\"itemId\":\"20214890-5be8-41f4-bf73-425d2fd57881\"}},\"uiSchema\":{\"optCredentials\":{\"ui:field\":\"credentials\"},\"ui:order\":[\"optCredentials\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"2a281b8f-5d21-48b6-bdc4-6314a150d635\",\"type\":\"simple\",\"selected\":false,\"x\":652.2222222222222,\"y\":225.44444444444446,\"extras\":{\"inCellName\":{\"scope\":\"Message\",\"name\":\"cellIssued\"},\"inCellValue\":{\"name\":\"Issued\",\"scope\":\"Custom\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"821c8327-8a0e-4b1c-a830-4e24759b3088\",\"type\":\"default\",\"selected\":false,\"name\":\"out_821c8327-8a0e-4b1c-a830-4e24759b3088\",\"parentNode\":\"2a281b8f-5d21-48b6-bdc4-6314a150d635\",\"links\":[\"1ee160a2-1d93-4101-822b-820a4f52fde9\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"a1a0f676-56e2-4c78-ba16-36937944b265\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"2a281b8f-5d21-48b6-bdc4-6314a150d635\",\"links\":[\"2d1d6743-4a24-430f-b242-e5b0dd2575a1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"2a281b8f-5d21-48b6-bdc4-6314a150d635\",\"name\":\"Set Cell Value\",\"icon\":\"M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z\",\"color\":\"#1fa463\",\"namespace\":\"Robomotion.GoogleSheets.SetCellValue\",\"version\":\"0.2.3\",\"abc\":[{\"name\":\"Set Cell Value\",\"version\":\"0.2.3\",\"color\":\"#1fa463\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inCellName\":{\"scope\":\"Message\",\"name\":\"cellIssued\"},\"inCellValue\":{\"name\":\"Issued\",\"scope\":\"Custom\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inCellName\":{\"type\":\"object\",\"title\":\"Cell\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"Number\"},\"inCellValue\":{\"type\":\"object\",\"title\":\"Cell Value\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"Number\"},\"inSpreadsheetId\":{\"type\":\"object\",\"title\":\"Spreadsheet Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inCellName\":{\"scope\":\"Message\",\"name\":\"cellIssued\"},\"inCellValue\":{\"name\":\"Issued\",\"scope\":\"Custom\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},\"uiSchema\":{\"inCellName\":{\"ui:field\":\"variable\"},\"inCellValue\":{\"ui:field\":\"variable\"},\"inSpreadsheetId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inSpreadsheetId\",\"inCellName\",\"inCellValue\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"f6a62c15-9fde-45eb-8c18-7222f6e2e940\",\"type\":\"simple\",\"selected\":false,\"x\":678.2402042402042,\"y\":275.51381951381956,\"extras\":{\"inCellName\":{\"scope\":\"Message\",\"name\":\"cellResult\"},\"inCellValue\":{\"name\":\"value\",\"scope\":\"Message\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},\"ports\":[{\"id\":\"7979a596-7c70-4d7b-9929-bd125f898811\",\"type\":\"default\",\"selected\":false,\"name\":\"out_7979a596-7c70-4d7b-9929-bd125f898811\",\"parentNode\":\"f6a62c15-9fde-45eb-8c18-7222f6e2e940\",\"links\":[\"f20a7c7f-39cc-4b1e-b868-5a60fcbb0468\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"a4732ec2-fe57-4ed9-ae05-953833b3e151\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"f6a62c15-9fde-45eb-8c18-7222f6e2e940\",\"links\":[\"1ee160a2-1d93-4101-822b-820a4f52fde9\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"f6a62c15-9fde-45eb-8c18-7222f6e2e940\",\"name\":\"Set Cell Value\",\"icon\":\"M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z\",\"color\":\"#1fa463\",\"namespace\":\"Robomotion.GoogleSheets.SetCellValue\",\"version\":\"0.2.3\",\"abc\":[{\"name\":\"Set Cell Value\",\"version\":\"0.2.3\",\"color\":\"#1fa463\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inCellName\":{\"scope\":\"Message\",\"name\":\"cellResult\"},\"inCellValue\":{\"name\":\"value\",\"scope\":\"Message\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inCellName\":{\"type\":\"object\",\"title\":\"Cell\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"Number\"},\"inCellValue\":{\"type\":\"object\",\"title\":\"Cell Value\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"Number\"},\"inSpreadsheetId\":{\"type\":\"object\",\"title\":\"Spreadsheet Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inCellName\":{\"scope\":\"Message\",\"name\":\"cellResult\"},\"inCellValue\":{\"name\":\"value\",\"scope\":\"Message\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},\"uiSchema\":{\"inCellName\":{\"ui:field\":\"variable\"},\"inCellValue\":{\"ui:field\":\"variable\"},\"inSpreadsheetId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inSpreadsheetId\",\"inCellName\",\"inCellValue\"]}}],\"outputs\":1,\"inputs\":1}}]}"
+	}]
+}

@@ -782,6 +782,33 @@
     ]
   },
   {
+    "name": "Pdf Reader With OCR",
+    "description": "Extracts images from a pdf file, reads images with ocr, parses text, writes to a spreadsheet and uploads the pdf file to drive",
+    "slug": "pdf-extractor-with-ocr",
+    "icon": "pdf_reader_with_ocr_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=-Tl6rgGCcPU",
+      "pdf_reader_with_ocr_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "pdf",
+      "text",
+      "google",
+      "sheets",
+      "drive",
+      "pdfbox",
+      "ocr"
+    ],
+    "applications": [
+      "Google_Sheets",
+      "Google_Drive",
+      "Other",
+      "Tesseract"
+    ]
+  },
+  {
     "name": "Process Tasks Parallely",
     "description": "Shows how to process list of task parallely.",
     "slug": "process-tasks-parallely",
