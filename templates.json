@@ -784,7 +784,7 @@
   {
     "name": "Pdf Reader With OCR",
     "description": "Extracts images from a pdf file, reads images with ocr, parses text, writes to a spreadsheet and uploads the pdf file to drive",
-    "slug": "pdf-extractor-with-ocr",
+    "slug": "pdf-reader-with-ocr",
     "icon": "pdf_reader_with_ocr_icon.png",
     "screenshots": [
       "https://www.youtube.com/watch?v=-Tl6rgGCcPU",
