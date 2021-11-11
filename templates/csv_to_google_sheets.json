@@ -1,0 +1,674 @@
+{
+	"nodes": [
+		{
+			"id": "a1aaec06-102d-41b4-8ddd-5530ecfdd10f",
+			"type": "simple",
+			"selected": true,
+			"x": 524.2831733483907,
+			"y": 928.2483134714256,
+			"extras": {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				},
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				},
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			},
+			"ports": [
+				{
+					"id": "1c1bed17-5650-4972-8c29-e59feb58742d",
+					"type": "default",
+					"selected": false,
+					"name": "out_1c1bed17-5650-4972-8c29-e59feb58742d",
+					"parentNode": "a1aaec06-102d-41b4-8ddd-5530ecfdd10f",
+					"links": [
+						"03ceb91a-cdcd-4b70-a215-ade51a258f79"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				}
+			],
+			"model": {
+				"id": "a1aaec06-102d-41b4-8ddd-5530ecfdd10f",
+				"name": "Start",
+				"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+				"color": "#FDD835",
+				"namespace": "Core.Trigger.Inject",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Start",
+						"color": "#FDD835",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"inPayload": {
+							"scope": "JS",
+							"name": "Date.now()"
+						}
+					},
+					{
+						"outPayload": {
+							"scope": "Message",
+							"name": "payload"
+						}
+					},
+					{
+						"optRepeat": 1,
+						"optOnce": true,
+						"optOnceDelay": 0.1
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Input",
+							"type": "object",
+							"properties": {
+								"inPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"customScope": true,
+									"jsScope": true,
+									"argsScope": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"inPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"inPayload": {
+								"scope": "JS",
+								"name": "Date.now()"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outPayload": {
+									"type": "object",
+									"title": "Payload",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"outPayload": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outPayload": {
+								"scope": "Message",
+								"name": "payload"
+							}
+						}
+					},
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"optRepeat": {
+									"title": "Repeat Interval (sec)",
+									"type": "number"
+								},
+								"optOnce": {
+									"title": "Once",
+									"type": "boolean"
+								},
+								"optOnceDelay": {
+									"title": "Once Delay (sec)",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"optRepeat",
+								"optOnceDelay",
+								"optOnce"
+							]
+						},
+						"formData": {
+							"optRepeat": 1,
+							"optOnce": true,
+							"optOnceDelay": 0.1
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 0
+			}
+		},
+		{
+			"id": "d40aeed3-e30c-4e02-b3af-0a55916bba8c",
+			"type": "simple",
+			"selected": true,
+			"x": 804.3489628220749,
+			"y": 930.0816468047589,
+			"extras": {
+				"outputs": 1,
+				"func": "msg.csv_path = 'C:/example.csv'; // [Required] CSV file path you want to convert.\nmsg.separator = ','; // [Required] - [, or ;]\nmsg.spreadsheet_url = ''; // [Required] URL of empty Google Sheets file.\nreturn msg;",
+				"optTimeout": 30,
+				"variables": []
+			},
+			"ports": [
+				{
+					"id": "e7047fe6-91b9-4d10-9439-edde85852190",
+					"type": "default",
+					"selected": false,
+					"name": "out_e7047fe6-91b9-4d10-9439-edde85852190",
+					"parentNode": "d40aeed3-e30c-4e02-b3af-0a55916bba8c",
+					"links": [
+						"d0fadea4-d4a4-4488-919f-7988db505fa7"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "2d78bbc4-e2c3-4ea5-a662-3facd52c74b9",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "d40aeed3-e30c-4e02-b3af-0a55916bba8c",
+					"links": [
+						"03ceb91a-cdcd-4b70-a215-ade51a258f79"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "d40aeed3-e30c-4e02-b3af-0a55916bba8c",
+				"name": "Config",
+				"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+				"color": "#F27925",
+				"editor": "javascript",
+				"namespace": "Core.Programming.Function",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Config",
+						"color": "#F27925",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"func": "msg.csv_path = 'C:/example.csv'; // [Required] CSV file path you want to convert.\nmsg.separator = ','; // [Required] - [, or ;]\nmsg.spreadsheet_url = ''; // [Required] URL of empty Google Sheets file.\nreturn msg;",
+						"optTimeout": 30
+					},
+					{
+						"variables": []
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"func": {
+									"title": "Function",
+									"type": "string"
+								},
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"optTimeout": {
+									"title": "Script Timeout",
+									"type": "number"
+								}
+							}
+						},
+						"uiSchema": {
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"func": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"outputs": 1,
+							"func": "msg.csv_path = 'C:/example.csv'; // [Required] CSV file path you want to convert.\nmsg.separator = ','; // [Required] - [, or ;]\nmsg.spreadsheet_url = ''; // [Required] URL of empty Google Sheets file.\nreturn msg;",
+							"optTimeout": 30
+						}
+					},
+					{
+						"schema": {
+							"title": "Local Variables",
+							"type": "object",
+							"properties": {
+								"variables": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"name": {
+												"type": "string"
+											},
+											"variableType": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"variables": {
+								"ui:field": "localVariable"
+							}
+						},
+						"formData": {
+							"variables": []
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "a5a08066-489e-4649-9f75-273294ebb7a4",
+			"type": "simple",
+			"selected": true,
+			"x": 1082.5914737436478,
+			"y": 1093.4716336295282,
+			"extras": {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			},
+			"ports": [
+				{
+					"id": "16401b47-83b3-42c1-b280-12e6f16a6f7b",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "a5a08066-489e-4649-9f75-273294ebb7a4",
+					"links": [
+						"fc946e27-22af-4aaf-b1b3-20b6ab6417b5"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "a5a08066-489e-4649-9f75-273294ebb7a4",
+				"name": "Stop",
+				"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+				"color": "#fb2727",
+				"namespace": "Core.Flow.Stop",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"outResult": {
+							"scope": "Message",
+							"name": "error"
+						}
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Output",
+							"type": "object",
+							"properties": {
+								"outResult": {
+									"type": "object",
+									"title": "Error",
+									"variableType": "String",
+									"messageOnly": true,
+									"properties": {
+										"scope": {
+											"type": "string"
+										},
+										"name": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"uiSchema": {
+							"ui:order": [
+								"outResult"
+							],
+							"outResult": {
+								"ui:field": "variable"
+							}
+						},
+						"formData": {
+							"outResult": {
+								"scope": "Message",
+								"name": "error"
+							}
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "0cc6a7fd-4f9a-46b4-9bec-174f151bcf29",
+			"type": "simple",
+			"selected": true,
+			"x": 803.5456863939673,
+			"y": 1011.3021180605564,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7a636f49-d872-4fae-bbba-5050296da6f4/subflows/0cc6a7fd-4f9a-46b4-9bec-174f151bcf29.flow"
+			},
+			"ports": [
+				{
+					"id": "67956336-ef32-4c9b-9216-69d889cb6a7f",
+					"type": "default",
+					"selected": false,
+					"name": "out_67956336-ef32-4c9b-9216-69d889cb6a7f",
+					"parentNode": "0cc6a7fd-4f9a-46b4-9bec-174f151bcf29",
+					"links": [
+						"be250a9a-9bf2-49d1-b6d2-894a42eebb47"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "38208f43-bb5f-4924-9124-972796ec6f5d",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "0cc6a7fd-4f9a-46b4-9bec-174f151bcf29",
+					"links": [
+						"d0fadea4-d4a4-4488-919f-7988db505fa7"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "0cc6a7fd-4f9a-46b4-9bec-174f151bcf29",
+				"name": "Read CSV",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Read CSV",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7a636f49-d872-4fae-bbba-5050296da6f4/subflows/0cc6a7fd-4f9a-46b4-9bec-174f151bcf29.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7a636f49-d872-4fae-bbba-5050296da6f4/subflows/0cc6a7fd-4f9a-46b4-9bec-174f151bcf29.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8",
+			"type": "simple",
+			"selected": true,
+			"x": 803.397465050094,
+			"y": 1091.9345291277502,
+			"extras": {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7a636f49-d872-4fae-bbba-5050296da6f4/subflows/f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8.flow"
+			},
+			"ports": [
+				{
+					"id": "66822055-e4d4-455c-bdb4-9118a2713632",
+					"type": "default",
+					"selected": false,
+					"name": "out_66822055-e4d4-455c-bdb4-9118a2713632",
+					"parentNode": "f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8",
+					"links": [
+						"fc946e27-22af-4aaf-b1b3-20b6ab6417b5"
+					],
+					"in": false,
+					"label": "simple",
+					"position": "out"
+				},
+				{
+					"id": "35898db4-42cf-4182-9c2b-7ebd40070555",
+					"type": "default",
+					"selected": false,
+					"name": "in",
+					"parentNode": "f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8",
+					"links": [
+						"be250a9a-9bf2-49d1-b6d2-894a42eebb47"
+					],
+					"in": true,
+					"label": "simple",
+					"position": "in"
+				}
+			],
+			"model": {
+				"id": "f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8",
+				"name": "Write Spreadsheet",
+				"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+				"color": "#646bf5",
+				"namespace": "Core.Flow.SubFlow",
+				"version": "1.11.6",
+				"abc": [
+					{
+						"name": "Write Spreadsheet",
+						"color": "#646bf5",
+						"delayBefore": 0,
+						"delayAfter": 0,
+						"continueOnError": false,
+						"version": "1.11.6"
+					},
+					{
+						"outputs": 1,
+						"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7a636f49-d872-4fae-bbba-5050296da6f4/subflows/f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8.flow"
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"outputs": {
+									"title": "Outputs",
+									"type": "number",
+									"minimum": 1,
+									"maximum": 32
+								},
+								"subflow": {
+									"type": "string",
+									"properties": {}
+								}
+							}
+						},
+						"uiSchema": {
+							"subflow": {
+								"ui:widget": "hidden"
+							},
+							"outputs": {
+								"ui:widget": "updown"
+							},
+							"ui:order": [
+								"outputs",
+								"*"
+							]
+						},
+						"formData": {
+							"outputs": 1,
+							"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/7a636f49-d872-4fae-bbba-5050296da6f4/subflows/f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8.flow"
+						}
+					}
+				],
+				"outputs": 1,
+				"inputs": 1
+			}
+		},
+		{
+			"id": "d410ad44-5444-4039-92d9-efec6066a934",
+			"type": "simple",
+			"selected": true,
+			"x": 131.03414697131976,
+			"y": 593.718626179649,
+			"extras": {
+				"optText": "## CSV to Google Sheets\r\nThis template uses *CSV* and *Google Sheets* nodes for read range from a CSV file and write it to Google Sheet file. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see CSV and Google Sheets package icons, install them.\r\n\r\n**3.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**5.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**6.** Go to Vaults and create new document item with this json key.\r\n\r\n**7.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**8.** Open an empty Google Spreadsheet file.\r\n\r\n**9.** Edit the Config Node.\r\n\r\n**NOTE:** Click [here](https://docs.robomotion.io/getting-started/tutorials/google-packages-interaction) for more detailed information about the service account."
+			},
+			"ports": [],
+			"model": {
+				"id": "d410ad44-5444-4039-92d9-efec6066a934",
+				"name": "Comment",
+				"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+				"color": "#FBE364",
+				"namespace": "Core.Flow.Comment",
+				"version": "1.11.6",
+				"abc": [
+					{},
+					{
+						"optText": "## CSV to Google Sheets\r\nThis template uses *CSV* and *Google Sheets* nodes for read range from a CSV file and write it to Google Sheet file. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see CSV and Google Sheets package icons, install them.\r\n\r\n**3.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**5.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**6.** Go to Vaults and create new document item with this json key.\r\n\r\n**7.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**8.** Open an empty Google Spreadsheet file.\r\n\r\n**9.** Edit the Config Node.\r\n\r\n**NOTE:** Click [here](https://docs.robomotion.io/getting-started/tutorials/google-packages-interaction) for more detailed information about the service account."
+					}
+				],
+				"xyz": [
+					{
+						"schema": {
+							"title": "Options",
+							"type": "object",
+							"properties": {
+								"comment": {
+									"title": "Comment",
+									"type": "string"
+								},
+								"optText": {
+									"title": "Text",
+									"type": "string"
+								}
+							}
+						},
+						"uiSchema": {
+							"optText": {
+								"ui:description": "Comment",
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 8
+								}
+							},
+							"comment": {
+								"ui:widget": "hidden",
+								"ui:options": {
+									"rows": 6
+								}
+							}
+						},
+						"formData": {
+							"optText": "## CSV to Google Sheets\r\nThis template uses *CSV* and *Google Sheets* nodes for read range from a CSV file and write it to Google Sheet file. \r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see CSV and Google Sheets package icons, install them.\r\n\r\n**3.** You need to service account to use this template, see [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) for service accounts.\r\n\r\n**4.** You need to key of service account as json, see [here](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console) for create keys.\r\n\r\n**5.** Google Sheets API have to be enabled in project which has the service account that you created, see [here](https://support.google.com/googleapi/answer/6158841?hl=en) for enable APIs.\r\n\r\n**6.** Go to Vaults and create new document item with this json key.\r\n\r\n**7.** Set this vault item to Open Spreadsheet node credentials.\r\n\r\n**8.** Open an empty Google Spreadsheet file.\r\n\r\n**9.** Edit the Config Node.\r\n\r\n**NOTE:** Click [here](https://docs.robomotion.io/getting-started/tutorials/google-packages-interaction) for more detailed information about the service account."
+						}
+					}
+				],
+				"outputs": 0,
+				"inputs": 0
+			}
+		}
+	],
+	"subFlows": [
+		{
+			"id": "0cc6a7fd-4f9a-46b4-9bec-174f151bcf29",
+			"flow": "{\"id\":\"0cc6a7fd-4f9a-46b4-9bec-174f151bcf29\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"91f22bd5-324e-4bb6-9afa-e7cb17e6c527\",\"type\":\"default\",\"selected\":false,\"source\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"sourcePort\":\"7d30c395-3d5b-4f5d-8a2f-22237e571066\",\"target\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"targetPort\":\"9a99a5c9-e436-4da0-8c29-cd06395de997\",\"points\":[{\"id\":\"df70142f-3d54-4ee0-ae8b-5f696785a587\",\"selected\":false,\"x\":1308,\"y\":488},{\"id\":\"2c591699-957d-44f2-adb7-71fc87edcfe7\",\"selected\":false,\"x\":1135.78125,\"y\":488.25}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"a7bfb208-4aba-4bdd-946d-f258e6eeec2a\",\"type\":\"default\",\"selected\":false,\"source\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"sourcePort\":\"7d30c395-3d5b-4f5d-8a2f-22237e571066\",\"target\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"targetPort\":\"3b57ef34-4c58-4098-8549-d7a0337477c9\",\"points\":[{\"id\":\"f39a39c6-0160-487a-bbf2-06d7687d905e\",\"selected\":false,\"x\":1308,\"y\":488},{\"id\":\"8763d9e8-caa1-4927-a714-8d96a7f4dadc\",\"selected\":false,\"x\":1135.78125,\"y\":524.25}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"2b670308-847a-48fc-8a02-adc0068e5018\",\"type\":\"default\",\"selected\":false,\"source\":\"9b1e73b7-ff83-4d8b-a7dd-15ad343baa6b\",\"sourcePort\":\"ce1ed36f-c907-4b3d-b266-e2b5a5f2c0a6\",\"target\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"targetPort\":\"4b3a2572-8f1d-443e-b68f-148d803b107f\",\"points\":[{\"id\":\"c6f3966c-4ab2-433b-88c5-ac92a3e5c138\",\"selected\":false,\"x\":1309.1875,\"y\":556.25},{\"id\":\"33e4696e-953c-4544-92c2-eac3de814ab4\",\"selected\":false,\"x\":1135.78125,\"y\":506.25}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"00fabefd-64c9-4f71-8579-fc8d1ff53557\",\"type\":\"default\",\"selected\":false,\"source\":\"6a2d5425-eecd-4182-8bc3-6e3c548212a0\",\"sourcePort\":\"2e99ec8a-70ba-4303-b7e8-3085c9d1b427\",\"target\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"targetPort\":\"1a9c5060-3a9b-41da-8193-d619f4d925f0\",\"points\":[{\"id\":\"4f5f714c-5776-42cf-b353-46e1b2da363f\",\"selected\":false,\"x\":818,\"y\":504.5},{\"id\":\"f85251f3-5a64-4e34-9713-2600744d6237\",\"selected\":true,\"x\":933.78125,\"y\":504.25}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"9c25ff3c-9e80-466d-8276-ee6d8d14bdff\",\"type\":\"default\",\"selected\":false,\"source\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"sourcePort\":\"de122ce5-1aef-4627-8d57-a65a301f9f57\",\"target\":\"2a79a02f-72c2-452a-ae42-75fc03873d4e\",\"targetPort\":\"62490b8e-06ef-45b4-9a3f-e00752420b0c\",\"points\":[{\"id\":\"5168a821-bde6-49e9-b4e3-c060c7f76007\",\"selected\":false,\"x\":1510,\"y\":490},{\"id\":\"5d2fcb4e-41fb-4f67-b1d0-e5a5d2b4c949\",\"selected\":false,\"x\":1753,\"y\":490.5}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"3ed80ccd-f39b-4754-94c3-94d1a458e93b\",\"type\":\"default\",\"selected\":false,\"source\":\"9b1e73b7-ff83-4d8b-a7dd-15ad343baa6b\",\"sourcePort\":\"6162aa3e-fa34-44f9-87a7-c44c141f2204\",\"target\":\"2a79a02f-72c2-452a-ae42-75fc03873d4e\",\"targetPort\":\"62490b8e-06ef-45b4-9a3f-e00752420b0c\",\"points\":[{\"id\":\"f7d48416-85f1-434c-b9aa-df226a8f8238\",\"selected\":false,\"x\":1511.1875,\"y\":558.25},{\"id\":\"30258fc4-ecd3-44c8-962c-9e54d732e2bb\",\"selected\":false,\"x\":1753,\"y\":490.5}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"6a2d5425-eecd-4182-8bc3-6e3c548212a0\",\"type\":\"simple\",\"selected\":false,\"x\":617,\"y\":479.5,\"extras\":{},\"ports\":[{\"id\":\"2e99ec8a-70ba-4303-b7e8-3085c9d1b427\",\"type\":\"default\",\"selected\":false,\"name\":\"out_2e99ec8a-70ba-4303-b7e8-3085c9d1b427\",\"parentNode\":\"6a2d5425-eecd-4182-8bc3-6e3c548212a0\",\"links\":[\"00fabefd-64c9-4f71-8579-fc8d1ff53557\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"6a2d5425-eecd-4182-8bc3-6e3c548212a0\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"2a79a02f-72c2-452a-ae42-75fc03873d4e\",\"type\":\"simple\",\"selected\":false,\"x\":1746,\"y\":467.5,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"62490b8e-06ef-45b4-9a3f-e00752420b0c\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"2a79a02f-72c2-452a-ae42-75fc03873d4e\",\"links\":[\"9c25ff3c-9e80-466d-8276-ee6d8d14bdff\",\"3ed80ccd-f39b-4754-94c3-94d1a458e93b\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"2a79a02f-72c2-452a-ae42-75fc03873d4e\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"type\":\"simple\",\"selected\":false,\"x\":1301,\"y\":465,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"},\"optSeparator\":\"comma\"},\"ports\":[{\"id\":\"de122ce5-1aef-4627-8d57-a65a301f9f57\",\"type\":\"default\",\"selected\":false,\"name\":\"out_de122ce5-1aef-4627-8d57-a65a301f9f57\",\"parentNode\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"links\":[\"9c25ff3c-9e80-466d-8276-ee6d8d14bdff\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"7d30c395-3d5b-4f5d-8a2f-22237e571066\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"links\":[\"91f22bd5-324e-4bb6-9afa-e7cb17e6c527\",\"a7bfb208-4aba-4bdd-946d-f258e6eeec2a\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"47a08b8f-07ef-4ea5-b883-174b132e9b49\",\"name\":\"Read CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.ReadCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Read CSV\",\"color\":\"#0078DE\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"},\"optSeparator\":\"comma\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outTable\":{\"ui:field\":\"variable\"}},\"formData\":{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\",\"tab\",\"space\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\",\"TAB\",\"Space\"]},\"optOffset\":{\"type\":\"object\",\"title\":\"Skip Rows\",\"variableType\":\"Integer\",\"customScope\":true,\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"optOffset\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optSeparator\",\"optOffset\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"},\"optSeparator\":\"comma\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"type\":\"simple\",\"selected\":false,\"x\":926.7894736842109,\"y\":457.25,\"extras\":{\"optConditions\":[\"msg.separator === ','\",\"msg.separator === ';'\",\"msg.separator !== ',' && msg.separator !== ';'\"]},\"ports\":[{\"id\":\"9a99a5c9-e436-4da0-8c29-cd06395de997\",\"type\":\"default\",\"selected\":false,\"name\":\"out_9a99a5c9-e436-4da0-8c29-cd06395de997\",\"parentNode\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"links\":[\"91f22bd5-324e-4bb6-9afa-e7cb17e6c527\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"4b3a2572-8f1d-443e-b68f-148d803b107f\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4b3a2572-8f1d-443e-b68f-148d803b107f\",\"parentNode\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"links\":[\"2b670308-847a-48fc-8a02-adc0068e5018\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"3b57ef34-4c58-4098-8549-d7a0337477c9\",\"type\":\"default\",\"selected\":false,\"name\":\"out_3b57ef34-4c58-4098-8549-d7a0337477c9\",\"parentNode\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"links\":[\"a7bfb208-4aba-4bdd-946d-f258e6eeec2a\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"1a9c5060-3a9b-41da-8193-d619f4d925f0\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"links\":[\"00fabefd-64c9-4f71-8579-fc8d1ff53557\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9350d309-0c5f-4eee-a59b-fb15ae696af6\",\"name\":\"Separator Check\",\"icon\":\"M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29\",\"color\":\"#1DE9B6\",\"namespace\":\"Core.Programming.Switch\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Separator Check\",\"color\":\"#1DE9B6\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false,\"version\":\"1.11.6\"},{\"optConditions\":[\"msg.separator === ','\",\"msg.separator === ';'\",\"msg.separator !== ',' && msg.separator !== ';'\"]}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optConditions\":{\"title\":\"\",\"type\":\"array\",\"items\":{\"type\":\"string\"}}}},\"uiSchema\":{\"optConditions\":{\"ui:description\":\"Output Ports\",\"items\":{\"ui:placeholder\":\"Enter a JS expression\"},\"ui:options\":{\"orderable\":false}}},\"formData\":{\"optConditions\":[\"msg.separator === ','\",\"msg.separator === ';'\",\"msg.separator !== ',' && msg.separator !== ';'\"]}}],\"outputs\":3,\"inputs\":1}},{\"id\":\"9b1e73b7-ff83-4d8b-a7dd-15ad343baa6b\",\"type\":\"simple\",\"selected\":false,\"x\":1302.1985645933019,\"y\":533.25,\"extras\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"},\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"},\"optSeparator\":\"semicolon\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}},\"ports\":[{\"id\":\"6162aa3e-fa34-44f9-87a7-c44c141f2204\",\"type\":\"default\",\"selected\":false,\"name\":\"out_6162aa3e-fa34-44f9-87a7-c44c141f2204\",\"parentNode\":\"9b1e73b7-ff83-4d8b-a7dd-15ad343baa6b\",\"links\":[\"3ed80ccd-f39b-4754-94c3-94d1a458e93b\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"ce1ed36f-c907-4b3d-b266-e2b5a5f2c0a6\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"9b1e73b7-ff83-4d8b-a7dd-15ad343baa6b\",\"links\":[\"2b670308-847a-48fc-8a02-adc0068e5018\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"9b1e73b7-ff83-4d8b-a7dd-15ad343baa6b\",\"name\":\"Read CSV\",\"icon\":\"M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M10 19L12 15H9V10H15V15L13 19H10\",\"color\":\"#0078DE\",\"namespace\":\"Core.CSV.ReadCSV\",\"version\":\"1.11.6\",\"abc\":[{\"name\":\"Read CSV\",\"version\":\"1.11.6\",\"color\":\"#0078DE\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}},{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}},{\"optSeparator\":\"semicolon\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"inFilePath\":{\"type\":\"object\",\"title\":\"File Path\",\"variableType\":\"String\",\"customScope\":true,\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"inFilePath\":{\"ui:field\":\"variable\"}},\"formData\":{\"inFilePath\":{\"scope\":\"Message\",\"name\":\"csv_path\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTable\":{\"type\":\"object\",\"title\":\"Table\",\"variableType\":\"String\",\"messageOnly\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"outTable\":{\"ui:field\":\"variable\"}},\"formData\":{\"outTable\":{\"scope\":\"Message\",\"name\":\"table\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optSeparator\":{\"type\":\"string\",\"title\":\"Separator\",\"enum\":[\"comma\",\"semicolon\",\"tab\",\"space\"],\"enumNames\":[\"Comma (,)\",\"Semicolon (;)\",\"TAB\",\"Space\"]},\"optOffset\":{\"type\":\"object\",\"title\":\"Skip Rows\",\"variableType\":\"Integer\",\"customScope\":true,\"messageScope\":true,\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}}},\"optHeaders\":{\"title\":\"Headers\",\"type\":\"boolean\"},\"optJsonify\":{\"title\":\"Jsonify\",\"type\":\"boolean\"}}},\"uiSchema\":{\"optOffset\":{\"ui:field\":\"variable\"},\"ui:order\":[\"optSeparator\",\"optOffset\",\"optHeaders\",\"optJsonify\"]},\"formData\":{\"optSeparator\":\"semicolon\",\"optOffset\":{\"scope\":\"Custom\",\"name\":\"0\"}}}],\"outputs\":1,\"inputs\":1}}]}"
+		},
+		{
+			"id": "f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8",
+			"flow": "{\"id\":\"f86959a2-a4e3-4561-9c7a-b88a1e6e8ca8\",\"offsetX\":0,\"offsetY\":0,\"zoom\":100,\"gridSize\":0,\"links\":[{\"id\":\"780b8b94-87f3-43a7-a41a-c81af36ab19f\",\"type\":\"default\",\"selected\":false,\"source\":\"71f09138-28a3-4f96-84e0-c82b2642dac5\",\"sourcePort\":\"a63df8b2-ead3-4951-beea-e2becda0d0d8\",\"target\":\"b216c8bc-d18d-4d6c-8aa7-e39e02db7f9d\",\"targetPort\":\"b525bb15-16de-454e-ad0f-60c582368b87\",\"points\":[{\"id\":\"f1299283-ee8c-4812-b8af-b55df73124d6\",\"selected\":false,\"x\":1394,\"y\":476},{\"id\":\"4a36ca97-37e9-4fae-87ad-aeaa9e007f5e\",\"selected\":false,\"x\":1334.859375,\"y\":475.703125}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"2ecb9b36-c394-4ac2-8fc7-ef7182d212d1\",\"type\":\"default\",\"selected\":false,\"source\":\"e3c418a3-0832-460c-ab1b-34a6e7c2a92e\",\"sourcePort\":\"61fef487-d926-48f1-a103-8e5161c04c80\",\"target\":\"b216c8bc-d18d-4d6c-8aa7-e39e02db7f9d\",\"targetPort\":\"863ce2aa-e0f2-4947-867c-a5cbcf9dfcb6\",\"points\":[{\"id\":\"dec09bdb-c4d5-4bd2-ab6e-521d1210688b\",\"selected\":false,\"x\":1081,\"y\":473.5},{\"id\":\"a9eeeae9-bbd5-49d1-a50f-c478a2cf7c9e\",\"selected\":false,\"x\":1132.859375,\"y\":473.703125}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"5e8cc1ee-1482-4d17-af3d-920e9ec99958\",\"type\":\"default\",\"selected\":false,\"source\":\"71f09138-28a3-4f96-84e0-c82b2642dac5\",\"sourcePort\":\"2ad81b9a-b74b-4440-b0b8-26d52507d806\",\"target\":\"ed141ce6-c307-4efc-9398-5d3c7370c640\",\"targetPort\":\"a4a0ee08-6743-4678-9ac9-a90c7d009196\",\"points\":[{\"id\":\"a91b9f55-d9eb-4572-baac-b3493d3fe4e0\",\"selected\":false,\"x\":1596,\"y\":478},{\"id\":\"aa6c61cd-1e0c-400c-9fd9-ab48dc44e732\",\"selected\":false,\"x\":1663,\"y\":477.5}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"e3c418a3-0832-460c-ab1b-34a6e7c2a92e\",\"type\":\"simple\",\"selected\":false,\"x\":880,\"y\":448.5,\"extras\":{},\"ports\":[{\"id\":\"61fef487-d926-48f1-a103-8e5161c04c80\",\"type\":\"default\",\"selected\":false,\"name\":\"out_61fef487-d926-48f1-a103-8e5161c04c80\",\"parentNode\":\"e3c418a3-0832-460c-ab1b-34a6e7c2a92e\",\"links\":[\"2ecb9b36-c394-4ac2-8fc7-ef7182d212d1\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"e3c418a3-0832-460c-ab1b-34a6e7c2a92e\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"ed141ce6-c307-4efc-9398-5d3c7370c640\",\"type\":\"simple\",\"selected\":false,\"x\":1656,\"y\":454.5,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"a4a0ee08-6743-4678-9ac9-a90c7d009196\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"ed141ce6-c307-4efc-9398-5d3c7370c640\",\"links\":[\"5e8cc1ee-1482-4d17-af3d-920e9ec99958\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"ed141ce6-c307-4efc-9398-5d3c7370c640\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"71f09138-28a3-4f96-84e0-c82b2642dac5\",\"type\":\"simple\",\"selected\":false,\"x\":1387,\"y\":453,\"extras\":{\"inEndCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"},\"inStartCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inTable\":{\"name\":\"table\",\"scope\":\"Message\"},\"headers\":false},\"ports\":[{\"id\":\"2ad81b9a-b74b-4440-b0b8-26d52507d806\",\"type\":\"default\",\"selected\":false,\"name\":\"out_2ad81b9a-b74b-4440-b0b8-26d52507d806\",\"parentNode\":\"71f09138-28a3-4f96-84e0-c82b2642dac5\",\"links\":[\"5e8cc1ee-1482-4d17-af3d-920e9ec99958\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"a63df8b2-ead3-4951-beea-e2becda0d0d8\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"71f09138-28a3-4f96-84e0-c82b2642dac5\",\"links\":[\"780b8b94-87f3-43a7-a41a-c81af36ab19f\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"71f09138-28a3-4f96-84e0-c82b2642dac5\",\"name\":\"Set Range\",\"icon\":\"M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z\",\"color\":\"#1fa463\",\"namespace\":\"Robomotion.GoogleSheets.SetRange\",\"version\":\"0.2.3\",\"abc\":[{\"name\":\"Set Range\",\"version\":\"0.2.3\",\"color\":\"#1fa463\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inEndCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"},\"inStartCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inTable\":{\"name\":\"table\",\"scope\":\"Message\"}},{\"headers\":false}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inEndCell\":{\"type\":\"object\",\"title\":\"End Cell\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"Number\"},\"inSpreadsheetId\":{\"type\":\"object\",\"title\":\"Spreadsheet Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"},\"inStartCell\":{\"type\":\"object\",\"title\":\"Start Cell\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"Number\"},\"inTable\":{\"type\":\"object\",\"title\":\"table\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inEndCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"},\"inStartCell\":{\"scope\":\"Custom\",\"name\":\"\"},\"inTable\":{\"name\":\"table\",\"scope\":\"Message\"}},\"uiSchema\":{\"inEndCell\":{\"ui:field\":\"variable\"},\"inSpreadsheetId\":{\"ui:field\":\"variable\"},\"inStartCell\":{\"ui:field\":\"variable\"},\"inTable\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inSpreadsheetId\",\"inStartCell\",\"inEndCell\",\"inTable\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Options\",\"properties\":{\"headers\":{\"type\":\"boolean\",\"title\":\"Headers\"}}},\"formData\":{\"headers\":false},\"uiSchema\":{\"ui:order\":[\"headers\"]}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"b216c8bc-d18d-4d6c-8aa7-e39e02db7f9d\",\"type\":\"simple\",\"selected\":false,\"x\":1125.8684913064467,\"y\":450.7040022175895,\"extras\":{\"inUrl\":{\"scope\":\"Message\",\"name\":\"spreadsheet_url\"},\"outSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"},\"optCredentials\":{\"vaultId\":\"86cb1daa-f574-41b6-ae22-ad8275b56135\",\"itemId\":\"c2f8793b-f5a7-469a-a7fc-2740d5816dc1\"}},\"ports\":[{\"id\":\"b525bb15-16de-454e-ad0f-60c582368b87\",\"type\":\"default\",\"selected\":false,\"name\":\"out_b525bb15-16de-454e-ad0f-60c582368b87\",\"parentNode\":\"b216c8bc-d18d-4d6c-8aa7-e39e02db7f9d\",\"links\":[\"780b8b94-87f3-43a7-a41a-c81af36ab19f\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"863ce2aa-e0f2-4947-867c-a5cbcf9dfcb6\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"b216c8bc-d18d-4d6c-8aa7-e39e02db7f9d\",\"links\":[\"2ecb9b36-c394-4ac2-8fc7-ef7182d212d1\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"b216c8bc-d18d-4d6c-8aa7-e39e02db7f9d\",\"name\":\"Open Spreadsheet\",\"icon\":\"M19,11V9H11V5H9V9H5V11H9V19H11V11H19M19,3C19.5,3 20,3.2 20.39,3.61C20.8,4 21,4.5 21,5V19C21,19.5 20.8,20 20.39,20.39C20,20.8 19.5,21 19,21H5C4.5,21 4,20.8 3.61,20.39C3.2,20 3,19.5 3,19V5C3,4.5 3.2,4 3.61,3.61C4,3.2 4.5,3 5,3H19Z\",\"color\":\"#1fa463\",\"namespace\":\"Robomotion.GoogleSheets.OpenSpreadsheet\",\"version\":\"0.2.3\",\"abc\":[{\"name\":\"Open Spreadsheet\",\"version\":\"0.2.3\",\"color\":\"#1fa463\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"inUrl\":{\"scope\":\"Message\",\"name\":\"spreadsheet_url\"}},{\"outSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},{\"optCredentials\":{\"vaultId\":\"86cb1daa-f574-41b6-ae22-ad8275b56135\",\"itemId\":\"c2f8793b-f5a7-469a-a7fc-2740d5816dc1\"}}],\"xyz\":[{\"schema\":{\"type\":\"object\",\"title\":\"Input\",\"properties\":{\"inUrl\":{\"type\":\"object\",\"title\":\"Spreadsheet URL\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"customScope\":true,\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"inUrl\":{\"scope\":\"Message\",\"name\":\"spreadsheet_url\"}},\"uiSchema\":{\"inUrl\":{\"ui:field\":\"variable\"},\"ui:order\":[\"inUrl\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Output\",\"properties\":{\"outSpreadsheetId\":{\"type\":\"object\",\"title\":\"Spreadsheet Id\",\"properties\":{\"name\":{\"type\":\"string\"},\"scope\":{\"type\":\"string\"}},\"messageScope\":true,\"variableType\":\"String\"}}},\"formData\":{\"outSpreadsheetId\":{\"name\":\"spreadsheet_id\",\"scope\":\"Message\"}},\"uiSchema\":{\"outSpreadsheetId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outSpreadsheetId\"]}},{\"schema\":{\"type\":\"object\",\"title\":\"Options\",\"properties\":{\"optCredentials\":{\"type\":\"object\",\"title\":\"Credentials\",\"subtitle\":\"Credentials\",\"category\":6,\"properties\":{\"itemId\":{\"type\":\"string\"},\"vaultId\":{\"type\":\"string\"}}}}},\"formData\":{\"optCredentials\":{\"vaultId\":\"86cb1daa-f574-41b6-ae22-ad8275b56135\",\"itemId\":\"c2f8793b-f5a7-469a-a7fc-2740d5816dc1\"}},\"uiSchema\":{\"optCredentials\":{\"ui:field\":\"credentials\"},\"ui:order\":[\"optCredentials\"]}}],\"outputs\":1,\"inputs\":1}}]}"
+		}
+	]
+}
