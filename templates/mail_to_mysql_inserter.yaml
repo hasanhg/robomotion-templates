@@ -1,0 +1,17 @@
+- name: Mail To MySQL Inserter
+  description: Checks Inbox every hour and if a mail comes with subject that contain #ROBO#, writes it into a mysql table
+  slug: mail-to-mysql-inserter
+  icon: mail_to_mysql_inserter_icon.png
+  screenshots:
+    - https://www.youtube.com/watch?v=I7tVo-tpgLM
+    - mail_to_mysql_inserter_screenshot1.png
+    - mail_to_mysql_inserter_screenshot2.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - mail
+    - mysql
+    - table
+  applications:
+    - MySQL
+    

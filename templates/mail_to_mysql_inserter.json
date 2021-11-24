@@ -1,0 +1,1502 @@
+{
+	"nodes": [{
+		"id": "40c1d78c-132c-4e36-8f46-102ec3aa394b",
+		"type": "simple",
+		"selected": true,
+		"x": -93.9051583905907,
+		"y": 1.9354577250199583,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optSecond": -1,
+			"optMinute": 1,
+			"optHour": -1,
+			"optDay": 0,
+			"optMonth": 0,
+			"optWeekDay": -1
+		},
+		"ports": [{
+			"id": "4973ca1f-c3b7-42e4-b1e4-3c0eac309875",
+			"type": "default",
+			"selected": false,
+			"name": "out_4973ca1f-c3b7-42e4-b1e4-3c0eac309875",
+			"parentNode": "40c1d78c-132c-4e36-8f46-102ec3aa394b",
+			"links": ["f09b252c-ebb2-4053-8115-11786e71fa67"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "40c1d78c-132c-4e36-8f46-102ec3aa394b",
+			"name": "Timer",
+			"icon": "M19.03 7.39L20.45 5.97C20 5.46 19.55 5 19.04 4.56L17.62 6C16.07 4.74 14.12 4 12 4C7.03 4 3 8.03 3 13S7.03 22 12 22C17 22 21 17.97 21 13C21 10.88 20.26 8.93 19.03 7.39M13 14H11V7H13V14M15 1H9V3H15V1Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Timer",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Timer",
+				"version": "1.11.6",
+				"color": "#FDD835",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optSecond": -1,
+				"optMinute": 1,
+				"optHour": -1,
+				"optDay": 0,
+				"optMonth": 0,
+				"optWeekDay": -1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optSecond": {
+							"title": "Seconds",
+							"type": "number",
+							"multiple": true,
+							"enum": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59],
+							"enumNames": ["Every Second", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"]
+						},
+						"optMinute": {
+							"title": "Minutes",
+							"type": "number",
+							"multiple": true,
+							"enum": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59],
+							"enumNames": ["Every Minute", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"]
+						},
+						"optHour": {
+							"title": "Hours",
+							"type": "number",
+							"multiple": true,
+							"enum": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+							"enumNames": ["Every Hour", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"]
+						},
+						"optDay": {
+							"title": "Day of month",
+							"type": "number",
+							"multiple": true,
+							"enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+							"enumNames": ["Every Day of Month", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+						},
+						"optMonth": {
+							"title": "Month",
+							"type": "number",
+							"multiple": true,
+							"enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+							"enumNames": ["Every Month", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+						},
+						"optWeekDay": {
+							"title": "Day of week",
+							"type": "number",
+							"multiple": true,
+							"enum": [-1, 0, 1, 2, 3, 4, 5, 6],
+							"enumNames": ["Every Day of Week", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optWeekDay", "optMonth", "optDay", "optHour", "optMinute", "optSecond"]
+				},
+				"formData": {
+					"optSecond": -1,
+					"optMinute": 5,
+					"optHour": -1,
+					"optDay": 0,
+					"optMonth": 0,
+					"optWeekDay": -1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "2c5d1755-2d4a-452c-a932-f8120d0f8eb7",
+		"type": "simple",
+		"selected": true,
+		"x": -82.33726511721287,
+		"y": 115.32325412338265,
+		"extras": {
+			"inMailFolder": {
+				"scope": "Custom",
+				"name": "INBOX"
+			},
+			"inTop": {
+				"scope": "Custom",
+				"name": "10"
+			},
+			"outMessages": {
+				"scope": "Message",
+				"name": "messages"
+			},
+			"optProtocol": "imap",
+			"optCredentials": {
+				"vaultId": "_",
+				"itemId": "_"
+			},
+			"optMarkRead": false
+		},
+		"ports": [{
+			"id": "e130ca72-7af5-47f3-98ef-2a58f1a72b2c",
+			"type": "default",
+			"selected": false,
+			"name": "out_e130ca72-7af5-47f3-98ef-2a58f1a72b2c",
+			"parentNode": "2c5d1755-2d4a-452c-a932-f8120d0f8eb7",
+			"links": ["c76fda79-f35f-4d36-8afe-7d2f88a7db69"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "9af3c6b7-2a4b-42a0-b365-e85e887ac864",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "2c5d1755-2d4a-452c-a932-f8120d0f8eb7",
+			"links": ["2f130001-584d-4f5b-9a58-052b89f870bc"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "2c5d1755-2d4a-452c-a932-f8120d0f8eb7",
+			"name": "Get Mail",
+			"icon": "M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z",
+			"color": "#bfbfbf",
+			"namespace": "Core.Mail.Get",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Get Mail",
+				"version": "1.11.6",
+				"color": "#bfbfbf",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inMailFolder": {
+					"scope": "Custom",
+					"name": "INBOX"
+				},
+				"inTop": {
+					"scope": "Custom",
+					"name": "10"
+				}
+			}, {
+				"outMessages": {
+					"scope": "Message",
+					"name": "messages"
+				}
+			}, {
+				"optProtocol": "imap",
+				"optCredentials": {
+					"vaultId": "_",
+					"itemId": "_"
+				},
+				"optMarkRead": false
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inMailFolder": {
+							"type": "object",
+							"title": "Mail Folder",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inTop": {
+							"type": "object",
+							"title": "Number of Messages",
+							"variableType": "Integer",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inMailFolder": {
+						"ui:field": "variable"
+					},
+					"inTop": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inMailFolder", "inTop"]
+				},
+				"formData": {
+					"inMailFolder": {
+						"scope": "Custom",
+						"name": "INBOX"
+					},
+					"inTop": {
+						"scope": "Custom",
+						"name": "10"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outMessages": {
+							"type": "object",
+							"title": "Messages",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outMessages": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outMessages": {
+						"scope": "Message",
+						"name": "messages"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optProtocol": {
+							"title": "Protocol",
+							"type": "string",
+							"enum": ["imap"],
+							"enumNames": ["IMAP"]
+						},
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 2,
+							"properties": {
+								"vaultId": {
+									"type": "string"
+								},
+								"itemId": {
+									"type": "string"
+								}
+							}
+						},
+						"optMarkRead": {
+							"title": "Mark as Read",
+							"type": "boolean"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optProtocol", "optCredentials", "optMarkRead"],
+					"optCredentials": {
+						"ui:field": "credentials"
+					}
+				},
+				"formData": {
+					"optProtocol": "imap",
+					"optCredentials": {
+						"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+						"itemId": "e95fdc41-333d-47e9-94a8-f1adb806b44a"
+					},
+					"optMarkRead": false
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "24e5bf91-93dc-4811-86ca-2f87cf382e87",
+		"type": "simple",
+		"selected": true,
+		"x": 193.90145475439675,
+		"y": 111.88737406384463,
+		"extras": {
+			"optInput": {
+				"scope": "Message",
+				"name": "messages"
+			},
+			"optOutput": {
+				"scope": "Message",
+				"name": "message"
+			}
+		},
+		"ports": [{
+			"id": "6b17e6ed-ef93-46f2-a7d8-3e58f9833923",
+			"type": "default",
+			"selected": false,
+			"name": "out_6b17e6ed-ef93-46f2-a7d8-3e58f9833923",
+			"parentNode": "24e5bf91-93dc-4811-86ca-2f87cf382e87",
+			"links": ["92038681-6cec-49f5-b05e-4b5536317909"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "963f23ce-0e7d-472e-b80d-83adfb9bbf5f",
+			"type": "default",
+			"selected": false,
+			"name": "out_963f23ce-0e7d-472e-b80d-83adfb9bbf5f",
+			"parentNode": "24e5bf91-93dc-4811-86ca-2f87cf382e87",
+			"links": ["57b85644-3a65-4788-b1dc-0811aea32257"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "5a1e1d3b-ae71-4eb5-91e7-689c275ef4e8",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "24e5bf91-93dc-4811-86ca-2f87cf382e87",
+			"links": ["c76fda79-f35f-4d36-8afe-7d2f88a7db69", "85571915-c50e-4ab6-8fa0-107a87acd3e3"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "24e5bf91-93dc-4811-86ca-2f87cf382e87",
+			"name": "For Each",
+			"icon": "M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z",
+			"color": "#b9aeec",
+			"namespace": "Core.Programming.ForEach",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "For Each",
+				"version": "1.11.6",
+				"color": "#b9aeec",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"optInput": {
+					"scope": "Message",
+					"name": "messages"
+				},
+				"optOutput": {
+					"scope": "Message",
+					"name": "message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optInput": {
+							"type": "object",
+							"title": "Loop through object",
+							"variableType": "Array",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"optOutput": {
+							"type": "object",
+							"title": "Current Item",
+							"variableType": "string",
+							"messageScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optInput": {
+						"ui:field": "variable"
+					},
+					"optOutput": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optInput": {
+						"scope": "Message",
+						"name": "messages"
+					},
+					"optOutput": {
+						"scope": "Message",
+						"name": "message"
+					}
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "7cc1a9f5-9310-4ce6-a0dd-0b155a81be41",
+		"type": "simple",
+		"selected": true,
+		"x": 191.67530072704056,
+		"y": 54.48385818265598,
+		"extras": {
+			"outputs": 1,
+			"func": "var chstr = msg.message.Subject;\nmsg.check = chstr.includes(\"#ROBO#\");\nvar dict = {};\nif (msg.check === true) {\n  chstr = chstr.replace(\"#ROBO#\",\"\");\n  var splittedsub = chstr.split(\",\");\n  splittedsub.forEach(splitstr);\n  \n}\nfunction splitstr(item){\n  item = item.trim();\n  item = item.replace(\" \", \"\");\n  var x = item.split(\"=\");\n  key = x[0];\n  value = x[1];\n  dict[key] = value;\n}\nmsg.job = dict['JOB'];\nmsg.info = dict['INFO'];\nmsg.stat = dict['STATUS'];\nmsg.mailId = msg.message.Uid;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "a9f80121-9cfa-4674-9371-d2ac93520428",
+			"type": "default",
+			"selected": false,
+			"name": "out_a9f80121-9cfa-4674-9371-d2ac93520428",
+			"parentNode": "7cc1a9f5-9310-4ce6-a0dd-0b155a81be41",
+			"links": ["aaafa957-73e6-4bcd-9aad-0c996134f55d"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "bbbca440-fd6c-4231-b6e1-2d8aff200c5c",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "7cc1a9f5-9310-4ce6-a0dd-0b155a81be41",
+			"links": ["92038681-6cec-49f5-b05e-4b5536317909"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "7cc1a9f5-9310-4ce6-a0dd-0b155a81be41",
+			"name": "Function",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Function",
+				"version": "1.11.6",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"func": "var chstr = msg.message.Subject;\nmsg.check = chstr.includes(\"#ROBO#\");\nvar dict = {};\nif (msg.check === true) {\n  chstr = chstr.replace(\"#ROBO#\",\"\");\n  var splittedsub = chstr.split(\",\");\n  splittedsub.forEach(splitstr);\n  \n}\nfunction splitstr(item){\n  item = item.trim();\n  item = item.replace(\" \", \"\");\n  var x = item.split(\"=\");\n  key = x[0];\n  value = x[1];\n  dict[key] = value;\n}\nmsg.job = dict['JOB'];\nmsg.info = dict['INFO'];\nmsg.stat = dict['STATUS'];\nmsg.mailId = msg.message.Uid;\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "var chstr = msg.message.Subject;\nmsg.check = chstr.includes(\"#ROBO#\");\nvar dict = {};\nif (msg.check === true) {\n  chstr = chstr.replace(\"#ROBO#\",\"\");\n  var splittedsub = chstr.split(\",\");\n  splittedsub.forEach(splitstr);\n  \n}\nfunction splitstr(item){\n  item = item.trim();\n  item = item.replace(\" \", \"\");\n  var x = item.split(\"=\");\n  key = x[0];\n  value = x[1];\n  dict[key] = value;\n}\nmsg.job = dict['JOB'];\nmsg.info = dict['INFO'];\nmsg.stat = dict['STATUS'];\nmsg.mailId = msg.message.Uid;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "46c65575-e15c-4d96-aad9-aed8de9d0c86",
+		"type": "simple",
+		"selected": true,
+		"x": 512.2740037740047,
+		"y": 181.90698190698188,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "2fc21a37-6177-4104-9fa7-847218109eac",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "46c65575-e15c-4d96-aad9-aed8de9d0c86",
+			"links": ["57b85644-3a65-4788-b1dc-0811aea32257"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "46c65575-e15c-4d96-aad9-aed8de9d0c86",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "d5dcf142-ac7c-48f5-ab13-0d2c848f6d6c",
+		"type": "simple",
+		"selected": true,
+		"x": 1233.5868233950841,
+		"y": 64.39974672627822,
+		"extras": {
+			"optDebugData": {
+				"name": "",
+				"scope": "Message"
+			},
+			"optActive": true,
+			"optSysConsole": false
+		},
+		"ports": [{
+			"id": "5d300dae-2d21-42ed-949d-aa38dd22c89f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "d5dcf142-ac7c-48f5-ab13-0d2c848f6d6c",
+			"links": ["ce2b99e6-13d6-4b87-8de6-2063e4e57775"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "d5dcf142-ac7c-48f5-ab13-0d2c848f6d6c",
+			"name": "Debug",
+			"icon": "M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z",
+			"color": "#E6EE9C",
+			"namespace": "Core.Programming.Debug",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optDebugData": {
+					"name": "",
+					"scope": "Message"
+				},
+				"optActive": true,
+				"optSysConsole": false
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optActive": {
+							"title": "Active",
+							"type": "boolean"
+						},
+						"optSysConsole": {
+							"title": "System Console",
+							"type": "boolean"
+						},
+						"optDebugData": {
+							"type": "object",
+							"title": "Debug Data",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optDebugData": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optDebugData", "optActive", "optSysConsole"]
+				},
+				"formData": {
+					"optDebugData": {
+						"name": "",
+						"scope": "Message"
+					},
+					"optActive": true,
+					"optSysConsole": false
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "f252788d-e96a-4752-94e5-54fa839c9b02",
+		"type": "simple",
+		"selected": true,
+		"x": 492.44565840076757,
+		"y": 69.6806317177834,
+		"extras": {
+			"optConditions": ["msg.check === true", "msg.check === false"]
+		},
+		"ports": [{
+			"id": "bef204d6-dec9-4d54-a024-4ec364074724",
+			"type": "default",
+			"selected": false,
+			"name": "out_bef204d6-dec9-4d54-a024-4ec364074724",
+			"parentNode": "f252788d-e96a-4752-94e5-54fa839c9b02",
+			"links": ["02c0a131-8f7d-4d61-b20b-db3224337f53"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "6cdbce0c-eb4b-4726-851d-98f5bf08cd90",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "f252788d-e96a-4752-94e5-54fa839c9b02",
+			"links": ["aaafa957-73e6-4bcd-9aad-0c996134f55d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}, {
+			"id": "f1f1eacd-9017-4ccd-b47e-08b212523a08",
+			"type": "default",
+			"selected": false,
+			"name": "out_f1f1eacd-9017-4ccd-b47e-08b212523a08",
+			"parentNode": "f252788d-e96a-4752-94e5-54fa839c9b02",
+			"links": ["e020746a-6bfd-4a69-8925-408a1256d73e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "f252788d-e96a-4752-94e5-54fa839c9b02",
+			"name": "Switch",
+			"icon": "M14,4L16.29,6.29L13.41,9.17L14.83,10.59L17.71,7.71L20,10V4M10,4H4V10L6.29,7.71L11,12.41V20H13V11.59L7.71,6.29",
+			"color": "#1DE9B6",
+			"namespace": "Core.Programming.Switch",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Switch",
+				"version": "1.11.6",
+				"color": "#1DE9B6",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"optConditions": ["msg.check === true", "msg.check === false"]
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optConditions": {
+							"title": "",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optConditions": {
+						"ui:description": "Output Ports",
+						"items": {
+							"ui:placeholder": "Enter a JS expression"
+						},
+						"ui:options": {
+							"orderable": false
+						}
+					}
+				},
+				"formData": {
+					"optConditions": ["msg.check === true", "msg.check === false"]
+				}
+			}],
+			"outputs": 2,
+			"inputs": 1
+		}
+	}, {
+		"id": "ada1101e-51a3-4d14-be72-ae7361cf995f",
+		"type": "simple",
+		"selected": true,
+		"x": 943.5225383099502,
+		"y": 98.04810187165631,
+		"extras": {
+			"optNodes": {
+				"all": false,
+				"ids": ["b05e4d44-a0c5-48fa-87ce-0e181bade712"]
+			}
+		},
+		"ports": [{
+			"id": "f4d4cd38-2ca9-4974-999d-4d137c9b4e88",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ada1101e-51a3-4d14-be72-ae7361cf995f",
+			"links": ["e020746a-6bfd-4a69-8925-408a1256d73e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ada1101e-51a3-4d14-be72-ae7361cf995f",
+			"name": "Go To",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.GoTo",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Go To",
+				"version": "1.11.6",
+				"color": "#444",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"optNodes": {
+					"all": false,
+					"ids": ["b05e4d44-a0c5-48fa-87ce-0e181bade712"]
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"inputs": 1,
+					"outputs": 1,
+					"properties": {
+						"optNodes": {
+							"type": "object",
+							"title": "",
+							"properties": {
+								"ids": {
+									"title": "",
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"all": {
+									"title": "All",
+									"type": "boolean"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optNodes": {
+						"ui:field": "catch"
+					},
+					"ui:order": ["optNodes"]
+				},
+				"formData": {
+					"optNodes": {
+						"all": false,
+						"ids": ["b05e4d44-a0c5-48fa-87ce-0e181bade712"]
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "b05e4d44-a0c5-48fa-87ce-0e181bade712",
+		"type": "simple",
+		"selected": true,
+		"x": -62.848459246291256,
+		"y": 182.62180818837155,
+		"extras": {},
+		"ports": [{
+			"id": "d78f3600-4e47-4181-ba91-ad5802aa99ac",
+			"type": "default",
+			"selected": false,
+			"name": "out_d78f3600-4e47-4181-ba91-ad5802aa99ac",
+			"parentNode": "b05e4d44-a0c5-48fa-87ce-0e181bade712",
+			"links": ["85571915-c50e-4ab6-8fa0-107a87acd3e3"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "b05e4d44-a0c5-48fa-87ce-0e181bade712",
+			"name": "Label",
+			"icon": "M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z",
+			"color": "#444",
+			"namespace": "Core.Flow.Label",
+			"version": "1.11.6",
+			"abc": [],
+			"xyz": [],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "5d30df73-55bf-4f29-a7bf-232525ba0de8",
+		"type": "simple",
+		"selected": true,
+		"x": 734.0181265632903,
+		"y": -4.392746086946772,
+		"extras": {
+			"outputs": 1,
+			"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/4bba15f7-a0ef-4c86-8a9d-6e25cc05fccd/subflows/5d30df73-55bf-4f29-a7bf-232525ba0de8.flow"
+		},
+		"ports": [{
+			"id": "c5777d22-faea-4415-8643-fc936f0f1030",
+			"type": "default",
+			"selected": false,
+			"name": "out_c5777d22-faea-4415-8643-fc936f0f1030",
+			"parentNode": "5d30df73-55bf-4f29-a7bf-232525ba0de8",
+			"links": ["c922eefa-4e72-4aba-87e4-5c4f9f6090e1"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "3c375a47-8b9c-4ceb-8c04-e92a3de2a08d",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "5d30df73-55bf-4f29-a7bf-232525ba0de8",
+			"links": ["02c0a131-8f7d-4d61-b20b-db3224337f53"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "5d30df73-55bf-4f29-a7bf-232525ba0de8",
+			"name": "Mysql",
+			"icon": "M4,9C5.31,9 6.42,9.83 6.83,11H17.17C17.58,9.83 18.69,9 20,9A3,3 0 0,1 23,12A3,3 0 0,1 20,15C18.69,15 17.58,14.17 17.17,13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z",
+			"color": "#646bf5",
+			"namespace": "Core.Flow.SubFlow",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Mysql",
+				"version": "1.11.6",
+				"color": "#646bf5",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outputs": 1,
+				"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/4bba15f7-a0ef-4c86-8a9d-6e25cc05fccd/subflows/5d30df73-55bf-4f29-a7bf-232525ba0de8.flow"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"subflow": {
+							"type": "string",
+							"properties": {}
+						}
+					}
+				},
+				"uiSchema": {
+					"subflow": {
+						"ui:widget": "hidden"
+					},
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"ui:order": ["outputs", "*"]
+				},
+				"formData": {
+					"outputs": 1,
+					"subflow": "https://api.robomotion.io/v1/flows.files.get?type=subflow&path=flows/4bba15f7-a0ef-4c86-8a9d-6e25cc05fccd/subflows/5d30df73-55bf-4f29-a7bf-232525ba0de8.flow"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "71ab6d7b-2a96-472e-bf0b-5d413d5c2bc7",
+		"type": "simple",
+		"selected": true,
+		"x": -89.34091372654578,
+		"y": 55.78047565136646,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.dbName = \"devel\"; // Database name for mysql connection.\nmsg.hostName = \"localhost\"; // Host name for mysql connection.\nmsg.portNumber = 3306; // Port Number for mysql connection.\nmsg.tableName = \"test_table\"; // Table to insert data.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "96a85a4b-4d9a-4a06-af59-8d8c488b7f9d",
+			"type": "default",
+			"selected": false,
+			"name": "out_96a85a4b-4d9a-4a06-af59-8d8c488b7f9d",
+			"parentNode": "71ab6d7b-2a96-472e-bf0b-5d413d5c2bc7",
+			"links": ["2f130001-584d-4f5b-9a58-052b89f870bc"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "27a8aba3-c202-437b-b9cd-d07f2532633a",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "71ab6d7b-2a96-472e-bf0b-5d413d5c2bc7",
+			"links": ["f09b252c-ebb2-4053-8115-11786e71fa67"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "71ab6d7b-2a96-472e-bf0b-5d413d5c2bc7",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.dbName = \"devel\"; // Database name for mysql connection.\nmsg.hostName = \"localhost\"; // Host name for mysql connection.\nmsg.portNumber = 3306; // Port Number for mysql connection.\nmsg.tableName = \"test_table\"; // Table to insert data.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.dbName = \"devel\"; // Database name for mysql connection.\nmsg.hostName = \"localhost\"; // Host name for mysql connection.\nmsg.portNumber = 3306; // Port Number for mysql connection.\nmsg.tableName = \"test_table\"; // Table to insert data.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "67d40a2f-db24-4096-8b80-dc189cc0b3c6",
+		"type": "simple",
+		"selected": true,
+		"x": 979.205384195592,
+		"y": -0.9880907870777804,
+		"extras": {
+			"inMailFolder": {
+				"scope": "Custom",
+				"name": "INBOX"
+			},
+			"inUid": {
+				"scope": "Message",
+				"name": "mailId"
+			},
+			"optProtocol": "imap",
+			"optCredentials": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			},
+			"optDeleteAll": false
+		},
+		"ports": [{
+			"id": "0913c1ba-5ea7-40d5-a5c5-ad029b5a31a9",
+			"type": "default",
+			"selected": false,
+			"name": "out_0913c1ba-5ea7-40d5-a5c5-ad029b5a31a9",
+			"parentNode": "67d40a2f-db24-4096-8b80-dc189cc0b3c6",
+			"links": ["ce2b99e6-13d6-4b87-8de6-2063e4e57775"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "63541186-460b-4c37-9d53-39c3edf11aa2",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "67d40a2f-db24-4096-8b80-dc189cc0b3c6",
+			"links": ["c922eefa-4e72-4aba-87e4-5c4f9f6090e1"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "67d40a2f-db24-4096-8b80-dc189cc0b3c6",
+			"name": "Delete Mail",
+			"icon": "M22.1 21.5L2.4 1.7L1.1 3L2.6 4.5C2.2 4.9 2 5.4 2 6V18C2 19.1 2.9 20 4 20H18.1L20.8 22.7L22.1 21.5M4 8V6L4.3 6.2L9.6 11.5L4 8M13.4 10.2L7.2 4H20C21.1 4 22 4.9 22 6V18C22 18.2 22 18.5 21.9 18.7L14.6 11.4L20 8V6L13.4 10.2Z",
+			"color": "#bfbfbf",
+			"namespace": "Core.Mail.Delete",
+			"version": "1.16.4",
+			"abc": [{
+				"name": "Delete Mail",
+				"version": "1.16.4",
+				"color": "#bfbfbf",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inMailFolder": {
+					"scope": "Custom",
+					"name": "INBOX"
+				},
+				"inUid": {
+					"scope": "Message",
+					"name": "mailId"
+				}
+			}, {
+				"optProtocol": "imap",
+				"optCredentials": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				},
+				"optDeleteAll": false
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inMailFolder": {
+							"type": "object",
+							"title": "Mail Folder",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inUid": {
+							"type": "object",
+							"title": "Messages Id",
+							"variableType": "Integer",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inMailFolder": {
+						"ui:field": "variable"
+					},
+					"inUid": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inMailFolder", "inUid"]
+				},
+				"formData": {
+					"inMailFolder": {
+						"scope": "Custom",
+						"name": "INBOX"
+					},
+					"inUid": {
+						"scope": "Message",
+						"name": "mailId"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optProtocol": {
+							"title": "Protocol",
+							"type": "string",
+							"enum": ["imap"],
+							"enumNames": ["IMAP"]
+						},
+						"optCredentials": {
+							"type": "object",
+							"title": "Credentials",
+							"subtitle": "Credentials",
+							"category": 2,
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "object",
+									"properties": {
+										"vaultId": {
+											"type": "string"
+										},
+										"itemId": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"optDeleteAll": {
+							"type": "boolean",
+							"title": "Delete All"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optProtocol", "optCredentials", "optDeleteAll"],
+					"optCredentials": {
+						"ui:field": "vault"
+					}
+				},
+				"formData": {
+					"optProtocol": "imap",
+					"optCredentials": {
+						"scope": "Custom",
+						"name": {
+							"vaultId": "31728a24-3a82-4978-9ee0-3a0502e949dd",
+							"itemId": "e95fdc41-333d-47e9-94a8-f1adb806b44a"
+						}
+					},
+					"optDeleteAll": false
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b14ad181-3bfa-4f55-8b17-4a16a27bfa9f",
+		"type": "simple",
+		"selected": true,
+		"x": -449.57009372873745,
+		"y": -254.25021699884707,
+		"extras": {
+			"optText": "# Mail To MySQL Inserter\r\n\r\n This template uses *Mail* and *MySQL* nodes to show inserting data to a MySQL table with an email triggered flow.\r\n \r\n## How it Works?\r\n1. Go to Flow Designer and press package icon above the node palette.\r\n\r\n2. You should see MySQL package icon, install it.\r\n\r\n3. You need to mail item (from vaults) for Get Mail and Delete Mail node credentials. See [here](https://docs.robomotion.io/getting-started/tutorials/mail) for sample mail operation with mail item.\r\n\r\n4. Timer is for one hour periods. You can change it according to your requirements.\r\n\r\n5. Go to Vaults and create new login item for mysql.\r\n\r\n6. Set this vault item to Connect node credentials.\r\n\r\n7. Edit the Config Node.\r\n\r\n8. This flow takes 3 variables(JOB, INFO, STATUS), you can add more variables from Function node.\r\n```js\r\nmsg.test = dict['Test'];\r\n```"
+		},
+		"ports": [],
+		"model": {
+			"id": "b14ad181-3bfa-4f55-8b17-4a16a27bfa9f",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "# Mail To MySQL Inserter\r\n\r\n This template uses *Mail* and *MySQL* nodes to show inserting data to a MySQL table with an email triggered flow.\r\n \r\n## How it Works?\r\n1. Go to Flow Designer and press package icon above the node palette.\r\n\r\n2. You should see MySQL package icon, install it.\r\n\r\n3. You need to mail item (from vaults) for Get Mail and Delete Mail node credentials. See [here](https://docs.robomotion.io/getting-started/tutorials/mail) for sample mail operation with mail item.\r\n\r\n4. Timer is for one hour periods. You can change it according to your requirements.\r\n\r\n5. Go to Vaults and create new login item for mysql.\r\n\r\n6. Set this vault item to Connect node credentials.\r\n\r\n7. Edit the Config Node.\r\n\r\n8. This flow takes 3 variables(JOB, INFO, STATUS), you can add more variables from Function node.\r\n```js\r\nmsg.test = dict['Test'];\r\n```"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "# Mail To MySQL Inserter\r\n\r\n This template uses *Mail* and *MySQL* nodes to show inserting data to a MySQL table with an email triggered flow.\r\n \r\n## How it Works?\r\n1. Go to Flow Designer and press package icon above the node palette.\r\n\r\n2. You should see MySQL package icon, install it.\r\n\r\n3. You need to mail item (from vaults) for Get Mail and Delete Mail node credentials. See [here](https://docs.robomotion.io/getting-started/tutorials/mail) for sample mail operation with mail item.\r\n\r\n4. Timer is for one hour periods. You can change it according to your requirements.\r\n\r\n5. Go to Vaults and create new login item for mysql.\r\n\r\n6. Set this vault item to Connect node credentials.\r\n\r\n7. Edit the Config Node.\r\n\r\n8. This flow takes 3 variables(JOB, INFO, STATUS), you can add more variables from Function node.\r\n```js\r\nmsg.test = dict['Test'];\r\n```"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": [{
+		"id": "5d30df73-55bf-4f29-a7bf-232525ba0de8",
+		"flow": "{\"id\":\"5d30df73-55bf-4f29-a7bf-232525ba0de8\",\"offsetX\":88.72521284754308,\"offsetY\":-105.25731838477174,\"zoom\":91.31731404895542,\"gridSize\":0,\"links\":[{\"id\":\"6063fe88-6cdd-4b32-8e72-e10e3f9f8e30\",\"type\":\"default\",\"selected\":false,\"source\":\"8a51173c-68fc-4103-8e87-ee5c0bc8e172\",\"sourcePort\":\"7604c87b-71b6-4cdd-a842-a180ee529246\",\"target\":\"bc624212-3cf2-4618-a080-25bbe2ee4f9e\",\"targetPort\":\"bd054b6e-fff6-45bc-a8a0-834733dbb8b6\",\"points\":[{\"id\":\"6d5936ec-08c6-4150-a777-bf0aeff78947\",\"selected\":false,\"x\":835.8749913773775,\"y\":359.5468722453468},{\"id\":\"1e048e77-a639-463a-8350-2780bd80cb18\",\"selected\":false,\"x\":1026.9999869163153,\"y\":312.00000939836303}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"bdf3ddd6-c346-4378-81ab-4a35c5d5fbd6\",\"type\":\"default\",\"selected\":false,\"source\":\"55b5c1a3-fa6c-4a4a-8825-d4ae2db3814a\",\"sourcePort\":\"6ca3fca9-f036-4954-b94a-ff74d5f19ad5\",\"target\":\"8a51173c-68fc-4103-8e87-ee5c0bc8e172\",\"targetPort\":\"33d1fd94-09a3-4dc5-857a-6e73a4790147\",\"points\":[{\"id\":\"e7d32f52-d0fb-4d12-a44d-06676bf01e79\",\"selected\":false,\"x\":839.8750104306966,\"y\":410.5468812402883},{\"id\":\"7d43f256-3c2d-4e6c-9fc3-380d8bb9fc48\",\"selected\":false,\"x\":1037.8749509919473,\"y\":361.5468817720064}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":-300},{\"id\":\"8a562ed9-5d62-4a9b-90cc-dc3ea761ee43\",\"type\":\"default\",\"selected\":false,\"source\":\"fba7e861-e486-4e03-8a51-f48b94034e24\",\"sourcePort\":\"073e97cc-e72b-42d7-83ff-962fb7533555\",\"target\":\"bc624212-3cf2-4618-a080-25bbe2ee4f9e\",\"targetPort\":\"4917e466-331c-4959-93e0-48b05d1f6e14\",\"points\":[{\"id\":\"f16b53ad-3c09-4c07-89d5-ad7a174410b9\",\"selected\":false,\"x\":760.9999898027846,\"y\":309.4999974900386},{\"id\":\"6464e51a-dbff-45b4-b104-5e55a81e638c\",\"selected\":false,\"x\":825.0000273017451,\"y\":309.9999998717035}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"71df777f-cd4c-4625-b3e7-f0f18b1b1965\",\"type\":\"default\",\"selected\":false,\"source\":\"55b5c1a3-fa6c-4a4a-8825-d4ae2db3814a\",\"sourcePort\":\"63896b89-0127-46df-b5ff-158cbba140a0\",\"target\":\"09997bad-3b5d-45d5-b4d5-c6c63025f5b4\",\"targetPort\":\"f05fedc9-d34c-41a3-98bc-54ef953b2a87\",\"points\":[{\"id\":\"9dd91ddd-c383-4c28-af86-e5cc6ac4d05c\",\"selected\":false,\"x\":1056.3124949530509,\"y\":412.54689076694785},{\"id\":\"37d617b3-b921-4c85-a6d3-9cf27943410e\",\"selected\":false,\"x\":849.0000079445871,\"y\":465.0000029639193}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"50ea2df5-7fa1-4c9e-973f-1c0ee2481917\",\"type\":\"default\",\"selected\":false,\"source\":\"09997bad-3b5d-45d5-b4d5-c6c63025f5b4\",\"sourcePort\":\"fdca07f1-497e-4142-9563-14249827338e\",\"target\":\"078246dc-c63b-4aae-b309-9ecac9e5c554\",\"targetPort\":\"e7ce89f2-a27d-468f-a2fd-081b69e26e62\",\"points\":[{\"id\":\"775e3fd0-be8c-4042-9216-bffa5d71d1d1\",\"selected\":false,\"x\":1051.0000343976935,\"y\":467.0000124905789},{\"id\":\"b25587e2-8d36-415d-a201-b5219ed69fa7\",\"selected\":false,\"x\":856.9999792126889,\"y\":517.0000167221906}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300},{\"id\":\"8c5bbd8c-55e4-460e-9ee9-c49bf995e939\",\"type\":\"default\",\"selected\":false,\"source\":\"078246dc-c63b-4aae-b309-9ecac9e5c554\",\"sourcePort\":\"4e5c8165-a0fc-486d-b640-17c1b907944b\",\"target\":\"f606b9b0-32f0-49fe-9e3e-740ada48ec15\",\"targetPort\":\"73057703-68b8-4498-97b8-ffd7d2b422cc\",\"points\":[{\"id\":\"fccb6392-a3ae-42ba-901f-43b99b66de44\",\"selected\":false,\"x\":1058.9999388272588,\"y\":518.999992829582},{\"id\":\"432ce0c4-b7e3-468a-9610-f7661941ad50\",\"selected\":true,\"x\":1167.000052235657,\"y\":307.5000046730131}],\"extras\":{},\"labels\":[],\"width\":3,\"color\":\"rgba(87,87,87,0.5)\",\"curvyness\":300}],\"nodes\":[{\"id\":\"fba7e861-e486-4e03-8a51-f48b94034e24\",\"type\":\"simple\",\"selected\":false,\"x\":560,\"y\":284.5,\"extras\":{},\"ports\":[{\"id\":\"073e97cc-e72b-42d7-83ff-962fb7533555\",\"type\":\"default\",\"selected\":false,\"name\":\"out_073e97cc-e72b-42d7-83ff-962fb7533555\",\"parentNode\":\"fba7e861-e486-4e03-8a51-f48b94034e24\",\"links\":[\"8a562ed9-5d62-4a9b-90cc-dc3ea761ee43\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"}],\"model\":{\"id\":\"fba7e861-e486-4e03-8a51-f48b94034e24\",\"name\":\"Begin\",\"icon\":\"M4,9C5.31,9 6.42,9.83 6.83,11H22V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.Begin\",\"version\":\"0.0\",\"abc\":[],\"xyz\":[],\"outputs\":1,\"inputs\":0}},{\"id\":\"f606b9b0-32f0-49fe-9e3e-740ada48ec15\",\"type\":\"simple\",\"selected\":false,\"x\":1160,\"y\":284.5,\"extras\":{\"sfPort\":0},\"ports\":[{\"id\":\"73057703-68b8-4498-97b8-ffd7d2b422cc\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"f606b9b0-32f0-49fe-9e3e-740ada48ec15\",\"links\":[\"8c5bbd8c-55e4-460e-9ee9-c49bf995e939\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"f606b9b0-32f0-49fe-9e3e-740ada48ec15\",\"name\":\"End\",\"icon\":\"M20,9C18.69,9 17.58,9.83 17.17,11H2V13H17.17C17.58,14.17 18.69,15 20,15A3,3 0 0,0 23,12A3,3 0 0,0 20,9Z\",\"color\":\"#646bf5\",\"namespace\":\"Core.Flow.End\",\"version\":\"0.0\",\"abc\":[{},{\"sfPort\":0}],\"xyz\":[{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"sfPort\":{\"title\":\"Port\",\"type\":\"number\"}}},\"uiSchema\":{\"sfPort\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"*\"]},\"formData\":{\"sfPort\":0}}],\"outputs\":0,\"inputs\":1}},{\"id\":\"bc624212-3cf2-4618-a080-25bbe2ee4f9e\",\"type\":\"simple\",\"selected\":true,\"x\":818,\"y\":287,\"extras\":{\"outConnectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"},\"optHostName\":{\"scope\":\"Message\",\"name\":\"hostName\"},\"optPort\":{\"scope\":\"Message\",\"name\":\"portNumber\"},\"optDatabase\":{\"scope\":\"Message\",\"name\":\"dbName\"},\"optCredentials\":{\"vaultId\":\"_\",\"itemId\":\"_\"}},\"ports\":[{\"id\":\"bd054b6e-fff6-45bc-a8a0-834733dbb8b6\",\"type\":\"default\",\"selected\":false,\"name\":\"out_bd054b6e-fff6-45bc-a8a0-834733dbb8b6\",\"parentNode\":\"bc624212-3cf2-4618-a080-25bbe2ee4f9e\",\"links\":[\"6063fe88-6cdd-4b32-8e72-e10e3f9f8e30\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"4917e466-331c-4959-93e0-48b05d1f6e14\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"bc624212-3cf2-4618-a080-25bbe2ee4f9e\",\"links\":[\"8a562ed9-5d62-4a9b-90cc-dc3ea761ee43\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"bc624212-3cf2-4618-a080-25bbe2ee4f9e\",\"name\":\"Connect\",\"icon\":\"M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z\",\"color\":\"#003b57\",\"namespace\":\"Robomotion.MySQL.Connect\",\"version\":\"0.0.7\",\"abc\":[{\"name\":\"Connect\",\"version\":\"0.0.7\",\"color\":\"#003b57\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"outConnectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}},{\"optHostName\":{\"scope\":\"Message\",\"name\":\"hostName\"},\"optPort\":{\"scope\":\"Message\",\"name\":\"portNumber\"},\"optDatabase\":{\"scope\":\"Message\",\"name\":\"dbName\"},\"optCredentials\":{\"vaultId\":\"_\",\"itemId\":\"_\"}}],\"xyz\":[{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outConnectionId\":{\"type\":\"object\",\"title\":\"Connection Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true}}},\"uiSchema\":{\"outConnectionId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outConnectionId\"]},\"formData\":{\"outConnectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}}},{\"schema\":{\"title\":\"Options\",\"type\":\"object\",\"properties\":{\"optHostName\":{\"type\":\"object\",\"title\":\"Host Name\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"customScope\":true,\"messageScope\":true},\"optPort\":{\"type\":\"object\",\"title\":\"Port\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"customScope\":true,\"messageScope\":true},\"optDatabase\":{\"type\":\"object\",\"title\":\"Database Name\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"customScope\":true,\"messageScope\":true},\"optCredentials\":{\"type\":\"object\",\"title\":\"Credentials\",\"category\":1,\"subtitle\":\"Credentials\",\"properties\":{\"vaultId\":{\"type\":\"string\"},\"itemId\":{\"type\":\"string\"}}}}},\"uiSchema\":{\"optHostName\":{\"ui:field\":\"variable\"},\"optPort\":{\"ui:field\":\"variable\"},\"optDatabase\":{\"ui:field\":\"variable\"},\"optCredentials\":{\"ui:field\":\"credentials\"},\"ui:order\":[\"optHostName\",\"optPort\",\"optDatabase\",\"optCredentials\"]},\"formData\":{\"optHostName\":{\"scope\":\"Message\",\"name\":\"hostName\"},\"optPort\":{\"scope\":\"Message\",\"name\":\"portNumber\"},\"optDatabase\":{\"scope\":\"Message\",\"name\":\"dbName\"},\"optCredentials\":{\"vaultId\":\"31728a24-3a82-4978-9ee0-3a0502e949dd\",\"itemId\":\"5fb7c9e2-5eed-490b-8c0a-ee75507e8098\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"8a51173c-68fc-4103-8e87-ee5c0bc8e172\",\"type\":\"simple\",\"selected\":false,\"x\":828.8762886597938,\"y\":336.5567010309278,\"extras\":{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"},\"outTransactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"}},\"ports\":[{\"id\":\"33d1fd94-09a3-4dc5-857a-6e73a4790147\",\"type\":\"default\",\"selected\":false,\"name\":\"out_33d1fd94-09a3-4dc5-857a-6e73a4790147\",\"parentNode\":\"8a51173c-68fc-4103-8e87-ee5c0bc8e172\",\"links\":[\"bdf3ddd6-c346-4378-81ab-4a35c5d5fbd6\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"7604c87b-71b6-4cdd-a842-a180ee529246\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"8a51173c-68fc-4103-8e87-ee5c0bc8e172\",\"links\":[\"6063fe88-6cdd-4b32-8e72-e10e3f9f8e30\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"8a51173c-68fc-4103-8e87-ee5c0bc8e172\",\"name\":\"Start Transaction\",\"icon\":\"M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z\",\"color\":\"#003b57\",\"namespace\":\"Robomotion.MySQL.Start\",\"version\":\"0.0.7\",\"abc\":[{\"name\":\"Start Transaction\",\"version\":\"0.0.7\",\"color\":\"#003b57\",\"delayBefore\":0,\"delayAfter\":0,\"continueOnError\":false},{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}},{\"outTransactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"connectionId\":{\"type\":\"object\",\"title\":\"Connection Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true}}},\"uiSchema\":{\"connectionId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"connectionId\"]},\"formData\":{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}}},{\"schema\":{\"title\":\"Output\",\"type\":\"object\",\"properties\":{\"outTransactionId\":{\"type\":\"object\",\"title\":\"Transaction Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true}}},\"uiSchema\":{\"outTransactionId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"outTransactionId\"]},\"formData\":{\"outTransactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"55b5c1a3-fa6c-4a4a-8825-d4ae2db3814a\",\"type\":\"simple\",\"selected\":false,\"x\":832.8762886597938,\"y\":387.5567010309278,\"extras\":{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"},\"transactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"},\"func\":\"INSERT INTO {{tableName}} VALUES(\\\"{{job}}\\\",\\\"{{info}}\\\",\\\"{{stat}}\\\");\"},\"ports\":[{\"id\":\"63896b89-0127-46df-b5ff-158cbba140a0\",\"type\":\"default\",\"selected\":false,\"name\":\"out_63896b89-0127-46df-b5ff-158cbba140a0\",\"parentNode\":\"55b5c1a3-fa6c-4a4a-8825-d4ae2db3814a\",\"links\":[\"71df777f-cd4c-4625-b3e7-f0f18b1b1965\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"6ca3fca9-f036-4954-b94a-ff74d5f19ad5\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"55b5c1a3-fa6c-4a4a-8825-d4ae2db3814a\",\"links\":[\"bdf3ddd6-c346-4378-81ab-4a35c5d5fbd6\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"55b5c1a3-fa6c-4a4a-8825-d4ae2db3814a\",\"name\":\"Execute Non Query\",\"icon\":\"M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z\",\"color\":\"#003b57\",\"editor\":\"sql\",\"namespace\":\"Robomotion.MySQL.NonQuery\",\"version\":\"0.0.7\",\"abc\":[{},{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"},\"transactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"},\"func\":\"INSERT INTO {{tableName}} VALUES(\\\"{{job}}\\\",\\\"{{info}}\\\",\\\"{{stat}}\\\");\"}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"connectionId\":{\"type\":\"object\",\"title\":\"Connection Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true},\"transactionId\":{\"type\":\"object\",\"title\":\"Transaction Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true},\"func\":{\"type\":\"string\",\"title\":\"SQL Query\"}}},\"uiSchema\":{\"connectionId\":{\"ui:field\":\"variable\"},\"transactionId\":{\"ui:field\":\"variable\"},\"func\":{\"ui:widget\":\"hidden\"},\"ui:order\":[\"connectionId\",\"transactionId\",\"func\"]},\"formData\":{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"},\"transactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"},\"func\":\"INSERT INTO {{tableName}} VALUES(\\\"{{job}}\\\",\\\"{{info}}\\\",\\\"{{stat}}\\\");\"}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"09997bad-3b5d-45d5-b4d5-c6c63025f5b4\",\"type\":\"simple\",\"selected\":false,\"x\":842,\"y\":442,\"extras\":{\"transactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"}},\"ports\":[{\"id\":\"fdca07f1-497e-4142-9563-14249827338e\",\"type\":\"default\",\"selected\":false,\"name\":\"out_fdca07f1-497e-4142-9563-14249827338e\",\"parentNode\":\"09997bad-3b5d-45d5-b4d5-c6c63025f5b4\",\"links\":[\"50ea2df5-7fa1-4c9e-973f-1c0ee2481917\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"f05fedc9-d34c-41a3-98bc-54ef953b2a87\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"09997bad-3b5d-45d5-b4d5-c6c63025f5b4\",\"links\":[\"71df777f-cd4c-4625-b3e7-f0f18b1b1965\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"09997bad-3b5d-45d5-b4d5-c6c63025f5b4\",\"name\":\"Commit Transaction\",\"icon\":\"M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z\",\"color\":\"#003b57\",\"namespace\":\"Robomotion.MySQL.Commit\",\"version\":\"0.0.7\",\"abc\":[{},{\"transactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"transactionId\":{\"type\":\"object\",\"title\":\"Transaction Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true}}},\"uiSchema\":{\"transactionId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"transactionId\"]},\"formData\":{\"transactionId\":{\"scope\":\"Message\",\"name\":\"trx_id\"}}}],\"outputs\":1,\"inputs\":1}},{\"id\":\"078246dc-c63b-4aae-b309-9ecac9e5c554\",\"type\":\"simple\",\"selected\":false,\"x\":850,\"y\":494,\"extras\":{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}},\"ports\":[{\"id\":\"4e5c8165-a0fc-486d-b640-17c1b907944b\",\"type\":\"default\",\"selected\":false,\"name\":\"out_4e5c8165-a0fc-486d-b640-17c1b907944b\",\"parentNode\":\"078246dc-c63b-4aae-b309-9ecac9e5c554\",\"links\":[\"8c5bbd8c-55e4-460e-9ee9-c49bf995e939\"],\"in\":false,\"label\":\"simple\",\"position\":\"out\"},{\"id\":\"e7ce89f2-a27d-468f-a2fd-081b69e26e62\",\"type\":\"default\",\"selected\":false,\"name\":\"in\",\"parentNode\":\"078246dc-c63b-4aae-b309-9ecac9e5c554\",\"links\":[\"50ea2df5-7fa1-4c9e-973f-1c0ee2481917\"],\"in\":true,\"label\":\"simple\",\"position\":\"in\"}],\"model\":{\"id\":\"078246dc-c63b-4aae-b309-9ecac9e5c554\",\"name\":\"Disconnect\",\"icon\":\"M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z\",\"color\":\"#003b57\",\"namespace\":\"Robomotion.MySQL.Disconnect\",\"version\":\"0.0.7\",\"abc\":[{},{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}}],\"xyz\":[{\"schema\":{\"title\":\"Input\",\"type\":\"object\",\"properties\":{\"connectionId\":{\"type\":\"object\",\"title\":\"Connection Id\",\"properties\":{\"scope\":{\"type\":\"string\"},\"name\":{\"type\":\"string\"}},\"variableType\":\"String\",\"messageScope\":true}}},\"uiSchema\":{\"connectionId\":{\"ui:field\":\"variable\"},\"ui:order\":[\"connectionId\"]},\"formData\":{\"connectionId\":{\"scope\":\"Message\",\"name\":\"conn_id\"}}}],\"outputs\":1,\"inputs\":1}}]}"
+	}]
+}
