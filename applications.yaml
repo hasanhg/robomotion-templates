@@ -12,6 +12,7 @@ applications:
   - MongoDB
   - MySQL
   - Other
+  - Pabbly
   - Slack
   - SQLite
   - Tesseract

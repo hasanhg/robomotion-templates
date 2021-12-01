@@ -1,0 +1,17 @@
+- name: Pabbly Triggers
+  description: Triggers a Pabbly workflow from a Robomotion flow then triggers a node from Robomotion flow to start the operations
+  slug: pabbly-triggers
+  icon: pabbly_triggers_icon.png
+  screenshots:
+    - https://www.youtube.com/watch?v=2J3p6aF-158
+    - pabbly_triggers_screenshot1.png
+    - pabbly_triggers_screenshot2.png
+    - pabbly_triggers_screenshot3.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - trigger
+    - workflow
+    - flow
+  applications:
+    - Pabbly
