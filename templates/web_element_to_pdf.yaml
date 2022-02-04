@@ -1,0 +1,13 @@
+- name: Web Element To Pdf
+  description: Converts web element to Pdf
+  slug: web-element-to-pdf
+  icon:  web_element_to_pdf_icon.png
+  screenshots:
+    - web_element_to_pdf_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - html
+    - pdf
+  applications:
+    - Other

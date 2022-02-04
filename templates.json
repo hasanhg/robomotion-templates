@@ -1381,6 +1381,24 @@
     ]
   },
   {
+    "name": "Web Element To Pdf",
+    "description": "Converts any web elements to Pdf",
+    "slug": "web-element-to-pdf",
+    "icon": "web_element_to_pdf_icon.png",
+    "screenshots": [
+      "web_element_to_pdf_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "html",
+      "pdf"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
     "name": "WhatsApp FAQ Bot",
     "description": "Basic Whatsapp FAQ Bot example for customer support",
     "slug": "whatsapp-faq-bot",

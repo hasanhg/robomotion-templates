@@ -1,0 +1,1119 @@
+{
+	"nodes": [{
+		"id": "f23194aa-95b0-49f3-8212-24403f367caa",
+		"type": "simple",
+		"selected": true,
+		"x": 1026.7083333333335,
+		"y": 12,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "4c7d2807-0bea-471c-be06-0697a159e3db",
+			"type": "default",
+			"selected": false,
+			"name": "out_4c7d2807-0bea-471c-be06-0697a159e3db",
+			"parentNode": "f23194aa-95b0-49f3-8212-24403f367caa",
+			"links": ["3a894881-ad18-4f12-ab3e-d97ca5dd9028"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "f23194aa-95b0-49f3-8212-24403f367caa",
+			"name": "Inject",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "6b26fc0b-e546-43fb-87dd-49beb7e0c81a",
+		"type": "simple",
+		"selected": true,
+		"x": 1021.7083333333334,
+		"y": 61,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.url = \"https://en.wikipedia.org/wiki/Robotic_process_automation\"\nmsg.xpath = \"//div[@id='content']\";\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "f5f9dc88-fcde-45d0-bfdc-a15eb05eb5b9",
+			"type": "default",
+			"selected": false,
+			"name": "out_f5f9dc88-fcde-45d0-bfdc-a15eb05eb5b9",
+			"parentNode": "6b26fc0b-e546-43fb-87dd-49beb7e0c81a",
+			"links": ["5ba40e28-bc73-42ef-a4a5-4e6f12510550"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "37d3693d-b81a-43d2-b225-5647e630b551",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "6b26fc0b-e546-43fb-87dd-49beb7e0c81a",
+			"links": ["3a894881-ad18-4f12-ab3e-d97ca5dd9028"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "6b26fc0b-e546-43fb-87dd-49beb7e0c81a",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.url = \"https://en.wikipedia.org/wiki/Robotic_process_automation\"\nmsg.xpath = \"//div[@id='content']\";\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.url = \"https://en.wikipedia.org/wiki/Robotic_process_automation\"\nmsg.xpath = \"//div[@id='content']\";\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b7f18309-7cb9-456d-a100-fc3efe0e5565",
+		"type": "simple",
+		"selected": true,
+		"x": 1024.7083333333335,
+		"y": 110,
+		"extras": {
+			"outBrowserId": {
+				"scope": "Message",
+				"name": "browser_id"
+			},
+			"optBrowser": "chrome",
+			"optMaximized": true,
+			"optProxy": "no-proxy",
+			"optProxyAuth": "no-authentication",
+			"optProxyAddr": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"optUserDataDir": {
+				"scope": "Custom",
+				"name": ""
+			},
+			"optProxyCredentials": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			}
+		},
+		"ports": [{
+			"id": "7ba889dd-dc8a-4787-af1f-5c4f90fbbf54",
+			"type": "default",
+			"selected": false,
+			"name": "out_7ba889dd-dc8a-4787-af1f-5c4f90fbbf54",
+			"parentNode": "b7f18309-7cb9-456d-a100-fc3efe0e5565",
+			"links": ["01bb8c65-269a-45b1-b36a-f78911e7450d"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "d272577b-81b9-4419-8730-d44277d3a6b0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b7f18309-7cb9-456d-a100-fc3efe0e5565",
+			"links": ["5ba40e28-bc73-42ef-a4a5-4e6f12510550"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b7f18309-7cb9-456d-a100-fc3efe0e5565",
+			"name": "Open Browser",
+			"icon": "M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+			"color": "#c9d9ff",
+			"namespace": "Core.Browser.Open",
+			"version": "1.16.4",
+			"abc": [{}, {
+				"outBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				}
+			}, {
+				"optBrowser": "chrome",
+				"optMaximized": true,
+				"optProxy": "no-proxy",
+				"optProxyAuth": "no-authentication",
+				"optProxyAddr": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"optUserDataDir": {
+					"scope": "Custom",
+					"name": ""
+				},
+				"optProxyCredentials": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outBrowserId": {
+							"type": "object",
+							"title": "Browser Id",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outBrowserId": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outBrowserId": {
+						"scope": "Message",
+						"name": "browser_id"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optBrowser": {
+							"type": "string",
+							"title": "Browser",
+							"enum": ["chrome", "firefox", "edge", "safari", "headlesschrome"],
+							"enumNames": ["Chrome", "Firefox", "Edge", "Safari", "Headless Chrome"]
+						},
+						"optMaximized": {
+							"title": "Maximized",
+							"type": "boolean"
+						},
+						"optProxy": {
+							"title": "Proxy Settings",
+							"type": "string",
+							"enum": ["no-proxy", "manual-proxy"],
+							"enumNames": ["No Proxy", "Manual Proxy"]
+						},
+						"optProxyAddr": {
+							"type": "object",
+							"title": "Proxy Address",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"optProxyAuth": {
+							"title": "Proxy Authentication",
+							"type": "string",
+							"enum": ["no-authentication", "basic-authentication"],
+							"enumNames": ["No Authentication", "Basic Authentication"]
+						},
+						"optProxyCredentials": {
+							"type": "object",
+							"title": "Proxy Credentials",
+							"subtitle": "",
+							"category": 1,
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "object",
+									"properties": {
+										"vaultId": {
+											"type": "string"
+										},
+										"itemId": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						},
+						"optUserDataDir": {
+							"type": "object",
+							"title": "User Data Dir",
+							"description": "If given, browser uses this directory for user data, if it is empty a temporary directory is created",
+							"variableType": "String",
+							"customScope": true,
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optBrowser", "optMaximized", "optUserDataDir", "optProxy", "optProxyAddr", "optProxyAuth", "optProxyCredentials"],
+					"optProxyCredentials": {
+						"ui:field": "vault"
+					},
+					"optProxyAddr": {
+						"ui:field": "variable"
+					},
+					"optUserDataDir": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optBrowser": "chrome",
+					"optMaximized": true,
+					"optProxy": "no-proxy",
+					"optProxyAuth": "no-authentication",
+					"optProxyAddr": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"optUserDataDir": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"optProxyCredentials": {
+						"scope": "Custom",
+						"name": {
+							"vaultId": "_",
+							"itemId": "_"
+						}
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "d4005a06-512b-42c2-9f76-3213d88f60e2",
+		"type": "simple",
+		"selected": true,
+		"x": 1027.7083333333333,
+		"y": 162,
+		"extras": {
+			"inBrowserId": {
+				"scope": "Message",
+				"name": "browser_id"
+			},
+			"inPageId": {
+				"scope": "Message",
+				"name": "page_id"
+			},
+			"inUrl": {
+				"scope": "Message",
+				"name": "url"
+			},
+			"outPageId": {
+				"scope": "Message",
+				"name": "page_id"
+			},
+			"optTimeout": 30
+		},
+		"ports": [{
+			"id": "eaefe74b-4b06-477a-a934-d0f2d7239c92",
+			"type": "default",
+			"selected": false,
+			"name": "out_eaefe74b-4b06-477a-a934-d0f2d7239c92",
+			"parentNode": "d4005a06-512b-42c2-9f76-3213d88f60e2",
+			"links": ["f231d022-bcc5-4b76-852b-3a8d446f5b5d"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "ecaa5b33-7944-49af-b525-0d0c6fa750af",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "d4005a06-512b-42c2-9f76-3213d88f60e2",
+			"links": ["01bb8c65-269a-45b1-b36a-f78911e7450d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "d4005a06-512b-42c2-9f76-3213d88f60e2",
+			"name": "Open Link",
+			"icon": "M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z",
+			"color": "#c9d9ff",
+			"namespace": "Core.Browser.OpenLink",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Open Link",
+				"version": "1.11.6",
+				"color": "#c9d9ff",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inBrowserId": {
+					"scope": "Message",
+					"name": "browser_id"
+				},
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inUrl": {
+					"scope": "Message",
+					"name": "url"
+				}
+			}, {
+				"outPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				}
+			}, {
+				"optTimeout": 30
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inBrowserId": {
+							"type": "object",
+							"title": "Browser",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inPageId": {
+							"type": "object",
+							"title": "Page Id",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inUrl": {
+							"type": "object",
+							"title": "URL",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inBrowserId": {
+						"ui:field": "variable"
+					},
+					"inPageId": {
+						"ui:field": "variable"
+					},
+					"inUrl": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inBrowserId": {
+						"scope": "Message",
+						"name": "browser_id"
+					},
+					"inPageId": {
+						"scope": "Message",
+						"name": "page_id"
+					},
+					"inUrl": {
+						"scope": "Message",
+						"name": "url"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPageId": {
+							"type": "object",
+							"title": "Page Id",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPageId": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPageId": {
+						"scope": "Message",
+						"name": "page_id"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optSameTab": {
+							"title": "Open in the Same Tab",
+							"type": "boolean"
+						},
+						"optTimeout": {
+							"title": "Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optTimeout", "optSameTab"]
+				},
+				"formData": {
+					"optTimeout": 30
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "e17900ac-d0e0-434f-80fd-6632bfa58220",
+		"type": "simple",
+		"selected": true,
+		"x": 1028.7083333333333,
+		"y": 211,
+		"extras": {
+			"inPageId": {
+				"scope": "Message",
+				"name": "page_id"
+			},
+			"inSelectorType": "xpath:position",
+			"inSelector": {
+				"scope": "Message",
+				"name": "xpath"
+			},
+			"image": "",
+			"optCondition": "to-appear",
+			"optTimeout": {
+				"scope": "Custom",
+				"name": "30"
+			}
+		},
+		"ports": [{
+			"id": "889d9fd4-2e09-4b2f-b506-7868448c8662",
+			"type": "default",
+			"selected": false,
+			"name": "out_889d9fd4-2e09-4b2f-b506-7868448c8662",
+			"parentNode": "e17900ac-d0e0-434f-80fd-6632bfa58220",
+			"links": ["d4c73bbc-9d8e-4bed-ba3e-5a51e293bdb8"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "e9efc349-efea-423a-98af-4c79282d4462",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "e17900ac-d0e0-434f-80fd-6632bfa58220",
+			"links": ["f231d022-bcc5-4b76-852b-3a8d446f5b5d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "e17900ac-d0e0-434f-80fd-6632bfa58220",
+			"name": "Wait Element",
+			"icon": "M6,2H18V8H18V8L14,12L18,16V16H18V22H6V16H6V16L10,12L6,8V8H6V2M16,16.5L12,12.5L8,16.5V20H16V16.5M12,11.5L16,7.5V4H8V7.5L12,11.5M10,6H14V6.75L12,8.75L10,6.75V6Z",
+			"color": "#c9d9ff",
+			"namespace": "Core.Browser.WaitElement",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Wait Element",
+				"version": "1.11.6",
+				"color": "#c9d9ff",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				},
+				"inSelectorType": "xpath:position",
+				"inSelector": {
+					"scope": "Message",
+					"name": "xpath"
+				},
+				"image": ""
+			}, {
+				"optCondition": "to-appear",
+				"optTimeout": {
+					"scope": "Custom",
+					"name": "30"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPageId": {
+							"type": "object",
+							"title": "Page Id",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"inSelectorType": {
+							"type": "string",
+							"title": "Selector Type",
+							"multiple": true,
+							"enumNames": ["XPath", "CSS"],
+							"enum": ["xpath:position", "css"]
+						},
+						"inSelector": {
+							"type": "object",
+							"title": "Selector",
+							"variableType": "String",
+							"messageScope": true,
+							"customScope": true,
+							"jsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						},
+						"image": {
+							"title": "Image",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"inPageId": {
+						"ui:field": "variable"
+					},
+					"inSelector": {
+						"ui:field": "variable"
+					},
+					"image": {
+						"ui:widget": "hidden"
+					},
+					"ui:order": ["inPageId", "inSelectorType", "inSelector", "image"]
+				},
+				"formData": {
+					"inPageId": {
+						"scope": "Message",
+						"name": "page_id"
+					},
+					"inSelectorType": "xpath:position",
+					"inSelector": {
+						"scope": "Message",
+						"name": "xpath"
+					},
+					"image": ""
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optCondition": {
+							"title": "Condition",
+							"type": "string",
+							"enum": ["to-appear", "to-disappear", "appear-and-disappear"],
+							"enumNames": ["To Appear", "To Disappear", "Appear & Disappear"]
+						},
+						"optTimeout": {
+							"type": "object",
+							"title": "Timeout (sec)",
+							"variableType": "Integer",
+							"customScope": true,
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optTimeout": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"optCondition": "to-appear",
+					"optTimeout": {
+						"scope": "Custom",
+						"name": "30"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "53856dbf-1011-483d-857a-1bc695821de2",
+		"type": "simple",
+		"selected": true,
+		"x": 1032.7083333333333,
+		"y": 261,
+		"extras": {
+			"func": "//Takes an xpath, and returns the first matched web element\nfunction getElementByXpath(path) {\n  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n}\n\n//Add script tag to the website\nfunction addScript(url) {\n    var script = document.createElement('script');\n    script.type = 'application/javascript';\n    script.src = url;\n    document.head.appendChild(script);\n}\n\n//Adds html2pdf minimal script to the page\naddScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');\n\nsetTimeout(savePdf, 1000);\nfunction savePdf(){\n  var elem = getElementByXpath(msg.xpath)\n  if(elem){\n    html2pdf(elem)  \n  }else{\n    alert(\"Element not found\")\n  }\n  \n}",
+			"inPageId": {
+				"scope": "Message",
+				"name": "page_id"
+			},
+			"outResult": {
+				"scope": "Message",
+				"name": "result"
+			}
+		},
+		"ports": [{
+			"id": "4622235e-db52-40cf-a759-314ddcda37ff",
+			"type": "default",
+			"selected": false,
+			"name": "out_4622235e-db52-40cf-a759-314ddcda37ff",
+			"parentNode": "53856dbf-1011-483d-857a-1bc695821de2",
+			"links": [],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "074409e7-9516-449f-a3d9-a8ddbbfe4b34",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "53856dbf-1011-483d-857a-1bc695821de2",
+			"links": ["d4c73bbc-9d8e-4bed-ba3e-5a51e293bdb8"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "53856dbf-1011-483d-857a-1bc695821de2",
+			"name": "Convert Element To PDF",
+			"icon": "M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z",
+			"color": "#c9d9ff",
+			"editor": "javascript",
+			"namespace": "Core.Browser.RunScript",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Convert Element To PDF",
+				"color": "#c9d9ff",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"func": "//Takes an xpath, and returns the first matched web element\nfunction getElementByXpath(path) {\n  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n}\n\n//Add script tag to the website\nfunction addScript(url) {\n    var script = document.createElement('script');\n    script.type = 'application/javascript';\n    script.src = url;\n    document.head.appendChild(script);\n}\n\n//Adds html2pdf minimal script to the page\naddScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');\n\nsetTimeout(savePdf, 1000);\nfunction savePdf(){\n  var elem = getElementByXpath(msg.xpath)\n  if(elem){\n    html2pdf(elem)  \n  }else{\n    alert(\"Element not found\")\n  }\n  \n}",
+				"inPageId": {
+					"scope": "Message",
+					"name": "page_id"
+				}
+			}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "result"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Script",
+							"type": "string"
+						},
+						"inPageId": {
+							"type": "object",
+							"title": "Page Id",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPageId": {
+						"ui:field": "variable"
+					},
+					"func": {
+						"ui:widget": "hidden"
+					}
+				},
+				"formData": {
+					"func": "//Takes an xpath, and returns the first matched web element\nfunction getElementByXpath(path) {\n  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n}\n\n//Add script tag to the website\nfunction addScript(url) {\n    var script = document.createElement('script');\n    script.type = 'application/javascript';\n    script.src = url;\n    document.head.appendChild(script);\n}\n\n//Adds html2pdf minimal script to the page\naddScript('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');\n\nsetTimeout(savePdf, 1000);\nfunction savePdf(){\n  var elem = getElementByXpath(msg.xpath)\n  if(elem){\n    html2pdf(elem)  \n  }else{\n    alert(\"Element not found\")\n  }\n  \n}",
+					"inPageId": {
+						"scope": "Message",
+						"name": "page_id"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Result",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "result"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "97234cbe-f0a9-4a31-a677-8596beaa1d7d",
+		"type": "simple",
+		"selected": true,
+		"x": 442.70833333333337,
+		"y": 29,
+		"extras": {
+			"optText": "##### Web Element To PDF\n\nThis template converts any web element to PDF file\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.url field to the link of the web site\n\n**3.** Set the msg.xpath field to the xpath of the element you want to convert to PDF\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "97234cbe-f0a9-4a31-a677-8596beaa1d7d",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Web Element To PDF\n\nThis template converts any web element to PDF file\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.url field to the link of the web site\n\n**3.** Set the msg.xpath field to the xpath of the element you want to convert to PDF\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Web Element To PDF\n\nThis template converts any web element to PDF file\n\nFollow these steps to test this template;\n\n**1.** Edit the Config Node\n\n**2.** Set the msg.url field to the link of the web site\n\n**3.** Set the msg.xpath field to the xpath of the element you want to convert to PDF\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}],
+	"subFlows": []
+}
