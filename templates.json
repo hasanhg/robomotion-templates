@@ -60,6 +60,28 @@
     ]
   },
   {
+    "name": "Backup To S3 Bucket",
+    "description": "Creates a zip file and uploads to S3 bucket",
+    "slug": "backup-to-s3-bucket",
+    "icon": "backup_to_s3_bucket_icon.png",
+    "screenshots": [
+      "backup_to_s3_bucket_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "s3 storage",
+      "compress",
+      "file",
+      "backup",
+      "cloud"
+    ],
+    "applications": [
+      "Javascript",
+      "Amazon_S3"
+    ]
+  },
+  {
     "name": "Birthday Celebrator",
     "description": "Sends birthday messages to Slack Channel",
     "slug": "birthday-celebrator",
@@ -69,7 +91,7 @@
       "birthday_celebrator_screenshot2.png"
     ],
     "author": "Robomotion",
-    "category": "Messaging",
+    "category": "Communication",
     "tags": [
       "chat",
       "messaging"
@@ -77,6 +99,106 @@
     "applications": [
       "Slack",
       "Excel"
+    ]
+  },
+  {
+    "name": "BMI Calculator",
+    "description": "Calculates Body Mass Index (BMI)",
+    "slug": "bmi-calculator",
+    "icon": "bmi_calculator_icon.png",
+    "screenshots": [
+      "bmi_calculator_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "body",
+      "mass",
+      "bmi",
+      "calculate"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Calculator",
+    "description": "Performs arithmetic operations in the excel file",
+    "slug": "calculator",
+    "icon": "calculator_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=hVzBIiIxNzo",
+      "calculator_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "excel",
+      "calculate"
+    ],
+    "applications": [
+      "Javascript",
+      "Excel"
+    ]
+  },
+  {
+    "name": "Check Image Safety",
+    "description": "Checks an image's safety via Google Vision",
+    "slug": "check-image-safety",
+    "icon": "check_image_safety_icon.png",
+    "screenshots": [
+      "check_image_safety_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "image",
+      "safety",
+      "ai",
+      "google"
+    ],
+    "applications": [
+      "Google_Vision"
+    ]
+  },
+  {
+    "name": "Click Image In Screen",
+    "description": "Searches a predefined image in the screen. If finds an image with enough confidence value, clicks to it.",
+    "slug": "click-image-in-screen",
+    "icon": "click_image_in_screen_icon.png",
+    "screenshots": [
+      "click_image_in_screen_screenshot1.png",
+      "click_image_in_screen_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "image",
+      "search",
+      "click",
+      "vision"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Click To Specific Point",
+    "description": "Clicks to specified point in the screen with mouse.",
+    "slug": "click-to-specific-point",
+    "icon": "click_to_specific_point_icon.png",
+    "screenshots": [
+      "click_to_specific_point_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "mouse",
+      "click",
+      "system"
+    ],
+    "applications": [
+      "Other"
     ]
   },
   {
@@ -94,6 +216,46 @@
     ],
     "applications": [
       "Javascript"
+    ]
+  },
+  {
+    "name": "Countdown",
+    "description": "Counts down for a specified date starting from the current time",
+    "slug": "countdown",
+    "icon": "countdown_icon.png",
+    "screenshots": [
+      "countdown_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "countdown",
+      "time",
+      "date"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "CSV to Google Sheets",
+    "description": "Reads range from a CSV file and write it to Google Sheet file.",
+    "slug": "csv-to-google-sheets",
+    "icon": "csv_to_google_sheets_icon.png",
+    "screenshots": [
+      "csv_to_google_sheets_screenshot1.png",
+      "csv_to_google_sheets_screenshot2.png",
+      "csv_to_google_sheets_screenshot3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "csv",
+      "google",
+      "sheets"
+    ],
+    "applications": [
+      "Google_Sheets"
     ]
   },
   {
@@ -115,6 +277,205 @@
       "Javascript",
       "MongoDB",
       "Mail"
+    ]
+  },
+  {
+    "name": "Date Difference Calculator",
+    "description": "Calculates the difference between now and a specific date",
+    "slug": "date-difference-calculator",
+    "icon": "date_difference_calculator_icon.png",
+    "screenshots": [
+      "date_difference_calculator_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "date",
+      "difference",
+      "calculate",
+      "timespan"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Send Discord Notification",
+    "description": "Send Discord messages with embeds using webhooks.",
+    "slug": "discord-notification",
+    "icon": "discord_notification_icon.png",
+    "screenshots": [
+      "discord_notification_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "discord",
+      "notification"
+    ],
+    "applications": [
+      "Discord"
+    ]
+  },
+  {
+    "name": "Dollar - Euro Parity As Service",
+    "description": "Returns dolar - euro parity for API request",
+    "slug": "dollar-euro-parity-as-service",
+    "icon": "dollar_euro_parity_as_service_icon.png",
+    "screenshots": [
+      "dollar_euro_parity_as_service_screenshot1.png",
+      "dollar_euro_parity_as_service_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "rest",
+      "api"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Download File From SSH Server",
+    "description": "Downloads file from SSH server to local computer",
+    "slug": "download-file-from-ssh-server",
+    "icon": "download_file_from_ssh_server_icon.png",
+    "screenshots": [
+      "download_file_from_ssh_server_screenshot1.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "ssh",
+      "remote",
+      "download"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Download File From web",
+    "description": "Downloads file from web to specified path",
+    "slug": "download-file-from-web",
+    "icon": "download_file_from_web_icon.png",
+    "screenshots": [
+      "download_file_from_web_screenshot1.png",
+      "download_file_from_web_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "download",
+      "file",
+      "web"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Dropbox Quick Start",
+    "description": "Shows how to make some Dropbox operations",
+    "slug": "dropbox-quick-start",
+    "icon": "dropbox_quick_start_icon.png",
+    "screenshots": [
+      "dropbox_quick_start_screenshot1.png",
+      "dropbox_quick_start_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "dropbox",
+      "storage",
+      "file",
+      "cloud"
+    ],
+    "applications": [
+      "Dropbox"
+    ]
+  },
+  {
+    "name": "Duplicate File Remover",
+    "description": "Removes duplicated files in a given directory in your file system",
+    "slug": "duplicate-file-remover",
+    "icon": "duplicate_file_remover_icon.png",
+    "screenshots": [
+      "duplicate_file_remover_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "javascript",
+      "duplicate",
+      "file",
+      "remover",
+      "directory",
+      "cryptography"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Duplicate Rows Remover",
+    "description": "Finds and removes duplicate rows in excel file",
+    "slug": "duplicate-rows-remover",
+    "icon": "duplicate_rows_remover_icon.png",
+    "screenshots": [
+      "duplicate_rows_remover_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "excel",
+      "remover"
+    ],
+    "applications": [
+      "Javascript",
+      "Excel"
+    ]
+  },
+  {
+    "name": "Excel Copy Paste",
+    "description": "Copies and pastes data between sheets",
+    "slug": "excel-copy-paste",
+    "icon": "excel_copy_paste_icon.png",
+    "screenshots": [
+      "excel_copy_paste_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "excel",
+      "clipboard"
+    ],
+    "applications": [
+      "Javascript",
+      "Excel"
+    ]
+  },
+  {
+    "name": "Excel Range to Word Table",
+    "description": "Reads range from excel file and writes to a newly created word document",
+    "slug": "excel-range-to-word-table",
+    "icon": "excel_range_to_word_table_icon.png",
+    "screenshots": [
+      "excel_range_to_word_table_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "microsoft",
+      "excel",
+      "word",
+      "document"
+    ],
+    "applications": [
+      "Excel",
+      "Word",
+      "Javascript"
     ]
   },
   {
@@ -334,46 +695,6 @@
     "tags": [
       "javascript",
       "json",
-      "beautify",
-      "file"
-    ],
-    "applications": [
-      "Javascript"
-    ]
-  },
-  {
-    "name": "JSON Minifier",
-    "description": "Minimizes a given JSON object",
-    "slug": "json-minifier",
-    "icon": "json_minifier_icon.png",
-    "screenshots": [
-      "json_minifier_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "javascript",
-      "json",
-      "minify",
-      "file"
-    ],
-    "applications": [
-      "Javascript"
-    ]
-  },
-  {
-    "name": "JSON Beautifier",
-    "description": "Beautifies a given JSON string",
-    "slug": "json-beautifier",
-    "icon": "json_beautifier_icon.png",
-    "screenshots": [
-      "json_beautifier_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Other",
-    "tags": [
-      "javascript",
-      "json",
       "beautify"
     ],
     "applications": [
@@ -422,6 +743,27 @@
     ]
   },
   {
+    "name": "Mail To MySQL Inserter",
+    "description": "Checks Inbox every hour and if a mail comes with subject that contain",
+    "slug": "mail-to-mysql-inserter",
+    "icon": "mail_to_mysql_inserter_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=I7tVo-tpgLM",
+      "mail_to_mysql_inserter_screenshot1.png",
+      "mail_to_mysql_inserter_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "mail",
+      "mysql",
+      "table"
+    ],
+    "applications": [
+      "MySQL"
+    ]
+  },
+  {
     "name": "Merge CSV",
     "description": "Merges a group of .csv files into a CSV file",
     "slug": "merge-csv",
@@ -443,6 +785,90 @@
     ]
   },
   {
+    "name": "MongoDB Quick Start",
+    "description": "This flow shows create database, collection and some document operations in MongoDB",
+    "slug": "mongodb-quick-start",
+    "icon": "mongodb_quick_start_icon.png",
+    "screenshots": [
+      "mongodb_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "IT Operations",
+    "tags": [
+      "database",
+      "javascript",
+      "mongodb"
+    ],
+    "applications": [
+      "Javascript",
+      "MongoDB"
+    ]
+  },
+  {
+    "name": "MySQL Quick Start",
+    "description": "This flow shows how to insert and select from MySQL databases.",
+    "slug": "mysql-quick-start",
+    "icon": "mysql_quick_start_icon.png",
+    "screenshots": [
+      "mysql_quick_start_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "IT Operations",
+    "tags": [
+      "database",
+      "javascript",
+      "mysql"
+    ],
+    "applications": [
+      "Javascript",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "MySQL Table To Google Sheets",
+    "description": "Executes query for reading data from MySQL table and writes to spreadsheet.",
+    "slug": "mysql-table-to-google-sheets",
+    "icon": "mysql_table_to_google_sheets_icon.png",
+    "screenshots": [
+      "mysql_table_to_google_sheets_screenshot1.png",
+      "mysql_table_to_google_sheets_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "google",
+      "sheets",
+      "mysql",
+      "table"
+    ],
+    "applications": [
+      "Google_Sheets",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "Pabbly Triggers",
+    "description": "Triggers a Pabbly workflow from a Robomotion flow then triggers a node from Robomotion flow to start the operations",
+    "slug": "pabbly-triggers",
+    "icon": "pabbly_triggers_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=2J3p6aF-158",
+      "pabbly_triggers_screenshot1.png",
+      "pabbly_triggers_screenshot2.png",
+      "pabbly_triggers_screenshot3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "trigger",
+      "workflow",
+      "flow"
+    ],
+    "applications": [
+      "Pabbly"
+    ]
+  },
+  {
     "name": "Password Generator",
     "description": "Generates a strong password with specified length",
     "slug": "password-generator",
@@ -459,6 +885,91 @@
     ],
     "applications": [
       "Javascript"
+    ]
+  },
+  {
+    "name": "Pdf Extractor",
+    "description": "Reads text from a pdf document",
+    "slug": "pdf-extractor",
+    "icon": "pdf_extractor_icon.png",
+    "screenshots": [
+      "pdf_extractor_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "pdf",
+      "text"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Pdf Reader With OCR",
+    "description": "Extracts images from a pdf file, reads images with ocr, parses text, writes to a spreadsheet and uploads the pdf file to drive",
+    "slug": "pdf-reader-with-ocr",
+    "icon": "pdf_reader_with_ocr_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=-Tl6rgGCcPU",
+      "pdf_reader_with_ocr_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "pdf",
+      "text",
+      "google",
+      "sheets",
+      "drive",
+      "pdfbox",
+      "ocr"
+    ],
+    "applications": [
+      "Google_Sheets",
+      "Google_Drive",
+      "Other",
+      "Tesseract"
+    ]
+  },
+  {
+    "name": "Process Tasks Parallely",
+    "description": "Shows how to process list of task parallely.",
+    "slug": "process-tasks-parallely",
+    "icon": "process_tasks_parallely_icon.png",
+    "screenshots": [
+      "process_tasks_parallely_screenshot1.png",
+      "process_tasks_parallely_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "branching",
+      "parallel_processing"
+    ],
+    "applications": [
+      "Slack",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Read From Clipboard",
+    "description": "Reads the clipboard content, and shows it in message box.",
+    "slug": "read-from-clipboard",
+    "icon": "read_from_clipboard_icon.png",
+    "screenshots": [
+      "read_from_clipboard_screenshot1.png",
+      "read_from_clipboard_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "clipboard",
+      "paste",
+      "system"
+    ],
+    "applications": [
+      "Other"
     ]
   },
   {
@@ -615,8 +1126,29 @@
     ]
   },
   {
+    "name": "Send Get Request",
+    "description": "Sends Get request to sample server and shows it's response in message box",
+    "slug": "send-get-request",
+    "icon": "send_get_request_icon.png",
+    "screenshots": [
+      "send_get_request_screenshot1.png",
+      "send_get_request_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "IT Operations",
+    "tags": [
+      "api",
+      "developer tools",
+      "request",
+      "rest"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
     "name": "Send Mail As HTML",
-    "description": "Sends mail with HTML format",
+    "description": "Sends mail with html format",
     "slug": "send-mail-as-html",
     "icon": "send_mail_as_html_icon.png",
     "screenshots": [
@@ -774,6 +1306,28 @@
     ]
   },
   {
+    "name": "Stock Prices With Google Sheets",
+    "description": "Stock price scraping flow using a Google Sheets document",
+    "slug": "stock-prices-with-google-sheets",
+    "icon": "stock_prices_with_google_sheets_icon.png",
+    "screenshots": [
+      "stock_prices_with_google_sheets_screenshot1.png",
+      "stock_prices_with_google_sheets_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "google",
+      "sheets",
+      "scraping",
+      "browser"
+    ],
+    "applications": [
+      "Chrome",
+      "Google_Sheets"
+    ]
+  },
+  {
     "name": "Translator",
     "description": "Translates the text from a specified language to another one using Google Translate",
     "slug": "translator",
@@ -791,6 +1345,98 @@
     "applications": [
       "Chrome",
       "Filesystem"
+    ]
+  },
+  {
+    "name": "Twitter Auto Follow",
+    "description": "Follows a specified Twitter account",
+    "slug": "twitter-auto-follow",
+    "icon": "twitter_auto_follow_icon.png",
+    "screenshots": [
+      "twitter_auto_follow_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Twitter Get Followers",
+    "description": "Lists the followers of a Twitter account and saves them to an excel file",
+    "slug": "twitter-get-followers",
+    "icon": "twitter_get_followers_icon.png",
+    "screenshots": [
+      "twitter_get_followers_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Twitter Get Followings",
+    "description": "Lists the followings of a Twitter account and saves them to an excel file",
+    "slug": "twitter-get-followings",
+    "icon": "twitter_get_followings_icon.png",
+    "screenshots": [
+      "twitter_get_followings_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "social media",
+      "twitter"
+    ],
+    "applications": [
+      "Twitter"
+    ]
+  },
+  {
+    "name": "Upload File To SSH Server",
+    "description": "Uploads file from local computer to SSH server",
+    "slug": "upload-file-to-ssh-server",
+    "icon": "upload_file_to_ssh_server_icon.png",
+    "screenshots": [
+      "upload_file_to_ssh_server_screenshot1.png",
+      "upload_file_to_ssh_server_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "ssh",
+      "remote",
+      "upload"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Web Element To Pdf",
+    "description": "Converts web element to Pdf",
+    "slug": "web-element-to-pdf",
+    "icon": "web_element_to_pdf_icon.png",
+    "screenshots": [
+      "web_element_to_pdf_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "html",
+      "pdf"
+    ],
+    "applications": [
+      "Other"
     ]
   },
   {
@@ -830,6 +1476,94 @@
     "applications": [
       "Javascript",
       "Twilio"
+    ]
+  },
+  {
+    "name": "Write To Clipboard",
+    "description": "Receives an input from user, and copies it to clipboard.",
+    "slug": "write-to-clipboard",
+    "icon": "write_to_clipboard_icon.png",
+    "screenshots": [
+      "write_to_clipboard_screenshot1.png",
+      "write_to_clipboard_screenshot2.png",
+      "write_to_clipboard_screenshot3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Other",
+    "tags": [
+      "clipboard",
+      "copy",
+      "system"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
+    "name": "Write to Word Document",
+    "description": "Reads a txt file and writes output to a new word document",
+    "slug": "write-to-word-document",
+    "icon": "write_to_word_document_icon.png",
+    "screenshots": [
+      "write_to_word_document_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Files",
+    "tags": [
+      "microsoft",
+      "word",
+      "document"
+    ],
+    "applications": [
+      "Word",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Youtube Channel Information",
+    "description": "Extracts channel information from a Youtube channel",
+    "slug": "youtube-channel-info",
+    "icon": "youtube_channel_info_icon.png",
+    "screenshots": [
+      "youtube_channel_info_screenshot1.png",
+      "youtube_channel_info_screenshot2.png",
+      "youtube_channel_info_screenshot3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "youtube",
+      "channel",
+      "stats"
+    ],
+    "applications": [
+      "Chrome",
+      "Javascript",
+      "Google_Sheets"
+    ]
+  },
+  {
+    "name": "Youtube Video Stats",
+    "description": "Extracts video stats from a Youtube video",
+    "slug": "youtube-video-stats",
+    "icon": "youtube_video_stats_icon.png",
+    "screenshots": [
+      "youtube_video_stats_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Social Media",
+    "tags": [
+      "comments",
+      "dislikes",
+      "likes",
+      "stats",
+      "views",
+      "video",
+      "youtube"
+    ],
+    "applications": [
+      "Chrome",
+      "Javascript"
     ]
   }
 ]
