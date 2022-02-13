@@ -1,0 +1,14 @@
+- name: Send Discord Notification
+  description: Send Discord messages with embeds using webhooks.
+  slug: discord-notification
+  icon: discord_notification_icon.png
+  screenshots:
+    - discord_notification_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - discord
+    - notification
+  applications:
+    - Discord
+
