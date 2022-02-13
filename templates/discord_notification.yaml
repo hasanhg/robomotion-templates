@@ -3,12 +3,13 @@
   slug: discord-notification
   icon: discord_notification_icon.png
   screenshots:
+    - https://www.youtube.com/watch?v=hVzBIiIxNzo
     - discord_notification_screenshot.png
   author: Robomotion
   category: Productivity
   tags:
     - discord
     - notification
+    - api
   applications:
-    - Discord
-
+    - Javascript

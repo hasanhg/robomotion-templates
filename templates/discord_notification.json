@@ -4,11 +4,11 @@
             "id": "722be5af-cc72-400a-bc41-de46280b8d4e",
             "type": "simple",
             "selected": true,
-            "x": 871,
-            "y": 224,
+            "x": 866.3356643356643,
+            "y": 198,
             "extras": {
                 "outputs": 1,
-                "func": "msg.req = {\n\n   \"content\": \"Hello World\" ,\n   \n}\n\nreturn msg;",
+                "func": "// This is the simplest message you can send to Discord\n\nmsg.req = {\n\n   \"content\": \"Hello World\" ,\n   \n}\n\nreturn msg;",
                 "optTimeout": 30,
                 "variables": [],
                 "continueOnError": true
@@ -60,7 +60,7 @@
                     },
                     {
                         "outputs": 1,
-                        "func": "msg.req = {\n\n   \"content\": \"Hello World\" ,\n   \n}\n\nreturn msg;",
+                        "func": "// This is the simplest message you can send to Discord\n\nmsg.req = {\n\n   \"content\": \"Hello World\" ,\n   \n}\n\nreturn msg;",
                         "optTimeout": 30
                     },
                     {
@@ -102,7 +102,7 @@
                         },
                         "formData": {
                             "outputs": 1,
-                            "func": "msg.req = {\n\n   \"content\": \"Hello World\" ,\n   \n}\n\nreturn msg;",
+                            "func": "// This is the simplest message you can send to Discord\n\nmsg.req = {\n\n   \"content\": \"Hello World\" ,\n   \n}\n\nreturn msg;",
                             "optTimeout": 30
                         }
                     },
@@ -145,8 +145,8 @@
             "id": "a4b22bdb-a9e1-4d81-8c4e-e186f891dc4e",
             "type": "simple",
             "selected": true,
-            "x": 877,
-            "y": 296.12408407181283,
+            "x": 870.2430069930069,
+            "y": 269.12408407181283,
             "extras": {
                 "inBody": {
                     "scope": "Message",
@@ -214,7 +214,7 @@
                     "name": "out_9203f4f9-94cf-4445-8f1c-d513d0d21542",
                     "parentNode": "a4b22bdb-a9e1-4d81-8c4e-e186f891dc4e",
                     "links": [
-                        "313bac7f-6488-4a76-a863-89f39c0eeb1f"
+                        "77e449f2-f135-4f27-9a28-cfe694ae63d2"
                     ],
                     "in": false,
                     "label": "simple",
@@ -741,8 +741,8 @@
             "id": "39ad0f70-e1e5-4250-afac-60e5f5069325",
             "type": "simple",
             "selected": true,
-            "x": 1185,
-            "y": 298,
+            "x": 1131.9265734265734,
+            "y": 416.5174825174825,
             "extras": {
                 "outResult": {
                     "scope": "Message",
@@ -757,7 +757,7 @@
                     "name": "in",
                     "parentNode": "39ad0f70-e1e5-4250-afac-60e5f5069325",
                     "links": [
-                        "313bac7f-6488-4a76-a863-89f39c0eeb1f"
+                        "99084095-a8ca-4d1f-b755-b2aac1139d4c"
                     ],
                     "in": true,
                     "label": "simple",
@@ -826,8 +826,8 @@
             "id": "267a4186-f805-4080-82fe-0311ec162d8c",
             "type": "simple",
             "selected": true,
-            "x": 578,
-            "y": 150,
+            "x": 606.6870629370629,
+            "y": 135.09265734265733,
             "extras": {
                 "inPayload": {
                     "scope": "JS",
@@ -1003,7 +1003,7 @@
             "x": 227,
             "y": 85,
             "extras": {
-                "optText": "#### Send Discord Notification\n\nThis template sends a notification to a Discord webhook\n\n###### How it Works?\n\n**1.** Edit \"Config\" node and set your Discord Webhook URL\n\n**2.** Edit \"Prepare Message\" function and update the message to send\n\n\n"
+                "optText": "## Send Discord Notification\n\nThis template sends a notification to a Discord webhook\n\n### How it Works?\n\n**1.** Edit \"Config\" node and set your Discord Webhook URL\n\n**2.** Edit \"Prepare Message\" function and update the message to send\n\n\n"
             },
             "ports": [],
             "model": {
@@ -1016,7 +1016,7 @@
                 "abc": [
                     {},
                     {
-                        "optText": "#### Send Discord Notification\n\nThis template sends a notification to a Discord webhook\n\n###### How it Works?\n\n**1.** Edit \"Config\" node and set your Discord Webhook URL\n\n**2.** Edit \"Prepare Message\" function and update the message to send\n\n\n"
+                        "optText": "## Send Discord Notification\n\nThis template sends a notification to a Discord webhook\n\n### How it Works?\n\n**1.** Edit \"Config\" node and set your Discord Webhook URL\n\n**2.** Edit \"Prepare Message\" function and update the message to send\n\n\n"
                     }
                 ],
                 "xyz": [
@@ -1051,7 +1051,7 @@
                             }
                         },
                         "formData": {
-                            "optText": "#### Send Discord Notification\n\nThis template sends a notification to a Discord webhook\n\n###### How it Works?\n\n**1.** Edit \"Config\" node and set your Discord Webhook URL\n\n**2.** Edit \"Prepare Message\" function and update the message to send\n\n\n"
+                            "optText": "## Send Discord Notification\n\nThis template sends a notification to a Discord webhook\n\n### How it Works?\n\n**1.** Edit \"Config\" node and set your Discord Webhook URL\n\n**2.** Edit \"Prepare Message\" function and update the message to send\n\n\n"
                         }
                     }
                 ],
@@ -1063,11 +1063,11 @@
             "id": "65cdc0ea-9676-4603-8d75-42fef06852a3",
             "type": "simple",
             "selected": true,
-            "x": 868,
-            "y": 152,
+            "x": 866.3356643356643,
+            "y": 137,
             "extras": {
                 "outputs": 1,
-                "func": "msg.webhook = \"https://discord.com/api/webhooks/replace_with_your_discord_webhook_url\";\n\nreturn msg;\n",
+                "func": "msg.webhook = \"https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE\";\n\nreturn msg;\n",
                 "optTimeout": 30,
                 "variables": []
             },
@@ -1118,7 +1118,7 @@
                     },
                     {
                         "outputs": 1,
-                        "func": "msg.webhook = \"https://discord.com/api/webhooks/replace_with_your_discord_webhook_url\";\n\nreturn msg;\n",
+                        "func": "msg.webhook = \"https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE\";\n\nreturn msg;\n",
                         "optTimeout": 30
                     },
                     {
@@ -1160,7 +1160,7 @@
                         },
                         "formData": {
                             "outputs": 1,
-                            "func": "msg.webhook = \"https://discord.com/api/webhooks/replace_with_your_discord_webhook_url\";\n\nreturn msg;\n",
+                            "func": "msg.webhook = \"https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE\";\n\nreturn msg;\n",
                             "optTimeout": 30
                         }
                     },
@@ -1192,6 +1192,743 @@
                         },
                         "formData": {
                             "variables": []
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "c2818dc6-8f22-4a20-9972-477239d1dba1",
+            "type": "simple",
+            "selected": true,
+            "x": 869.1520979020978,
+            "y": 342.0227272727273,
+            "extras": {
+                "outputs": 1,
+                "func": "// This is an advanced message that is called an Embed\n//\n// For more info here:\n// https://discordjs.guide/popular-topics/embeds.html#embed-preview\n// \n// For more advanced usage, this article also may help\n// https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-part-2-embeds-588n\n\nvar embed = {\n\n    \"title\": \"Something Happened\",\n    \"color\": 0x0099ff,\n    \"description\": \"And this is the description of it\"\n\n}\n\nmsg.req = {\n  \"embeds\": [embed]\n}\n\nreturn msg;",
+                "optTimeout": 30,
+                "variables": [],
+                "continueOnError": true
+            },
+            "ports": [
+                {
+                    "id": "474868f4-5442-4afa-9562-f90def9a1eae",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_474868f4-5442-4afa-9562-f90def9a1eae",
+                    "parentNode": "c2818dc6-8f22-4a20-9972-477239d1dba1",
+                    "links": [
+                        "623d451f-0974-456e-90dd-efb0c7710944"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "3a6ce115-6848-44c8-83c5-bec34b2ce4c7",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "c2818dc6-8f22-4a20-9972-477239d1dba1",
+                    "links": [
+                        "77e449f2-f135-4f27-9a28-cfe694ae63d2"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "c2818dc6-8f22-4a20-9972-477239d1dba1",
+                "name": "Prepare Embed",
+                "icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+                "color": "#F27925",
+                "editor": "javascript",
+                "namespace": "Core.Programming.Function",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Prepare Embed",
+                        "color": "#F27925",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": true,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "outputs": 1,
+                        "func": "// This is an advanced message that is called an Embed\n//\n// For more info here:\n// https://discordjs.guide/popular-topics/embeds.html#embed-preview\n// \n// For more advanced usage, this article also may help\n// https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-part-2-embeds-588n\n\nvar embed = {\n\n    \"title\": \"Something Happened\",\n    \"color\": 0x0099ff,\n    \"description\": \"And this is the description of it\"\n\n}\n\nmsg.req = {\n  \"embeds\": [embed]\n}\n\nreturn msg;",
+                        "optTimeout": 30
+                    },
+                    {
+                        "variables": []
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "func": {
+                                    "title": "Function",
+                                    "type": "string"
+                                },
+                                "outputs": {
+                                    "title": "Outputs",
+                                    "type": "number",
+                                    "minimum": 1,
+                                    "maximum": 32
+                                },
+                                "optTimeout": {
+                                    "title": "Script Timeout",
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outputs": {
+                                "ui:widget": "updown"
+                            },
+                            "func": {
+                                "ui:widget": "hidden",
+                                "ui:options": {
+                                    "rows": 6
+                                }
+                            }
+                        },
+                        "formData": {
+                            "outputs": 1,
+                            "func": "// This is an advanced message that is called an Embed\n//\n// For more info here:\n// https://discordjs.guide/popular-topics/embeds.html#embed-preview\n// \n// For more advanced usage, this article also may help\n// https://dev.to/oskarcodes/send-automated-discord-messages-through-webhooks-using-javascript-part-2-embeds-588n\n\nvar embed = {\n\n    \"title\": \"Something Happened\",\n    \"color\": 0x0099ff,\n    \"description\": \"And this is the description of it\"\n\n}\n\nmsg.req = {\n  \"embeds\": [embed]\n}\n\nreturn msg;",
+                            "optTimeout": 30
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Local Variables",
+                            "type": "object",
+                            "properties": {
+                                "variables": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "variableType": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "variables": {
+                                "ui:field": "localVariable"
+                            }
+                        },
+                        "formData": {
+                            "variables": []
+                        }
+                    }
+                ],
+                "outputs": 1,
+                "inputs": 1
+            }
+        },
+        {
+            "id": "6c34687a-f100-4e5b-bf59-93e7170a8c12",
+            "type": "simple",
+            "selected": true,
+            "x": 871.1520979020978,
+            "y": 414.8688393165681,
+            "extras": {
+                "inBody": {
+                    "scope": "Message",
+                    "name": "req"
+                },
+                "inHeaders": {
+                    "scope": "Message",
+                    "name": "reqHeaders"
+                },
+                "inCustomHeaders": [
+                    {
+                        "name": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "inCustomCookies": [],
+                "inCookies": {
+                    "scope": "Message",
+                    "name": "reqCookies"
+                },
+                "outBody": {
+                    "scope": "Message",
+                    "name": "resp"
+                },
+                "outHeaders": {
+                    "scope": "Message",
+                    "name": "respHeaders"
+                },
+                "outCookies": {
+                    "scope": "Message",
+                    "name": "respCookies"
+                },
+                "outStatus": {
+                    "scope": "Message",
+                    "name": "respStatus"
+                },
+                "optUrl": {
+                    "scope": "Message",
+                    "name": "webhook"
+                },
+                "optMethod": "post",
+                "optAuthentication": "no-authentication",
+                "optCredentials": {
+                    "vaultId": "_",
+                    "itemId": "_"
+                },
+                "optTimeout": 30,
+                "optProxy": "no-proxy",
+                "optProxyAddr": {
+                    "scope": "Custom",
+                    "name": ""
+                },
+                "optProxyAuth": "no-authentication",
+                "optProxyCredentials": {
+                    "vaultId": "_",
+                    "itemId": "_"
+                },
+                "continueOnError": true
+            },
+            "ports": [
+                {
+                    "id": "bd7a0b7d-38c0-4af9-8be8-907e68f7ba5f",
+                    "type": "default",
+                    "selected": false,
+                    "name": "out_bd7a0b7d-38c0-4af9-8be8-907e68f7ba5f",
+                    "parentNode": "6c34687a-f100-4e5b-bf59-93e7170a8c12",
+                    "links": [
+                        "99084095-a8ca-4d1f-b755-b2aac1139d4c"
+                    ],
+                    "in": false,
+                    "label": "simple",
+                    "position": "out"
+                },
+                {
+                    "id": "3c146a9d-619a-4c70-a9de-3698bfd8dd98",
+                    "type": "default",
+                    "selected": false,
+                    "name": "in",
+                    "parentNode": "6c34687a-f100-4e5b-bf59-93e7170a8c12",
+                    "links": [
+                        "623d451f-0974-456e-90dd-efb0c7710944"
+                    ],
+                    "in": true,
+                    "label": "simple",
+                    "position": "in"
+                }
+            ],
+            "model": {
+                "id": "6c34687a-f100-4e5b-bf59-93e7170a8c12",
+                "name": "Send to Discord",
+                "icon": "M6,20A6,6 0 0,1 0,14C0,10.91 2.34,8.36 5.35,8.04C6.6,5.64 9.11,4 12,4C15.63,4 18.66,6.58 19.35,10C21.95,10.19 24,12.36 24,15A5,5 0 0,1 19,20H6M18.5,12H18A1,1 0 0,1 17,11V10A2,2 0 0,0 15,8H13.5V10H15V11A2,2 0 0,0 17,13A2,2 0 0,0 15,15V16H13.5V18H15A2,2 0 0,0 17,16V15A1,1 0 0,1 18,14H18.5V12M5.5,12V14H6A1,1 0 0,1 7,15V16A2,2 0 0,0 9,18H10.5V16H9V15A2,2 0 0,0 7,13A2,2 0 0,0 9,11V10H10.5V8H9A2,2 0 0,0 7,10V11A1,1 0 0,1 6,12H5.5Z",
+                "color": "#c9d9ff",
+                "namespace": "Core.Net.HttpRequest",
+                "version": "1.11.6",
+                "abc": [
+                    {
+                        "name": "Send to Discord",
+                        "color": "#c9d9ff",
+                        "delayBefore": 0,
+                        "delayAfter": 0,
+                        "continueOnError": true,
+                        "version": "1.11.6"
+                    },
+                    {
+                        "inBody": {
+                            "scope": "Message",
+                            "name": "req"
+                        },
+                        "inHeaders": {
+                            "scope": "Message",
+                            "name": "reqHeaders"
+                        },
+                        "inCustomHeaders": [
+                            {
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "inCustomCookies": [],
+                        "inCookies": {
+                            "scope": "Message",
+                            "name": "reqCookies"
+                        }
+                    },
+                    {
+                        "outBody": {
+                            "scope": "Message",
+                            "name": "resp"
+                        },
+                        "outHeaders": {
+                            "scope": "Message",
+                            "name": "respHeaders"
+                        },
+                        "outCookies": {
+                            "scope": "Message",
+                            "name": "respCookies"
+                        },
+                        "outStatus": {
+                            "scope": "Message",
+                            "name": "respStatus"
+                        }
+                    },
+                    {
+                        "optUrl": {
+                            "scope": "Message",
+                            "name": "webhook"
+                        },
+                        "optMethod": "post",
+                        "optAuthentication": "no-authentication",
+                        "optCredentials": {
+                            "vaultId": "_",
+                            "itemId": "_"
+                        },
+                        "optTimeout": 30,
+                        "optProxy": "no-proxy",
+                        "optProxyAddr": {
+                            "scope": "Custom",
+                            "name": ""
+                        },
+                        "optProxyAuth": "no-authentication",
+                        "optProxyCredentials": {
+                            "vaultId": "_",
+                            "itemId": "_"
+                        }
+                    }
+                ],
+                "xyz": [
+                    {
+                        "schema": {
+                            "title": "Input",
+                            "type": "object",
+                            "properties": {
+                                "inBody": {
+                                    "type": "object",
+                                    "title": "Request",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "contentScope": true,
+                                    "jsScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inHeaders": {
+                                    "type": "object",
+                                    "title": "Headers",
+                                    "variableType": "Array",
+                                    "messageOnly": true,
+                                    "jsScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inCustomHeaders": {
+                                    "type": "array",
+                                    "title": "",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string",
+                                                "title": "Name"
+                                            },
+                                            "value": {
+                                                "type": "string",
+                                                "title": "Value"
+                                            }
+                                        }
+                                    }
+                                },
+                                "inCookies": {
+                                    "type": "object",
+                                    "title": "Cookies",
+                                    "variableType": "Array",
+                                    "messageOnly": true,
+                                    "jsScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "inCustomCookies": {
+                                    "type": "array",
+                                    "title": "",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string",
+                                                "title": "Name"
+                                            },
+                                            "value": {
+                                                "type": "string",
+                                                "title": "Value"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "inBody": {
+                                "ui:field": "variable"
+                            },
+                            "inHeaders": {
+                                "ui:field": "variable"
+                            },
+                            "inCustomHeaders": {
+                                "ui:description": "Custom Headers",
+                                "ui:options": {
+                                    "orderable": false
+                                }
+                            },
+                            "inCustomCookies": {
+                                "ui:description": "Custom Cookies",
+                                "ui:options": {
+                                    "orderable": false
+                                }
+                            },
+                            "inCookies": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "inBody",
+                                "inHeaders",
+                                "inCustomHeaders",
+                                "inCookies",
+                                "inCustomCookies"
+                            ]
+                        },
+                        "formData": {
+                            "inBody": {
+                                "scope": "Message",
+                                "name": "req"
+                            },
+                            "inHeaders": {
+                                "scope": "Message",
+                                "name": "reqHeaders"
+                            },
+                            "inCustomHeaders": [
+                                {
+                                    "name": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "inCustomCookies": [],
+                            "inCookies": {
+                                "scope": "Message",
+                                "name": "reqCookies"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Output",
+                            "type": "object",
+                            "properties": {
+                                "outBody": {
+                                    "type": "object",
+                                    "title": "Response",
+                                    "variableType": "String",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "outHeaders": {
+                                    "type": "object",
+                                    "title": "Headers",
+                                    "variableType": "Array",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "outCookies": {
+                                    "type": "object",
+                                    "title": "Cookies",
+                                    "variableType": "Array",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "outStatus": {
+                                    "type": "object",
+                                    "title": "Status Code",
+                                    "variableType": "Integer",
+                                    "messageOnly": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "outBody": {
+                                "ui:field": "variable"
+                            },
+                            "outHeaders": {
+                                "ui:field": "variable"
+                            },
+                            "outCookies": {
+                                "ui:field": "variable"
+                            },
+                            "outStatus": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "outBody",
+                                "outHeaders",
+                                "outCookies",
+                                "outStatus"
+                            ]
+                        },
+                        "formData": {
+                            "outBody": {
+                                "scope": "Message",
+                                "name": "resp"
+                            },
+                            "outHeaders": {
+                                "scope": "Message",
+                                "name": "respHeaders"
+                            },
+                            "outCookies": {
+                                "scope": "Message",
+                                "name": "respCookies"
+                            },
+                            "outStatus": {
+                                "scope": "Message",
+                                "name": "respStatus"
+                            }
+                        }
+                    },
+                    {
+                        "schema": {
+                            "title": "Options",
+                            "type": "object",
+                            "properties": {
+                                "optUrl": {
+                                    "type": "object",
+                                    "title": "URL",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "optMethod": {
+                                    "title": "Method",
+                                    "type": "string",
+                                    "enum": [
+                                        "get",
+                                        "post",
+                                        "put",
+                                        "delete",
+                                        "patch"
+                                    ],
+                                    "enumNames": [
+                                        "GET",
+                                        "POST",
+                                        "PUT",
+                                        "DELETE",
+                                        "PATCH"
+                                    ]
+                                },
+                                "optAuthentication": {
+                                    "title": "Authentication",
+                                    "type": "string",
+                                    "enum": [
+                                        "no-authentication",
+                                        "basic-authentication"
+                                    ],
+                                    "enumNames": [
+                                        "No Authentication",
+                                        "Basic Authentication"
+                                    ]
+                                },
+                                "optCredentials": {
+                                    "type": "object",
+                                    "title": "Credentials",
+                                    "subtitle": "",
+                                    "category": 1,
+                                    "properties": {
+                                        "vaultId": {
+                                            "type": "string"
+                                        },
+                                        "itemId": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "optTimeout": {
+                                    "title": "Timeout",
+                                    "type": "number"
+                                },
+                                "optInsecure": {
+                                    "type": "boolean",
+                                    "title": "Insecure Skip Verify"
+                                },
+                                "optProxy": {
+                                    "title": "Proxy Settings",
+                                    "type": "string",
+                                    "enum": [
+                                        "no-proxy",
+                                        "manual-proxy"
+                                    ],
+                                    "enumNames": [
+                                        "No Proxy",
+                                        "Manual Proxy"
+                                    ]
+                                },
+                                "optProxyAddr": {
+                                    "type": "object",
+                                    "title": "Proxy Address",
+                                    "variableType": "String",
+                                    "messageScope": true,
+                                    "customScope": true,
+                                    "properties": {
+                                        "scope": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "optProxyAuth": {
+                                    "title": "Proxy Authentication",
+                                    "type": "string",
+                                    "enum": [
+                                        "no-authentication",
+                                        "basic-authentication"
+                                    ],
+                                    "enumNames": [
+                                        "No Authentication",
+                                        "Basic Authentication"
+                                    ]
+                                },
+                                "optProxyCredentials": {
+                                    "type": "object",
+                                    "title": "Proxy Credentials",
+                                    "subtitle": "",
+                                    "category": 1,
+                                    "properties": {
+                                        "vaultId": {
+                                            "type": "string"
+                                        },
+                                        "itemId": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "uiSchema": {
+                            "optUrl": {
+                                "ui:field": "variable"
+                            },
+                            "optCredentials": {
+                                "ui:field": "credentials"
+                            },
+                            "optProxyCredentials": {
+                                "ui:field": "credentials"
+                            },
+                            "optProxyAddr": {
+                                "ui:field": "variable"
+                            },
+                            "ui:order": [
+                                "optMethod",
+                                "optUrl",
+                                "optAuthentication",
+                                "optCredentials",
+                                "optTimeout",
+                                "optInsecure",
+                                "optProxy",
+                                "optProxyAddr",
+                                "optProxyAuth",
+                                "optProxyCredentials"
+                            ]
+                        },
+                        "formData": {
+                            "optUrl": {
+                                "scope": "Message",
+                                "name": "webhook"
+                            },
+                            "optMethod": "post",
+                            "optAuthentication": "no-authentication",
+                            "optCredentials": {
+                                "vaultId": "_",
+                                "itemId": "_"
+                            },
+                            "optTimeout": 30,
+                            "optProxy": "no-proxy",
+                            "optProxyAddr": {
+                                "scope": "Custom",
+                                "name": ""
+                            },
+                            "optProxyAuth": "no-authentication",
+                            "optProxyCredentials": {
+                                "vaultId": "_",
+                                "itemId": "_"
+                            }
                         }
                     }
                 ],
