@@ -279,6 +279,25 @@
     ]
   },
   {
+    "name": "Send Discord Notification",
+    "description": "Send Discord messages with embeds using webhooks.",
+    "slug": "discord-notification",
+    "icon": "discord_notification_icon.png",
+    "screenshots": [
+      "discord_notification_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "discord",
+      "notification",
+      "api"
+    ],
+    "applications": [
+      "Javascript"
+    ]
+  },
+  {
     "name": "Dollar - Euro Parity As Service",
     "description": "Returns dolar - euro parity for API request",
     "slug": "dollar-euro-parity-as-service",
@@ -705,7 +724,7 @@
   },
   {
     "name": "Mail To MySQL Inserter",
-    "description": "Checks Inbox every hour and if a mail comes with subject that contain #ROBO#, writes it into a mysql table",
+    "description": "Checks Inbox every hour and if a mail comes with subject that contain",
     "slug": "mail-to-mysql-inserter",
     "icon": "mail_to_mysql_inserter_icon.png",
     "screenshots": [
@@ -1381,6 +1400,24 @@
     ]
   },
   {
+    "name": "Web Element To Pdf",
+    "description": "Converts web element to Pdf",
+    "slug": "web-element-to-pdf",
+    "icon": "web_element_to_pdf_icon.png",
+    "screenshots": [
+      "web_element_to_pdf_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "html",
+      "pdf"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -1398,24 +1435,6 @@
     "applications": [
       "Slack",
       "Chrome"
-    ]
-  },
-  {
-    "name": "Web Element To Pdf",
-    "description": "Converts any web elements to Pdf",
-    "slug": "web-element-to-pdf",
-    "icon": "web_element_to_pdf_icon.png",
-    "screenshots": [
-      "web_element_to_pdf_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "html",
-      "pdf"
-    ],
-    "applications": [
-      "Other"
     ]
   },
   {
