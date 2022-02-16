@@ -42,6 +42,28 @@
     ]
   },
   {
+    "name": "Amazon Search Result Scraping",
+    "description": "Scrapes product data from Amazon search results",
+    "slug": "amazon-serp-scraping",
+    "icon": "amazon-serp-scraping.png",
+    "screenshots": [
+      "amazon_serp_scraping_screenshot_1.png",
+      "amazon_serp_scraping_screenshot_2.png",
+      "amazon_serp_scraping_screenshot_3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Scraping",
+    "tags": [
+      "scraping",
+      "sqlite",
+      "amazon"
+    ],
+    "applications": [
+      "SQLite",
+      "Javascript"
+    ]
+  },
+  {
     "name": "API Health Check",
     "description": "Monitors the operational status of your microservices",
     "slug": "api-health-check",
