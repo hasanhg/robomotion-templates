@@ -1331,6 +1331,26 @@
     ]
   },
   {
+    "name": "Telegram Replier Bot",
+    "description": "Receives message from telegram and replies.",
+    "slug": "telegram-replier-bot",
+    "icon": "telegram_replier_bot_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=ucK7Y2_QEjk",
+      "telegram_replier_bot_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Communication",
+    "tags": [
+      "telegram",
+      "bot",
+      "message"
+    ],
+    "applications": [
+      "Telegram"
+    ]
+  },
+  {
     "name": "Translator",
     "description": "Translates the text from a specified language to another one using Google Translate",
     "slug": "translator",

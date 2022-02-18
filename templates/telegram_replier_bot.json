@@ -1,0 +1,901 @@
+{
+	"nodes": [{
+		"id": "32095229-9b76-498b-aee0-1fa98119a38e",
+		"type": "simple",
+		"selected": true,
+		"x": 594.5,
+		"y": 341.86111111111114,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.replyMessage = \"Customer support will be back Monday during business hours and they may have suggestions.\"; // Bot's reply.\nmsg.incomingMessage = msg.message.message;\nmsg.messageId = msg.incomingMessage.message_id;\nmsg.chatId = msg.incomingMessage.chat.id;\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "253d2047-9a23-4967-bd66-d11b282a7333",
+			"type": "default",
+			"selected": false,
+			"name": "out_253d2047-9a23-4967-bd66-d11b282a7333",
+			"parentNode": "32095229-9b76-498b-aee0-1fa98119a38e",
+			"links": ["f163a2a1-0ba0-40a1-af25-f06a043ae1ab"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "90dfbfde-fa09-41f6-ac44-248a660bcb42",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "32095229-9b76-498b-aee0-1fa98119a38e",
+			"links": ["e7b04d5a-ac3a-408f-862a-fa67819528da"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "32095229-9b76-498b-aee0-1fa98119a38e",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.replyMessage = \"Customer support will be back Monday during business hours and they may have suggestions.\"; // Bot's reply.\nmsg.incomingMessage = msg.message.message;\nmsg.messageId = msg.incomingMessage.message_id;\nmsg.chatId = msg.incomingMessage.chat.id;\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.replyMessage = \"Customer support will be back Monday during business hours and they may have suggestions.\"; // Bot's reply.\nmsg.incomingMessage = msg.message.message;\nmsg.messageId = msg.incomingMessage.message_id;\nmsg.chatId = msg.incomingMessage.chat.id;\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "49324b20-0355-4725-973b-8902fffda670",
+		"type": "simple",
+		"selected": true,
+		"x": 137.60445608742828,
+		"y": 3.4641250562303014,
+		"extras": {
+			"optText": "## Telegram Replier Bot\r\n\r\nReceives message from telegram and replies\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Telegram Bot package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.answer field to your message.\r\n\r\n**5.** Set the Bot Token credential for Receive Message and Connect nodes to access your bot. See [here](https://core.telegram.org/bots#3-how-do-i-create-a-bot) for more information.\r\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "49324b20-0355-4725-973b-8902fffda670",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "## Telegram Replier Bot\r\n\r\nReceives message from telegram and replies\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Telegram Bot package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.answer field to your message.\r\n\r\n**5.** Set the Bot Token credential for Receive Message and Connect nodes to access your bot. See [here](https://core.telegram.org/bots#3-how-do-i-create-a-bot) for more information.\r\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "## Telegram Replier Bot\r\n\r\nReceives message from telegram and replies\r\n\r\n### How it Works?\r\n\r\nFollow these steps to test this template;\r\n\r\n**1.** Go to Flow Designer and press package icon above the node palette.\r\n\r\n**2.** You should see Telegram Bot package icon, install it.\r\n\r\n**3.** Edit the Config Node.\r\n\r\n**4.** Set the msg.answer field to your message.\r\n\r\n**5.** Set the Bot Token credential for Receive Message and Connect nodes to access your bot. See [here](https://core.telegram.org/bots#3-how-do-i-create-a-bot) for more information.\r\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "1d5e5104-bcdb-4599-bab5-4cb0284b2403",
+		"type": "simple",
+		"selected": true,
+		"x": 927.1130030959753,
+		"y": 501.15643274853795,
+		"extras": {
+			"optDebugData": {
+				"name": "",
+				"scope": "Message"
+			},
+			"optActive": true,
+			"optSysConsole": false
+		},
+		"ports": [{
+			"id": "fe2a6cff-112e-4470-a4ce-65f1f859dab0",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "1d5e5104-bcdb-4599-bab5-4cb0284b2403",
+			"links": ["c18a758b-12bd-4493-a91b-2ed681ff0cdc"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "1d5e5104-bcdb-4599-bab5-4cb0284b2403",
+			"name": "Debug",
+			"icon": "M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z",
+			"color": "#E6EE9C",
+			"namespace": "Core.Programming.Debug",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optDebugData": {
+					"name": "",
+					"scope": "Message"
+				},
+				"optActive": true,
+				"optSysConsole": false
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optActive": {
+							"title": "Active",
+							"type": "boolean"
+						},
+						"optSysConsole": {
+							"title": "System Console",
+							"type": "boolean"
+						},
+						"optDebugData": {
+							"type": "object",
+							"title": "Debug Data",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optDebugData": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optDebugData", "optActive", "optSysConsole"]
+				},
+				"formData": {
+					"optDebugData": {
+						"name": "",
+						"scope": "Message"
+					},
+					"optActive": true,
+					"optSysConsole": false
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "f7f501a7-f4d1-4c33-ae8d-0433c1cc25e4",
+		"type": "simple",
+		"selected": true,
+		"x": 572.3876619414666,
+		"y": 288.56643476262195,
+		"extras": {
+			"outMessage": {
+				"name": "message",
+				"scope": "Message"
+			},
+			"optChatId": {
+				"name": "0",
+				"scope": "Custom"
+			},
+			"optSenderId": {
+				"name": "0",
+				"scope": "Custom"
+			},
+			"optToken": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			}
+		},
+		"ports": [{
+			"id": "a1e04450-67ca-4cdf-9aaf-44367477c95d",
+			"type": "default",
+			"selected": false,
+			"name": "out_a1e04450-67ca-4cdf-9aaf-44367477c95d",
+			"parentNode": "f7f501a7-f4d1-4c33-ae8d-0433c1cc25e4",
+			"links": ["e7b04d5a-ac3a-408f-862a-fa67819528da"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "f7f501a7-f4d1-4c33-ae8d-0433c1cc25e4",
+			"name": "Receive Message",
+			"icon": "M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z",
+			"color": "#229ed9",
+			"namespace": "Robomotion.TelegramBot.ReceiveMessage",
+			"version": "0.0.1",
+			"abc": [{
+				"name": "Receive Message",
+				"version": "0.0.1",
+				"color": "#229ed9",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outMessage": {
+					"name": "message",
+					"scope": "Message"
+				}
+			}, {
+				"optChatId": {
+					"name": "0",
+					"scope": "Custom"
+				},
+				"optSenderId": {
+					"name": "0",
+					"scope": "Custom"
+				},
+				"optToken": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outMessage": {
+							"type": "object",
+							"title": "Message",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outMessage": {
+						"name": "message",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outMessage": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outMessage"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optChatId": {
+							"type": "object",
+							"title": "Chat Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "Integer"
+						},
+						"optSenderId": {
+							"type": "object",
+							"title": "Sender Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "Integer"
+						},
+						"optToken": {
+							"type": "object",
+							"title": "Bot Token",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"name": {
+									"properties": {
+										"itemId": {
+											"type": "string"
+										},
+										"vaultId": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"formData": {
+					"optChatId": {
+						"name": "0",
+						"scope": "Custom"
+					},
+					"optSenderId": {
+						"name": "0",
+						"scope": "Custom"
+					},
+					"optToken": {
+						"name": {
+							"itemId": "_",
+							"vaultId": "_"
+						},
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optChatId": {
+						"ui:field": "variable"
+					},
+					"optSenderId": {
+						"ui:field": "variable"
+					},
+					"optToken": {
+						"ui:field": "vault"
+					},
+					"ui:order": ["optToken", "optChatId", "optSenderId"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "0fa5e107-2edc-41be-94a8-fb50ba396f23",
+		"type": "simple",
+		"selected": true,
+		"x": 614.3876619414665,
+		"y": 393.64455976262195,
+		"extras": {
+			"outClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"optToken": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			}
+		},
+		"ports": [{
+			"id": "a25cfbb0-c99c-461d-9188-d43af7298492",
+			"type": "default",
+			"selected": false,
+			"name": "out_a25cfbb0-c99c-461d-9188-d43af7298492",
+			"parentNode": "0fa5e107-2edc-41be-94a8-fb50ba396f23",
+			"links": ["2a59c6df-e24d-4a27-8bb1-ead98482f3e2"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "15c600ef-63aa-4603-8b1f-247c1bcde40c",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "0fa5e107-2edc-41be-94a8-fb50ba396f23",
+			"links": ["f163a2a1-0ba0-40a1-af25-f06a043ae1ab"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "0fa5e107-2edc-41be-94a8-fb50ba396f23",
+			"name": "Connect",
+			"icon": "M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z",
+			"color": "#229ed9",
+			"namespace": "Robomotion.TelegramBot.Connect",
+			"version": "0.0.1",
+			"abc": [{
+				"name": "Connect",
+				"version": "0.0.1",
+				"color": "#229ed9",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}, {
+				"optToken": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outClientId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientId"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optToken": {
+							"type": "object",
+							"title": "Bot Token",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"name": {
+									"properties": {
+										"itemId": {
+											"type": "string"
+										},
+										"vaultId": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"formData": {
+					"optToken": {
+						"name": {
+							"itemId": "_",
+							"vaultId": "_"
+						},
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optToken": {
+						"ui:field": "vault"
+					},
+					"ui:order": ["optToken"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "dab993c3-b9a5-4d00-815b-cf007d3880c5",
+		"type": "simple",
+		"selected": true,
+		"x": 671.1376619414665,
+		"y": 499.87893476262195,
+		"extras": {
+			"inClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "1b72ca43-327d-4a53-bf39-8869d105e91b",
+			"type": "default",
+			"selected": false,
+			"name": "out_1b72ca43-327d-4a53-bf39-8869d105e91b",
+			"parentNode": "dab993c3-b9a5-4d00-815b-cf007d3880c5",
+			"links": ["c18a758b-12bd-4493-a91b-2ed681ff0cdc"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "cb4f225b-4910-4bb2-850b-3da18a0c53ef",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "dab993c3-b9a5-4d00-815b-cf007d3880c5",
+			"links": ["77f77958-fbb6-4cc0-a14a-bf48cb02082d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "dab993c3-b9a5-4d00-815b-cf007d3880c5",
+			"name": "Disconnect",
+			"icon": "M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z",
+			"color": "#229ed9",
+			"namespace": "Robomotion.TelegramBot.Disconnect",
+			"version": "0.0.1",
+			"abc": [{}, {
+				"inClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"inClientId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientId"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b9d53b30-a016-41bf-8a75-42897648798a",
+		"type": "simple",
+		"selected": true,
+		"x": 637.3876619414666,
+		"y": 445.05080976262195,
+		"extras": {
+			"inChatId": {
+				"name": "chatId",
+				"scope": "Message"
+			},
+			"inClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inMessage": {
+				"scope": "Message",
+				"name": "replyMessage"
+			},
+			"optReplyId": {
+				"scope": "Message",
+				"name": "messageId"
+			}
+		},
+		"ports": [{
+			"id": "63b89ea2-0e6d-4c48-9e64-db382f996211",
+			"type": "default",
+			"selected": false,
+			"name": "out_63b89ea2-0e6d-4c48-9e64-db382f996211",
+			"parentNode": "b9d53b30-a016-41bf-8a75-42897648798a",
+			"links": ["77f77958-fbb6-4cc0-a14a-bf48cb02082d"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "7c217792-1a43-4c03-81bb-21265a6fc732",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b9d53b30-a016-41bf-8a75-42897648798a",
+			"links": ["2a59c6df-e24d-4a27-8bb1-ead98482f3e2"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b9d53b30-a016-41bf-8a75-42897648798a",
+			"name": "Send Message",
+			"icon": "M9.78,18.65L10.06,14.42L17.74,7.5C18.08,7.19 17.67,7.04 17.22,7.31L7.74,13.3L3.64,12C2.76,11.75 2.75,11.14 3.84,10.7L19.81,4.54C20.54,4.21 21.24,4.72 20.96,5.84L18.24,18.65C18.05,19.56 17.5,19.78 16.74,19.36L12.6,16.3L10.61,18.23C10.38,18.46 10.19,18.65 9.78,18.65Z",
+			"color": "#229ed9",
+			"namespace": "Robomotion.TelegramBot.SendMessage",
+			"version": "0.0.1",
+			"abc": [{
+				"name": "Send Message",
+				"version": "0.0.1",
+				"color": "#229ed9",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inChatId": {
+					"name": "chatId",
+					"scope": "Message"
+				},
+				"inClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inMessage": {
+					"scope": "Message",
+					"name": "replyMessage"
+				}
+			}, {
+				"optReplyId": {
+					"scope": "Message",
+					"name": "messageId"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inChatId": {
+							"type": "object",
+							"title": "Chat Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "Integer"
+						},
+						"inClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						},
+						"inMessage": {
+							"type": "object",
+							"title": "Message Text",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inChatId": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inMessage": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inChatId": {
+						"ui:field": "variable"
+					},
+					"inClientId": {
+						"ui:field": "variable"
+					},
+					"inMessage": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientId", "inChatId", "inMessage"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optReplyId": {
+							"type": "object",
+							"title": "Reply Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "Integer"
+						}
+					}
+				},
+				"formData": {
+					"optReplyId": {
+						"name": "0",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optReplyId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optReplyId"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}
