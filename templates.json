@@ -1332,7 +1332,7 @@
   },
   {
     "name": "Telegram Replier Bot",
-    "description": "Receives message from telegram and replies.",
+    "description": "Receives message from telegram and replies",
     "slug": "telegram-replier-bot",
     "icon": "telegram_replier_bot_icon.png",
     "screenshots": [
