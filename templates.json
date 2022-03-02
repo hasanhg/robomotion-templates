@@ -1206,6 +1206,28 @@
     ]
   },
   {
+    "name": "Slack To Discord Forwarder",
+    "description": "Receives message from Slack and forwards to a Discord Channel",
+    "slug": "slack-to-discord-forwarder",
+    "icon": "slack_to_discord_forwarder_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=9pMKro07oe8",
+      "slack_to_discord_forwarder_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Communication",
+    "tags": [
+      "bot",
+      "message",
+	"receive",
+	"send"
+    ],
+    "applications": [
+      "Discord",
+	"Slack"
+    ]
+  },
+  {
     "name": "Split CSV",
     "description": "Splits a CSV file to a group of .csv files containing at most specified amount of rows",
     "slug": "split-csv",

@@ -1,0 +1,935 @@
+{
+	"nodes": [{
+		"id": "c807a9e4-5820-48d8-9be6-d4f9273fed06",
+		"type": "simple",
+		"selected": true,
+		"x": 641.0374954329558,
+		"y": 228.3276093045914,
+		"extras": {
+			"optDebugData": {
+				"name": "",
+				"scope": "Message"
+			},
+			"optActive": true,
+			"optSysConsole": false
+		},
+		"ports": [{
+			"id": "54ed920a-0a5a-409f-a620-2296462d2006",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "c807a9e4-5820-48d8-9be6-d4f9273fed06",
+			"links": ["5663de45-8a36-4399-92f5-d388ddf8d33e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "c807a9e4-5820-48d8-9be6-d4f9273fed06",
+			"name": "Debug",
+			"icon": "M4,5H20V7H4V5M4,9H20V11H4V9M4,13H20V15H4V13M4,17H14V19H4V17Z",
+			"color": "#E6EE9C",
+			"namespace": "Core.Programming.Debug",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optDebugData": {
+					"name": "",
+					"scope": "Message"
+				},
+				"optActive": true,
+				"optSysConsole": false
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optActive": {
+							"title": "Active",
+							"type": "boolean"
+						},
+						"optSysConsole": {
+							"title": "System Console",
+							"type": "boolean"
+						},
+						"optDebugData": {
+							"type": "object",
+							"title": "Debug Data",
+							"variableType": "String",
+							"messageScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"optDebugData": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optDebugData", "optActive", "optSysConsole"]
+				},
+				"formData": {
+					"optDebugData": {
+						"name": "",
+						"scope": "Message"
+					},
+					"optActive": true,
+					"optSysConsole": false
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "601662c7-8656-40a3-9f62-b5ee2b4db048",
+		"type": "simple",
+		"selected": true,
+		"x": -131.87247290220444,
+		"y": -219.40083424674214,
+		"extras": {
+			"optText": "##### Slack to Discord Forwarder\n\nThis template uses *Slack* and *Discord Bot* nodes to forward messages.\n\nFollow these steps to test this template;\n\n**1.** Set the slack environment and take the bot token by [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**2.** You will need to enable socket mode and get application level token too.\n\n**3.** To enable Socket Mode, navigate to the Socket Mode tab under Settings in the left panel. Toggle the button next to Enable Socket Mode.\n\n**4.** After clicking Generate you will receive an application level token and you need to add it to your vault as a new API Key/Token item.\n\n**5.** Navigate to Event Subscriptions under Features in the left panel and enable events after that expand the subscribe to bot events and add message.channels event.\n\n**6.** To creating a Discord bot you can follow [this](https://discordpy.readthedocs.io/en/stable/discord.html) link.\n\n**7.** Edit the Config Node"
+		},
+		"ports": [],
+		"model": {
+			"id": "601662c7-8656-40a3-9f62-b5ee2b4db048",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "##### Slack to Discord Forwarder\n\nThis template uses *Slack* and *Discord Bot* nodes to forward messages.\n\nFollow these steps to test this template;\n\n**1.** Set the slack environment and take the bot token by [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**2.** You will need to enable socket mode and get application level token too.\n\n**3.** To enable Socket Mode, navigate to the Socket Mode tab under Settings in the left panel. Toggle the button next to Enable Socket Mode.\n\n**4.** After clicking Generate you will receive an application level token and you need to add it to your vault as a new API Key/Token item.\n\n**5.** Navigate to Event Subscriptions under Features in the left panel and enable events after that expand the subscribe to bot events and add message.channels event.\n\n**6.** To creating a Discord bot you can follow [this](https://discordpy.readthedocs.io/en/stable/discord.html) link.\n\n**7.** Edit the Config Node"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "##### Slack to Discord Forwarder\n\nThis template uses *Slack* and *Discord Bot* nodes to forward messages.\n\nFollow these steps to test this template;\n\n**1.** Set the slack environment and take the bot token by [this](https://docs.robomotion.io/getting-started/tutorials/slack-integration) instructions.\n\n**2.** You will need to enable socket mode and get application level token too.\n\n**3.** To enable Socket Mode, navigate to the Socket Mode tab under Settings in the left panel. Toggle the button next to Enable Socket Mode.\n\n**4.** After clicking Generate you will receive an application level token and you need to add it to your vault as a new API Key/Token item.\n\n**5.** Navigate to Event Subscriptions under Features in the left panel and enable events after that expand the subscribe to bot events and add message.channels event.\n\n**6.** To creating a Discord bot you can follow [this](https://discordpy.readthedocs.io/en/stable/discord.html) link.\n\n**7.** Edit the Config Node"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "f6f77363-7451-4755-b7b3-517799db1827",
+		"type": "simple",
+		"selected": true,
+		"x": 376.79973511143584,
+		"y": 61.6945865302643,
+		"extras": {
+			"outputs": 1,
+			"func": "//If you want to filter messages that comes from Slack you will need to Channel Id and User Id. You can find them in slack by right click and copy link.(for ex: https://channel-123.slack.com/team/UABCDE -> the last part of url is user id. Also once you receive a message, you can take a look at debug for this kind of informations.)\nmsg.discordChannelId = \"\"; // Discord Channel that message will be sent. You can take it by right click and clicking copy id from Discord.\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "87203c23-5e5f-4ee7-9dba-8a418e5ccaa7",
+			"type": "default",
+			"selected": false,
+			"name": "out_87203c23-5e5f-4ee7-9dba-8a418e5ccaa7",
+			"parentNode": "f6f77363-7451-4755-b7b3-517799db1827",
+			"links": ["f474e801-e7b3-409f-aa4b-6e4e8e6adc9e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "0711eac0-0c80-4503-82d9-0f3592bd6c74",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "f6f77363-7451-4755-b7b3-517799db1827",
+			"links": ["226e8b92-23cb-45f5-ab1a-a1be7ccb500d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "f6f77363-7451-4755-b7b3-517799db1827",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "//If you want to filter messages that comes from Slack you will need to Channel Id and User Id. You can find them in slack by right click and copy link.(for ex: https://channel-123.slack.com/team/UABCDE -> the last part of url is user id. Also once you receive a message, you can take a look at debug for this kind of informations.)\nmsg.discordChannelId = \"\"; // Discord Channel that message will be sent. You can take it by right click and clicking copy id from Discord.\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "//If you want to filter messages that comes from Slack you will need to Channel Id and User Id. You can find them in slack by right click and copy link.(for ex: https://channel-123.slack.com/team/UABCDE -> the last part of url is user id. Also once you receive a message, you can take a look at debug for this kind of informations.)\nmsg.discordChannelId = \"\"; // Discord Channel that message will be sent. You can take it by right click and clicking copy id from Discord.\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "15719609-459e-4daa-b540-d7b6db0c45c1",
+		"type": "simple",
+		"selected": true,
+		"x": 377.46640177810247,
+		"y": 5.005598435026197,
+		"extras": {
+			"outClientID": {
+				"scope": "Message",
+				"name": "client_id_slack"
+			},
+			"outMessage": {
+				"name": "message",
+				"scope": "Message"
+			},
+			"optAppToken": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			},
+			"optChannelId": {
+				"name": "",
+				"scope": "Custom"
+			},
+			"optToken": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			},
+			"optUserId": {
+				"name": "",
+				"scope": "Custom"
+			}
+		},
+		"ports": [{
+			"id": "a6d8f5f7-b24c-4021-8bb8-fe10fdef1439",
+			"type": "default",
+			"selected": false,
+			"name": "out_a6d8f5f7-b24c-4021-8bb8-fe10fdef1439",
+			"parentNode": "15719609-459e-4daa-b540-d7b6db0c45c1",
+			"links": ["226e8b92-23cb-45f5-ab1a-a1be7ccb500d"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "15719609-459e-4daa-b540-d7b6db0c45c1",
+			"name": "Receive Message",
+			"icon": "M6,15A2,2 0 0,1 4,17A2,2 0 0,1 2,15A2,2 0 0,1 4,13H6V15M7,15A2,2 0 0,1 9,13A2,2 0 0,1 11,15V20A2,2 0 0,1 9,22A2,2 0 0,1 7,20V15M9,7A2,2 0 0,1 7,5A2,2 0 0,1 9,3A2,2 0 0,1 11,5V7H9M9,8A2,2 0 0,1 11,10A2,2 0 0,1 9,12H4A2,2 0 0,1 2,10A2,2 0 0,1 4,8H9M17,10A2,2 0 0,1 19,8A2,2 0 0,1 21,10A2,2 0 0,1 19,12H17V10M16,10A2,2 0 0,1 14,12A2,2 0 0,1 12,10V5A2,2 0 0,1 14,3A2,2 0 0,1 16,5V10M14,18A2,2 0 0,1 16,20A2,2 0 0,1 14,22A2,2 0 0,1 12,20V18H14M14,17A2,2 0 0,1 12,15A2,2 0 0,1 14,13H19A2,2 0 0,1 21,15A2,2 0 0,1 19,17H14Z",
+			"color": "#000000",
+			"namespace": "Robomotion.Slack.ReceiveMessage",
+			"version": "0.4.0",
+			"abc": [{
+				"name": "Receive Message",
+				"version": "0.4.0",
+				"color": "#000000",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outClientID": {
+					"scope": "Message",
+					"name": "client_id_slack"
+				},
+				"outMessage": {
+					"name": "message",
+					"scope": "Message"
+				}
+			}, {
+				"optAppToken": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				},
+				"optChannelId": {
+					"name": "",
+					"scope": "Custom"
+				},
+				"optToken": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				},
+				"optUserId": {
+					"name": "",
+					"scope": "Custom"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outClientID": {
+							"type": "object",
+							"title": "Client ID",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"outMessage": {
+							"type": "object",
+							"title": "Message",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outClientID": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"outMessage": {
+						"name": "message",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outClientID": {
+						"ui:field": "variable"
+					},
+					"outMessage": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientID", "outMessage"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optAppToken": {
+							"type": "object",
+							"title": "App Level Token",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"name": {
+									"properties": {
+										"itemId": {
+											"type": "string"
+										},
+										"vaultId": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"optChannelId": {
+							"type": "object",
+							"title": "Channel Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"optToken": {
+							"type": "object",
+							"title": "Bot Token",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"name": {
+									"properties": {
+										"itemId": {
+											"type": "string"
+										},
+										"vaultId": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"optUserId": {
+							"type": "object",
+							"title": "User Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"optAppToken": {
+						"name": {
+							"itemId": "_",
+							"vaultId": "_"
+						},
+						"scope": "Custom"
+					},
+					"optChannelId": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"optToken": {
+						"name": {
+							"itemId": "_",
+							"vaultId": "_"
+						},
+						"scope": "Custom"
+					},
+					"optUserId": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optAppToken": {
+						"ui:field": "vault"
+					},
+					"optChannelId": {
+						"ui:field": "variable"
+					},
+					"optToken": {
+						"ui:field": "vault"
+					},
+					"optUserId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["optToken", "optAppToken", "optChannelId", "optUserId"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "6fbea908-e712-48ed-9f0a-a5de243db1cd",
+		"type": "simple",
+		"selected": true,
+		"x": 384.1330684447692,
+		"y": 119.52196748264524,
+		"extras": {
+			"outClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"optToken": {
+				"scope": "Custom",
+				"name": {
+					"vaultId": "_",
+					"itemId": "_"
+				}
+			}
+		},
+		"ports": [{
+			"id": "2fe8bf44-3393-4329-a503-9f73f028bdff",
+			"type": "default",
+			"selected": false,
+			"name": "out_2fe8bf44-3393-4329-a503-9f73f028bdff",
+			"parentNode": "6fbea908-e712-48ed-9f0a-a5de243db1cd",
+			"links": ["6ee2c090-ec1c-463a-a0b7-8f3b1aa8fb5e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "b82ce610-04f8-49d7-9a70-091f5587efa7",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "6fbea908-e712-48ed-9f0a-a5de243db1cd",
+			"links": ["f474e801-e7b3-409f-aa4b-6e4e8e6adc9e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "6fbea908-e712-48ed-9f0a-a5de243db1cd",
+			"name": "Connect",
+			"icon": "M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z",
+			"color": "#5865f2",
+			"namespace": "Robomotion.DiscordBot.Connect",
+			"version": "0.0.1",
+			"abc": [{
+				"name": "Connect",
+				"version": "0.0.1",
+				"color": "#5865f2",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"outClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}, {
+				"optToken": {
+					"scope": "Custom",
+					"name": {
+						"vaultId": "_",
+						"itemId": "_"
+					}
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Output",
+					"properties": {
+						"outClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"outClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"outClientId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outClientId"]
+				}
+			}, {
+				"schema": {
+					"type": "object",
+					"title": "Options",
+					"properties": {
+						"optToken": {
+							"type": "object",
+							"title": "Bot Token",
+							"subtitle": "Credentials",
+							"category": 4,
+							"properties": {
+								"name": {
+									"properties": {
+										"itemId": {
+											"type": "string"
+										},
+										"vaultId": {
+											"type": "string"
+										}
+									},
+									"type": "object"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"formData": {
+					"optToken": {
+						"name": {
+							"itemId": "_",
+							"vaultId": "_"
+						},
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"optToken": {
+						"ui:field": "vault"
+					},
+					"ui:order": ["optToken"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "f39ea11b-f729-4642-91ee-cc142c81ec93",
+		"type": "simple",
+		"selected": true,
+		"x": 408.2759255876263,
+		"y": 226.64994367312147,
+		"extras": {
+			"inClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			}
+		},
+		"ports": [{
+			"id": "501fde48-31eb-4ecf-af6a-c4a26c0d2914",
+			"type": "default",
+			"selected": false,
+			"name": "out_501fde48-31eb-4ecf-af6a-c4a26c0d2914",
+			"parentNode": "f39ea11b-f729-4642-91ee-cc142c81ec93",
+			"links": ["5663de45-8a36-4399-92f5-d388ddf8d33e"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "a48a69ab-b651-4d7d-a045-b96fe3088ac3",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "f39ea11b-f729-4642-91ee-cc142c81ec93",
+			"links": ["6d20e04e-cd39-44ce-97ba-78ef3764e003"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "f39ea11b-f729-4642-91ee-cc142c81ec93",
+			"name": "Disconnect",
+			"icon": "M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z",
+			"color": "#5865f2",
+			"namespace": "Robomotion.DiscordBot.Disconnect",
+			"version": "0.0.1",
+			"abc": [{}, {
+				"inClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					}
+				},
+				"uiSchema": {
+					"inClientId": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientId"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "ac80c9ce-abda-40bd-85a0-22ff02d67442",
+		"type": "simple",
+		"selected": true,
+		"x": 394.08544939715017,
+		"y": 174.2384853397881,
+		"extras": {
+			"inChannelId": {
+				"scope": "Message",
+				"name": "discordChannelId"
+			},
+			"inClientId": {
+				"name": "client_id",
+				"scope": "Message"
+			},
+			"inMessage": {
+				"scope": "Message",
+				"name": "message.text"
+			}
+		},
+		"ports": [{
+			"id": "227e7bf9-bc6f-4933-8f03-3c22b4d5c352",
+			"type": "default",
+			"selected": false,
+			"name": "out_227e7bf9-bc6f-4933-8f03-3c22b4d5c352",
+			"parentNode": "ac80c9ce-abda-40bd-85a0-22ff02d67442",
+			"links": ["6d20e04e-cd39-44ce-97ba-78ef3764e003"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "7753b20e-fcf0-4ea0-9601-7cd5450c3f38",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ac80c9ce-abda-40bd-85a0-22ff02d67442",
+			"links": ["6ee2c090-ec1c-463a-a0b7-8f3b1aa8fb5e"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ac80c9ce-abda-40bd-85a0-22ff02d67442",
+			"name": "Send Message",
+			"icon": "M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z",
+			"color": "#5865f2",
+			"namespace": "Robomotion.DiscordBot.SendMessage",
+			"version": "0.0.1",
+			"abc": [{
+				"name": "Send Message",
+				"version": "0.0.1",
+				"color": "#5865f2",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inChannelId": {
+					"scope": "Message",
+					"name": "discordChannelId"
+				},
+				"inClientId": {
+					"name": "client_id",
+					"scope": "Message"
+				},
+				"inMessage": {
+					"scope": "Message",
+					"name": "message.text"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"type": "object",
+					"title": "Input",
+					"properties": {
+						"inChannelId": {
+							"type": "object",
+							"title": "Channel Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						},
+						"inClientId": {
+							"type": "object",
+							"title": "Client Id",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true,
+							"variableType": "String"
+						},
+						"inMessage": {
+							"type": "object",
+							"title": "Message Text",
+							"properties": {
+								"name": {
+									"type": "string"
+								},
+								"scope": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true,
+							"variableType": "String"
+						}
+					}
+				},
+				"formData": {
+					"inChannelId": {
+						"name": "",
+						"scope": "Custom"
+					},
+					"inClientId": {
+						"name": "client_id",
+						"scope": "Message"
+					},
+					"inMessage": {
+						"name": "",
+						"scope": "Custom"
+					}
+				},
+				"uiSchema": {
+					"inChannelId": {
+						"ui:field": "variable"
+					},
+					"inClientId": {
+						"ui:field": "variable"
+					},
+					"inMessage": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inClientId", "inChannelId", "inMessage"]
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}
