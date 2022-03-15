@@ -3,7 +3,7 @@
 		"id": "02de0a06-c257-4b09-862f-809375e01218",
 		"type": "simple",
 		"selected": true,
-		"x": 195.94304382720355,
+		"x": 194.75256763672735,
 		"y": -161.6769604764231,
 		"extras": {
 			"inPayload": {
@@ -152,11 +152,11 @@
 		"id": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
 		"type": "simple",
 		"selected": true,
-		"x": 477.6448386651447,
+		"x": 476.45436247466847,
 		"y": -147.8776622999797,
 		"extras": {
 			"outputs": 1,
-			"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+			"func": "msg.bitcoin_data_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 			"optTimeout": 30,
 			"variables": []
 		},
@@ -166,7 +166,7 @@
 			"selected": false,
 			"name": "out_72116cb1-1d85-45cb-876a-779bd7c4b5be",
 			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
-			"links": ["3f6ce5d5-2bea-484e-9a24-bad52a014d3f"],
+			"links": ["ec56c118-676b-453e-9085-f8f4f77ac60b"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
@@ -198,7 +198,7 @@
 				"version": "1.11.6"
 			}, {
 				"outputs": 1,
-				"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+				"func": "msg.bitcoin_data_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 				"optTimeout": 30
 			}, {
 				"variables": []
@@ -237,7 +237,7 @@
 				},
 				"formData": {
 					"outputs": 1,
-					"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+					"func": "msg.bitcoin_data_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 					"optTimeout": 30
 				}
 			}, {
@@ -277,8 +277,8 @@
 		"id": "b860398b-115a-4332-ba0a-25fe26040e48",
 		"type": "simple",
 		"selected": true,
-		"x": 824.6985277297034,
-		"y": 206.56206102017845,
+		"x": 763.9842420154177,
+		"y": 167.27634673446414,
 		"extras": {
 			"outResult": {
 				"scope": "Message",
@@ -291,7 +291,7 @@
 			"selected": false,
 			"name": "in",
 			"parentNode": "b860398b-115a-4332-ba0a-25fe26040e48",
-			"links": ["114ac131-b053-4dc2-8c99-f3dd91f0fff8"],
+			"links": ["627e60f6-44f7-48ad-bae3-4994603cd8cf"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
@@ -350,8 +350,8 @@
 		"id": "55efb38f-d4e7-41a2-a43e-f899d656a42a",
 		"type": "simple",
 		"selected": true,
-		"x": -94.58465883229405,
-		"y": -96.24716417491628,
+		"x": -189.8227540703893,
+		"y": -197.43764036539247,
 		"extras": {
 			"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n \n2. Download the sample buy/sell decision file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/buy_sell_decision.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
 		},
@@ -404,214 +404,11 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
+		"id": "26f4367b-d4aa-4609-8ade-d413c7e63679",
 		"type": "simple",
 		"selected": true,
-		"x": 472.5476527656135,
-		"y": -82.84185209966009,
-		"extras": {
-			"inPath": {
-				"scope": "Message",
-				"name": "bitcoin_data_path"
-			},
-			"inIndex": {
-				"scope": "Custom",
-				"name": "date"
-			},
-			"inLenght": {
-				"scope": "Custom",
-				"name": "10"
-			},
-			"inIndicatorPath": {
-				"scope": "Message",
-				"name": "sma_path"
-			},
-			"optIndicator": "sma"
-		},
-		"ports": [{
-			"id": "1798ea19-2312-4f2e-afb8-56da08923f59",
-			"type": "default",
-			"selected": false,
-			"name": "out_1798ea19-2312-4f2e-afb8-56da08923f59",
-			"parentNode": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
-			"links": ["c016d6e5-e9c2-4b23-ac92-4a096d16e5a8"],
-			"in": false,
-			"label": "simple",
-			"position": "out"
-		}, {
-			"id": "f6621ec9-3cba-4622-8613-2a3c5865ecd9",
-			"type": "default",
-			"selected": false,
-			"name": "in",
-			"parentNode": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
-			"links": ["3f6ce5d5-2bea-484e-9a24-bad52a014d3f"],
-			"in": true,
-			"label": "simple",
-			"position": "in"
-		}],
-		"model": {
-			"id": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
-			"name": "Overlap Indicators",
-			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
-			"color": "#ed7a4f",
-			"namespace": "Robomotion.TechnicalAnalysis.Overlap",
-			"version": "0.0.13",
-			"abc": [{
-				"name": "Overlap Indicators",
-				"version": "0.0.13",
-				"color": "#ed7a4f",
-				"delayBefore": 0,
-				"delayAfter": 0,
-				"continueOnError": false
-			}, {
-				"inPath": {
-					"scope": "Message",
-					"name": "bitcoin_data_path"
-				},
-				"inIndex": {
-					"scope": "Custom",
-					"name": "date"
-				},
-				"inLenght": {
-					"scope": "Custom",
-					"name": "10"
-				},
-				"inIndicatorPath": {
-					"scope": "Message",
-					"name": "sma_path"
-				}
-			}, {
-				"optIndicator": "sma"
-			}],
-			"xyz": [{
-				"schema": {
-					"title": "Input",
-					"type": "object",
-					"properties": {
-						"inPath": {
-							"type": "object",
-							"title": "Data Path",
-							"variableType": "string",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"customScope": true,
-							"messageScope": true
-						},
-						"inIndex": {
-							"type": "object",
-							"title": "Index Key",
-							"variableType": "string",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"customScope": true,
-							"messageScope": true
-						},
-						"inLenght": {
-							"type": "object",
-							"title": "Length",
-							"variableType": "string",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"customScope": true,
-							"messageScope": true
-						},
-						"inIndicatorPath": {
-							"type": "object",
-							"title": "Indicator Path",
-							"variableType": "string",
-							"properties": {
-								"scope": {
-									"type": "string"
-								},
-								"name": {
-									"type": "string"
-								}
-							},
-							"customScope": true,
-							"messageScope": true
-						}
-					}
-				},
-				"uiSchema": {
-					"inPath": {
-						"ui:field": "variable"
-					},
-					"inIndex": {
-						"ui:field": "variable"
-					},
-					"inLenght": {
-						"ui:field": "variable"
-					},
-					"inIndicatorPath": {
-						"ui:field": "variable"
-					},
-					"ui:order": ["inPath", "inIndex", "inLenght", "inIndicatorPath"]
-				},
-				"formData": {
-					"inPath": {
-						"scope": "Message",
-						"name": "bitcoin_data_path"
-					},
-					"inIndex": {
-						"scope": "Custom",
-						"name": "date"
-					},
-					"inLenght": {
-						"scope": "Custom",
-						"name": "10"
-					},
-					"inIndicatorPath": {
-						"scope": "Message",
-						"name": "sma_path"
-					}
-				}
-			}, {
-				"schema": {
-					"title": "Options",
-					"type": "object",
-					"properties": {
-						"optIndicator": {
-							"type": "string",
-							"title": "Indicator",
-							"enum": ["alma", "dema", "ema", "fwma", "hilo", "hl2", "hlc3", "hma", "hwma", "jma", "kama", "linreg", "mcgd", "midpoint", "midprice", "ohlc4", "pwma", "rma", "sinwma", "sma", "ssf", "supertrend", "swma", "t3", "tema", "trima", "vidya", "vwap", "vwma", "wcp", "wma", "zlma"],
-							"enumNames": ["ALMA (Arnaud Legoux Moving Average)", "DEMA (Double Exponential Moving Average)", "EMA (Exponential Moving Average)", "FWMA (Fibonacci's Weighted Moving Average)", "HILO (Gann High-Low Activator)", "HL2 (High-Low Average)", "HLC3 (High-Low-Close Average) - (Typical Price)", "HMA (Hull Exponential Moving Average)", "HWMA (Holt-Winter Moving Average)", "JMA (Jurik Moving Average)", "KAMA (Kaufman's Adaptive Moving Average)", "LINREG (Linear Regression)", "MCGD (McGinley Dynamic)", "Mid Point", "Mid Price", "OHLC4 (Open-High-Low-Close Average)", "PWMA (Pascal's Weighted Moving Average)", "RMA (WildeR's Moving Average)", "SINWMA (Sine Weighted Moving Average)", "SMA (Simple Moving Average)", "SSF (Ehler's Super Smoother Filter)", "Super Trend", "Symmetric Weighted Moving Average", "T3 Moving Average", "TEMA (Triple Exponential Moving Average)", "TRIMA (Triangular Moving Average)", "VIDYA (Variable Index Dynamic Average)", "VWAP (Volume Weighted Average Price)", "VWMA (Volume Weighted Moving Average)", "WCP (Weighted Closing Price)", "WMA (Weighted Moving Average)", "ZLMA (Zero Lag Moving Average)"]
-						}
-					}
-				},
-				"uiSchema": {
-					"ui:order": ["optIndicator"]
-				},
-				"formData": {
-					"optIndicator": "sma"
-				}
-			}],
-			"outputs": 1,
-			"inputs": 1
-		}
-	}, {
-		"id": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
-		"type": "simple",
-		"selected": true,
-		"x": 468.71431943228015,
-		"y": -23.081435432993427,
+		"x": 473.82146228942304,
+		"y": -24.7012270996601,
 		"extras": {
 			"inPath": {
 				"scope": "Message",
@@ -629,42 +426,46 @@
 				"scope": "Custom",
 				"name": "Parity"
 			},
+			"inName": {
+				"scope": "Custom",
+				"name": "USDT"
+			},
 			"outPlotID": {
 				"scope": "Message",
 				"name": "plot_id"
 			}
 		},
 		"ports": [{
-			"id": "420ce244-a53f-47b0-a59b-f86381cc5356",
+			"id": "cf4a4cc4-f700-43dd-b774-d3a9ba232f93",
 			"type": "default",
 			"selected": false,
-			"name": "out_420ce244-a53f-47b0-a59b-f86381cc5356",
-			"parentNode": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
-			"links": ["c4627915-9869-4dd0-9dd0-e3d6d409f584"],
+			"name": "out_cf4a4cc4-f700-43dd-b774-d3a9ba232f93",
+			"parentNode": "26f4367b-d4aa-4609-8ade-d413c7e63679",
+			"links": ["0a1a6b89-c575-4bcf-ab9a-691d64d1e1fd"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "fdafd11a-625c-4826-82a7-010bd6dced57",
+			"id": "86fbecfe-3678-4b23-a180-78d1d387e76b",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
-			"links": ["c016d6e5-e9c2-4b23-ac92-4a096d16e5a8"],
+			"parentNode": "26f4367b-d4aa-4609-8ade-d413c7e63679",
+			"links": ["1e339f80-4e6c-4c73-b38e-a4c53515231b"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
+			"id": "26f4367b-d4aa-4609-8ade-d413c7e63679",
 			"name": "Plot Create",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.PlotCreate",
-			"version": "0.0.13",
+			"version": "0.1.2",
 			"abc": [{
 				"name": "Plot Create",
-				"version": "0.0.13",
+				"version": "0.1.2",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -685,6 +486,10 @@
 				"inYTitle": {
 					"scope": "Custom",
 					"name": "Parity"
+				},
+				"inName": {
+					"scope": "Custom",
+					"name": "USDT"
 				}
 			}, {
 				"outPlotID": {
@@ -756,6 +561,21 @@
 							},
 							"customScope": true,
 							"messageScope": true
+						},
+						"inName": {
+							"type": "object",
+							"title": "Name",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
 						}
 					}
 				},
@@ -772,12 +592,15 @@
 					"inYTitle": {
 						"ui:field": "variable"
 					},
-					"ui:order": ["inPath", "inDateKey", "inXTitle", "inYTitle"]
+					"inName": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inDateKey", "inXTitle", "inYTitle", "inName"]
 				},
 				"formData": {
 					"inPath": {
-						"scope": "Message",
-						"name": "bitcoin_data_path"
+						"scope": "Custom",
+						"name": ""
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -790,6 +613,10 @@
 					"inYTitle": {
 						"scope": "Custom",
 						"name": "Parity"
+					},
+					"inName": {
+						"scope": "Custom",
+						"name": ""
 					}
 				}
 			}, {
@@ -830,11 +657,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
+		"id": "5928653c-3d93-4024-8c7e-b63f89c82359",
 		"type": "simple",
 		"selected": true,
-		"x": 464.88098609894683,
-		"y": 29.59564790033991,
+		"x": 476.0655099084706,
+		"y": 33.850856233673234,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -863,40 +690,40 @@
 			"optPlotMode": "lines"
 		},
 		"ports": [{
-			"id": "fd99deeb-067c-4c29-bfb8-41324360795e",
+			"id": "34269cb8-3835-4eb4-9b5a-7a7a88e9048a",
 			"type": "default",
 			"selected": false,
-			"name": "out_fd99deeb-067c-4c29-bfb8-41324360795e",
-			"parentNode": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
-			"links": ["6d5d6fad-38b7-4597-86fc-c1e6790ef0bd"],
+			"name": "out_34269cb8-3835-4eb4-9b5a-7a7a88e9048a",
+			"parentNode": "5928653c-3d93-4024-8c7e-b63f89c82359",
+			"links": ["841d71cb-57a9-44ca-b12b-3b6f9a35e906"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "8c782e1a-de3a-450d-93c7-1c09bb680a24",
+			"id": "850debc6-4bdc-4b5b-aedf-0bf6a66b7c98",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
-			"links": ["c4627915-9869-4dd0-9dd0-e3d6d409f584"],
+			"parentNode": "5928653c-3d93-4024-8c7e-b63f89c82359",
+			"links": ["0a1a6b89-c575-4bcf-ab9a-691d64d1e1fd"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
+			"id": "5928653c-3d93-4024-8c7e-b63f89c82359",
 			"name": "Add SMA Graph",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
-			"namespace": "Robomotion.TechnicalAnalysis.PlotUpdate",
-			"version": "0.0.13",
+			"namespace": "Robomotion.TechnicalAnalysis.PlotLine",
+			"version": "0.1.2",
 			"abc": [{
 				"name": "Add SMA Graph",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
 				"continueOnError": false,
-				"version": "0.0.13"
+				"version": "0.1.2"
 			}, {
 				"inPlotID": {
 					"scope": "Message",
@@ -1048,8 +875,8 @@
 						"name": "plot_id"
 					},
 					"inPath": {
-						"scope": "Message",
-						"name": "sma_path"
+						"scope": "Custom",
+						"name": ""
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -1057,11 +884,11 @@
 					},
 					"inValueKey": {
 						"scope": "Custom",
-						"name": "SMA_10"
+						"name": "value"
 					},
 					"inName": {
 						"scope": "Custom",
-						"name": "SMA"
+						"name": ""
 					},
 					"inColor": {
 						"scope": "Custom",
@@ -1092,11 +919,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
+		"id": "a185cee1-c402-486f-bb3d-2f87a5695d25",
 		"type": "simple",
 		"selected": true,
-		"x": 460.92265276561346,
-		"y": 88.73627290033991,
+		"x": 473.523843241804,
+		"y": 94.57481456700657,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -1128,36 +955,36 @@
 			}
 		},
 		"ports": [{
-			"id": "06cddc04-f53a-422a-b18e-b1b39e305035",
+			"id": "84c678e3-878c-4317-a874-d134318e826c",
 			"type": "default",
 			"selected": false,
-			"name": "out_06cddc04-f53a-422a-b18e-b1b39e305035",
-			"parentNode": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
-			"links": ["e412be76-df6a-478e-ad01-660465f1bc36"],
+			"name": "out_84c678e3-878c-4317-a874-d134318e826c",
+			"parentNode": "a185cee1-c402-486f-bb3d-2f87a5695d25",
+			"links": ["c1dc79d5-2ad0-4235-98da-c709d1339780"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "bccf30e0-bfc2-41b0-8476-40ff5177b4ab",
+			"id": "9aa438bb-429a-4ba8-bbb7-e5d50f6155fa",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
-			"links": ["6d5d6fad-38b7-4597-86fc-c1e6790ef0bd"],
+			"parentNode": "a185cee1-c402-486f-bb3d-2f87a5695d25",
+			"links": ["841d71cb-57a9-44ca-b12b-3b6f9a35e906"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
+			"id": "a185cee1-c402-486f-bb3d-2f87a5695d25",
 			"name": "Plot Label",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.PlotLabel",
-			"version": "0.0.13",
+			"version": "0.1.2",
 			"abc": [{
 				"name": "Plot Label",
-				"version": "0.0.13",
+				"version": "0.1.2",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -1333,8 +1160,8 @@
 						"name": "plot_id"
 					},
 					"inPath": {
-						"scope": "Message",
-						"name": "buy_sell_path"
+						"scope": "Custom",
+						"name": ""
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -1346,15 +1173,15 @@
 					},
 					"inLabelKey": {
 						"scope": "Custom",
-						"name": "text"
+						"name": ""
 					},
 					"inBGColorKey": {
 						"scope": "Custom",
-						"name": "color"
+						"name": "background_color"
 					},
 					"inTextColorKey": {
 						"scope": "Custom",
-						"name": "textColor"
+						"name": "text_color"
 					}
 				}
 			}],
@@ -1362,11 +1189,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "71f9efce-f79e-45ca-ae80-55d87b680e20",
+		"id": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
 		"type": "simple",
 		"selected": true,
-		"x": 455.92265276561346,
-		"y": 143.16335623367323,
+		"x": 478.8452718132325,
+		"y": 153.66856456700657,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -1378,36 +1205,36 @@
 			}
 		},
 		"ports": [{
-			"id": "ae1bbf26-b172-4859-8395-1ccf12c891f2",
+			"id": "2c783845-7f36-43f5-ac84-095c20a354c2",
 			"type": "default",
 			"selected": false,
-			"name": "out_ae1bbf26-b172-4859-8395-1ccf12c891f2",
-			"parentNode": "71f9efce-f79e-45ca-ae80-55d87b680e20",
-			"links": ["114ac131-b053-4dc2-8c99-f3dd91f0fff8"],
+			"name": "out_2c783845-7f36-43f5-ac84-095c20a354c2",
+			"parentNode": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
+			"links": ["627e60f6-44f7-48ad-bae3-4994603cd8cf"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "686b7550-ecfb-4088-afc7-ef8dea9602cc",
+			"id": "8a565c08-a835-4462-805f-2d28d89d97b0",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "71f9efce-f79e-45ca-ae80-55d87b680e20",
-			"links": ["e412be76-df6a-478e-ad01-660465f1bc36"],
+			"parentNode": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
+			"links": ["c1dc79d5-2ad0-4235-98da-c709d1339780"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "71f9efce-f79e-45ca-ae80-55d87b680e20",
+			"id": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
 			"name": "Plot Write",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.PlotWrite",
-			"version": "0.0.13",
+			"version": "0.1.2",
 			"abc": [{
 				"name": "Plot Write",
-				"version": "0.0.13",
+				"version": "0.1.2",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -1473,9 +1300,212 @@
 						"name": "plot_id"
 					},
 					"inOutputPath": {
-						"scope": "Message",
-						"name": "output_path"
+						"scope": "Custom",
+						"name": ""
 					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "94794741-9a5c-4c4d-93c6-f849f3714796",
+		"type": "simple",
+		"selected": true,
+		"x": 473.0998596167334,
+		"y": -82.58822008855522,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "bitcoin_data_path"
+			},
+			"inIndex": {
+				"scope": "Custom",
+				"name": "date"
+			},
+			"inLenght": {
+				"scope": "Custom",
+				"name": "10"
+			},
+			"inIndicatorPath": {
+				"scope": "Message",
+				"name": "sma_path"
+			},
+			"optIndicator": "sma"
+		},
+		"ports": [{
+			"id": "b79fcefa-021d-442d-8fe2-cf7c67b50eac",
+			"type": "default",
+			"selected": false,
+			"name": "out_b79fcefa-021d-442d-8fe2-cf7c67b50eac",
+			"parentNode": "94794741-9a5c-4c4d-93c6-f849f3714796",
+			"links": ["1e339f80-4e6c-4c73-b38e-a4c53515231b"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "921a5127-812d-4372-9916-0fa19b82b42b",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "94794741-9a5c-4c4d-93c6-f849f3714796",
+			"links": ["ec56c118-676b-453e-9085-f8f4f77ac60b"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "94794741-9a5c-4c4d-93c6-f849f3714796",
+			"name": "Overlap Indicators",
+			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
+			"color": "#ed7a4f",
+			"namespace": "Robomotion.TechnicalAnalysis.Overlap",
+			"version": "0.1.2",
+			"abc": [{
+				"name": "Overlap Indicators",
+				"version": "0.1.2",
+				"color": "#ed7a4f",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "bitcoin_data_path"
+				},
+				"inIndex": {
+					"scope": "Custom",
+					"name": "date"
+				},
+				"inLenght": {
+					"scope": "Custom",
+					"name": "10"
+				},
+				"inIndicatorPath": {
+					"scope": "Message",
+					"name": "sma_path"
+				}
+			}, {
+				"optIndicator": "sma"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Data Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inIndex": {
+							"type": "object",
+							"title": "Index Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inLenght": {
+							"type": "object",
+							"title": "Length",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inIndicatorPath": {
+							"type": "object",
+							"title": "Indicator Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inIndex": {
+						"ui:field": "variable"
+					},
+					"inLenght": {
+						"ui:field": "variable"
+					},
+					"inIndicatorPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inIndex", "inLenght", "inIndicatorPath"]
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inIndex": {
+						"scope": "Custom",
+						"name": "date"
+					},
+					"inLenght": {
+						"scope": "Custom",
+						"name": "10"
+					},
+					"inIndicatorPath": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optIndicator": {
+							"type": "string",
+							"title": "Indicator",
+							"enum": ["alma", "dema", "ema", "fwma", "hilo", "hl2", "hlc3", "hma", "hwma", "jma", "kama", "linreg", "mcgd", "midpoint", "midprice", "ohlc4", "pwma", "rma", "sinwma", "sma", "ssf", "supertrend", "swma", "t3", "tema", "trima", "vidya", "vwap", "vwma", "wcp", "wma", "zlma"],
+							"enumNames": ["ALMA (Arnaud Legoux Moving Average)", "DEMA (Double Exponential Moving Average)", "EMA (Exponential Moving Average)", "FWMA (Fibonacci's Weighted Moving Average)", "HILO (Gann High-Low Activator)", "HL2 (High-Low Average)", "HLC3 (High-Low-Close Average) - (Typical Price)", "HMA (Hull Exponential Moving Average)", "HWMA (Holt-Winter Moving Average)", "JMA (Jurik Moving Average)", "KAMA (Kaufman's Adaptive Moving Average)", "LINREG (Linear Regression)", "MCGD (McGinley Dynamic)", "Mid Point", "Mid Price", "OHLC4 (Open-High-Low-Close Average)", "PWMA (Pascal's Weighted Moving Average)", "RMA (WildeR's Moving Average)", "SINWMA (Sine Weighted Moving Average)", "SMA (Simple Moving Average)", "SSF (Ehler's Super Smoother Filter)", "Super Trend", "Symmetric Weighted Moving Average", "T3 Moving Average", "TEMA (Triple Exponential Moving Average)", "TRIMA (Triangular Moving Average)", "VIDYA (Variable Index Dynamic Average)", "VWAP (Volume Weighted Average Price)", "VWMA (Volume Weighted Moving Average)", "WCP (Weighted Closing Price)", "WMA (Weighted Moving Average)", "ZLMA (Zero Lag Moving Average)"]
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optIndicator"]
+				},
+				"formData": {
+					"optIndicator": "sma"
 				}
 			}],
 			"outputs": 1,
