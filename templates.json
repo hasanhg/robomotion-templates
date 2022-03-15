@@ -1353,6 +1353,26 @@
     ]
   },
   {
+    "name": "Technical Analysis",
+    "description": "Generates technical indicators and plots them in a graph",
+    "slug": "technical-analysis",
+    "icon": "technical_analysis_icon.jpg",
+    "screenshots": [
+      "technical_analysis_screenshot1.png",
+      "technical_analysis_screenshot2.png"
+    ],
+    "author": "Robomotion",
+    "category": "Communication",
+    "tags": [
+      "indicators",
+      "analysis",
+      "exchange"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
     "name": "Telegram Replier Bot",
     "description": "Receives message from telegram and replies",
     "slug": "telegram-replier-bot",
