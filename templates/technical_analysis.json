@@ -1,10 +1,10 @@
 {
 	"nodes": [{
-		"id": "02de0a06-c257-4b09-862f-809375e01218",
+		"id": "10a14db5-c602-4488-a572-0780ba940cea",
 		"type": "simple",
 		"selected": true,
-		"x": 194.75256763672735,
-		"y": -161.6769604764231,
+		"x": 750,
+		"y": 100.00000000000003,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -19,18 +19,18 @@
 			"optOnceDelay": 0.1
 		},
 		"ports": [{
-			"id": "0f5e07ac-7da7-4d0e-8632-d0a11b6978c4",
+			"id": "b09d0e3f-f416-4aa6-b0ed-5c9226a1d282",
 			"type": "default",
 			"selected": false,
-			"name": "out_0f5e07ac-7da7-4d0e-8632-d0a11b6978c4",
-			"parentNode": "02de0a06-c257-4b09-862f-809375e01218",
-			"links": ["8092b8d0-b2f0-4b86-a16c-740c28c6dee3"],
+			"name": "out_b09d0e3f-f416-4aa6-b0ed-5c9226a1d282",
+			"parentNode": "10a14db5-c602-4488-a572-0780ba940cea",
+			"links": ["65a1a860-b394-4d1d-8edc-f3858bf353af"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}],
 		"model": {
-			"id": "02de0a06-c257-4b09-862f-809375e01218",
+			"id": "10a14db5-c602-4488-a572-0780ba940cea",
 			"name": "Inject",
 			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
 			"color": "#FDD835",
@@ -149,40 +149,40 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
+		"id": "6104d99b-7fb2-41fe-90ab-bfb3279b2b6c",
 		"type": "simple",
 		"selected": true,
-		"x": 476.45436247466847,
-		"y": -147.8776622999797,
+		"x": 1031.7017948379412,
+		"y": 113.79929817644341,
 		"extras": {
 			"outputs": 1,
-			"func": "msg.bitcoin_data_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+			"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 			"optTimeout": 30,
 			"variables": []
 		},
 		"ports": [{
-			"id": "72116cb1-1d85-45cb-876a-779bd7c4b5be",
+			"id": "7a12a241-68ad-464a-aff0-9ea779b7b5b4",
 			"type": "default",
 			"selected": false,
-			"name": "out_72116cb1-1d85-45cb-876a-779bd7c4b5be",
-			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
-			"links": ["ec56c118-676b-453e-9085-f8f4f77ac60b"],
+			"name": "out_7a12a241-68ad-464a-aff0-9ea779b7b5b4",
+			"parentNode": "6104d99b-7fb2-41fe-90ab-bfb3279b2b6c",
+			"links": ["3ca76e88-a5a8-40b6-87e1-0c93ff603059"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "266b68d2-9fc8-48ea-b1fd-e43de88502ce",
+			"id": "1537a74a-3984-4996-8189-f4355ed62b5a",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
-			"links": ["8092b8d0-b2f0-4b86-a16c-740c28c6dee3"],
+			"parentNode": "6104d99b-7fb2-41fe-90ab-bfb3279b2b6c",
+			"links": ["65a1a860-b394-4d1d-8edc-f3858bf353af"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
+			"id": "6104d99b-7fb2-41fe-90ab-bfb3279b2b6c",
 			"name": "Config",
 			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
 			"color": "#F27925",
@@ -198,7 +198,7 @@
 				"version": "1.11.6"
 			}, {
 				"outputs": 1,
-				"func": "msg.bitcoin_data_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+				"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 				"optTimeout": 30
 			}, {
 				"variables": []
@@ -237,7 +237,7 @@
 				},
 				"formData": {
 					"outputs": 1,
-					"func": "msg.bitcoin_data_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\Users\\\\E15\\\\Desktop\\\\indicators\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+					"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 					"optTimeout": 30
 				}
 			}, {
@@ -274,11 +274,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "b860398b-115a-4332-ba0a-25fe26040e48",
+		"id": "202068b3-7ab7-4cb6-853f-e86831fda8ad",
 		"type": "simple",
 		"selected": true,
-		"x": 763.9842420154177,
-		"y": 167.27634673446414,
+		"x": 1319.2316743786905,
+		"y": 428.95330721088726,
 		"extras": {
 			"outResult": {
 				"scope": "Message",
@@ -286,18 +286,18 @@
 			}
 		},
 		"ports": [{
-			"id": "45fc8fd0-c08b-47dc-bea2-d2c115296a9b",
+			"id": "c7ef6963-eada-4a0a-8bc4-c55146f1d35f",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "b860398b-115a-4332-ba0a-25fe26040e48",
-			"links": ["627e60f6-44f7-48ad-bae3-4994603cd8cf"],
+			"parentNode": "202068b3-7ab7-4cb6-853f-e86831fda8ad",
+			"links": ["78898d09-306a-438f-b9bb-4c2e236d7c1a"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "b860398b-115a-4332-ba0a-25fe26040e48",
+			"id": "202068b3-7ab7-4cb6-853f-e86831fda8ad",
 			"name": "Stop",
 			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
 			"color": "#fb2727",
@@ -347,17 +347,17 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "55efb38f-d4e7-41a2-a43e-f899d656a42a",
+		"id": "f3c29b9d-0e02-49cf-a7b2-1544badfa988",
 		"type": "simple",
 		"selected": true,
-		"x": -189.8227540703893,
-		"y": -197.43764036539247,
+		"x": 365.42467829288336,
+		"y": 64.23932011103065,
 		"extras": {
 			"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n \n2. Download the sample buy/sell decision file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/buy_sell_decision.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
 		},
 		"ports": [],
 		"model": {
-			"id": "55efb38f-d4e7-41a2-a43e-f899d656a42a",
+			"id": "f3c29b9d-0e02-49cf-a7b2-1544badfa988",
 			"name": "Comment",
 			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
 			"color": "#FBE364",
@@ -404,11 +404,11 @@
 			"inputs": 0
 		}
 	}, {
-		"id": "26f4367b-d4aa-4609-8ade-d413c7e63679",
+		"id": "7e2df834-c16d-4813-9096-b5afbeda62c3",
 		"type": "simple",
 		"selected": true,
-		"x": 473.82146228942304,
-		"y": -24.7012270996601,
+		"x": 1029.0688946526957,
+		"y": 236.975733376763,
 		"extras": {
 			"inPath": {
 				"scope": "Message",
@@ -436,28 +436,28 @@
 			}
 		},
 		"ports": [{
-			"id": "cf4a4cc4-f700-43dd-b774-d3a9ba232f93",
+			"id": "9ec9c6e0-6dc2-42cf-95c8-dcef4d1c80a2",
 			"type": "default",
 			"selected": false,
-			"name": "out_cf4a4cc4-f700-43dd-b774-d3a9ba232f93",
-			"parentNode": "26f4367b-d4aa-4609-8ade-d413c7e63679",
-			"links": ["0a1a6b89-c575-4bcf-ab9a-691d64d1e1fd"],
+			"name": "out_9ec9c6e0-6dc2-42cf-95c8-dcef4d1c80a2",
+			"parentNode": "7e2df834-c16d-4813-9096-b5afbeda62c3",
+			"links": ["25409257-8585-4e52-aeaa-355563b18a37"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "86fbecfe-3678-4b23-a180-78d1d387e76b",
+			"id": "a5ecb25a-bfef-497e-b99f-30308613d044",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "26f4367b-d4aa-4609-8ade-d413c7e63679",
-			"links": ["1e339f80-4e6c-4c73-b38e-a4c53515231b"],
+			"parentNode": "7e2df834-c16d-4813-9096-b5afbeda62c3",
+			"links": ["a573534a-3d2a-4bcc-bb55-a437855307ac"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "26f4367b-d4aa-4609-8ade-d413c7e63679",
+			"id": "7e2df834-c16d-4813-9096-b5afbeda62c3",
 			"name": "Plot Create",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
@@ -599,8 +599,8 @@
 				},
 				"formData": {
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "bitcoin_data_path"
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -616,7 +616,7 @@
 					},
 					"inName": {
 						"scope": "Custom",
-						"name": ""
+						"name": "USDT"
 					}
 				}
 			}, {
@@ -657,11 +657,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "5928653c-3d93-4024-8c7e-b63f89c82359",
+		"id": "f2efedd2-3095-445f-9f6f-5b05990aebfc",
 		"type": "simple",
 		"selected": true,
-		"x": 476.0655099084706,
-		"y": 33.850856233673234,
+		"x": 1031.3129422717432,
+		"y": 295.5278167100964,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -690,28 +690,28 @@
 			"optPlotMode": "lines"
 		},
 		"ports": [{
-			"id": "34269cb8-3835-4eb4-9b5a-7a7a88e9048a",
+			"id": "7366c5ac-ab39-4cdb-b3d7-dc6434a85710",
 			"type": "default",
 			"selected": false,
-			"name": "out_34269cb8-3835-4eb4-9b5a-7a7a88e9048a",
-			"parentNode": "5928653c-3d93-4024-8c7e-b63f89c82359",
-			"links": ["841d71cb-57a9-44ca-b12b-3b6f9a35e906"],
+			"name": "out_7366c5ac-ab39-4cdb-b3d7-dc6434a85710",
+			"parentNode": "f2efedd2-3095-445f-9f6f-5b05990aebfc",
+			"links": ["da79636b-c630-4985-865a-f779a952dff9"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "850debc6-4bdc-4b5b-aedf-0bf6a66b7c98",
+			"id": "a11f4ec9-5f1e-4512-a7d7-3c803ba062e7",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "5928653c-3d93-4024-8c7e-b63f89c82359",
-			"links": ["0a1a6b89-c575-4bcf-ab9a-691d64d1e1fd"],
+			"parentNode": "f2efedd2-3095-445f-9f6f-5b05990aebfc",
+			"links": ["25409257-8585-4e52-aeaa-355563b18a37"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "5928653c-3d93-4024-8c7e-b63f89c82359",
+			"id": "f2efedd2-3095-445f-9f6f-5b05990aebfc",
 			"name": "Add SMA Graph",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
@@ -875,8 +875,8 @@
 						"name": "plot_id"
 					},
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "sma_path"
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -884,11 +884,11 @@
 					},
 					"inValueKey": {
 						"scope": "Custom",
-						"name": "value"
+						"name": "SMA_10"
 					},
 					"inName": {
 						"scope": "Custom",
-						"name": ""
+						"name": "SMA"
 					},
 					"inColor": {
 						"scope": "Custom",
@@ -919,11 +919,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "a185cee1-c402-486f-bb3d-2f87a5695d25",
+		"id": "7f4fe53a-fa16-4553-8d56-bb7349b55af6",
 		"type": "simple",
 		"selected": true,
-		"x": 473.523843241804,
-		"y": 94.57481456700657,
+		"x": 1028.7712756050767,
+		"y": 356.2517750434297,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -955,28 +955,28 @@
 			}
 		},
 		"ports": [{
-			"id": "84c678e3-878c-4317-a874-d134318e826c",
+			"id": "1af62bf1-1b2b-473d-9ce4-e425773601e8",
 			"type": "default",
 			"selected": false,
-			"name": "out_84c678e3-878c-4317-a874-d134318e826c",
-			"parentNode": "a185cee1-c402-486f-bb3d-2f87a5695d25",
-			"links": ["c1dc79d5-2ad0-4235-98da-c709d1339780"],
+			"name": "out_1af62bf1-1b2b-473d-9ce4-e425773601e8",
+			"parentNode": "7f4fe53a-fa16-4553-8d56-bb7349b55af6",
+			"links": ["9d4c6b71-375b-4acf-bcf4-acfb06e4521b"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "9aa438bb-429a-4ba8-bbb7-e5d50f6155fa",
+			"id": "0ae196ef-da33-4c5e-b611-44c0bacaeafa",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "a185cee1-c402-486f-bb3d-2f87a5695d25",
-			"links": ["841d71cb-57a9-44ca-b12b-3b6f9a35e906"],
+			"parentNode": "7f4fe53a-fa16-4553-8d56-bb7349b55af6",
+			"links": ["da79636b-c630-4985-865a-f779a952dff9"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "a185cee1-c402-486f-bb3d-2f87a5695d25",
+			"id": "7f4fe53a-fa16-4553-8d56-bb7349b55af6",
 			"name": "Plot Label",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
@@ -1160,8 +1160,8 @@
 						"name": "plot_id"
 					},
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "buy_sell_path"
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -1173,15 +1173,15 @@
 					},
 					"inLabelKey": {
 						"scope": "Custom",
-						"name": ""
+						"name": "text"
 					},
 					"inBGColorKey": {
 						"scope": "Custom",
-						"name": "background_color"
+						"name": "color"
 					},
 					"inTextColorKey": {
 						"scope": "Custom",
-						"name": "text_color"
+						"name": "textColor"
 					}
 				}
 			}],
@@ -1189,11 +1189,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
+		"id": "fea05f10-0005-413d-9392-4fa9b3bde4b8",
 		"type": "simple",
 		"selected": true,
-		"x": 478.8452718132325,
-		"y": 153.66856456700657,
+		"x": 1034.092704176505,
+		"y": 415.3455250434297,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -1205,28 +1205,28 @@
 			}
 		},
 		"ports": [{
-			"id": "2c783845-7f36-43f5-ac84-095c20a354c2",
+			"id": "7e520cf2-ebd1-4f7c-a2ec-dc83267e5b94",
 			"type": "default",
 			"selected": false,
-			"name": "out_2c783845-7f36-43f5-ac84-095c20a354c2",
-			"parentNode": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
-			"links": ["627e60f6-44f7-48ad-bae3-4994603cd8cf"],
+			"name": "out_7e520cf2-ebd1-4f7c-a2ec-dc83267e5b94",
+			"parentNode": "fea05f10-0005-413d-9392-4fa9b3bde4b8",
+			"links": ["78898d09-306a-438f-b9bb-4c2e236d7c1a"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "8a565c08-a835-4462-805f-2d28d89d97b0",
+			"id": "171482ee-63f2-457c-9914-d89a355c7cc5",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
-			"links": ["c1dc79d5-2ad0-4235-98da-c709d1339780"],
+			"parentNode": "fea05f10-0005-413d-9392-4fa9b3bde4b8",
+			"links": ["9d4c6b71-375b-4acf-bcf4-acfb06e4521b"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "5c633a6c-2f64-45ca-a2d6-a5c458bf8f62",
+			"id": "fea05f10-0005-413d-9392-4fa9b3bde4b8",
 			"name": "Plot Write",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
@@ -1300,8 +1300,8 @@
 						"name": "plot_id"
 					},
 					"inOutputPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "output_path"
 					}
 				}
 			}],
@@ -1309,11 +1309,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "94794741-9a5c-4c4d-93c6-f849f3714796",
+		"id": "f328b882-ba4e-4067-b180-d9ce56aa589f",
 		"type": "simple",
 		"selected": true,
-		"x": 473.0998596167334,
-		"y": -82.58822008855522,
+		"x": 1028.347291980006,
+		"y": 179.08874038786792,
 		"extras": {
 			"inPath": {
 				"scope": "Message",
@@ -1334,28 +1334,28 @@
 			"optIndicator": "sma"
 		},
 		"ports": [{
-			"id": "b79fcefa-021d-442d-8fe2-cf7c67b50eac",
+			"id": "1828ab18-9b08-4ab9-b2b9-ee70ade33a78",
 			"type": "default",
 			"selected": false,
-			"name": "out_b79fcefa-021d-442d-8fe2-cf7c67b50eac",
-			"parentNode": "94794741-9a5c-4c4d-93c6-f849f3714796",
-			"links": ["1e339f80-4e6c-4c73-b38e-a4c53515231b"],
+			"name": "out_1828ab18-9b08-4ab9-b2b9-ee70ade33a78",
+			"parentNode": "f328b882-ba4e-4067-b180-d9ce56aa589f",
+			"links": ["a573534a-3d2a-4bcc-bb55-a437855307ac"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "921a5127-812d-4372-9916-0fa19b82b42b",
+			"id": "153a62ef-6231-4909-8ef8-9d750324fa55",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "94794741-9a5c-4c4d-93c6-f849f3714796",
-			"links": ["ec56c118-676b-453e-9085-f8f4f77ac60b"],
+			"parentNode": "f328b882-ba4e-4067-b180-d9ce56aa589f",
+			"links": ["3ca76e88-a5a8-40b6-87e1-0c93ff603059"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "94794741-9a5c-4c4d-93c6-f849f3714796",
+			"id": "f328b882-ba4e-4067-b180-d9ce56aa589f",
 			"name": "Overlap Indicators",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
@@ -1472,8 +1472,8 @@
 				},
 				"formData": {
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "bitcoin_data_path"
 					},
 					"inIndex": {
 						"scope": "Custom",
@@ -1484,8 +1484,8 @@
 						"name": "10"
 					},
 					"inIndicatorPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "sma_path"
 					}
 				}
 			}, {
