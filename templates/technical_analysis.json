@@ -1,0 +1,1216 @@
+{
+	"nodes": [{
+		"id": "02de0a06-c257-4b09-862f-809375e01218",
+		"type": "simple",
+		"selected": true,
+		"x": 240.7347104938702,
+		"y": -74.17696047642309,
+		"extras": {
+			"inPayload": {
+				"scope": "JS",
+				"name": "Date.now()"
+			},
+			"outPayload": {
+				"scope": "Message",
+				"name": "payload"
+			},
+			"optRepeat": 1,
+			"optOnce": true,
+			"optOnceDelay": 0.1
+		},
+		"ports": [{
+			"id": "0f5e07ac-7da7-4d0e-8632-d0a11b6978c4",
+			"type": "default",
+			"selected": false,
+			"name": "out_0f5e07ac-7da7-4d0e-8632-d0a11b6978c4",
+			"parentNode": "02de0a06-c257-4b09-862f-809375e01218",
+			"links": ["351cd89b-7e9d-48f5-906a-98282b630adc"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}],
+		"model": {
+			"id": "02de0a06-c257-4b09-862f-809375e01218",
+			"name": "Inject",
+			"icon": "M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M11,5A4,4 0 0,1 15,9C15,10.5 14.2,11.77 13,12.46V11.24C13.61,10.69 14,9.89 14,9A3,3 0 0,0 11,6A3,3 0 0,0 8,9C8,9.89 8.39,10.69 9,11.24V12.46C7.8,11.77 7,10.5 7,9A4,4 0 0,1 11,5Z",
+			"color": "#FDD835",
+			"namespace": "Core.Trigger.Inject",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"inPayload": {
+					"scope": "JS",
+					"name": "Date.now()"
+				}
+			}, {
+				"outPayload": {
+					"scope": "Message",
+					"name": "payload"
+				}
+			}, {
+				"optRepeat": 1,
+				"optOnce": true,
+				"optOnceDelay": 0.1
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"customScope": true,
+							"jsScope": true,
+							"argsScope": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"inPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"inPayload": {
+						"scope": "JS",
+						"name": "Date.now()"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPayload": {
+							"type": "object",
+							"title": "Payload",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"outPayload": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outPayload": {
+						"scope": "Message",
+						"name": "payload"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optRepeat": {
+							"title": "Repeat Interval (sec)",
+							"type": "number"
+						},
+						"optOnce": {
+							"title": "Once",
+							"type": "boolean"
+						},
+						"optOnceDelay": {
+							"title": "Once Delay (sec)",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optRepeat", "optOnceDelay", "optOnce"]
+				},
+				"formData": {
+					"optRepeat": 1,
+					"optOnce": true,
+					"optOnceDelay": 0.1
+				}
+			}],
+			"outputs": 1,
+			"inputs": 0
+		}
+	}, {
+		"id": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
+		"type": "simple",
+		"selected": true,
+		"x": 484.93650533181136,
+		"y": -37.46099563331304,
+		"extras": {
+			"outputs": 1,
+			"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+			"optTimeout": 30,
+			"variables": []
+		},
+		"ports": [{
+			"id": "72116cb1-1d85-45cb-876a-779bd7c4b5be",
+			"type": "default",
+			"selected": false,
+			"name": "out_72116cb1-1d85-45cb-876a-779bd7c4b5be",
+			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
+			"links": ["ae777bc0-e6d2-4d85-bf80-ed8371908c15"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "266b68d2-9fc8-48ea-b1fd-e43de88502ce",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
+			"links": ["351cd89b-7e9d-48f5-906a-98282b630adc"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
+			"name": "Config",
+			"icon": "M15.6,5.29C14.5,5.19 13.53,6 13.43,7.11L13.18,10H16V12H13L12.56,17.07C12.37,19.27 10.43,20.9 8.23,20.7C6.92,20.59 5.82,19.86 5.17,18.83L6.67,17.33C6.91,18.07 7.57,18.64 8.4,18.71C9.5,18.81 10.47,18 10.57,16.89L11,12H8V10H11.17L11.44,6.93C11.63,4.73 13.57,3.1 15.77,3.3C17.08,3.41 18.18,4.14 18.83,5.17L17.33,6.67C17.09,5.93 16.43,5.36 15.6,5.29Z",
+			"color": "#F27925",
+			"editor": "javascript",
+			"namespace": "Core.Programming.Function",
+			"version": "1.11.6",
+			"abc": [{
+				"name": "Config",
+				"color": "#F27925",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "1.11.6"
+			}, {
+				"outputs": 1,
+				"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+				"optTimeout": 30
+			}, {
+				"variables": []
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"func": {
+							"title": "Function",
+							"type": "string"
+						},
+						"outputs": {
+							"title": "Outputs",
+							"type": "number",
+							"minimum": 1,
+							"maximum": 32
+						},
+						"optTimeout": {
+							"title": "Script Timeout",
+							"type": "number"
+						}
+					}
+				},
+				"uiSchema": {
+					"outputs": {
+						"ui:widget": "updown"
+					},
+					"func": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"outputs": 1,
+					"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+					"optTimeout": 30
+				}
+			}, {
+				"schema": {
+					"title": "Local Variables",
+					"type": "object",
+					"properties": {
+						"variables": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"variableType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"variables": {
+						"ui:field": "localVariable"
+					}
+				},
+				"formData": {
+					"variables": []
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "b860398b-115a-4332-ba0a-25fe26040e48",
+		"type": "simple",
+		"selected": true,
+		"x": 714.2818610630368,
+		"y": 176.3537276868451,
+		"extras": {
+			"outResult": {
+				"scope": "Message",
+				"name": "error"
+			}
+		},
+		"ports": [{
+			"id": "45fc8fd0-c08b-47dc-bea2-d2c115296a9b",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "b860398b-115a-4332-ba0a-25fe26040e48",
+			"links": ["b1e9b0f4-0ce0-4e33-96ba-6f2d2cbbda1d"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "b860398b-115a-4332-ba0a-25fe26040e48",
+			"name": "Stop",
+			"icon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4M9,9V15H15V9",
+			"color": "#fb2727",
+			"namespace": "Core.Flow.Stop",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"outResult": {
+					"scope": "Message",
+					"name": "error"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outResult": {
+							"type": "object",
+							"title": "Error",
+							"variableType": "String",
+							"messageOnly": true,
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["outResult"],
+					"outResult": {
+						"ui:field": "variable"
+					}
+				},
+				"formData": {
+					"outResult": {
+						"scope": "Message",
+						"name": "error"
+					}
+				}
+			}],
+			"outputs": 0,
+			"inputs": 1
+		}
+	}, {
+		"id": "55efb38f-d4e7-41a2-a43e-f899d656a42a",
+		"type": "simple",
+		"selected": true,
+		"x": -94.58465883229405,
+		"y": -96.24716417491628,
+		"extras": {
+			"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
+		},
+		"ports": [],
+		"model": {
+			"id": "55efb38f-d4e7-41a2-a43e-f899d656a42a",
+			"name": "Comment",
+			"icon": "M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z",
+			"color": "#FBE364",
+			"namespace": "Core.Flow.Comment",
+			"version": "1.11.6",
+			"abc": [{}, {
+				"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"comment": {
+							"title": "Comment",
+							"type": "string"
+						},
+						"optText": {
+							"title": "Text",
+							"type": "string"
+						}
+					}
+				},
+				"uiSchema": {
+					"optText": {
+						"ui:description": "Comment",
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 8
+						}
+					},
+					"comment": {
+						"ui:widget": "hidden",
+						"ui:options": {
+							"rows": 6
+						}
+					}
+				},
+				"formData": {
+					"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
+				}
+			}],
+			"outputs": 0,
+			"inputs": 0
+		}
+	}, {
+		"id": "ca997cc1-da98-421e-8399-18120265bc8d",
+		"type": "simple",
+		"selected": true,
+		"x": 482.05722338187735,
+		"y": 9.781099228347102,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "bitcoin_data_path"
+			},
+			"inIndex": {
+				"scope": "Custom",
+				"name": "date"
+			},
+			"inLenght": {
+				"scope": "Custom",
+				"name": "10"
+			},
+			"inIndicatorPath": {
+				"scope": "Message",
+				"name": "sma_path"
+			},
+			"optIndicator": "sma"
+		},
+		"ports": [{
+			"id": "e4aa1aa9-4a9a-4840-a6d6-bda974eab47b",
+			"type": "default",
+			"selected": false,
+			"name": "out_e4aa1aa9-4a9a-4840-a6d6-bda974eab47b",
+			"parentNode": "ca997cc1-da98-421e-8399-18120265bc8d",
+			"links": ["8d707617-5af2-4635-822f-3f18fba13dbc"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "12b8a6e7-037a-4f2e-aa22-7ae2ba73f74d",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "ca997cc1-da98-421e-8399-18120265bc8d",
+			"links": ["ae777bc0-e6d2-4d85-bf80-ed8371908c15"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "ca997cc1-da98-421e-8399-18120265bc8d",
+			"name": "Overlap Indicators",
+			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
+			"color": "#ed7a4f",
+			"namespace": "Robomotion.TechnicalAnalysis.Overlap",
+			"version": "0.0.8",
+			"abc": [{
+				"name": "Overlap Indicators",
+				"version": "0.0.8",
+				"color": "#ed7a4f",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "bitcoin_data_path"
+				},
+				"inIndex": {
+					"scope": "Custom",
+					"name": "date"
+				},
+				"inLenght": {
+					"scope": "Custom",
+					"name": "10"
+				},
+				"inIndicatorPath": {
+					"scope": "Message",
+					"name": "sma_path"
+				}
+			}, {
+				"optIndicator": "sma"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Data Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inIndex": {
+							"type": "object",
+							"title": "Index Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inLenght": {
+							"type": "object",
+							"title": "Length",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inIndicatorPath": {
+							"type": "object",
+							"title": "Indicator Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inIndex": {
+						"ui:field": "variable"
+					},
+					"inLenght": {
+						"ui:field": "variable"
+					},
+					"inIndicatorPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inIndex", "inLenght", "inIndicatorPath"]
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inIndex": {
+						"scope": "Custom",
+						"name": "date"
+					},
+					"inLenght": {
+						"scope": "Custom",
+						"name": "10"
+					},
+					"inIndicatorPath": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optIndicator": {
+							"type": "string",
+							"title": "Indicator",
+							"enum": ["alma", "dema", "ema", "fwma", "hilo", "hl2", "hlc3", "hma", "hwma", "jma", "kama", "linreg", "mcgd", "midpoint", "midprice", "ohlc4", "pwma", "rma", "sinwma", "sma", "ssf", "supertrend", "swma", "t3", "tema", "trima", "vidya", "vwap", "vwma", "wcp", "wma", "zlma"],
+							"enumNames": ["ALMA (Arnaud Legoux Moving Average)", "DEMA (Double Exponential Moving Average)", "EMA (Exponential Moving Average)", "FWMA (Fibonacci's Weighted Moving Average)", "HILO (Gann High-Low Activator)", "HL2 (High-Low Average)", "HLC3 (High-Low-Close Average) - (Typical Price)", "HMA (Hull Exponential Moving Average)", "HWMA (Holt-Winter Moving Average)", "JMA (Jurik Moving Average)", "KAMA (Kaufman's Adaptive Moving Average)", "LINREG (Linear Regression)", "MCGD (McGinley Dynamic)", "Mid Point", "Mid Price", "OHLC4 (Open-High-Low-Close Average)", "PWMA (Pascal's Weighted Moving Average)", "RMA (WildeR's Moving Average)", "SINWMA (Sine Weighted Moving Average)", "SMA (Simple Moving Average)", "SSF (Ehler's Super Smoother Filter)", "Super Trend", "Symmetric Weighted Moving Average", "T3 Moving Average", "TEMA (Triple Exponential Moving Average)", "TRIMA (Triangular Moving Average)", "VIDYA (Variable Index Dynamic Average)", "VWAP (Volume Weighted Average Price)", "VWMA (Volume Weighted Moving Average)", "WCP (Weighted Closing Price)", "WMA (Weighted Moving Average)", "ZLMA (Zero Lag Moving Average)"]
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optIndicator"]
+				},
+				"formData": {
+					"optIndicator": "sma"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
+		"type": "simple",
+		"selected": true,
+		"x": 476.78449610915,
+		"y": 57.522576501074404,
+		"extras": {
+			"inPath": {
+				"scope": "Message",
+				"name": "bitcoin_data_path"
+			},
+			"inDateKey": {
+				"scope": "Custom",
+				"name": "date"
+			},
+			"inXTitle": {
+				"scope": "Custom",
+				"name": "Date"
+			},
+			"inYTitle": {
+				"scope": "Custom",
+				"name": "Parity"
+			},
+			"outPlotID": {
+				"scope": "Message",
+				"name": "plot_id"
+			}
+		},
+		"ports": [{
+			"id": "f4a5e3c6-3d62-4292-a636-63ef4dcc2094",
+			"type": "default",
+			"selected": false,
+			"name": "out_f4a5e3c6-3d62-4292-a636-63ef4dcc2094",
+			"parentNode": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
+			"links": ["a4767e2b-ae1b-49bf-ac73-3f65e2334e28"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "cd30887d-2eaa-478f-a15a-7ae4df2b7666",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
+			"links": ["8d707617-5af2-4635-822f-3f18fba13dbc"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
+			"name": "Plot Create",
+			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
+			"color": "#ed7a4f",
+			"namespace": "Robomotion.TechnicalAnalysis.PlotCreate",
+			"version": "0.0.8",
+			"abc": [{
+				"name": "Plot Create",
+				"version": "0.0.8",
+				"color": "#ed7a4f",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPath": {
+					"scope": "Message",
+					"name": "bitcoin_data_path"
+				},
+				"inDateKey": {
+					"scope": "Custom",
+					"name": "date"
+				},
+				"inXTitle": {
+					"scope": "Custom",
+					"name": "Date"
+				},
+				"inYTitle": {
+					"scope": "Custom",
+					"name": "Parity"
+				}
+			}, {
+				"outPlotID": {
+					"scope": "Message",
+					"name": "plot_id"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPath": {
+							"type": "object",
+							"title": "Data Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inDateKey": {
+							"type": "object",
+							"title": "Date Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inXTitle": {
+							"type": "object",
+							"title": "X Axis Title",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inYTitle": {
+							"type": "object",
+							"title": "Y Axis Title",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inDateKey": {
+						"ui:field": "variable"
+					},
+					"inXTitle": {
+						"ui:field": "variable"
+					},
+					"inYTitle": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPath", "inDateKey", "inXTitle", "inYTitle"]
+				},
+				"formData": {
+					"inPath": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inDateKey": {
+						"scope": "Custom",
+						"name": "date"
+					},
+					"inXTitle": {
+						"scope": "Custom",
+						"name": "Date"
+					},
+					"inYTitle": {
+						"scope": "Custom",
+						"name": "Parity"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Output",
+					"type": "object",
+					"properties": {
+						"outPlotID": {
+							"type": "object",
+							"title": "Plot ID",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"messageOnly": true
+						}
+					}
+				},
+				"uiSchema": {
+					"outPlotID": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["outPlotID"]
+				},
+				"formData": {
+					"outPlotID": {
+						"scope": "Message",
+						"name": "plot_id"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
+		"type": "simple",
+		"selected": true,
+		"x": 472.1935870182408,
+		"y": 109.77967877380169,
+		"extras": {
+			"inPlotID": {
+				"scope": "Message",
+				"name": "plot_id"
+			},
+			"inPath": {
+				"scope": "Message",
+				"name": "sma_path"
+			},
+			"inDateKey": {
+				"scope": "Custom",
+				"name": "date"
+			},
+			"inValueKey": {
+				"scope": "Custom",
+				"name": "SMA_10"
+			},
+			"inName": {
+				"scope": "Custom",
+				"name": "SMA"
+			},
+			"inColor": {
+				"scope": "Custom",
+				"name": "#00ff00"
+			},
+			"optPlotMode": "lines+markers"
+		},
+		"ports": [{
+			"id": "81ff5f1b-0a04-420c-bf44-1ba06b8536f6",
+			"type": "default",
+			"selected": false,
+			"name": "out_81ff5f1b-0a04-420c-bf44-1ba06b8536f6",
+			"parentNode": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
+			"links": ["ab3091f4-756c-49e7-99c1-26ca6f1886e0"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "df63092a-a01c-4d73-9655-8eca910384c8",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
+			"links": ["a4767e2b-ae1b-49bf-ac73-3f65e2334e28"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
+			"name": "Add SMA Graph",
+			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
+			"color": "#ed7a4f",
+			"namespace": "Robomotion.TechnicalAnalysis.PlotUpdate",
+			"version": "0.0.8",
+			"abc": [{
+				"name": "Add SMA Graph",
+				"color": "#ed7a4f",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false,
+				"version": "0.0.8"
+			}, {
+				"inPlotID": {
+					"scope": "Message",
+					"name": "plot_id"
+				},
+				"inPath": {
+					"scope": "Message",
+					"name": "sma_path"
+				},
+				"inDateKey": {
+					"scope": "Custom",
+					"name": "date"
+				},
+				"inValueKey": {
+					"scope": "Custom",
+					"name": "SMA_10"
+				},
+				"inName": {
+					"scope": "Custom",
+					"name": "SMA"
+				},
+				"inColor": {
+					"scope": "Custom",
+					"name": "#00ff00"
+				}
+			}, {
+				"optPlotMode": "lines+markers"
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPlotID": {
+							"type": "object",
+							"title": "Plot ID",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"messageScope": true
+						},
+						"inPath": {
+							"type": "object",
+							"title": "Data Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inDateKey": {
+							"type": "object",
+							"title": "Date Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inValueKey": {
+							"type": "object",
+							"title": "Value Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inName": {
+							"type": "object",
+							"title": "Name",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inColor": {
+							"type": "object",
+							"title": "Color",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPlotID": {
+						"ui:field": "variable"
+					},
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inDateKey": {
+						"ui:field": "variable"
+					},
+					"inValueKey": {
+						"ui:field": "variable"
+					},
+					"inName": {
+						"ui:field": "variable"
+					},
+					"inColor": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPlotID", "inPath", "inDateKey", "inValueKey", "inName", "inColor"]
+				},
+				"formData": {
+					"inPlotID": {
+						"scope": "Message",
+						"name": "plot_id"
+					},
+					"inPath": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inDateKey": {
+						"scope": "Custom",
+						"name": "date"
+					},
+					"inValueKey": {
+						"scope": "Custom",
+						"name": "value"
+					},
+					"inName": {
+						"scope": "Custom",
+						"name": ""
+					},
+					"inColor": {
+						"scope": "Custom",
+						"name": "#ff0000"
+					}
+				}
+			}, {
+				"schema": {
+					"title": "Options",
+					"type": "object",
+					"properties": {
+						"optPlotMode": {
+							"type": "string",
+							"title": "Plot Mode",
+							"enum": ["lines", "markers", "lines+markers"],
+							"enumNames": ["Lines", "Markers", "Lines + Markers"]
+						}
+					}
+				},
+				"uiSchema": {
+					"ui:order": ["optPlotMode"]
+				},
+				"formData": {
+					"optPlotMode": "lines"
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
+		"type": "simple",
+		"selected": true,
+		"x": 469.7740153618271,
+		"y": 161.17792937188784,
+		"extras": {
+			"inPlotID": {
+				"scope": "Message",
+				"name": "plot_id"
+			},
+			"inOutputPath": {
+				"scope": "Message",
+				"name": "output_path"
+			}
+		},
+		"ports": [{
+			"id": "00f9157f-9959-4c55-8673-076ebebaae9a",
+			"type": "default",
+			"selected": false,
+			"name": "out_00f9157f-9959-4c55-8673-076ebebaae9a",
+			"parentNode": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
+			"links": ["b1e9b0f4-0ce0-4e33-96ba-6f2d2cbbda1d"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "306502e3-02b3-45f9-8520-1e0c8564077f",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
+			"links": ["ab3091f4-756c-49e7-99c1-26ca6f1886e0"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
+			"name": "Plot Write",
+			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
+			"color": "#ed7a4f",
+			"namespace": "Robomotion.TechnicalAnalysis.PlotWrite",
+			"version": "0.0.8",
+			"abc": [{
+				"name": "Plot Write",
+				"version": "0.0.8",
+				"color": "#ed7a4f",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPlotID": {
+					"scope": "Message",
+					"name": "plot_id"
+				},
+				"inOutputPath": {
+					"scope": "Message",
+					"name": "output_path"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPlotID": {
+							"type": "object",
+							"title": "Plot ID",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"messageScope": true
+						},
+						"inOutputPath": {
+							"type": "object",
+							"title": "Output Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPlotID": {
+						"ui:field": "variable"
+					},
+					"inOutputPath": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPlotID", "inOutputPath"]
+				},
+				"formData": {
+					"inPlotID": {
+						"scope": "Message",
+						"name": "plot_id"
+					},
+					"inOutputPath": {
+						"scope": "Custom",
+						"name": ""
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}],
+	"subFlows": []
+}
