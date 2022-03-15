@@ -3,8 +3,8 @@
 		"id": "02de0a06-c257-4b09-862f-809375e01218",
 		"type": "simple",
 		"selected": true,
-		"x": 240.7347104938702,
-		"y": -74.17696047642309,
+		"x": 195.94304382720355,
+		"y": -161.6769604764231,
 		"extras": {
 			"inPayload": {
 				"scope": "JS",
@@ -24,7 +24,7 @@
 			"selected": false,
 			"name": "out_0f5e07ac-7da7-4d0e-8632-d0a11b6978c4",
 			"parentNode": "02de0a06-c257-4b09-862f-809375e01218",
-			"links": ["351cd89b-7e9d-48f5-906a-98282b630adc"],
+			"links": ["8092b8d0-b2f0-4b86-a16c-740c28c6dee3"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
@@ -152,11 +152,11 @@
 		"id": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
 		"type": "simple",
 		"selected": true,
-		"x": 484.93650533181136,
-		"y": -37.46099563331304,
+		"x": 477.6448386651447,
+		"y": -147.8776622999797,
 		"extras": {
 			"outputs": 1,
-			"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+			"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 			"optTimeout": 30,
 			"variables": []
 		},
@@ -166,7 +166,7 @@
 			"selected": false,
 			"name": "out_72116cb1-1d85-45cb-876a-779bd7c4b5be",
 			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
-			"links": ["ae777bc0-e6d2-4d85-bf80-ed8371908c15"],
+			"links": ["3f6ce5d5-2bea-484e-9a24-bad52a014d3f"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
@@ -176,7 +176,7 @@
 			"selected": false,
 			"name": "in",
 			"parentNode": "490839a2-e35a-4d25-a5ed-7d7a94777b64",
-			"links": ["351cd89b-7e9d-48f5-906a-98282b630adc"],
+			"links": ["8092b8d0-b2f0-4b86-a16c-740c28c6dee3"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
@@ -198,7 +198,7 @@
 				"version": "1.11.6"
 			}, {
 				"outputs": 1,
-				"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+				"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 				"optTimeout": 30
 			}, {
 				"variables": []
@@ -237,7 +237,7 @@
 				},
 				"formData": {
 					"outputs": 1,
-					"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
+					"func": "msg.bitcoin_data_path = \"C:\\\\bitcoin_data.csv\";\nmsg.buy_sell_path = \"C:\\\\buy_sell_decision.csv\";\nmsg.sma_path = \"C:\\\\sma.csv\";\nmsg.output_path = \"C:\\\\output.html\";\nreturn msg;",
 					"optTimeout": 30
 				}
 			}, {
@@ -277,8 +277,8 @@
 		"id": "b860398b-115a-4332-ba0a-25fe26040e48",
 		"type": "simple",
 		"selected": true,
-		"x": 714.2818610630368,
-		"y": 176.3537276868451,
+		"x": 824.6985277297034,
+		"y": 206.56206102017845,
 		"extras": {
 			"outResult": {
 				"scope": "Message",
@@ -291,7 +291,7 @@
 			"selected": false,
 			"name": "in",
 			"parentNode": "b860398b-115a-4332-ba0a-25fe26040e48",
-			"links": ["b1e9b0f4-0ce0-4e33-96ba-6f2d2cbbda1d"],
+			"links": ["114ac131-b053-4dc2-8c99-f3dd91f0fff8"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
@@ -353,7 +353,7 @@
 		"x": -94.58465883229405,
 		"y": -96.24716417491628,
 		"extras": {
-			"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
+			"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n \n2. Download the sample buy/sell decision file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/buy_sell_decision.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
 		},
 		"ports": [],
 		"model": {
@@ -364,7 +364,7 @@
 			"namespace": "Core.Flow.Comment",
 			"version": "1.11.6",
 			"abc": [{}, {
-				"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
+				"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n \n2. Download the sample buy/sell decision file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/buy_sell_decision.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
 			}],
 			"xyz": [{
 				"schema": {
@@ -397,18 +397,18 @@
 					}
 				},
 				"formData": {
-					"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
+					"optText": "#### Technical Analysis How-To\n \n This template uses *Technical Analysis* nodes for generating technical indicators and plotting them.\n \n1. Download the sample bitcoin csv file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/bitcoin_data.csv) and place the file to a convenient path\n \n2. Download the sample buy/sell decision file from [here](https://github.com/robomotionio/robomotion-templates/raw/master/files/buy_sell_decision.csv) and place the file to a convenient path\n\n2. Edit Config (Function) node. Update the paths\n\n3. Install *Technical Analysis* package\n\n4. Run the flow and examine the output.html file.\n"
 				}
 			}],
 			"outputs": 0,
 			"inputs": 0
 		}
 	}, {
-		"id": "ca997cc1-da98-421e-8399-18120265bc8d",
+		"id": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
 		"type": "simple",
 		"selected": true,
-		"x": 482.05722338187735,
-		"y": 9.781099228347102,
+		"x": 472.5476527656135,
+		"y": -82.84185209966009,
 		"extras": {
 			"inPath": {
 				"scope": "Message",
@@ -429,36 +429,36 @@
 			"optIndicator": "sma"
 		},
 		"ports": [{
-			"id": "e4aa1aa9-4a9a-4840-a6d6-bda974eab47b",
+			"id": "1798ea19-2312-4f2e-afb8-56da08923f59",
 			"type": "default",
 			"selected": false,
-			"name": "out_e4aa1aa9-4a9a-4840-a6d6-bda974eab47b",
-			"parentNode": "ca997cc1-da98-421e-8399-18120265bc8d",
-			"links": ["8d707617-5af2-4635-822f-3f18fba13dbc"],
+			"name": "out_1798ea19-2312-4f2e-afb8-56da08923f59",
+			"parentNode": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
+			"links": ["c016d6e5-e9c2-4b23-ac92-4a096d16e5a8"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "12b8a6e7-037a-4f2e-aa22-7ae2ba73f74d",
+			"id": "f6621ec9-3cba-4622-8613-2a3c5865ecd9",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "ca997cc1-da98-421e-8399-18120265bc8d",
-			"links": ["ae777bc0-e6d2-4d85-bf80-ed8371908c15"],
+			"parentNode": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
+			"links": ["3f6ce5d5-2bea-484e-9a24-bad52a014d3f"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "ca997cc1-da98-421e-8399-18120265bc8d",
+			"id": "af8faa3f-5f78-45e1-b461-33c5e003d0d2",
 			"name": "Overlap Indicators",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.Overlap",
-			"version": "0.0.8",
+			"version": "0.0.13",
 			"abc": [{
 				"name": "Overlap Indicators",
-				"version": "0.0.8",
+				"version": "0.0.13",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -567,8 +567,8 @@
 				},
 				"formData": {
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "bitcoin_data_path"
 					},
 					"inIndex": {
 						"scope": "Custom",
@@ -579,8 +579,8 @@
 						"name": "10"
 					},
 					"inIndicatorPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "sma_path"
 					}
 				}
 			}, {
@@ -607,11 +607,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
+		"id": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
 		"type": "simple",
 		"selected": true,
-		"x": 476.78449610915,
-		"y": 57.522576501074404,
+		"x": 468.71431943228015,
+		"y": -23.081435432993427,
 		"extras": {
 			"inPath": {
 				"scope": "Message",
@@ -635,36 +635,36 @@
 			}
 		},
 		"ports": [{
-			"id": "f4a5e3c6-3d62-4292-a636-63ef4dcc2094",
+			"id": "420ce244-a53f-47b0-a59b-f86381cc5356",
 			"type": "default",
 			"selected": false,
-			"name": "out_f4a5e3c6-3d62-4292-a636-63ef4dcc2094",
-			"parentNode": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
-			"links": ["a4767e2b-ae1b-49bf-ac73-3f65e2334e28"],
+			"name": "out_420ce244-a53f-47b0-a59b-f86381cc5356",
+			"parentNode": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
+			"links": ["c4627915-9869-4dd0-9dd0-e3d6d409f584"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "cd30887d-2eaa-478f-a15a-7ae4df2b7666",
+			"id": "fdafd11a-625c-4826-82a7-010bd6dced57",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
-			"links": ["8d707617-5af2-4635-822f-3f18fba13dbc"],
+			"parentNode": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
+			"links": ["c016d6e5-e9c2-4b23-ac92-4a096d16e5a8"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "7636c3f7-692f-485a-a8f6-c4d0a0ef0343",
+			"id": "c2f58e74-7990-4bb3-8021-1eca7aeab8d6",
 			"name": "Plot Create",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.PlotCreate",
-			"version": "0.0.8",
+			"version": "0.0.13",
 			"abc": [{
 				"name": "Plot Create",
-				"version": "0.0.8",
+				"version": "0.0.13",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -776,8 +776,8 @@
 				},
 				"formData": {
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "bitcoin_data_path"
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -830,11 +830,11 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
+		"id": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
 		"type": "simple",
 		"selected": true,
-		"x": 472.1935870182408,
-		"y": 109.77967877380169,
+		"x": 464.88098609894683,
+		"y": 29.59564790033991,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -858,45 +858,45 @@
 			},
 			"inColor": {
 				"scope": "Custom",
-				"name": "#00ff00"
+				"name": "#ff0000"
 			},
-			"optPlotMode": "lines+markers"
+			"optPlotMode": "lines"
 		},
 		"ports": [{
-			"id": "81ff5f1b-0a04-420c-bf44-1ba06b8536f6",
+			"id": "fd99deeb-067c-4c29-bfb8-41324360795e",
 			"type": "default",
 			"selected": false,
-			"name": "out_81ff5f1b-0a04-420c-bf44-1ba06b8536f6",
-			"parentNode": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
-			"links": ["ab3091f4-756c-49e7-99c1-26ca6f1886e0"],
+			"name": "out_fd99deeb-067c-4c29-bfb8-41324360795e",
+			"parentNode": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
+			"links": ["6d5d6fad-38b7-4597-86fc-c1e6790ef0bd"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "df63092a-a01c-4d73-9655-8eca910384c8",
+			"id": "8c782e1a-de3a-450d-93c7-1c09bb680a24",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
-			"links": ["a4767e2b-ae1b-49bf-ac73-3f65e2334e28"],
+			"parentNode": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
+			"links": ["c4627915-9869-4dd0-9dd0-e3d6d409f584"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "7e923643-2c81-4df2-9feb-8ca9f99fcbbb",
+			"id": "ad69ce9a-ac31-48a4-bec5-fc0f3859ee9d",
 			"name": "Add SMA Graph",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.PlotUpdate",
-			"version": "0.0.8",
+			"version": "0.0.13",
 			"abc": [{
 				"name": "Add SMA Graph",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
 				"continueOnError": false,
-				"version": "0.0.8"
+				"version": "0.0.13"
 			}, {
 				"inPlotID": {
 					"scope": "Message",
@@ -920,10 +920,10 @@
 				},
 				"inColor": {
 					"scope": "Custom",
-					"name": "#00ff00"
+					"name": "#ff0000"
 				}
 			}, {
-				"optPlotMode": "lines+markers"
+				"optPlotMode": "lines"
 			}],
 			"xyz": [{
 				"schema": {
@@ -1048,8 +1048,8 @@
 						"name": "plot_id"
 					},
 					"inPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "sma_path"
 					},
 					"inDateKey": {
 						"scope": "Custom",
@@ -1057,11 +1057,11 @@
 					},
 					"inValueKey": {
 						"scope": "Custom",
-						"name": "value"
+						"name": "SMA_10"
 					},
 					"inName": {
 						"scope": "Custom",
-						"name": ""
+						"name": "SMA"
 					},
 					"inColor": {
 						"scope": "Custom",
@@ -1092,11 +1092,281 @@
 			"inputs": 1
 		}
 	}, {
-		"id": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
+		"id": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
 		"type": "simple",
 		"selected": true,
-		"x": 469.7740153618271,
-		"y": 161.17792937188784,
+		"x": 460.92265276561346,
+		"y": 88.73627290033991,
+		"extras": {
+			"inPlotID": {
+				"scope": "Message",
+				"name": "plot_id"
+			},
+			"inPath": {
+				"scope": "Message",
+				"name": "buy_sell_path"
+			},
+			"inDateKey": {
+				"scope": "Custom",
+				"name": "date"
+			},
+			"inValueKey": {
+				"scope": "Custom",
+				"name": "value"
+			},
+			"inLabelKey": {
+				"scope": "Custom",
+				"name": "text"
+			},
+			"inBGColorKey": {
+				"scope": "Custom",
+				"name": "color"
+			},
+			"inTextColorKey": {
+				"scope": "Custom",
+				"name": "textColor"
+			}
+		},
+		"ports": [{
+			"id": "06cddc04-f53a-422a-b18e-b1b39e305035",
+			"type": "default",
+			"selected": false,
+			"name": "out_06cddc04-f53a-422a-b18e-b1b39e305035",
+			"parentNode": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
+			"links": ["e412be76-df6a-478e-ad01-660465f1bc36"],
+			"in": false,
+			"label": "simple",
+			"position": "out"
+		}, {
+			"id": "bccf30e0-bfc2-41b0-8476-40ff5177b4ab",
+			"type": "default",
+			"selected": false,
+			"name": "in",
+			"parentNode": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
+			"links": ["6d5d6fad-38b7-4597-86fc-c1e6790ef0bd"],
+			"in": true,
+			"label": "simple",
+			"position": "in"
+		}],
+		"model": {
+			"id": "62b13cd6-e7c2-4d2a-802a-4eb4f2b4f04b",
+			"name": "Plot Label",
+			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
+			"color": "#ed7a4f",
+			"namespace": "Robomotion.TechnicalAnalysis.PlotLabel",
+			"version": "0.0.13",
+			"abc": [{
+				"name": "Plot Label",
+				"version": "0.0.13",
+				"color": "#ed7a4f",
+				"delayBefore": 0,
+				"delayAfter": 0,
+				"continueOnError": false
+			}, {
+				"inPlotID": {
+					"scope": "Message",
+					"name": "plot_id"
+				},
+				"inPath": {
+					"scope": "Message",
+					"name": "buy_sell_path"
+				},
+				"inDateKey": {
+					"scope": "Custom",
+					"name": "date"
+				},
+				"inValueKey": {
+					"scope": "Custom",
+					"name": "value"
+				},
+				"inLabelKey": {
+					"scope": "Custom",
+					"name": "text"
+				},
+				"inBGColorKey": {
+					"scope": "Custom",
+					"name": "color"
+				},
+				"inTextColorKey": {
+					"scope": "Custom",
+					"name": "textColor"
+				}
+			}],
+			"xyz": [{
+				"schema": {
+					"title": "Input",
+					"type": "object",
+					"properties": {
+						"inPlotID": {
+							"type": "object",
+							"title": "Plot ID",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"messageScope": true
+						},
+						"inPath": {
+							"type": "object",
+							"title": "Data Path",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inDateKey": {
+							"type": "object",
+							"title": "Date Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inValueKey": {
+							"type": "object",
+							"title": "Value Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inLabelKey": {
+							"type": "object",
+							"title": "Label Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inBGColorKey": {
+							"type": "object",
+							"title": "Background Color Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						},
+						"inTextColorKey": {
+							"type": "object",
+							"title": "Text Color Key",
+							"variableType": "string",
+							"properties": {
+								"scope": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								}
+							},
+							"customScope": true,
+							"messageScope": true
+						}
+					}
+				},
+				"uiSchema": {
+					"inPlotID": {
+						"ui:field": "variable"
+					},
+					"inPath": {
+						"ui:field": "variable"
+					},
+					"inDateKey": {
+						"ui:field": "variable"
+					},
+					"inValueKey": {
+						"ui:field": "variable"
+					},
+					"inLabelKey": {
+						"ui:field": "variable"
+					},
+					"inBGColorKey": {
+						"ui:field": "variable"
+					},
+					"inTextColorKey": {
+						"ui:field": "variable"
+					},
+					"ui:order": ["inPlotID", "inPath", "inDateKey", "inValueKey", "inLabelKey", "inBGColorKey", "inTextColorKey"]
+				},
+				"formData": {
+					"inPlotID": {
+						"scope": "Message",
+						"name": "plot_id"
+					},
+					"inPath": {
+						"scope": "Message",
+						"name": "buy_sell_path"
+					},
+					"inDateKey": {
+						"scope": "Custom",
+						"name": "date"
+					},
+					"inValueKey": {
+						"scope": "Custom",
+						"name": "value"
+					},
+					"inLabelKey": {
+						"scope": "Custom",
+						"name": "text"
+					},
+					"inBGColorKey": {
+						"scope": "Custom",
+						"name": "color"
+					},
+					"inTextColorKey": {
+						"scope": "Custom",
+						"name": "textColor"
+					}
+				}
+			}],
+			"outputs": 1,
+			"inputs": 1
+		}
+	}, {
+		"id": "71f9efce-f79e-45ca-ae80-55d87b680e20",
+		"type": "simple",
+		"selected": true,
+		"x": 455.92265276561346,
+		"y": 143.16335623367323,
 		"extras": {
 			"inPlotID": {
 				"scope": "Message",
@@ -1108,36 +1378,36 @@
 			}
 		},
 		"ports": [{
-			"id": "00f9157f-9959-4c55-8673-076ebebaae9a",
+			"id": "ae1bbf26-b172-4859-8395-1ccf12c891f2",
 			"type": "default",
 			"selected": false,
-			"name": "out_00f9157f-9959-4c55-8673-076ebebaae9a",
-			"parentNode": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
-			"links": ["b1e9b0f4-0ce0-4e33-96ba-6f2d2cbbda1d"],
+			"name": "out_ae1bbf26-b172-4859-8395-1ccf12c891f2",
+			"parentNode": "71f9efce-f79e-45ca-ae80-55d87b680e20",
+			"links": ["114ac131-b053-4dc2-8c99-f3dd91f0fff8"],
 			"in": false,
 			"label": "simple",
 			"position": "out"
 		}, {
-			"id": "306502e3-02b3-45f9-8520-1e0c8564077f",
+			"id": "686b7550-ecfb-4088-afc7-ef8dea9602cc",
 			"type": "default",
 			"selected": false,
 			"name": "in",
-			"parentNode": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
-			"links": ["ab3091f4-756c-49e7-99c1-26ca6f1886e0"],
+			"parentNode": "71f9efce-f79e-45ca-ae80-55d87b680e20",
+			"links": ["e412be76-df6a-478e-ad01-660465f1bc36"],
 			"in": true,
 			"label": "simple",
 			"position": "in"
 		}],
 		"model": {
-			"id": "5040dbdb-63bc-44e5-92e6-086f5450d0df",
+			"id": "71f9efce-f79e-45ca-ae80-55d87b680e20",
 			"name": "Plot Write",
 			"icon": "M2 2H4V20H22V22H2V2M17 2H20V18H17V2M6 11H9V18H6V11M13 3H16V7H13V3M10 8H13V12H10V8Z",
 			"color": "#ed7a4f",
 			"namespace": "Robomotion.TechnicalAnalysis.PlotWrite",
-			"version": "0.0.8",
+			"version": "0.0.13",
 			"abc": [{
 				"name": "Plot Write",
-				"version": "0.0.8",
+				"version": "0.0.13",
 				"color": "#ed7a4f",
 				"delayBefore": 0,
 				"delayAfter": 0,
@@ -1203,8 +1473,8 @@
 						"name": "plot_id"
 					},
 					"inOutputPath": {
-						"scope": "Custom",
-						"name": ""
+						"scope": "Message",
+						"name": "output_path"
 					}
 				}
 			}],
