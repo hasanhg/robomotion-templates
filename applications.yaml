@@ -1,4 +1,5 @@
 applications:
+  - Airtable
   - Amazon_S3
   - Chrome
   - Discord
@@ -15,6 +16,7 @@ applications:
   - Pabbly
   - Slack
   - SQLite
+  - Telegram
   - Tesseract
   - Twilio
   - Twitter

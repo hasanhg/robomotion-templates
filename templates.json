@@ -1,5 +1,25 @@
 [
   {
+    "name": "Airtable Simple Project Tracker",
+    "description": "Shows create, read, update, delete and list record operations in Simple Project Tracker template of Airtable",
+    "slug": "airtable-simple-project-tracker",
+    "icon": "airtable_simple_project_tracker_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=TVzf-YWLhGQ",
+      "airtable_simple_project_tracker_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "airtable",
+      "record"
+    ],
+    "applications": [
+      "Airtable",
+      "Javascript"
+    ]
+  },
+  {
     "name": "Amazon S3 Quick Start",
     "description": "Shows upload, get, download and delete object operations in S3 bucket",
     "slug": "amazon-s3-quick-start",
@@ -18,6 +38,29 @@
     ],
     "applications": [
       "Amazon_S3",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Amazon Search Result Scraping",
+    "description": "Scrapes product data from Amazon search results. Results are written to an embedded SQLite database file named products.db which can be found on the desktop after the robot execution.",
+    "slug": "amazon-serp-scraping",
+    "icon": "amazon_serp_scraping_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=ivTqO2BTSxQ",
+      "amazon_serp_scraping_screenshot_1.png",
+      "amazon_serp_scraping_screenshot_2.png",
+      "amazon_serp_scraping_screenshot_3.png"
+    ],
+    "author": "Robomotion",
+    "category": "Scraping",
+    "tags": [
+      "scraping",
+      "sqlite",
+      "amazon"
+    ],
+    "applications": [
+      "SQLite",
       "Javascript"
     ]
   },
@@ -183,7 +226,7 @@
   },
   {
     "name": "Content Checker",
-    "description": "Checks spesific field in given website url and notifies if content has changed.",
+    "description": "Checks specific field in given website url and notifies if content has changed.",
     "slug": "content-checker",
     "icon": "content_checker_icon.png",
     "screenshots": [
@@ -256,6 +299,26 @@
     ],
     "applications": [
       "Other"
+    ]
+  },
+  {
+    "name": "Send Discord Notification",
+    "description": "Send Discord messages with embeds using webhooks.",
+    "slug": "discord-notification",
+    "icon": "discord_notification_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=AscaqmHpOEY",
+      "discord_notification_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "discord",
+      "notification",
+      "api"
+    ],
+    "applications": [
+      "Javascript"
     ]
   },
   {
@@ -685,7 +748,7 @@
   },
   {
     "name": "Mail To MySQL Inserter",
-    "description": "Checks Inbox every hour and if a mail comes with subject that contain #ROBO#, writes it into a mysql table",
+    "description": "Checks Inbox every hour and if a mail comes with subject that contain",
     "slug": "mail-to-mysql-inserter",
     "icon": "mail_to_mysql_inserter_icon.png",
     "screenshots": [
@@ -1143,6 +1206,28 @@
     ]
   },
   {
+    "name": "Slack To Discord Forwarder",
+    "description": "Receives message from Slack and forwards to a Discord Channel",
+    "slug": "slack-to-discord-forwarder",
+    "icon": "slack_to_discord_forwarder_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=9pMKro07oe8",
+      "slack_to_discord_forwarder_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Communication",
+    "tags": [
+      "bot",
+      "message",
+	"receive",
+	"send"
+    ],
+    "applications": [
+      "Discord",
+	"Slack"
+    ]
+  },
+  {
     "name": "Split CSV",
     "description": "Splits a CSV file to a group of .csv files containing at most specified amount of rows",
     "slug": "split-csv",
@@ -1268,6 +1353,26 @@
     ]
   },
   {
+    "name": "Telegram Replier Bot",
+    "description": "Receives message from telegram and replies",
+    "slug": "telegram-replier-bot",
+    "icon": "telegram_replier_bot_icon.png",
+    "screenshots": [
+      "https://www.youtube.com/watch?v=ucK7Y2_QEjk",
+      "telegram_replier_bot_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Communication",
+    "tags": [
+      "telegram",
+      "bot",
+      "message"
+    ],
+    "applications": [
+      "Telegram"
+    ]
+  },
+  {
     "name": "Translator",
     "description": "Translates the text from a specified language to another one using Google Translate",
     "slug": "translator",
@@ -1361,6 +1466,24 @@
     ]
   },
   {
+    "name": "Web Element To Pdf",
+    "description": "Converts web element to Pdf",
+    "slug": "web-element-to-pdf",
+    "icon": "web_element_to_pdf_icon.png",
+    "screenshots": [
+      "web_element_to_pdf_screenshot.png"
+    ],
+    "author": "Robomotion",
+    "category": "Productivity",
+    "tags": [
+      "html",
+      "pdf"
+    ],
+    "applications": [
+      "Other"
+    ]
+  },
+  {
     "name": "Website UI Tracker",
     "description": "Takes screenshot of a web site and uploads it to specified slack channel",
     "slug": "website-ui-tracker",
@@ -1378,24 +1501,6 @@
     "applications": [
       "Slack",
       "Chrome"
-    ]
-  },
-  {
-    "name": "Web Element To Pdf",
-    "description": "Converts any web elements to Pdf",
-    "slug": "web-element-to-pdf",
-    "icon": "web_element_to_pdf_icon.png",
-    "screenshots": [
-      "web_element_to_pdf_screenshot.png"
-    ],
-    "author": "Robomotion",
-    "category": "Productivity",
-    "tags": [
-      "html",
-      "pdf"
-    ],
-    "applications": [
-      "Other"
     ]
   },
   {

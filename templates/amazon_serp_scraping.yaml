@@ -1,0 +1,19 @@
+- name: Amazon Search Result Scraping
+  description: Scrapes product data from Amazon search results. Results are written to an embedded SQLite database file named products.db which can be found on the desktop after the robot execution.
+  slug: amazon-serp-scraping
+  icon: amazon_serp_scraping_icon.png
+  screenshots:
+    - https://www.youtube.com/watch?v=ivTqO2BTSxQ
+    - amazon_serp_scraping_screenshot_1.png
+    - amazon_serp_scraping_screenshot_2.png
+    - amazon_serp_scraping_screenshot_3.png
+  author: Robomotion
+  category: Scraping
+  tags:
+    - scraping
+    - sqlite
+    - amazon
+  applications:
+    - SQLite
+    - Javascript
+

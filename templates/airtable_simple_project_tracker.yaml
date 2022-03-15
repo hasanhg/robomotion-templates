@@ -1,0 +1,16 @@
+- name: Airtable Simple Project Tracker
+  description: Shows create, read, update, delete and list record operations in Simple Project Tracker template of Airtable
+  slug: airtable-simple-project-tracker
+  icon: airtable_simple_project_tracker_icon.png
+  screenshots:
+    - https://www.youtube.com/watch?v=TVzf-YWLhGQ
+    - airtable_simple_project_tracker_screenshot.png
+  author: Robomotion
+  category: Productivity
+  tags:
+    - airtable
+    - record
+  applications:
+    - Airtable
+    - Javascript
+    
